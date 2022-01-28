@@ -1,0 +1,12 @@
+.mobile-nav {
+  &__link {
+    font-size: 0.93rem;
+    color: $black;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  &__link + &__link {
+    margin-top: 2rem;
+  }
+}

@@ -1,0 +1,40 @@
+.header {
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  position: relative;
+  &__mobile-modal {
+    opacity: 0;
+    transform: translateX(-2000px);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1100;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    transition: transform 1s ease-in;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__nav {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    align-items: center;
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+}

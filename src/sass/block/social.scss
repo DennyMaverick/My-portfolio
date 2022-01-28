@@ -1,0 +1,17 @@
+.social {
+  &__img {
+    width: 41px;
+    height: 41px;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__link {
+    margin-right: 10px;
+    transition: transform 0.2s linear;
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+}

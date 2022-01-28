@@ -1,0 +1,17 @@
+.close-modal-mobile {
+  // .close-icon__text
+
+  &__text {
+    font-size: 0.73rem;
+    color: #2b2a2c;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  // .close-icon__arrow
+
+  &__arrow {
+    margin-top: -10px;
+    height: 50px;
+  }
+}

@@ -1,0 +1,29 @@
+.nav {
+  &__link {
+    position: relative;
+    margin-right: 1rem;
+    font-size: 0.93rem;
+    color: $black;
+    text-transform: uppercase;
+    font-weight: 700;
+    &:not(.nav__link--btn) {
+      padding: 7px;
+    }
+    &:after {
+      content: '';
+      width: 0;
+      height: 2px;
+      background-color: $black;
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      z-index: 1;
+      transition: width 0.2s linear;
+    }
+    &:hover:not(.nav__link--btn) {
+      &:after {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.works {
+  padding: 2.8rem 0;
+  &__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.4rem;
+  }
+
+  &__nav-link {
+    position: relative;
+    margin: 0 1.2rem;
+    font-size: 0.8rem;
+    // opacity: 70%;
+    color: transparentize($black, 0.3);
+    &:after {
+      content: '';
+      width: 0;
+      height: 1px;
+      // background-color 70%
+      background-color: transparentize($black, 0.3);
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      z-index: 1;
+      transition: width 0.2s linear;
+    }
+    &:hover {
+      &:after {
+        width: 100%;
+      }
+    }
+  }
+
+  &__portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+    margin-bottom: 2.8rem;
+  }
+}

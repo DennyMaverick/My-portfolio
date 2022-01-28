@@ -1,0 +1,28 @@
+.user {
+  &__avatar {
+    width: 57px;
+    height: 57px;
+    border-radius: 50%;
+  }
+
+  &:hover .user__avatar {
+    opacity: 0.8;
+  }
+
+  &__name {
+    margin-bottom: 1px;
+    @include font(1.06rem, 1.2rem);
+    color: $black;
+    font-weight: 700;
+  }
+
+  &__content {
+    margin-left: 9px;
+  }
+
+  &__prof {
+    display: block;
+    font-size: 0.8rem;
+    color: $black;
+  }
+}

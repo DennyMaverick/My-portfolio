@@ -1,0 +1,14 @@
+.burger-btn {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: none;
+  padding: 0;
+  border: none;
+  background: none;
+  &__icon {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
