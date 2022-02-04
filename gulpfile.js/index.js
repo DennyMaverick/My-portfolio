@@ -28,8 +28,8 @@ const server = () => {
 
 // Отслеживание изменений
 const watcher = () => {
-  watch(path.html.watch, html).on('all', browserSync.reload);
   watch(path.scss.watch, scss).on('all', browserSync.reload);
+  watch(path.html.watch, html).on('all', browserSync.reload);
   watch(path.js.watch, js).on('all', browserSync.reload);
   watch(path.img.watch, img).on('all', browserSync.reload);
   watch(path.font.watch, font).on('all', browserSync.reload);

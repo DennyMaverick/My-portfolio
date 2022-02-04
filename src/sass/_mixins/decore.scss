@@ -1,9 +1,16 @@
 @mixin decore-line {
   content: '';
+  width: 0;
+  height: 2px;
+  background-color: $black;
   position: absolute;
-  top: -21px;
+  bottom: -2px;
   left: 0;
-  background-color: $color-text-base;
+  z-index: 1;
+  transition: width 0.2s linear;
+}
+
+@mixin decore-line-footer {
+  background-color: $grey-light-second;
   height: 1px;
-  width: 300px;
 }

@@ -1,0 +1,57 @@
+.about {
+  padding: 5rem 0;
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1090px;
+  }
+  &__image-box,
+  &__content {
+    width: 50%;
+  }
+  &__content {
+    padding-left: 3.2rem;
+    margin-top: 2rem;
+  }
+  &__title {
+    font-size: 3rem;
+    color: $black;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  &__bigtitle {
+    position: relative;
+    left: -10px;
+    margin-bottom: 1.4rem;
+    @include font(6.1rem, 6.71rem);
+    // opacity 35%
+    color: transparantize($black, 65%);
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  &__text {
+    margin-bottom: 2.8rem;
+    @include font(0.8rem, 1.6rem);
+    color: $grey;
+    font-weight: 300;
+  }
+  &__image-box {
+    position: relative;
+    &:before {
+      content: '';
+      width: 413px;
+      height: 413px;
+      background-color: #efefef;
+      position: absolute;
+      bottom: 0;
+      z-index: 1;
+    }
+  }
+  &__photo {
+    width: 542px;
+    height: 606px;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+  }
+}

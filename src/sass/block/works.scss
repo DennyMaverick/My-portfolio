@@ -11,6 +11,7 @@
     position: relative;
     margin: 0 1.2rem;
     font-size: 0.8rem;
+    padding: 7px 0;
     // opacity: 70%;
     color: transparentize($black, 0.3);
     &:after {
@@ -20,7 +21,7 @@
       // background-color 70%
       background-color: transparentize($black, 0.3);
       position: absolute;
-      bottom: -2px;
+      bottom: 0;
       left: 0;
       z-index: 1;
       transition: width 0.2s linear;

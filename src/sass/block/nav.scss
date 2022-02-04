@@ -10,15 +10,7 @@
       padding: 7px;
     }
     &:after {
-      content: '';
-      width: 0;
-      height: 2px;
-      background-color: $black;
-      position: absolute;
-      bottom: -2px;
-      left: 0;
-      z-index: 1;
-      transition: width 0.2s linear;
+      @include decore-line;
     }
     &:hover:not(.nav__link--btn) {
       &:after {
