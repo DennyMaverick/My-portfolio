@@ -387,6 +387,11 @@ body {
   min-width: 0;
 }
 
+.btn--thin {
+  min-width: 145px;
+  font-size: 0.8rem;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -836,6 +841,88 @@ img {
   margin-top: 2rem;
 }
 
+.modal {
+  padding: 2.5rem;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: rgba(6, 15, 49, 0.9);
+}
+
+.modal.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal__dialog {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  max-width: 1200px;
+  background-color: #fff;
+  -webkit-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  -o-transition: transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.modal__dialog--sm {
+  max-width: 900px;
+}
+
+.modal__close {
+  position: absolute;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 34px;
+  height: 39px;
+  top: 0.9rem;
+  right: 1rem;
+  z-index: 1;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  -o-transition: transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.modal__close:hover {
+  -webkit-transform: translateY(-3px);
+  -ms-transform: translateY(-3px);
+  transform: translateY(-3px);
+}
+
+.modal__content {
+  padding: 5rem 1rem;
+}
+
+.modal__title {
+  margin-bottom: 3.6rem;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #2b2a2c;
+  font-weight: 700;
+}
+
+.modal__timeline {
+  margin: 4.2rem auto;
+}
+
+.modal__progress-bar {
+  margin-bottom: 2.6rem;
+}
+
 .nav__link {
   position: relative;
   margin-right: 1rem;
@@ -886,6 +973,39 @@ img {
   flex-direction: column;
 }
 
+.progress-bar__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+
+.progress-bar__title {
+  font-size: 0.94rem;
+  font-weight: 300;
+}
+
+.progress-bar__right {
+  padding-left: 1.2rem;
+}
+
+.progress-bar__bar {
+  width: 139px;
+  height: 6px;
+  background-color: #efefef;
+}
+
+.progress-bar__progress {
+  height: 100%;
+  background-color: #6a6969;
+  -webkit-transition: width 0.2s linear;
+  -o-transition: width 0.2s linear;
+  transition: width 0.2s linear;
+}
+
 .social__img {
   width: 41px;
   height: 41px;
@@ -908,6 +1028,86 @@ img {
   -webkit-transform: translateY(-5px);
   -ms-transform: translateY(-5px);
   transform: translateY(-5px);
+}
+
+.timeline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 768px;
+  position: relative;
+}
+
+.timeline::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: #2b2a2c;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 1;
+}
+
+.timeline__col {
+  width: 50%;
+}
+
+.timeline__col--left {
+  text-align: right;
+  padding-right: 3.2rem;
+}
+
+.timeline__col--right {
+  padding-left: 3.2rem;
+}
+
+.timeline__title {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2.6rem;
+}
+
+.timeline__item {
+  margin-bottom: 2.6rem;
+}
+
+.timeline__item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline__date {
+  margin-bottom: 0.8rem;
+  display: block;
+  text-decoration: underline;
+  font-size: 0.94rem;
+  color: #2b2a2c;
+}
+
+.timeline__subtitle {
+  margin-bottom: 0.2rem;
+  font-size: 1.06rem;
+  color: #2b2a2c;
+  font-weight: 700;
+}
+
+.timeline__position {
+  font-size: 0.94rem;
+  color: #2b2a2c;
+  font-style: italic;
+}
+
+.timeline__text {
+  margin-top: 0.8rem;
+  font-size: 0.8rem;
+  line-height: 2;
+  color: #6a6969;
+  font-weight: 300;
 }
 
 .user__avatar {
@@ -1086,6 +1286,10 @@ img {
 
 .text-center {
   text-align: center;
+}
+
+.no-scroll {
+  overflow-y: hidden;
 }
 
 @supports (-webkit-appearance:none) {
