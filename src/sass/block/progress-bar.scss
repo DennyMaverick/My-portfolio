@@ -2,11 +2,16 @@
   &__item {
     display: flex;
     align-items: center;
-    margin-bottom: 0.3rem;
+    padding: 1.5rem;
+    border: 0.05rem solid $grey-light-second;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
   }
   &__title {
     font-size: 0.94rem;
     font-weight: 300;
+    max-width: 8.34rem;
+    hyphens: manual;
   }
   &__right {
     padding-left: 1.2rem;

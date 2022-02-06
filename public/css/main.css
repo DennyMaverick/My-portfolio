@@ -545,6 +545,42 @@ img {
   height: 50px;
 }
 
+.contact {
+  background: url("https://via.placeholder.com/477x700") right center no-repeat;
+}
+
+.contact__left {
+  padding: 2rem;
+  width: 47%;
+}
+
+.contact__info {
+  margin: 2rem 0 3rem;
+  padding: 0;
+  list-style: none;
+  font-size: 0.94rem;
+  color: #2b2a2c;
+  font-weight: 300;
+}
+
+.contact__info-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.contact__info-item:last-child {
+  margin-bottom: 0;
+}
+
+.contact__info-icon {
+  margin-right: 0.75rem;
+}
+
 .footer {
   padding: 1rem;
   background-color: #2b2a2c;
@@ -672,6 +708,73 @@ img {
   -webkit-transform: translateY(-0.3rem);
   -ms-transform: translateY(-0.3rem);
   transform: translateY(-0.3rem);
+}
+
+.form__group {
+  margin-bottom: 1.8rem;
+}
+
+.form__label {
+  display: inline-block;
+  margin-bottom: 0.6rem;
+  font-size: 0.8rem;
+  color: #2b2a2c;
+  font-weight: 700;
+}
+
+.form__input,
+.form__textarea {
+  display: block;
+  width: 100%;
+  padding: 1.3rem 1.8rem;
+  border: 1px solid rgba(112, 112, 112, 0.3);
+  border-radius: 1.8rem;
+  font-family: inherit;
+  font-size: 0.8rem;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #2b2a2c;
+}
+
+.form__input::-webkit-input-placeholder,
+.form__textarea::-webkit-input-placeholder {
+  color: #2b2a2c;
+  font-weight: 300;
+}
+
+.form__input::-moz-placeholder,
+.form__textarea::-moz-placeholder {
+  color: #2b2a2c;
+  font-weight: 300;
+}
+
+.form__input:-ms-input-placeholder,
+.form__textarea:-ms-input-placeholder {
+  color: #2b2a2c;
+  font-weight: 300;
+}
+
+.form__input::-ms-input-placeholder,
+.form__textarea::-ms-input-placeholder {
+  color: #2b2a2c;
+  font-weight: 300;
+}
+
+.form__input::placeholder,
+.form__textarea::placeholder {
+  color: #2b2a2c;
+  font-weight: 300;
+}
+
+.form__input:focus,
+.form__textarea:focus {
+  outline: none;
+  border-color: #77c7cb;
+}
+
+.form__textarea {
+  height: 200px;
+  resize: none;
 }
 
 .header {
@@ -915,12 +1018,29 @@ img {
   font-weight: 700;
 }
 
+.modal__title--form {
+  max-width: 40%;
+  text-transform: none;
+}
+
+.modal__subtitle {
+  font-size: 1.06rem;
+  color: #2b2a2c;
+  font-weight: 400;
+}
+
 .modal__timeline {
   margin: 4.2rem auto;
 }
 
 .modal__progress-bar {
   margin-bottom: 2.6rem;
+}
+
+.modal__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .nav__link {
@@ -980,12 +1100,19 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 0.3rem;
+  padding: 1.5rem;
+  border: 0.05rem solid #bbbbcc;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .progress-bar__title {
   font-size: 0.94rem;
   font-weight: 300;
+  max-width: 8.34rem;
+  -webkit-hyphens: manual;
+  -ms-hyphens: manual;
+  hyphens: manual;
 }
 
 .progress-bar__right {
@@ -1295,5 +1422,9 @@ img {
 @supports (-webkit-appearance:none) {
   .slick-loading .slick-list {
     background: #fff url("./ajax-loader.gif") center center no-repeat;
+  }
+
+  .contact {
+    background: url("https://via.placeholder.com/477x700") right center no-repeat;
   }
 }
