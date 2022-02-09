@@ -10,8 +10,6 @@
   <link rel="apple-touch-icon" href="./apple-touch-icon.png">
   <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="./css/main.min.css">
-  <script src="./libs/jquery/jquery.min.js" defer></script>
-  <script src="./libs/vendor-libs/slick.min.js" defer></script>
   <script src="./js/main.js" defer></script>
 </head>
 
@@ -622,7 +620,7 @@
           </div>
           <!--timeline-->
           <div class="text-center">
-            <a class="btn" href="#" data-modal="#modal-hire-me">Написать</a>
+            <a class="btn" href="#" data-modal="#modal-hire-me">Написать мне</a>
           </div>
         </div>
         <!--modal__content -->
@@ -682,6 +680,120 @@
       </div> <!-- modal__dialog-->
 
     </div> <!-- modal -->
+    <!-- Modals -->
+
+    <div class="modal" id="modal_project_1">
+      <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+          <img src="./img/modal/modal-close.svg" alt="Close" width="34" height="39">
+        </button>
+        <div class="modal__modal-work modal-work">
+          <div class="modal-work__preview">
+            <div class="modal-work__slider slider" data-slider="slick">
+              <div class="slider__item">
+                <img class="modal-work__photo" src="./img/projects/thrivetalk/pic_1.jpg" alt="Project-photo">
+              </div>
+              <div class="slider__item">
+                <img class="modal-work__photo" src="./img/projects/thrivetalk/pic_2.jpg" alt="Project-photo">
+              </div>
+              <div class="slider__item">
+                <img class="modal-work__photo" src="./img/projects/thrivetalk/pic_3.jpg" alt="Project-photo">
+              </div>
+              <div class="slider__item">
+                <img class="modal-work__photo" src="./img/projects/thrivetalk/pic_4.jpg" alt="Project-photo">
+              </div>
+              <div class="slider__item">
+                <img class="modal-work__photo" src="./img/projects/thrivetalk/pic_5.jpg" alt="Project-photo">
+              </div>
+              <div class="slider__item">
+                <img class="modal-work__photo" src="./img/projects/thrivetalk/pic_6.jpg" alt="Project-photo">
+              </div>
+            </div>
+          </div>
+          <div class="modal-work__content">
+            <div class="modal-work__header">
+              <h3 class="modal-work__title">Thrivetalk</h3>
+              <div class="modal-work__info">
+                Landing Page <span class="modal-work__info-divider">|</span> 2021
+              </div>
+            </div> <!-- modal-work__header -->
+            <div class="modal-work__client">
+              <div class="modal-work__client-title"> Client:</div>
+              <div class="modal-work__client-company"> Creative Agency </div>
+            </div>
+            <div class="modal-work__text">
+              <p class="modal-work__description">
+                При работе над проектом был реализован следующий функционал:
+              </p>
+              <span class="description-show">Подробнее</span>
+              <div class="more hide">
+                <ul class="modal-work__list modal-list">
+                  <li class="modal-list__item">При сужении окна браузера появляется бургер-иконка, при клике на которую
+                    появляется мобильное
+                    меню навигации и overlay, запрещается scroll</li>
+                  <li class="modal-list__item">При появлении мобильного меню навигации добавляется возможность закрыть
+                    это меню, кликнув на
+                    крестик или кликнув вне мобильного меню (при этом кликая на само меню, окно не закрывается)</li>
+                  <li class="modal-list__item">При открытии мобильного окна навигации, меняя размер окна в большую
+                    сторону, мобильное меню
+                    закрывается и появляется стандартное меню (поэтому при переключении ориентации экрана из
+                    портретной в ландшафтную, например, у планшета, меню примет более удобный вид) </li>
+                  <li class="modal-list__item">Сайт защищен от переполнения контентом, при увеличении контента в блоках,
+                    все отображается
+                    корректно</li>
+                </ul>
+
+                <p class="modal-work__description">
+                  При работе над проектом были использованы следующие технологии, инструменты и плагины:
+                </p>
+                <ul class="modal-work__list modal-list">
+                  <li class="modal-list__item">Flexible Box Layout Module</li>
+                  <li class="modal-list__item">Препроцессор Less</li>
+                  <li class="modal-list__item">Редактор кода Sumlime Text 3</li>
+                  <li class="modal-list__item">Плагины Sublime Text 3: Emmet, LiveReload, AutoFileName и другие</li>
+                  <li class="modal-list__item"> Сайт адаптирован под все размеры экрана. Для этого использовались
+                    медиа-запросы и Flexible Box
+                    Layout Module</li>
+                  <li class="modal-list__item"> При адаптировании сайта под другие устройства использовался метод
+                    Desktop First (сначала был
+                    сделан сайт под ПК, а затем под планшеты и мобильные устройства)</li>
+                  <li class="modal-list__item">СSS / HTML</li>
+                </ul>
+              </div>
+              <span class="description-hide hide">Скрыть</span>
+              <p class="modal-work__description">
+              <ul class="modal-work__list modal-list">
+                <li class="modal-list__item"><a class="modal-list__link"
+                    href="https://dennymaverick.github.io/Thrivetalk/index.html" target="_blank">Ccылка на проект</a>
+                </li>
+                <li class="modal-list__item"><a class="modal-list__link"
+                    href="https://www.figma.com/file/N7qPf1JhteaIfaxZxZMRKC/ThriveTalk-Landing-Page-Copy"
+                    target="_blank">Ссылка на макет Figma</a></li>
+                <li class="modal-list__item"><a class="modal-list__link"
+                    href="https://github.com/DennyMaverick/Thrivetalk" target="_blank">Ссылка на репозиторий GitHub</a>
+                </li>
+                <li class="modal-list__item">Время, потраченное на работу ~ 23 ч</li>
+              </ul>
+              </p>
+            </div>
+            <!--modal-work__text -->
+            <div class="modal-work__footer">
+              <button class="modal-work__btn slickPrev" type="button">
+                <img class="modal-work__arrow modal-work__btn--prev" src="./img/arrows/left-arrow.svg" alt="left arrow"
+                  height="11">
+                <span class="modal-work__btn--text">Назад</span></button>
+              <button class="modal-work__btn slickNext" type="button"><span class="modal-work__btn--text">Вперед</span>
+                <img class="modal-work__arrow modal-work__btn--next" src="./img/arrows/right-arrow.svg"
+                  alt="right arrow" height="11">
+              </button>
+            </div>
+          </div>
+          <!--modal-work__content -->
+        </div>
+        <!--modal-work -->
+      </div> <!-- modal__dialog-->
+    </div> <!-- modal -->
+
   </div>
 </body>
 

@@ -1,10 +1,13 @@
+// jQuery
+import $ from 'jquery';
+// Libraries
+import 'slick-carousel';
 
 $(function () {
+  const worksSlider = $('[data-slider="slick"]');
   /*  Filter
 =========================== */
-
   let filter = $("[data-filter]");
-
   filter.on("click", function (event) {
     event.preventDefault(); //убирает стандартное поведение элементов(ссылок)
 
@@ -25,8 +28,6 @@ $(function () {
       });
     }
   });
-
-  // ============ Modal =============
 
   /*  Modal
 =========================== */
@@ -49,7 +50,7 @@ $(function () {
       });
     }, 200);
 
-    // worksSlider.slick("setPosition");
+    worksSlider.slick("setPosition");
   });
 
   modalClose.on("click", function (event) {
@@ -86,9 +87,41 @@ $(function () {
   });
 
   /*отмена события клика родителя элемента (.modal)
-  при клике на блок .modal__dialog окно не будет 
+  при клике на блок .modal__dialog окно не будет
   закрываться*/
   $(".modal__dialog").on("click", function (event) {
     event.stopPropagation();
   });
-});
+
+  // =============== Slider Slick =============
+
+  worksSlider.slick({
+    //ID слайдер
+    infinite: true, //бесконечная прокрутка
+    slidesToShow: 1, //показывать слайдов
+    slidesToScroll: 1, // скроллить слайдов
+    fade: true,
+    arrows: false, // убираем кнопки слайда по умолчанию
+    dots: true,
+  });
+
+  /*каждой кнопке при нажатии присваиваем метод
+slickPrev(назад) и slickNext(вперед)*/
+  $(".slickPrev").on("click", function (event) {
+    event.preventDefault(); //отменяем стандартное поведение кнопок
+
+    let currentSlider = $(this).parents(".modal").find('[data-slider="slick"]');
+    /*в переменной currentSlider хранится слайдер, по которому мы кликаем
+  именно в том модальном окне, которое вызвано*/
+
+    currentSlider.slick("slickPrev");
+  });
+  $(".slickNext").on("click", function (event) {
+    event.preventDefault(); //отменяем стандартное поведение кнопок
+
+    let currentSlider = $(this).parents(".modal").find('[data-slider="slick"]');
+    //в переменной currentSlider хранится слайдер, по которому мы кликаем
+
+    currentSlider.slick("slickNext");
+  });
+})

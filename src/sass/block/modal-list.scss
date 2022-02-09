@@ -1,0 +1,16 @@
+.modal-list {
+  list-style: disc;
+  &__item {
+    margin-bottom: 1rem;
+    &::marker {
+      color: $orange;
+      font-size: 1rem;
+    }
+  }
+  &__link {
+    color: $orange;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

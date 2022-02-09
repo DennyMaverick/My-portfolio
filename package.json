@@ -55,7 +55,11 @@
     "gulp-webp": "^4.0.1",
     "gulp-webp-css": "^1.1.0",
     "gulp-webp-html": "^1.0.2",
+    "jquery": "^3.6.0",
+    "node-sass-tilde-importer": "^1.0.2",
     "sass": "^1.43.4",
+    "slick": "^1.12.2",
+    "slick-carousel": "^1.8.1",
     "webpack": "^5.61.0",
     "webpack-stream": "^7.0.0"
   }

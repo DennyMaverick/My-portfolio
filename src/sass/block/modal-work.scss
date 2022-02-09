@@ -1,0 +1,107 @@
+.modal-work {
+  &__preview {
+    position: relative;
+    width: 65%;
+    overflow: hidden;
+  }
+  &__photo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+
+    transform: translate3d(-50%, -50%, 0); //выравнивание фото по центру
+  }
+  &__content {
+    position: relative;
+    width: 35%;
+    padding: 3.4rem 1.6rem 1rem 1.73rem;
+  }
+  &__title {
+    margin-bottom: 0.2rem;
+    font-size: 2.12rem;
+    color: $black;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  &__info {
+    font-size: 1.2rem;
+    color: $grey;
+    text-transform: uppercase;
+  }
+  &__info-divider {
+    margin: 0 1rem;
+  }
+  &__header {
+    margin-bottom: 2.2rem;
+  }
+  &__client-title {
+    margin-bottom: 0.2rem;
+    font-size: 1.06rem;
+    color: $black;
+    font-weight: 700;
+  }
+  &__client-company {
+    font-size: 0.94rem;
+    font-style: italic;
+    color: $grey;
+    font-weight: 600;
+  }
+  &__client {
+    margin-bottom: 2.2rem;
+  }
+  &__text {
+    margin-bottom: 8.66rem;
+    @include font(0.8rem, 1.6rem);
+    color: $grey;
+    font-weight: 300;
+  }
+  &__footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    padding: 0 1.8rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__arrow {
+    width: 23px;
+    display: inline-block;
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.94rem;
+    color: $black;
+    text-transform: uppercase;
+    &--prev {
+      margin-right: 0.2rem;
+    }
+    &--next {
+      margin-left: 0.2rem;
+    }
+    &--text {
+      padding-bottom: 3px;
+    }
+  }
+  &__description {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+}
+
+.description-hide,
+.description-show {
+  color: $orange;
+  text-decoration: dotted;
+  cursor: pointer;
+}

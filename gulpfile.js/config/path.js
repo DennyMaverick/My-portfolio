@@ -36,9 +36,9 @@ module.exports = {
   },
 
   libs: {
-    src: pathSrc + '/libs/**/*.js',
-    watch: pathSrc + '/libs/**/*.js',
-    dest: pathDest + '/libs/'
+    src: pathSrc + '/js/libs/**/*.js',
+    watch: pathSrc + '/js/libs/**/*.js',
+    dest: pathDest + '/js/libs/'
   },
 
   img: {
