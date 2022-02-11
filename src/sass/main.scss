@@ -48,7 +48,7 @@ html,
 body {
   @include reset-model;
   min-height: 100vh;
-  overflow-x: hidden;
+  // overflow-x: hidden;
   font-size: $font-size-base;
   font-family: $font-family-base;
   font-size: 1rem;
