@@ -12,6 +12,15 @@
     color: $black;
     font-weight: 300;
   }
+
+  &__info-link {
+    color: $black;
+    transition: color 0.3s ease-in;
+    &:hover {
+      color: $color-wave;
+    }
+  }
+
   &__info-item {
     display: flex;
     align-items: center;

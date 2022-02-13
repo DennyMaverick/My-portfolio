@@ -643,24 +643,36 @@
               Вы можете написать мне на почту или отправить запрос через форму ниже, и я отвечу в ближайшее время.
             </h4>
             <ul class="contact__info">
-              <li class="contact__info-item">
+              <!-- Phone -->
+              <!-- <li class="contact__info-item">
                 <img class="contact__info-icon" src="./img/modal/phone.svg" alt="phone-photo" width="15">
                 8921_____37
-              </li>
+              </li> -->
               <li class="contact__info-item">
                 <img class="contact__info-icon" src="./img/modal/mail.svg" alt="mail-photo" width="15">
-                den_maverick177@mail.ru
+                <a class="contact__info-link" href="mailto:den_maverick177@mail.ru">den_maverick177@mail.ru</a>
               </li>
             </ul>
-            <form class="modal__form form" action="" method="post">
+            <form class="modal__form form" action="php/mail.php" method="POST">
+              <!-- Hidden Required Fields -->
+              <input type="hidden" name="project_name" value="Связаться со мной">
+              <!-- Куда отправлять -->
+              <input type="hidden" name="admin_email" value="den_maverick177@mail.ru, Denis-mamlev@rambler.ru">
+              <!-- От кого отправка (указывается email под домен сайта) -->
+              <input type="hidden" name="email_from" value="den_maverick177@mail.ru">
+              <input type="hidden" name="form_subject" value="Письмо с сайта-портфолио">
+              <!-- END Hidden Required Fields -->
+              <div class="form__group">
+                <label for="input-name" class="form__label">Ваше имя</label>
+                <input name="Имя" type="text" class="form__input" placeholder="Напишите Ваше имя" id="input-name">
+              </div>
               <div class="form__group">
                 <label for="input-email" class="form__label">Адрес Вашей электронной почты</label>
-                <input name="input-email" type="text" class="form__input" placeholder="Напишите Ваш e-mail"
-                  id="input-email">
+                <input name="E-mail" type="text" class="form__input" placeholder="Напишите Ваш e-mail" id="input-email">
               </div>
               <div class="form__group">
                 <label for="input-text" class="form__label">Ваше сообшение</label>
-                <textarea class="form__textarea" name="input-text" id="input-text"
+                <textarea class="form__textarea" name="Сообщение" id="input-text"
                   placeholder="Напишите здесь Ваш запрос"></textarea>
               </div>
               <div class="text-right">
@@ -1718,6 +1730,222 @@
                     href="https://www.figma.com/file/InKhPw92MAhkJPPtCOa615/alivio-landing-page-for-figma"
                     target="_blank">Ссылка на макет Figma</a></li>
                 <li class="modal-list__item">Время, потраченное на работу ~ 8.5 ч</li>
+              </ul>
+              </p>
+            </div>
+            <!--modal-work__text -->
+            <div class="modal-work__footer">
+              <button class="modal-work__btn slickPrev" type="button">
+                <img class="modal-work__arrow modal-work__btn--prev" src="./img/arrows/left-arrow.svg" alt="left arrow"
+                  height="11">
+                <span class="modal-work__btn--text">Назад</span></button>
+              <button class="modal-work__btn slickNext" type="button"><span class="modal-work__btn--text">Вперед</span>
+                <img class="modal-work__arrow modal-work__btn--next" src="./img/arrows/right-arrow.svg"
+                  alt="right arrow" height="11">
+              </button>
+            </div>
+          </div>
+          <!--modal-work__content -->
+        </div>
+        <!--modal-work -->
+      </div> <!-- modal__dialog-->
+    </div> <!-- modal -->
+    <div class="modal" id="modal_delivery">
+      <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+          <img src="./img/modal/modal-close.svg" alt="Close" width="34" height="39">
+        </button>
+        <div class="modal__modal-work modal-work">
+          <div class="modal-work__preview">
+            <div class="modal-work__slider slider" data-slider="slick">
+              <div class="slider__item">
+                <img class="modal-work__photo" src="./img/projects/delivery-food/slide_1.jpg" alt="Project-photo">
+              </div>
+              <div class="slider__item">
+                <img class="modal-work__photo" src="./img/projects/delivery-food/slide_2.jpg" alt="Project-photo">
+              </div>
+              <div class="slider__item">
+                <img class="modal-work__photo" src="./img/projects/delivery-food/slide_3.jpg" alt="Project-photo">
+              </div>
+              <div class="slider__item">
+                <img class="modal-work__photo" src="./img/projects/delivery-food/slide_4.jpg" alt="Project-photo">
+              </div>
+              <div class="slider__item">
+                <img class="modal-work__photo" src="./img/projects/delivery-food/slide_5.jpg" alt="Project-photo">
+              </div>
+              <div class="slider__item">
+                <img class="modal-work__photo" src="./img/projects/delivery-food/slide_6.jpg" alt="Project-photo">
+              </div>
+              <div class="slider__item">
+                <img class="modal-work__photo" src="./img/projects/delivery-food/slide_7.jpg" alt="Project-photo">
+              </div>
+            </div>
+          </div>
+          <div class="modal-work__content">
+            <div class="modal-work__header">
+              <h3 class="modal-work__title">Index Food</h3>
+              <div class="modal-work__info">
+                Лэндинги
+                <span class="modal-work__info-divider">|</span> 2021
+              </div>
+            </div> <!-- modal-work__header -->
+            <div class="modal-work__client">
+              <div class="modal-work__client-title"> Учебный проект:</div>
+              <div class="modal-work__client-company"> Web-школа Glo Academy</div>
+            </div>
+            <div class="modal-work__text">
+              <p class="modal-work__description">
+                При работе над проектом был реализован следующий функционал:
+              </p>
+              <span class="description-show">Подробнее</span>
+              <div class="more hide">
+                <ul class="modal-work__list modal-list">
+                  <li class="modal-list__item">В секции категории блюд с помощью javascript самостоятельно было
+                    реализовано переключение по
+                    табам (при нажатии на нужный пункт категории, произойдет показ выбранных блюд)
+                  </li>
+                  <li class="modal-list__item">Реализация слайдера в блоке главной секции сайта, используя javascript -
+                    плагин Swiper.js</li>
+                  <li class="modal-list__item">При скролле вниз навигационное меню отбрасывает тень (сделано через
+                    javascript) и остается
+                    всегда в видимости пользователя</li>
+                  <li class="modal-list__item">Добавлена затемненная подложка в слайдере и в двух карточках, следующих
+                    за ним, для лучшей
+                    читаемости текста</li>
+                </ul>
+                <p class="modal-work__description">
+                  Работая над данным проектом, были использованы следующие инструменты, технологии:
+                <ul class="modal-work__list modal-list">
+                  <li class="modal-list__item">Редактор кода: Visual Studio Code</li>
+                  <li class="modal-list__item">JavaScript</li>
+                  <li class="modal-list__item">Css / HTML</li>
+                  <li class="modal-list__item">Слайдер - Swiper.js</li>
+                  <li class="modal-list__item">Flex-box Layout</li>
+                  <li class="modal-list__item">Адаптивная верстка под смартфоны, планшеты и ноутбуки</li>
+                </ul>
+                </p>
+              </div>
+              <span class="description-hide hide">Скрыть</span>
+              <p class="modal-work__description">
+              <ul class="modal-work__list modal-list">
+                <li class="modal-list__item"><a class="modal-list__link"
+                    href="https://dennymaverick.github.io/Delivery-Food/index.html" target="_blank">Ccылка
+                    на
+                    проект</a>
+                </li>
+                <li class="modal-list__item"><a class="modal-list__link"
+                    href="https://github.com/DennyMaverick/Delivery-Food" target="_blank">Ссылка на
+                    репозиторий GitHub</a>
+                </li>
+                <li class="modal-list__item"><a class="modal-list__link"
+                    href="https://www.figma.com/file/M1hG6MPR9PjhU7RunmOnkU/%D0%98%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%95%D0%B4%D0%B0-Design"
+                    target="_blank">Ссылка на макет Figma</a></li>
+                <li class="modal-list__item">Время, потраченное на работу ~ 7 ч</li>
+              </ul>
+              </p>
+            </div>
+            <!--modal-work__text -->
+            <div class="modal-work__footer">
+              <button class="modal-work__btn slickPrev" type="button">
+                <img class="modal-work__arrow modal-work__btn--prev" src="./img/arrows/left-arrow.svg" alt="left arrow"
+                  height="11">
+                <span class="modal-work__btn--text">Назад</span></button>
+              <button class="modal-work__btn slickNext" type="button"><span class="modal-work__btn--text">Вперед</span>
+                <img class="modal-work__arrow modal-work__btn--next" src="./img/arrows/right-arrow.svg"
+                  alt="right arrow" height="11">
+              </button>
+            </div>
+          </div>
+          <!--modal-work__content -->
+        </div>
+        <!--modal-work -->
+      </div> <!-- modal__dialog-->
+    </div> <!-- modal -->
+    <div class="modal" id="modal_sea-products">
+      <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+          <img src="./img/modal/modal-close.svg" alt="Close" width="34" height="39">
+        </button>
+        <div class="modal__modal-work modal-work">
+          <div class="modal-work__preview">
+            <div class="modal-work__slider slider" data-slider="slick">
+              <div class="slider__item">
+                <img class="modal-work__photo" src="./img/projects/sea-products/sea-products.jpg" alt="Project-photo">
+              </div>
+              <div class="slider__item">
+                <img class="modal-work__photo" src="./img/projects/sea-products/slide-1.jpg" alt="Project-photo">
+              </div>
+              <div class="slider__item">
+                <img class="modal-work__photo" src="./img/projects/sea-products/slide-2.jpg" alt="Project-photo">
+              </div>
+              <div class="slider__item">
+                <img class="modal-work__photo" src="./img/projects/sea-products/slide-3.jpg" alt="Project-photo">
+              </div>
+              <div class="slider__item">
+                <img class="modal-work__photo" src="./img/projects/sea-products/slide-4.jpg" alt="Project-photo">
+              </div>
+            </div>
+          </div>
+          <div class="modal-work__content">
+            <div class="modal-work__header">
+              <h3 class="modal-work__title">Морепродукты из Норвегии</h3>
+              <div class="modal-work__info">
+                Лэндинги
+                <span class="modal-work__info-divider">|</span> 2021
+              </div>
+            </div> <!-- modal-work__header -->
+            <div class="modal-work__client">
+              <div class="modal-work__client-title"> Учебный проект:</div>
+              <div class="modal-work__client-company"> Web-школа от 0 до 1</div>
+            </div>
+            <div class="modal-work__text">
+              <p class="modal-work__description">
+                При работе над проектом был реализован следующий функционал:
+              </p>
+              <span class="description-show">Подробнее</span>
+              <div class="more hide">
+                <ul class="modal-work__list modal-list">
+                  <li class="modal-list__item">На главной странице сайта и в секции ниже был использован jQuery - плагин
+                    Slider Slick.js. С его
+                    помощью на сайт были установлены слайдеры
+                  </li>
+                  <li class="modal-list__item">После главной секции использованы два дополняющих друг друга слайдера,
+                    связанных между собой с
+                    помощью свойства slick.js slider - asNavFor</li>
+                  <li class="modal-list__item">При смене окна на размер меньше 360 px в главной секции слайдер листается
+                    автоматически</li>
+                  <li class="modal-list__item">На мобильных устройствах и планшетах вместо меню отображается
+                    меню-бургер, кликнув на который плавно
+                    выезжает меню сверху, и также пропадает при повторном нажатии</li>
+                </ul>
+                <p class="modal-work__description">
+                  Работая над данным проектом, были использованы следующие инструменты, технологии:
+                <ul class="modal-work__list modal-list">
+                  <li class="modal-list__item">Редактор кода: Visual Studio Code</li>
+                  <li class="modal-list__item">JavaScript</li>
+                  <li class="modal-list__item">Css / HTML</li>
+                  <li class="modal-list__item">Слайдер - Slick</li>
+                  <li class="modal-list__item">Flex-box Layout</li>
+                  <li class="modal-list__item">Адаптивная верстка под смартфоны, планшеты и ноутбуки</li>
+                </ul>
+                </p>
+              </div>
+              <span class="description-hide hide">Скрыть</span>
+              <p class="modal-work__description">
+              <ul class="modal-work__list modal-list">
+                <li class="modal-list__item"><a class="modal-list__link"
+                    href="https://dennymaverick.github.io/Sea_products/index.html" target="_blank">Ccылка
+                    на
+                    проект</a>
+                </li>
+                <li class="modal-list__item"><a class="modal-list__link"
+                    href="https://github.com/DennyMaverick/Sea_products" target="_blank">Ссылка на
+                    репозиторий GitHub</a>
+                </li>
+                <li class="modal-list__item"><a class="modal-list__link"
+                    href="https://www.figma.com/file/KarBy7Dmzmq4em3WoZxwC5/%D0%BC%D0%BE%D1%80%D0%B5%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D1%8B-Copy"
+                    target="_blank">Ссылка на макет Figma</a></li>
+                <li class="modal-list__item">Время, потраченное на работу ~ 15 ч</li>
               </ul>
               </p>
             </div>

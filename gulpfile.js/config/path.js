@@ -41,6 +41,12 @@ module.exports = {
     dest: pathDest + '/js/libs/'
   },
 
+  php: {
+    src: pathSrc + '/php/**/*.*',
+    watch: pathSrc + '/php/**/*.*',
+    dest: pathDest + '/php/'
+  },
+
   img: {
     src: pathSrc + '/img/**/*.{png,jpg,jpeg,gif,svg}',
     watch: pathSrc + '/img/**/*.{png,jpg,jpeg,gif,svg}',
