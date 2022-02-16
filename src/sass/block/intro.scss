@@ -8,6 +8,9 @@
     //border-bottom opacity 30%
     border-bottom: 1px solid transparentize($grey, 0.7);
     border-radius: 10px;
+    @include bp-desk(tablet) {
+      flex-direction: column;
+    }
   }
 
   &__title {
@@ -15,18 +18,30 @@
     font-size: 3rem;
     font-weight: 700;
     color: $black;
+    @include bp-desk(mobile-sm) {
+      font-size: 2rem;
+    }
   }
 
   &__subtitle {
     font-size: 2.13rem;
     font-weight: 300;
     color: $black;
+    @include bp-desk(mobile-sm) {
+      font-size: 1.7rem;
+    }
   }
 
   &__position {
     margin-bottom: 25px;
     font-size: 1.2rem;
     opacity: 0.7;
+  }
+
+  &__content {
+    @include bp-desk(tablet) {
+      margin-bottom: 3rem;
+    }
   }
 
   &__social {
@@ -36,5 +51,16 @@
 
   &__photo {
     opacity: 0.7;
+    @include bp-desk(tablet) {
+      max-width: 370px;
+      align-self: flex-end;
+    }
+    @include bp-desk(mobile-md) {
+      max-width: 300px;
+      align-self: flex-end;
+    }
+  }
+  &__image-container {
+    align-self: flex-end;
   }
 }

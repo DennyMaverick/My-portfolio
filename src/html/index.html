@@ -9,6 +9,8 @@
   <link rel="icon" href="./img/favicon/favicon.svg">
   <link rel="apple-touch-icon" href="./apple-touch-icon.png">
   <link rel="manifest" href="manifest.json">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" defer></script>
   <link rel="stylesheet" href="./css/main.min.css">
   <script src="./js/main.js" defer></script>
 </head>
@@ -86,14 +88,16 @@
           </div>
 
           <a class="btn social__btn" href="#" data-modal="#modal-hire-me">Поговорим?</a>
-          <button class="btn social__btn" type="button" data-modal="#modal-resume">Резюме</button>
+          <a class="btn social__btn" href="#" type="button" data-modal="#modal-resume">Резюме</a>
         </div>
-        <img class="intro__photo" src="img/intro/photo.png" width="500" height="500" alt="my photo">
+        <div class="intro__image-container">
+          <img class="intro__photo" src="img/intro/photo.png" width="500" height="500" alt="my photo">
+        </div>
       </div>
       <!--intro__inner -->
     </section>
     <!--Intro-->
-    <section class="works" id="work">
+    <section class="works hide" id="work">
       <h2 class="vhidden">Работы портфолио</h2>
       <div class="container">
         <nav class="works__nav">
@@ -301,7 +305,7 @@
       </div>
       <!--container -->
     </section> <!-- works-->
-    <section class="about" id="about">
+    <section class="about hide" id="about">
       <div class="container">
         <div class="about__inner">
           <div class="about__image-box">
@@ -335,7 +339,7 @@
         <!--about__inner -->
       </div>
     </section> <!-- about-->
-    <footer class="footer" id="contacts">
+    <footer class="footer hide" id="contacts">
       <div class="footer__inner container">
         <div class="footer__credits">
           <p class="footer__copyright">
@@ -391,10 +395,10 @@
         <div class="modal__content">
           <h3 class="modal__title text-center">Резюме</h3>
           <div class="text-center">
-            <a class="btn btn--thin" href="#">Загрузить в PDF</a>
+            <a class="btn btn--thin" id="clickbind" href="#">Загрузить в PDF</a>
             <a class="btn btn--thin" href="#">Распечатать</a>
           </div>
-          <div class="modal__timeline timeline">
+          <div class="modal__timeline timeline" id="resume">
             <div class="timeline__col timeline__col--left">
               <h4 class="timeline__title">Опыт</h4>
               <div class="timeline__item">
@@ -1648,7 +1652,7 @@
           <div class="modal-work__preview">
             <div class="modal-work__slider slider" data-slider="slick">
               <div class="slider__item">
-                <img class="modal-work__photo" src="./img/projects/olivia/main-pic.jpg" alt="Project-photo">
+                <img class="modal-work__photo" src="./img/projects/olivia/main-pic.png" alt="Project-photo">
               </div>
               <div class="slider__item">
                 <img class="modal-work__photo" src="./img/projects/olivia/slide-1.jpg" alt="Project-photo">

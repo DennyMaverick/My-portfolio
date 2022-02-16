@@ -16,7 +16,11 @@
     bottom: 0;
     right: 0;
     background-color: white;
-    transition: transform 1s ease-in;
+    transition: transform 1s ease-in, opacity 1s ease-in;
+    &-active {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 
   &__inner {
@@ -30,6 +34,9 @@
     flex-wrap: wrap;
     height: 100%;
     align-items: center;
+    @include bp-desk(tablet) {
+      display: none;
+    }
   }
 
   &__user {

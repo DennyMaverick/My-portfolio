@@ -14,4 +14,15 @@
       transform: translateY(-5px);
     }
   }
+
+  &__btn {
+    @include bp-desk(mobile-md) {
+      display: block;
+    }
+  }
+  &__btn + &__btn {
+    @include bp-desk(mobile-md) {
+      margin-top: 1rem;
+    }
+  }
 }
