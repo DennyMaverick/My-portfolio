@@ -11,3 +11,9 @@ mobileLinks.forEach(function (item) {
     mobileNav.classList.remove('header__mobile-modal-active');
   }
 });
+
+window.addEventListener('resize', () => {
+  if (document.documentElement.clientWidth > 992) {
+    mobileNav.classList.remove('header__mobile-modal-active');
+  }
+});

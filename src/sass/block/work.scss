@@ -12,6 +12,9 @@
   &__image {
     height: 300px;
     object-fit: contain;
+    @include bp-desk(tablet) {
+      height: auto;
+    }
   }
   &__box-img {
     display: flex;

@@ -51,16 +51,12 @@
 
   &__photo {
     opacity: 0.7;
+  }
+  &__image-container {
+    align-self: flex-end;
     @include bp-desk(tablet) {
       max-width: 370px;
       align-self: flex-end;
     }
-    @include bp-desk(mobile-md) {
-      max-width: 300px;
-      align-self: flex-end;
-    }
-  }
-  &__image-container {
-    align-self: flex-end;
   }
 }

@@ -3,6 +3,15 @@
     display: flex;
     flex-basis: 33.33333%;
     padding: 1rem;
+    @include bp-desk(notebook) {
+      flex-basis: 40%;
+    }
+    @include bp-desk(tablet) {
+      flex-basis: 77%;
+    }
+    @include bp-desk(mobile) {
+      flex-basis: 100%;
+    }
   }
 
   &__work {

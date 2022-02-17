@@ -35,7 +35,7 @@ const watcher = () => {
   watch(path.img.watch, img).on('all', browserSync.reload);
   watch(path.font.watch, font).on('all', browserSync.reload);
   watch(path.favicon.watch, favicon).on('all', browserSync.reload);
-  watch(path.php.watch, favicon).on('all', browserSync.reload);
+  watch(path.php.watch, php).on('all', browserSync.reload);
   // watch(path.libs.watch, libs).on('all', browserSync.reload);
 }
 
