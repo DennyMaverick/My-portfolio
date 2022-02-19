@@ -1,7 +1,14 @@
 .header {
-  padding-top: 1.2rem;
-  padding-bottom: 1.2rem;
-  position: relative;
+  padding-top: 1.7rem;
+  padding-bottom: 1.7rem;
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  z-index: 1300;
+  @include bp-desk(mobile) {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
   &__mobile-modal {
     opacity: 0;
     transform: translateX(-2000px);
@@ -25,6 +32,12 @@
 
   &__inner {
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__fixed-menu {
+    display: flex;
     justify-content: space-between;
     align-items: center;
   }
@@ -40,6 +53,8 @@
   }
 
   &__user {
+    position: absolute;
+    left: 30px;
     display: flex;
     align-items: center;
     cursor: pointer;

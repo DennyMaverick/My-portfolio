@@ -1,0 +1,7 @@
+
+// ..............
+// Перевод px в rem
+// .................
+@mixin toRem($property, $value, $base-size: 16) {
+  #{$property}: math.div($value, $base-size) + rem;
+}
