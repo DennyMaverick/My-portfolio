@@ -75,15 +75,16 @@ $(function () {
     event.preventDefault();
 
     let $this = $(this);
+    if (document.documentElement.clientWidth > 992) {
+      $this.find(".modal__dialog").css({
+        transform: "rotateX(90deg)",
+      });
 
-    $this.find(".modal__dialog").css({
-      transform: "rotateX(90deg)",
-    });
-
-    setTimeout(function () {
-      $this.removeClass("show");
-      $("body").removeClass("no-scroll");
-    }, 200);
+      setTimeout(function () {
+        $this.removeClass("show");
+        $("body").removeClass("no-scroll");
+      }, 200);
+    }
   });
 
   /*отмена события клика родителя элемента (.modal)

@@ -1,8 +1,20 @@
 .contact {
-  background: url('https://via.placeholder.com/477x700') right center no-repeat;
   &__left {
     padding: 2rem;
     width: 47%;
+    @include bp-desk(tablet) {
+      width: 100%;
+      max-width: 607px;
+    }
+  }
+  &__right {
+    padding: 2rem;
+    background: url('https://via.placeholder.com/477x700') right center no-repeat;
+    height: 700px;
+    width: 477px;
+    @include bp-desk(tablet) {
+      display: none;
+    }
   }
   &__info {
     margin: 2rem 0 3rem;

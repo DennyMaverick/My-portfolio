@@ -17,40 +17,42 @@
 
 <body>
   <div class="wrapper">
-    <header class="header container">
-      <div class="header__mobile-modal mobile-modal">
-        <div class="mobile-modal__close close-modal-mobile">
-          <span class="close-modal-mobile__text">
-            Закрыть
-          </span>
-          <img class="close-modal-mobile__arrow" src="../img/arrows/arrow-left_modal-mobile.svg" alt="arrow left">
-        </div>
-        <nav class="mobile-modal__nav mobile-nav">
-          <a class="mobile-nav__link" href="#work">Мое портфолио</a>
-          <a class="mobile-nav__link" href="#about">Обо мне</a>
-          <a class="mobile-nav__link" href="#blog">Блог</a>
-          <a class="mobile-nav__link" href="#contacts">Контакты</a>
-          <a class="mobile-nav__link btn mobile-nav__link--btn" href="#" data-modal="#modal-hire-me">Поговорим?</a>
-        </nav>
-      </div>
-      <div class="header__inner">
-        <a class="header__user user" href="#about">
-          <img class="user__avatar" width="57" height="57" src="./img/user/photo.png" alt="Avatar">
-          <div class="user__content">
-            <span class="user__name">Денис <br> Мамлев</span>
-            <span class="user__prof">Web - разработчик</span>
+    <header class="header">
+      <div class="container">
+        <div class="header__mobile-modal mobile-modal">
+          <div class="mobile-modal__close close-modal-mobile">
+            <span class="close-modal-mobile__text">
+              Закрыть
+            </span>
+            <img class="close-modal-mobile__arrow" src="../img/arrows/arrow-left_modal-mobile.svg" alt="arrow left">
           </div>
-        </a>
-        <nav class="header__nav nav" id="nav">
-          <a class="nav__link" href="#work">Мое портфолио</a>
-          <a class="nav__link" href="#about">Обо мне</a>
-          <a class="nav__link" href="#blog">Блог</a>
-          <a class="nav__link" href="#contacts">Контакты</a>
-          <a class="nav__link btn nav__link--btn" href="#" data-modal="#modal-hire-me">Поговорим?</a>
-        </nav>
-        <button class="burger-btn" type="button" id="nav-toggle">
-          <img class="burger__icon" src="../img/button/menu.svg" alt="burger icon">
-        </button>
+          <nav class="mobile-modal__nav mobile-nav">
+            <a class="mobile-nav__link" href="#work">Мое портфолио</a>
+            <a class="mobile-nav__link" href="#about">Обо мне</a>
+            <a class="mobile-nav__link" href="#blog">Блог</a>
+            <a class="mobile-nav__link" href="#contacts">Контакты</a>
+            <a class="mobile-nav__link btn mobile-nav__link--btn" href="#" data-modal="#modal-hire-me">Поговорим?</a>
+          </nav>
+        </div>
+        <div class="header__inner">
+          <a class="header__user user" href="#about">
+            <img class="user__avatar" width="57" height="57" src="./img/user/photo.png" alt="Avatar">
+            <div class="user__content">
+              <span class="user__name">Денис <br> Мамлев</span>
+              <span class="user__prof">Web - разработчик</span>
+            </div>
+          </a>
+          <nav class="header__nav nav" id="nav">
+            <a class="nav__link" href="#work">Мое портфолио</a>
+            <a class="nav__link" href="#about">Обо мне</a>
+            <a class="nav__link" href="#blog">Блог</a>
+            <a class="nav__link" href="#contacts">Контакты</a>
+            <a class="nav__link btn nav__link--btn" href="#" data-modal="#modal-hire-me">Поговорим?</a>
+          </nav>
+          <button class="burger-btn" type="button" id="nav-toggle">
+            <img class="burger__icon" src="../img/button/menu.svg" alt="burger icon">
+          </button>
+        </div>
       </div>
     </header>
     <section class="intro">
@@ -689,14 +691,9 @@
               </div>
             </form>
           </div>
-          <!--contact__left-->
-          <!-- Если в дальнейшем вставлять фото в правую часть,
-                нужно будет создать див с contact__right и позиционировать
-                абсолютно изображение относительно блока contact -->
-
-
-
-
+          <div class="contact__right">
+            <h2>Place for photo</h2>
+          </div>
         </div>
         <!--contact-->
 
