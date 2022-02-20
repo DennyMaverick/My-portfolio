@@ -65,20 +65,36 @@
     text-transform: uppercase;
     color: $black;
     font-weight: 700;
-    &--form {
+    &--form, &--resume {
       max-width: 40%;
       text-transform: none;
+      @include bp-desk(mobile) {
+        font-size: 2.4rem;
+        margin-top: 3rem;
+      }
       @include media-down(599px) {
         font-size: 2rem;
         max-width: 80%;
       }
       @include bp-desk(mobile-md) {
+        margin-top: 1rem;
         font-size: 1.7rem;
       }
-      @include bp-desk(mobile) {
-        margin-top: 3rem;
+    }
+    &--resume {
+      max-width: 100%;
+    }
+    @include bp-desk(mobile) {
+      &--resume {
+        text-transform: uppercase;
       }
     }
+    @include bp-desk(mobile-md) {
+      &--resume {
+        max-width: 40%;
+      }
+    }
+
   }
   &__subtitle {
     // text-transform: uppercase;

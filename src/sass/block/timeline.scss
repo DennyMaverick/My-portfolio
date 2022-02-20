@@ -4,7 +4,9 @@
   width: 100%;
   max-width: 768px;
   position: relative;
-
+  @include bp-desk(mobile) {
+    justify-content: center;
+  }
   &::before {
     content: '';
     display: block;
@@ -16,6 +18,9 @@
     top: 0;
     left: 50%;
     z-index: 1;
+    @include bp-desk(mobile) {
+      display: none;
+    }
   }
   &__col {
     width: 50%;
@@ -24,8 +29,37 @@
       padding-right: 3.2rem;
     }
     &--right {
+      position: relative;
       padding-left: 3.2rem;
     }
+    @include bp-desk(mobile) {
+      width: 100%;
+      max-width: 368px;
+      &--left,
+      &--right {
+        text-align: left;
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
+  }
+  &__arrow-up {
+    display: inline-block;
+    width: 23px;
+    position: absolute;
+    bottom: -47px;
+    right: 0;
+    &:focus {
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      outline: none;
+    }
+    @include bp-desk(mobile) {
+      bottom: -30px;
+      left: 0;
+    }
+  }
+  &__col + &__col {
+    margin-top: 2rem;
   }
   &__title {
     font-size: 1.2rem;
