@@ -11,6 +11,7 @@ burger && burger.addEventListener('click', function () {
 mobileLinks.forEach(function (item) {
   item.onclick = function () {
     mobileNav.classList.remove('header__mobile-modal-active');
+    body.classList.remove('no-scroll');
   }
 });
 

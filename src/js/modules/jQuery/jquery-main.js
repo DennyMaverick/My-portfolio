@@ -103,7 +103,15 @@ $(function () {
     slidesToScroll: 1, // скроллить слайдов
     fade: true,
     arrows: false, // убираем кнопки слайда по умолчанию
-    dots: true,
+    dots: false,
+    responsive: [
+      {
+        breakpoint: 769,
+        settings: {
+          autoplay: true
+        }
+      }
+    ]
   });
 
   /*каждой кнопке при нажатии присваиваем метод
