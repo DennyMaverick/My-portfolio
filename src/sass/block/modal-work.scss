@@ -6,28 +6,20 @@
     @include bp-desk(tablet) {
       width: 50%;
     }
-
     @include bp-desk(mobile) {
       width: 100%;
-      min-height: 300px;
+      height: 300px;
       order: 2;
-    }
-    @include bp-desk(mobile-sm) {
-      min-height: 180px;
-    }
-    @media (max-height: 420px) {
-      min-height: 85vh;
     }
   }
   &__photo {
-    @include bp-mobile(mobile-up) {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      z-index: 1;
-      transform: translate3d(-50%, -50%, 0);
-      // выравнивание фото по центру
-    }
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-height: 300px;
+    z-index: 1;
+    transform: translate3d(-50%, -50%, 0);
+    // выравнивание фото по центру
   }
   &__content {
     position: relative;
@@ -38,7 +30,7 @@
     }
 
     @include bp-desk(mobile) {
-      padding: 3.4rem .7rem 1rem;
+      padding: 3.4rem 0.7rem 1rem;
       width: 100%;
       order: 1;
     }
@@ -58,7 +50,7 @@
     color: $grey;
     text-transform: uppercase;
     @include bp-desk(mobile) {
-      font-size: .9rem;
+      font-size: 0.9rem;
     }
   }
   &__info-divider {
@@ -83,12 +75,12 @@
     margin-bottom: 2.2rem;
   }
   &__text {
-    margin-bottom: 0rem;
+    margin-bottom: 6rem;
     @include font(0.8rem, 1.6rem);
     color: $grey;
     font-weight: 300;
     @include bp-desk(mobile) {
-      margin-bottom: 2.6rem;
+      margin-bottom: 5rem;
     }
   }
   &__footer {
@@ -111,9 +103,11 @@
   }
   &__arrow-up {
     display: block;
-    margin-bottom: 7rem;
+    position: fixed;
+    right: 30px;
+    bottom: 112px;
     @include bp-desk(mobile) {
-      margin-bottom: 1rem;
+      bottom: 320px;
     }
     &:focus {
       -webkit-tap-highlight-color: rgba(0, 0, 0, 0);

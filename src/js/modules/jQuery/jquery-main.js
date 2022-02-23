@@ -133,4 +133,6 @@ slickPrev(назад) и slickNext(вперед)*/
 
     currentSlider.slick("slickNext");
   });
+
+
 })

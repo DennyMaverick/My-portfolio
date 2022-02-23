@@ -47,11 +47,11 @@
     &:hover {
       transform: translateY(-3px);
     }
-    @include bp-desk(mobile) {
+    @include bp-desk(tablet) {
       width: 27px;
       height: 32px;
     }
-    @include bp-desk(mobile-md) {
+    @include bp-desk(mobile) {
       width: 21px;
       height: 26px;
     }

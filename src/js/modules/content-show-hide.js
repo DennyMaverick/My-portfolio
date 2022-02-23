@@ -8,12 +8,13 @@ function informationShow() {
       descriptionHide.forEach(function (item) {
         item.classList.toggle("hide");
       });
+      this.classList.add("hide");
 
-      if (this.nextElementSibling.classList.toggle("hide")) {
-        this.textContent = "Подробнее";
-      } else {
-        this.textContent = "Скрыть";
-      }
+      // if (this.nextElementSibling.classList.toggle("hide")) {
+      //   this.textContent = "Подробнее";
+      // } else {
+      //   this.textContent = "Скрыть";
+      // }
     });
   });
 }
@@ -23,9 +24,10 @@ function informationHidden() {
     item.addEventListener("click", function () {
       this.classList.add("hide");
       this.previousElementSibling.classList.add("hide");
-      descriptionShow.forEach(function (item) {
-        item.textContent = "Подробнее";
-      });
+      descriptionShow.classList.remove('hide');
+      // descriptionShow.forEach(function (item) {
+      //   item.textContent = "Подробнее";
+      // });
     });
   });
 }
@@ -34,9 +36,9 @@ function hideEverything() {
   descriptionHide.forEach(function (item) {
     item.classList.add("hide");
     item.previousElementSibling.classList.add("hide");
-    descriptionShow.forEach(function (item) {
-      item.textContent = "Подробнее";
-    });
+    // descriptionShow.forEach(function (item) {
+    //   item.textContent = "Подробнее";
+    // });
   });
 }
 
