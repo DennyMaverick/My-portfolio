@@ -59,4 +59,9 @@
       margin-left: 0;
     }
   }
+  &__print {
+    @include bp-desk(notebook) {
+      display: none !important;
+    }
+  }
 }

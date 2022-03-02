@@ -9,6 +9,8 @@ import './modules/burger-menu';
 import './modules/shadow-scrolled';
 import './modules/hide-user';
 import './modules/ontop';
+import './modules/print';
+import './modules/hidden-scroll-modal-hire';
 
 
 

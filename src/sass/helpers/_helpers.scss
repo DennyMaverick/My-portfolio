@@ -15,6 +15,10 @@
   overflow: hidden;
 }
 
+.no-scroll-important {
+  overflow: hidden !important;
+}
+
 .up {
   display: none;
 }

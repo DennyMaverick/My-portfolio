@@ -1452,18 +1452,10 @@ img {
   outline: none;
 }
 
-.timeline__col+.timeline__col {
-  margin-top: 2rem;
-}
-
 .timeline__title {
   font-size: 1.2rem;
   text-transform: uppercase;
   font-weight: 700;
-  margin-bottom: 2.6rem;
-}
-
-.timeline__item {
   margin-bottom: 2.6rem;
 }
 
@@ -1685,6 +1677,10 @@ img {
   overflow: hidden;
 }
 
+.no-scroll-important {
+  overflow: hidden !important;
+}
+
 .up {
   display: none;
 }
@@ -1699,6 +1695,10 @@ img {
   .about {
     padding: 0;
     padding-bottom: 3rem;
+  }
+
+  .btn__print {
+    display: none !important;
   }
 
   .portfolio__col {
@@ -1990,6 +1990,10 @@ img {
   .timeline__arrow-up {
     bottom: -30px;
     left: 0;
+  }
+
+  .timeline__item {
+    margin-bottom: 2.6rem;
   }
 
   .works__nav {

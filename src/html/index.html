@@ -90,7 +90,7 @@
           </div>
 
           <a class="btn social__btn" href="#" data-modal="#modal-hire-me">Поговорим?</a>
-          <a class="btn social__btn" href="#" type="button" data-modal="#modal-resume">Резюме</a>
+          <a class="btn social__btn hire-resume-btn" href="#" type="button" data-modal="#modal-resume">Резюме</a>
         </div>
         <div class="intro__image-container">
           <img class="intro__photo" src="img/intro/photo.png" width="500" height="500" alt="my photo">
@@ -334,7 +334,7 @@
               </p>
             </div> <!-- about__text-->
             <a class="btn about__btn" href="#" data-modal="#modal-hire-me">Поговорим?</a>
-            <button class="btn about__btn" type="button" data-modal="#modal-resume">Резюме</button>
+            <button class="btn about__btn hire-resume-btn" type="button" data-modal="#modal-resume">Резюме</button>
           </div> <!-- about__content-->
         </div>
         <!--about__inner -->
@@ -382,7 +382,7 @@
             <a class="footer__nav-link" href="#" data-modal="#modal-hire-me">Контакты</a>
           </div>
           <div class="footer__nav-btns">
-            <a class="footer__nav-link footer__nav-btn" href="#" data-modal="#modal-resume">Резюме</a>
+            <a class="footer__nav-link footer__nav-btn hire-resume-btn" href="#" data-modal="#modal-resume">Резюме</a>
             <a class="footer__nav-link footer__nav-btn" href="#" data-modal="#modal-hire-me">Поговорим?</a>
           </div>
         </nav>
@@ -399,10 +399,9 @@
         </button>
         <div class="modal__content">
           <h3 class="modal__title modal__title--resume text-center">Резюме</h3>
-          <div class="text-center">
+          <!-- <div class="text-center">
             <a class="btn__resume btn btn--thin" href="#">Загрузить в PDF</a>
-            <a class="btn__resume btn btn--thin" href="#">Распечатать</a>
-          </div>
+</div> -->
           <div class="modal__timeline timeline" id="resume">
             <div class="timeline__col timeline__col--left">
               <h4 class="timeline__title">Опыт</h4>
@@ -637,7 +636,8 @@
           </div>
           <!--timeline-->
           <div class="text-center">
-            <a class="btn btn__resume" href="#" data-modal="#modal-hire-me">Написать мне</a>
+            <a class="btn btn__resume hire-resume-btn btn--thin" href="#" data-modal="#modal-hire-me">Написать мне</a>
+            <a id="printLink" title="Распечатать резюме" class="btn__resume btn__print btn btn--thin" href="#">Распечатать резюме</a>
           </div>
         </div>
         <!--modal__content -->

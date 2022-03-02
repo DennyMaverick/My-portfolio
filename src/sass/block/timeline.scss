@@ -58,9 +58,6 @@
       left: 0;
     }
   }
-  &__col + &__col {
-    margin-top: 2rem;
-  }
   &__title {
     font-size: 1.2rem;
     text-transform: uppercase;
@@ -69,7 +66,9 @@
     margin-bottom: 2.6rem;
   }
   &__item {
-    margin-bottom: 2.6rem;
+    @include bp-desk(mobile) {
+      margin-bottom: 2.6rem;
+    }
     &:last-child {
       margin-bottom: 0;
     }
