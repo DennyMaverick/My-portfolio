@@ -14,6 +14,7 @@ const img = require("./task/img.js");
 const font = require("./task/font.js");
 const favicon = require("./task/favicon.js");
 const php = require("./task/php.js");
+// const css = require("./task/css.js");
 // const libs = require("./task/libs.js");
 
 
@@ -36,6 +37,7 @@ const watcher = () => {
   watch(path.font.watch, font).on('all', browserSync.reload);
   watch(path.favicon.watch, favicon).on('all', browserSync.reload);
   watch(path.php.watch, php).on('all', browserSync.reload);
+  // watch(path.css.watch, css).on('all', browserSync.reload);
   // watch(path.libs.watch, libs).on('all', browserSync.reload);
 }
 
@@ -58,6 +60,7 @@ exports.img = img;
 exports.font = font;
 exports.favicon = favicon;
 exports.php = php;
+// exports.php = css;
 // exports.libs = libs;
 
 // Сборка

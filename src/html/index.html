@@ -9,9 +9,13 @@
   <link rel="icon" href="./img/favicon/favicon.svg">
   <link rel="apple-touch-icon" href="./apple-touch-icon.png">
   <link rel="manifest" href="manifest.json">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" defer></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" defer></script> -->
+  <!-- Подключение библиотеки AOS - стили -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/main.min.css">
+  <!-- Подключение библиотеки AOS - JavaScript -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./js/main.js" defer></script>
 </head>
 
@@ -58,34 +62,34 @@
     <section class="intro" id="home">
       <div class="intro__inner container">
         <div class="intro__content">
-          <h2 class="intro__subtitle">Добрый день, Я</h2>
-          <h1 class="intro__title">Денис Мамлев</h1>
-          <div class="intro__position">Web - разработчик</div>
+          <h2 class="intro__subtitle" data-aos="zoom-in">Добрый день, Я</h2>
+          <h1 class="intro__title" data-aos-delay="2000" data-aos="zoom-in">Денис Мамлев</h1>
+          <div class="intro__position" data-aos="fade-right" data-aos-delay="1500">Web - разработчик</div>
           <div class="intro__social social">
             <a href="https://t.me/Denny_maverick" target="_blank" class="social__link">
               <img class="social__image" src="./img/intro/first_pic.png" width="41" height="41" title="Мой телеграм"
-                alt="My telegram">
+                alt="My telegram" data-aos="zoom-in" data-aos-delay="300">
             </a>
             <a href="https://web.whatsapp.com/send?phone=%2B79218109582&text&app_absent=0" target="_blank"
               class="social__link">
               <img width="41" height="41" class="social__image" src="./img/intro/second_pic.png" title="Мой What's app"
-                alt="My What's app">
+                alt="My What's app" data-aos="zoom-in" data-aos-delay="500">
             </a>
             <a href="https://vk.com/maverick177" target="_blank" class="social__link">
               <img width="41" height="41" class="social__image" src="./img/intro/third_pic.png"
-                title="Моя страница vkontakte" alt="My vk">
+                title="Моя страница vkontakte" alt="My vk" data-aos="zoom-in" data-aos-delay="700">
             </a>
             <a href="https://www.facebook.com/denis.mamlev" target="_blank" class="social__link">
               <img width="41" height="41" class="social__image" src="./img/intro/fourth_pic.png"
-                title="Моя страница facebook" alt="My facebook">
+                title="Моя страница facebook" alt="My facebook" data-aos="zoom-in" data-aos-delay="900">
             </a>
             <a href="https://www.instagram.com/den_maverick177/" target="_blank" class="social__link">
               <img width="41" height="41" class="social__image" src="./img/intro/fifth_pic.png" title="My инстаграм"
-                alt="My instagram">
+                alt="My instagram" data-aos="zoom-in" data-aos-delay="1200">
             </a>
             <a href="https://github.com/DennyMaverick" target="_blank" class="social__link">
               <img width="41" height="41" class="social__image" src="./img/intro/sixth_pic.png" title="My GitHub"
-                alt="Мой GitHub">
+                alt="Мой GitHub" data-aos="zoom-in" data-aos-delay="1500">
             </a>
           </div>
 
@@ -93,7 +97,8 @@
           <a class="btn social__btn hire-resume-btn" href="#" type="button" data-modal="#modal-resume">Резюме</a>
         </div>
         <div class="intro__image-container">
-          <img class="intro__photo" src="img/intro/photo.png" width="500" height="500" alt="my photo">
+          <img class="intro__photo" src="img/intro/photo.png" width="500" height="500" alt="my photo" data-aos="fade-left"
+            data-aos-delay="1000" data-aos-duration="2000">
         </div>
       </div>
       <!--intro__inner -->
@@ -113,7 +118,7 @@
         <div class="works__portfolio portfolio" id="portfolio">
           <!-- Добавление проекта в категорию "Лэндинги" -->
           <div class="portfolio__col" data-cat="landing">
-            <div class="portfolio__work work" data-modal="#modal_oxygen">
+            <div class="portfolio__work work" data-modal="#modal_oxygen" data-aos="fade-up" data-aos-duration="500">
               <!-- Далее нужно для каждой работы создавать отдельное модальное окно -->
               <div class="work__box-img">
                 <img class="work__image" src="./img/projects/oxygen/main-screen.jpg" alt="Project photo">
@@ -128,7 +133,7 @@
             </div>
           </div>
           <div class="portfolio__col" data-cat="landing">
-            <div class="portfolio__work work" data-modal="#modal_olivia">
+            <div class="portfolio__work work" data-modal="#modal_olivia" data-aos="fade-up" data-aos-duration="500">
               <!-- Далее нужно для каждой работы создавать отдельное модальное окно -->
               <div class="work__box-img">
                 <img class="work__image" src="./img/projects/olivia/main-pic.png" alt="Project photo">
@@ -145,7 +150,7 @@
           <!-- Добавление проекта в категорию "Лэндинги" -->
           <div class="portfolio__col" data-cat="landing">
 
-            <div class="portfolio__work work" data-modal="#modal_project_1">
+            <div class="portfolio__work work" data-modal="#modal_project_1" data-aos="fade-up" data-aos-duration="500">
               <!-- Далее нужно для каждой работы создавать отдельное модальное окно -->
               <div class="work__box-img">
                 <img class="work__image" src="./img/projects/thrivetalk/main_pic.jpg" alt="Project photo">
@@ -161,7 +166,7 @@
             </div>
           </div>
           <div class="portfolio__col" data-cat="landing">
-            <div class="portfolio__work work" data-modal="#modal_sea-products">
+            <div class="portfolio__work work" data-modal="#modal_sea-products" data-aos="fade-up" data-aos-duration="500">
               <!-- Добавление проекта в категорию "Проекты с элементами интерфейса на javaScript" -->
               <div class="work__box-img">
                 <img class="work__image" src="./img/projects/sea-products/sea-products.jpg" alt="Project photo">
@@ -177,7 +182,7 @@
           </div>
           <!-- Добавление проекта в категорию "Лэндинги" -->
           <div class="portfolio__col" data-cat="landing">
-            <div class="portfolio__work work" data-modal="#modal_delivery">
+            <div class="portfolio__work work" data-modal="#modal_delivery" data-aos="fade-up" data-aos-duration="500">
               <!-- Далее нужно для каждой работы создавать отдельное модальное окно -->
               <div class="work__box-img">
                 <img class="work__image" src="./img/projects/delivery-food/Delivery_food-main-pic.jpg"
@@ -193,7 +198,7 @@
             </div>
           </div>
           <div class="portfolio__col" data-cat="interface">
-            <div class="portfolio__work work" data-modal="#modal_rolls">
+            <div class="portfolio__work work" data-modal="#modal_rolls" data-aos="fade-up" data-aos-duration="500">
               <!-- Добавление проекта в категорию "Проекты с элементами интерфейса на javaScript" -->
               <div class="work__box-img">
                 <img class="work__image work__image-rolls" src="./img/projects/rolls-scripts/rolls.jpg"
@@ -210,7 +215,7 @@
           </div>
           <div class="portfolio__col" data-cat="site-visit">
             <!-- Добавление проекта в категорию "Сайты-визитки" -->
-            <div class="portfolio__work work" data-modal="#modal_visit-card">
+            <div class="portfolio__work work" data-modal="#modal_visit-card" data-aos="fade-up" data-aos-duration="500">
               <div class="work__box-img">
                 <img class="work__image" src="./img/projects/site-visit/main-img.jpg" alt="Project photo">
               </div>
@@ -225,7 +230,7 @@
             </div>
           </div>
           <div class="portfolio__col" data-cat="interface">
-            <div class="portfolio__work work" data-modal="#modal_convert">
+            <div class="portfolio__work work" data-modal="#modal_convert" data-aos="fade-up" data-aos-duration="500">
               <div class="work__box-img">
                 <img class="work__image" src="./img/projects/convert/main-pic.jpg" alt="Project photo">
               </div>
@@ -240,7 +245,7 @@
           </div>
           <!-- Добавление проекта в категорию "Проекты с элементами интерфейса на javaScript" -->
           <div class="portfolio__col" data-cat="promo">
-            <div class="portfolio__work work" data-modal="#modal_venom-two">
+            <div class="portfolio__work work" data-modal="#modal_venom-two" data-aos="fade-up" data-aos-duration="500">
               <!-- Добавление проекта в категорию "Промосайты" -->
               <div class="work__box-img  work__box-img--venom">
                 <img class="work__image" src="./img/projects/venom-2/venom.png" alt="Project photo">
@@ -255,7 +260,7 @@
             </div>
           </div>
           <div class="portfolio__col" data-cat="landing">
-            <div class="portfolio__work work" data-modal="#modal_safari">
+            <div class="portfolio__work work" data-modal="#modal_safari" data-aos="fade-up" data-aos-duration="500">
               <!-- Добавление проекта в категорию "Лэндинги" -->
               <div class="work__box-img">
                 <img class="work__image" src="img/projects/safari/popup-bg.jpg" alt="Project photo">
@@ -270,7 +275,7 @@
             </div>
           </div>
           <div class="portfolio__col" data-cat="interface">
-            <div class="portfolio__work work" data-modal="#modal_calc">
+            <div class="portfolio__work work" data-modal="#modal_calc" data-aos="fade-up" data-aos-duration="500">
               <!-- Добавление проекта в категорию "Проекты с элементами интерфейса на javaScript" -->
               <div class="work__box-img">
                 <img class="work__image" src="./img/projects/calculator/Calc_main-pic.jpg" alt="Project photo">
@@ -285,7 +290,7 @@
             </div>
           </div>
           <div class="portfolio__col" data-cat="interface">
-            <div class="portfolio__work work" data-modal="#modal_quize">
+            <div class="portfolio__work work" data-modal="#modal_quize" data-aos="fade-up" data-aos-duration="500">
               <!-- Добавление проекта в категорию "Проекты с элементами интерфейса на javaScript" -->
               <div class="work__box-img">
                 <img class="work__image" src="./img/projects/quize/quize_main.jpg" alt="Project photo">
@@ -637,7 +642,8 @@
           <!--timeline-->
           <div class="text-center">
             <a class="btn btn__resume hire-resume-btn btn--thin" href="#" data-modal="#modal-hire-me">Написать мне</a>
-            <a id="printLink" title="Распечатать резюме" class="btn__resume btn__print btn btn--thin" href="#">Распечатать резюме</a>
+            <a id="printLink" title="Распечатать резюме" class="btn__resume btn__print btn btn--thin" href="#">Распечатать
+              резюме</a>
           </div>
         </div>
         <!--modal__content -->
