@@ -9,13 +9,9 @@
   <link rel="icon" href="./img/favicon/favicon.svg">
   <link rel="apple-touch-icon" href="./apple-touch-icon.png">
   <link rel="manifest" href="manifest.json">
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script> -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" defer></script> -->
-  <!-- Подключение библиотеки AOS - стили -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/main.min.css">
   <!-- Подключение библиотеки AOS - JavaScript -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./js/libs/aos.js" defer></script>
   <script src="./js/main.js" defer></script>
 </head>
 
@@ -62,34 +58,34 @@
     <section class="intro" id="home">
       <div class="intro__inner container">
         <div class="intro__content">
-          <h2 class="intro__subtitle" data-aos="zoom-in">Добрый день, Я</h2>
-          <h1 class="intro__title" data-aos-delay="2000" data-aos="zoom-in">Денис Мамлев</h1>
-          <div class="intro__position" data-aos="fade-right" data-aos-delay="1500">Web - разработчик</div>
+          <h2 class="intro__subtitle" data-aos="zoom-in" data-aos-offset="0">Добрый день, Я</h2>
+          <h1 class="intro__title" data-aos-delay="2000" data-aos="zoom-in" data-aos-offset="0">Денис Мамлев</h1>
+          <div class="intro__position" data-aos="fade-right" data-aos-delay="1500" data-aos-offset="0">Web - разработчик</div>
           <div class="intro__social social">
             <a href="https://t.me/Denny_maverick" target="_blank" class="social__link">
               <img class="social__image" src="./img/intro/first_pic.png" width="41" height="41" title="Мой телеграм"
-                alt="My telegram" data-aos="zoom-in" data-aos-delay="300">
+                alt="My telegram" data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0">
             </a>
             <a href="https://web.whatsapp.com/send?phone=%2B79218109582&text&app_absent=0" target="_blank"
               class="social__link">
               <img width="41" height="41" class="social__image" src="./img/intro/second_pic.png" title="Мой What's app"
-                alt="My What's app" data-aos="zoom-in" data-aos-delay="500">
+                alt="My What's app" data-aos="zoom-in" data-aos-delay="500" data-aos-offset="0">
             </a>
             <a href="https://vk.com/maverick177" target="_blank" class="social__link">
               <img width="41" height="41" class="social__image" src="./img/intro/third_pic.png"
-                title="Моя страница vkontakte" alt="My vk" data-aos="zoom-in" data-aos-delay="700">
+                title="Моя страница vkontakte" alt="My vk" data-aos="zoom-in" data-aos-delay="700" data-aos-offset="0">
             </a>
             <a href="https://www.facebook.com/denis.mamlev" target="_blank" class="social__link">
               <img width="41" height="41" class="social__image" src="./img/intro/fourth_pic.png"
-                title="Моя страница facebook" alt="My facebook" data-aos="zoom-in" data-aos-delay="900">
+                title="Моя страница facebook" alt="My facebook" data-aos="zoom-in" data-aos-delay="900" data-aos-offset="0">
             </a>
             <a href="https://www.instagram.com/den_maverick177/" target="_blank" class="social__link">
               <img width="41" height="41" class="social__image" src="./img/intro/fifth_pic.png" title="My инстаграм"
-                alt="My instagram" data-aos="zoom-in" data-aos-delay="1200">
+                alt="My instagram" data-aos="zoom-in" data-aos-delay="1200" data-aos-offset="0">
             </a>
             <a href="https://github.com/DennyMaverick" target="_blank" class="social__link">
               <img width="41" height="41" class="social__image" src="./img/intro/sixth_pic.png" title="My GitHub"
-                alt="Мой GitHub" data-aos="zoom-in" data-aos-delay="1500">
+                alt="Мой GitHub" data-aos="zoom-in" data-aos-delay="1500" data-aos-offset="0">
             </a>
           </div>
 
@@ -345,7 +341,7 @@
         <!--about__inner -->
       </div>
     </section> <!-- about-->
-    <footer class="footer" id="contacts">
+    <footer class="footer" id="contacts" data-aos="flip-up" data-aos-duration="500">
       <div class="footer__inner container">
         <div class="footer__credits">
           <p class="footer__copyright">

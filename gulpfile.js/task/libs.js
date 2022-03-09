@@ -13,16 +13,16 @@ const uglify = require('gulp-uglify');
 
 // Обработка JavaScript
 const libs = () => {
-  return src(path.libs.src, { sourcemaps: app.isDev })
+  return src(path.libs.src)
     .pipe(plumber({
       errorHandler: notify.onError(error => ({
         title: 'JavaScript',
         message: error.message
       }))
     }))
-    .pipe(babel())
+    // .pipe(babel())
     .pipe(uglify())
-    .pipe(dest(path.libs.dest, { sourcemaps: app.isDev }));
+    .pipe(dest(path.libs.dest));
 }
 
 module.exports = libs;
