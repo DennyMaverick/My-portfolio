@@ -57,6 +57,9 @@
     color: $grey;
     font-weight: 300;
   }
+  &__text-part + &__text-part {
+    margin-top: 1rem;
+  }
   &__image-box {
     min-height: 400px;
     @include bp-desk(tablet) {
@@ -74,6 +77,12 @@
   &__btn + &__btn {
     @include bp-desk(mobile-md) {
       margin-top: 1rem;
+    }
+  }
+  &__link {
+    color: $orange;
+    &:hover {
+      text-decoration: underline;
     }
   }
 }

@@ -120,4 +120,13 @@
     display: flex;
     flex-wrap: wrap;
   }
+  &__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    @include bp-desk(mobile) {
+      padding: 2.5rem;
+    }
+  }
 }

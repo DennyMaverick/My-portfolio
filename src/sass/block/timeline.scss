@@ -66,6 +66,7 @@
     margin-bottom: 2.6rem;
   }
   &__item {
+    margin-bottom: 3rem;
     @include bp-desk(mobile) {
       margin-bottom: 2.6rem;
     }
@@ -96,5 +97,8 @@
     @include font(0.8rem, 1.6rem);
     color: $grey;
     font-weight: 300;
+  }
+  &__image {
+    margin-top: 1rem;
   }
 }

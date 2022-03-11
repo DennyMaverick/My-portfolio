@@ -60,6 +60,7 @@
     }
   }
   &__print {
+    margin-right: -50px;
     @include bp-desk(notebook) {
       display: none !important;
     }

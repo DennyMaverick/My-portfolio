@@ -1875,8 +1875,20 @@ img {
   font-weight: 300;
 }
 
+.about__text-part+.about__text-part {
+  margin-top: 1rem;
+}
+
 .about__image-box {
   min-height: 400px;
+}
+
+.about__link {
+  color: orange;
+}
+
+.about__link:hover {
+  text-decoration: underline;
 }
 
 .btn {
@@ -1930,6 +1942,10 @@ img {
 
 .btn__resume+.btn__resume {
   margin-left: .6rem;
+}
+
+.btn__print {
+  margin-right: -50px;
 }
 
 .burger-btn {
@@ -2719,6 +2735,19 @@ img {
   flex-wrap: wrap;
 }
 
+.modal__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 4rem;
+}
+
 .nav__link {
   position: relative;
   margin-right: 1rem;
@@ -3064,6 +3093,10 @@ img {
   margin-bottom: 2.6rem;
 }
 
+.timeline__item {
+  margin-bottom: 3rem;
+}
+
 .timeline__item:last-child {
   margin-bottom: 0;
 }
@@ -3095,6 +3128,10 @@ img {
   line-height: 2;
   color: #6a6969;
   font-weight: 300;
+}
+
+.timeline__image {
+  margin-top: 1rem;
 }
 
 .user__avatar {
@@ -3563,6 +3600,10 @@ img {
 
   .modal__title--resume {
     text-transform: uppercase;
+  }
+
+  .modal__image {
+    padding: 2.5rem;
   }
 
   .portfolio__col {
