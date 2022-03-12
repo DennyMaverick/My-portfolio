@@ -8,6 +8,7 @@
   }
 
   &__link {
+    border: 2px solid transparent;
     margin-right: 10px;
     transition: transform 0.2s linear;
     &:hover {

@@ -13,6 +13,7 @@ import './modules/ontop';
 import './modules/print';
 import './modules/hidden-scroll-modal-hire';
 import './modules/aos';
+import './modules/socials';
 
 
 
