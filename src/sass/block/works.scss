@@ -47,9 +47,11 @@
 
   &__portfolio {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     margin: 0 -1rem;
     margin-bottom: 2.8rem;
+    @include bp-desk(notebook) {
+      justify-content: center;
+    }
   }
 }

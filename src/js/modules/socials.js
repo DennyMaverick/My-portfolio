@@ -5,6 +5,6 @@ socialLink.addEventListener('click', () => {
   footerSocial.style.borderColor = "#629d89";
   setTimeout(function () {
     footerSocial.style.borderColor = "transparent";
-  }, 5000);
+  }, 1500);
 });
 

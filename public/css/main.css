@@ -1869,8 +1869,8 @@ img {
 
 .about__text {
   margin-bottom: 2.8rem;
-  font-size: .8rem;
-  line-height: 2;
+  font-size: 1rem;
+  line-height: 1.8;
   color: #6a6969;
   font-weight: 300;
 }
@@ -3294,9 +3294,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0 -1rem;
@@ -3349,6 +3346,12 @@ img {
   .portfolio__col {
     -ms-flex-preferred-size: 40%;
     flex-basis: 40%;
+  }
+
+  .works__portfolio {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
 @supports (-webkit-appearance:none) {

@@ -10,7 +10,6 @@ $(function () {
   let filter = $("[data-filter]");
   filter.on("click", function (event) {
     event.preventDefault(); //убирает стандартное поведение элементов(ссылок)
-
     let cat = $(this).data("filter"); //получаем значение элемента, по которому
     //производится клик мыши
 
