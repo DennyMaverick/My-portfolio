@@ -44,9 +44,9 @@ closeButtonResume.addEventListener('click', () => {
   body.classList.remove('no-scroll-important');
 });
 
-closeButtonHireMe.addEventListener('click', () => {
-  body.classList.remove('no-scroll-important');
-});
+// closeButtonHireMe.addEventListener('click', () => {
+//   body.classList.remove('no-scroll-important');
+// });
 
 modalResume.addEventListener('click', () => {
   body.classList.remove('no-scroll-important');
