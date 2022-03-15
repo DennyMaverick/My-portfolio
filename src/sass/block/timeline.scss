@@ -18,7 +18,7 @@
     top: 0;
     left: 50%;
     z-index: 1;
-    @include bp-desk(mobile) {
+    @include media-down(767px) {
       display: none;
     }
   }
@@ -27,12 +27,19 @@
     &--left {
       text-align: right;
       padding-right: 3.2rem;
+      position: relative;
+      @include bp-desk(mobile) {
+        margin-bottom: 2.5rem;
+      }
+      @include media-down(767px) {
+        order: 1;
+      }
     }
     &--right {
       position: relative;
       padding-left: 3.2rem;
     }
-    @include bp-desk(mobile) {
+    @include media-down(767px) {
       width: 100%;
       max-width: 368px;
       &--left,
@@ -53,7 +60,7 @@
       -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
       outline: none;
     }
-    @include bp-desk(mobile) {
+    @include media-down(767px) {
       bottom: -30px;
       left: 0;
     }

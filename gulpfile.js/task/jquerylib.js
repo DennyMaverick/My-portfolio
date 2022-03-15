@@ -7,14 +7,13 @@ const app = require("../config/app.js");
 // Плагины
 const plumber = require('gulp-plumber');
 const notify = require('gulp-notify');
-// const babel = require("gulp-babel");
-const gulpConcat = require('gulp-concat');
+const babel = require("gulp-babel");
 const uglify = require('gulp-uglify');
 
 
 // Обработка JavaScript
-const libs = () => {
-  return src(['./node_modules/aos/dist/aos.js', './node_modules/slick-carousel/slick/slick.js'])
+const jquerylib = () => {
+  return src('node_modules/jquery/dist/jquery.min.js')
     .pipe(plumber({
       errorHandler: notify.onError(error => ({
         title: 'JavaScript',
@@ -22,9 +21,7 @@ const libs = () => {
       }))
     }))
     // .pipe(babel())
-    .pipe(uglify())
-    .pipe(gulpConcat('libs.min.js'))
-    .pipe(dest(path.libs.dest));
+    .pipe(dest(path.jquery.dest));
 }
 
-module.exports = libs;
+module.exports = jquerylib;

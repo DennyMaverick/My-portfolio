@@ -1,10 +1,14 @@
 const socialLink = document.getElementById('aboutLinkSocial');
-const footerSocial = document.querySelector('.footer__social');
+const footerSocials = document.querySelectorAll('.footer__social-image');
 
 socialLink.addEventListener('click', () => {
-  footerSocial.style.borderColor = "#629d89";
-  setTimeout(function () {
-    footerSocial.style.borderColor = "transparent";
-  }, 1500);
+  footerSocials.forEach((item) => {
+    item.classList.add('footer__social-color-changed');
+    setTimeout(function () {
+      footerSocials.forEach((item) => {
+        item.classList.remove('footer__social-color-changed');
+      });
+    }, 1500);
+  })
 });
 

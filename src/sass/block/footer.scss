@@ -43,6 +43,16 @@
     padding: 2px;
     border: 1px solid transparent;
   }
+  &__social-image {
+    fill: #BBBBCC;
+    width: 20px;
+    height: 20px;
+    transition: fill .3s ease-in;
+  }
+  &__social-color-changed {
+    fill: #363699;
+    transition: fill .3s ease-in;
+  }
   &__social-link {
     margin-right: 1.2rem;
   }

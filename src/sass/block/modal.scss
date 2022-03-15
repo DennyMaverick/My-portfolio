@@ -104,17 +104,20 @@
   }
   &__timeline {
     margin: 4.2rem auto;
+    @include bp-desk(mobile) {
+      margin-top: 7.2rem;
+    }
+    @include bp-desk(mobile-sm) {
+      margin-top: 4.2rem;
+    }
   }
   &__progress-bar {
     margin-bottom: 2.6rem;
   }
   &__contact {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    @include bp-desk(tablet) {
-      justify-content: center;
-    }
   }
   &__modal-work {
     display: flex;

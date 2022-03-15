@@ -38,7 +38,18 @@ module.exports = {
   libs: {
     src: pathSrc + '/js/libs/**/*.js',
     watch: pathSrc + '/js/libs/**/*.js',
-    dest: pathDest + '/js/libs/'
+    dest: pathDest + '/js/libs/vendors/'
+  },
+
+  jquery: {
+    watch: pathSrc + '/js/libs/**/*.js',
+    dest: pathDest + '/js/libs/jquery'
+  },
+
+  svgsprite: {
+    src: pathSrc + '/img/sprite/**/*.svg',
+    watch: pathSrc + '/img/sprite/**/*.svg',
+    dest: pathDest + '/img/sprite/'
   },
 
   php: {

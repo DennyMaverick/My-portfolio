@@ -9,6 +9,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     max-width: 1090px;
+    align-items: center;
     @include bp-desk(tablet) {
       flex-direction: column;
     }
@@ -44,7 +45,7 @@
     margin-bottom: 1.4rem;
     @include font(6.1rem, 6.71rem);
     // opacity 35%
-    color: transparantize($black, 65%);
+    color: transparentize($black, .65);
     font-weight: 700;
     text-transform: uppercase;
     @include bp-desk(tablet) {
@@ -61,12 +62,21 @@
     margin-top: 1rem;
   }
   &__image-box {
-    min-height: 400px;
+    margin-top: 109px;
     @include bp-desk(tablet) {
-      align-self: center;
+      margin-top: 0;
+      margin-bottom: 2.5em;
       max-width: 80%;
       align-self: flex-end;
     }
+    @include bp-desk(mobile) {
+      max-width: 100%;
+      align-self: center;
+      margin-bottom: 1rem;
+    }
+  }
+  &__image {
+    border-radius: 20px;
   }
   &__btn {
     @include bp-desk(mobile-md) {

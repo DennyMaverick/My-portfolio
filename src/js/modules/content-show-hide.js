@@ -51,7 +51,9 @@ closeButtons.forEach(function (item) {
   item.addEventListener("click", function (event) {
     const closestModal = event.target.closest('.modal');
     const descriptionShowClosest = closestModal.querySelector('.description-show');
-    descriptionShowClosest.classList.remove('hide');
+    if (descriptionShowClosest) {
+      descriptionShowClosest.classList.remove('hide');
+    }
     hideEverything();
   });
 });
@@ -60,7 +62,9 @@ modals.forEach(function (item) {
   item.addEventListener("click", function (event) {
     const closestModal = event.target.closest('.modal');
     const descriptionShowClosest = closestModal.querySelector('.description-show');
-    descriptionShowClosest.classList.remove('hide');
+    if (descriptionShowClosest) {
+      descriptionShowClosest.classList.remove('hide');
+    }
     hideEverything();
   });
 });

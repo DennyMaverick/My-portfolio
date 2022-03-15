@@ -8,9 +8,9 @@ const app = require("../config/app.js");
 const plumber = require('gulp-plumber');
 const notify = require('gulp-notify');
 const fileInclude = require("gulp-file-include");
-const webpHtml = require('gulp-webp-html');
+// const webpHtml = require('gulp-webp-html');
 const prettyHtml = require('gulp-pretty-html');
-
+const webpHtmlNoSvg = require('gulp-webp-html-nosvg');
 
 // Обработка HTML
 const html = () => {
@@ -23,7 +23,7 @@ const html = () => {
     }))
     .pipe(fileInclude())
     .pipe(prettyHtml())
-    .pipe(webpHtml())
+    .pipe(webpHtmlNoSvg())
     .pipe(dest(path.html.dest));
 }
 

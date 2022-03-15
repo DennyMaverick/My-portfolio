@@ -1,7 +1,6 @@
 // jQuery
-import $ from 'jquery';
+// import $ from 'jquery';
 // Libraries
-import 'slick-carousel';
 
 $(function () {
   const worksSlider = $('[data-slider="slick"]');
