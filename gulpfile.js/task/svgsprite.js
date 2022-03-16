@@ -37,8 +37,14 @@ const svgsprite = () => {
     .pipe(replace('&gt;', '>'))
     .pipe(svgSprite({
       mode: {
+        //? Если нужно использовать спрайт через тег img,
+        //? можно использовать спрайт для background
+        // stack: {
+        //   sprite: 'sprite.svg',
+        //   example: true
+        // },
+        //?? Если нужно использовать спрайт через тег svg > use
         symbol: {
-          // Название файла спрайта
           sprite: 'sprite.svg'
         }
       }

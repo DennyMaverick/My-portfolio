@@ -15,7 +15,7 @@ const gulpIf = require("gulp-if");
 
 // Обработка изображений
 const img = () => {
-  return src(path.img.src)
+  return src([path.img.src, '!./src/img/sprite/svg/*.svg'])
     .pipe(plumber({
       errorHandler: notify.onError(error => ({
         title: 'Image',
@@ -25,7 +25,7 @@ const img = () => {
     .pipe(newer(path.img.dest))
     .pipe(webp())
     .pipe(dest(path.img.dest))
-    .pipe(src(path.img.src))
+    .pipe(src([path.img.src, '!./src/img/sprite/svg/*.svg']))
     .pipe(newer(path.img.dest))
     .pipe(gulpIf(app.isProd, imagemin(app.imagemin)))
     .pipe(dest(path.img.dest));

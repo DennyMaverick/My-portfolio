@@ -1,7 +1,8 @@
 // jQuery and it's libraries
 import './modules/jQuery/jquery-main';
 // AOS - Animate On Scroll
-// import './libs/aos';
+// import './libs/fixsvgstack';
+import './libs/fixsvgstack';
 // Modules
 import './modules/content-show-hide';
 import './modules/scroll-behavior';
