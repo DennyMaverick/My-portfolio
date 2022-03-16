@@ -2090,10 +2090,8 @@ img {
 }
 
 .footer__social-color-changed {
-  fill: #363699;
-  -webkit-transition: fill .3s ease-in;
-  -o-transition: fill .3s ease-in;
-  transition: fill .3s ease-in;
+  -webkit-animation: change-color 3s ease-in;
+  animation: change-color 3s ease-in;
 }
 
 .footer__social-link {
@@ -2156,7 +2154,7 @@ img {
 }
 
 .footer__nav-link+.footer__nav-link {
-  margin-left: 1.5rem;
+  margin-left: .7rem;
 }
 
 .footer__nav-btn {
@@ -2196,6 +2194,50 @@ img {
   -webkit-transform: translateY(-0.3rem);
   -ms-transform: translateY(-0.3rem);
   transform: translateY(-0.3rem);
+}
+
+@-webkit-keyframes change-color {
+  0% {
+    fill: #bbc;
+  }
+
+  25% {
+    fill: #363699;
+  }
+
+  40% {
+    fill: #363699;
+  }
+
+  50% {
+    fill: #bbc;
+  }
+
+  100% {
+    fill: #bbc;
+  }
+}
+
+@keyframes change-color {
+  0% {
+    fill: #bbc;
+  }
+
+  25% {
+    fill: #363699;
+  }
+
+  40% {
+    fill: #363699;
+  }
+
+  50% {
+    fill: #bbc;
+  }
+
+  100% {
+    fill: #bbc;
+  }
 }
 
 .form__group {

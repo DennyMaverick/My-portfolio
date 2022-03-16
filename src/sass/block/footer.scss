@@ -50,8 +50,7 @@
     transition: fill .3s ease-in;
   }
   &__social-color-changed {
-    fill: #363699;
-    transition: fill .3s ease-in;
+      animation: change-color 3s ease-in;
   }
   &__social-link {
     margin-right: 1.2rem;
@@ -97,7 +96,7 @@
     }
   }
   &__nav-link + &__nav-link {
-    margin-left: 1.5rem;
+    margin-left: .7rem;
     @include media-down(500px) {
       margin-left: 0;
       margin-top: 1rem;
@@ -145,5 +144,24 @@
     &:hover {
       transform: translateY(-0.3rem);
     }
+  }
+}
+
+// Анимация
+@keyframes change-color {
+  0% {
+    fill: rgb(187,187,204);
+  }
+  25% {
+    fill: rgb(54,54,153);
+  }
+  40% {
+    fill: rgb(54,54,153);
+  }
+  50% {
+    fill: rgb(187,187,204);
+  }
+  100% {
+    fill: rgb(187,187,204);
   }
 }
