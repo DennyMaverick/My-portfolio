@@ -16,6 +16,7 @@ import './modules/hidden-scroll-modal-hire';
 import './modules/aos';
 import './modules/socials';
 import './modules/hide-show-arrow-up-resume-modal';
+import './modules/showmore';
 
 
 

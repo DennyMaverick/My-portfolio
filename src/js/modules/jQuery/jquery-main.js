@@ -13,15 +13,17 @@ $(function () {
     //производится клик мыши
 
     if (cat == "all") {
+      // $("[data-cat]").slice(0, 6).show();
       $("[data-cat]").removeClass("hide");
     } else {
       $("[data-cat]").each(function () {
         let workCat = $(this).data("cat");
-
         if (workCat != cat) {
           $(this).addClass("hide");
+          // $(this).fadeOut();
         } else {
           $(this).removeClass("hide");
+          // $("[data-cat]").slice(0, 6).show();
         }
       });
     }

@@ -116,7 +116,22 @@
 
         <div class="works__portfolio portfolio" id="portfolio">
           <!-- Добавление проекта в категорию "Лэндинги" -->
-          <div class="portfolio__col" data-cat="landing">
+          <div class="portfolio__col portfolio__show" data-cat="landing">
+            <div class="portfolio__work work" data-modal="#modal_archee">
+              <!-- Далее нужно для каждой работы создавать отдельное модальное окно -->
+              <div class="work__box-img">
+                <img class="work__image" src="./img/projects/archee/main.jpg" alt="Project photo">
+              </div>
+              <div class="work__content">
+                <p class="work__cat">Категория: Лэндинги</p>
+                <h3 class="work__title">
+                  <span class="work__title--left">Archee</span>
+                  <time class="work__date" datetime="2021-10-21 11:45">2022</time>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__col portfolio__show" data-cat="landing">
             <div class="portfolio__work work" data-modal="#modal_oxygen">
               <!-- Далее нужно для каждой работы создавать отдельное модальное окно -->
               <div class="work__box-img">
@@ -131,7 +146,7 @@
               </div>
             </div>
           </div>
-          <div class="portfolio__col" data-cat="landing">
+          <div class="portfolio__col portfolio__show" data-cat="landing">
             <div class="portfolio__work work" data-modal="#modal_olivia">
               <!-- Далее нужно для каждой работы создавать отдельное модальное окно -->
               <div class="work__box-img">
@@ -147,7 +162,7 @@
             </div>
           </div>
           <!-- Добавление проекта в категорию "Лэндинги" -->
-          <div class="portfolio__col" data-cat="landing">
+          <div class="portfolio__col portfolio__show" data-cat="landing">
 
             <div class="portfolio__work work" data-modal="#modal_project_1">
               <!-- Далее нужно для каждой работы создавать отдельное модальное окно -->
@@ -164,7 +179,7 @@
               </div>
             </div>
           </div>
-          <div class="portfolio__col" data-cat="landing">
+          <div class="portfolio__col portfolio__show" data-cat="landing">
             <div class="portfolio__work work" data-modal="#modal_sea-products">
               <!-- Добавление проекта в категорию "Проекты с элементами интерфейса на javaScript" -->
               <div class="work__box-img">
@@ -180,7 +195,7 @@
             </div>
           </div>
           <!-- Добавление проекта в категорию "Лэндинги" -->
-          <div class="portfolio__col" data-cat="landing">
+          <div class="portfolio__col portfolio__show" data-cat="landing">
             <div class="portfolio__work work" data-modal="#modal_delivery">
               <!-- Далее нужно для каждой работы создавать отдельное модальное окно -->
               <div class="work__box-img">
@@ -196,7 +211,7 @@
               </div>
             </div>
           </div>
-          <div class="portfolio__col" data-cat="interface">
+          <div class="portfolio__col portfolio__show" data-cat="interface">
             <div class="portfolio__work work" data-modal="#modal_rolls">
               <!-- Добавление проекта в категорию "Проекты с элементами интерфейса на javaScript" -->
               <div class="work__box-img">
@@ -212,7 +227,7 @@
               </div>
             </div>
           </div>
-          <div class="portfolio__col" data-cat="site-visit">
+          <div class="portfolio__col portfolio__show" data-cat="site-visit">
             <!-- Добавление проекта в категорию "Сайты-визитки" -->
             <div class="portfolio__work work" data-modal="#modal_visit-card">
               <div class="work__box-img">
@@ -228,7 +243,7 @@
               </div>
             </div>
           </div>
-          <div class="portfolio__col" data-cat="interface">
+          <div class="portfolio__col portfolio__show" data-cat="interface">
             <div class="portfolio__work work" data-modal="#modal_convert">
               <div class="work__box-img">
                 <img class="work__image" src="./img/projects/convert/main-pic.jpg" alt="Project photo">
@@ -243,7 +258,7 @@
             </div>
           </div>
           <!-- Добавление проекта в категорию "Проекты с элементами интерфейса на javaScript" -->
-          <div class="portfolio__col" data-cat="promo">
+          <div class="portfolio__col portfolio__show" data-cat="promo">
             <div class="portfolio__work work" data-modal="#modal_venom-two">
               <!-- Добавление проекта в категорию "Промосайты" -->
               <div class="work__box-img  work__box-img--venom">
@@ -258,7 +273,7 @@
               </div>
             </div>
           </div>
-          <div class="portfolio__col" data-cat="landing">
+          <div class="portfolio__col portfolio__show" data-cat="landing">
             <div class="portfolio__work work" data-modal="#modal_safari">
               <!-- Добавление проекта в категорию "Лэндинги" -->
               <div class="work__box-img">
@@ -273,7 +288,7 @@
               </div>
             </div>
           </div>
-          <div class="portfolio__col" data-cat="interface">
+          <div class="portfolio__col portfolio__show" data-cat="interface">
             <div class="portfolio__work work" data-modal="#modal_calc">
               <!-- Добавление проекта в категорию "Проекты с элементами интерфейса на javaScript" -->
               <div class="work__box-img">
@@ -288,7 +303,7 @@
               </div>
             </div>
           </div>
-          <div class="portfolio__col" data-cat="interface">
+          <div class="portfolio__col portfolio__show" data-cat="interface">
             <div class="portfolio__work work" data-modal="#modal_quize">
               <!-- Добавление проекта в категорию "Проекты с элементами интерфейса на javaScript" -->
               <div class="work__box-img">
@@ -305,9 +320,9 @@
           </div>
         </div>
         <!--portfolio -->
-        <div class="text-center hide">
-          <button type="button" class="btn btn--sm" href="#">LOAD MORE WORK</button>
-        </div>
+        <!-- <div class="text-center">
+                  <button type="button" class="btn btn--sm" href="#" id="show-more">Показать больше</button>
+                </div> -->
       </div>
       <!--container -->
     </section> <!-- works-->
@@ -2131,6 +2146,139 @@
               <button class="modal-work__btn slickNext" type="button"><span class="modal-work__btn--text">Вперед</span>
                 <img class="modal-work__arrow modal-work__btn--next" src="./img/arrows/right-arrow.svg"
                   alt="right arrow" height="11">
+              </button>
+            </div>
+            <a href="#" class="modal-work__arrow-up up" title="Наверх">
+              <img class="modal-work__arrow-up-pic" src="./img/arrows/arrow-up.svg" alt="arrow up">
+            </a>
+          </div>
+          <!--modal-work__content -->
+        </div>
+        <!--modal-work -->
+      </div> <!-- modal__dialog-->
+    </div> <!-- modal -->
+    <div class="modal" id="modal_archee">
+      <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+          <img src="./img/modal/modal-close.svg" alt="Close" width="34" height="39">
+        </button>
+        <div class="modal__modal-work modal-work">
+          <div class="modal-work__preview">
+            <div class="modal-work__slider slider" data-slider="slick">
+              <div class="slider__item">
+                <img class="modal-work__photo" src="./img/projects/archee/main.jpg" alt="Project-photo">
+              </div>
+              <div class="slider__item">
+                <img class="modal-work__photo" src="./img/projects/archee/slide_1.jpg" alt="Project-photo">
+              </div>
+              <div class="slider__item">
+                <img class="modal-work__photo" src="./img/projects/archee/slide_2.jpg" alt="Project-photo">
+              </div>
+              <div class="slider__item">
+                <img class="modal-work__photo" src="./img/projects/archee/slide_3.jpg" alt="Project-photo">
+              </div>
+              <div class="slider__item">
+                <img class="modal-work__photo" src="./img/projects/archee/slide_4.jpg" alt="Project-photo">
+              </div>
+              <div class="slider__item">
+                <img class="modal-work__photo" src="./img/projects/archee/slide_5.jpg" alt="Project-photo">
+              </div>
+              <div class="slider__item">
+                <img class="modal-work__photo" src="./img/projects/archee/slide_6.jpg" alt="Project-photo">
+              </div>
+              <div class="slider__item">
+                <img class="modal-work__photo" src="./img/projects/archee/slide_7.jpg" alt="Project-photo">
+              </div>
+              <div class="slider__item">
+                <img class="modal-work__photo" src="./img/projects/archee/slide_8.jpg" alt="Project-photo">
+              </div>
+            </div>
+          </div>
+          <div class="modal-work__content">
+            <div class="modal-work__header">
+              <h3 class="modal-work__title">Archee Project</h3>
+              <div class="modal-work__info">
+                Лэндинги
+                <span class="modal-work__info-divider">|</span> 2022
+              </div>
+            </div> <!-- modal-work__header -->
+            <div class="modal-work__client">
+              <div class="modal-work__client-title"> Проект с марафона по верстке:</div>
+              <div class="modal-work__client-company"> CodeQuest </div>
+            </div>
+            <div class="modal-work__text">
+              <p class="modal-work__description">
+                Проект был создан в рамках марафона по верстке от CodeQuest. Марафон длился 5 недель.
+              </p>
+              <p class="modal-work__description">
+                Целью марафона была
+                практика, использование новых подходов в web-разработке, а также улучшить навыки в gulp, scss и
+                методологии BEM-naming.
+              </p>
+              <span class="description-show">Подробнее</span>
+              <div class="more hide">
+                <p class="modal-work__description">
+                  На марафоне проводились онлайн-встречи, где мы обсуждали блоки кода, что нужно было сверстать. К следующей
+                  живой трансляции наставник объяснял непонятные моменты, после этого вносились некоторые правки в проект,
+                  чтобы его улучшить, сохраняя при этом свои варианты наработок.
+                </p>
+                <p class="modal-work__description">
+                  Таким образом марафон был успешно пройден, где я получил новый опыт работы, используя современные подходы
+                  при разработке сайтов.
+                </p>
+                <p class="modal-work__description">
+                  В проекте используется компонентный подход: scss разбит на отдельные блоки, что позволяет лучше
+                  ориентироваться в коде, модифицировать его и поддерживать в дальнейшем.
+                </p>
+                <p class="modal-work__description">
+                  Для удобства используются миксины в scss. Это отдельные мини-функции, позволяющие сокращать код и работать
+                  быстрее.
+                </p>
+                <p class="modal-work__description">
+                  Работая над данным проектом, были использованы следующие инструменты, технологии и плагины:
+                </p>
+                <ul class="modal-work__list modal-list">
+                  <li class="modal-list__item">Препроцессор SCSS</li>
+                  <li class="modal-list__item">Менеджер проектов gulp</li>
+                  <li class="modal-list__item">Git & GitHub</li>
+                  <li class="modal-list__item">Плагин Chrome Pixel Perfect</li>
+                  <li class="modal-list__item">Слайдер Swiper.js</li>
+                  <li class="modal-list__item">Favicon</li>
+                  <li class="modal-list__item">Редактор кода Visual Studio Code</li>
+                  <li class="modal-list__item">Плагины Visual Studio Code: Emmet, Live Server, Path AutoComplete,
+                    AutoClose Tag и др.</li>
+                  <li class="modal-list__item">Flexible Box Layout Module</li>
+                  <li class="modal-list__item">CSS / HTML / JavaScript</li>
+                  <li class="modal-list__item">Адаптирование сайта под все экраны устройств</li>
+                </ul>
+              </div>
+              <span class="description-hide hide">Скрыть</span>
+              <p class="modal-work__description">
+              <ul class="modal-work__list modal-list">
+                <li class="modal-list__item"><a class="modal-list__link" href="https://dennymaverick.github.io/Archee/"
+                    target="_blank">Ccылка на
+                    проект</a>
+                </li>
+                <li class="modal-list__item"><a class="modal-list__link"
+                    href="https://www.figma.com/file/15N5KKATAGQHBHRk9xLP3k/Archeev2" target="_blank">Ссылка на макет
+                    Figma</a></li>
+                <li class="modal-list__item"><a class="modal-list__link" href="https://github.com/DennyMaverick/Archee"
+                    target="_blank">Ссылка на
+                    репозиторий GitHub</a>
+                </li>
+                <li class="modal-list__item">Время, потраченное на работу ~ 20 ч</li>
+              </ul>
+              </p>
+            </div>
+            <!--modal-work__text -->
+            <div class="modal-work__footer">
+              <button class="modal-work__btn slickPrev" type="button">
+                <img class="modal-work__arrow modal-work__btn--prev" src="./img/arrows/left-arrow.svg" alt="left arrow"
+                  height="11">
+                <span class="modal-work__btn--text">Назад</span></button>
+              <button class="modal-work__btn slickNext" type="button"><span class="modal-work__btn--text">Вперед</span>
+                <img class="modal-work__arrow modal-work__btn--next" src="./img/arrows/right-arrow.svg" alt="right arrow"
+                  height="11">
               </button>
             </div>
             <a href="#" class="modal-work__arrow-up up" title="Наверх">
