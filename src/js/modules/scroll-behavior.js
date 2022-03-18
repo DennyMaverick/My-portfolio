@@ -1,6 +1,6 @@
 // Плавная прокрутка
-
-const anchors = document.querySelectorAll('a[href*="#"]');
+window.addEventListener('DOMContentLoaded', function () {
+  const anchors = document.querySelectorAll('a[href*="#"]');
 
 for (let anchor of anchors) {
   anchor.addEventListener("click", function (event) {
@@ -14,3 +14,4 @@ for (let anchor of anchors) {
     }
   });
 }
+});

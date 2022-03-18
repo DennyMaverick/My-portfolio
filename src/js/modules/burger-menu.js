@@ -1,4 +1,5 @@
-const burger = document.querySelector('.burger-btn');
+window.addEventListener('DOMContentLoaded', function () {
+  const burger = document.querySelector('.burger-btn');
 const mobileNav = document.querySelector('.mobile-modal');
 const mobileLinks = document.querySelectorAll('.mobile-nav__link');
 const body = document.querySelector('body');
@@ -19,4 +20,5 @@ window.addEventListener('resize', () => {
   if (document.documentElement.clientWidth > 992) {
     mobileNav.classList.remove('header__mobile-modal-active');
   }
+});
 });
