@@ -18,6 +18,7 @@ const php = require("./task/php.js");
 const libs = require("./task/libs.js");
 const jquerylib = require("./task/jquerylib.js");
 const svgsprite = require("./task/svgsprite.js");
+const theme = require("./task/theme.js");
 
 
 // Статический сервер
@@ -43,12 +44,13 @@ const watcher = () => {
   watch(path.libs.watch, libs).on('all', browserSync.reload);
   watch(path.jquery.watch, jquerylib).on('all', browserSync.reload);
   watch(path.svgsprite.watch, svgsprite).on('all', browserSync.reload);
+  watch(path.theme.watch, theme).on('all', browserSync.reload);
 }
 
 
 const build = series(
   clear,
-  parallel(html, scss, libs, svgsprite, jquerylib, js, php, font, img, favicon)
+  parallel(html, scss, libs, svgsprite, jquerylib, js, php, font, img, favicon, theme)
 );
 
 const dev = series(
@@ -68,6 +70,7 @@ exports.php = php;
 exports.libs = libs;
 exports.jquerylib = jquerylib;
 exports.svgsprite = svgsprite;
+exports.theme = theme;
 
 // Сборка
 exports.default = app.isProd

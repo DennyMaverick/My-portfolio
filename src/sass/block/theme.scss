@@ -1,0 +1,21 @@
+.theme {
+  padding: 7px;
+  background-color: $grey;
+  border-radius: 5px;
+  & + * {
+    margin-left: 14px;
+  }
+  &__icon {
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+  }
+
+  &__light {
+    fill: $white;
+  }
+
+  &__dark {
+    fill: $black;
+  }
+}

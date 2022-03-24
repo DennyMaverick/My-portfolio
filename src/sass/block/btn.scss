@@ -29,7 +29,8 @@
   &:hover {
     background-color: $black;
     color: $white;
-    box-shadow: 2px 2px 10px fade(#000, 24%);
+    // transparentize .76 - opacity 24%
+    box-shadow: 2px 2px 10px transparentize($black, .76);
     border-color: $black;
   }
   &--sm {

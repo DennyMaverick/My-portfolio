@@ -10,7 +10,8 @@
     <link rel="apple-touch-icon" href="./apple-touch-icon.png">
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="./css/main.min.css">
-    <!-- Подключение библиотеки AOS - JavaScript -->
+    <link rel="stylesheet" href="#" title="theme">
+
     <script src="./js/libs/jquery/jquery.min.js" defer></script>
     <script src="./js/libs/vendors/libs.min.js" defer></script>
     <script src="./js/main.js" defer></script>
@@ -50,6 +51,14 @@
                         <a class="nav__link" href="#contacts">Контакты</a>
                         <a class="nav__link btn nav__link--btn" href="#" data-modal="#modal-hire-me">Написать мне</a>
                     </nav>
+                    <div class="theme">
+                        <svg class="switcher theme__icon theme__light" data-theme="light">
+                            <use xlink:href="./img/sprite/symbol/sprite.svg#svg--light-icon" />
+                        </svg>
+                        <svg class="switcher theme__icon theme__dark" data-theme="dark">
+                            <use xlink:href="./img/sprite/symbol/sprite.svg#svg--dark-icon" />
+                        </svg>
+                    </div>
                     <button class="burger-btn" type="button" id="nav-toggle">
                         <img class="burger__icon" src="../img/button/menu.svg" alt="burger icon">
                     </button>
@@ -73,12 +82,6 @@
                         <a href="https://vk.com/maverick177" target="_blank" class="social__link">
                             <picture><source srcset="./img/intro/third_pic.webp" type="image/webp"><img width="41" height="41" class="social__image" src="./img/intro/third_pic.png" title="Моя страница vkontakte" alt="My vk" data-aos="zoom-in" data-aos-delay="700" data-aos-offset="0"></picture>
                         </a>
-                        <a href="https://www.facebook.com/denis.mamlev" target="_blank" class="social__link">
-                            <picture><source srcset="./img/intro/fourth_pic.webp" type="image/webp"><img width="41" height="41" class="social__image" src="./img/intro/fourth_pic.png" title="Моя страница facebook" alt="My facebook" data-aos="zoom-in" data-aos-delay="900" data-aos-offset="0"></picture>
-                        </a>
-                        <a href="https://www.instagram.com/den_maverick177/" target="_blank" class="social__link">
-                            <picture><source srcset="./img/intro/fifth_pic.webp" type="image/webp"><img width="41" height="41" class="social__image" src="./img/intro/fifth_pic.png" title="My инстаграм" alt="My instagram" data-aos="zoom-in" data-aos-delay="1200" data-aos-offset="0"></picture>
-                        </a>
                         <a href="https://github.com/DennyMaverick" target="_blank" class="social__link">
                             <picture><source srcset="./img/intro/sixth_pic.webp" type="image/webp"><img width="41" height="41" class="social__image" src="./img/intro/sixth_pic.png" title="My GitHub" alt="Мой GitHub" data-aos="zoom-in" data-aos-delay="1500" data-aos-offset="0"></picture>
                         </a>
@@ -88,7 +91,8 @@
                     <a class="btn social__btn hire-resume-btn" href="#" type="button" data-modal="#modal-resume">Резюме</a>
                 </div>
                 <div class="intro__image-container">
-                    <picture><source srcset="img/intro/photo.webp" type="image/webp"><img class="intro__photo" src="img/intro/photo.png" width="500" height="500" alt="my photo" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="2000"></picture>
+                    <picture><source srcset="./img/intro/photo-light.webp" type="image/webp"><img class="intro__photo photo-light" src="./img/intro/photo-light.png" width="500" height="500" alt="my photo" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="2000"></picture>
+                    <picture><source srcset="./img/intro/photo-dark.webp" type="image/webp"><img class="intro__photo photo-dark" src="./img/intro/photo-dark.png" width="500" height="500" alt="my photo" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="2000"></picture>
                 </div>
             </div>
             <!--intro__inner -->
@@ -381,11 +385,6 @@
                         <a class="footer__social-link" href="https://vk.com/maverick177" target="_blank" title="Моя страница vkontakte">
                             <svg class="footer__social-image">
                                 <use xlink:href="./img/sprite/symbol/sprite.svg#svg--vk" />
-                            </svg>
-                        </a>
-                        <a class="footer__social-link" href="https://www.facebook.com/denis.mamlev" target="_blank" title="Моя страница facebook">
-                            <svg class="footer__social-image">
-                                <use xlink:href="./img/sprite/symbol/sprite.svg#svg--facebook-logo" />
                             </svg>
                         </a>
                         <a class="footer__social-link" href="https://github.com/DennyMaverick" target="_blank" title="Мой GitHub">
@@ -2138,12 +2137,15 @@
                             <span class="description-show">Подробнее</span>
                             <div class="more hide">
                                 <p class="modal-work__description">
-                                    На марафоне проводились онлайн-встречи, где мы обсуждали блоки кода, что нужно было сверстать. К следующей
-                                    живой трансляции наставник объяснял непонятные моменты, после этого вносились некоторые правки в проект,
+                                    На марафоне проводились онлайн-встречи, где мы обсуждали блоки кода, что нужно было сверстать. К
+                                    следующей
+                                    живой трансляции наставник объяснял непонятные моменты, после этого вносились некоторые правки в
+                                    проект,
                                     чтобы его улучшить, сохраняя при этом свои варианты наработок.
                                 </p>
                                 <p class="modal-work__description">
-                                    Таким образом марафон был успешно пройден, где я получил новый опыт работы, используя современные подходы
+                                    Таким образом марафон был успешно пройден, где я получил новый опыт работы, используя современные
+                                    подходы
                                     при разработке сайтов.
                                 </p>
                                 <p class="modal-work__description">
@@ -2151,7 +2153,8 @@
                                     ориентироваться в коде, модифицировать его и поддерживать в дальнейшем.
                                 </p>
                                 <p class="modal-work__description">
-                                    Для удобства используются миксины в scss. Это отдельные мини-функции, позволяющие сокращать код и работать
+                                    Для удобства используются миксины в scss. Это отдельные мини-функции, позволяющие сокращать код и
+                                    работать
                                     быстрее.
                                 </p>
                                 <p class="modal-work__description">
