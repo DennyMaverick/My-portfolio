@@ -11,13 +11,17 @@
   }
   &__copyright {
     margin-right: 1rem;
+    padding-right: 1rem;
     font-size: 0.94rem;
     color: $grey-light-second;
     // opacity 35 %
-    border-right: 1px solid transparantize($grey, 65%);
+    border-right: 1px solid transparentize($grey, 0.65);
     display: flex;
     align-items: center;
     @include bp-desk(mobile) {
+      border-right: none;
+      margin-right: 0;
+      padding-right: 0;
       margin-bottom: 1rem;
     }
     @include media-down(680px) {
@@ -44,13 +48,13 @@
     border: 1px solid transparent;
   }
   &__social-image {
-    fill: #BBBBCC;
+    fill: #bbbbcc;
     width: 20px;
     height: 20px;
-    transition: fill .3s ease-in;
+    transition: fill 0.3s ease-in;
   }
   &__social-color-changed {
-      animation: change-color 3s ease-in;
+    animation: change-color 3s ease-in;
   }
   &__social-link {
     margin-right: 1.2rem;
@@ -96,7 +100,7 @@
     }
   }
   &__nav-link + &__nav-link {
-    margin-left: .7rem;
+    margin-left: 0.7rem;
     @include media-down(500px) {
       margin-left: 0;
       margin-top: 1rem;
@@ -150,18 +154,18 @@
 // Анимация
 @keyframes change-color {
   0% {
-    fill: rgb(187,187,204);
+    fill: rgb(187, 187, 204);
   }
   25% {
-    fill: rgb(54,54,153);
+    fill: rgb(54, 54, 153);
   }
   40% {
-    fill: rgb(54,54,153);
+    fill: rgb(54, 54, 153);
   }
   50% {
-    fill: rgb(187,187,204);
+    fill: rgb(187, 187, 204);
   }
   100% {
-    fill: rgb(187,187,204);
+    fill: rgb(187, 187, 204);
   }
 }

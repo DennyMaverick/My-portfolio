@@ -4,6 +4,7 @@ const lightBtn = document.querySelector('[data-theme="light"]');
 
 
 switchers.forEach((switcher) => {
+  const header = document.querySelector('header');
   switcher.addEventListener('click', function () {
     // изменение цвета иконок-переключателей темы при клике на них
     if (this.dataset.theme === "light") {
@@ -45,6 +46,22 @@ switchers.forEach((switcher) => {
 });
 
 function applyTheme(themeName) {
+  // Темное / светлое фото главного экрана
+  const images = document.querySelectorAll('.intro__photo');
+  const imgLight = document.querySelector('.photo-light');
+  const imgDark = document.querySelector('.photo-dark');
+  if (themeName === 'light') {
+    images.forEach((img) => {
+      img.classList.add('hide');
+    });
+    imgLight.classList.remove('hide');
+  } else {
+    images.forEach((img) => {
+      img.classList.add('hide');
+    });
+    imgDark.classList.remove('hide');
+  }
+
   // определение url для link
   let urlTheme = `./css/theme/${themeName}.min.css`;
   // замена url в элементе link

@@ -1,19 +1,4 @@
 .mobile-modal {
-  // .mobile-modal__close
-
-  &__close {
-    cursor: pointer;
-    opacity: 0;
-    transform: translateX(-2000px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    right: 22px;
-    top: 15px;
-    transition: transform 0.2s ease-in;
-    transition-delay: 2s;
-  }
 
   // .mobile-modal__nav
 

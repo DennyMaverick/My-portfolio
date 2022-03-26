@@ -15,7 +15,7 @@
   }
   @include bp-desk(mobile) {
     padding-top: 1rem;
-  padding-bottom: 1rem;
+    padding-bottom: 1rem;
   }
   &__mobile-modal {
     opacity: 0;
