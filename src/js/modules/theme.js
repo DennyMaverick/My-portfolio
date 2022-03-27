@@ -50,17 +50,7 @@ function applyTheme(themeName) {
   const images = document.querySelectorAll('.intro__photo');
   const imgLight = document.querySelector('.photo-light');
   const imgDark = document.querySelector('.photo-dark');
-  if (themeName === 'light') {
-    images.forEach((img) => {
-      img.classList.add('hide');
-    });
-    imgLight.classList.remove('hide');
-  } else {
-    images.forEach((img) => {
-      img.classList.add('hide');
-    });
-    imgDark.classList.remove('hide');
-  }
+
 
   // определение url для link
   let urlTheme = `./css/theme/${themeName}.min.css`;
