@@ -2,11 +2,12 @@
 
 // Библиотеки
 
+// Библиотеки
+// CSS и SCSS библиотеки подключаются отдельной задачей gulp
 // Slick
-// @import '_libs/slick-theme';
-@import '_libs/slick';
-// AOS - Animate On Scroll
-@import '_libs/aos';
+// Aos
+// Slick-theme
+
 // Настройки
 @import '_config/variables';
 @import '_config/fonts';

@@ -10,6 +10,7 @@ const notify = require('gulp-notify');
 const babel = require("gulp-babel");
 const webpack = require('webpack-stream');
 
+
 // Обработка JavaScript
 const js = () => {
   return src(path.js.src, { sourcemaps: app.isDev })

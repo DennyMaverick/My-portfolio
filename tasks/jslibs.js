@@ -13,8 +13,8 @@ const uglify = require('gulp-uglify');
 
 
 // Обработка JavaScript
-const libs = () => {
-  return src(['./node_modules/aos/dist/aos.js', './node_modules/slick-carousel/slick/slick.js'])
+const jslibs = () => {
+  return src(path.libs.src)
     .pipe(plumber({
       errorHandler: notify.onError(error => ({
         title: 'JavaScript',
@@ -27,4 +27,4 @@ const libs = () => {
     .pipe(dest(path.libs.dest));
 }
 
-module.exports = libs;
+module.exports = jslibs;

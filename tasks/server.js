@@ -9,7 +9,9 @@ const server = () => {
   browserSync.init({
     server: {
       baseDir: path.root
-    }
+    },
+    browser: 'chrome',
+    notify: false
   });
 }
 

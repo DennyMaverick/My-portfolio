@@ -34,9 +34,9 @@ module.exports = {
     outputStyle: 'compressed'
   },
   favicons: {
-    appName: 'Archee project',
-    appShortName: 'Archee',
-    appDescription: 'This is a project from CodeQuest marafon',
+    appName: 'Project',
+    appShortName: 'Project name',
+    appDescription: 'This is a project',
     developerName: '',
     developerURL: '',
     background: '#fff',

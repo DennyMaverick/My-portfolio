@@ -8,9 +8,10 @@ const app = require("../config/app.js");
 const plumber = require('gulp-plumber');
 const notify = require('gulp-notify');
 const fileInclude = require("gulp-file-include");
-// const webpHtml = require('gulp-webp-html');
-const prettyHtml = require('gulp-pretty-html');
-const webpHtmlNoSvg = require('gulp-webp-html-nosvg');
+const htmlmin = require("gulp-htmlmin");
+// const size = require("gulp-size");
+const webpHtml = require('gulp-webp-html');
+
 
 // Обработка HTML
 const html = () => {
@@ -21,9 +22,14 @@ const html = () => {
         message: error.message
       }))
     }))
-    .pipe(fileInclude())
-    .pipe(prettyHtml())
-    .pipe(webpHtmlNoSvg())
+    .pipe(fileInclude({
+      prefix: '@@',
+      basepath: '@file'
+    }))
+    .pipe(webpHtml())
+    // .pipe(size({ title: "До сжатия" }))
+    .pipe(htmlmin(app.htmlmin))
+    // .pipe(size({ title: "После сжатия" }))
     .pipe(dest(path.html.dest));
 }
 
