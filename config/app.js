@@ -7,39 +7,39 @@ module.exports = {
   isDev: isDev,
 
   htmlmin: {
-    collapseWhitespace: isProd
+    collapseWhitespace: isProd,
   },
 
   pug: {
     data: {
-      social: require('../data/social.json')
+      social: require("../data/social.json"),
     },
-    pretty: isDev
+    pretty: isDev,
   },
 
   webpack: {
-    mode: isProd ? "production" : "development"
+    mode: isProd ? "production" : "development",
   },
 
   imagemin: {
-    verbose: true
+    verbose: true,
   },
 
   fonter: {
-    formats: ["ttf", "woff", "eot", "svg"]
+    formats: ["ttf", "woff", "eot", "svg"],
   },
 
   scss: {
-    importer: require('node-sass-tilde-importer'),
-    outputStyle: 'compressed'
+    importer: require("node-sass-tilde-importer"),
+    outputStyle: "compressed",
   },
   favicons: {
-    appName: 'Project',
-    appShortName: 'Project name',
-    appDescription: 'This is a project',
-    developerName: '',
-    developerURL: '',
-    background: '#fff',
+    appName: "Portfolio",
+    appShortName: "Denny Maverick - portfolio",
+    appDescription: "Denny Maverick - weblandigsforyou",
+    developerName: "",
+    developerURL: "",
+    background: "#fff",
     path: "img/favicon/",
     icons: {
       favicons: true,
@@ -49,8 +49,7 @@ module.exports = {
       yandex: false,
       coast: false,
       firefox: false,
-      appleStartup: false
-    }
-
-  }
+      appleStartup: false,
+    },
+  },
 }

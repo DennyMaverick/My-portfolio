@@ -44,10 +44,10 @@
           </nav>
           <div class="theme">
             <svg class="switcher theme__icon theme__light" data-theme="light">
-              <use xlink:href="./img/sprite/symbol/sprite.svg#light-icon" />
+              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--light-icon" />
             </svg>
             <svg class="switcher theme__icon theme__dark" data-theme="dark">
-              <use xlink:href="./img/sprite/symbol/sprite.svg#dark-icon" />
+              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon" />
             </svg>
           </div>
           <button class="burger-btn" type="button" id="nav-toggle">
@@ -64,20 +64,31 @@
           <div class="intro__position" data-aos="fade-right" data-aos-delay="1500" data-aos-offset="0">Web - разработчик</div>
           <div class="intro__social social">
             <a class="social__link" href="https://t.me/Denny_maverick" target="_blank">
-              <img class="social__image" src="./img/social-intro/telegram.svg" width="41" height="41" title="Мой телеграм" alt="My telegram" />
+              <svg class="social__image social--telegram" title="Мой телеграм" alt="My telegram">
+                <use xlink:href="./img/sprite/symbol/sprite.svg#socials--telegram" />
+              </svg>
             </a>
             <a class="social__link" href="https://web.whatsapp.com/send?phone=%2B79218109582&text&app_absent=0" target="_blank">
-              <img class="social__image" src="./img/social-intro/whatsapp.svg" width="41" height="41" title="Мой what's app" alt="My what's app" />
+              <svg class="social__image social--whatsapp" title="Мой what's app" alt="My what's app">
+                <use xlink:href="./img/sprite/symbol/sprite.svg#socials--whatsapp" />
+              </svg>
             </a>
             <a class="social__link" href="https://vk.com/maverick177" target="_blank">
-              <img class="social__image" src="./img/social-intro/vk.svg" width="41" height="41" title="Моя страница вк" alt="My vk" />
+              <svg class="social__image social--vk social--vk-sizes" title="Моя страница вк" alt="My vk">
+                <use xlink:href="./img/sprite/symbol/sprite.svg#socials--vk" />
+              </svg>
+            </a>
+            <a class="social__link" href="https://vk.com/maverick177" target="_blank">
+              <svg class="social__image social--github" title="Мой github" alt="My github">
+                <use xlink:href="./img/sprite/symbol/sprite.svg#socials--github" />
+              </svg>
             </a>
           </div>
           <a class="btn social__btn" href="#" data-modal="#modal-hire-me"> Написать мне </a>
           <a class="btn social__btn hire-resume-btn" href="#" type="button" data-modal="#modal-resume"> Резюме </a>
         </div>
         <div class="intro__image-container">
-          <img class="intro__photo photo-light" src="./img/intro/photo.png" width="500" height="500" alt="my photo" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="2000" />
+          <img class="intro__photo photo-light" src="./img/intro/photo.png" width="500" height="500" alt="my photo" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="2000" data-aos-offset="0" />
         </div>
       </div>
       <!--intro__inner -->
@@ -330,7 +341,7 @@
               <p class="about__text-part">И чтобы построить сайт, нужно уметь пользоваться теми инструментами (не обязательно всеми доступными), которые необходимы для конкретной задачи.</p>
               <p class="about__text-part">На данный момент я с уверенностью хочу сказать, что web-разработка — это составляющая моей жизни. И все инструменты, которыми я владею сейчас, позволяют без больших сложностей разрабатывать лэндинги — одностраничные сайты.</p>
               <p class="about__text-part">
-                И если Вам понадобился сайт, нажмите на кнопку ниже и оставьте мне сообщение удобным для Вас способом или воспользуйтесь
+                И если Вам нужен сайт, нажмите на кнопку ниже и оставьте мне сообщение удобным для Вас способом или воспользуйтесь
                 <a href="#contacts" id="aboutLinkSocial" class="about__link"> социальными сетями. </a>
                 Спасибо за внимание.
               </p>
@@ -358,23 +369,23 @@
               title="Мой
                   телеграм"
             >
-              <svg class="footer__social-image">
-                <use xlink:href="./img/sprite/symbol/sprite.svg#telegram" />
+              <svg class="footer__social-image social--telegram">
+                <use xlink:href="./img/sprite/symbol/sprite.svg#socials--telegram" />
               </svg>
             </a>
             <a class="footer__social-link" href="https://web.whatsapp.com/send?phone=%2B79218109582&text&app_absent=0" target="_blank" title="Мой what's app">
-              <svg class="footer__social-image">
-                <use xlink:href="./img/sprite/symbol/sprite.svg#whatsapp" />
+              <svg class="footer__social-image social--whatsapp">
+                <use xlink:href="./img/sprite/symbol/sprite.svg#socials--whatsapp" />
               </svg>
             </a>
             <a class="footer__social-link" href="https://vk.com/maverick177" target="_blank" title="Моя страница vkontakte">
-              <svg class="footer__social-image">
-                <use xlink:href="./img/sprite/symbol/sprite.svg#vk" />
+              <svg class="footer__social-image social--vk">
+                <use xlink:href="./img/sprite/symbol/sprite.svg#socials--vk" />
               </svg>
             </a>
             <a class="footer__social-link" href="https://github.com/DennyMaverick" target="_blank" title="Мой GitHub">
-              <svg class="footer__social-image">
-                <use xlink:href="./img/sprite/symbol/sprite.svg#github" />
+              <svg class="footer__social-image social--github">
+                <use xlink:href="./img/sprite/symbol/sprite.svg#socials--github" />
               </svg>
             </a>
           </div>
@@ -402,7 +413,7 @@
       <div class="modal__dialog" id="top">
         <button class="modal__close-btn" type="button" data-close>
           <svg class="modal__close" alt="Close button">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#modal-close" />
+            <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
           </svg>
         </button>
         <div class="modal__content">
@@ -438,7 +449,9 @@
                 <p class="timeline__text">И если Вам нужен сайт, нажмите на кнопку ниже, и я отвечу в скором времени.</p>
               </div>
               <a id="arrow-top-two" href="#top" class="timeline__arrow-up hide" title="Наверх">
-                <img class="timeline__arrow-up-pic" src="./img/arrows/arrow-up.svg" alt="arrow up" />
+                <svg class="timeline__arrow-up-pic" alt="arrow up">
+                  <use xlink:href="./img/sprite/symbol/sprite.svg#arrows--arrow-up" />
+                </svg>
               </a>
             </div>
             <div class="timeline__col timeline__col--right">
@@ -627,7 +640,9 @@
                 <p class="timeline__text">Защита дипломной работы на 5, и в целом то, что я прошел путь до конца, также отношу к моим достижениям.</p>
               </div>
               <a href="#top" id="arrow-top-one" class="timeline__arrow-up" title="Наверх">
-                <img class="timeline__arrow-up-pic" src="./img/arrows/arrow-up.svg" alt="arrow up" />
+                <svg class="timeline__arrow-up-pic" alt="arrow up">
+                  <use xlink:href="./img/sprite/symbol/sprite.svg#arrows--arrow-up" />
+                </svg>
               </a>
             </div>
             <!--timeline__col-->
@@ -647,7 +662,7 @@
       <div class="modal__dialog modal__dialog--sm">
         <button class="modal__close-btn" type="button" data-close>
           <svg class="modal__close" alt="Close button">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#modal-close" />
+            <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
           </svg>
         </button>
         <div class="modal__contact contact">
@@ -701,7 +716,7 @@
       <div class="modal__dialog modal__dialog--sm">
         <button class="modal__close-btn" type="button" data-close>
           <svg class="modal__close" alt="Close button">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#modal-close" />
+            <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
           </svg>
         </button>
         <div class="modal__image">
@@ -715,7 +730,7 @@
       <div class="modal__dialog modal__dialog--sm">
         <button class="modal__close-btn" type="button" data-close>
           <svg class="modal__close" alt="Close button">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#modal-close" />
+            <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
           </svg>
         </button>
         <div class="modal__image">
@@ -729,7 +744,7 @@
       <div class="modal__dialog modal__dialog--sm">
         <button class="modal__close-btn" type="button" data-close>
           <svg class="modal__close" alt="Close button">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#modal-close" />
+            <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
           </svg>
         </button>
         <div class="modal__image">
@@ -744,7 +759,7 @@
       <div class="modal__dialog">
         <button class="modal__close-btn" type="button" data-close>
           <svg class="modal__close" alt="Close button">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#modal-close" />
+            <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
           </svg>
         </button>
         <div class="modal__modal-work modal-work">
@@ -817,22 +832,18 @@
                 <li class="modal-list__item">
                   <a class="modal-list__link" href="https://github.com/DennyMaverick/Thrivetalk" target="_blank"> Ссылка на репозиторий GitHub </a>
                 </li>
-                <li class="modal-list__item">Время, потраченное на работу ~ 23 ч</li>
+                <li class="modal-list__item">Время на работу ~ 23 ч</li>
               </ul>
             </div>
             <!--modal-work__text -->
             <div class="modal-work__footer">
-              <button class="modal-work__btn slickPrev" type="button">
-                <img class="modal-work__arrow modal-work__btn--prev" src="./img/arrows/left-arrow.svg" alt="left arrow" height="11" />
-                <span class="modal-work__btn--text">Назад</span>
-              </button>
-              <button class="modal-work__btn slickNext" type="button">
-                <span class="modal-work__btn--text">Вперед</span>
-                <img class="modal-work__arrow modal-work__btn--next" src="./img/arrows/right-arrow.svg" alt="right arrow" height="11" />
-              </button>
+              <button class="modal-work__btn slickPrev modal-work__btn--text" type="button">Назад</button>
+              <button class="modal-work__btn modal-work__btn--text slickNext" type="button">Вперед</button>
             </div>
             <a href="#" class="modal-work__arrow-up up" title="Наверх">
-              <img class="modal-work__arrow-up-pic" src="./img/arrows/arrow-up.svg" alt="arrow up" />
+              <svg class="modal-work__arrow-up-pic" alt="arrow up">
+                <use xlink:href="./img/sprite/symbol/sprite.svg#arrows--arrow-up" />
+              </svg>
             </a>
           </div>
           <!-- .modal-work__content -->
@@ -845,7 +856,7 @@
       <div class="modal__dialog">
         <button class="modal__close-btn" type="button" data-close>
           <svg class="modal__close" alt="Close button">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#modal-close" />
+            <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
           </svg>
         </button>
         <div class="modal__modal-work modal-work">
@@ -909,22 +920,18 @@
                 <li class="modal-list__item">
                   <a class="modal-list__link" href="https://github.com/DennyMaverick/Site_visit-card/tree/master" target="_blank"> Ссылка на репозиторий GitHub </a>
                 </li>
-                <li class="modal-list__item">Время, потраченное на работу ~ 20 ч</li>
+                <li class="modal-list__item">Время на работу ~ 20 ч</li>
               </ul>
             </div>
             <!--modal-work__text -->
             <div class="modal-work__footer">
-              <button class="modal-work__btn slickPrev" type="button">
-                <img class="modal-work__arrow modal-work__btn--prev" src="./img/arrows/left-arrow.svg" alt="left arrow" height="11" />
-                <span class="modal-work__btn--text">Назад</span>
-              </button>
-              <button class="modal-work__btn slickNext" type="button">
-                <span class="modal-work__btn--text">Вперед</span>
-                <img class="modal-work__arrow modal-work__btn--next" src="./img/arrows/right-arrow.svg" alt="right arrow" height="11" />
-              </button>
+              <button class="modal-work__btn modal-work__btn--text slickPrev" type="button">Назад</button>
+              <button class="modal-work__btn modal-work__btn--text slickNext" type="button">Вперед</button>
             </div>
             <a href="#" class="modal-work__arrow-up up" title="Наверх">
-              <img class="modal-work__arrow-up-pic" src="./img/arrows/arrow-up.svg" alt="arrow up" />
+              <svg class="modal-work__arrow-up-pic" alt="arrow up">
+                <use xlink:href="./img/sprite/symbol/sprite.svg#arrows--arrow-up" />
+              </svg>
             </a>
           </div>
           <!--modal-work__content -->
@@ -938,7 +945,7 @@
       <div class="modal__dialog">
         <button class="modal__close-btn" type="button" data-close>
           <svg class="modal__close" alt="Close button">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#modal-close" />
+            <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
           </svg>
         </button>
         <div class="modal__modal-work modal-work">
@@ -993,22 +1000,18 @@
                 <li class="modal-list__item">
                   <a class="modal-list__link" href="https://github.com/DennyMaverick/Venom_2" target="_blank"> Ссылка на репозиторий GitHub </a>
                 </li>
-                <li class="modal-list__item">Время, потраченное на работу ~ 11 ч</li>
+                <li class="modal-list__item">Время на работу ~ 11 ч</li>
               </ul>
             </div>
             <!--modal-work__text -->
             <div class="modal-work__footer">
-              <button class="modal-work__btn slickPrev" type="button">
-                <img class="modal-work__arrow modal-work__btn--prev" src="./img/arrows/left-arrow.svg" alt="left arrow" height="11" />
-                <span class="modal-work__btn--text">Назад</span>
-              </button>
-              <button class="modal-work__btn slickNext" type="button">
-                <span class="modal-work__btn--text">Вперед</span>
-                <img class="modal-work__arrow modal-work__btn--next" src="./img/arrows/right-arrow.svg" alt="right arrow" height="11" />
-              </button>
+              <button class="modal-work__btn slickPrev modal-work__btn--text" type="button">Назад</button>
+              <button class="modal-work__btn modal-work__btn--text slickNext" type="button">Вперед</button>
             </div>
             <a href="#" class="modal-work__arrow-up up" title="Наверх">
-              <img class="modal-work__arrow-up-pic" src="./img/arrows/arrow-up.svg" alt="arrow up" />
+              <svg class="modal-work__arrow-up-pic" alt="arrow up">
+                <use xlink:href="./img/sprite/symbol/sprite.svg#arrows--arrow-up" />
+              </svg>
             </a>
           </div>
           <!--modal-work__content -->
@@ -1022,7 +1025,7 @@
       <div class="modal__dialog">
         <button class="modal__close-btn" type="button" data-close>
           <svg class="modal__close" alt="Close button">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#modal-close" />
+            <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
           </svg>
         </button>
         <div class="modal__modal-work modal-work">
@@ -1102,22 +1105,18 @@
                 <li class="modal-list__item">
                   <a class="modal-list__link" href="https://github.com/DennyMaverick/SafariTrevelToAfrica/tree/master" target="_blank"> Ссылка на репозиторий GitHub </a>
                 </li>
-                <li class="modal-list__item">Время, потраченное на работу ~ 17 ч</li>
+                <li class="modal-list__item">Время на работу ~ 17 ч</li>
               </ul>
             </div>
             <!--modal-work__text -->
             <div class="modal-work__footer">
-              <button class="modal-work__btn slickPrev" type="button">
-                <img class="modal-work__arrow modal-work__btn--prev" src="./img/arrows/left-arrow.svg" alt="left arrow" height="11" />
-                <span class="modal-work__btn--text">Назад</span>
-              </button>
-              <button class="modal-work__btn slickNext" type="button">
-                <span class="modal-work__btn--text">Вперед</span>
-                <img class="modal-work__arrow modal-work__btn--next" src="./img/arrows/right-arrow.svg" alt="right arrow" height="11" />
-              </button>
+              <button class="modal-work__btn slickPrev modal-work__btn--text" type="button">Назад</button>
+              <button class="modal-work__btn modal-work__btn--text slickNext" type="button">Вперед</button>
             </div>
             <a href="#" class="modal-work__arrow-up up" title="Наверх">
-              <img class="modal-work__arrow-up-pic" src="./img/arrows/arrow-up.svg" alt="arrow up" />
+              <svg class="modal-work__arrow-up-pic" alt="arrow up">
+                <use xlink:href="./img/sprite/symbol/sprite.svg#arrows--arrow-up" />
+              </svg>
             </a>
           </div>
           <!--modal-work__content -->
@@ -1131,7 +1130,7 @@
       <div class="modal__dialog">
         <button class="modal__close-btn" type="button" data-close>
           <svg class="modal__close" alt="Close button">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#modal-close" />
+            <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
           </svg>
         </button>
         <div class="modal__modal-work modal-work">
@@ -1190,22 +1189,18 @@
                 <li class="modal-list__item">
                   <a class="modal-list__link" href="https://github.com/DennyMaverick/ScriptsForAnInternetStore" target="_blank"> Ссылка на репозиторий GitHub </a>
                 </li>
-                <li class="modal-list__item">Время, потраченное на работу ~ 9 ч</li>
+                <li class="modal-list__item">Время на работу ~ 9 ч</li>
               </ul>
             </div>
             <!--modal-work__text -->
             <div class="modal-work__footer">
-              <button class="modal-work__btn slickPrev" type="button">
-                <img class="modal-work__arrow modal-work__btn--prev" src="./img/arrows/left-arrow.svg" alt="left arrow" height="11" />
-                <span class="modal-work__btn--text">Назад</span>
-              </button>
-              <button class="modal-work__btn slickNext" type="button">
-                <span class="modal-work__btn--text">Вперед</span>
-                <img class="modal-work__arrow modal-work__btn--next" src="./img/arrows/right-arrow.svg" alt="right arrow" height="11" />
-              </button>
+              <button class="modal-work__btn slickPrev modal-work__btn--text" type="button">Назад</button>
+              <button class="modal-work__btn modal-work__btn--text slickNext" type="button">Вперед</button>
             </div>
             <a href="#" class="modal-work__arrow-up up" title="Наверх">
-              <img class="modal-work__arrow-up-pic" src="./img/arrows/arrow-up.svg" alt="arrow up" />
+              <svg class="modal-work__arrow-up-pic" alt="arrow up">
+                <use xlink:href="./img/sprite/symbol/sprite.svg#arrows--arrow-up" />
+              </svg>
             </a>
           </div>
           <!--modal-work__content -->
@@ -1219,7 +1214,7 @@
       <div class="modal__dialog">
         <button class="modal__close-btn" type="button" data-close>
           <svg class="modal__close" alt="Close button">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#modal-close" />
+            <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
           </svg>
         </button>
         <div class="modal__modal-work modal-work">
@@ -1276,22 +1271,18 @@
                 <li class="modal-list__item">
                   <a class="modal-list__link" href="https://github.com/DennyMaverick/Calculator" target="_blank"> Ссылка на репозиторий GitHub </a>
                 </li>
-                <li class="modal-list__item">Время, потраченное на работу ~ 4.5 ч</li>
+                <li class="modal-list__item">Время на работу ~ 4.5 ч</li>
               </ul>
             </div>
             <!--modal-work__text -->
             <div class="modal-work__footer">
-              <button class="modal-work__btn slickPrev" type="button">
-                <img class="modal-work__arrow modal-work__btn--prev" src="./img/arrows/left-arrow.svg" alt="left arrow" height="11" />
-                <span class="modal-work__btn--text">Назад</span>
-              </button>
-              <button class="modal-work__btn slickNext" type="button">
-                <span class="modal-work__btn--text">Вперед</span>
-                <img class="modal-work__arrow modal-work__btn--next" src="./img/arrows/right-arrow.svg" alt="right arrow" height="11" />
-              </button>
+              <button class="modal-work__btn slickPrev modal-work__btn--text" type="button">Назад</button>
+              <button class="modal-work__btn modal-work__btn--text slickNext" type="button">Вперед</button>
             </div>
             <a href="#" class="modal-work__arrow-up up" title="Наверх">
-              <img class="modal-work__arrow-up-pic" src="./img/arrows/arrow-up.svg" alt="arrow up" />
+              <svg class="modal-work__arrow-up-pic" alt="arrow up">
+                <use xlink:href="./img/sprite/symbol/sprite.svg#arrows--arrow-up" />
+              </svg>
             </a>
           </div>
           <!--modal-work__content -->
@@ -1305,7 +1296,7 @@
       <div class="modal__dialog">
         <button class="modal__close-btn" type="button" data-close>
           <svg class="modal__close" alt="Close button">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#modal-close" />
+            <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
           </svg>
         </button>
         <div class="modal__modal-work modal-work">
@@ -1354,22 +1345,18 @@
                 <li class="modal-list__item">
                   <a class="modal-list__link" href="https://github.com/DennyMaverick/Convertation_project" target="_blank"> Ссылка на репозиторий GitHub </a>
                 </li>
-                <li class="modal-list__item">Время, потраченное на работу ~ 2.5 ч</li>
+                <li class="modal-list__item">Время на работу ~ 2.5 ч</li>
               </ul>
             </div>
             <!--modal-work__text -->
             <div class="modal-work__footer">
-              <button class="modal-work__btn slickPrev" type="button">
-                <img class="modal-work__arrow modal-work__btn--prev" src="./img/arrows/left-arrow.svg" alt="left arrow" height="11" />
-                <span class="modal-work__btn--text">Назад</span>
-              </button>
-              <button class="modal-work__btn slickNext" type="button">
-                <span class="modal-work__btn--text">Вперед</span>
-                <img class="modal-work__arrow modal-work__btn--next" src="./img/arrows/right-arrow.svg" alt="right arrow" height="11" />
-              </button>
+              <button class="modal-work__btn slickPrev modal-work__btn--text" type="button">Назад</button>
+              <button class="modal-work__btn modal-work__btn--text slickNext" type="button">Вперед</button>
             </div>
             <a href="#" class="modal-work__arrow-up up" title="Наверх">
-              <img class="modal-work__arrow-up-pic" src="./img/arrows/arrow-up.svg" alt="arrow up" />
+              <svg class="modal-work__arrow-up-pic" alt="arrow up">
+                <use xlink:href="./img/sprite/symbol/sprite.svg#arrows--arrow-up" />
+              </svg>
             </a>
           </div>
           <!--modal-work__content -->
@@ -1383,7 +1370,7 @@
       <div class="modal__dialog">
         <button class="modal__close-btn" type="button" data-close>
           <svg class="modal__close" alt="Close button">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#modal-close" />
+            <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
           </svg>
         </button>
         <div class="modal__modal-work modal-work">
@@ -1448,22 +1435,18 @@
                 <li class="modal-list__item">
                   <a class="modal-list__link" href="https://github.com/DennyMaverick/quize_dream-burger" target="_blank"> Ссылка на репозиторий GitHub </a>
                 </li>
-                <li class="modal-list__item">Время, потраченное на работу ~ 7 ч</li>
+                <li class="modal-list__item">Время на работу ~ 7 ч</li>
               </ul>
             </div>
             <!--modal-work__text -->
             <div class="modal-work__footer">
-              <button class="modal-work__btn slickPrev" type="button">
-                <img class="modal-work__arrow modal-work__btn--prev" src="./img/arrows/left-arrow.svg" alt="left arrow" height="11" />
-                <span class="modal-work__btn--text">Назад</span>
-              </button>
-              <button class="modal-work__btn slickNext" type="button">
-                <span class="modal-work__btn--text">Вперед</span>
-                <img class="modal-work__arrow modal-work__btn--next" src="./img/arrows/right-arrow.svg" alt="right arrow" height="11" />
-              </button>
+              <button class="modal-work__btn slickPrev modal-work__btn--text" type="button">Назад</button>
+              <button class="modal-work__btn modal-work__btn--text slickNext" type="button">Вперед</button>
             </div>
             <a href="#" class="modal-work__arrow-up up" title="Наверх">
-              <img class="modal-work__arrow-up-pic" src="./img/arrows/arrow-up.svg" alt="arrow up" />
+              <svg class="modal-work__arrow-up-pic" alt="arrow up">
+                <use xlink:href="./img/sprite/symbol/sprite.svg#arrows--arrow-up" />
+              </svg>
             </a>
           </div>
           <!--modal-work__content -->
@@ -1477,7 +1460,7 @@
       <div class="modal__dialog">
         <button class="modal__close-btn" type="button" data-close>
           <svg class="modal__close" alt="Close button">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#modal-close" />
+            <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
           </svg>
         </button>
         <div class="modal__modal-work modal-work" id="up">
@@ -1576,22 +1559,18 @@
                 <li class="modal-list__item">
                   <a class="modal-list__link" href="https://www.figma.com/file/kdCYVebkLyFvSCKhGwQ08L/oxygen" target="_blank"> Ссылка на макет Figma </a>
                 </li>
-                <li class="modal-list__item">Время, потраченное на работу ~ 20.5 ч</li>
+                <li class="modal-list__item">Время на работу ~ 20.5 ч</li>
               </ul>
             </div>
             <!--modal-work__text -->
             <div class="modal-work__footer">
-              <button class="modal-work__btn slickPrev" type="button">
-                <img class="modal-work__arrow modal-work__btn--prev" src="./img/arrows/left-arrow.svg" alt="left arrow" height="11" />
-                <span class="modal-work__btn--text">Назад</span>
-              </button>
-              <button class="modal-work__btn slickNext" type="button">
-                <span class="modal-work__btn--text">Вперед</span>
-                <img class="modal-work__arrow modal-work__btn--next" src="./img/arrows/right-arrow.svg" alt="right arrow" height="11" />
-              </button>
+              <button class="modal-work__btn slickPrev modal-work__btn--text" type="button">Назад</button>
+              <button class="modal-work__btn modal-work__btn--text slickNext" type="button">Вперед</button>
             </div>
             <a href="#" class="modal-work__arrow-up up" title="Наверх">
-              <img class="modal-work__arrow-up-pic" src="./img/arrows/arrow-up.svg" alt="arrow up" />
+              <svg class="modal-work__arrow-up-pic" alt="arrow up">
+                <use xlink:href="./img/sprite/symbol/sprite.svg#arrows--arrow-up" />
+              </svg>
             </a>
           </div>
           <!--modal-work__content -->
@@ -1605,7 +1584,7 @@
       <div class="modal__dialog">
         <button class="modal__close-btn" type="button" data-close>
           <svg class="modal__close" alt="Close button">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#modal-close" />
+            <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
           </svg>
         </button>
         <div class="modal__modal-work modal-work">
@@ -1679,22 +1658,18 @@
                 <li class="modal-list__item">
                   <a class="modal-list__link" href="https://www.figma.com/file/InKhPw92MAhkJPPtCOa615/alivio-landing-page-for-figma" target="_blank"> Ссылка на макет Figma </a>
                 </li>
-                <li class="modal-list__item">Время, потраченное на работу ~ 8.5 ч</li>
+                <li class="modal-list__item">Время на работу ~ 8.5 ч</li>
               </ul>
             </div>
             <!--modal-work__text -->
             <div class="modal-work__footer">
-              <button class="modal-work__btn slickPrev" type="button">
-                <img class="modal-work__arrow modal-work__btn--prev" src="./img/arrows/left-arrow.svg" alt="left arrow" height="11" />
-                <span class="modal-work__btn--text">Назад</span>
-              </button>
-              <button class="modal-work__btn slickNext" type="button">
-                <span class="modal-work__btn--text">Вперед</span>
-                <img class="modal-work__arrow modal-work__btn--next" src="./img/arrows/right-arrow.svg" alt="right arrow" height="11" />
-              </button>
+              <button class="modal-work__btn slickPrev modal-work__btn--text" type="button">Назад</button>
+              <button class="modal-work__btn modal-work__btn--text slickNext" type="button">Вперед</button>
             </div>
             <a href="#" class="modal-work__arrow-up up" title="Наверх">
-              <img class="modal-work__arrow-up-pic" src="./img/arrows/arrow-up.svg" alt="arrow up" />
+              <svg class="modal-work__arrow-up-pic" alt="arrow up">
+                <use xlink:href="./img/sprite/symbol/sprite.svg#arrows--arrow-up" />
+              </svg>
             </a>
           </div>
           <!--modal-work__content -->
@@ -1708,7 +1683,7 @@
       <div class="modal__dialog">
         <button class="modal__close-btn" type="button" data-close>
           <svg class="modal__close" alt="Close button">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#modal-close" />
+            <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
           </svg>
         </button>
         <div class="modal__modal-work modal-work">
@@ -1782,22 +1757,18 @@
                 <li class="modal-list__item">
                   <a class="modal-list__link" href="https://www.figma.com/file/M1hG6MPR9PjhU7RunmOnkU/%D0%98%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%95%D0%B4%D0%B0-Design" target="_blank"> Ссылка на макет Figma </a>
                 </li>
-                <li class="modal-list__item">Время, потраченное на работу ~ 7 ч</li>
+                <li class="modal-list__item">Время на работу ~ 7 ч</li>
               </ul>
             </div>
             <!--modal-work__text -->
             <div class="modal-work__footer">
-              <button class="modal-work__btn slickPrev" type="button">
-                <img class="modal-work__arrow modal-work__btn--prev" src="./img/arrows/left-arrow.svg" alt="left arrow" height="11" />
-                <span class="modal-work__btn--text">Назад</span>
-              </button>
-              <button class="modal-work__btn slickNext" type="button">
-                <span class="modal-work__btn--text">Вперед</span>
-                <img class="modal-work__arrow modal-work__btn--next" src="./img/arrows/right-arrow.svg" alt="right arrow" height="11" />
-              </button>
+              <button class="modal-work__btn slickPrev modal-work__btn--text" type="button">Назад</button>
+              <button class="modal-work__btn modal-work__btn--text slickNext" type="button">Вперед</button>
             </div>
             <a href="#" class="modal-work__arrow-up up" title="Наверх">
-              <img class="modal-work__arrow-up-pic" src="./img/arrows/arrow-up.svg" alt="arrow up" />
+              <svg class="modal-work__arrow-up-pic" alt="arrow up">
+                <use xlink:href="./img/sprite/symbol/sprite.svg#arrows--arrow-up" />
+              </svg>
             </a>
           </div>
           <!--modal-work__content -->
@@ -1811,7 +1782,7 @@
       <div class="modal__dialog">
         <button class="modal__close-btn" type="button" data-close>
           <svg class="modal__close" alt="Close button">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#modal-close" />
+            <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
           </svg>
         </button>
         <div class="modal__modal-work modal-work">
@@ -1879,22 +1850,18 @@
                 <li class="modal-list__item">
                   <a class="modal-list__link" href="https://www.figma.com/file/KarBy7Dmzmq4em3WoZxwC5/%D0%BC%D0%BE%D1%80%D0%B5%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D1%8B-Copy" target="_blank"> Ссылка на макет Figma </a>
                 </li>
-                <li class="modal-list__item">Время, потраченное на работу ~ 15 ч</li>
+                <li class="modal-list__item">Время на работу ~ 15 ч</li>
               </ul>
             </div>
             <!--modal-work__text -->
             <div class="modal-work__footer">
-              <button class="modal-work__btn slickPrev" type="button">
-                <img class="modal-work__arrow modal-work__btn--prev" src="./img/arrows/left-arrow.svg" alt="left arrow" height="11" />
-                <span class="modal-work__btn--text">Назад</span>
-              </button>
-              <button class="modal-work__btn slickNext" type="button">
-                <span class="modal-work__btn--text">Вперед</span>
-                <img class="modal-work__arrow modal-work__btn--next" src="./img/arrows/right-arrow.svg" alt="right arrow" height="11" />
-              </button>
+              <button class="modal-work__btn slickPrev modal-work__btn--text" type="button">Назад</button>
+              <button class="modal-work__btn modal-work__btn--text slickNext" type="button">Вперед</button>
             </div>
             <a href="#" class="modal-work__arrow-up up" title="Наверх">
-              <img class="modal-work__arrow-up-pic" src="./img/arrows/arrow-up.svg" alt="arrow up" />
+              <svg class="modal-work__arrow-up-pic" alt="arrow up">
+                <use xlink:href="./img/sprite/symbol/sprite.svg#arrows--arrow-up" />
+              </svg>
             </a>
           </div>
           <!--modal-work__content -->
@@ -1908,7 +1875,7 @@
       <div class="modal__dialog">
         <button class="modal__close-btn" type="button" data-close>
           <svg class="modal__close" alt="Close button">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#modal-close" />
+            <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
           </svg>
         </button>
         <div class="modal__modal-work modal-work">
@@ -1992,22 +1959,18 @@
                 <li class="modal-list__item">
                   <a class="modal-list__link" href="https://github.com/DennyMaverick/Archee" target="_blank"> Ссылка на репозиторий GitHub </a>
                 </li>
-                <li class="modal-list__item">Время, потраченное на работу ~ 20 ч</li>
+                <li class="modal-list__item">Время на работу ~ 20 ч</li>
               </ul>
             </div>
             <!--modal-work__text -->
             <div class="modal-work__footer">
-              <button class="modal-work__btn slickPrev" type="button">
-                <img class="modal-work__arrow modal-work__btn--prev" src="./img/arrows/left-arrow.svg" alt="left arrow" height="11" />
-                <span class="modal-work__btn--text">Назад</span>
-              </button>
-              <button class="modal-work__btn slickNext" type="button">
-                <span class="modal-work__btn--text">Вперед</span>
-                <img class="modal-work__arrow modal-work__btn--next" src="./img/arrows/right-arrow.svg" alt="right arrow" height="11" />
-              </button>
+              <button class="modal-work__btn slickPrev modal-work__btn--text" type="button">Назад</button>
+              <button class="modal-work__btn modal-work__btn--text slickNext" type="button">Вперед</button>
             </div>
             <a href="#" class="modal-work__arrow-up up" title="Наверх">
-              <img class="modal-work__arrow-up-pic" src="./img/arrows/arrow-up.svg" alt="arrow up" />
+              <svg class="modal-work__arrow-up-pic" alt="arrow up">
+                <use xlink:href="./img/sprite/symbol/sprite.svg#arrows--arrow-up" />
+              </svg>
             </a>
           </div>
           <!--modal-work__content -->

@@ -3,20 +3,20 @@
 const arrowUpOne = document.getElementById('arrow-top-one');
 const arrowUpTwo = document.getElementById('arrow-top-two');
 
-if (document.documentElement.clientWidth < 768) {
-  arrowUpTwo.classList.remove('hide');
-  arrowUpOne.classList.add('hide');
+if (document.documentElement.clientWidth < 769) {
+  arrowUpTwo.classList.remove("hide")
+  arrowUpOne.classList.add("hide")
 } else {
-  arrowUpTwo.classList.add('hide');
-  arrowUpOne.classList.remove('hide');
+  arrowUpTwo.classList.add("hide")
+  arrowUpOne.classList.remove("hide")
 }
 
-window.addEventListener('resize', () => {
-  if (document.documentElement.clientWidth < 768) {
-    arrowUpTwo.classList.remove('hide');
-    arrowUpOne.classList.add('hide');
+window.addEventListener("resize", () => {
+  if (document.documentElement.clientWidth < 769) {
+    arrowUpTwo.classList.remove("hide")
+    arrowUpOne.classList.add("hide")
   } else {
-    arrowUpTwo.classList.add('hide');
-    arrowUpOne.classList.remove('hide');
+    arrowUpTwo.classList.add("hide")
+    arrowUpOne.classList.remove("hide")
   }
 })

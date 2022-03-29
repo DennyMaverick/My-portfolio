@@ -1,10 +1,19 @@
 .mobile-nav {
   &__link {
+    position: relative;
     font-size: 0.93rem;
     color: $black;
     text-transform: uppercase;
     font-weight: 700;
     text-decoration: none;
+    &:after {
+      @include decore-line;
+    }
+    &:hover:not(.mobile-nav__link--btn) {
+      &:after {
+        width: 100%;
+      }
+    }
   }
   &__link + &__link {
     margin-top: 2rem;

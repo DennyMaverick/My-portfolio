@@ -48,14 +48,16 @@
     border: 1px solid transparent;
   }
   &__social-image {
-    fill: #bbbbcc;
     width: 20px;
     height: 20px;
     transition: fill 0.3s ease-in;
   }
-  &__social-color-changed {
-    animation: change-color 3s ease-in;
+  &__social-move-up {
+    animation: move-up 3s ease-in;
   }
+  // &__social-color-changed {
+  //   animation: change-color 3s ease-in;
+  // }
   &__social-link {
     margin-right: 1.2rem;
   }
@@ -152,20 +154,38 @@
 }
 
 // Анимация
-@keyframes change-color {
+// @keyframes change-color {
+//   0% {
+//     fill: rgb(187, 187, 204);
+//   }
+//   25% {
+//     fill: rgb(54, 54, 153);
+//   }
+//   40% {
+//     fill: rgb(54, 54, 153);
+//   }
+//   50% {
+//     fill: rgb(187, 187, 204);
+//   }
+//   100% {
+//     fill: rgb(187, 187, 204);
+//   }
+// }
+
+@keyframes move-up {
   0% {
-    fill: rgb(187, 187, 204);
+    transform: translateY(0px);
   }
   25% {
-    fill: rgb(54, 54, 153);
+    transform: translateY(-2px);
   }
   40% {
-    fill: rgb(54, 54, 153);
+    transform: translateY(-7px);
   }
   50% {
-    fill: rgb(187, 187, 204);
+    transform: translateY(-4px);
   }
   100% {
-    fill: rgb(187, 187, 204);
+    transform: translateY(0px);
   }
 }

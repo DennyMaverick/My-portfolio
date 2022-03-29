@@ -1,14 +1,36 @@
 .social {
-  &__img {
-    width: 41px;
-    height: 41px;
+  display: flex;
+  align-items: center;
+  &__image {
+    width: 31px;
+    height: 31px;
     &:hover {
       opacity: 0.8;
     }
   }
 
+  &--github {
+    fill: rgb(0, 0, 0);
+  }
+
+  &--vk {
+    fill: rgb(65,107,166);
+  }
+
+  &--vk-sizes {
+    width: 37px;
+    height: 37px;
+  }
+
+  &--whatsapp {
+    fill: rgb(81,198,94);
+  }
+  &--telegram {
+    fill: rgb(85,177,226);
+  }
+
   &__link {
-    margin-right: 20px;
+    margin-right: 15px;
     transition: transform 0.2s linear;
     &:hover {
       transform: translateY(-5px);
