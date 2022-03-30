@@ -63,3 +63,10 @@
     }
   }
 }
+
+// ====== Social Footer =====
+.footer .social {
+  &--github {
+    fill: $white;
+  }
+}

@@ -48,15 +48,33 @@ $white: #fff;
 $orange: orange;
 $blue: blue;
 
+// ====== modal__list ======
+
+// ======= light ========
+$modal-list-marker-color: steelblue;
+$modal-list-link: steelblue;
+
+// ======= dark ========
+$modal-list-marker-color-dark: #edb040;
+$modal-list-link-dark: #edb040;
+
+// === description-show / description-hide ===
+
+// === light ===
+
+$desk-show-color: steelblue;
+
+// === dark ===
+$desk-show-color-dark: #edb040;
 
 // ==== arrow-up hover timeline, modal-work =====
 
 // Light
 // arrow-up static
-$arrow-up-color-light: #d26363;
+$arrow-up-color-light: steelblue;
 // Dark
 // arrow-up static
-$arrow-up-color: #cb761b;
+$arrow-up-color: #edb040;
 
 // Dark
 // arrow-up hover
@@ -64,7 +82,7 @@ $arrow-up-color-hover: burlywood;
 
 // Light
 // arrow-up hover
-$arrow-up-color-light-hover: maroon;
+$arrow-up-color-light-hover: #4697B2;
 // modal-work__btn  Colors
 // static
 $btn-color: floralwhite;
@@ -75,3 +93,10 @@ $btn-color-hover: floralwhite; /*dark-dtn*/
 
 $hover-btn-dark: bisque;
 $hover-btn-light: aliceblue;
+
+// ==== theme modal === resume & hire-me
+$theme-modal-light: steelblue;
+$theme-modal-dark: #edb040;
+
+
+

@@ -2,7 +2,22 @@
   box-shadow: 1px 1px 10px $white;
   padding: 7px;
   background-color: $grey;
-  border-radius: 5px;
+  &--br {
+    border-radius: 5px;
+  }
+  &--modal {
+    display: flex;
+    align-items: center;
+    padding: 24px 17px;
+    background: $theme-modal-light;
+    box-shadow: 1px 1px 10px $theme-modal-light;
+    @include bp-desk(tablet) {
+      padding: 20px 17px;
+    }
+    .theme__light {
+      margin-right: 12px;
+    }
+  }
   & + * {
     margin-left: 14px;
   }

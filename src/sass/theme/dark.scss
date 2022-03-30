@@ -54,6 +54,10 @@
 .theme {
   box-shadow: 1px 1px 10px $grey;
   background-color: $grey-theme;
+  &--modal {
+    background: $theme-modal-dark;
+    box-shadow: 2px 2px 13px $theme-modal-dark;
+  }
 }
 
 .box-shadow-dark {
@@ -180,6 +184,14 @@
     }
   }
 }
+
+// ====== Social INTRO =====
+.intro .social {
+  &--github {
+    fill: $white;
+  }
+}
+
 // ======= Мобильное меню =======
 .mobile-nav {
   &__link {
@@ -206,6 +218,25 @@
   }
 }
 
+// ==== modal-list ====
+.modal-list {
+  &__item {
+    &::marker {
+      color: $modal-list-marker-color-dark;
+    }
+  }
+  &__link {
+    color: $modal-list-link-dark;
+  }
+}
+
+// ===== modal-work description-show / description-hide
+
+.description-hide,
+.description-show {
+  color: $desk-show-color-dark;
+}
+
 // ===== Модальное окно контактной формы =====
 
 .contact {
@@ -215,6 +246,9 @@
 
   &__info-link {
     color: $white;
+  }
+  &__info-icon {
+    fill: $white;
   }
 }
 
@@ -247,7 +281,7 @@
   }
   &__arrow-up-pic {
     fill: $arrow-up-color;
-    transition: fill .3s ease-in;
+    transition: fill 0.3s ease-in;
     &:hover {
       fill: $arrow-up-color-hover;
     }
@@ -296,7 +330,7 @@
     background-color: $color-btn-dark;
     color: $btn-color;
     box-shadow: 0px 0px 10px $color-btn-dark;
-    transition: background-color .3s ease-in, color .3s ease-in, box-shadow .3s ease-in;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in, box-shadow 0.3s ease-in;
     &:hover {
       background-color: $hover-btn-dark;
       color: $black;
@@ -305,10 +339,9 @@
   }
   &__arrow-up-pic {
     fill: $arrow-up-color;
-    transition: fill .3s ease-in;
+    transition: fill 0.3s ease-in;
     &:hover {
       fill: $arrow-up-color-hover;
     }
   }
 }
-

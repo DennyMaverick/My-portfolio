@@ -3,6 +3,9 @@
     padding: 2rem;
     max-width: 607px;
     width: 100%;
+    @include bp-desk(mobile) {
+      padding: 1rem;
+    }
   }
   // &__right {
     // padding: 2rem;

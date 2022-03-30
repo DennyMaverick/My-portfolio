@@ -13,14 +13,16 @@ window.addEventListener('DOMContentLoaded', function () {
 
   mobileLinks.forEach(function (item) {
     item.onclick = function () {
-      mobileNav.classList.remove('header__mobile-modal-active');
-      body.classList.remove('no-scroll');
+      burgerLine.classList.remove("active")
+      mobileNav.classList.remove("header__mobile-modal-active")
+      body.classList.remove("no-scroll")
     }
-  });
+  })
 
-  window.addEventListener('resize', () => {
+  window.addEventListener("resize", () => {
     if (document.documentElement.clientWidth > 992) {
-      mobileNav.classList.remove('header__mobile-modal-active');
+      burgerLine.classList.remove("active")
+      mobileNav.classList.remove("header__mobile-modal-active")
     }
-  });
+  })
 });
