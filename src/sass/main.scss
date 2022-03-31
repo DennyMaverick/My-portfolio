@@ -28,6 +28,11 @@
   box-sizing: border-box;
 }
 
+*::selection {
+  background-color: $select-color-light;
+  color: $white;
+}
+
 p {
   margin: 0;
   padding: 0;

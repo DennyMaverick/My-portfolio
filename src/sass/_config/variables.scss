@@ -48,6 +48,15 @@ $white: #fff;
 $orange: orange;
 $blue: blue;
 
+// Select colors
+
+// === light ===
+
+$select-color-light: steelblue;
+
+// === dark ===
+$select-color-dark: #edb040;
+
 // ====== modal__list ======
 
 // ======= light ========
@@ -62,10 +71,10 @@ $modal-list-link-dark: #edb040;
 
 // === light ===
 
-$desk-show-color: steelblue;
+$desc-show-color: steelblue;
 
 // === dark ===
-$desk-show-color-dark: #edb040;
+$desc-show-color-dark: #edb040;
 
 // ==== arrow-up hover timeline, modal-work =====
 

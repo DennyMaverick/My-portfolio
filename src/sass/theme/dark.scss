@@ -2,6 +2,11 @@
 @import "../_mixins/decore";
 @import "../_mixins/media";
 
+*::selection {
+  background-color: $select-color-dark;
+  color: $black;
+}
+
 .header {
   background: $black;
   &__mobile-modal {
@@ -237,7 +242,7 @@
 
 .description-hide,
 .description-show {
-  color: $desk-show-color-dark;
+  color: $desc-show-color-dark;
 }
 
 // ===== Модальное окно контактной формы =====

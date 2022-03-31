@@ -13,7 +13,7 @@ module.exports = {
   theme: {
     src: pathSrc + "/sass/theme/*.{sass,scss}",
     watch: pathSrc + "/sass/theme/*.{sass,scss}",
-    dest: pathDest + "/css/theme/"
+    dest: pathDest + "/css/theme/",
   },
   pug: {
     src: pathSrc + "/pug/*.pug",
@@ -69,8 +69,8 @@ module.exports = {
   },
 
   img: {
-    src: pathSrc + "/img/**/*.{png,jpg,jpeg,gif,svg}",
-    watch: pathSrc + "/img/**/*.{png,jpg,jpeg,gif,svg}",
+    src: ["./src/img/**/*.{png,jpg,jpeg,gif,svg}", "!./src/img/sprite/**/*.svg"],
+    watch: ["./src/img/**/*.{png,jpg,jpeg,gif,svg}", "!./src/img/sprite/**/*.svg"],
     dest: pathDest + "/img/",
   },
 
@@ -84,5 +84,5 @@ module.exports = {
     src: pathSrc + "/img/favicon/favicon.svg",
     watch: pathSrc + "/img/favicon/favicon.svg",
     dest: pathDest + "/img/favicon/",
-  }
+  },
 }
