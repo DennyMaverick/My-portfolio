@@ -7,6 +7,12 @@
   display: none;
 }
 
+.hide-elem {
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+}
+
 .text-center {
   text-align: center;
 }

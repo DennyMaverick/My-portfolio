@@ -1,0 +1,8 @@
+.sertificate-modal {
+  &__btn {
+    @include bp-desk(mobile) {
+      top: 0.3rem;
+      right: 0.5rem;
+    }
+  }
+}

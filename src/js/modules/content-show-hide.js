@@ -6,65 +6,65 @@ function informationShow() {
   descriptionShow.forEach(function (item) {
     item.addEventListener("click", function () {
       descriptionHide.forEach(function (item) {
-        item.classList.remove("hide");
-        item.textContent = "Скрыть";
-      });
-      this.classList.add("hide");
-      this.nextElementSibling.classList.remove("hide");
-    });
-  });
+        item.classList.remove("hide")
+        item.textContent = "Скрыть"
+      })
+      this.classList.add("hide")
+      this.nextElementSibling.classList.remove("hide-elem")
+    })
+  })
 }
 
 function informationHidden() {
   descriptionHide.forEach(function (item) {
     item.addEventListener("click", function () {
-      if (this.previousElementSibling.classList.toggle("hide")) {
+      if (this.previousElementSibling.classList.toggle("hide-elem")) {
         descriptionHide.forEach(function (item) {
-          item.textContent = "Подробнее";
-        });
+          item.textContent = "Подробнее"
+        })
       } else {
         descriptionHide.forEach(function (item) {
-          item.textContent = "Скрыть";
-        });
+          item.textContent = "Скрыть"
+        })
       }
-    });
-  });
+    })
+  })
 }
 
 function hideEverything() {
   descriptionHide.forEach(function (item) {
-    item.previousElementSibling.classList.add("hide");
+    item.previousElementSibling.classList.add("hide-elem")
     descriptionHide.forEach(function (item) {
-      item.classList.add('hide');
-    });
-  });
+      item.classList.add("hide")
+    })
+  })
 }
 
-informationShow();
-informationHidden();
+informationShow()
+informationHidden()
 
 // При нажатии на кнопку закрытия модального окна проекта, скрывать подробную информацию всех проектов
-const closeButtons = document.querySelectorAll(".modal__close");
-const modals = document.querySelectorAll(".modal");
+const closeButtons = document.querySelectorAll(".modal__close")
+const modals = document.querySelectorAll(".modal")
 
 closeButtons.forEach(function (item) {
   item.addEventListener("click", function (event) {
-    const closestModal = event.target.closest('.modal');
-    const descriptionShowClosest = closestModal.querySelector('.description-show');
+    const closestModal = event.target.closest(".modal")
+    const descriptionShowClosest = closestModal.querySelector(".description-show")
     if (descriptionShowClosest) {
-      descriptionShowClosest.classList.remove('hide');
+      descriptionShowClosest.classList.remove("hide")
     }
-    hideEverything();
-  });
-});
+    hideEverything()
+  })
+})
 // При нажатии вне модального окна проекта, скрывать подробную информацию всех проектов
 modals.forEach(function (item) {
   item.addEventListener("click", function (event) {
-    const closestModal = event.target.closest('.modal');
-    const descriptionShowClosest = closestModal.querySelector('.description-show');
+    const closestModal = event.target.closest(".modal")
+    const descriptionShowClosest = closestModal.querySelector(".description-show")
     if (descriptionShowClosest) {
-      descriptionShowClosest.classList.remove('hide');
+      descriptionShowClosest.classList.remove("hide")
     }
-    hideEverything();
-  });
-});
+    hideEverything()
+  })
+})

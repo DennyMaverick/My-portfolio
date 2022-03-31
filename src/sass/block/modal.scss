@@ -9,6 +9,26 @@
   left: 0;
   z-index: 1400;
   background-color: rgba(6, 15, 49, 0.9);
+  &.sertificate-modal {
+    padding: 2.5rem;
+    @include bp-desk(mobile) {
+      padding: 1rem;
+    }
+  }
+  &__image {
+    position: relative;
+    background-color: bisque;
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 7;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+  }
   @include bp-desk(tablet-landscape) {
     padding: 0;
   }
@@ -32,17 +52,19 @@
       }
     }
   }
-  &__close {
+  &__close-btn {
     position: absolute;
+    z-index: 10;
+    top: 0.9rem;
+    right: 1rem;
+  }
+  &__close {
     padding: 0;
     background: none;
     border: none;
     cursor: pointer;
     width: 34px;
     height: 39px;
-    top: 0.9rem;
-    right: 1rem;
-    z-index: 1;
     transition: transform 0.2s linear;
     &:hover {
       transform: translateY(-3px);
@@ -65,7 +87,8 @@
     text-transform: uppercase;
     color: $black;
     font-weight: 700;
-    &--form, &--resume {
+    &--form,
+    &--resume {
       max-width: 40%;
       text-transform: none;
       @include bp-desk(mobile) {
@@ -94,7 +117,6 @@
         max-width: 40%;
       }
     }
-
   }
   &__subtitle {
     // text-transform: uppercase;
@@ -127,9 +149,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 4rem;
-    @include bp-desk(mobile) {
-      padding: 2.5rem;
-    }
   }
 }

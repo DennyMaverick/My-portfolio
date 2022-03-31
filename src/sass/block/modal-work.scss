@@ -138,7 +138,7 @@
     background-color: $color-btn-light;
     color: $btn-color;
     box-shadow: 0 0 10px $color-btn-light;
-    transition: background-color .3s ease-in, color .3s ease-in, box-shadow .3s ease-in;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in, box-shadow 0.3s ease-in;
     &:hover {
       background-color: $hover-btn-light;
       color: $black;
@@ -167,4 +167,17 @@
   color: $desk-show-color;
   text-decoration: dotted;
   cursor: pointer;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.more {
+  height: auto;
+  overflow: visible;
+  transition: visibility 0.3s ease-in, height 0.3s ease-in, overflow 0.3s ease-in;
+}
+
+.more.hide-elem {
+  height: 0;
+  overflow: hidden;
 }
