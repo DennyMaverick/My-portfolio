@@ -2,8 +2,8 @@ const modalHireMe = document.getElementById('modal-hire-me');
 const modalResume = document.getElementById('modal-resume');
 const body = document.querySelector('body');
 
-const closeButtonHireMe = modalHireMe.querySelector('.modal__close');
-const closeButtonResume = modalResume.querySelector('.modal__close');
+const closeButtonHireMe = modalHireMe.querySelector(".theme__close")
+const closeButtonResume = modalResume.querySelector(".theme__close")
 
 const sertificates = document.querySelectorAll('.sertificate');
 

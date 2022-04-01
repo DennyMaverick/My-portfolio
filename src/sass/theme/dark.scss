@@ -63,6 +63,9 @@
     background: $theme-modal-dark;
     box-shadow: 2px 2px 13px $theme-modal-dark;
   }
+  &__close {
+    fill: $white;
+  }
 }
 
 .box-shadow-dark {
@@ -211,18 +214,17 @@
   &__dialog {
     background-color: $black;
   }
-
+  &__close {
+    fill: $white;
+  }
   &__title {
     color: $white;
   }
   &__subtitle {
     color: $white;
   }
-  &__close {
-    fill: $white;
-  }
   &__image::before {
-    background-color: rgba(44, 35, 33, 0.2);
+    background-color: rgba(44, 35, 33, 0.1);
   }
 }
 

@@ -5,21 +5,54 @@
   &--br {
     border-radius: 5px;
   }
+  & + .burger-btn {
+    margin-left: 12px;
+  }
   &--modal {
     display: flex;
     align-items: center;
-    padding: 24px 17px;
+    padding: 12px 17px;
     background: $theme-modal-light;
     box-shadow: 1px 1px 10px $theme-modal-light;
     @include bp-desk(tablet) {
-      padding: 20px 17px;
+      padding: 10px 17px;
     }
     .theme__light {
       margin-right: 12px;
     }
   }
-  & + * {
-    margin-left: 14px;
+  &__close-btn {
+    margin-left: auto;
+    width: 34px;
+    height: 34px;
+    @include bp-desk(tablet) {
+      width: 27px;
+      height: 32px;
+    }
+    @include bp-desk(mobile) {
+      width: 21px;
+      height: 26px;
+    }
+  }
+  &__close {
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 34px;
+    height: 34px;
+    transition: transform 0.2s linear;
+    &:hover {
+      transform: translateY(-3px);
+    }
+    @include bp-desk(tablet) {
+      width: 27px;
+      height: 32px;
+    }
+    @include bp-desk(mobile) {
+      width: 21px;
+      height: 26px;
+    }
   }
   &__icon {
     width: 1rem;
@@ -33,5 +66,15 @@
 
   &__dark {
     fill: $black;
+  }
+
+  &--sticky {
+    position: sticky;
+    top: -41px;
+    left: 0;
+    z-index: 7;
+    @include bp-desk(tablet-landscape) {
+      top: 0;
+    }
   }
 }
