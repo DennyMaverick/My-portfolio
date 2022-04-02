@@ -9,16 +9,16 @@
 // Slick-theme
 
 // Настройки
-@import '_config/variables';
-@import '_config/fonts';
+@import "_config/variables";
+@import "_config/fonts";
 
 // Миксины
-@import '_mixins/reset';
-@import '_mixins/media';
-@import '_mixins/container';
-@import '_mixins/flex';
-@import '_mixins/decore';
-@import '_mixins/px-to-rem';
+@import "_mixins/reset";
+@import "_mixins/media";
+@import "_mixins/container";
+@import "_mixins/flex";
+@import "_mixins/decore";
+@import "_mixins/px-to-rem";
 
 // Основные стили
 
@@ -66,8 +66,6 @@ body {
   // background-color: orange;
 }
 
-
-
 // Сброс списка, ссылок и кнопки
 ul {
   @include reset-list();
@@ -77,9 +75,15 @@ a {
   @include reset-link();
 }
 
+a:active {
+  border: 0;
+  outline: none;
+}
+
 button {
   @include reset-button();
 }
+
 
 // Визуальное скрытие элементов
 .vhidden {
@@ -111,7 +115,7 @@ img {
 }
 
 // Подключение блоков
-@import 'block/*.scss';
+@import "block/*.scss";
 
 // Helpers
-@import 'helpers/helpers';
+@import "helpers/helpers";

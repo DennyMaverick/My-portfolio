@@ -1,0 +1,19 @@
+.show-more {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: $show-more-color-light;
+  background-color: $show-more-bg-light;
+  box-shadow: -1px -1px 5px $show-more-bg-light;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 13px;
+  cursor: pointer;
+  &__arrow {
+    fill: $show-more-color-light;
+    width: 13px;
+    height: 13px;
+  }
+}

@@ -2,7 +2,10 @@
 import './modules/jQuery/jquery-main';
 // AOS - Animate On Scroll
 // Modules
-import './modules/content-show-hide';
+// ==== Скрыть показать контент / start / unsuccessful code ====
+// import './modules/content-show-hide';
+// ==== Скрыть показать контент   ====
+import './modules/content-show-modal';
 import './modules/scroll-behavior';
 import './modules/pdf-download';
 import './modules/burger-menu';

@@ -4,5 +4,23 @@
       top: 0.3rem;
       right: 0.5rem;
     }
+    @include bp-desk(mobile-md) {
+      top: 0.1rem;
+      right: 0.1em;
+    }
+  }
+  &__image {
+    position: relative;
+    background-color: bisque;
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 7;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
   }
 }

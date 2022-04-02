@@ -160,15 +160,10 @@
     margin-top: 1.2rem;
     margin-bottom: 1.2rem;
   }
-}
-
-.description-hide,
-.description-show {
-  color: $desc-show-color;
-  text-decoration: dotted;
-  cursor: pointer;
-  display: inline-block;
-  margin-bottom: 1.5rem;
+  &__show-info {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
 }
 
 .more {
