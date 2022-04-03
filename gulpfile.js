@@ -19,57 +19,51 @@ const favicon = require("./tasks/favicon.js");
 const svgsprite = require("./tasks/svgsprite.js");
 const php = require("./tasks/php.js");
 const theme = require("./tasks/theme.js");
-
+const jquerylibs = require("./tasks/jquerylibs.js")
 
 // Статический сервер
 const server = () => {
   browserSync.init({
     server: {
-      baseDir: path.root
+      baseDir: path.root,
     },
-    browser: 'chrome',
-    notify: false
-  });
+    browser: "chrome",
+    notify: false,
+  })
 }
 
 // Отслеживание изменений
 const watcher = () => {
-  watch(path.html.watch, html).on('all', browserSync.reload);
-  watch(path.scss.watch, scss).on('all', browserSync.reload);
-  watch(path.js.watch, js).on('all', browserSync.reload);
-  watch(path.img.watch, img).on('all', browserSync.reload);
-  watch(path.font.watch, font).on('all', browserSync.reload);
-  watch(path.jquery.watch, jquerylib).on('all', browserSync.reload);
-  watch(path.scss_and_css_libs.watch, libsCssScss).on('all', browserSync.reload);
-  watch(path.svgsprite.watch, svgsprite).on('all', browserSync.reload);
-  watch(path.php.watch, php).on('all', browserSync.reload);
-  watch(path.theme.watch, theme).on('all', browserSync.reload);
+  watch(path.html.watch, html).on("all", browserSync.reload)
+  watch(path.scss.watch, scss).on("all", browserSync.reload)
+  watch(path.js.watch, js).on("all", browserSync.reload)
+  watch(path.img.watch, img).on("all", browserSync.reload)
+  watch(path.font.watch, font).on("all", browserSync.reload)
+  watch(path.jquery.watch, jquerylib).on("all", browserSync.reload)
+  watch(path.scss_and_css_libs.watch, libsCssScss).on("all", browserSync.reload)
+  watch(path.svgsprite.watch, svgsprite).on("all", browserSync.reload)
+  watch(path.php.watch, php).on("all", browserSync.reload)
+  watch(path.theme.watch, theme).on("all", browserSync.reload)
 }
 
+const build = series(clear, parallel(html, scss, js, jquerylib, jquerylibs, jslibs, libsCssScss, img, favicon, font, svgsprite, php, theme))
 
-const build = series(
-  clear,
-  parallel(html, scss, js, jquerylib, jslibs, libsCssScss, img, favicon, font, svgsprite, php, theme)
-);
-
-const dev = series(
-  build,
-  parallel(server, watcher)
-);
+const dev = series(build, parallel(server, watcher))
 
 // Публичные задачи
-exports.html = html;
-exports.scss = scss;
-exports.js = js;
-exports.img = img;
-exports.font = font;
-exports.jquerylib = jquerylib;
-exports.jslibs = jslibs;
-exports.libsCssScss = libsCssScss;
-exports.favicon = favicon;
-exports.svgsprite = svgsprite;
-exports.php = php;
-exports.theme = theme;
+exports.html = html
+exports.scss = scss
+exports.js = js
+exports.img = img
+exports.font = font
+exports.jquerylib = jquerylib
+exports.jslibs = jslibs
+exports.libsCssScss = libsCssScss
+exports.favicon = favicon
+exports.svgsprite = svgsprite
+exports.php = php
+exports.theme = theme
+exports.jquerylibs = jquerylibs
 
 // Сборка
 exports.default = app.isProd

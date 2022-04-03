@@ -362,9 +362,11 @@
 // ==== SHOW MORE ====
 
 .show-more {
-  color: $show-more-color-dark;
-  background-color: $show-more-bg-dark;
-  box-shadow: -1px -1px 5px $show-more-bg-dark;
+  &__trigger {
+    color: $show-more-color-dark;
+    background-color: $show-more-bg-dark;
+    box-shadow: -1px -1px 5px $show-more-bg-dark;
+  }
   &__arrow {
     fill: $show-more-color-dark;
   }

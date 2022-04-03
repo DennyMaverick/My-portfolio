@@ -166,13 +166,4 @@
   }
 }
 
-.more {
-  height: auto;
-  overflow: visible;
-  transition: visibility 0.3s ease-in, height 0.3s ease-in, overflow 0.3s ease-in;
-}
 
-.more.hide-elem {
-  height: 0;
-  overflow: hidden;
-}

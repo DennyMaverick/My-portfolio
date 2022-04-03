@@ -56,6 +56,12 @@ module.exports = {
     dest: pathDest + "/js/libs/jquery",
   },
 
+  // jquery библиотеки
+  jquerylibs: {
+    src: ["./node_modules/page-scroll-to-id/jquery.malihu.PageScroll2id.js"],
+    dest: pathDest + "/js/libs/jquery/libs/",
+  },
+
   svgsprite: {
     src: pathSrc + "/img/sprite/**/*.svg",
     watch: pathSrc + "/img/sprite/**/*.svg",

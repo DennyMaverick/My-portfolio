@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="stylesheet" href="#" title="theme" />
     <script src="./js/libs/jquery/jquery.min.js" defer></script>
+    <script src="./js/libs/jquery/libs/jquerylibs.min.js" defer></script>
     <script src="./js/libs/vendors/libs.min.js" defer></script>
     <script src="./js/main.js" defer></script>
   </head>
@@ -829,28 +830,30 @@
             <div class="modal-work__text">
               <p class="modal-work__description">При работе над проектом был реализован следующий функционал:</p>
               <div class="modal-work__show-info show-more">
-                <span class="show-more__desc">Более подробно</span>
-                <svg class="show-more__arrow">
-                  <use xlink:href="./img/sprite/symbol/sprite.svg#modal--show-modal-right"/>
-                </svg>
-              </div>
-              <div class="more hide-elem">
-                <ul class="modal-work__list modal-list">
-                  <li class="modal-list__item">При сужении окна браузера появляется бургер-иконка, при клике на которую появляется мобильное меню навигации и overlay, запрещается scroll</li>
-                  <li class="modal-list__item">При появлении мобильного меню навигации добавляется возможность закрыть это меню, кликнув на крестик или кликнув вне мобильного меню (при этом кликая на само меню, окно не закрывается)</li>
-                  <li class="modal-list__item">При открытии мобильного окна навигации, меняя размер окна в большую сторону, мобильное меню закрывается и появляется стандартное меню (поэтому при переключении ориентации экрана из портретной в ландшафтную, например, у планшета, меню примет более удобный вид)</li>
-                  <li class="modal-list__item">Сайт защищен от переполнения контентом, при увеличении контента в блоках, все отображается корректно</li>
-                </ul>
-                <p class="modal-work__description">При работе над проектом были использованы следующие технологии, инструменты и плагины:</p>
-                <ul class="modal-work__list modal-list">
-                  <li class="modal-list__item">Flexible Box Layout Module</li>
-                  <li class="modal-list__item">Препроцессор Less</li>
-                  <li class="modal-list__item">Редактор кода Sumlime Text 3</li>
-                  <li class="modal-list__item">Плагины Sublime Text 3: Emmet, LiveReload, AutoFileName и другие</li>
-                  <li class="modal-list__item">Сайт адаптирован под все размеры экрана. Для этого использовались медиа-запросы и Flexible Box Layout Module</li>
-                  <li class="modal-list__item">При адаптировании сайта под другие устройства использовался метод Desktop First (сначала был сделан сайт под ПК, а затем под планшеты и мобильные устройства)</li>
-                  <li class="modal-list__item">СSS / HTML</li>
-                </ul>
+                <div class="show-more__trigger">
+                  <span class="show-more__desc">Более подробно</span>
+                  <svg class="show-more__arrow">
+                    <use xlink:href="./img/sprite/symbol/sprite.svg#modal--show-modal-right" />
+                  </svg>
+                </div>
+                <div class="show-more__content hide-elem">
+                  <ul class="modal-work__list modal-list">
+                    <li class="modal-list__item">При сужении окна браузера появляется бургер-иконка, при клике на которую появляется мобильное меню навигации и overlay, запрещается scroll</li>
+                    <li class="modal-list__item">При появлении мобильного меню навигации добавляется возможность закрыть это меню, кликнув на крестик или кликнув вне мобильного меню (при этом кликая на само меню, окно не закрывается)</li>
+                    <li class="modal-list__item">При открытии мобильного окна навигации, меняя размер окна в большую сторону, мобильное меню закрывается и появляется стандартное меню (поэтому при переключении ориентации экрана из портретной в ландшафтную, например, у планшета, меню примет более удобный вид)</li>
+                    <li class="modal-list__item">Сайт защищен от переполнения контентом, при увеличении контента в блоках, все отображается корректно</li>
+                  </ul>
+                  <p class="modal-work__description">При работе над проектом были использованы следующие технологии, инструменты и плагины:</p>
+                  <ul class="modal-work__list modal-list">
+                    <li class="modal-list__item">Flexible Box Layout Module</li>
+                    <li class="modal-list__item">Препроцессор Less</li>
+                    <li class="modal-list__item">Редактор кода Sumlime Text 3</li>
+                    <li class="modal-list__item">Плагины Sublime Text 3: Emmet, LiveReload, AutoFileName и другие</li>
+                    <li class="modal-list__item">Сайт адаптирован под все размеры экрана. Для этого использовались медиа-запросы и Flexible Box Layout Module</li>
+                    <li class="modal-list__item">При адаптировании сайта под другие устройства использовался метод Desktop First (сначала был сделан сайт под ПК, а затем под планшеты и мобильные устройства)</li>
+                    <li class="modal-list__item">СSS / HTML</li>
+                  </ul>
+                </div>
               </div>
               <ul class="modal-work__list modal-list">
                 <li class="modal-list__item">
@@ -937,20 +940,22 @@
             <div class="modal-work__text">
               <p class="modal-work__description">Работая над данным проектом, были использованы следующие инструменты, технологии и плагины:</p>
               <div class="modal-work__show-info show-more">
-                <span class="show-more__desc">Более подробно</span>
-                <svg class="show-more__arrow">
-                  <use xlink:href="./img/sprite/symbol/sprite.svg#modal--show-modal-right"/>
-                </svg>
-              </div>
-              <div class="more hide-elem">
-                <ul class="modal-work__list modal-list">
-                  <li class="modal-list__item">Редактор кода Visual Studio Code</li>
-                  <li class="modal-list__item">Плагины Visual Studio Code: Emmet, Live Server, Path AutoComplete, AutoClose Tag и др.</li>
-                  <li class="modal-list__item">Препроцессор Less</li>
-                  <li class="modal-list__item">Flexible Box Layout Module</li>
-                  <li class="modal-list__item">CSS / HTML</li>
-                  <li class="modal-list__item">Адаптив сайта под ноутбуки, планшеты и смартфоны</li>
-                </ul>
+                <div class="show-more__trigger">
+                  <span class="show-more__desc">Более подробно</span>
+                  <svg class="show-more__arrow">
+                    <use xlink:href="./img/sprite/symbol/sprite.svg#modal--show-modal-right" />
+                  </svg>
+                </div>
+                <div class="show-more__content hide-elem">
+                  <ul class="modal-work__list modal-list">
+                    <li class="modal-list__item">Редактор кода Visual Studio Code</li>
+                    <li class="modal-list__item">Плагины Visual Studio Code: Emmet, Live Server, Path AutoComplete, AutoClose Tag и др.</li>
+                    <li class="modal-list__item">Препроцессор Less</li>
+                    <li class="modal-list__item">Flexible Box Layout Module</li>
+                    <li class="modal-list__item">CSS / HTML</li>
+                    <li class="modal-list__item">Адаптив сайта под ноутбуки, планшеты и смартфоны</li>
+                  </ul>
+                </div>
               </div>
               <ul class="modal-work__list modal-list">
                 <li class="modal-list__item">
@@ -1029,20 +1034,22 @@
             <div class="modal-work__text">
               <p class="modal-work__description">Работая над данным проектом, были использованы следующие инструменты, технологии и плагины:</p>
               <div class="modal-work__show-info show-more">
-                <span class="show-more__desc">Более подробно</span>
+                <div class="show-more__trigger">
+                  <span class="show-more__desc">Более подробно</span>
                 <svg class="show-more__arrow">
                   <use xlink:href="./img/sprite/symbol/sprite.svg#modal--show-modal-right"/>
                 </svg>
-              </div>
-              <div class="more hide-elem">
-                <ul class="modal-work__list modal-list">
-                  <li class="modal-list__item">Редактор кода Visual Studio Code</li>
-                  <li class="modal-list__item">Плагины Visual Studio Code: Emmet, Live Server, Path AutoComplete, AutoClose Tag и др.</li>
-                  <li class="modal-list__item">Подключение всплывающего окна для отображения видео, используя jQuery-библиотеку FancyBox</li>
-                  <li class="modal-list__item">Flexible Box Layout Module</li>
-                  <li class="modal-list__item">CSS / HTML / JavaScript</li>
-                  <li class="modal-list__item">Адаптив под все возможные экраны устройств</li>
-                </ul>
+                </div>
+                <div class="show-more__content hide-elem">
+                  <ul class="modal-work__list modal-list">
+                    <li class="modal-list__item">Редактор кода Visual Studio Code</li>
+                    <li class="modal-list__item">Плагины Visual Studio Code: Emmet, Live Server, Path AutoComplete, AutoClose Tag и др.</li>
+                    <li class="modal-list__item">Подключение всплывающего окна для отображения видео, используя jQuery-библиотеку FancyBox</li>
+                    <li class="modal-list__item">Flexible Box Layout Module</li>
+                    <li class="modal-list__item">CSS / HTML / JavaScript</li>
+                    <li class="modal-list__item">Адаптив под все возможные экраны устройств</li>
+                  </ul>
+                </div>
               </div>
               <ul class="modal-work__list modal-list">
                 <li class="modal-list__item">
@@ -1142,24 +1149,26 @@
             <div class="modal-work__text">
               <p class="modal-work__description">Работая над данным проектом, были использованы следующие инструменты, технологии и плагины:</p>
               <div class="modal-work__show-info show-more">
-                <span class="show-more__desc">Более подробно</span>
+                <div class="show-more__trigger">
+                  <span class="show-more__desc">Более подробно</span>
                 <svg class="show-more__arrow">
                   <use xlink:href="./img/sprite/symbol/sprite.svg#modal--show-modal-right"/>
                 </svg>
-              </div>
-              <div class="more hide-elem">
-                <ul class="modal-work__list modal-list">
-                  <li class="modal-list__item">Редактор кода Visual Studio Code</li>
-                  <li class="modal-list__item">Плагины Visual Studio Code: Emmet, Live Server, Path AutoComplete, AutoClose Tag и др.</li>
-                  <li class="modal-list__item">Подключение всплывающего окна для отображения видео, используя jQuery-библиотеку FancyBox</li>
-                  <li class="modal-list__item">Flexible Box Layout Module</li>
-                  <li class="modal-list__item">Grid Layout</li>
-                  <li class="modal-list__item">CSS / HTML / JavaScript</li>
-                  <li class="modal-list__item">Адаптив под все возможные экраны устройств</li>
-                  <li class="modal-list__item">Подключение карты Google</li>
-                  <li class="modal-list__item">Использование плагина Magnific Popup для всплытия окна видео и просмотра изображений в галерее</li>
-                  <li class="modal-list__item">Использование слайдера Slick для галереи</li>
-                </ul>
+                </div>
+                <div class="show-more__content hide-elem">
+                  <ul class="modal-work__list modal-list">
+                    <li class="modal-list__item">Редактор кода Visual Studio Code</li>
+                    <li class="modal-list__item">Плагины Visual Studio Code: Emmet, Live Server, Path AutoComplete, AutoClose Tag и др.</li>
+                    <li class="modal-list__item">Подключение всплывающего окна для отображения видео, используя jQuery-библиотеку FancyBox</li>
+                    <li class="modal-list__item">Flexible Box Layout Module</li>
+                    <li class="modal-list__item">Grid Layout</li>
+                    <li class="modal-list__item">CSS / HTML / JavaScript</li>
+                    <li class="modal-list__item">Адаптив под все возможные экраны устройств</li>
+                    <li class="modal-list__item">Подключение карты Google</li>
+                    <li class="modal-list__item">Использование плагина Magnific Popup для всплытия окна видео и просмотра изображений в галерее</li>
+                    <li class="modal-list__item">Использование слайдера Slick для галереи</li>
+                  </ul>
+                </div>
               </div>
               <ul class="modal-work__list modal-list">
                 <li class="modal-list__item">
@@ -1238,27 +1247,29 @@
             <div class="modal-work__text">
               <p class="modal-work__description">При работе над проектом был реализован следующий функционал:</p>
               <div class="modal-work__show-info show-more">
-                <span class="show-more__desc">Более подробно</span>
+                <div class="show-more__trigger">
+                  <span class="show-more__desc">Более подробно</span>
                 <svg class="show-more__arrow">
                   <use xlink:href="./img/sprite/symbol/sprite.svg#modal--show-modal-right"/>
                 </svg>
-              </div>
-              <div class="more hide-elem">
-                <ul class="modal-work__list modal-list">
-                  <li class="modal-list__item">Возможность добавлять в корзину товары (как один, так и несколько) с автоматическим пересчетом итоговой цены</li>
-                  <li class="modal-list__item">Если товар уже есть в корзине, то он не повторяется, а происходит объединение товаров</li>
-                  <li class="modal-list__item">У каждой карточки товара есть свой счетчик, работающий отдельно и независимо от других карточек</li>
-                  <li class="modal-list__item">Есть возможность удалять товары из корзины (удаление происходит при нажатии на минус, если количество товара в корзине 1 штука)</li>
-                  <li class="modal-list__item">Если корзина пуста, в ней появляется соответствующая надпись</li>
-                  <li class="modal-list__item">Если в корзине есть товары, появляются такие блоки, как оформление заказа и доставка</li>
-                  <li class="modal-list__item">При сумме заказа меньше 600 рублей отображается доставка: 250 рублей; при заказе больше 600 рублей появляется надпись бесплатной доставки</li>
-                </ul>
-                <p class="modal-work__description">Работая над данным проектом, были использованы следующие инструменты, технологии:</p>
-                <ul class="modal-work__list modal-list">
-                  <li class="modal-list__item">Редактор кода: Visual Studio Code</li>
-                  <li class="modal-list__item">JavaScript</li>
-                  <li class="modal-list__item">Css / HTML</li>
-                </ul>
+                </div>
+                <div class="show-more__content hide-elem">
+                  <ul class="modal-work__list modal-list">
+                    <li class="modal-list__item">Возможность добавлять в корзину товары (как один, так и несколько) с автоматическим пересчетом итоговой цены</li>
+                    <li class="modal-list__item">Если товар уже есть в корзине, то он не повторяется, а происходит объединение товаров</li>
+                    <li class="modal-list__item">У каждой карточки товара есть свой счетчик, работающий отдельно и независимо от других карточек</li>
+                    <li class="modal-list__item">Есть возможность удалять товары из корзины (удаление происходит при нажатии на минус, если количество товара в корзине 1 штука)</li>
+                    <li class="modal-list__item">Если корзина пуста, в ней появляется соответствующая надпись</li>
+                    <li class="modal-list__item">Если в корзине есть товары, появляются такие блоки, как оформление заказа и доставка</li>
+                    <li class="modal-list__item">При сумме заказа меньше 600 рублей отображается доставка: 250 рублей; при заказе больше 600 рублей появляется надпись бесплатной доставки</li>
+                  </ul>
+                  <p class="modal-work__description">Работая над данным проектом, были использованы следующие инструменты, технологии:</p>
+                  <ul class="modal-work__list modal-list">
+                    <li class="modal-list__item">Редактор кода: Visual Studio Code</li>
+                    <li class="modal-list__item">JavaScript</li>
+                    <li class="modal-list__item">Css / HTML</li>
+                  </ul>
+                </div>
               </div>
               <ul class="modal-work__list modal-list">
                 <li class="modal-list__item">
@@ -1334,25 +1345,27 @@
             <div class="modal-work__text">
               <p class="modal-work__description">При работе над проектом был реализован следующий функционал:</p>
               <div class="modal-work__show-info show-more">
-                <span class="show-more__desc">Более подробно</span>
+                <div class="show-more__trigger">
+                  <span class="show-more__desc">Более подробно</span>
                 <svg class="show-more__arrow">
                   <use xlink:href="./img/sprite/symbol/sprite.svg#modal--show-modal-right"/>
                 </svg>
-              </div>
-              <div class="more hide-elem">
-                <p class="modal-work__description">Возможность выбирать площадь квартиры, требуемой для ремонта, с помощью ползунка или стрелочек(около значения площади, щелкнув в текстовое поле), зная исходное значение цены за 1 квадратный метр - 6000 рублей. После этого произойдет автоматический расчет стоимости ремонта, исходя из следующих параметров:</p>
-                <ul class="modal-work__list modal-list">
-                  <li class="modal-list__item">Тип ремонта (косметический, капитальный или под ключ), выбрав один из пунктов, произойдет расчет ремонта соответственно: без увеличения цены, + 30% к стоимости ремонта и + 50% к стоимости ремонта</li>
-                  <li class="modal-list__item">Тип дома (новострой или вторичка), выбрав один из пунктов, произойдет расчет ремонта соответственно: без изменения цены, + 10% к стоимости ремонта</li>
-                  <li class="modal-list__item">Количество комнат (С, 1, 2, 3, 4 или 5, где С - это более экономичный вариант ремонта комнат), выбрав один из пунктов, произойдет следующий расчет ремонта: C (-20% от стоимости ремонта), от 1 до 2 комнат (без изменения цены), от 3 до 5 (+ 5% к стоимости ремонта)</li>
-                  <li class="modal-list__item">Дополнительные опции (натяжные потолки, покраска стен, теплый пол), выбрав один из пунктов, произойдет расчет ремонта следующим образом: + 900 рублей за каждый квадратный метр при выборе опции "Натяжные потолки", + 10% к стоимости при выборе опции "Покраска стен" и + 10% к стоимости ремонта при выборе опции "Теплый пол"</li>
-                </ul>
-                <p class="modal-work__description">Работая над данным проектом, были использованы следующие инструменты, технологии:</p>
-                <ul class="modal-work__list modal-list">
-                  <li class="modal-list__item">Редактор кода: Visual Studio Code</li>
-                  <li class="modal-list__item">JavaScript</li>
-                  <li class="modal-list__item">Css / HTML</li>
-                </ul>
+                </div>
+                <div class="show-more__content hide-elem">
+                  <p class="modal-work__description">Возможность выбирать площадь квартиры, требуемой для ремонта, с помощью ползунка или стрелочек(около значения площади, щелкнув в текстовое поле), зная исходное значение цены за 1 квадратный метр - 6000 рублей. После этого произойдет автоматический расчет стоимости ремонта, исходя из следующих параметров:</p>
+                  <ul class="modal-work__list modal-list">
+                    <li class="modal-list__item">Тип ремонта (косметический, капитальный или под ключ), выбрав один из пунктов, произойдет расчет ремонта соответственно: без увеличения цены, + 30% к стоимости ремонта и + 50% к стоимости ремонта</li>
+                    <li class="modal-list__item">Тип дома (новострой или вторичка), выбрав один из пунктов, произойдет расчет ремонта соответственно: без изменения цены, + 10% к стоимости ремонта</li>
+                    <li class="modal-list__item">Количество комнат (С, 1, 2, 3, 4 или 5, где С - это более экономичный вариант ремонта комнат), выбрав один из пунктов, произойдет следующий расчет ремонта: C (-20% от стоимости ремонта), от 1 до 2 комнат (без изменения цены), от 3 до 5 (+ 5% к стоимости ремонта)</li>
+                    <li class="modal-list__item">Дополнительные опции (натяжные потолки, покраска стен, теплый пол), выбрав один из пунктов, произойдет расчет ремонта следующим образом: + 900 рублей за каждый квадратный метр при выборе опции "Натяжные потолки", + 10% к стоимости при выборе опции "Покраска стен" и + 10% к стоимости ремонта при выборе опции "Теплый пол"</li>
+                  </ul>
+                  <p class="modal-work__description">Работая над данным проектом, были использованы следующие инструменты, технологии:</p>
+                  <ul class="modal-work__list modal-list">
+                    <li class="modal-list__item">Редактор кода: Visual Studio Code</li>
+                    <li class="modal-list__item">JavaScript</li>
+                    <li class="modal-list__item">Css / HTML</li>
+                  </ul>
+                </div>
               </div>
               <ul class="modal-work__list modal-list">
                 <li class="modal-list__item">
@@ -1422,23 +1435,25 @@
             <div class="modal-work__text">
               <p class="modal-work__description">При работе над проектом был реализован следующий функционал:</p>
               <div class="modal-work__show-info show-more">
-                <span class="show-more__desc">Более подробно</span>
+                <div class="show-more__trigger">
+                  <span class="show-more__desc">Более подробно</span>
                 <svg class="show-more__arrow">
                   <use xlink:href="./img/sprite/symbol/sprite.svg#modal--show-modal-right"/>
                 </svg>
-              </div>
-              <div class="more hide-elem">
-                <ul class="modal-work__list modal-list">
-                  <li class="modal-list__item">Возможность видеть текущий курс доллара, евро и фунта стерлинга</li>
-                  <li class="modal-list__item">Если после обновления курса валют одна из валют снизилась в цене, курс отображается зеленым, иначе - красным</li>
-                  <li class="modal-list__item">Возможность узнавать курс рубля в долларах, евро и фунтах стерлинга (достаточно ввести значение рубля в соответствующее текстовое поле и выбрать, в какую валюту нужно конвертировать) относительно текущего курса валют</li>
-                </ul>
-                <p class="modal-work__description">Работая над данным проектом, были использованы следующие инструменты, технологии:</p>
-                <ul class="modal-work__list modal-list">
-                  <li class="modal-list__item">Редактор кода: Visual Studio Code</li>
-                  <li class="modal-list__item">JavaScript</li>
-                  <li class="modal-list__item">Css / HTML</li>
-                </ul>
+                </div>
+                <div class="show-more__content hide-elem">
+                  <ul class="modal-work__list modal-list">
+                    <li class="modal-list__item">Возможность видеть текущий курс доллара, евро и фунта стерлинга</li>
+                    <li class="modal-list__item">Если после обновления курса валют одна из валют снизилась в цене, курс отображается зеленым, иначе - красным</li>
+                    <li class="modal-list__item">Возможность узнавать курс рубля в долларах, евро и фунтах стерлинга (достаточно ввести значение рубля в соответствующее текстовое поле и выбрать, в какую валюту нужно конвертировать) относительно текущего курса валют</li>
+                  </ul>
+                  <p class="modal-work__description">Работая над данным проектом, были использованы следующие инструменты, технологии:</p>
+                  <ul class="modal-work__list modal-list">
+                    <li class="modal-list__item">Редактор кода: Visual Studio Code</li>
+                    <li class="modal-list__item">JavaScript</li>
+                    <li class="modal-list__item">Css / HTML</li>
+                  </ul>
+                </div>
               </div>
               <ul class="modal-work__list modal-list">
                 <li class="modal-list__item">
@@ -1523,24 +1538,26 @@
             <div class="modal-work__text">
               <p class="modal-work__description">При работе над проектом был реализован следующий функционал:</p>
               <div class="modal-work__show-info show-more">
-                <span class="show-more__desc">Более подробно</span>
+                <div class="show-more__trigger">
+                  <span class="show-more__desc">Более подробно</span>
                 <svg class="show-more__arrow">
                   <use xlink:href="./img/sprite/symbol/sprite.svg#modal--show-modal-right"/>
                 </svg>
-              </div>
-              <div class="more hide-elem">
-                <ul class="modal-work__list modal-list">
-                  <li class="modal-list__item">При клике на кнопку "Пройди тест и получи результат" или - когда экран небольшой(планшет, смартфон) - при клике на бургер-меню запускается тест в модальном окне, где можно собрать свой бургер, подбирая нужные ингридиенты</li>
-                  <li class="modal-list__item">В конце теста высвечивается окно, в котором появляется надпись, что в течение 15 минут с пользователем свяжутся менеджеры</li>
-                  <li class="modal-list__item">После прохождения теста все ответы собираются в один общий объект</li>
-                  <li class="modal-list__item">Модальное окно закрывается при нажатии на крестик или при клике вне модального окна</li>
-                </ul>
-                <p class="modal-work__description">Работая над данным проектом, были использованы следующие инструменты, технологии:</p>
-                <ul class="modal-work__list modal-list">
-                  <li class="modal-list__item">Редактор кода: Visual Studio Code</li>
-                  <li class="modal-list__item">JavaScript</li>
-                  <li class="modal-list__item">Css / HTML</li>
-                </ul>
+                </div>
+                <div class="show-more__content hide-elem">
+                  <ul class="modal-work__list modal-list">
+                    <li class="modal-list__item">При клике на кнопку "Пройди тест и получи результат" или - когда экран небольшой(планшет, смартфон) - при клике на бургер-меню запускается тест в модальном окне, где можно собрать свой бургер, подбирая нужные ингридиенты</li>
+                    <li class="modal-list__item">В конце теста высвечивается окно, в котором появляется надпись, что в течение 15 минут с пользователем свяжутся менеджеры</li>
+                    <li class="modal-list__item">После прохождения теста все ответы собираются в один общий объект</li>
+                    <li class="modal-list__item">Модальное окно закрывается при нажатии на крестик или при клике вне модального окна</li>
+                  </ul>
+                  <p class="modal-work__description">Работая над данным проектом, были использованы следующие инструменты, технологии:</p>
+                  <ul class="modal-work__list modal-list">
+                    <li class="modal-list__item">Редактор кода: Visual Studio Code</li>
+                    <li class="modal-list__item">JavaScript</li>
+                    <li class="modal-list__item">Css / HTML</li>
+                  </ul>
+                </div>
               </div>
               <ul class="modal-work__list modal-list">
                 <li class="modal-list__item">
@@ -1644,36 +1661,38 @@
               <p class="modal-work__description">Работа над проектом имела цель попрактиковаться в методологии BEM-naming. Каркас страницы был создан под руководством наставника. Весь Css и JavaScript был написан мной самостоятельно.</p>
               <p class="modal-work__description">При работе над проектом был реализован следующий функционал:</p>
               <div class="modal-work__show-info show-more">
-                <span class="show-more__desc">Более подробно</span>
+                <div class="show-more__trigger">
+                  <span class="show-more__desc">Более подробно</span>
                 <svg class="show-more__arrow">
                   <use xlink:href="./img/sprite/symbol/sprite.svg#modal--show-modal-right"/>
                 </svg>
-              </div>
-              <div class="more hide-elem">
-                <ul class="modal-work__list modal-list">
-                  <li class="modal-list__item">При наводе на элемент навигации, появляется плавное подчеркивание. Через JavaScript реализовано так, чтобы при наведении на любую из ссылок меню, все подчеркивания убирались, а у нужной это подчеркивание оставалось, а при отводе мыши, подчеркивание оставалось у самой первой ссылки</li>
-                  <li class="modal-list__item">При наведении (отведении) мыши на логотип происходит эффект смены цвета у заголовка и подзаголовка главного экрана лэндинга (также происходит при клике на иконку мышки или при клике на сам заголовок)</li>
-                  <li class="modal-list__item">При скролле вниз реализовано через JavaScript, чтобы меню всегда отображалось сверху, добавляя к блоку навигации тень и меняя цвет фона</li>
-                  <li class="modal-list__item">При наведении на заголовки второго уровня у них появляется плавное подчеркивание. Также реализовано, что если текст будет располагаться в несколько строк, подчеркивание отображалось корректно</li>
-                  <li class="modal-list__item">Реализована адаптивная верстка. На любых экранах контент отображается корректно</li>
-                  <li class="modal-list__item">Когда экран устройства достигает определенной ширины, происходит замена меню навигации главного экрана на меню - бургер (для этого используется JavaScript)</li>
-                  <li class="modal-list__item">При клике на меню-бургер высвечивается модальное окно с меню на всю область экрана (кликая на нужный пункт навигации в нем, окно закрывается и происходит плавный переход к контенту), также при клике на крестик, модальное окно закрывается</li>
-                  <li class="modal-list__item">При сужении окна блок портфолио, состоящий из грид-элементов, превращается в слайдер (slick slider), реализовано с помощью медиа-запросов (переключение слайдов осуществляется через свайп)</li>
-                  <li class="modal-list__item">При клике на 'Play' в блоке видео, происходит проигрывание ролика. При этом добавляются элементы управления и скрывается иконка 'Play'</li>
-                  <li class="modal-list__item">Ниже блока видео реализован адаптивный слайдер, полностью сделанный на JavaScript(на экранах для смартфонов стрелки навигации пропадают, переключение слайдов происходит через точки, на экранах планшетов и компьютеров переключение слайдов осуществляется через стрелки)</li>
-                  <li class="modal-list__item">В блоке Pricing отображается желтым цветом стандартный тариф, при наведении или при клике (на экранах смартфонов) на другие карточки происходит плавный выбор нужной карточки, при этом через JavaScript происходит удаление класса active у всех карточек и добавление этого класса выбранной</li>
-                </ul>
-                <p class="modal-work__description">Работая над данным проектом, были использованы следующие инструменты, технологии:</p>
-                <ul class="modal-work__list modal-list">
-                  <li class="modal-list__item">Редактор кода: Visual Studio Code</li>
-                  <li class="modal-list__item">JavaScript</li>
-                  <li class="modal-list__item">Css / HTML</li>
-                  <li class="modal-list__item">Slider Slick</li>
-                  <li class="modal-list__item">Flex-box Layout</li>
-                  <li class="modal-list__item">Grid Layout</li>
-                  <li class="modal-list__item">Svg-спрайты</li>
-                  <li class="modal-list__item">BEM-naming</li>
-                </ul>
+                </div>
+                <div class="show-more__content hide-elem">
+                  <ul class="modal-work__list modal-list">
+                    <li class="modal-list__item">При наводе на элемент навигации, появляется плавное подчеркивание. Через JavaScript реализовано так, чтобы при наведении на любую из ссылок меню, все подчеркивания убирались, а у нужной это подчеркивание оставалось, а при отводе мыши, подчеркивание оставалось у самой первой ссылки</li>
+                    <li class="modal-list__item">При наведении (отведении) мыши на логотип происходит эффект смены цвета у заголовка и подзаголовка главного экрана лэндинга (также происходит при клике на иконку мышки или при клике на сам заголовок)</li>
+                    <li class="modal-list__item">При скролле вниз реализовано через JavaScript, чтобы меню всегда отображалось сверху, добавляя к блоку навигации тень и меняя цвет фона</li>
+                    <li class="modal-list__item">При наведении на заголовки второго уровня у них появляется плавное подчеркивание. Также реализовано, что если текст будет располагаться в несколько строк, подчеркивание отображалось корректно</li>
+                    <li class="modal-list__item">Реализована адаптивная верстка. На любых экранах контент отображается корректно</li>
+                    <li class="modal-list__item">Когда экран устройства достигает определенной ширины, происходит замена меню навигации главного экрана на меню - бургер (для этого используется JavaScript)</li>
+                    <li class="modal-list__item">При клике на меню-бургер высвечивается модальное окно с меню на всю область экрана (кликая на нужный пункт навигации в нем, окно закрывается и происходит плавный переход к контенту), также при клике на крестик, модальное окно закрывается</li>
+                    <li class="modal-list__item">При сужении окна блок портфолио, состоящий из грид-элементов, превращается в слайдер (slick slider), реализовано с помощью медиа-запросов (переключение слайдов осуществляется через свайп)</li>
+                    <li class="modal-list__item">При клике на 'Play' в блоке видео, происходит проигрывание ролика. При этом добавляются элементы управления и скрывается иконка 'Play'</li>
+                    <li class="modal-list__item">Ниже блока видео реализован адаптивный слайдер, полностью сделанный на JavaScript(на экранах для смартфонов стрелки навигации пропадают, переключение слайдов происходит через точки, на экранах планшетов и компьютеров переключение слайдов осуществляется через стрелки)</li>
+                    <li class="modal-list__item">В блоке Pricing отображается желтым цветом стандартный тариф, при наведении или при клике (на экранах смартфонов) на другие карточки происходит плавный выбор нужной карточки, при этом через JavaScript происходит удаление класса active у всех карточек и добавление этого класса выбранной</li>
+                  </ul>
+                  <p class="modal-work__description">Работая над данным проектом, были использованы следующие инструменты, технологии:</p>
+                  <ul class="modal-work__list modal-list">
+                    <li class="modal-list__item">Редактор кода: Visual Studio Code</li>
+                    <li class="modal-list__item">JavaScript</li>
+                    <li class="modal-list__item">Css / HTML</li>
+                    <li class="modal-list__item">Slider Slick</li>
+                    <li class="modal-list__item">Flex-box Layout</li>
+                    <li class="modal-list__item">Grid Layout</li>
+                    <li class="modal-list__item">Svg-спрайты</li>
+                    <li class="modal-list__item">BEM-naming</li>
+                  </ul>
+                </div>
               </div>
               <ul class="modal-work__list modal-list">
                 <li class="modal-list__item">
@@ -1764,27 +1783,29 @@
             <div class="modal-work__text">
               <p class="modal-work__description">При работе над проектом был реализован следующий функционал:</p>
               <div class="modal-work__show-info show-more">
-                <span class="show-more__desc">Более подробно</span>
+                <div class="show-more__trigger">
+                  <span class="show-more__desc">Более подробно</span>
                 <svg class="show-more__arrow">
                   <use xlink:href="./img/sprite/symbol/sprite.svg#modal--show-modal-right"/>
                 </svg>
-              </div>
-              <div class="more hide-elem">
-                <ul class="modal-work__list modal-list">
-                  <li class="modal-list__item">При скролле вниз навигационное меню отбрасывает тень (сделано через javascript) и остается всегда в видимости пользователя</li>
-                  <li class="modal-list__item">При сужении экрана появляется меню-бургер, кликнув на который отображается модальное окно с навигацией</li>
-                  <li class="modal-list__item">В секции с видео при нажатии на 'Play' кнопка 'Play' превращается в кнопку 'Pause', видео воспроизводится, а при наведении курсора у видео появляется затемняющая подложка, при отведении она пропадает</li>
-                  <li class="modal-list__item">Реализована плавная прокрутка через javascript</li>
-                </ul>
-                <p class="modal-work__description">Работая над данным проектом, были использованы следующие инструменты, технологии:</p>
-                <ul class="modal-work__list modal-list">
-                  <li class="modal-list__item">Редактор кода: Visual Studio Code</li>
-                  <li class="modal-list__item">JavaScript</li>
-                  <li class="modal-list__item">Css / HTML</li>
-                  <li class="modal-list__item">Flex-box Layout</li>
-                  <li class="modal-list__item">Css Grid Layout</li>
-                  <li class="modal-list__item">Адаптивная верстка под смартфоны, планшеты и ноутбуки</li>
-                </ul>
+                </div>
+                <div class="show-more__content hide-elem">
+                  <ul class="modal-work__list modal-list">
+                    <li class="modal-list__item">При скролле вниз навигационное меню отбрасывает тень (сделано через javascript) и остается всегда в видимости пользователя</li>
+                    <li class="modal-list__item">При сужении экрана появляется меню-бургер, кликнув на который отображается модальное окно с навигацией</li>
+                    <li class="modal-list__item">В секции с видео при нажатии на 'Play' кнопка 'Play' превращается в кнопку 'Pause', видео воспроизводится, а при наведении курсора у видео появляется затемняющая подложка, при отведении она пропадает</li>
+                    <li class="modal-list__item">Реализована плавная прокрутка через javascript</li>
+                  </ul>
+                  <p class="modal-work__description">Работая над данным проектом, были использованы следующие инструменты, технологии:</p>
+                  <ul class="modal-work__list modal-list">
+                    <li class="modal-list__item">Редактор кода: Visual Studio Code</li>
+                    <li class="modal-list__item">JavaScript</li>
+                    <li class="modal-list__item">Css / HTML</li>
+                    <li class="modal-list__item">Flex-box Layout</li>
+                    <li class="modal-list__item">Css Grid Layout</li>
+                    <li class="modal-list__item">Адаптивная верстка под смартфоны, планшеты и ноутбуки</li>
+                  </ul>
+                </div>
               </div>
               <ul class="modal-work__list modal-list">
                 <li class="modal-list__item">
@@ -1875,27 +1896,29 @@
             <div class="modal-work__text">
               <p class="modal-work__description">При работе над проектом был реализован следующий функционал:</p>
               <div class="modal-work__show-info show-more">
-                <span class="show-more__desc">Более подробно</span>
+                <div class="show-more__trigger">
+                  <span class="show-more__desc">Более подробно</span>
                 <svg class="show-more__arrow">
                   <use xlink:href="./img/sprite/symbol/sprite.svg#modal--show-modal-right"/>
                 </svg>
-              </div>
-              <div class="more hide-elem">
-                <ul class="modal-work__list modal-list">
-                  <li class="modal-list__item">В секции категории блюд с помощью javascript самостоятельно было реализовано переключение по табам (при нажатии на нужный пункт категории, произойдет показ выбранных блюд)</li>
-                  <li class="modal-list__item">Реализация слайдера в блоке главной секции сайта, используя javascript - плагин Swiper.js</li>
-                  <li class="modal-list__item">При скролле вниз навигационное меню отбрасывает тень (сделано через javascript) и остается всегда в видимости пользователя</li>
-                  <li class="modal-list__item">Добавлена затемненная подложка в слайдере и в двух карточках, следующих за ним, для лучшей читаемости текста</li>
-                </ul>
-                <p class="modal-work__description">Работая над данным проектом, были использованы следующие инструменты, технологии:</p>
-                <ul class="modal-work__list modal-list">
-                  <li class="modal-list__item">Редактор кода: Visual Studio Code</li>
-                  <li class="modal-list__item">JavaScript</li>
-                  <li class="modal-list__item">Css / HTML</li>
-                  <li class="modal-list__item">Слайдер - Swiper.js</li>
-                  <li class="modal-list__item">Flex-box Layout</li>
-                  <li class="modal-list__item">Адаптивная верстка под смартфоны, планшеты и ноутбуки</li>
-                </ul>
+                </div>
+                <div class="show-more__content hide-elem">
+                  <ul class="modal-work__list modal-list">
+                    <li class="modal-list__item">В секции категории блюд с помощью javascript самостоятельно было реализовано переключение по табам (при нажатии на нужный пункт категории, произойдет показ выбранных блюд)</li>
+                    <li class="modal-list__item">Реализация слайдера в блоке главной секции сайта, используя javascript - плагин Swiper.js</li>
+                    <li class="modal-list__item">При скролле вниз навигационное меню отбрасывает тень (сделано через javascript) и остается всегда в видимости пользователя</li>
+                    <li class="modal-list__item">Добавлена затемненная подложка в слайдере и в двух карточках, следующих за ним, для лучшей читаемости текста</li>
+                  </ul>
+                  <p class="modal-work__description">Работая над данным проектом, были использованы следующие инструменты, технологии:</p>
+                  <ul class="modal-work__list modal-list">
+                    <li class="modal-list__item">Редактор кода: Visual Studio Code</li>
+                    <li class="modal-list__item">JavaScript</li>
+                    <li class="modal-list__item">Css / HTML</li>
+                    <li class="modal-list__item">Слайдер - Swiper.js</li>
+                    <li class="modal-list__item">Flex-box Layout</li>
+                    <li class="modal-list__item">Адаптивная верстка под смартфоны, планшеты и ноутбуки</li>
+                  </ul>
+                </div>
               </div>
               <ul class="modal-work__list modal-list">
                 <li class="modal-list__item">
@@ -1980,27 +2003,29 @@
             <div class="modal-work__text">
               <p class="modal-work__description">При работе над проектом был реализован следующий функционал:</p>
               <div class="modal-work__show-info show-more">
-                <span class="show-more__desc">Более подробно</span>
+                <div class="show-more__trigger">
+                  <span class="show-more__desc">Более подробно</span>
                 <svg class="show-more__arrow">
                   <use xlink:href="./img/sprite/symbol/sprite.svg#modal--show-modal-right"/>
                 </svg>
-              </div>
-              <div class="more hide-elem">
-                <ul class="modal-work__list modal-list">
-                  <li class="modal-list__item">На главной странице сайта и в секции ниже был использован jQuery - плагин Slider Slick.js. С его помощью на сайт были установлены слайдеры</li>
-                  <li class="modal-list__item">После главной секции использованы два дополняющих друг друга слайдера, связанных между собой с помощью свойства slick.js slider - asNavFor</li>
-                  <li class="modal-list__item">При смене окна на размер меньше 360 px в главной секции слайдер листается автоматически</li>
-                  <li class="modal-list__item">На мобильных устройствах и планшетах вместо меню отображается меню-бургер, кликнув на который плавно выезжает меню сверху, и также пропадает при повторном нажатии</li>
-                </ul>
-                <p class="modal-work__description">Работая над данным проектом, были использованы следующие инструменты, технологии:</p>
-                <ul class="modal-work__list modal-list">
-                  <li class="modal-list__item">Редактор кода: Visual Studio Code</li>
-                  <li class="modal-list__item">JavaScript</li>
-                  <li class="modal-list__item">Css / HTML</li>
-                  <li class="modal-list__item">Слайдер - Slick</li>
-                  <li class="modal-list__item">Flex-box Layout</li>
-                  <li class="modal-list__item">Адаптивная верстка под смартфоны, планшеты и ноутбуки</li>
-                </ul>
+                </div>
+                <div class="show-more__content hide-elem">
+                  <ul class="modal-work__list modal-list">
+                    <li class="modal-list__item">На главной странице сайта и в секции ниже был использован jQuery - плагин Slider Slick.js. С его помощью на сайт были установлены слайдеры</li>
+                    <li class="modal-list__item">После главной секции использованы два дополняющих друг друга слайдера, связанных между собой с помощью свойства slick.js slider - asNavFor</li>
+                    <li class="modal-list__item">При смене окна на размер меньше 360 px в главной секции слайдер листается автоматически</li>
+                    <li class="modal-list__item">На мобильных устройствах и планшетах вместо меню отображается меню-бургер, кликнув на который плавно выезжает меню сверху, и также пропадает при повторном нажатии</li>
+                  </ul>
+                  <p class="modal-work__description">Работая над данным проектом, были использованы следующие инструменты, технологии:</p>
+                  <ul class="modal-work__list modal-list">
+                    <li class="modal-list__item">Редактор кода: Visual Studio Code</li>
+                    <li class="modal-list__item">JavaScript</li>
+                    <li class="modal-list__item">Css / HTML</li>
+                    <li class="modal-list__item">Слайдер - Slick</li>
+                    <li class="modal-list__item">Flex-box Layout</li>
+                    <li class="modal-list__item">Адаптивная верстка под смартфоны, планшеты и ноутбуки</li>
+                  </ul>
+                </div>
               </div>
               <ul class="modal-work__list modal-list">
                 <li class="modal-list__item">
@@ -2098,30 +2123,32 @@
               <p class="modal-work__description">Проект был создан в рамках марафона по верстке от CodeQuest. Марафон длился 5 недель.</p>
               <p class="modal-work__description">Целью марафона была практика, использование новых подходов в web-разработке, а также улучшить навыки в gulp, scss и методологии BEM-naming.</p>
               <div class="modal-work__show-info show-more">
-                <span class="show-more__desc">Более подробно</span>
-                <svg class="show-more__arrow">
-                  <use xlink:href="./img/sprite/symbol/sprite.svg#modal--show-modal-right"/>
-                </svg>
-              </div>
-              <div class="more hide-elem">
-                <p class="modal-work__description">На марафоне проводились онлайн-встречи, где мы обсуждали блоки кода, что нужно было сверстать. К следующей живой трансляции наставник объяснял непонятные моменты, после этого вносились некоторые правки в проект, чтобы его улучшить, сохраняя при этом свои варианты наработок.</p>
-                <p class="modal-work__description">Таким образом марафон был успешно пройден, где я получил новый опыт работы, используя современные подходы при разработке сайтов.</p>
-                <p class="modal-work__description">В проекте используется компонентный подход: scss разбит на отдельные блоки, что позволяет лучше ориентироваться в коде, модифицировать его и поддерживать в дальнейшем.</p>
-                <p class="modal-work__description">Для удобства используются миксины в scss. Это отдельные мини-функции, позволяющие сокращать код и работать быстрее.</p>
-                <p class="modal-work__description">Работая над данным проектом, были использованы следующие инструменты, технологии и плагины:</p>
-                <ul class="modal-work__list modal-list">
-                  <li class="modal-list__item">Препроцессор SCSS</li>
-                  <li class="modal-list__item">Менеджер проектов gulp</li>
-                  <li class="modal-list__item">Git & GitHub</li>
-                  <li class="modal-list__item">Плагин Chrome Pixel Perfect</li>
-                  <li class="modal-list__item">Слайдер Swiper.js</li>
-                  <li class="modal-list__item">Favicon</li>
-                  <li class="modal-list__item">Редактор кода Visual Studio Code</li>
-                  <li class="modal-list__item">Плагины Visual Studio Code: Emmet, Live Server, Path AutoComplete, AutoClose Tag и др.</li>
-                  <li class="modal-list__item">Flexible Box Layout Module</li>
-                  <li class="modal-list__item">CSS / HTML / JavaScript</li>
-                  <li class="modal-list__item">Адаптирование сайта под все экраны устройств</li>
-                </ul>
+                <div class="show-more__trigger">
+                  <span class="show-more__desc">Более подробно</span>
+                  <svg class="show-more__arrow">
+                    <use xlink:href="./img/sprite/symbol/sprite.svg#modal--show-modal-right" />
+                  </svg>
+                </div>
+                <div class="show-more__content hide-elem">
+                  <p class="modal-work__description">На марафоне проводились онлайн-встречи, где мы обсуждали блоки кода, что нужно было сверстать. К следующей живой трансляции наставник объяснял непонятные моменты, после этого вносились некоторые правки в проект, чтобы его улучшить, сохраняя при этом свои варианты наработок.</p>
+                  <p class="modal-work__description">Таким образом марафон был успешно пройден, где я получил новый опыт работы, используя современные подходы при разработке сайтов.</p>
+                  <p class="modal-work__description">В проекте используется компонентный подход: scss разбит на отдельные блоки, что позволяет лучше ориентироваться в коде, модифицировать его и поддерживать в дальнейшем.</p>
+                  <p class="modal-work__description">Для удобства используются миксины в scss. Это отдельные мини-функции, позволяющие сокращать код и работать быстрее.</p>
+                  <p class="modal-work__description">Работая над данным проектом, были использованы следующие инструменты, технологии и плагины:</p>
+                  <ul class="modal-work__list modal-list">
+                    <li class="modal-list__item">Препроцессор SCSS</li>
+                    <li class="modal-list__item">Менеджер проектов gulp</li>
+                    <li class="modal-list__item">Git & GitHub</li>
+                    <li class="modal-list__item">Плагин Chrome Pixel Perfect</li>
+                    <li class="modal-list__item">Слайдер Swiper.js</li>
+                    <li class="modal-list__item">Favicon</li>
+                    <li class="modal-list__item">Редактор кода Visual Studio Code</li>
+                    <li class="modal-list__item">Плагины Visual Studio Code: Emmet, Live Server, Path AutoComplete, AutoClose Tag и др.</li>
+                    <li class="modal-list__item">Flexible Box Layout Module</li>
+                    <li class="modal-list__item">CSS / HTML / JavaScript</li>
+                    <li class="modal-list__item">Адаптирование сайта под все экраны устройств</li>
+                  </ul>
+                </div>
               </div>
               <ul class="modal-work__list modal-list">
                 <li class="modal-list__item">
