@@ -17,8 +17,24 @@
     fill: $show-more-color-light;
     width: 13px;
     height: 13px;
+    transition: transform 0.3s ease-in;
   }
   &__content {
+    display: none;
     padding: 11px 0;
+  }
+  &__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    opacity: 0;
+  }
+  &__input:checked ~ .show-more__content {
+    display: block;
+  }
+  &__input:checked ~ .show-more__trigger .show-more__arrow {
+    transform: rotate(90deg);
   }
 }
