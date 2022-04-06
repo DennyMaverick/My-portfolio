@@ -7,6 +7,16 @@
 
 @include font-face('Montserrat', '../font/Montserrat-Light', 300);
 
+@include font-face('Ample', '../font/AmpleSoftPro-Bold', 700);
+
+@include font-face('Ample', '../font/AmpleSoftPro-Medium', 500);
+
+@include font-face('Ample', '../font/AmpleSoftPro-Regular', 400);
+
+@include font-face('Ample', '../font/AmpleSoftPro-Light', 300);
+
+@include font-face('Ample', '../font/AmpleSoftPro-Thin', 200);
+
 // Миксины для шрифтов
 @mixin font-montserrat-bold {
   font-family: 'Montserrat', sans-serif;
