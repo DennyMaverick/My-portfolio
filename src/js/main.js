@@ -21,6 +21,7 @@ import './modules/hide-show-arrow-up-resume-modal';
 import './modules/showmore';
 import './modules/theme';
 import "./modules/up-click-trigger";
+import "./modules/preloader"
 
 
 

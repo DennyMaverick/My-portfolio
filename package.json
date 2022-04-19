@@ -19,7 +19,7 @@
     "gulp-starter",
     "gulp"
   ],
-  "author": "CodeQuest <info@codequest.ru>",
+  "author": "Denny Maverick",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.16.0",

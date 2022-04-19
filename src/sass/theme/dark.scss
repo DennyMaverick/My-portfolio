@@ -117,6 +117,11 @@
   &__title {
     color: $white;
   }
+  &__box-img {
+    background-image: url('../../img/preload/dark-theme-loader.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 // ====== Секция about ======
 .about {
@@ -129,6 +134,9 @@
   }
   &__text {
     color: $white;
+  }
+  &__image-box {
+    background: url('../../img/preload/dark-theme-loader.gif') center no-repeat;
   }
 }
 // ====== Футер ======
