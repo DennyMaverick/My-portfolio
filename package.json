@@ -61,6 +61,7 @@
     "gulp-webp-html": "^1.0.2",
     "htmlhint": "^1.1.2",
     "jquery": "^3.6.0",
+    "lazyload": "^2.0.0-rc.2",
     "node-sass-tilde-importer": "^1.0.2",
     "page-scroll-to-id": "^1.6.8",
     "sass": "^1.43.4",

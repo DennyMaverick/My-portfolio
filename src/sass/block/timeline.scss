@@ -110,7 +110,17 @@
     font-weight: 300;
   }
   &__image {
+    background: url('../img/preload/white-theme-loader.gif') center no-repeat;
+    position: relative;
+    padding-bottom: 75%;
+    width: 100%;
     margin-top: 1rem;
     margin-bottom: 1rem;
+  }
+  &__img {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
   }
 }

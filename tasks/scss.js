@@ -20,25 +20,29 @@ const webpCss = require('gulp-webp-css');
 
 // Обработка SCSS
 const scss = () => {
-  return src(path.scss.src, { sourcemaps: app.isDev })
-    .pipe(plumber({
-      errorHandler: notify.onError(error => ({
-        title: 'SCSS',
-        message: error.message
-      }))
-    }))
-    .pipe(sassGlob())
-    .pipe(sass())
-    .pipe(webpCss())
-    .pipe(autoprefixer())
-    .pipe(shorthand())
-    .pipe(groupMedia())
-    .pipe(size({ title: 'main.css' }))
-    .pipe(dest(path.scss.dest, { sourcemaps: app.isDev }))
-    .pipe(csso())
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(size({ title: 'main.min.css' }))
-    .pipe(dest(path.scss.dest, { sourcemaps: app.isDev }));
+  return (
+    src(path.scss.src, {sourcemaps: app.isDev})
+      .pipe(
+        plumber({
+          errorHandler: notify.onError((error) => ({
+            title: "SCSS",
+            message: error.message,
+          })),
+        })
+      )
+      .pipe(sassGlob())
+      .pipe(sass())
+      // .pipe(webpCss())
+      .pipe(autoprefixer())
+      .pipe(shorthand())
+      .pipe(groupMedia())
+      .pipe(size({title: "main.css"}))
+      .pipe(dest(path.scss.dest, {sourcemaps: app.isDev}))
+      .pipe(csso())
+      .pipe(rename({suffix: ".min"}))
+      .pipe(size({title: "main.min.css"}))
+      .pipe(dest(path.scss.dest, {sourcemaps: app.isDev}))
+  )
 }
 
 module.exports = scss;

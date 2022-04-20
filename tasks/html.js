@@ -26,7 +26,7 @@ const html = () => {
       prefix: '@@',
       basepath: '@file'
     }))
-    .pipe(webpHtml())
+    // .pipe(webpHtml())
     // .pipe(size({ title: "До сжатия" }))
     .pipe(htmlmin(app.htmlmin))
     // .pipe(size({ title: "После сжатия" }))

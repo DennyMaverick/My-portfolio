@@ -21,7 +21,10 @@ import './modules/hide-show-arrow-up-resume-modal';
 import './modules/showmore';
 import './modules/theme';
 import "./modules/up-click-trigger";
-import "./modules/preloader"
+// import "./modules/preloader"
+// preloader для gulp
+// import "./modules/preloader-for-webp"
+import "./modules/preloader-second-way"
 
 
 

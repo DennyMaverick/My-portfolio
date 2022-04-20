@@ -307,6 +307,9 @@
       fill: $arrow-up-color-hover;
     }
   }
+  &__image {
+    background: url('../../img/preload/dark-theme-loader.gif') center no-repeat;
+  }
 }
 
 .progress-bar {
