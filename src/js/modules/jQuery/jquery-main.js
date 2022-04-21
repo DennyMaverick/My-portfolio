@@ -98,7 +98,8 @@ $(function () {
 
   worksSlider.slick({
     //ID слайдер
-    infinite: true, //бесконечная прокрутка
+    lazyLoad: "ondemand",
+    infinite: false, //бесконечная прокрутка
     slidesToShow: 1, //показывать слайдов
     slidesToScroll: 1, // скроллить слайдов
     fade: true,
