@@ -95,11 +95,17 @@ $(function () {
   })
 
   // =============== Slider Slick =============
+  // const modalBtns = document.querySelectorAll("[data-modal]")
+
+  // modalBtns.forEach((btn) => {
+  //   btn.addEventListener("click", () => {
+
+  //   })
+  // })
 
   worksSlider.slick({
     //ID слайдер
-    lazyLoad: "ondemand",
-    infinite: false, //бесконечная прокрутка
+    infinite: true, //бесконечная прокрутка
     slidesToShow: 1, //показывать слайдов
     slidesToScroll: 1, // скроллить слайдов
     fade: true,

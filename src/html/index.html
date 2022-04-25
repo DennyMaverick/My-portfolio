@@ -17,6 +17,7 @@
     <script src="./js/main.js" defer></script>
   </head>
   <body>
+    <div class="preloader-page" id="preloader"></div>
     <header class="header">
       <div class="container">
         <div class="header__mobile-modal mobile-modal">
@@ -60,7 +61,7 @@
     <section class="intro" id="home">
       <div class="intro__inner container">
         <div class="intro__content">
-          <h2 class="intro__subtitle" data-aos="zoom-in" data-aos-offset="0">Добрый день, Я</h2>
+          <h2 class="intro__subtitle" data-aos="zoom-in"  data-aos-offset="0">Добрый день, Я</h2>
           <h1 class="intro__title" data-aos-delay="2000" data-aos="zoom-in" data-aos-offset="0">Денис</h1>
           <div class="intro__position" data-aos="fade-right" data-aos-delay="1500" data-aos-offset="0">Web - разработчик</div>
           <div class="intro__social social">
@@ -110,7 +111,7 @@
           <div class="portfolio__col portfolio__show" data-cat="landing">
             <div class="portfolio__work work">
               <!-- Далее нужно для каждой работы создавать отдельное модальное окно -->
-              <div class="work__box-img work--bg-archee" data-modal="#modal_archee">
+              <div class="work__box-img work--overlay work--bg-archee" data-modal="#modal_archee">
                 <img class="work__image lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/archee/main.png" alt="Project photo" />
               </div>
               <div class="work__content">
@@ -126,7 +127,7 @@
           <div class="portfolio__col portfolio__show" data-cat="landing">
             <div class="portfolio__work work">
               <!-- Далее нужно для каждой работы создавать отдельное модальное окно -->
-              <div class="work__box-img work--bg-oxygen" data-modal="#modal_oxygen">
+              <div class="work__box-img work--overlay work--bg-oxygen" data-modal="#modal_oxygen">
                 <img class="work__image lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/oxygen/main.png" alt="Project photo" />
               </div>
               <div class="work__content">
@@ -142,7 +143,7 @@
           <div class="portfolio__col portfolio__show" data-cat="landing">
             <div class="portfolio__work work">
               <!-- Далее нужно для каждой работы создавать отдельное модальное окно -->
-              <div class="work__box-img work--bg-olivia"  data-modal="#modal_olivia">
+              <div class="work__box-img work--overlay work--bg-olivia" data-modal="#modal_olivia">
                 <img class="work__image lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/olivia/main-pic.png" alt="Project photo" />
               </div>
               <div class="work__content">
@@ -158,7 +159,7 @@
           <div class="portfolio__col portfolio__show" data-cat="landing">
             <div class="portfolio__work work">
               <!-- Далее нужно для каждой работы создавать отдельное модальное окно -->
-              <div class="work__box-img work--bg-thrivetalk" data-modal="#modal_project_1">
+              <div class="work__box-img work--overlay work--bg-thrivetalk" data-modal="#modal_project_1">
                 <img class="work__image lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/thrivetalk/main.png" alt="Project photo" />
               </div>
               <div class="work__content">
@@ -174,7 +175,7 @@
           <div class="portfolio__col portfolio__show" data-cat="landing">
             <div class="portfolio__work work">
               <!-- Добавление проекта в категорию "Проекты с элементами интерфейса на javaScript" -->
-              <div class="work__box-img work--bg-sea"  data-modal="#modal_sea-products">
+              <div class="work__box-img work--overlay work--bg-sea" data-modal="#modal_sea-products">
                 <img class="work__image lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/sea-products/main.png" alt="Project photo" />
               </div>
               <div class="work__content">
@@ -191,7 +192,7 @@
           <div class="portfolio__col portfolio__show" data-cat="landing">
             <div class="portfolio__work work">
               <!-- Далее нужно для каждой работы создавать отдельное модальное окно -->
-              <div class="work__box-img work--bg-food" data-modal="#modal_delivery">
+              <div class="work__box-img work--overlay work--bg-food" data-modal="#modal_delivery">
                 <img class="work__image lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/delivery-food/main.png" alt="Project photo" />
               </div>
               <div class="work__content">
@@ -207,7 +208,7 @@
           <div class="portfolio__col portfolio__show" data-cat="interface">
             <div class="portfolio__work work">
               <!-- Добавление проекта в категорию "Проекты с элементами интерфейса на javaScript" -->
-              <div class="work__box-img work--bg-rolls" data-modal="#modal_rolls">
+              <div class="work__box-img work--overlay work--bg-rolls" data-modal="#modal_rolls">
                 <img class="work__image work__image-rolls lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/rolls-scripts/main.png" alt="Project photo" />
               </div>
               <div class="work__content">
@@ -223,7 +224,7 @@
           <div class="portfolio__col portfolio__show" data-cat="site-visit">
             <!-- Добавление проекта в категорию "Сайты-визитки" -->
             <div class="portfolio__work work">
-              <div class="work__box-img work--bg-visit" data-modal="#modal_visit-card">
+              <div class="work__box-img work--overlay work--bg-visit" data-modal="#modal_visit-card">
                 <img class="work__image lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/site-visit/main-img.jpg" alt="Project photo" />
               </div>
               <div class="work__content">
@@ -238,7 +239,7 @@
           <!-- .portfolio__col -->
           <div class="portfolio__col portfolio__show" data-cat="interface">
             <div class="portfolio__work work">
-              <div class="work__box-img work--bg-convert" data-modal="#modal_convert">
+              <div class="work__box-img work--overlay work--bg-convert" data-modal="#modal_convert">
                 <img class="work__image lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/convert/main.png" alt="Project photo" />
               </div>
               <div class="work__content">
@@ -255,7 +256,7 @@
           <div class="portfolio__col portfolio__show" data-cat="promo">
             <div class="portfolio__work work">
               <!-- Добавление проекта в категорию "Промосайты" -->
-              <div class="work__box-img work--bg-venom" data-modal="#modal_venom-two">
+              <div class="work__box-img work--overlay work--bg-venom" data-modal="#modal_venom-two">
                 <img class="work__image work__image--venom lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/venom-2/venom.png" alt="Project photo" />
               </div>
               <div class="work__content">
@@ -271,7 +272,7 @@
           <div class="portfolio__col portfolio__show" data-cat="landing">
             <div class="portfolio__work work">
               <!-- Добавление проекта в категорию "Лэндинги" -->
-              <div class="work__box-img work--bg-safari" data-modal="#modal_safari">
+              <div class="work__box-img work--overlay work--bg-safari" data-modal="#modal_safari">
                 <img class="work__image lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="img/projects/safari/popup-bg.jpg" alt="Project photo" />
               </div>
               <div class="work__content">
@@ -287,7 +288,7 @@
           <div class="portfolio__col portfolio__show" data-cat="interface">
             <div class="portfolio__work work">
               <!-- Добавление проекта в категорию "Проекты с элементами интерфейса на javaScript" -->
-              <div class="work__box-img work--bg-calc" data-modal="#modal_calc">
+              <div class="work__box-img work--overlay work--bg-calc" data-modal="#modal_calc">
                 <img class="work__image lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/calculator/main.png" alt="Project photo" />
               </div>
               <div class="work__content">
@@ -776,25 +777,27 @@
         <div class="modal__modal-work modal-work">
           <div class="modal-work__preview">
             <div class="modal-work__slider slider" data-slider="slick">
-              <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-lazy="./img/projects/thrivetalk/pic_1.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img"  data-src="./img/projects/thrivetalk/pic_1.jpg"  >
+                </div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/thrivetalk/pic_2.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/thrivetalk/pic_2.jpg"  ></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/thrivetalk/pic_3.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/thrivetalk/pic_3.jpg" ></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/thrivetalk/pic_4.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/thrivetalk/pic_4.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/thrivetalk/pic_5.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/thrivetalk/pic_5.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/thrivetalk/pic_6.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/thrivetalk/pic_6.jpg">
               </div>
             </div>
+          </div>
           </div>
           <!-- .modal__work-preview -->
           <div class="modal-work__content">
@@ -814,7 +817,7 @@
             <div class="modal-work__text">
               <p class="modal-work__description">При работе над проектом был реализован следующий функционал:</p>
               <div class="modal-work__show-info show-more">
-                <input type="checkbox" id="show-more_1" class="show-more__input">
+                <input type="checkbox" id="show-more_1" class="show-more__input" />
                 <label class="show-more__trigger" for="show-more_1">
                   <span class="show-more__desc">Более подробно</span>
                   <svg class="show-more__arrow">
@@ -889,22 +892,22 @@
           <div class="modal-work__preview">
             <div class="modal-work__slider slider" data-slider="slick">
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/site-visit/image__1.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/site-visit/image__1.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/site-visit/image__2.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/site-visit/image__2.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/site-visit/image__3.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/site-visit/image__3.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/site-visit/image__4.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/site-visit/image__4.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/site-visit/image__5.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/site-visit/image__5.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/site-visit/image__6.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/site-visit/image__6.jpg" alt="Project-photo" />
               </div>
             </div>
           </div>
@@ -925,7 +928,7 @@
             <div class="modal-work__text">
               <p class="modal-work__description">Работая над данным проектом, были использованы следующие инструменты, технологии и плагины:</p>
               <div class="modal-work__show-info show-more">
-                <input type="checkbox" id="show-more_2" class="show-more__input">
+                <input type="checkbox" id="show-more_2" class="show-more__input" />
                 <label class="show-more__trigger" for="show-more_2">
                   <span class="show-more__desc">Более подробно</span>
                   <svg class="show-more__arrow">
@@ -993,13 +996,13 @@
           <div class="modal-work__preview">
             <div class="modal-work__slider slider" data-slider="slick">
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/venom-2/main-page.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/venom-2/main-page.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/venom-2/about.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/venom-2/about.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/venom-2/adaptive-pic.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/venom-2/adaptive-pic.jpg" alt="Project-photo" />
               </div>
             </div>
           </div>
@@ -1020,7 +1023,7 @@
             <div class="modal-work__text">
               <p class="modal-work__description">Работая над данным проектом, были использованы следующие инструменты, технологии и плагины:</p>
               <div class="modal-work__show-info show-more">
-                <input type="checkbox" id="show-more_3" class="show-more__input">
+                <input type="checkbox" id="show-more_3" class="show-more__input" />
                 <label class="show-more__trigger" for="show-more_3">
                   <span class="show-more__desc">Более подробно</span>
                   <svg class="show-more__arrow">
@@ -1088,34 +1091,34 @@
           <div class="modal-work__preview">
             <div class="modal-work__slider slider" data-slider="slick">
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/safari/a_intro.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/safari/a_intro.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/safari/b_trevels.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/safari/b_trevels.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/safari/c_directions.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/safari/c_directions.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/safari/d_popular.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/safari/d_popular.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/safari/e_map.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/safari/e_map.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/safari/f_about_tours.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/safari/f_about_tours.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/safari/g_gallery.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/safari/g_gallery.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/safari/h_safari_premium-class.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/safari/h_safari_premium-class.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/safari/i_contact_form.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/safari/i_contact_form.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/safari/j_footer.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/safari/j_footer.jpg" alt="Project-photo" />
               </div>
             </div>
           </div>
@@ -1136,7 +1139,7 @@
             <div class="modal-work__text">
               <p class="modal-work__description">Работая над данным проектом, были использованы следующие инструменты, технологии и плагины:</p>
               <div class="modal-work__show-info show-more">
-                <input type="checkbox" id="show-more_4" class="show-more__input">
+                <input type="checkbox" id="show-more_4" class="show-more__input" />
                 <label class="show-more__trigger" for="show-more_4">
                   <span class="show-more__desc">Более подробно</span>
                   <svg class="show-more__arrow">
@@ -1208,13 +1211,13 @@
           <div class="modal-work__preview">
             <div class="modal-work__slider slider" data-slider="slick">
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/rolls-scripts/rolls_slide_1.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/rolls-scripts/rolls_slide_1.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/rolls-scripts/rolls_slide_2.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/rolls-scripts/rolls_slide_2.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/rolls-scripts/rolls_slide_3.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/rolls-scripts/rolls_slide_3.jpg" alt="Project-photo" />
               </div>
             </div>
           </div>
@@ -1235,7 +1238,7 @@
             <div class="modal-work__text">
               <p class="modal-work__description">При работе над проектом был реализован следующий функционал:</p>
               <div class="modal-work__show-info show-more">
-                <input type="checkbox" id="show-more_5" class="show-more__input">
+                <input type="checkbox" id="show-more_5" class="show-more__input" />
                 <label class="show-more__trigger" for="show-more_5">
                   <span class="show-more__desc">Более подробно</span>
                   <svg class="show-more__arrow">
@@ -1307,13 +1310,13 @@
           <div class="modal-work__preview">
             <div class="modal-work__slider slider" data-slider="slick">
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/calculator/Calc_slide_1.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/calculator/Calc_slide_1.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects//calculator/Calc_slide_2.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects//calculator/Calc_slide_2.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects//calculator/Calc_slide_3.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects//calculator/Calc_slide_3.jpg" alt="Project-photo" />
               </div>
             </div>
           </div>
@@ -1334,7 +1337,7 @@
             <div class="modal-work__text">
               <p class="modal-work__description">При работе над проектом был реализован следующий функционал:</p>
               <div class="modal-work__show-info show-more">
-                <input type="checkbox" id="show-more_6" class="show-more__input">
+                <input type="checkbox" id="show-more_6" class="show-more__input" />
                 <label class="show-more__trigger" for="show-more_6">
                   <span class="show-more__desc">Более подробно</span>
                   <svg class="show-more__arrow">
@@ -1404,7 +1407,7 @@
           <div class="modal-work__preview">
             <div class="modal-work__slider slider" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-slider="slick">
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/convert/slide_01.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/convert/slide_01.jpg" alt="Project-photo" />
               </div>
             </div>
           </div>
@@ -1425,7 +1428,7 @@
             <div class="modal-work__text">
               <p class="modal-work__description">При работе над проектом был реализован следующий функционал:</p>
               <div class="modal-work__show-info show-more">
-              <input type="checkbox" id="show-more_7" class="show-more__input">
+                <input type="checkbox" id="show-more_7" class="show-more__input" />
                 <label class="show-more__trigger" for="show-more_7">
                   <span class="show-more__desc">Более подробно</span>
                   <svg class="show-more__arrow">
@@ -1493,40 +1496,40 @@
           <div class="modal-work__preview">
             <div class="modal-work__slider slider" data-slider="slick">
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/oxygen/slide_01.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/oxygen/slide_01.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/oxygen/slide_02.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/oxygen/slide_02.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/oxygen/slide_03.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/oxygen/slide_03.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/oxygen/slide_04.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/oxygen/slide_04.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/oxygen/slide_05.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/oxygen/slide_05.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/oxygen/slide_06.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/oxygen/slide_06.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/oxygen/slide_07.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/oxygen/slide_07.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/oxygen/slide_08.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/oxygen/slide_08.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/oxygen/slide_09.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/oxygen/slide_09.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/oxygen/slide_10.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/oxygen/slide_10.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/oxygen/slide_11.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/oxygen/slide_11.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/oxygen/slide_12.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/oxygen/slide_12.jpg" alt="Project-photo" />
               </div>
             </div>
           </div>
@@ -1548,7 +1551,7 @@
               <p class="modal-work__description">Работа над проектом имела цель попрактиковаться в методологии BEM-naming. Каркас страницы был создан под руководством наставника. Весь Css и JavaScript был написан мной самостоятельно.</p>
               <p class="modal-work__description">При работе над проектом был реализован следующий функционал:</p>
               <div class="modal-work__show-info show-more">
-                <input type="checkbox" id="show-more_9" class="show-more__input">
+                <input type="checkbox" id="show-more_9" class="show-more__input" />
                 <label class="show-more__trigger" for="show-more_9">
                   <span class="show-more__desc">Более подробно</span>
                   <svg class="show-more__arrow">
@@ -1632,25 +1635,25 @@
           <div class="modal-work__preview">
             <div class="modal-work__slider slider" data-slider="slick">
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/olivia/main-pic.png" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/olivia/main-pic.png" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/olivia/slide-1.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/olivia/slide-1.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/olivia/slide-2.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/olivia/slide-2.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/olivia/slide-3.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/olivia/slide-3.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/olivia/slide-4.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/olivia/slide-4.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/olivia/slide-5.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/olivia/slide-5.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/olivia/slide-6.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/olivia/slide-6.jpg" alt="Project-photo" />
               </div>
             </div>
           </div>
@@ -1671,7 +1674,7 @@
             <div class="modal-work__text">
               <p class="modal-work__description">При работе над проектом был реализован следующий функционал:</p>
               <div class="modal-work__show-info show-more">
-                <input type="checkbox" id="show-more_10" class="show-more__input">
+                <input type="checkbox" id="show-more_10" class="show-more__input" />
                 <label class="show-more__trigger" for="show-more_10">
                   <span class="show-more__desc">Более подробно</span>
                   <svg class="show-more__arrow">
@@ -1746,25 +1749,25 @@
           <div class="modal-work__preview">
             <div class="modal-work__slider slider" data-slider="slick">
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/delivery-food/slide_1.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/delivery-food/slide_1.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/delivery-food/slide_2.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/delivery-food/slide_2.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/delivery-food/slide_3.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/delivery-food/slide_3.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/delivery-food/slide_4.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/delivery-food/slide_4.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/delivery-food/slide_5.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/delivery-food/slide_5.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/delivery-food/slide_6.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/delivery-food/slide_6.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/delivery-food/slide_7.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/delivery-food/slide_7.jpg" alt="Project-photo" />
               </div>
             </div>
           </div>
@@ -1785,7 +1788,7 @@
             <div class="modal-work__text">
               <p class="modal-work__description">При работе над проектом был реализован следующий функционал:</p>
               <div class="modal-work__show-info show-more">
-                <input type="checkbox" id="show-more_11" class="show-more__input">
+                <input type="checkbox" id="show-more_11" class="show-more__input" />
                 <label class="show-more__trigger" for="show-more_11">
                   <span class="show-more__desc">Более подробно</span>
                   <svg class="show-more__arrow">
@@ -1860,19 +1863,19 @@
           <div class="modal-work__preview">
             <div class="modal-work__slider slider" data-slider="slick">
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/sea-products/main.png" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/sea-products/main.png" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/sea-products/slide-1.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/sea-products/slide-1.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/sea-products/slide-2.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/sea-products/slide-2.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/sea-products/slide-3.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/sea-products/slide-3.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/sea-products/slide-4.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/sea-products/slide-4.jpg" alt="Project-photo" />
               </div>
             </div>
           </div>
@@ -1893,7 +1896,7 @@
             <div class="modal-work__text">
               <p class="modal-work__description">При работе над проектом был реализован следующий функционал:</p>
               <div class="modal-work__show-info show-more">
-                <input type="checkbox" id="show-more_12" class="show-more__input">
+                <input type="checkbox" id="show-more_12" class="show-more__input" />
                 <label class="show-more__trigger" for="show-more_12">
                   <span class="show-more__desc">Более подробно</span>
                   <svg class="show-more__arrow">
@@ -1968,31 +1971,31 @@
           <div class="modal-work__preview">
             <div class="modal-work__slider slider" data-slider="slick">
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/archee/main.png" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/archee/main.png" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/archee/slide_1.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/archee/slide_1.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/archee/slide_2.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/archee/slide_2.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/archee/slide_3.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/archee/slide_3.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/archee/slide_4.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/archee/slide_4.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/archee/slide_5.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/archee/slide_5.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/archee/slide_6.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/archee/slide_6.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/archee/slide_7.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/archee/slide_7.jpg" alt="Project-photo" />
               </div>
               <div class="slider__item">
-                <img class="modal-work__photo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-lazy="./img/projects/archee/slide_8.jpg" alt="Project-photo" />
+                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/archee/slide_8.jpg" alt="Project-photo" />
               </div>
             </div>
           </div>
@@ -2014,7 +2017,7 @@
               <p class="modal-work__description">Проект был создан в рамках марафона по верстке от CodeQuest. Марафон длился 5 недель.</p>
               <p class="modal-work__description">Целью марафона была практика, использование новых подходов в web-разработке, а также улучшить навыки в gulp, scss и методологии BEM-naming.</p>
               <div class="modal-work__show-info show-more">
-                <input type="checkbox" id="show-more_13" class="show-more__input">
+                <input type="checkbox" id="show-more_13" class="show-more__input" />
                 <label class="show-more__trigger" for="show-more_13">
                   <span class="show-more__desc">Более подробно</span>
                   <svg class="show-more__arrow">

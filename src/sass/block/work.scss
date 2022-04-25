@@ -35,7 +35,8 @@
     &:hover {
       cursor: pointer;
     }
-
+  }
+  &--overlay {
     &::before {
       opacity: 0.6;
       position: absolute;

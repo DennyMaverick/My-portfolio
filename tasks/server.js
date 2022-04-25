@@ -8,11 +8,11 @@ const path = require("../config/path.js");
 const server = () => {
   browserSync.init({
     server: {
-      baseDir: path.root
+      baseDir: path.root,
     },
-    browser: 'chrome',
-    notify: false
-  });
+    browser: "chrome",
+    notify: false,
+  })
 }
 
 module.exports = server;
