@@ -103,10 +103,8 @@ $(function () {
   //   })
   // })
 
-  const modalBtns = document.querySelectorAll("[data-modal]:not(.btn, a)")
-  modalBtns.forEach((modalBtn) => {
-    modalBtn.addEventListener("click", function (event) {})
-  })
+  // worksSlider.slick("setPosition")
+
   worksSlider.slick({
     //ID слайдер
     infinite: true, //бесконечная прокрутка

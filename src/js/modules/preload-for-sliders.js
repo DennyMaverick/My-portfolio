@@ -1,6 +1,6 @@
 $(function () {
   slickSlider = $('[data-slider="slick"]')
-  const modalBtns = document.querySelectorAll("[data-modal]:not(.btn, a)")
+  const modalBtns = document.querySelectorAll("[data-work]")
 
   slickSlider.on("afterChange", function (event) {
     //1 > 2 > 3..
