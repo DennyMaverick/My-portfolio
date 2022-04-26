@@ -1,26 +1,44 @@
 $(function () {
   slickSlider = $('[data-slider="slick"]')
-  const modalBtns = document.querySelectorAll("[data-modal]")
+  const modalBtns = document.querySelectorAll("[data-modal]:not(.btn, a)")
 
-  slickSlider.on("afterChange", function () {
+  slickSlider.on("afterChange", function (event) {
     //1 > 2 > 3..
-    let this_ = $(".slick-active .slider__slick-img").not("loaded")
-    !$(this_).css({background: "url('" + $(this_).data("src") + "')50% /contain no-repeat"})
-    let im_ = new Image()
-    im_.src = $(this_).data("src")
-    im_.onload = function () {
-      $(this_).removeClass("o0").parent(".slider__item").addClass("loadDn")
+
+    let currentSlideUnLoaded = event.target.querySelector(".slick-active .slider__slick-img:not(.loaded)")
+    let currentSlideLoaded = event.target.querySelector(".slick-active .slider__slick-img")
+
+    if (currentSlideUnLoaded) {
+      currentSlideUnLoaded.style.background = `url(${currentSlideUnLoaded.dataset.src}) 50% /contain no-repeat`
+      let im_ = new Image()
+      im_.src = currentSlideUnLoaded.dataset.src
+      im_.onload = function () {
+        currentSlideUnLoaded.classList.remove("o0")
+        currentSlideUnLoaded.closest(".slider__item").classList.add("loadDn")
+      }
     }
   })
+
   //when page loaded
 
   modalBtns.forEach((modalBtn) => {
-    modalBtn.addEventListener("click", () => {
-      !$(".slick-active .slider__slick-img").css({background: "url('" + $(".slick-active .slider__slick-img").data("src") + "')50% /contain no-repeat"})
+    modalBtn.addEventListener("click", function (event) {
+      let currentModalId = event.target.closest(".work__box-img").dataset.modal
+
+      let currentModal = document.querySelector("" + currentModalId)
+
+      let currentSlideImg = currentModal.querySelector(".slick-active .slider__slick-img")
+
+      currentSlideImg.style.background = `url(${currentSlideImg.dataset.src}) 50% /contain no-repeat`
+
       let im_ = new Image()
-      im_.src = $(".slick-active .slider__slick-img").data("src")
+      im_.src = currentSlideImg.dataset.src
       im_.onload = function () {
-        $(".slick-active .slider__slick-img").removeClass("o0").addClass("loaded").parent(".slider__item").addClass("loadDn")
+        currentSlideImg.classList.remove("o0")
+
+        currentSlideImg.classList.add("loaded")
+
+        currentSlideImg.closest(".slider__item").classList.add("loadDn")
       }
     })
   })

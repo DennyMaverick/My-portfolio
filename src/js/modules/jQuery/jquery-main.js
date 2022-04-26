@@ -103,6 +103,10 @@ $(function () {
   //   })
   // })
 
+  const modalBtns = document.querySelectorAll("[data-modal]:not(.btn, a)")
+  modalBtns.forEach((modalBtn) => {
+    modalBtn.addEventListener("click", function (event) {})
+  })
   worksSlider.slick({
     //ID слайдер
     infinite: true, //бесконечная прокрутка
@@ -111,14 +115,6 @@ $(function () {
     fade: true,
     arrows: false, // убираем кнопки слайда по умолчанию
     dots: false,
-    responsive: [
-      {
-        breakpoint: 769,
-        settings: {
-          autoplay: true,
-        },
-      },
-    ],
   })
 
   /*каждой кнопке при нажатии присваиваем метод

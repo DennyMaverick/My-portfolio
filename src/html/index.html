@@ -16,7 +16,7 @@
     <script src="./js/libs/vendors/libs.min.js" defer></script>
     <script src="./js/main.js" defer></script>
   </head>
-  <body>
+  <body class="no-scroll">
     <div class="preloader-page" id="preloader"></div>
     <header class="header">
       <div class="container">
@@ -61,7 +61,7 @@
     <section class="intro" id="home">
       <div class="intro__inner container">
         <div class="intro__content">
-          <h2 class="intro__subtitle" data-aos="zoom-in"  data-aos-offset="0">Добрый день, Я</h2>
+          <h2 class="intro__subtitle" data-aos="zoom-in" data-aos-offset="0">Добрый день, Я</h2>
           <h1 class="intro__title" data-aos-delay="2000" data-aos="zoom-in" data-aos-offset="0">Денис</h1>
           <div class="intro__position" data-aos="fade-right" data-aos-delay="1500" data-aos-offset="0">Web - разработчик</div>
           <div class="intro__social social">
@@ -273,7 +273,7 @@
             <div class="portfolio__work work">
               <!-- Добавление проекта в категорию "Лэндинги" -->
               <div class="work__box-img work--overlay work--bg-safari" data-modal="#modal_safari">
-                <img class="work__image lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="img/projects/safari/popup-bg.jpg" alt="Project photo" />
+                <img class="work__image lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="img/projects/safari/main.jpg" alt="Project photo" />
               </div>
               <div class="work__content">
                 <p class="work__cat">Категория: Лэндинги</p>
@@ -778,26 +778,24 @@
           <div class="modal-work__preview">
             <div class="modal-work__slider slider" data-slider="slick">
               <div class="slider__item slider__slide">
-                <div class="o0 modal-work__photo slider__slick-img"  data-src="./img/projects/thrivetalk/pic_1.jpg"  >
-                </div>
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/thrivetalk/slide_1.jpg"></div>
               </div>
               <div class="slider__item slider__slide">
-                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/thrivetalk/pic_2.jpg"  ></div>
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/thrivetalk/slide_2.jpg"></div>
               </div>
               <div class="slider__item slider__slide">
-                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/thrivetalk/pic_3.jpg" ></div>
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/thrivetalk/slide_3.jpg"></div>
               </div>
               <div class="slider__item slider__slide">
-                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/thrivetalk/pic_4.jpg"></div>
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/thrivetalk/slide_4.jpg"></div>
               </div>
               <div class="slider__item slider__slide">
-                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/thrivetalk/pic_5.jpg"></div>
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/thrivetalk/slide_5.jpg"></div>
               </div>
               <div class="slider__item slider__slide">
-                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/thrivetalk/pic_6.jpg">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/thrivetalk/slide_6.jpg"></div>
               </div>
             </div>
-          </div>
           </div>
           <!-- .modal__work-preview -->
           <div class="modal-work__content">
@@ -891,23 +889,8 @@
         <div class="modal__modal-work modal-work">
           <div class="modal-work__preview">
             <div class="modal-work__slider slider" data-slider="slick">
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/site-visit/image__1.jpg" alt="Project-photo" />
-              </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/site-visit/image__2.jpg" alt="Project-photo" />
-              </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/site-visit/image__3.jpg" alt="Project-photo" />
-              </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/site-visit/image__4.jpg" alt="Project-photo" />
-              </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/site-visit/image__5.jpg" alt="Project-photo" />
-              </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/site-visit/image__6.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/site-visit/main-img.jpg"></div>
               </div>
             </div>
           </div>
@@ -995,14 +978,14 @@
         <div class="modal__modal-work modal-work">
           <div class="modal-work__preview">
             <div class="modal-work__slider slider" data-slider="slick">
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/venom-2/main-page.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/venom-2/slide_1.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/venom-2/about.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/venom-2/slide_2.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/venom-2/adaptive-pic.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/venom-2/slide_3.jpg"></div>
               </div>
             </div>
           </div>
@@ -1090,35 +1073,35 @@
         <div class="modal__modal-work modal-work">
           <div class="modal-work__preview">
             <div class="modal-work__slider slider" data-slider="slick">
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/safari/a_intro.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/safari/slide_1.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/safari/b_trevels.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/safari/slide_2.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/safari/c_directions.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/safari/slide_3.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/safari/d_popular.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/safari/slide_4.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/safari/e_map.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/safari/slide_5.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/safari/f_about_tours.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/safari/slide_6.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/safari/g_gallery.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/safari/slide_7.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/safari/h_safari_premium-class.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/safari/slide_8.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/safari/i_contact_form.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/safari/slide_9.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/safari/j_footer.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/safari/slide_10.jpg"></div>
               </div>
             </div>
           </div>
@@ -1210,14 +1193,14 @@
         <div class="modal__modal-work modal-work">
           <div class="modal-work__preview">
             <div class="modal-work__slider slider" data-slider="slick">
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/rolls-scripts/rolls_slide_1.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/rolls-scripts/slide_1.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/rolls-scripts/rolls_slide_2.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/rolls-scripts/slide_2.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/rolls-scripts/rolls_slide_3.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/rolls-scripts/slide_3.jpg"></div>
               </div>
             </div>
           </div>
@@ -1309,14 +1292,14 @@
         <div class="modal__modal-work modal-work">
           <div class="modal-work__preview">
             <div class="modal-work__slider slider" data-slider="slick">
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/calculator/Calc_slide_1.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/calculator/slide_1.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects//calculator/Calc_slide_2.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/calculator/slide_2.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects//calculator/Calc_slide_3.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/calculator/slide_3.jpg"></div>
               </div>
             </div>
           </div>
@@ -1405,9 +1388,9 @@
         </div>
         <div class="modal__modal-work modal-work">
           <div class="modal-work__preview">
-            <div class="modal-work__slider slider" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-slider="slick">
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/convert/slide_01.jpg" alt="Project-photo" />
+            <div class="modal-work__slider slider" data-slider="slick">
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/convert/slide_1.jpg"></div>
               </div>
             </div>
           </div>
@@ -1495,41 +1478,41 @@
         <div class="modal__modal-work modal-work" id="up">
           <div class="modal-work__preview">
             <div class="modal-work__slider slider" data-slider="slick">
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/oxygen/slide_01.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/oxygen/slide_1.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/oxygen/slide_02.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/oxygen/slide_2.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/oxygen/slide_03.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/oxygen/slide_3.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/oxygen/slide_04.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/oxygen/slide_4.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/oxygen/slide_05.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/oxygen/slide_5.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/oxygen/slide_06.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/oxygen/slide_6.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/oxygen/slide_07.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/oxygen/slide_7.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/oxygen/slide_08.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/oxygen/slide_8.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/oxygen/slide_09.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/oxygen/slide_9.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/oxygen/slide_10.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/oxygen/slide_10.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/oxygen/slide_11.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/oxygen/slide_11.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/oxygen/slide_12.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/oxygen/slide_12.jpg"></div>
               </div>
             </div>
           </div>
@@ -1634,26 +1617,23 @@
         <div class="modal__modal-work modal-work">
           <div class="modal-work__preview">
             <div class="modal-work__slider slider" data-slider="slick">
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/olivia/main-pic.png" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/olivia/slide_1.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/olivia/slide-1.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/olivia/slide_2.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/olivia/slide-2.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/olivia/slide_3.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/olivia/slide-3.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/olivia/slide_4.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/olivia/slide-4.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/olivia/slide_5.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/olivia/slide-5.jpg" alt="Project-photo" />
-              </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/olivia/slide-6.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/olivia/slide_6.jpg"></div>
               </div>
             </div>
           </div>
@@ -1748,26 +1728,26 @@
         <div class="modal__modal-work modal-work">
           <div class="modal-work__preview">
             <div class="modal-work__slider slider" data-slider="slick">
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/delivery-food/slide_1.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/delivery-food/slide_1.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/delivery-food/slide_2.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/delivery-food/slide_2.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/delivery-food/slide_3.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/delivery-food/slide_3.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/delivery-food/slide_4.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/delivery-food/slide_4.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/delivery-food/slide_5.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/delivery-food/slide_5.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/delivery-food/slide_6.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/delivery-food/slide_6.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/delivery-food/slide_7.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/delivery-food/slide_7.jpg"></div>
               </div>
             </div>
           </div>
@@ -1862,20 +1842,17 @@
         <div class="modal__modal-work modal-work">
           <div class="modal-work__preview">
             <div class="modal-work__slider slider" data-slider="slick">
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/sea-products/main.png" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/sea-products/slide_1.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/sea-products/slide-1.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/sea-products/slide_2.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/sea-products/slide-2.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/sea-products/slide_3.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/sea-products/slide-3.jpg" alt="Project-photo" />
-              </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/sea-products/slide-4.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/sea-products/slide_4.jpg"></div>
               </div>
             </div>
           </div>
@@ -1970,32 +1947,29 @@
         <div class="modal__modal-work modal-work">
           <div class="modal-work__preview">
             <div class="modal-work__slider slider" data-slider="slick">
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/archee/main.png" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img loaded" data-src="./img/projects/archee/slide_1.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/archee/slide_1.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/archee/slide_2.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/archee/slide_2.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/archee/slide_3.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/archee/slide_3.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/archee/slide_4.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/archee/slide_4.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/archee/slide_5.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/archee/slide_5.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/archee/slide_6.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/archee/slide_6.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/archee/slide_7.jpg"></div>
               </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/archee/slide_7.jpg" alt="Project-photo" />
-              </div>
-              <div class="slider__item">
-                <img class="modal-work__photo lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/archee/slide_8.jpg" alt="Project-photo" />
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/archee/slide_8.jpg"></div>
               </div>
             </div>
           </div>
