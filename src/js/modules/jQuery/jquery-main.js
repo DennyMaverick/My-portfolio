@@ -31,45 +31,45 @@ $(function () {
 
   /*  Modal
 =========================== */
-  let modalCall = $("[data-modal]")
+  // let modalCall = $("[data-modal]")
   let modalClose = $("[data-close]")
 
-  modalCall.on("click", function (event) {
-    event.preventDefault()
+  // modalCall.on("click", function (event) {
+  //   event.preventDefault()
 
-    let $this = $(this)
-    let modalId = $this.data("modal")
+  // let $this = $(this)
+  // let modalId = $this.data("modal")
 
-    $(modalId).addClass("show")
+  // $(modalId).addClass("show")
 
-    $("body").addClass("no-scroll")
-    //Задержка при анимации модального окна
-    setTimeout(function () {
-      $(modalId).find(".modal__dialog").css({
-        transform: "rotateX(0)",
-      })
-    }, 200)
+  // $("body").addClass("no-scroll")
+  //Задержка при анимации модального окна
+  // setTimeout(function () {
+  //   $(modalId).find(".modal__dialog").css({
+  //     transform: "rotateX(0)",
+  //   })
+  // }, 200)
 
-    worksSlider.slick("setPosition")
-  })
+  // worksSlider.slick("setPosition")
+  // })
 
-  modalClose.on("click", function (event) {
-    event.preventDefault()
+  // modalClose.on("click", function (event) {
+  //   event.preventDefault()
 
-    let $this = $(this)
-    let modalParent = $this.parents(".modal")
+  //   let $this = $(this)
+  //   let modalParent = $this.parents(".modal")
 
-    //анимация при закрытии модального окна
-    modalParent.find(".modal__dialog").css({
-      transform: "rotateX(90deg)",
-    })
+  //   //анимация при закрытии модального окна
+  //   modalParent.find(".modal__dialog").css({
+  //     transform: "rotateX(90deg)",
+  //   })
 
-    //временная задержка
-    setTimeout(function () {
-      modalParent.removeClass("show")
-      $("body").removeClass("no-scroll")
-    }, 200)
-  })
+  //   //временная задержка
+  //   setTimeout(function () {
+  //     modalParent.removeClass("show")
+  //     $("body").removeClass("no-scroll")
+  //   }, 200)
+  // })
   // Закрытие окна при нажатии на маску
 
   $(".modal").on("click", function (event) {
@@ -92,46 +92,5 @@ $(function () {
   закрываться*/
   $(".modal__dialog").on("click", function (event) {
     event.stopPropagation()
-  })
-
-  // =============== Slider Slick =============
-  // const modalBtns = document.querySelectorAll("[data-modal]")
-
-  // modalBtns.forEach((btn) => {
-  //   btn.addEventListener("click", () => {
-
-  //   })
-  // })
-
-  // worksSlider.slick("setPosition")
-
-  worksSlider.slick({
-    //ID слайдер
-    infinite: true, //бесконечная прокрутка
-    slidesToShow: 1, //показывать слайдов
-    slidesToScroll: 1, // скроллить слайдов
-    fade: true,
-    arrows: false, // убираем кнопки слайда по умолчанию
-    dots: false,
-  })
-
-  /*каждой кнопке при нажатии присваиваем метод
-slickPrev(назад) и slickNext(вперед)*/
-  $(".slickPrev").on("click", function (event) {
-    event.preventDefault() //отменяем стандартное поведение кнопок
-
-    let currentSlider = $(this).parents(".modal").find('[data-slider="slick"]')
-    /*в переменной currentSlider хранится слайдер, по которому мы кликаем
-  именно в том модальном окне, которое вызвано*/
-
-    currentSlider.slick("slickPrev")
-  })
-  $(".slickNext").on("click", function (event) {
-    event.preventDefault() //отменяем стандартное поведение кнопок
-
-    let currentSlider = $(this).parents(".modal").find('[data-slider="slick"]')
-    //в переменной currentSlider хранится слайдер, по которому мы кликаем
-
-    currentSlider.slick("slickNext")
   })
 })
