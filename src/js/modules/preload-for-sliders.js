@@ -1,3 +1,6 @@
+// * data-close - атрибут для модальных окон проектов
+// * data-close-btn - атрибут для остальных модальных окон
+
 $(function () {
   // slickSlider = $('[data-slider="slick"]')
 

@@ -50,6 +50,7 @@ h6 {
 html {
   font-size: 15px;
   scroll-behavior: smooth !important;
+  transition: color 1s ease-in, background-color 1s ease-in;
 }
 
 html,
@@ -75,10 +76,7 @@ a {
   @include reset-link();
 }
 
-a:active {
-  border: 0;
-  outline: none;
-}
+
 
 button {
   @include reset-button();

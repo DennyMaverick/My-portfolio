@@ -28,4 +28,3 @@ import "./modules/preloader-second-way"
 import "./modules/preloader-page"
 import "./modules/preload-for-sliders"
 
-// import "./modules/lozad-preloader"

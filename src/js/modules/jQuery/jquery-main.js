@@ -31,45 +31,51 @@ $(function () {
 
   /*  Modal
 =========================== */
-  // let modalCall = $("[data-modal]")
-  let modalClose = $("[data-close]")
+  // * data-close - атрибут для модальных окон проектов
 
-  // modalCall.on("click", function (event) {
-  //   event.preventDefault()
+  // * data-close-btn - атрибут для остальных модальных окон
 
-  // let $this = $(this)
-  // let modalId = $this.data("modal")
+  // * data-modal - атрибут для модальных окон проектов
 
-  // $(modalId).addClass("show")
+  // * data-modal-open - атрибут для остальных модальных окон
 
-  // $("body").addClass("no-scroll")
-  //Задержка при анимации модального окна
-  // setTimeout(function () {
-  //   $(modalId).find(".modal__dialog").css({
-  //     transform: "rotateX(0)",
-  //   })
-  // }, 200)
+  let modalCall = $("[data-modal-open]")
+  let modalClose = $("[data-close-btn]")
 
-  // worksSlider.slick("setPosition")
-  // })
+  modalCall.on("click", function (event) {
+    event.preventDefault()
 
-  // modalClose.on("click", function (event) {
-  //   event.preventDefault()
+    let $this = $(this)
+    let modalId = $this.data("modal-open")
 
-  //   let $this = $(this)
-  //   let modalParent = $this.parents(".modal")
+    $(modalId).addClass("show")
 
-  //   //анимация при закрытии модального окна
-  //   modalParent.find(".modal__dialog").css({
-  //     transform: "rotateX(90deg)",
-  //   })
+    $("body").addClass("no-scroll")
 
-  //   //временная задержка
-  //   setTimeout(function () {
-  //     modalParent.removeClass("show")
-  //     $("body").removeClass("no-scroll")
-  //   }, 200)
-  // })
+    setTimeout(function () {
+      $(modalId).find(".modal__dialog").css({
+        transform: "rotateX(0)",
+      })
+    }, 200)
+  })
+
+  modalClose.on("click", function (event) {
+    event.preventDefault()
+
+    let $this = $(this)
+    let modalParent = $this.parents(".modal")
+
+    //анимация при закрытии модального окна
+    modalParent.find(".modal__dialog").css({
+      transform: "rotateX(90deg)",
+    })
+
+    //временная задержка
+    setTimeout(function () {
+      modalParent.removeClass("show")
+      $("body").removeClass("no-scroll")
+    }, 200)
+  })
   // Закрытие окна при нажатии на маску
 
   $(".modal").on("click", function (event) {
