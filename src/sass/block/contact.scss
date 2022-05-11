@@ -7,15 +7,7 @@
       padding: 1rem;
     }
   }
-  // &__right {
-    // padding: 2rem;
-    // background: url('https://via.placeholder.com/477x700') right center no-repeat;
-    // height: 700px;
-    // width: 477px;
-    // @include bp-desk(tablet) {
-    //   display: none;
-    // }
-  // }
+
   &__info {
     margin: 2rem 0 3rem;
     padding: 0;
@@ -23,11 +15,24 @@
     font-size: 0.94rem;
     color: $black;
     font-weight: 300;
+    transition: color .3s ease-in;
+    &--light {
+      color: black;
+    }
+    &--dark {
+      color: $white;
+    }
   }
 
   &__info-link {
-    color: $black;
     transition: color 0.3s ease-in;
+    transition: color .3s ease-in;
+    &--light {
+      color: $black;
+    }
+    &--dark {
+      color: $white;
+    }
     &:hover {
       color: $color-wave;
     }
@@ -43,5 +48,12 @@
   }
   &__info-icon {
     margin-right: 0.75rem;
+    transition: fill .3s ease-in;
+    &--light {
+      fill: black;
+    }
+    &--dark {
+      fill: $white;
+    }
   }
 }

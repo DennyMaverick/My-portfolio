@@ -57,7 +57,6 @@ html,
 body {
   @include reset-model;
   min-height: 100vh;
-  // overflow-x: hidden;
   font-size: $font-size-base;
   font-family: $font-family-base;
   text-rendering: optimizeSpeed;
@@ -65,6 +64,11 @@ body {
   font-size: 1rem;
   color: $black;
   // background-color: orange;
+}
+
+*::selection {
+  background-color: $select-color-dark;
+  color: $black;
 }
 
 // Сброс списка, ссылок и кнопки
@@ -76,12 +80,9 @@ a {
   @include reset-link();
 }
 
-
-
 button {
   @include reset-button();
 }
-
 
 // Визуальное скрытие элементов
 .vhidden {

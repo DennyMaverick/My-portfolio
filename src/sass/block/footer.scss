@@ -1,6 +1,12 @@
 .footer {
   padding: 2rem 0;
-  background-color: $black;
+  transition: background-color 0.3s ease-in;
+  &--light {
+    background-color: $black;
+  }
+  &--dark {
+    background-color: $white;
+  }
   &__inner {
     display: flex;
     flex-wrap: wrap;
@@ -13,11 +19,19 @@
     margin-right: 1rem;
     padding-right: 1rem;
     font-size: 0.94rem;
-    color: $grey-light-second;
-    // opacity 35 %
-    border-right: 1px solid transparentize($grey, 0.65);
     display: flex;
     align-items: center;
+    transition: color 0.3s ease-in, border-right 0.3s ease-in;
+    &--light {
+      color: $grey-light-second;
+      // opacity 35 %
+      border-right: 1px solid transparentize($grey, 0.65);
+    }
+    &--dark {
+      color: $black;
+      // opacity 35 %
+      border-right: 1px solid transparentize($black, 0.65);
+    }
     @include bp-desk(mobile) {
       border-right: none;
       margin-right: 0;
@@ -50,7 +64,6 @@
   &__social-image {
     width: 20px;
     height: 20px;
-    transition: fill 0.3s ease-in;
   }
   &__social-move-up {
     animation: move-up 3s ease-in;
@@ -89,11 +102,23 @@
   }
   &__nav-link {
     position: relative;
-    color: $grey-light-second;
+
     transition: text-decoration 0.4s ease-in;
     &::after {
       @include decore-line;
-      @include decore-line-footer;
+    }
+    &--light {
+      color: $grey-light-second;
+      &::after {
+        @include decore-line-footer;
+      }
+    }
+    &--dark {
+      color: $black;
+      &::after {
+        background-color: $black;
+        height: 1px;
+      }
     }
     &:hover:not(.footer__nav-btn) {
       &:after {
@@ -114,12 +139,21 @@
     border-radius: 20px;
     border: 1px solid $grey-light;
     padding: 0.5rem 1.4rem;
-    transition: background-color 0.4s ease-in, color 0.4s ease-in;
-    &:hover {
-      text-decoration: none;
-      background-color: $grey-light-second;
-      color: $black;
-      border-color: $grey-light-second;
+    text-decoration: none;
+    transition: background-color 0.4s ease-in, color 0.4s ease-in, border-color .4s ease-in;
+    &--dark {
+      &:hover {
+        background-color: $black;
+        color: $white;
+        border-color: $black;
+      }
+    }
+    &--light {
+      &:hover {
+        background-color: $grey-light-second;
+        color: $black;
+        border-color: $grey-light-second;
+      }
     }
     @include media-down(390px) {
       padding: 1rem 1.4rem;
@@ -146,31 +180,25 @@
   }
   &__social-image {
     transform: translateY(0);
-    transition: transform 0.4s ease-in;
+    transition: transform 0.4s ease-in, fill 0.4s ease-in;
     &:hover {
       transform: translateY(-0.3rem);
     }
   }
+  .social {
+    &--github {
+      &-light {
+        fill: $white;
+      }
+    }
+    &--github {
+      &-dark {
+        fill: $black;
+      }
+    }
+  }
 }
 
-// Анимация
-// @keyframes change-color {
-//   0% {
-//     fill: rgb(187, 187, 204);
-//   }
-//   25% {
-//     fill: rgb(54, 54, 153);
-//   }
-//   40% {
-//     fill: rgb(54, 54, 153);
-//   }
-//   50% {
-//     fill: rgb(187, 187, 204);
-//   }
-//   100% {
-//     fill: rgb(187, 187, 204);
-//   }
-// }
 
 @keyframes move-up {
   0% {

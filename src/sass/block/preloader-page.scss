@@ -6,7 +6,12 @@
   width: 100%;
   height: 100vh;
   z-index: 7000;
-  background-color: $white;
+  &--dark {
+    background-color: $black;
+  }
+  &--light {
+    background-color: $white;
+  }
   &::before {
     content: '';
     width: 32px;

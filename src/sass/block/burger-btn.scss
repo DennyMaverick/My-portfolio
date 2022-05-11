@@ -16,28 +16,44 @@
   &__line {
     height: 2px;
     width: 100%;
-    background-color: $black;
     position: relative;
-    transition: height .3s ease-in background-color .3s ease-in;
+    transition: height 0.3s ease-in, background-color 0.3s ease-in;
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       top: -7px;
       left: 0;
       height: 2px;
       width: 100%;
-      background-color: $black;
-      transition: top .3s ease-in, transform .3s ease-in;
+      transition: top 0.3s ease-in, transform 0.3s ease-in, background-color 0.3s ease-in;
     }
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       bottom: -7px;
       left: 0;
       height: 2px;
       width: 100%;
+      transition: bottom 0.3s ease-in, transform 0.3s ease-in, background-color 0.3s ease-in;
+    }
+
+    &--light {
       background-color: $black;
-      transition: bottom .3s ease-in, transform .3s ease-in;
+      &::before {
+        background-color: $black;
+      }
+      &::after {
+        background-color: $black;
+      }
+    }
+    &--dark {
+      background-color: $white;
+      &::before {
+        background-color: $white;
+      }
+      &::after {
+        background-color: $white;
+      }
     }
   }
   &__line.active {

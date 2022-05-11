@@ -37,8 +37,7 @@ module.exports = {
     appName: "Portfolio",
     appShortName: "Denny Maverick - portfolio",
     appDescription: "Denny Maverick - weblandigsforyou",
-    developerName: "",
-    developerURL: "",
+    developerName: "Denny Maverick",
     background: "#fff",
     path: "img/favicon/",
     icons: {

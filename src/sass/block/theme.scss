@@ -1,7 +1,5 @@
 .theme {
-  box-shadow: 1px 1px 10px $white;
   padding: 7px;
-  background-color: $grey;
   &--br {
     border-radius: 5px;
   }
@@ -12,8 +10,15 @@
     display: flex;
     align-items: center;
     padding: 12px 17px;
-    background: $theme-modal-light;
-    box-shadow: 1px 1px 10px $theme-modal-light;
+    transition: background .3s ease-in, box-shadow .3s ease-in;
+    &-light {
+      background: $theme-modal-light;
+      box-shadow: 1px 1px 10px $theme-modal-light;
+    }
+    &-dark {
+      background: $theme-modal-dark;
+      box-shadow: 2px 2px 13px $theme-modal-dark;
+    }
     @include bp-desk(tablet) {
       padding: 10px 17px;
     }
@@ -22,36 +27,34 @@
     }
   }
   &__close-btn {
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
     margin-left: auto;
-    width: 34px;
-    height: 34px;
-    @include bp-desk(tablet) {
-      width: 27px;
-      height: 32px;
-    }
+    width: 27px;
+    height: 32px;
     @include bp-desk(mobile) {
       width: 21px;
       height: 26px;
     }
   }
   &__close {
-    padding: 0;
-    background: none;
-    border: none;
-    cursor: pointer;
-    width: 34px;
-    height: 34px;
-    transition: transform 0.2s linear;
+    width: 27px;
+    height: 32px;
+    transition: transform 0.2s linear, fill 0.3s linear;
     &:hover {
       transform: translateY(-3px);
-    }
-    @include bp-desk(tablet) {
-      width: 27px;
-      height: 32px;
     }
     @include bp-desk(mobile) {
       width: 21px;
       height: 26px;
+    }
+    &--light {
+      fill: $black;
+    }
+    &--dark {
+      fill: $white;
     }
   }
   &__icon {

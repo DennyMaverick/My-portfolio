@@ -3,13 +3,29 @@
   padding-left: 30px;
   &__item {
     margin-bottom: 1rem;
+    transition: color .3s ease-in;
+    &--dark {
+      color: $modal-list-link-dark;
+    }
+    &--light {
+      color: $modal-list-link;
+    }
     &::marker {
-      color: $modal-list-marker-color;
       font-size: 1rem;
+      transition: color .3s ease-in;
+    }
+    &--light {
+      &::marker {
+        color: $modal-list-marker-color;
+      }
+    }
+    &--dark {
+      &::marker {
+        color: $modal-list-marker-color-dark;
+      }
     }
   }
   &__link {
-    color: $modal-list-link;
     &:hover {
       text-decoration: underline;
     }

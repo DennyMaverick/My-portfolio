@@ -1,6 +1,13 @@
 .works {
   margin-top: -5px;
   padding: 6.8rem 0;
+  transition: background-color 0.3s ease-in;
+  &--light {
+    background-color: $white;
+  }
+  &--dark {
+    background-color: $black;
+  }
   @include bp-desk(tablet) {
     padding-top: 5.8rem;
   }
@@ -30,8 +37,7 @@
     margin: 0 1.2rem;
     font-size: 0.8rem;
     padding: 7px 0;
-    // opacity: 70%;
-    color: transparentize($black, 0.3);
+
     @include bp-desk(mobile) {
       font-size: 1rem;
       margin-left: 0;
@@ -47,6 +53,19 @@
       left: 0;
       z-index: 1;
       transition: width 0.2s linear;
+    }
+    &--light {
+      // opacity: 70%;
+    color: transparentize($black, 0.3);
+      &:after {
+        background-color: transparentize($black, 0.3);
+      }
+    }
+    &--dark {
+      color: $white;
+      &:after {
+        background-color: $white;
+      }
     }
     &:hover {
       &:after {

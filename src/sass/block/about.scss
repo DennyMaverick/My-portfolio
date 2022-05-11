@@ -1,6 +1,13 @@
 .about {
   margin-top: -5px;
   padding: 0 0 5rem;
+  transition: background-color .3s ease-in;
+  &--light {
+    background-color: $white;
+  }
+  &--dark {
+    background-color: $black;
+  }
   @include bp-desk(notebook) {
     padding: 0;
     padding-bottom: 3rem;
@@ -33,9 +40,16 @@
   }
   &__title {
     font-size: 3rem;
-    color: $black;
+
     font-weight: 700;
     text-transform: uppercase;
+    transition: color .3s ease-in;
+    &--light {
+      color: $black;
+    }
+    &--dark {
+      color: $white;
+    }
     @include bp-desk(tablet) {
       font-size: 2rem;
     }
@@ -45,10 +59,16 @@
     left: -10px;
     margin-bottom: 1.4rem;
     @include font(6.1rem, 6.71rem);
-    // opacity 35%
-    color: transparentize($black, .65);
     font-weight: 700;
     text-transform: uppercase;
+    transition: color .3s ease-in;
+    &--light {
+      // opacity 35%
+      color: transparentize($black, .65);
+    }
+    &--dark {
+      color: transparentize($white, 0.65);
+    }
     @include bp-desk(tablet) {
       @include font(4rem, 4.71rem);
     }
@@ -56,18 +76,29 @@
   &__text {
     margin-bottom: 2.8rem;
     @include font(1rem, 1.8rem);
-    color: $grey;
     font-weight: 300;
+    transition: color .3s ease-in;
+    &--light {
+      color: $grey;
+    }
+    &--dark {
+      color: $white;
+    }
   }
   &__text-part + &__text-part {
     margin-top: 1rem;
   }
   &__image-box {
-    background: url('../img/preload/white-theme-loader.gif') center no-repeat;
     padding-bottom: 33.4%;
     width: 100%;
     position: relative;
     margin-top: 109px;
+    &--light {
+      background: url('../img/preload/white-theme-loader.gif') center no-repeat;
+    }
+    &--dark {
+      background: url('../../img/preload/dark-theme-loader.gif') center no-repeat;
+    }
     @include bp-desk(tablet) {
       padding-bottom: 66.6%;
       max-width: 100%;

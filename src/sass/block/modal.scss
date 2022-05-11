@@ -8,7 +8,13 @@
   top: 0;
   left: 0;
   z-index: 1400;
-  background-color: rgba(6, 15, 49, 0.9);
+  transition: background-color .3s ease-in;
+  &--light {
+    background-color: rgba(6, 15, 49, 0.9);
+  }
+  &--dark {
+    background-color: rgba(46, 69, 62, 0.9);
+  }
   &.sertificate-modal {
     padding: 2.5rem;
     @include bp-desk(mobile) {
@@ -26,11 +32,14 @@
     margin: auto;
     width: 100%;
     max-width: 1200px;
-
-    background-color: $white;
     transform: rotateX(90deg);
-    transition: transform 0.2s linear;
-
+    transition: transform 0.2s linear, background-color 0.2s linear;
+    &--dark {
+      background-color: $black;
+    }
+    &--light {
+      background-color: $white;
+    }
     &--sm {
       max-width: 900px;
       @include bp-desk(tablet-landscape) {
@@ -74,6 +83,7 @@
       height: 26px;
     }
   }
+
   &__content {
     padding: 5rem 1rem;
   }
@@ -81,8 +91,15 @@
     margin-bottom: 3.6rem;
     font-size: 3rem;
     text-transform: uppercase;
-    color: $black;
+
     font-weight: 700;
+    transition: color .3s ease-in;
+    &--light {
+      color: $black;
+    }
+    &--dark {
+      color: $white;
+    }
     &--form,
     &--resume {
       max-width: 40%;
@@ -115,10 +132,15 @@
     }
   }
   &__subtitle {
-    // text-transform: uppercase;
     font-size: 1.06rem;
-    color: $black;
     font-weight: 400;
+    transition: color .3s ease-in;
+    &--dark {
+      color: $white;
+    }
+    &--light {
+      color: $black;
+    }
   }
   &__timeline {
     margin: 4.2rem auto;

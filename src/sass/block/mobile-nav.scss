@@ -6,8 +6,22 @@
     text-transform: uppercase;
     font-weight: 700;
     text-decoration: none;
-    &:after {
+    transition: color .3s ease-in;
+    &::after {
       @include decore-line;
+    }
+
+    &--light {
+      color: $black;
+      &::after {
+        background-color: $black;
+      }
+    }
+    &--dark {
+      color: $white;
+      &::after {
+        background-color: $white;
+      }
     }
     &:hover:not(.mobile-nav__link--btn) {
       &:after {

@@ -8,16 +8,30 @@
     justify-content: space-between;
     padding: 10px 20px;
     border-radius: 5px;
-    color: $show-more-color-light;
-    background-color: $show-more-bg-light;
-    box-shadow: -1px -1px 5px $show-more-bg-light;
+
     cursor: pointer;
+    transition: color .3s ease-in, background-color .3s ease-in, box-shadow .3s ease-in;
+    &--light {
+      color: $show-more-color-light;
+      background-color: $show-more-bg-light;
+      box-shadow: -1px -1px 5px $show-more-bg-light;
+    }
+    &--dark {
+      color: $show-more-color-dark;
+      background-color: $show-more-bg-dark;
+      box-shadow: -1px -1px 5px $show-more-bg-dark;
+    }
   }
   &__arrow {
-    fill: $show-more-color-light;
     width: 13px;
     height: 13px;
-    transition: transform 0.3s ease-in;
+    transition: transform 0.3s ease-in, fill 0.3s ease-in;
+    &--dark {
+      fill: $show-more-color-dark;
+    }
+    &--light {
+      fill: $show-more-color-light;
+    }
   }
   &__content {
     display: none;

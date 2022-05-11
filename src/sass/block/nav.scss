@@ -1,16 +1,29 @@
 .nav {
   &__link {
     position: relative;
-    margin-right: 1rem;
+    margin-right: 1.7rem;
     font-size: 0.93rem;
-    color: $black;
+
     text-transform: uppercase;
     font-weight: 700;
-    &:not(.nav__link--btn) {
-      padding: 7px;
-    }
+    transition: color .3s ease-in;
     &:after {
       @include decore-line;
+    }
+    &--light {
+      color: $black;
+      &::after {
+        background-color: $black;
+      }
+    }
+    &--dark {
+      color: $white;
+      &::after {
+        background-color: $white;
+      }
+    }
+    &:not(.nav__link--btn) {
+      padding: 7px 0;
     }
     &:hover:not(.nav__link--btn) {
       &:after {
