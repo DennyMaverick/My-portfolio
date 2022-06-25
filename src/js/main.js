@@ -1,3 +1,5 @@
+import "./modules/preloader-page"
+
 // jQuery and it's libraries
 import "./modules/jQuery/jquery-main"
 // AOS - Animate On Scroll
@@ -25,7 +27,6 @@ import "./modules/up-click-trigger"
 // preloader для gulp
 // import "./modules/preloader-for-webp"
 import "./modules/preloader-second-way"
-import "./modules/preloader-page"
+
 import "./modules/preload-for-sliders"
 import "./modules/theme-mod"
-
