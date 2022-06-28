@@ -123,6 +123,23 @@
             </div>
           </div>
           <!-- .portfolio__col -->
+          <!-- Добавление проекта в категорию "Лэндинги" -->
+          <div class="portfolio__col portfolio__show" data-cat="landing">
+            <div class="portfolio__work work">
+              <!-- Далее нужно для каждой работы создавать отдельное модальное окно -->
+              <div class="work__box-img work--overlay work--bg-web-templates" data-modal="#modal_web-templates" data-work>
+                <img class="work__image lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/web-templates/main.png" alt="Project photo" />
+              </div>
+              <div class="work__content">
+                <p class="work__cat">Категория: Лэндинги</p>
+                <h3 class="work__title">
+                  <span class="work__title--left">Портфолио Web-templates</span>
+                  <time class="work__date" datetime="2022-06-28 12:35"> 2022 </time>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <!-- .portfolio__col -->
           <div class="portfolio__col portfolio__show" data-cat="landing">
             <div class="portfolio__work work">
               <!-- Далее нужно для каждой работы создавать отдельное модальное окно -->
@@ -2027,6 +2044,111 @@
                 </li>
                 <li class="modal-list__item">
                   <a class="modal-list__link" href="https://github.com/DennyMaverick/Archee" target="_blank"> Ссылка на репозиторий GitHub </a>
+                </li>
+                <li class="modal-list__item">Время на работу ~ 20 ч</li>
+              </ul>
+            </div>
+            <!--modal-work__text -->
+            <div class="modal-work__footer">
+              <button class="modal-work__btn slickPrev modal-work__btn--text" type="button">Назад</button>
+              <button class="modal-work__btn modal-work__btn--text slickNext" type="button">Вперед</button>
+            </div>
+            <a href="#" class="modal-work__arrow-up up" title="Наверх">
+              <svg class="modal-work__arrow-up-pic">
+                <use xlink:href="./img/sprite/symbol/sprite.svg#arrows--arrow-up" />
+              </svg>
+            </a>
+          </div>
+          <!--modal-work__content -->
+        </div>
+        <!--modal-work -->
+      </div>
+      <!-- modal__dialog-->
+    </div>
+    <!-- modal -->
+    <div class="modal" id="modal_web-templates">
+      <div class="modal__dialog">
+        <div class="theme theme--modal theme--sticky">
+          <svg class="switcher theme__icon theme__light" data-theme="light">
+            <use xlink:href="./img/sprite/symbol/sprite.svg#theme--light-icon"></use>
+          </svg>
+          <svg class="switcher theme__icon theme__dark" data-theme="dark">
+            <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon"></use>
+          </svg>
+          <button class="theme__close-btn" type="button" data-close>
+            <svg class="theme__close">
+              <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
+            </svg>
+          </button>
+        </div>
+        <div class="modal__modal-work modal-work">
+          <div class="modal-work__preview">
+            <div class="modal-work__slider slider" data-slider="slick">
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/web-templates/slide-1.gif"></div>
+              </div>
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/web-templates/slide-2.png"></div>
+              </div>
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/web-templates/slide-3.gif"></div>
+              </div>
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/web-templates/slide-4.gif"></div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-work__content">
+            <div class="modal-work__header">
+              <h3 class="modal-work__title">Портфолио Web-templates</h3>
+              <div class="modal-work__info">
+                Лэндинги
+                <span class="modal-work__info-divider">|</span>
+                2022
+              </div>
+            </div>
+            <!-- modal-work__header -->
+            <div class="modal-work__client">
+              <div class="modal-work__client-title">Личный сайт:</div>
+              <div class="modal-work__client-company">Denny Maverick</div>
+            </div>
+            <div class="modal-work__text">
+              <p class="modal-work__description">При работе над проектом был реализован следующий функционал:</p>
+              <div class="modal-work__show-info show-more">
+                <input type="checkbox" id="show-more_14" class="show-more__input" />
+                <label class="show-more__trigger" for="show-more_14">
+                  <span class="show-more__desc">Более подробно</span>
+                  <svg class="show-more__arrow">
+                    <use xlink:href="./img/sprite/symbol/sprite.svg#modal--show-modal-right" />
+                  </svg>
+                </label>
+                <div class="show-more__content">
+                  <ul class="modal-work__list modal-list">
+                    <li class="modal-list__item">Функция переключения темы (две цветовых схемы: светлая и темная)</li>
+                    <li class="modal-list__item">Плавная смена цвета при переключении слайдов в проекте Theme's Switcher</li>
+                    <li class="modal-list__item">При наведении на иконку луны (солнца) появляется всплывающее окно-подсказка с выбором темы</li>
+                  </ul>
+                  <p class="modal-work__description">Работая над данным проектом, были использованы следующие инструменты, технологии:</p>
+                  <ul class="modal-work__list modal-list">
+                    <li class="modal-list__item">Редактор кода: Visual Studio Code</li>
+                    <li class="modal-list__item">JavaScript</li>
+                    <li class="modal-list__item">SCSS / HTML</li>
+                    <li class="modal-list__item">Gulp</li>
+                    <li class="modal-list__item">Local Storage</li>
+                    <li class="modal-list__item">Slick Slider</li>
+                    <li class="modal-list__item">Flex Box Layout Module</li>
+                    <li class="modal-list__item">Адаптив под планшеты и мобильные устройства</li>
+                    <li class="modal-list__item">Дизайн карточек проектов был самостоятельно реализован в программе Photoshop, макет сайта был придуман за 15 минут</li>
+                  </ul>
+                  <p class="modal-work__description modal-work--more">Наиболее подробную информацию о проекте вы сможете найти в файле Readme.md перейдя по <a class="modal-list__link" href="https://github.com/DennyMaverick/Web-templates" target="_blank">этой ссылке</a>.</p>
+                </div>
+              </div>
+              <ul class="modal-work__list modal-list">
+                <li class="modal-list__item">
+                  <a class="modal-list__link" href="https://dennymaverick.github.io/Web-templates/index.html" target="_blank"> Ccылка на проект </a>
+                </li>
+                <li class="modal-list__item">
+                  <a class="modal-list__link" href="https://github.com/DennyMaverick/Web-templates" target="_blank"> Ссылка на репозиторий GitHub </a>
                 </li>
                 <li class="modal-list__item">Время на работу ~ 20 ч</li>
               </ul>

@@ -39,7 +39,6 @@ $(function () {
         infinite: true, //бесконечная прокрутка
         slidesToShow: 1, //показывать слайдов
         slidesToScroll: 1, // скроллить слайдов
-        autoplay: true,
         autoplaySpeed: 4000,
         fade: true,
         arrows: false, // убираем кнопки слайда по умолчанию
