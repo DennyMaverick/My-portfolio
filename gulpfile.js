@@ -15,7 +15,7 @@ const font = require("./tasks/font.js");
 const jslibs = require("./tasks/jslibs.js");
 const jquerylib = require("./tasks/jquerylib.js");
 const libsCssScss = require("./tasks/libscssscss.js");
-const favicon = require("./tasks/favicon.js");
+// const favicon = require("./tasks/favicon.js");
 const svgsprite = require("./tasks/svgsprite.js");
 const php = require("./tasks/php.js");
 const theme = require("./tasks/theme.js");
@@ -46,7 +46,7 @@ const watcher = () => {
   watch(path.theme.watch, theme).on("all", browserSync.reload)
 }
 
-const build = series(clear, parallel(html, scss, js, jquerylib, jquerylibs, jslibs, libsCssScss, img, favicon, font, svgsprite, php, theme))
+const build = series(clear, parallel(html, scss, js, jquerylib, jquerylibs, jslibs, libsCssScss, img, font, svgsprite, php, theme))
 
 const dev = series(build, parallel(server, watcher))
 
@@ -59,7 +59,7 @@ exports.font = font
 exports.jquerylib = jquerylib
 exports.jslibs = jslibs
 exports.libsCssScss = libsCssScss
-exports.favicon = favicon
+// exports.favicon = favicon
 exports.svgsprite = svgsprite
 exports.php = php
 exports.theme = theme

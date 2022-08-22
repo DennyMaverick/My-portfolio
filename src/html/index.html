@@ -44,12 +44,16 @@
             <a class="nav__link btn nav__link--btn" href="#" data-modal-open="#modal-hire-me"> Написать мне </a>
           </nav>
           <div class="header__theme theme theme--br">
-            <svg class="switcher theme__icon theme__light header__theme-light" data-theme="light">
-              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--light-icon" />
-            </svg>
-            <svg class="switcher theme__icon theme__dark header__theme-dark" data-theme="dark">
-              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon" />
-            </svg>
+            <button class="switcher theme__btn theme__light header__theme-light" data-theme="light">
+              <svg class="theme__icon">
+                <use xlink:href="./img/sprite/symbol/sprite.svg#theme--light-icon" />
+              </svg>
+            </button>
+            <button class="switcher theme__btn theme__dark header__theme-dark" data-theme="dark">
+              <svg class="theme__icon">
+                <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon" />
+              </svg>
+            </button>
           </div>
           <button class="burger-btn" type="button" id="nav-toggle">
             <span class="burger-btn__line"></span>
@@ -60,18 +64,13 @@
     <section class="intro" id="home">
       <div class="intro__inner container">
         <div class="intro__content">
-          <h2 class="intro__subtitle" data-aos="zoom-in" data-aos-offset="0">Добрый день, Я</h2>
+          <h2 class="intro__subtitle" data-aos="zoom-in" data-aos-offset="0">Привет, Я</h2>
           <h1 class="intro__title" data-aos-delay="2000" data-aos="zoom-in" data-aos-offset="0">Денис</h1>
           <div class="intro__position" data-aos="fade-right" data-aos-delay="1500" data-aos-offset="0">Web - разработчик</div>
           <div class="intro__social social">
             <a class="social__link" title="Мой телеграм" href="https://t.me/Denny_maverick" target="_blank">
               <svg class="social__image social--telegram">
                 <use xlink:href="./img/sprite/symbol/sprite.svg#socials--telegram" />
-              </svg>
-            </a>
-            <a class="social__link" href="https://web.whatsapp.com/send?phone=%2B79218109582&text&app_absent=0" title="Мой what's app" target="_blank">
-              <svg class="social__image social--whatsapp">
-                <use xlink:href="./img/sprite/symbol/sprite.svg#socials--whatsapp" />
               </svg>
             </a>
             <a class="social__link" href="https://vk.com/maverick177" title="Моя страница вк" target="_blank">
@@ -108,7 +107,7 @@
         <div class="works__portfolio portfolio" id="portfolio">
           <!-- Добавление проекта в категорию "Лэндинги" -->
           <div class="portfolio__col portfolio__show" data-cat="landing">
-            <div class="portfolio__work work">
+            <div class="portfolio__work portfolio__work--best portfolio__work--archee  work">
               <!-- Далее нужно для каждой работы создавать отдельное модальное окно -->
               <div class="work__box-img work--overlay work--bg-archee" data-modal="#modal_archee" data-work>
                 <img class="work__image lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/archee/main.png" alt="Project photo" />
@@ -125,7 +124,7 @@
           <!-- .portfolio__col -->
           <!-- Добавление проекта в категорию "Лэндинги" -->
           <div class="portfolio__col portfolio__show" data-cat="landing">
-            <div class="portfolio__work work">
+            <div class="portfolio__work portfolio__work--best portfolio__work--web-templates work">
               <!-- Далее нужно для каждой работы создавать отдельное модальное окно -->
               <div class="work__box-img work--overlay work--bg-web-templates" data-modal="#modal_web-templates" data-work>
                 <img class="work__image lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/web-templates/main.png" alt="Project photo" />
@@ -135,6 +134,22 @@
                 <h3 class="work__title">
                   <span class="work__title--left">Портфолио Web-templates</span>
                   <time class="work__date" datetime="2022-06-28 12:35"> 2022 </time>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <!-- Добавление проекта в категорию "Лэндинги" -->
+          <div class="portfolio__col portfolio__show" data-cat="site-visit">
+            <div class="portfolio__work portfolio__work--best portfolio__work--dream-on-wheels work">
+              <!-- Далее нужно для каждой работы создавать отдельное модальное окно -->
+              <div class="work__box-img work--overlay work--bg-dream-on-wheels" data-modal="#modal_dream-on-wheels" data-work>
+                <img class="work__image lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/dream-on-wheels/main.png" alt="Project photo" />
+              </div>
+              <div class="work__content">
+                <p class="work__cat">Категория: Сайты-визитки</p>
+                <h3 class="work__title">
+                  <span class="work__title--left">Dream On Wheels</span>
+                  <time class="work__date" datetime="2022-06-30 15:07"> 2022 </time>
                 </h3>
               </div>
             </div>
@@ -231,22 +246,6 @@
                 <p class="work__cat">Категория: Проекты с элементами интерфейса на javaScript</p>
                 <h3 class="work__title">
                   <span class="work__title--left"> Скрипты для сайта интернет магазина </span>
-                  <time class="work__date" datetime="2021-04-13 10:27"> 2021 </time>
-                </h3>
-              </div>
-            </div>
-          </div>
-          <!-- .portfolio__col -->
-          <div class="portfolio__col portfolio__show" data-cat="site-visit">
-            <!-- Добавление проекта в категорию "Сайты-визитки" -->
-            <div class="portfolio__work work">
-              <div class="work__box-img work--overlay work--bg-visit" data-modal="#modal_visit-card" data-work>
-                <img class="work__image lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/site-visit/main-img.jpg" alt="Project photo" />
-              </div>
-              <div class="work__content">
-                <p class="work__cat">Категория: Сайты-визитки</p>
-                <h3 class="work__title">
-                  <span class="work__title--left">Site visit-card</span>
                   <time class="work__date" datetime="2021-04-13 10:27"> 2021 </time>
                 </h3>
               </div>
@@ -375,11 +374,6 @@
                 <use xlink:href="./img/sprite/symbol/sprite.svg#socials--telegram" />
               </svg>
             </a>
-            <a class="footer__social-link" href="https://web.whatsapp.com/send?phone=%2B79218109582&text&app_absent=0" target="_blank" title="Мой what's app">
-              <svg class="footer__social-image social--whatsapp">
-                <use xlink:href="./img/sprite/symbol/sprite.svg#socials--whatsapp" />
-              </svg>
-            </a>
             <a class="footer__social-link" href="https://vk.com/maverick177" target="_blank" title="Моя страница vkontakte">
               <svg class="footer__social-image social--vk">
                 <use xlink:href="./img/sprite/symbol/sprite.svg#socials--vk" />
@@ -414,12 +408,16 @@
       <h2 class="vhidden">Модальное окно резюме</h2>
       <div class="modal__dialog" id="top">
         <div class="theme theme--modal theme--sticky">
-          <svg class="switcher theme__icon theme__light" data-theme="light">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#theme--light-icon"></use>
-          </svg>
-          <svg class="switcher theme__icon theme__dark" data-theme="dark">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon"></use>
-          </svg>
+          <button class="switcher theme__btn theme__light" data-theme="light">
+            <svg class="theme__icon">
+              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--light-icon" />
+            </svg>
+          </button>
+          <button class="switcher theme__btn theme__dark" data-theme="dark">
+            <svg class="theme__icon">
+              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon" />
+            </svg>
+          </button>
           <button class="theme__close-btn" type="button" data-close-btn>
             <svg class="theme__close">
               <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
@@ -649,6 +647,16 @@
                 <p class="timeline__position">САФУ, факультет математики и информатики, Россия</p>
                 <p class="timeline__text">Защита дипломной работы на 5, и в целом то, что я прошел путь до конца, также отношу к моим достижениям.</p>
               </div>
+              <div class="timeline__item">
+                <time class="timeline__date" datetime="2022-08-22 11:11">2021 - 2022</time>
+                <h5 class="timeline__subtitle">Ведение ежедневника</h5>
+                <p class="timeline__text">В октябре 2021 года я прошел интенсив по самодисциплине, благодаря чему стал вести ежедневник. Каждый день, вплоть до этого дня я веду записи в своем ежедневнике, записывая цели на день каждое утро.</p>
+              </div>
+              <div class="timeline__item">
+                <time class="timeline__date" datetime="2022-08-22 11:11">2022</time>
+                <h5 class="timeline__subtitle">Навык слепой печати на клавиатуре</h5>
+                <p class="timeline__text">К своим достижениям также могу отнести навык слепой печати на клавиатуре. В двух раскладках: русская и английская. Скорость печатания ~ 160 символов в минуту.</p>
+              </div>
               <a href="#top" id="arrow-top-one" class="timeline__arrow-up" title="Наверх">
                 <svg class="timeline__arrow-up-pic">
                   <use xlink:href="./img/sprite/symbol/sprite.svg#arrows--arrow-up" />
@@ -671,12 +679,16 @@
     <div class="modal" id="modal-hire-me">
       <div class="modal__dialog modal__dialog--sm">
         <div class="theme theme--modal theme--sticky">
-          <svg class="switcher theme__icon theme__light" data-theme="light">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#theme--light-icon"></use>
-          </svg>
-          <svg class="switcher theme__icon theme__dark" data-theme="dark">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon"></use>
-          </svg>
+          <button class="switcher theme__btn theme__light" data-theme="light">
+            <svg class="theme__icon">
+              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--light-icon" />
+            </svg>
+          </button>
+          <button class="switcher theme__btn theme__dark" data-theme="dark">
+            <svg class="theme__icon">
+              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon" />
+            </svg>
+          </button>
           <button class="theme__close-btn" type="button" data-close-btn>
             <svg class="theme__close">
               <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
@@ -778,12 +790,16 @@
     <div class="modal" id="modal_project_1">
       <div class="modal__dialog">
         <div class="theme theme--modal theme--sticky">
-          <svg class="switcher theme__icon theme__light" data-theme="light">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#theme--light-icon"></use>
-          </svg>
-          <svg class="switcher theme__icon theme__dark" data-theme="dark">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon"></use>
-          </svg>
+          <button class="switcher theme__btn theme__light" data-theme="light">
+            <svg class="theme__icon">
+              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--light-icon" />
+            </svg>
+          </button>
+          <button class="switcher theme__btn theme__dark" data-theme="dark">
+            <svg class="theme__icon">
+              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon" />
+            </svg>
+          </button>
           <button class="theme__close-btn" type="button" data-close>
             <svg class="theme__close">
               <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
@@ -890,12 +906,16 @@
     <div class="modal" id="modal_visit-card">
       <div class="modal__dialog">
         <div class="theme theme--modal theme--sticky">
-          <svg class="switcher theme__icon theme__light" data-theme="light">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#theme--light-icon"></use>
-          </svg>
-          <svg class="switcher theme__icon theme__dark" data-theme="dark">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon"></use>
-          </svg>
+          <button class="switcher theme__btn theme__light" data-theme="light">
+            <svg class="theme__icon">
+              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--light-icon" />
+            </svg>
+          </button>
+          <button class="switcher theme__btn theme__dark" data-theme="dark">
+            <svg class="theme__icon">
+              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon" />
+            </svg>
+          </button>
           <button class="theme__close-btn" type="button" data-close>
             <svg class="theme__close">
               <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
@@ -979,12 +999,16 @@
     <div class="modal" id="modal_venom-two">
       <div class="modal__dialog">
         <div class="theme theme--modal theme--sticky">
-          <svg class="switcher theme__icon theme__light" data-theme="light">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#theme--light-icon"></use>
-          </svg>
-          <svg class="switcher theme__icon theme__dark" data-theme="dark">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon"></use>
-          </svg>
+          <button class="switcher theme__btn theme__light" data-theme="light">
+            <svg class="theme__icon">
+              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--light-icon" />
+            </svg>
+          </button>
+          <button class="switcher theme__btn theme__dark" data-theme="dark">
+            <svg class="theme__icon">
+              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon" />
+            </svg>
+          </button>
           <button class="theme__close-btn" type="button" data-close>
             <svg class="theme__close">
               <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
@@ -1074,12 +1098,16 @@
     <div class="modal" id="modal_safari">
       <div class="modal__dialog">
         <div class="theme theme--modal theme--sticky">
-          <svg class="switcher theme__icon theme__light" data-theme="light">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#theme--light-icon"></use>
-          </svg>
-          <svg class="switcher theme__icon theme__dark" data-theme="dark">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon"></use>
-          </svg>
+          <button class="switcher theme__btn theme__light" data-theme="light">
+            <svg class="theme__icon">
+              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--light-icon" />
+            </svg>
+          </button>
+          <button class="switcher theme__btn theme__dark" data-theme="dark">
+            <svg class="theme__icon">
+              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon" />
+            </svg>
+          </button>
           <button class="theme__close-btn" type="button" data-close>
             <svg class="theme__close">
               <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
@@ -1194,12 +1222,16 @@
     <div class="modal" id="modal_rolls">
       <div class="modal__dialog">
         <div class="theme theme--modal theme--sticky">
-          <svg class="switcher theme__icon theme__light" data-theme="light">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#theme--light-icon"></use>
-          </svg>
-          <svg class="switcher theme__icon theme__dark" data-theme="dark">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon"></use>
-          </svg>
+          <button class="switcher theme__btn theme__light" data-theme="light">
+            <svg class="theme__icon">
+              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--light-icon" />
+            </svg>
+          </button>
+          <button class="switcher theme__btn theme__dark" data-theme="dark">
+            <svg class="theme__icon">
+              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon" />
+            </svg>
+          </button>
           <button class="theme__close-btn" type="button" data-close>
             <svg class="theme__close">
               <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
@@ -1293,12 +1325,16 @@
     <div class="modal" id="modal_calc">
       <div class="modal__dialog">
         <div class="theme theme--modal theme--sticky">
-          <svg class="switcher theme__icon theme__light" data-theme="light">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#theme--light-icon"></use>
-          </svg>
-          <svg class="switcher theme__icon theme__dark" data-theme="dark">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon"></use>
-          </svg>
+          <button class="switcher theme__btn theme__light" data-theme="light">
+            <svg class="theme__icon">
+              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--light-icon" />
+            </svg>
+          </button>
+          <button class="switcher theme__btn theme__dark" data-theme="dark">
+            <svg class="theme__icon">
+              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon" />
+            </svg>
+          </button>
           <button class="theme__close-btn" type="button" data-close>
             <svg class="theme__close">
               <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
@@ -1390,12 +1426,16 @@
     <div class="modal" id="modal_convert">
       <div class="modal__dialog">
         <div class="theme theme--modal theme--sticky">
-          <svg class="switcher theme__icon theme__light" data-theme="light">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#theme--light-icon"></use>
-          </svg>
-          <svg class="switcher theme__icon theme__dark" data-theme="dark">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon"></use>
-          </svg>
+          <button class="switcher theme__btn theme__light" data-theme="light">
+            <svg class="theme__icon">
+              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--light-icon" />
+            </svg>
+          </button>
+          <button class="switcher theme__btn theme__dark" data-theme="dark">
+            <svg class="theme__icon">
+              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon" />
+            </svg>
+          </button>
           <button class="theme__close-btn" type="button" data-close>
             <svg class="theme__close">
               <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
@@ -1479,12 +1519,16 @@
     <div class="modal" id="modal_oxygen">
       <div class="modal__dialog">
         <div class="theme theme--modal theme--sticky">
-          <svg class="switcher theme__icon theme__light" data-theme="light">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#theme--light-icon"></use>
-          </svg>
-          <svg class="switcher theme__icon theme__dark" data-theme="dark">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon"></use>
-          </svg>
+          <button class="switcher theme__btn theme__light" data-theme="light">
+            <svg class="theme__icon">
+              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--light-icon" />
+            </svg>
+          </button>
+          <button class="switcher theme__btn theme__dark" data-theme="dark">
+            <svg class="theme__icon">
+              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon" />
+            </svg>
+          </button>
           <button class="theme__close-btn" type="button" data-close>
             <svg class="theme__close">
               <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
@@ -1586,7 +1630,7 @@
               </div>
               <ul class="modal-work__list modal-list">
                 <li class="modal-list__item">
-                  <a class="modal-list__link" href="https://dennymaverick.github.io/Oxigen/index.html" target="_blank"> Ccылка на проект </a>
+                  <a class="modal-list__link" href="https://dennymaverick.github.io/Oxygen/index.html" target="_blank"> Ccылка на проект </a>
                 </li>
                 <li class="modal-list__item">
                   <a class="modal-list__link" href="https://github.com/DennyMaverick/Oxigen" target="_blank"> Ссылка на репозиторий GitHub </a>
@@ -1618,12 +1662,16 @@
     <div class="modal" id="modal_olivia">
       <div class="modal__dialog">
         <div class="theme theme--modal theme--sticky">
-          <svg class="switcher theme__icon theme__light" data-theme="light">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#theme--light-icon"></use>
-          </svg>
-          <svg class="switcher theme__icon theme__dark" data-theme="dark">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon"></use>
-          </svg>
+          <button class="switcher theme__btn theme__light" data-theme="light">
+            <svg class="theme__icon">
+              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--light-icon" />
+            </svg>
+          </button>
+          <button class="switcher theme__btn theme__dark" data-theme="dark">
+            <svg class="theme__icon">
+              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon" />
+            </svg>
+          </button>
           <button class="theme__close-btn" type="button" data-close>
             <svg class="theme__close">
               <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
@@ -1729,12 +1777,16 @@
     <div class="modal" id="modal_delivery">
       <div class="modal__dialog">
         <div class="theme theme--modal theme--sticky">
-          <svg class="switcher theme__icon theme__light" data-theme="light">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#theme--light-icon"></use>
-          </svg>
-          <svg class="switcher theme__icon theme__dark" data-theme="dark">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon"></use>
-          </svg>
+          <button class="switcher theme__btn theme__light" data-theme="light">
+            <svg class="theme__icon">
+              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--light-icon" />
+            </svg>
+          </button>
+          <button class="switcher theme__btn theme__dark" data-theme="dark">
+            <svg class="theme__icon">
+              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon" />
+            </svg>
+          </button>
           <button class="theme__close-btn" type="button" data-close>
             <svg class="theme__close">
               <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
@@ -1843,12 +1895,16 @@
     <div class="modal" id="modal_sea-products">
       <div class="modal__dialog">
         <div class="theme theme--modal theme--sticky">
-          <svg class="switcher theme__icon theme__light" data-theme="light">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#theme--light-icon"></use>
-          </svg>
-          <svg class="switcher theme__icon theme__dark" data-theme="dark">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon"></use>
-          </svg>
+          <button class="switcher theme__btn theme__light" data-theme="light">
+            <svg class="theme__icon">
+              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--light-icon" />
+            </svg>
+          </button>
+          <button class="switcher theme__btn theme__dark" data-theme="dark">
+            <svg class="theme__icon">
+              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon" />
+            </svg>
+          </button>
           <button class="theme__close-btn" type="button" data-close>
             <svg class="theme__close">
               <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
@@ -1948,12 +2004,16 @@
     <div class="modal" id="modal_archee">
       <div class="modal__dialog">
         <div class="theme theme--modal theme--sticky">
-          <svg class="switcher theme__icon theme__light" data-theme="light">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#theme--light-icon"></use>
-          </svg>
-          <svg class="switcher theme__icon theme__dark" data-theme="dark">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon"></use>
-          </svg>
+          <button class="switcher theme__btn theme__light" data-theme="light">
+            <svg class="theme__icon">
+              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--light-icon" />
+            </svg>
+          </button>
+          <button class="switcher theme__btn theme__dark" data-theme="dark">
+            <svg class="theme__icon">
+              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon" />
+            </svg>
+          </button>
           <button class="theme__close-btn" type="button" data-close>
             <svg class="theme__close">
               <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
@@ -2069,12 +2129,16 @@
     <div class="modal" id="modal_web-templates">
       <div class="modal__dialog">
         <div class="theme theme--modal theme--sticky">
-          <svg class="switcher theme__icon theme__light" data-theme="light">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#theme--light-icon"></use>
-          </svg>
-          <svg class="switcher theme__icon theme__dark" data-theme="dark">
-            <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon"></use>
-          </svg>
+          <button class="switcher theme__btn theme__light" data-theme="light">
+            <svg class="theme__icon">
+              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--light-icon" />
+            </svg>
+          </button>
+          <button class="switcher theme__btn theme__dark" data-theme="dark">
+            <svg class="theme__icon">
+              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon" />
+            </svg>
+          </button>
           <button class="theme__close-btn" type="button" data-close>
             <svg class="theme__close">
               <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
@@ -2151,6 +2215,128 @@
                   <a class="modal-list__link" href="https://github.com/DennyMaverick/Web-templates" target="_blank"> Ссылка на репозиторий GitHub </a>
                 </li>
                 <li class="modal-list__item">Время на работу ~ 20 ч</li>
+              </ul>
+            </div>
+            <!--modal-work__text -->
+            <div class="modal-work__footer">
+              <button class="modal-work__btn slickPrev modal-work__btn--text" type="button">Назад</button>
+              <button class="modal-work__btn modal-work__btn--text slickNext" type="button">Вперед</button>
+            </div>
+            <a href="#" class="modal-work__arrow-up up" title="Наверх">
+              <svg class="modal-work__arrow-up-pic">
+                <use xlink:href="./img/sprite/symbol/sprite.svg#arrows--arrow-up" />
+              </svg>
+            </a>
+          </div>
+          <!--modal-work__content -->
+        </div>
+        <!--modal-work -->
+      </div>
+      <!-- modal__dialog-->
+    </div>
+    <!-- modal -->
+    <div class="modal" id="modal_dream-on-wheels">
+      <div class="modal__dialog">
+        <div class="theme theme--modal theme--sticky">
+          <button class="switcher theme__btn theme__light" data-theme="light">
+            <svg class="theme__icon">
+              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--light-icon" />
+            </svg>
+          </button>
+          <button class="switcher theme__btn theme__dark" data-theme="dark">
+            <svg class="theme__icon">
+              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon" />
+            </svg>
+          </button>
+          <button class="theme__close-btn" type="button" data-close>
+            <svg class="theme__close">
+              <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
+            </svg>
+          </button>
+        </div>
+        <div class="modal__modal-work modal-work">
+          <div class="modal-work__preview">
+            <div class="modal-work__slider slider" data-slider="slick">
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/dream-on-wheels/slide-1.gif"></div>
+              </div>
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/dream-on-wheels/slide-2.png"></div>
+              </div>
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/dream-on-wheels/slide-3.png"></div>
+              </div>
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/dream-on-wheels/slide-4.png"></div>
+              </div>
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/dream-on-wheels/slide-5.png"></div>
+              </div>
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/dream-on-wheels/slide-6.png"></div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-work__content">
+            <div class="modal-work__header">
+              <h3 class="modal-work__title">Dream On Wheels</h3>
+              <div class="modal-work__info">
+                Сайты-визитки
+                <span class="modal-work__info-divider">|</span>
+                2022
+              </div>
+            </div>
+            <!-- modal-work__header -->
+            <div class="modal-work__client">
+              <div class="modal-work__client-title">Учебный проект:</div>
+              <div class="modal-work__client-company">Denny Maverick</div>
+            </div>
+            <div class="modal-work__text">
+              <p class="modal-work__description">Проект "Мечта на колесах" или "Dream On Wheels" был создан в учебных целях, чтобы закрепить навыки работы с gulp и препроцессором LESS.</p>
+              <div class="modal-work__show-info show-more">
+                <input type="checkbox" id="show-more_15" class="show-more__input" />
+                <label class="show-more__trigger" for="show-more_15">
+                  <span class="show-more__desc">Более подробно</span>
+                  <svg class="show-more__arrow">
+                    <use xlink:href="./img/sprite/symbol/sprite.svg#modal--show-modal-right" />
+                  </svg>
+                </label>
+                <div class="show-more__content">
+                  <p class="modal-work__description">Проект был сначала создан, используя более упрощенную структуру, работа с препроцессором осуществлялась через стороннюю программу - компилятор WinLess. Далее проект был полностью переделан, используя gulp. Работая над данным проектом, были использованы следующие инструменты, технологии:</p>
+                  <ul class="modal-work__list modal-list">
+                    <li class="modal-list__item">Редактор кода: Visual Studio Code</li>
+                    <li class="modal-list__item">JQuery (слайдер slick.js)</li>
+                    <li class="modal-list__item">LESS / HTML</li>
+                    <li class="modal-list__item">Gulp / Webpack</li>
+                    <li class="modal-list__item">Flex Box Layout Module</li>
+                    <li class="modal-list__item">Используется SVG-спрайт, чтобы обеспечить лучшую скорость загрузки сайта, отправляя меньше запросов на сервер</li>
+                    <li class="modal-list__item">Адаптив под планшеты и мобильные устройства</li>
+                    <li class="modal-list__item">Дизайн сайта был полностью переделан. После этого сайт стал живым и ярким</li>
+                    <li class="modal-list__item">Весь контент, включая текст для сайта был придуман самостоятельно.</li>
+                  </ul>
+                  <p class="modal-work__description">Работая с gulp были использованы следующие плагины:</p>
+                  <ul class="modal-work__list modal-list">
+                    <li class="modal-list__item">gulp-svg-sprite - плагин для работы с svg-спрайтами</li>
+                    <li class="modal-list__item">gulp-plumber - плагин для обработки ошибок</li>
+                    <li class="modal-list__item">gulp-sourcemaps - плагин для навигации в коде в режиме разработки</li>
+                    <li class="modal-list__item">gulp-imagemin - плагин для минификации изображений</li>
+                    <li class="modal-list__item">gulp-babel- плагин для перевода JavaScript-скриптов в код, который станет поддерживаться устаревшими браузерами, тем самым повышая кроссбраузерность</li>
+
+                    <li class="modal-list__item">gulp-strips-comments - плагин для удаления лишних комментариев, использовался в задаче при подключении сторонних библиотек и в отдельной задаче, подключающей JQuery</li>
+                    <li class="modal-list__item">gulp-uglify - плагин, помогающий минифицировать JavaScript-код</li>
+                    <li class="modal-list__item">gulp-less - плагин для компиляции LESS в CSS</li>
+                    <li class="modal-list__item">webpack, webpack-stream - npm-пакеты для работы с webpack в gulp, были включены в проект для использования модулей в JavaScript</li>
+                  </ul>
+                </div>
+              </div>
+              <ul class="modal-work__list modal-list">
+                <li class="modal-list__item">
+                  <a class="modal-list__link" href="https://dennymaverick.github.io/Dream-On-Wheels/" target="_blank"> Ccылка на проект </a>
+                </li>
+                <li class="modal-list__item">
+                  <a class="modal-list__link" href="https://github.com/DennyMaverick/Dream-On-Wheels" target="_blank"> Ссылка на репозиторий GitHub </a>
+                </li>
+                <li class="modal-list__item">Время на работу ~ 26 ч</li>
               </ul>
             </div>
             <!--modal-work__text -->
