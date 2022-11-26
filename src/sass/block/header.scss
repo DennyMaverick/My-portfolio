@@ -76,11 +76,12 @@
     }
   }
 
-  &__user {
-    position: absolute;
-    left: 30px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+
+  &__lang {
+    margin-right: auto;
+    margin-left: 190px;
+    @include bp-desk(mobile) {
+      margin-left: 0;
+    }
   }
 }

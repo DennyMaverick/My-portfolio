@@ -1,4 +1,4 @@
-import "./modules/preloader-page"
+// import "./modules/preloader-page"
 
 // jQuery and it's libraries
 import "./modules/jQuery/jquery-main"
@@ -13,7 +13,6 @@ import "./modules/scroll-behavior"
 import "./modules/pdf-download"
 import "./modules/burger-menu"
 import "./modules/shadow-scrolled"
-import "./modules/hide-user"
 import "./modules/ontop"
 import "./modules/print"
 import "./modules/hidden-scroll-modal-hire"
@@ -30,3 +29,4 @@ import "./modules/preloader-second-way"
 
 import "./modules/preload-for-sliders"
 import "./modules/theme-mod"
+import "./modules/lang"

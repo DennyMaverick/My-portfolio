@@ -25,21 +25,6 @@ const themes = {
     },
   },
 
-  //* === User ===
-
-  ".user__name": {
-    theme: {
-      light: "user__name--light",
-      dark: "user__name--dark",
-    },
-  },
-  ".user__prof": {
-    theme: {
-      light: "user__prof--light",
-      dark: "user__prof--dark",
-    },
-  },
-
   //* === Nav ===
 
   ".nav__link": {
@@ -344,15 +329,6 @@ const themes = {
     },
   },
 
-  //* === Preloader-page ===
-
-  ".preloader-page": {
-    theme: {
-      light: "preloader-page--light",
-      dark: "preloader-page--dark",
-    },
-  },
-
   //* === Progress-bar ===
 
   ".progress-bar": {
@@ -461,6 +437,12 @@ const themes = {
     theme: {
       light: "contact__info-icon--light",
       dark: "contact__info-icon--dark",
+    },
+  },
+  ".lang-tool": {
+    theme: {
+      light: "lang-tool--light",
+      dark: "lang-tool--dark",
     },
   },
 }

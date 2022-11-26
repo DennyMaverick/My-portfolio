@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Denny Maverick</title>
+    <title class="lang-title">Денис, web-разработчик</title>
     <link rel="icon" href="./img/favicon/favicon.svg" />
     <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
     <link rel="manifest" href="manifest.json" />
@@ -17,31 +17,40 @@
   </head>
   <body class="no-scroll">
     <div class="preloader-page" id="preloader"></div>
+    <script>
+      const preloader = document.getElementById("preloader")
+      const bodyEl = document.querySelector("body")
+
+      window.onload = function () {
+        if (preloader) {
+          preloader.classList.add("done")
+          bodyEl.classList.remove("no-scroll")
+        }
+      }
+    </script>
     <header class="header">
       <div class="container">
         <div class="header__mobile-modal mobile-modal">
           <nav class="mobile-modal__nav mobile-nav">
-            <a class="mobile-nav__link" href="#home">Главная</a>
-            <a class="mobile-nav__link" href="#work">Мое портфолио</a>
-            <a class="mobile-nav__link" href="#about">Обо мне</a>
-            <a class="mobile-nav__link" href="#contacts">Контакты</a>
-            <a class="mobile-nav__link btn mobile-nav__link--btn" href="#" data-modal-open="#modal-hire-me"> Написать мне </a>
+            <a class="mobile-nav__link lang-main-mobile" href="#home">Главная</a>
+            <a class="mobile-nav__link lang-portfolio-mobile" href="#work">Мое портфолио</a>
+            <a class="mobile-nav__link lang-about-mobile" href="#about">Обо мне</a>
+            <a class="mobile-nav__link lang-contacts-mobile" href="#contacts">Контакты</a>
+            <a class="mobile-nav__link btn mobile-nav__link--btn lang-write-mobile" href="#" data-modal-open="#modal-hire-me"> Написать мне </a>
           </nav>
         </div>
         <div class="header__inner">
-          <a class="header__user user" href="#about">
-            <img class="user__avatar lazy" width="57" height="57" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/user/photo.png" alt="Avatar" />
-            <div class="user__content">
-              <span class="user__name">Денис</span>
-              <span class="user__prof">Web - разработчик</span>
-            </div>
-          </a>
+          <div class="header__lang lang-tool">
+            <span class="lang-tool__item lang-tool__lang-name" data-lang="ru">ru</span>
+            <span class="lang-tool__separate">|</span>
+            <span class="lang-tool__item lang-tool__lang-name" data-lang="en">en</span>
+          </div>
           <nav class="header__nav nav" id="nav">
-            <a class="nav__link" href="#home">Главная</a>
-            <a class="nav__link" href="#work">Мое портфолио</a>
-            <a class="nav__link" href="#about">Обо мне</a>
-            <a class="nav__link" href="#contacts">Контакты</a>
-            <a class="nav__link btn nav__link--btn" href="#" data-modal-open="#modal-hire-me"> Написать мне </a>
+            <a class="nav__link lang-main" href="#home">Главная</a>
+            <a class="nav__link lang-portfolio" href="#work">Мое портфолио</a>
+            <a class="nav__link lang-about" href="#about">Обо мне</a>
+            <a class="nav__link lang-contacts" href="#contacts">Контакты</a>
+            <a class="nav__link btn nav__link--btn lang-write" href="#" data-modal-open="#modal-hire-me"> Написать мне </a>
           </nav>
           <div class="header__theme theme theme--br">
             <button class="switcher theme__btn theme__light header__theme-light" data-theme="light">
@@ -64,28 +73,28 @@
     <section class="intro" id="home">
       <div class="intro__inner container">
         <div class="intro__content">
-          <h2 class="intro__subtitle" data-aos="zoom-in" data-aos-offset="0">Привет, Я</h2>
-          <h1 class="intro__title" data-aos-delay="2000" data-aos="zoom-in" data-aos-offset="0">Денис</h1>
-          <div class="intro__position" data-aos="fade-right" data-aos-delay="1500" data-aos-offset="0">Web - разработчик</div>
+          <h2 class="intro__subtitle lang-hello" data-aos="zoom-in" data-aos-offset="0">Привет, Я</h2>
+          <h1 class="intro__title lang-my-name" data-aos-delay="2000" data-aos="zoom-in" data-aos-offset="0">Денис</h1>
+          <div class="intro__position lang-web-developer" data-aos="fade-right" data-aos-delay="1500" data-aos-offset="0">Web - разработчик</div>
           <div class="intro__social social">
-            <a class="social__link" title="Мой телеграм" href="https://t.me/Denny_maverick" target="_blank">
+            <a class="social__link lang-telegram-intro" title="Мой телеграм" href="https://t.me/Denny_maverick" target="_blank">
               <svg class="social__image social--telegram">
                 <use xlink:href="./img/sprite/symbol/sprite.svg#socials--telegram" />
               </svg>
             </a>
-            <a class="social__link" href="https://vk.com/maverick177" title="Моя страница вк" target="_blank">
+            <a class="social__link lang-vk-intro" href="https://vk.com/maverick177" title="Моя страница вк" target="_blank">
               <svg class="social__image social--vk social--vk-sizes">
                 <use xlink:href="./img/sprite/symbol/sprite.svg#socials--vk" />
               </svg>
             </a>
-            <a class="social__link" href="https://github.com/DennyMaverick" title="Мой github" target="_blank">
+            <a class="social__link lang-github-intro" href="https://github.com/DennyMaverick" title="Мой github" target="_blank">
               <svg class="social__image social--github">
                 <use xlink:href="./img/sprite/symbol/sprite.svg#socials--github" />
               </svg>
             </a>
           </div>
-          <a class="btn social__btn" href="#" data-modal-open="#modal-hire-me"> Написать мне </a>
-          <a class="btn social__btn hire-resume-btn" href="#" data-modal-open="#modal-resume"> Резюме </a>
+          <a class="btn social__btn lang-write-intro" href="#" data-modal-open="#modal-hire-me"> Написать мне </a>
+          <a class="btn social__btn hire-resume-btn lang-resume-intro" href="#" data-modal-open="#modal-resume"> Резюме </a>
         </div>
         <div class="intro__image-container">
           <img class="intro__photo" src="./img/intro/photo.png" width="500" height="500" alt="my photo" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="2000" data-aos-offset="0" />
@@ -107,7 +116,7 @@
         <div class="works__portfolio portfolio" id="portfolio">
           <!-- Добавление проекта в категорию "Лэндинги" -->
           <div class="portfolio__col portfolio__show" data-cat="landing">
-            <div class="portfolio__work portfolio__work--best portfolio__work--archee  work">
+            <div class="portfolio__work portfolio__work--best portfolio__work--archee work">
               <!-- Далее нужно для каждой работы создавать отдельное модальное окно -->
               <div class="work__box-img work--overlay work--bg-archee" data-modal="#modal_archee" data-work>
                 <img class="work__image lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/archee/main.png" alt="Project photo" />
@@ -150,6 +159,21 @@
                 <h3 class="work__title">
                   <span class="work__title--left">Dream On Wheels</span>
                   <time class="work__date" datetime="2022-06-30 15:07"> 2022 </time>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <!-- .portfolio__col -->
+                    <div class="portfolio__col portfolio__show" data-cat="interface">
+            <div class="portfolio__work work">
+              <div class="work__box-img work--overlay work--bg-convert" data-modal="#modal_convert" data-work>
+                <img class="work__image lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/convert/3-moon.png" alt="Project photo" />
+              </div>
+              <div class="work__content">
+                <p class="work__cat">Категория: Проекты с элементами интерфейса на javaScript</p>
+                <h3 class="work__title">
+                  <span class="work__title--left"> Конвертёр валют на JavaScript </span>
+                  <time class="work__date" datetime="2021-04-13 10:27"> 2021 </time>
                 </h3>
               </div>
             </div>
@@ -203,70 +227,6 @@
             </div>
           </div>
           <!-- .portfolio__col -->
-          <div class="portfolio__col portfolio__show" data-cat="landing">
-            <div class="portfolio__work work">
-              <!-- Добавление проекта в категорию "Проекты с элементами интерфейса на javaScript" -->
-              <div class="work__box-img work--overlay work--bg-sea" data-modal="#modal_sea-products" data-work>
-                <img class="work__image lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/sea-products/main.png" alt="Project photo" />
-              </div>
-              <div class="work__content">
-                <p class="work__cat">Категория: Лэндинги</p>
-                <h3 class="work__title">
-                  <span class="work__title--left"> Морепродукты из Норвегии </span>
-                  <time class="work__date" datetime="2021-12-05 13:16"> 2021 </time>
-                </h3>
-              </div>
-            </div>
-          </div>
-          <!-- .portfolio__col -->
-          <!-- Добавление проекта в категорию "Лэндинги" -->
-          <div class="portfolio__col portfolio__show" data-cat="landing">
-            <div class="portfolio__work work">
-              <!-- Далее нужно для каждой работы создавать отдельное модальное окно -->
-              <div class="work__box-img work--overlay work--bg-food" data-modal="#modal_delivery" data-work>
-                <img class="work__image lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/delivery-food/main.png" alt="Project photo" />
-              </div>
-              <div class="work__content">
-                <p class="work__cat">Категория: Лэндинги</p>
-                <h3 class="work__title">
-                  <span class="work__title--left">Index Food</span>
-                  <time class="work__date" datetime="2021-11-02 14:31"> 2021 </time>
-                </h3>
-              </div>
-            </div>
-          </div>
-          <!-- .portfolio__col -->
-          <div class="portfolio__col portfolio__show" data-cat="interface">
-            <div class="portfolio__work work">
-              <!-- Добавление проекта в категорию "Проекты с элементами интерфейса на javaScript" -->
-              <div class="work__box-img work--overlay work--bg-rolls" data-modal="#modal_rolls" data-work>
-                <img class="work__image work__image-rolls lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/rolls-scripts/main.png" alt="Project photo" />
-              </div>
-              <div class="work__content">
-                <p class="work__cat">Категория: Проекты с элементами интерфейса на javaScript</p>
-                <h3 class="work__title">
-                  <span class="work__title--left"> Скрипты для сайта интернет магазина </span>
-                  <time class="work__date" datetime="2021-04-13 10:27"> 2021 </time>
-                </h3>
-              </div>
-            </div>
-          </div>
-          <!-- .portfolio__col -->
-          <div class="portfolio__col portfolio__show" data-cat="interface">
-            <div class="portfolio__work work">
-              <div class="work__box-img work--overlay work--bg-convert" data-modal="#modal_convert" data-work>
-                <img class="work__image lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/convert/main.png" alt="Project photo" />
-              </div>
-              <div class="work__content">
-                <p class="work__cat">Категория: Проекты с элементами интерфейса на javaScript</p>
-                <h3 class="work__title">
-                  <span class="work__title--left"> Конвертёр валют на JavaScript </span>
-                  <time class="work__date" datetime="2021-04-13 10:27"> 2021 </time>
-                </h3>
-              </div>
-            </div>
-          </div>
-          <!-- .portfolio__col -->
           <!-- Добавление проекта в категорию "Проекты с элементами интерфейса на javaScript" -->
           <div class="portfolio__col portfolio__show" data-cat="promo">
             <div class="portfolio__work work">
@@ -279,22 +239,6 @@
                 <h3 class="work__title">
                   <span class="work__title--left"> Промосайт фильма "Веном - 2" </span>
                   <time class="work__date" datetime="2021-04-13 10:27"> 2021 </time>
-                </h3>
-              </div>
-            </div>
-          </div>
-          <!-- .portfolio__col -->
-          <div class="portfolio__col portfolio__show" data-cat="landing">
-            <div class="portfolio__work work">
-              <!-- Добавление проекта в категорию "Лэндинги" -->
-              <div class="work__box-img work--overlay work--bg-safari" data-modal="#modal_safari" data-work>
-                <img class="work__image lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="img/projects/safari/main.jpg" alt="Project photo" />
-              </div>
-              <div class="work__content">
-                <p class="work__cat">Категория: Лэндинги</p>
-                <h3 class="work__title">
-                  <span class="work__title--left">Сафари по Африке</span>
-                  <time class="work__date" datetime="2021-10-15 11:26"> 2021 </time>
                 </h3>
               </div>
             </div>
@@ -1095,233 +1039,6 @@
       <!-- modal__dialog-->
     </div>
     <!-- modal -->
-    <div class="modal" id="modal_safari">
-      <div class="modal__dialog">
-        <div class="theme theme--modal theme--sticky">
-          <button class="switcher theme__btn theme__light" data-theme="light">
-            <svg class="theme__icon">
-              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--light-icon" />
-            </svg>
-          </button>
-          <button class="switcher theme__btn theme__dark" data-theme="dark">
-            <svg class="theme__icon">
-              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon" />
-            </svg>
-          </button>
-          <button class="theme__close-btn" type="button" data-close>
-            <svg class="theme__close">
-              <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
-            </svg>
-          </button>
-        </div>
-        <div class="modal__modal-work modal-work">
-          <div class="modal-work__preview">
-            <div class="modal-work__slider slider" data-slider="slick">
-              <div class="slider__item slider__slide">
-                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/safari/slide_1.jpg"></div>
-              </div>
-              <div class="slider__item slider__slide">
-                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/safari/slide_2.jpg"></div>
-              </div>
-              <div class="slider__item slider__slide">
-                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/safari/slide_3.jpg"></div>
-              </div>
-              <div class="slider__item slider__slide">
-                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/safari/slide_4.jpg"></div>
-              </div>
-              <div class="slider__item slider__slide">
-                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/safari/slide_5.jpg"></div>
-              </div>
-              <div class="slider__item slider__slide">
-                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/safari/slide_6.jpg"></div>
-              </div>
-              <div class="slider__item slider__slide">
-                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/safari/slide_7.jpg"></div>
-              </div>
-              <div class="slider__item slider__slide">
-                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/safari/slide_8.jpg"></div>
-              </div>
-              <div class="slider__item slider__slide">
-                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/safari/slide_9.jpg"></div>
-              </div>
-              <div class="slider__item slider__slide">
-                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/safari/slide_10.jpg"></div>
-              </div>
-            </div>
-          </div>
-          <div class="modal-work__content">
-            <div class="modal-work__header">
-              <h3 class="modal-work__title">Сафари по Африке</h3>
-              <div class="modal-work__info">
-                Лэндинги
-                <span class="modal-work__info-divider">|</span>
-                2021
-              </div>
-            </div>
-            <!-- modal-work__header -->
-            <div class="modal-work__client">
-              <div class="modal-work__client-title">Учебный проект:</div>
-              <div class="modal-work__client-company">Web-школа От 0 до 1</div>
-            </div>
-            <div class="modal-work__text">
-              <p class="modal-work__description">Работая над данным проектом, были использованы следующие инструменты, технологии и плагины:</p>
-              <div class="modal-work__show-info show-more">
-                <input type="checkbox" id="show-more_4" class="show-more__input" />
-                <label class="show-more__trigger" for="show-more_4">
-                  <span class="show-more__desc">Более подробно</span>
-                  <svg class="show-more__arrow">
-                    <use xlink:href="./img/sprite/symbol/sprite.svg#modal--show-modal-right" />
-                  </svg>
-                </label>
-                <div class="show-more__content">
-                  <ul class="modal-work__list modal-list">
-                    <li class="modal-list__item">Редактор кода Visual Studio Code</li>
-                    <li class="modal-list__item">Плагины Visual Studio Code: Emmet, Live Server, Path AutoComplete, AutoClose Tag и др.</li>
-                    <li class="modal-list__item">Подключение всплывающего окна для отображения видео, используя jQuery-библиотеку FancyBox</li>
-                    <li class="modal-list__item">Flexible Box Layout Module</li>
-                    <li class="modal-list__item">Grid Layout</li>
-                    <li class="modal-list__item">CSS / HTML / JavaScript</li>
-                    <li class="modal-list__item">Адаптив под все возможные экраны устройств</li>
-                    <li class="modal-list__item">Подключение карты Google</li>
-                    <li class="modal-list__item">Использование плагина Magnific Popup для всплытия окна видео и просмотра изображений в галерее</li>
-                    <li class="modal-list__item">Использование слайдера Slick для галереи</li>
-                  </ul>
-                </div>
-              </div>
-              <ul class="modal-work__list modal-list">
-                <li class="modal-list__item">
-                  <a class="modal-list__link" href="https://dennymaverick.github.io/SafariTrevelToAfrica/index.html" target="_blank"> Ccылка на проект </a>
-                </li>
-                <li class="modal-list__item">
-                  <a class="modal-list__link" href="https://www.figma.com/file/mI7RE3Cq7pExgGSXUYQNko/safari" target="_blank"> Ссылка на макет Figma </a>
-                </li>
-                <li class="modal-list__item">
-                  <a class="modal-list__link" href="https://github.com/DennyMaverick/SafariTrevelToAfrica/tree/master" target="_blank"> Ссылка на репозиторий GitHub </a>
-                </li>
-                <li class="modal-list__item">Время на работу ~ 17 ч</li>
-              </ul>
-            </div>
-            <!--modal-work__text -->
-            <div class="modal-work__footer">
-              <button class="modal-work__btn slickPrev modal-work__btn--text" type="button">Назад</button>
-              <button class="modal-work__btn modal-work__btn--text slickNext" type="button">Вперед</button>
-            </div>
-            <a href="#" class="modal-work__arrow-up up" title="Наверх">
-              <svg class="modal-work__arrow-up-pic">
-                <use xlink:href="./img/sprite/symbol/sprite.svg#arrows--arrow-up" />
-              </svg>
-            </a>
-          </div>
-          <!--modal-work__content -->
-        </div>
-        <!--modal-work -->
-      </div>
-      <!-- modal__dialog-->
-    </div>
-    <!-- modal -->
-    <div class="modal" id="modal_rolls">
-      <div class="modal__dialog">
-        <div class="theme theme--modal theme--sticky">
-          <button class="switcher theme__btn theme__light" data-theme="light">
-            <svg class="theme__icon">
-              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--light-icon" />
-            </svg>
-          </button>
-          <button class="switcher theme__btn theme__dark" data-theme="dark">
-            <svg class="theme__icon">
-              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon" />
-            </svg>
-          </button>
-          <button class="theme__close-btn" type="button" data-close>
-            <svg class="theme__close">
-              <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
-            </svg>
-          </button>
-        </div>
-        <div class="modal__modal-work modal-work">
-          <div class="modal-work__preview">
-            <div class="modal-work__slider slider" data-slider="slick">
-              <div class="slider__item slider__slide">
-                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/rolls-scripts/slide_1.jpg"></div>
-              </div>
-              <div class="slider__item slider__slide">
-                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/rolls-scripts/slide_2.jpg"></div>
-              </div>
-              <div class="slider__item slider__slide">
-                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/rolls-scripts/slide_3.jpg"></div>
-              </div>
-            </div>
-          </div>
-          <div class="modal-work__content">
-            <div class="modal-work__header">
-              <h3 class="modal-work__title">Скрипты для сайта интернет-магазина</h3>
-              <div class="modal-work__info">
-                Проекты с элементами интерфейса на javaScript
-                <span class="modal-work__info-divider">|</span>
-                2021
-              </div>
-            </div>
-            <!-- modal-work__header -->
-            <div class="modal-work__client">
-              <div class="modal-work__client-title">Учебный проект:</div>
-              <div class="modal-work__client-company">Web-школа WebCademy</div>
-            </div>
-            <div class="modal-work__text">
-              <p class="modal-work__description">При работе над проектом был реализован следующий функционал:</p>
-              <div class="modal-work__show-info show-more">
-                <input type="checkbox" id="show-more_5" class="show-more__input" />
-                <label class="show-more__trigger" for="show-more_5">
-                  <span class="show-more__desc">Более подробно</span>
-                  <svg class="show-more__arrow">
-                    <use xlink:href="./img/sprite/symbol/sprite.svg#modal--show-modal-right" />
-                  </svg>
-                </label>
-                <div class="show-more__content">
-                  <ul class="modal-work__list modal-list">
-                    <li class="modal-list__item">Возможность добавлять в корзину товары (как один, так и несколько) с автоматическим пересчетом итоговой цены</li>
-                    <li class="modal-list__item">Если товар уже есть в корзине, то он не повторяется, а происходит объединение товаров</li>
-                    <li class="modal-list__item">У каждой карточки товара есть свой счетчик, работающий отдельно и независимо от других карточек</li>
-                    <li class="modal-list__item">Есть возможность удалять товары из корзины (удаление происходит при нажатии на минус, если количество товара в корзине 1 штука)</li>
-                    <li class="modal-list__item">Если корзина пуста, в ней появляется соответствующая надпись</li>
-                    <li class="modal-list__item">Если в корзине есть товары, появляются такие блоки, как оформление заказа и доставка</li>
-                    <li class="modal-list__item">При сумме заказа меньше 600 рублей отображается доставка: 250 рублей; при заказе больше 600 рублей появляется надпись бесплатной доставки</li>
-                  </ul>
-                  <p class="modal-work__description">Работая над данным проектом, были использованы следующие инструменты, технологии:</p>
-                  <ul class="modal-work__list modal-list">
-                    <li class="modal-list__item">Редактор кода: Visual Studio Code</li>
-                    <li class="modal-list__item">JavaScript</li>
-                    <li class="modal-list__item">Css / HTML</li>
-                  </ul>
-                </div>
-              </div>
-              <ul class="modal-work__list modal-list">
-                <li class="modal-list__item">
-                  <a class="modal-list__link" href="https://dennymaverick.github.io/ScriptsForAnInternetStore/index.html" target="_blank"> Ccылка на проект </a>
-                </li>
-                <li class="modal-list__item">
-                  <a class="modal-list__link" href="https://github.com/DennyMaverick/ScriptsForAnInternetStore" target="_blank"> Ссылка на репозиторий GitHub </a>
-                </li>
-                <li class="modal-list__item">Время на работу ~ 9 ч</li>
-              </ul>
-            </div>
-            <!--modal-work__text -->
-            <div class="modal-work__footer">
-              <button class="modal-work__btn slickPrev modal-work__btn--text" type="button">Назад</button>
-              <button class="modal-work__btn modal-work__btn--text slickNext" type="button">Вперед</button>
-            </div>
-            <a href="#" class="modal-work__arrow-up up" title="Наверх">
-              <svg class="modal-work__arrow-up-pic">
-                <use xlink:href="./img/sprite/symbol/sprite.svg#arrows--arrow-up" />
-              </svg>
-            </a>
-          </div>
-          <!--modal-work__content -->
-        </div>
-        <!--modal-work -->
-      </div>
-      <!-- modal__dialog-->
-    </div>
-    <!-- modal -->
     <div class="modal" id="modal_calc">
       <div class="modal__dialog">
         <div class="theme theme--modal theme--sticky">
@@ -1446,7 +1163,22 @@
           <div class="modal-work__preview">
             <div class="modal-work__slider slider" data-slider="slick">
               <div class="slider__item slider__slide">
-                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/convert/slide_1.jpg"></div>
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/convert/1-dark.png"></div>
+              </div>
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/convert/2-light.png"></div>
+              </div>
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/convert/3-moon.png"></div>
+              </div>
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/convert/mobile-se-dark.png"></div>
+              </div>
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/convert/mobile-se-light.png"></div>
+              </div>
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/convert/mobile-se-moon.png"></div>
               </div>
             </div>
           </div>
@@ -1754,233 +1486,6 @@
                   <a class="modal-list__link" href="https://www.figma.com/file/InKhPw92MAhkJPPtCOa615/alivio-landing-page-for-figma" target="_blank"> Ссылка на макет Figma </a>
                 </li>
                 <li class="modal-list__item">Время на работу ~ 8.5 ч</li>
-              </ul>
-            </div>
-            <!--modal-work__text -->
-            <div class="modal-work__footer">
-              <button class="modal-work__btn slickPrev modal-work__btn--text" type="button">Назад</button>
-              <button class="modal-work__btn modal-work__btn--text slickNext" type="button">Вперед</button>
-            </div>
-            <a href="#" class="modal-work__arrow-up up" title="Наверх">
-              <svg class="modal-work__arrow-up-pic">
-                <use xlink:href="./img/sprite/symbol/sprite.svg#arrows--arrow-up" />
-              </svg>
-            </a>
-          </div>
-          <!--modal-work__content -->
-        </div>
-        <!--modal-work -->
-      </div>
-      <!-- modal__dialog-->
-    </div>
-    <!-- modal -->
-    <div class="modal" id="modal_delivery">
-      <div class="modal__dialog">
-        <div class="theme theme--modal theme--sticky">
-          <button class="switcher theme__btn theme__light" data-theme="light">
-            <svg class="theme__icon">
-              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--light-icon" />
-            </svg>
-          </button>
-          <button class="switcher theme__btn theme__dark" data-theme="dark">
-            <svg class="theme__icon">
-              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon" />
-            </svg>
-          </button>
-          <button class="theme__close-btn" type="button" data-close>
-            <svg class="theme__close">
-              <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
-            </svg>
-          </button>
-        </div>
-        <div class="modal__modal-work modal-work">
-          <div class="modal-work__preview">
-            <div class="modal-work__slider slider" data-slider="slick">
-              <div class="slider__item slider__slide">
-                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/delivery-food/slide_1.jpg"></div>
-              </div>
-              <div class="slider__item slider__slide">
-                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/delivery-food/slide_2.jpg"></div>
-              </div>
-              <div class="slider__item slider__slide">
-                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/delivery-food/slide_3.jpg"></div>
-              </div>
-              <div class="slider__item slider__slide">
-                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/delivery-food/slide_4.jpg"></div>
-              </div>
-              <div class="slider__item slider__slide">
-                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/delivery-food/slide_5.jpg"></div>
-              </div>
-              <div class="slider__item slider__slide">
-                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/delivery-food/slide_6.jpg"></div>
-              </div>
-              <div class="slider__item slider__slide">
-                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/delivery-food/slide_7.jpg"></div>
-              </div>
-            </div>
-          </div>
-          <div class="modal-work__content">
-            <div class="modal-work__header">
-              <h3 class="modal-work__title">Index Food</h3>
-              <div class="modal-work__info">
-                Лэндинги
-                <span class="modal-work__info-divider">|</span>
-                2021
-              </div>
-            </div>
-            <!-- modal-work__header -->
-            <div class="modal-work__client">
-              <div class="modal-work__client-title">Учебный проект:</div>
-              <div class="modal-work__client-company">Web-школа Glo Academy</div>
-            </div>
-            <div class="modal-work__text">
-              <p class="modal-work__description">При работе над проектом был реализован следующий функционал:</p>
-              <div class="modal-work__show-info show-more">
-                <input type="checkbox" id="show-more_11" class="show-more__input" />
-                <label class="show-more__trigger" for="show-more_11">
-                  <span class="show-more__desc">Более подробно</span>
-                  <svg class="show-more__arrow">
-                    <use xlink:href="./img/sprite/symbol/sprite.svg#modal--show-modal-right" />
-                  </svg>
-                </label>
-                <div class="show-more__content">
-                  <ul class="modal-work__list modal-list">
-                    <li class="modal-list__item">В секции категории блюд с помощью javascript самостоятельно было реализовано переключение по табам (при нажатии на нужный пункт категории, произойдет показ выбранных блюд)</li>
-                    <li class="modal-list__item">Реализация слайдера в блоке главной секции сайта, используя javascript - плагин Swiper.js</li>
-                    <li class="modal-list__item">При скролле вниз навигационное меню отбрасывает тень (сделано через javascript) и остается всегда в видимости пользователя</li>
-                    <li class="modal-list__item">Добавлена затемненная подложка в слайдере и в двух карточках, следующих за ним, для лучшей читаемости текста</li>
-                  </ul>
-                  <p class="modal-work__description">Работая над данным проектом, были использованы следующие инструменты, технологии:</p>
-                  <ul class="modal-work__list modal-list">
-                    <li class="modal-list__item">Редактор кода: Visual Studio Code</li>
-                    <li class="modal-list__item">JavaScript</li>
-                    <li class="modal-list__item">Css / HTML</li>
-                    <li class="modal-list__item">Слайдер - Swiper.js</li>
-                    <li class="modal-list__item">Flex-box Layout</li>
-                    <li class="modal-list__item">Адаптивная верстка под смартфоны, планшеты и ноутбуки</li>
-                  </ul>
-                </div>
-              </div>
-              <ul class="modal-work__list modal-list">
-                <li class="modal-list__item">
-                  <a class="modal-list__link" href="https://dennymaverick.github.io/Delivery-Food/index.html" target="_blank"> Ccылка на проект </a>
-                </li>
-                <li class="modal-list__item">
-                  <a class="modal-list__link" href="https://github.com/DennyMaverick/Delivery-Food" target="_blank"> Ссылка на репозиторий GitHub </a>
-                </li>
-                <li class="modal-list__item">
-                  <a class="modal-list__link" href="https://www.figma.com/file/M1hG6MPR9PjhU7RunmOnkU/%D0%98%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%95%D0%B4%D0%B0-Design" target="_blank"> Ссылка на макет Figma </a>
-                </li>
-                <li class="modal-list__item">Время на работу ~ 7 ч</li>
-              </ul>
-            </div>
-            <!--modal-work__text -->
-            <div class="modal-work__footer">
-              <button class="modal-work__btn slickPrev modal-work__btn--text" type="button">Назад</button>
-              <button class="modal-work__btn modal-work__btn--text slickNext" type="button">Вперед</button>
-            </div>
-            <a href="#" class="modal-work__arrow-up up" title="Наверх">
-              <svg class="modal-work__arrow-up-pic">
-                <use xlink:href="./img/sprite/symbol/sprite.svg#arrows--arrow-up" />
-              </svg>
-            </a>
-          </div>
-          <!--modal-work__content -->
-        </div>
-        <!--modal-work -->
-      </div>
-      <!-- modal__dialog-->
-    </div>
-    <!-- modal -->
-    <div class="modal" id="modal_sea-products">
-      <div class="modal__dialog">
-        <div class="theme theme--modal theme--sticky">
-          <button class="switcher theme__btn theme__light" data-theme="light">
-            <svg class="theme__icon">
-              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--light-icon" />
-            </svg>
-          </button>
-          <button class="switcher theme__btn theme__dark" data-theme="dark">
-            <svg class="theme__icon">
-              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon" />
-            </svg>
-          </button>
-          <button class="theme__close-btn" type="button" data-close>
-            <svg class="theme__close">
-              <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
-            </svg>
-          </button>
-        </div>
-        <div class="modal__modal-work modal-work">
-          <div class="modal-work__preview">
-            <div class="modal-work__slider slider" data-slider="slick">
-              <div class="slider__item slider__slide">
-                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/sea-products/slide_1.jpg"></div>
-              </div>
-              <div class="slider__item slider__slide">
-                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/sea-products/slide_2.jpg"></div>
-              </div>
-              <div class="slider__item slider__slide">
-                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/sea-products/slide_3.jpg"></div>
-              </div>
-              <div class="slider__item slider__slide">
-                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/sea-products/slide_4.jpg"></div>
-              </div>
-            </div>
-          </div>
-          <div class="modal-work__content">
-            <div class="modal-work__header">
-              <h3 class="modal-work__title">Морепродукты из Норвегии</h3>
-              <div class="modal-work__info">
-                Лэндинги
-                <span class="modal-work__info-divider">|</span>
-                2021
-              </div>
-            </div>
-            <!-- modal-work__header -->
-            <div class="modal-work__client">
-              <div class="modal-work__client-title">Учебный проект:</div>
-              <div class="modal-work__client-company">Web-школа от 0 до 1</div>
-            </div>
-            <div class="modal-work__text">
-              <p class="modal-work__description">При работе над проектом был реализован следующий функционал:</p>
-              <div class="modal-work__show-info show-more">
-                <input type="checkbox" id="show-more_12" class="show-more__input" />
-                <label class="show-more__trigger" for="show-more_12">
-                  <span class="show-more__desc">Более подробно</span>
-                  <svg class="show-more__arrow">
-                    <use xlink:href="./img/sprite/symbol/sprite.svg#modal--show-modal-right" />
-                  </svg>
-                </label>
-                <div class="show-more__content">
-                  <ul class="modal-work__list modal-list">
-                    <li class="modal-list__item">На главной странице сайта и в секции ниже был использован jQuery - плагин Slider Slick.js. С его помощью на сайт были установлены слайдеры</li>
-                    <li class="modal-list__item">После главной секции использованы два дополняющих друг друга слайдера, связанных между собой с помощью свойства slick.js slider - asNavFor</li>
-                    <li class="modal-list__item">При смене окна на размер меньше 360 px в главной секции слайдер листается автоматически</li>
-                    <li class="modal-list__item">На мобильных устройствах и планшетах вместо меню отображается меню-бургер, кликнув на который плавно выезжает меню сверху, и также пропадает при повторном нажатии</li>
-                  </ul>
-                  <p class="modal-work__description">Работая над данным проектом, были использованы следующие инструменты, технологии:</p>
-                  <ul class="modal-work__list modal-list">
-                    <li class="modal-list__item">Редактор кода: Visual Studio Code</li>
-                    <li class="modal-list__item">JavaScript</li>
-                    <li class="modal-list__item">Css / HTML</li>
-                    <li class="modal-list__item">Слайдер - Slick</li>
-                    <li class="modal-list__item">Flex-box Layout</li>
-                    <li class="modal-list__item">Адаптивная верстка под смартфоны, планшеты и ноутбуки</li>
-                  </ul>
-                </div>
-              </div>
-              <ul class="modal-work__list modal-list">
-                <li class="modal-list__item">
-                  <a class="modal-list__link" href="https://dennymaverick.github.io/Sea_products/index.html" target="_blank"> Ccылка на проект </a>
-                </li>
-                <li class="modal-list__item">
-                  <a class="modal-list__link" href="https://github.com/DennyMaverick/Sea_products" target="_blank"> Ссылка на репозиторий GitHub </a>
-                </li>
-                <li class="modal-list__item">
-                  <a class="modal-list__link" href="https://www.figma.com/file/KarBy7Dmzmq4em3WoZxwC5/%D0%BC%D0%BE%D1%80%D0%B5%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D1%8B-Copy" target="_blank"> Ссылка на макет Figma </a>
-                </li>
-                <li class="modal-list__item">Время на работу ~ 15 ч</li>
               </ul>
             </div>
             <!--modal-work__text -->
