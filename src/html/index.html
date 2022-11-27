@@ -37,6 +37,7 @@
             <a class="mobile-nav__link lang-about-mobile" href="#about">Обо мне</a>
             <a class="mobile-nav__link lang-contacts-mobile" href="#contacts">Контакты</a>
             <a class="mobile-nav__link btn mobile-nav__link--btn lang-write-mobile" href="#" data-modal-open="#modal-hire-me"> Написать мне </a>
+            <a class="btn mobile-nav__link mobile-nav__link--btn hire-resume-btn lang-resume-mobile" href="#" data-modal-open="#modal-resume"> Резюме </a>
           </nav>
         </div>
         <div class="header__inner">
@@ -49,6 +50,7 @@
             <a class="nav__link lang-main" href="#home">Главная</a>
             <a class="nav__link lang-portfolio" href="#work">Мое портфолио</a>
             <a class="nav__link lang-about" href="#about">Обо мне</a>
+            <a class="nav__link lang-resume" href="#" data-modal-open="#modal-resume">Резюме</a>
             <a class="nav__link lang-contacts" href="#contacts">Контакты</a>
             <a class="nav__link btn nav__link--btn lang-write" href="#" data-modal-open="#modal-hire-me"> Написать мне </a>
           </nav>
@@ -104,14 +106,14 @@
     </section>
     <!-- Intro -->
     <section class="works" id="work">
-      <h2 class="vhidden">Работы портфолио</h2>
+      <h2 class="vhidden lang-hidden-works">Работы портфолио</h2>
       <div class="container">
         <nav class="works__nav">
-          <a href="#" class="works__nav-link" data-filter="all">Все проекты</a>
-          <a href="#" class="works__nav-link" data-filter="landing">Лэндинги</a>
-          <a href="#" class="works__nav-link" data-filter="site-visit"> Сайты-визитки </a>
-          <a href="#" class="works__nav-link" data-filter="promo">Промосайты</a>
-          <a href="#" class="works__nav-link" data-filter="interface"> Проекты с элементами интерфейса на JavaScript </a>
+          <a href="#" class="works__nav-link lang-all-projects" data-filter="all">Все проекты</a>
+          <a href="#" class="works__nav-link lang-landings" data-filter="landing">Лэндинги</a>
+          <a href="#" class="works__nav-link lang-sites-visits" data-filter="site-visit"> Сайты-визитки </a>
+          <a href="#" class="works__nav-link lang-promo" data-filter="promo">Промосайты</a>
+          <a href="#" class="works__nav-link lang-elements-of-javascript" data-filter="interface"> Проекты с элементами интерфейса на JavaScript </a>
         </nav>
         <div class="works__portfolio portfolio" id="portfolio">
           <!-- Добавление проекта в категорию "Лэндинги" -->
@@ -122,9 +124,9 @@
                 <img class="work__image lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/archee/main.png" alt="Project photo" />
               </div>
               <div class="work__content">
-                <p class="work__cat">Категория: Лэндинги</p>
+                <p class="work__cat lang-cat-landings">Категория: Лэндинги</p>
                 <h3 class="work__title">
-                  <span class="work__title--left">Archee</span>
+                  <span class="work__title--left lang-title-work-archi">Archee</span>
                   <time class="work__date" datetime="2021-10-21 11:45"> 2022 </time>
                 </h3>
               </div>
@@ -139,9 +141,9 @@
                 <img class="work__image lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/web-templates/main.png" alt="Project photo" />
               </div>
               <div class="work__content">
-                <p class="work__cat">Категория: Лэндинги</p>
+                <p class="work__cat lang-cat-landings">Категория: Лэндинги</p>
                 <h3 class="work__title">
-                  <span class="work__title--left">Портфолио Web-templates</span>
+                  <span class="work__title--left lang-title-work-web-templates">Портфолио Web-templates</span>
                   <time class="work__date" datetime="2022-06-28 12:35"> 2022 </time>
                 </h3>
               </div>
@@ -155,9 +157,9 @@
                 <img class="work__image lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/dream-on-wheels/main.png" alt="Project photo" />
               </div>
               <div class="work__content">
-                <p class="work__cat">Категория: Сайты-визитки</p>
+                <p class="work__cat lang-cat-visits">Категория: Сайты-визитки</p>
                 <h3 class="work__title">
-                  <span class="work__title--left">Dream On Wheels</span>
+                  <span class="work__title--left lang-title-work-dream-on-wheels">Dream On Wheels</span>
                   <time class="work__date" datetime="2022-06-30 15:07"> 2022 </time>
                 </h3>
               </div>
@@ -170,9 +172,9 @@
                 <img class="work__image lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/convert/3-moon.png" alt="Project photo" />
               </div>
               <div class="work__content">
-                <p class="work__cat">Категория: Проекты с элементами интерфейса на javaScript</p>
+                <p class="work__cat lang-cat-javascript-interface">Категория: Проекты с элементами интерфейса на javaScript</p>
                 <h3 class="work__title">
-                  <span class="work__title--left"> Конвертёр валют на JavaScript </span>
+                  <span class="work__title--left lang-title-work-converter"> Конвертёр валют на JavaScript </span>
                   <time class="work__date" datetime="2021-04-13 10:27"> 2021 </time>
                 </h3>
               </div>
@@ -186,9 +188,9 @@
                 <img class="work__image lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/oxygen/main.png" alt="Project photo" />
               </div>
               <div class="work__content">
-                <p class="work__cat">Категория: Лэндинги</p>
+                <p class="work__cat lang-cat-landings">Категория: Лэндинги</p>
                 <h3 class="work__title">
-                  <span class="work__title--left">Ген спорта</span>
+                  <span class="work__title--left lang-title-work-gen">Ген спорта</span>
                   <time class="work__date" datetime="2021-10-21 11:45"> 2021 </time>
                 </h3>
               </div>
@@ -202,9 +204,9 @@
                 <img class="work__image lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/olivia/main-pic.png" alt="Project photo" />
               </div>
               <div class="work__content">
-                <p class="work__cat">Категория: Лэндинги</p>
+                <p class="work__cat lang-cat-landings">Категория: Лэндинги</p>
                 <h3 class="work__title">
-                  <span class="work__title--left">Alivio</span>
+                  <span class="work__title--left lang-title-work-olivio">Alivio</span>
                   <time class="work__date" datetime="2021-11-01 15:55"> 2021 </time>
                 </h3>
               </div>
@@ -218,9 +220,9 @@
                 <img class="work__image lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/thrivetalk/main.png" alt="Project photo" />
               </div>
               <div class="work__content">
-                <p class="work__cat">Категория: Лэндинги</p>
+                <p class="work__cat lang-cat-landings">Категория: Лэндинги</p>
                 <h3 class="work__title">
-                  <span class="work__title--left">Thrivetalk</span>
+                  <span class="work__title--left lang-title-work-thrivetalk">Thrivetalk</span>
                   <time class="work__date" datetime="2021-04-13 10:27"> 2021 </time>
                 </h3>
               </div>
@@ -235,9 +237,9 @@
                 <img class="work__image work__image--venom lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/venom-2/venom.png" alt="Project photo" />
               </div>
               <div class="work__content">
-                <p class="work__cat">Категория: Промосайты</p>
+                <p class="work__cat lang-cat-promo">Категория: Промосайты</p>
                 <h3 class="work__title">
-                  <span class="work__title--left"> Промосайт фильма "Веном - 2" </span>
+                  <span class="work__title--left lang-title-work-venom"> Промосайт фильма "Веном - 2" </span>
                   <time class="work__date" datetime="2021-04-13 10:27"> 2021 </time>
                 </h3>
               </div>
@@ -251,9 +253,9 @@
                 <img class="work__image lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/calculator/main.png" alt="Project photo" />
               </div>
               <div class="work__content">
-                <p class="work__cat">Категория: Проекты с элементами интерфейса на javaScript</p>
+                <p class="work__cat lang-cat-javascript-interface">Категория: Проекты с элементами интерфейса на javaScript</p>
                 <h3 class="work__title">
-                  <span class="work__title--left"> Калькулятор стоимости ремонта на JavaScript </span>
+                  <span class="work__title--left lang-title-work-calc"> Калькулятор стоимости ремонта на JavaScript </span>
                   <time class="work__date" datetime="2021-10-18 14:01"> 2021 </time>
                 </h3>
               </div>
@@ -278,23 +280,23 @@
             <img class="about__image lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/about/photo.jpg" alt="Photo" />
           </div>
           <div class="about__content">
-            <h3 class="about__title">Обо мне</h3>
-            <h2 class="about__bigtitle">Кто я</h2>
+            <h3 class="about__title lang-title-about">Обо мне</h3>
+            <h2 class="about__bigtitle lang-subtitle-about">Кто я</h2>
             <div class="about__text">
-              <p class="about__text-part">Доброго времени суток, меня зовут Денис, и я занимаюсь WEB-разработкой. Создание сайтов — то, что нравится и приносит мне удовольствие.</p>
-              <p class="about__text-part">Как известно — всё постигается благодаря опыту. И чем больше имеешь инструментов для достижения целей, тем легче и быстрее эти цели выполняются.</p>
-              <p class="about__text-part">И чтобы построить сайт, нужно уметь пользоваться теми инструментами (не обязательно всеми доступными), которые необходимы для конкретной задачи.</p>
-              <p class="about__text-part">На данный момент я с уверенностью хочу сказать, что web-разработка — это составляющая моей жизни. И все инструменты, которыми я владею сейчас, позволяют без больших сложностей разрабатывать лэндинги — одностраничные сайты.</p>
-              <p class="about__text-part">
-                И если Вам нужен сайт, нажмите на кнопку ниже и оставьте мне сообщение удобным для Вас способом или воспользуйтесь
-                <a href="#contacts" id="aboutLinkSocial" class="about__link"> социальными сетями. </a>
-                Спасибо за внимание.
-              </p>
-              <p class="about__text-part">С любовью к WEB-разработке, Денис.</p>
+              <p class="about__text-part lang-about-begin">Доброго времени суток, меня зовут Денис, и я занимаюсь WEB-разработкой. Создание сайтов — то, что нравится и приносит мне удовольствие.</p>
+              <p class="about__text-part lang-about-part-two">Как известно — всё постигается благодаря опыту. И чем больше имеешь инструментов для достижения целей, тем легче и быстрее эти цели выполняются.</p>
+              <p class="about__text-part lang-about-part-three">И чтобы построить сайт, нужно уметь пользоваться теми инструментами (не обязательно всеми доступными), которые необходимы для конкретной задачи.</p>
+              <p class="about__text-part lang-about-part-four">На данный момент я с уверенностью хочу сказать, что web-разработка — это составляющая моей жизни. И все инструменты, которыми я владею сейчас, позволяют без больших сложностей разрабатывать лэндинги — одностраничные сайты.</p>
+              <span class="about__text-part lang-about-part-five">
+                И если Вам нужен сайт, нажмите на кнопку ниже и оставьте мне сообщение удобным для Вас способом или воспользуйтесь</span>
+                <a href="#contacts" id="aboutLinkSocial" class="about__link lang-about-social"> социальными сетями. </a>
+                <span class="lang-thanks-for-attention">Спасибо за внимание.
+              </span>
+              <p class="about__text-part lang-about-farewell">С любовью к WEB-разработке, Денис.</p>
             </div>
             <!-- about__text-->
-            <a class="btn about__btn" href="#" data-modal-open="#modal-hire-me"> Написать мне </a>
-            <button class="btn about__btn hire-resume-btn" type="button" data-modal-open="#modal-resume">Резюме</button>
+            <a class="btn about__btn lang-about-write-btn" href="#" data-modal-open="#modal-hire-me"> Написать мне </a>
+            <button class="btn about__btn hire-resume-btn lang-about-resume-btn" type="button" data-modal-open="#modal-resume">Резюме</button>
           </div>
           <!-- about__content-->
         </div>
@@ -334,14 +336,14 @@
         <!--footer__credits-->
         <nav class="footer__nav">
           <div class="footer__menu">
-            <a class="footer__nav-link" href="#home">Главная</a>
-            <a class="footer__nav-link" href="#work">Мое портфолио</a>
-            <a class="footer__nav-link" href="#about">Обо мне</a>
-            <a class="footer__nav-link" href="#" data-modal-open="#modal-hire-me"> Контакты </a>
+            <a class="footer__nav-link lang-footer-main" href="#home">Главная</a>
+            <a class="footer__nav-link lang-footer-portfolio" href="#work">Мое портфолио</a>
+            <a class="footer__nav-link lang-footer-about" href="#about">Обо мне</a>
+            <a class="footer__nav-link lang-footer-contacts" href="#" data-modal-open="#modal-hire-me"> Контакты </a>
           </div>
           <div class="footer__nav-btns">
-            <a class="footer__nav-link footer__nav-btn hire-resume-btn" href="#" data-modal-open="#modal-resume"> Резюме </a>
-            <a class="footer__nav-link footer__nav-btn" href="#" data-modal-open="#modal-hire-me"> Написать мне </a>
+            <a class="footer__nav-link footer__nav-btn hire-resume-btn lang-footer-resume" href="#" data-modal-open="#modal-resume"> Резюме </a>
+            <a class="footer__nav-link footer__nav-btn lang-footer-write" href="#" data-modal-open="#modal-hire-me"> Написать мне </a>
           </div>
         </nav>
         <!--footer__inner-->

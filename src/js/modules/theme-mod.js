@@ -24,6 +24,12 @@ const themes = {
       dark: "mobile-nav__link--dark",
     },
   },
+  ".mobile-nav__link-resume": {
+    theme: {
+      light: "mobile-nav__link-resume--light",
+      dark: "mobile-nav__link-resume--dark",
+    },
+  },
 
   //* === Nav ===
 

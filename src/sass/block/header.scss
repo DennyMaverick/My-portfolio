@@ -28,9 +28,10 @@
     padding-bottom: 1rem;
   }
   &__mobile-modal {
+    overflow: auto;
     opacity: 0;
     transform: translateX(-2000px);
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
