@@ -151,8 +151,8 @@ const langs = {
     en: "Who Am I",
   },
   "about-begin": {
-    ru: "Привет, меня зовут Денис, и я занимаюсь WEB-разработкой. Создание сайтов — то, что нравится и приносит мне удовольствие.",
-    en: "Hello, my name is Denis, and I do web-developing. I like to create sites. It gives me pleasure.",
+    ru: "Добрый час, меня зовут Денис, и я занимаюсь WEB-разработкой. Создание сайтов — то, что нравится и приносит мне удовольствие.",
+    en: "Good hour, my name is Denis, and I do web-developing. I like to create sites. It gives me pleasure.",
   },
   "about-part-two": {
     ru: "Как известно — всё постигается благодаря опыту. И чем больше имеешь инструментов для достижения целей, тем легче и быстрее эти цели выполняются.",
@@ -400,10 +400,6 @@ const langs = {
     ru: "Данный курс был пройден за 1 месяц, где я узнал о новых подходах в WEB-разработке, а также разобрался в основах HTML и CSS.",
     en: "This course was completed in 1 month, where I learned about new approaches in WEB development, and also understood the basics of HTML and CSS.",
   },
-  "sertificate-js-title": {
-    ru: "Данный курс был пройден за 1 месяц, где я узнал о новых подходах в WEB-разработке, а также разобрался в основах HTML и CSS.",
-    en: "This course was completed in 1 month, where I learned about new approaches in WEB development, and also understood the basics of HTML and CSS.",
-  },
   "sertificate-js-desc": {
     ru: "Данный курс я прошел за 4 дня, узнав основы Javascript и jQuery.",
     en: "I completed this course in 4 days, learning the basics of Javascript and jQuery.",
@@ -460,6 +456,39 @@ const langs = {
     ru: "Распечатать резюме",
     en: "Print resume",
   },
+  // Modal window HIRE ME
+  "modal-griding-title": {
+    ru: "Здравствуйте!",
+    en: "Good hour!",
+  },
+  "griding-desc": {
+    ru: "Вы можете написать мне на почту или отправить сообщение через форму ниже, и я отвечу в ближайшее время. Также вы можете связаться со мной через социальные сети.",
+    en: "You can email me or send a message using the form below, and I will respond as soon as possible. Also you can keep in touch with me in social networks.",
+  },
+  "modal-hire-me-name": {
+    ru: "Ваше имя",
+    en: "Your name",
+  },
+  "modal-hire-me-e-mail": {
+    ru: "Адрес Вашей электронной почты",
+    en: "Address of your e-mail",
+  },
+  "hire-me-btn": {
+    ru: "Отправить",
+    en: "Send",
+  },
+  "hire-me-your-message": {
+    ru: "Ваше сообшение",
+    en: "Your message",
+  },
+  "hire-me-vk": {
+    ru: "ВКонтакте",
+    en: "VKontakte",
+  },
+  "hire-me-telegram": {
+    ru: "Телеграм",
+    en: "Telegram",
+  },
 }
 
 const titles = {
@@ -472,6 +501,30 @@ const titles = {
     en: "My page vk",
   },
   "github-intro": {
+    ru: "Мой GitHub",
+    en: "My GitHub",
+  },
+  "telegram-footer": {
+    ru: "Мой телеграм",
+    en: "My telegram",
+  },
+  "vk-footer": {
+    ru: "Моя страница вконтакте",
+    en: "My page vk",
+  },
+  "github-footer": {
+    ru: "Мой GitHub",
+    en: "My GitHub",
+  },
+  "telegram-popup": {
+    ru: "Мой телеграм",
+    en: "My telegram",
+  },
+  "vk-popup": {
+    ru: "Моя страница вконтакте",
+    en: "My page vk",
+  },
+  "github-popup": {
     ru: "Мой GitHub",
     en: "My GitHub",
   },
@@ -498,28 +551,20 @@ const repeatElems = {
 
 // ====== Секция Search / placeholders
 
-// const placeholders = {
-//   location: {
-//     ru: "Местоположение",
-//     en: "Location",
-//   },
-//   type: {
-//     ru: "Тип",
-//     en: "Type",
-//   },
-//   budget: {
-//     ru: "Бюджет",
-//     en: "Budget",
-//   },
-//   "modal-search-phone": {
-//     ru: "Введите номер телефона",
-//     en: "Insert your phone number",
-//   },
-//   "modal-contact-phone": {
-//     ru: "Введите номер телефона",
-//     en: "Insert your phone number",
-//   },
-// }
+const placeholders = {
+  name: {
+    ru: "Напишите Ваше имя",
+    en: "Write your name",
+  },
+  "e-mail": {
+    ru: "Напишите Ваш e-mail",
+    en: "Write your e-mail",
+  },
+  message: {
+    ru: "Напишите здесь Ваше сообщение...",
+    en: "Write here your message...",
+  },
+}
 
 const langListItems = document.querySelectorAll(".lang-tool__item")
 // Массив всех доступных языков
@@ -584,12 +629,12 @@ function changeLang() {
     }
   }
   // Для плейсхолдеров
-  // for (let key in placeholders) {
-  //   let elemPlaceholder = document.querySelector(".lang-placeholder-" + key)
-  //   if (elemPlaceholder && placeholders[key][hash]) {
-  //     elemPlaceholder.placeholder = placeholders[key][hash]
-  //   }
-  // }
+  for (let key in placeholders) {
+    let elemPlaceholder = document.querySelector(".lang-placeholder-" + key)
+    if (elemPlaceholder && placeholders[key][hash]) {
+      elemPlaceholder.placeholder = placeholders[key][hash]
+    }
+  }
 
   for (let key in repeatElems) {
     let elems = document.querySelectorAll(".lang-" + key)

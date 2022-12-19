@@ -117,6 +117,9 @@
         font-size: 1.7rem;
       }
     }
+    &--form {
+      max-width: 70%;
+    }
     &--resume {
       max-width: 100%;
     }
@@ -132,6 +135,7 @@
     }
   }
   &__subtitle {
+    line-height: 1.4;
     font-size: 1.06rem;
     font-weight: 400;
     transition: color .3s ease-in;

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google" value="notranslate" />
     <title class="lang-title">Денис, web-разработчик</title>
     <link rel="icon" href="./img/favicon/favicon.svg" />
     <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
@@ -166,7 +167,7 @@
             </div>
           </div>
           <!-- .portfolio__col -->
-                    <div class="portfolio__col portfolio__show" data-cat="interface">
+          <div class="portfolio__col portfolio__show" data-cat="interface">
             <div class="portfolio__work work">
               <div class="work__box-img work--overlay work--bg-convert" data-modal="#modal_convert" data-work>
                 <img class="work__image lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/convert/3-moon.png" alt="Project photo" />
@@ -220,7 +221,7 @@
                 <img class="work__image lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/thrivetalk/main.png" alt="Project photo" />
               </div>
               <div class="work__content">
-                  <p class="work__cat lang-cat-landings">Категория: Лэндинги</p>
+                <p class="work__cat lang-cat-landings">Категория: Лэндинги</p>
                 <h3 class="work__title">
                   <span class="work__title--left lang-title-work-thrivetalk">Thrivetalk</span>
                   <time class="work__date" datetime="2021-04-13 10:27"> 2021 </time>
@@ -287,11 +288,28 @@
               <p class="about__text-part lang-about-part-two">Как известно — всё постигается благодаря опыту. И чем больше имеешь инструментов для достижения целей, тем легче и быстрее эти цели выполняются.</p>
               <p class="about__text-part lang-about-part-three">И чтобы построить сайт, нужно уметь пользоваться теми инструментами (не обязательно всеми доступными), которые необходимы для конкретной задачи.</p>
               <p class="about__text-part lang-about-part-four">На данный момент я с уверенностью хочу сказать, что web-разработка — это составляющая моей жизни. И все инструменты, которыми я владею сейчас, позволяют без больших сложностей разрабатывать лэндинги — одностраничные сайты.</p>
-              <span class="about__text-part lang-about-part-five">
-                И если Вам нужен сайт, нажмите на кнопку ниже и оставьте мне сообщение удобным для Вас способом или воспользуйтесь</span>
-                <a href="#contacts" id="aboutLinkSocial" class="about__link lang-about-social"> социальными сетями. </a>
-                <span class="lang-thanks-for-attention">Спасибо за внимание.
+              <span class="about__text-part lang-about-part-five"> И если Вам нужен сайт, нажмите на кнопку ниже и оставьте мне сообщение удобным для Вас способом или воспользуйтесь</span>
+              <span id="aboutLinkSocial" class="about__link">
+                <span class="lang-about-social">социальными сетями.</span>
+                <span class="about__link--popup vhidden" id="social-popup">
+                  <a class="about__social-link lang-telegram-popup" href="https://t.me/Denny_maverick" target="_blank" title="Мой телеграм">
+                  <svg class="about__social-image social--telegram">
+                    <use xlink:href="./img/sprite/symbol/sprite.svg#socials--telegram" />
+                  </svg>
+                  </a>
+                  <a class="about__social-link lang-vk-popup" href="https://vk.com/maverick177" target="_blank" title="Моя страница vkontakte">
+                  <svg class="about__social-image social--vk">
+                    <use xlink:href="./img/sprite/symbol/sprite.svg#socials--vk" />
+                  </svg>
+                  </a>
+                  <a class="about__social-link lang-github-popup" href="https://github.com/DennyMaverick" target="_blank" title="Мой GitHub">
+                  <svg class="about__social-image social--github">
+                    <use xlink:href="./img/sprite/symbol/sprite.svg#socials--github" />
+                  </svg>
+                  </a>
+                </span>
               </span>
+              <span class="lang-thanks-for-attention">Спасибо за внимание. </span>
               <p class="about__text-part lang-about-farewell">С любовью к WEB-разработке, Денис.</p>
             </div>
             <!-- about__text-->
@@ -310,22 +328,21 @@
           <p class="footer__copyright">&copy; 2021 - 2022 weblandingsforyou.ru</p>
           <div class="footer__social">
             <a
-              class="footer__social-link"
+              class="footer__social-link lang-telegram-footer"
               href="https://t.me/Denny_maverick"
               target="_blank"
-              title="Мой
-                  телеграм"
+              title="Мой телеграм"
             >
               <svg class="footer__social-image social--telegram">
                 <use xlink:href="./img/sprite/symbol/sprite.svg#socials--telegram" />
               </svg>
             </a>
-            <a class="footer__social-link" href="https://vk.com/maverick177" target="_blank" title="Моя страница vkontakte">
+            <a class="footer__social-link lang-vk-footer" href="https://vk.com/maverick177" target="_blank" title="Моя страница vkontakte">
               <svg class="footer__social-image social--vk">
                 <use xlink:href="./img/sprite/symbol/sprite.svg#socials--vk" />
               </svg>
             </a>
-            <a class="footer__social-link" href="https://github.com/DennyMaverick" target="_blank" title="Мой GitHub">
+            <a class="footer__social-link lang-github-footer" href="https://github.com/DennyMaverick" target="_blank" title="Мой GitHub">
               <svg class="footer__social-image social--github">
                 <use xlink:href="./img/sprite/symbol/sprite.svg#socials--github" />
               </svg>
@@ -576,7 +593,7 @@
                     <img class="timeline__img lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/resume/image__3.jpg" alt="resume sertificate" />
                   </a>
                 </div>
-                <h5 class="timeline__subtitle lang-sertificate-js-title">JavaScript / jQuery</h5>
+                <h5 class="timeline__subtitle">JavaScript / jQuery</h5>
                 <p class="timeline__text lang-sertificate-js-desc">Данный курс я прошел за 4 дня, узнав основы Javascript и jQuery.</p>
               </div>
               <!--progress-bar -->
@@ -643,8 +660,8 @@
         </div>
         <div class="modal__contact contact">
           <div class="contact__left">
-            <h3 class="modal__title modal__title--form mb-0">Здравствуйте</h3>
-            <h4 class="modal__subtitle">Вы можете написать мне на почту или отправить сообщение через форму ниже, и я отвечу в ближайшее время.</h4>
+            <h3 class="modal__title modal__title--form lang-modal-griding-title mb-0">Здравствуйте</h3>
+            <h4 class="modal__subtitle lang-griding-desc">Вы можете написать мне на почту или отправить сообщение через форму ниже, и я отвечу в ближайшее время.</h4>
             <ul class="contact__info">
               <!-- Phone -->
               <!-- <li class="contact__info-item">
@@ -652,10 +669,28 @@
                 8921_____37
               </li> -->
               <li class="contact__info-item">
-                <svg class="contact__info-icon" width="15" height="15">
-                  <use xlink:href="./img/sprite/symbol/sprite.svg#modal--mail" />
-                </svg>
-                <a class="contact__info-link" href="mailto:den_maverick177@mail.ru"> den_maverick177@mail.ru </a>
+                <a class="contact__info-link" href="mailto:den_maverick177@mail.ru">
+                  <svg class="contact__info-icon" width="15" height="15">
+                    <use xlink:href="./img/sprite/symbol/sprite.svg#modal--mail" />
+                  </svg>
+                  den_maverick177@mail.ru
+                </a>
+              </li>
+              <li class="contact__info-item">
+                <a class="contact__info-link" href="https://www.vk.com/maverick177">
+                  <svg class="contact__info-icon" width="15" height="15">
+                    <use xlink:href="./img/sprite/symbol/sprite.svg#socials--vk" />
+                  </svg>
+                  <span class="lang-hire-me-vk">ВКонтакте</span>
+                </a>
+              </li>
+              <li class="contact__info-item">
+                <a class="contact__info-link" href="https://t.me/Denny_maverick">
+                  <svg class="contact__info-icon" width="15" height="15">
+                    <use xlink:href="./img/sprite/symbol/sprite.svg#socials--telegram" />
+                  </svg>
+                  <span class="lang-hire-me-telegram">Телеграм</span>
+                </a>
               </li>
             </ul>
             <form class="modal__form form" action="php/mail.php" method="POST">
@@ -668,19 +703,19 @@
               <input type="hidden" name="form_subject" value="Письмо с сайта-портфолио" />
               <!-- END Hidden Required Fields -->
               <div class="form__group">
-                <label for="input-name" class="form__label">Ваше имя</label>
-                <input name="Имя" type="text" class="form__input" placeholder="Напишите Ваше имя" id="input-name" required />
+                <label for="input-name" class="form__label lang-modal-hire-me-name">Ваше имя</label>
+                <input name="Имя" type="text" class="form__input lang-placeholder-name" placeholder="Напишите Ваше имя" id="input-name" required />
               </div>
               <div class="form__group">
-                <label for="input-email" class="form__label"> Адрес Вашей электронной почты </label>
-                <input name="E-mail" type="email" class="form__input" placeholder="Напишите Ваш e-mail" id="input-email" required />
+                <label for="input-email" class="form__label lang-modal-hire-me-e-mail"> Адрес Вашей электронной почты </label>
+                <input name="E-mail" type="email" class="form__input lang-placeholder-e-mail" placeholder="Напишите Ваш e-mail" id="input-email" required />
               </div>
               <div class="form__group">
-                <label for="input-text" class="form__label"> Ваше сообшение </label>
-                <textarea class="form__textarea" name="Сообщение" id="input-text" placeholder="Напишите здесь Ваше сообщение" required></textarea>
+                <label for="input-text" class="form__label lang-hire-me-your-message"> Ваше сообшение </label>
+                <textarea class="form__textarea lang-placeholder-message" name="Сообщение" id="input-text" placeholder="Напишите здесь Ваше сообщение" required></textarea>
               </div>
               <div class="text-right">
-                <button class="btn" type="submit">Отправить</button>
+                <button class="btn lang-hire-me-btn" type="submit">Отправить</button>
               </div>
             </form>
           </div>

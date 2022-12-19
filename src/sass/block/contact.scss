@@ -39,14 +39,13 @@
   }
 
   &__info-item {
-    display: flex;
-    align-items: center;
     margin-bottom: 0.75rem;
     &:last-child {
       margin-bottom: 0;
     }
   }
   &__info-icon {
+    margin-bottom: -2px;
     margin-right: 0.75rem;
     transition: fill .3s ease-in;
     &--light {

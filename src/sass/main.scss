@@ -91,6 +91,7 @@ button {
 
 // Визуальное скрытие элементов
 .vhidden {
+  transition: all .3s ease-in;
   position: absolute;
   width: 1px;
   height: 1px;

@@ -178,6 +178,18 @@ const themes = {
       dark: "about__image-box--dark",
     },
   },
+  ".about .social--github": {
+    theme: {
+      light: "social--github-light",
+      dark: "social--github-dark",
+    },
+  },
+  ".about__link--popup": {
+    theme: {
+      light: "about__link--popup-light",
+      dark: "about__link--popup-dark",
+    },
+  },
 
   //* === Footer ===
 

@@ -2,7 +2,7 @@
   margin-top: -5px;
   padding: 0 0 5rem;
   padding-top: 5rem;
-  transition: background-color .3s ease-in;
+  transition: background-color 0.3s ease-in;
   &--light {
     background-color: $white;
   }
@@ -44,7 +44,7 @@
 
     font-weight: 700;
     text-transform: uppercase;
-    transition: color .3s ease-in;
+    transition: color 0.3s ease-in;
     &--light {
       color: $black;
     }
@@ -62,10 +62,10 @@
     @include font(6.1rem, 6.71rem);
     font-weight: 700;
     text-transform: uppercase;
-    transition: color .3s ease-in;
+    transition: color 0.3s ease-in;
     &--light {
       // opacity 35%
-      color: transparentize($black, .65);
+      color: transparentize($black, 0.65);
     }
     &--dark {
       color: transparentize($white, 0.65);
@@ -78,7 +78,7 @@
     margin-bottom: 2.8rem;
     @include font(1rem, 1.8rem);
     font-weight: 300;
-    transition: color .3s ease-in;
+    transition: color 0.3s ease-in;
     &--light {
       color: $grey;
     }
@@ -95,10 +95,10 @@
     position: relative;
     margin-top: 109px;
     &--light {
-      background: url('../img/preload/white-theme-loader.gif') center no-repeat;
+      background: url("../img/preload/white-theme-loader.gif") center no-repeat;
     }
     &--dark {
-      background: url('../../img/preload/dark-theme-loader.gif') center no-repeat;
+      background: url("../../img/preload/dark-theme-loader.gif") center no-repeat;
     }
     @include bp-desk(tablet) {
       padding-bottom: 66.6%;
@@ -131,9 +131,81 @@
     }
   }
   &__link {
+    cursor: pointer;
     color: $orange;
+    transition: color 0.2s ease-in;
+    position: relative;
     &:hover {
-      text-decoration: underline;
+      color: $grey;
+    }
+    @include bp-desk(mobile) {
+      &:hover {
+      color: $orange;
+    }
+    }
+    &--popup {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      border-radius: 10px;
+      position: absolute;
+      width: 93px;
+      height: 35px;
+      left: 0;
+      top: -40px;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 15px;
+        bottom: -9px;
+        width: 0;
+        height: 0;
+        border: 5px solid $white;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+      }
+      &-light {
+        background-color: $black;
+        &::before {
+          border-top-color: $black;
+        }
+      }
+      &-dark {
+        background-color: $white;
+        &::before {
+          border-top-color: $white;
+        }
+      }
+      .social {
+        &--github {
+          &-light {
+            fill: $white;
+          }
+        }
+        &--github {
+          &-dark {
+            fill: $black;
+          }
+        }
+      }
+    }
+  }
+  &__social-image {
+    width: 20px;
+    height: 20px;
+    transform: translateY(0);
+    transition: transform 0.4s ease-in, fill 0.4s ease-in;
+    &:hover {
+      transform: translateY(-0.3rem);
+      opacity: 0.8;
+    }
+  }
+  &__social-link {
+    width: 20px;
+    height: 20px;
+    &:hover {
+      text-decoration: none;
     }
   }
 }
