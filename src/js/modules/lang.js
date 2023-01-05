@@ -489,6 +489,55 @@ const langs = {
     ru: "Телеграм",
     en: "Telegram",
   },
+  // Modal window Archee
+  "archee-title": {
+    ru: "Проект Арчи",
+    en: "Archee Project",
+  },
+  "archee-subtitle": {
+    ru: "Проект с марафона по верстке:",
+    en: "Project from the layout marathon",
+  },
+  "archee-type": {
+    ru: "Лэндинги",
+    en: "Landings",
+  },
+  "archee-desc-one": {
+    ru: "Проект был создан в рамках марафона по верстке от CodeQuest. Марафон длился 5 недель.",
+    en: "The project was created as part of the CodeQuest layout marathon. The marathon lasted 5 weeks.",
+  },
+  "archee-desc-two": {
+    ru: "Целью марафона была практика, использование новых подходов в web-разработке, а также улучшить навыки в gulp, scss и методологии BEM-naming.",
+    en: "The goal of the marathon was to practice, use new approaches in web development, as well as improve skills in gulp, scss and BEM-naming methodology.",
+  },
+  "archee-desc-three": {
+    ru: "На марафоне проводились онлайн-встречи, где мы обсуждали блоки кода, что нужно было сверстать. К следующей живой трансляции наставник объяснял непонятные моменты, после этого вносились некоторые правки в проект, чтобы его улучшить, сохраняя при этом свои варианты наработок.",
+    en: "Online meetings were held at the marathon, where we discussed the blocks of code that needed to be made up. By the next live broadcast, the mentor explained incomprehensible moments, after that some edits were made to the project in order to improve it, while maintaining their own versions of developments.",
+  },
+  "archee-desc-four": {
+    ru: "Таким образом марафон был успешно пройден, где я получил новый опыт работы, используя современные подходы при разработке сайтов.",
+    en: "Thus, the marathon was successfully completed, where I gained new work experience using modern approaches in website development.",
+  },
+  "archee-desc-five": {
+    ru: "В проекте используется компонентный подход: scss разбит на отдельные блоки, что позволяет лучше ориентироваться в коде, модифицировать его и поддерживать в дальнейшем.",
+    en: "The project uses a component approach: scss is divided into separate blocks, which allows you to better navigate the code, modify it and maintain it in the future.",
+  },
+  "archee-desc-six": {
+    ru: "Для удобства используются миксины в scss. Это отдельные мини-функции, позволяющие сокращать код и работать быстрее.",
+    en: "Mixins in scss are used for convenience. These are separate mini-functions that allow you to shorten the code and work faster.",
+  },
+  "archee-desc-seven": {
+    ru: "Работая над данным проектом, были использованы следующие инструменты, технологии и плагины:",
+    en: "Working on this project, the following tools, technologies and plugins were used:",
+  },
+  "archee-time": {
+    ru: "Время на работу ~ 20 ч",
+    en: "Time to work ~ 20 hours",
+  },
+  "link-to-the-git-archee": {
+    ru: "Ссылка на репозиторий GitHub / более подробное описание проекта",
+    en: "Link to the GitHub repository / more detailed description of the project",
+  },
 }
 
 const titles = {
@@ -530,6 +579,13 @@ const titles = {
   },
 }
 
+const repeatTitles = {
+  up: {
+    ru: "Наверх",
+    en: "Up",
+  },
+}
+
 const repeatElems = {
   "cat-landings": {
     ru: "Категория: Лэндинги",
@@ -546,6 +602,62 @@ const repeatElems = {
   "cat-promo": {
     ru: "Категория: Промосайты",
     en: "Category: Promo-sites",
+  },
+  "more-button": {
+    ru: "Более подробно",
+    en: "More details",
+  },
+  "scss-tool": {
+    ru: "Препроцессор SCSS",
+    en: "Preprocessor SCSS",
+  },
+  "gulp-tool": {
+    ru: "Менеджер проектов gulp",
+    en: "Gulp Project Manager",
+  },
+  "git-tool": {
+    ru: "Гит & ГитХаб",
+    en: "Git & GitHub",
+  },
+  "pixel-perfect-tool": {
+    ru: "Плагин Chrome Pixel Perfec",
+    en: "Chrome Pixel Perfect Plugin",
+  },
+  "swiper-tool": {
+    ru: "Слайдер Swiper.js",
+    en: "Slider Swiper.js",
+  },
+  "favicon-tool": {
+    ru: "Фавикон",
+    en: "Favicon",
+  },
+  "code-editor-tool": {
+    ru: "Редактор кода Visual Studio Code",
+    en: "Visual Studio Code Editor",
+  },
+  "plugins-tool": {
+    ru: "Плагины Visual Studio Code: Emmet, Live Server, Path AutoComplete, AutoClose Tag и др.",
+    en: "Visual Studio Code plugins: Emmet, Live Server, Path AutoComplete, AutoClose Tag, etc.",
+  },
+  "adaptive-tool": {
+    ru: "Адаптирование сайта под все экраны устройств",
+    en: "Adapting the site to all device screens",
+  },
+  "link-to-the-project": {
+    ru: "Ccылка на проект",
+    en: "Link to the project",
+  },
+  "link-to-the-maket-figma": {
+    ru: "Ссылка на макет Figma",
+    en: "Link to the Figma layout",
+  },
+  "back-button": {
+    ru: "Назад",
+    en: "Back",
+  },
+  "next-button": {
+    ru: "Вперед",
+    en: "Next",
   },
 }
 
@@ -627,6 +739,16 @@ function changeLang() {
     if (elem && titles[key][hash]) {
       elem.title = titles[key][hash]
     }
+  }
+  // перевод всплывающих текстовых подсказок при наводе на ссылки / повторяющиеся элементы
+  for (let key in repeatTitles) {
+    // получение элементов в html, которые нужно перевести
+    let elems = document.querySelectorAll(".lang-" + key)
+    elems.forEach(function (elem) {
+      if (elem && repeatTitles[key][hash]) {
+        elem.title = repeatTitles[key][hash]
+      }
+    })
   }
   // Для плейсхолдеров
   for (let key in placeholders) {
