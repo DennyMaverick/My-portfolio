@@ -27,7 +27,7 @@ const server = () => {
     server: {
       baseDir: path.root,
     },
-    browser: "chrome",
+    browser: "Google Chrome",
     notify: false,
   })
 }

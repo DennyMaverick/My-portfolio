@@ -88,22 +88,7 @@ const langs = {
     ru: "Все проекты",
     en: "All projects",
   },
-  landings: {
-    ru: "Лэндинги",
-    en: "Landings",
-  },
-  "sites-visits": {
-    ru: "Сайты-визитки",
-    en: "Sites - visit cards",
-  },
-  promo: {
-    ru: "Промосайты",
-    en: "Promo-sites",
-  },
-  "elements-of-javascript": {
-    ru: "Проекты с элементами интерфейса на JavaScript",
-    en: "Projects with elements of an interface on JavaScript",
-  },
+
   // ==== work titles
   "title-work-archi": {
     ru: "Арчи",
@@ -364,10 +349,7 @@ const langs = {
     ru: "Опыт работы с Figma и Photoshop",
     en: "Experience with Figma and Photoshop",
   },
-  "sprites-title": {
-    ru: "Использование SVG-спрайтов",
-    en: "Using SVG Sprites",
-  },
+
   "pixel-perfect-title": {
     ru: "Применение Pixel Perfect на практике",
     en: "Applying Pixel Perfect in practice",
@@ -418,7 +400,7 @@ const langs = {
   },
   "graduation-from-school-desc": {
     ru: "Школу я закончил на 4 и 5, что считаю одним из моих достижений.",
-    en: "I graduated from school at 4 and 5, which I consider one of my achievements.",
+    en: "I graduated from school with 4 and 5, that I consider one of my achievements.",
   },
   "graduation-from-university-title": {
     ru: "Окончание университета",
@@ -538,6 +520,161 @@ const langs = {
     ru: "Ссылка на репозиторий GitHub / более подробное описание проекта",
     en: "Link to the GitHub repository / more detailed description of the project",
   },
+
+  // Modal window Web-templates
+  "web-templates-title": {
+    ru: "Портфолио Web-templates",
+    en: "Portfolio Web-templates",
+  },
+  "type-web-templates": {
+    ru: "Лэндинги",
+    en: "Landings",
+  },
+  "client-title-web-templates": {
+    ru: "Личный сайт:",
+    en: "Personal site:",
+  },
+  "web-templates-desc-two": {
+    ru: "Функция переключения темы (две цветовых схемы: светлая и темная)",
+    en: "Theme switching function(two color schemes: light and dark)",
+  },
+  "web-templates-desc-three": {
+    ru: "Плавная смена цвета при переключении слайдов в проекте Theme's Switcher",
+    en: "Smooth color change when switching slides in a project Theme's Switcher",
+  },
+  "web-templates-desc-four": {
+    ru: "При наведении на иконку луны (солнца) появляется всплывающее окно-подсказка с выбором темы",
+    en: "When you hover over the moon (sun) icon, a pop-up window appears with a choice of theme",
+  },
+  "web-templates-desc-five": {
+    ru: "Дизайн карточек проектов был самостоятельно реализован в программе Photoshop",
+    en: "The design of project cards was independently implemented in Photoshop",
+  },
+  "more-info": {
+    ru: "Наиболее подробную информацию о проекте вы сможете найти в файле Readme.md перейдя по",
+    en: "You can find the most detailed information about the project in the Readme.md file by clicking on",
+  },
+  "time-web-templates": {
+    ru: "Время на работу ~ 20 ч",
+    en: "Time to work ~ 20 h",
+  },
+
+  // Modal window Dream On Wheels
+
+  "title-dream-on-wheels": {
+    ru: "Мечта на колесах",
+    en: "Dream On Wheels",
+  },
+  "dream-on-wheels-type": {
+    ru: "Сайты-визитки",
+    en: "Visit-sites",
+  },
+
+  "dream-on-wheels-desc-one": {
+    ru: "Проект 'Мечта на колесах' или 'Dream On Wheels' был создан в учебных целях, чтобы закрепить навыки работы с gulp и препроцессором LESS.",
+    en: "The 'Dream On Wheels' project was created for educational purposes to reinforce the skills of working with gulp and the LESS preprocessor.",
+  },
+  "dream-on-wheels-desc-two": {
+    ru: "Проект был сначала создан, используя более упрощенную структуру, работа с препроцессором осуществлялась через стороннюю программу - компилятор WinLess. Далее проект был полностью переделан, используя gulp. Работая над данным проектом, были использованы следующие инструменты, технологии:",
+    en: "The project was first created using a more simplified structure, work with the preprocessor was carried out through a third-party program - the WinLess compiler. Next, the project was completely redone using gulp. Working on this project, the following tools and technologies were used:",
+  },
+  "time-dream-on-wheels": {
+    ru: "Время на работу ~ 26 ч",
+    en: "Time to work ~ 26 h",
+  },
+
+  // Currency Converter
+  "currency-converter-title": {
+    ru: "Конвертёр валют на JavaScript",
+    en: "Currency converter in JavaScript",
+  },
+  "currency-converter-type": {
+    ru: "Проекты с элементами интерфейса на javaScript",
+    en: "Projects with interface elements in javaScript",
+  },
+  "client-currency-converter": {
+    ru: "Web-школа WebCademy",
+    en: "Web-school WebCademy",
+  },
+  "converter-desc-one": {
+    ru: "Возможность видеть текущий курс доллара, евро и фунта стерлинга",
+    en: "Ability to see the exchange rate of the dollar, euro and pound sterling",
+  },
+  "converter-desc-two": {
+    ru: "Если после обновления курса валют одна из валют снизилась в цене, курс отображается зеленым, иначе - красным",
+    en: "If, after updating the exchange rate, one of the currencies has decreased in price, the rate is displayed in green, otherwise - in red",
+  },
+  "converter-desc-three": {
+    ru: "Возможность узнавать курс рубля в долларах, евро и фунтах стерлинга (достаточно ввести значение рубля в соответствующее текстовое поле и выбрать, в какую валюту нужно конвертировать) относительно текущего курса валют",
+    en: "The ability to find out the ruble exchange rate in dollars, euros and pounds sterling (just enter the ruble value in the corresponding text field and choose which currency to convert into) relative to the current exchange rate",
+  },
+  "converter-desc-four": {
+    ru: "В проект добавлен переключатель тем используя светлую, темную и лунную цветовые схемы",
+    en: "A theme switcher has been added to the project using light, dark and moon color schemes",
+  },
+  "converter-desc-five": {
+    ru: "Также добавлен переключатель языков на русский и английский",
+    en: "Also the language switcher has been added to the project for Russian and English",
+  },
+  "time-converter": {
+    ru: "Время на работу ~ 18 ч",
+    en: "Time to work ~ 18 ч",
+  },
+
+  // Oxygen
+
+  "client-oxygen": {
+    ru: "Web-школа От 0 до 1",
+    en: "Web-school from 0 to 1",
+  },
+  "oxygen-desc-one": {
+    ru: "Работа над проектом имела цель попрактиковаться в методологии BEM-naming. Каркас страницы был создан под руководством наставника. Весь Css и JavaScript был написан мной самостоятельно.",
+    en: "The work on the project was aimed at practicing the BEM-naming methodology. The page skeleton was created under the guidance of a mentor. All Css and JavaScript was written by myself",
+  },
+  "oxygen-desc-two": {
+    ru: "При наводе на элемент навигации, появляется плавное подчеркивание. Через JavaScript реализовано так, чтобы при наведении на любую из ссылок меню, все подчеркивания убирались, а у нужной это подчеркивание оставалось, а при отводе мыши, подчеркивание оставалось у самой первой ссылки",
+    en: "When hovering over a navigation element, a smooth underline appears. Through JavaScript, it is implemented so that when you hover over any of the menu links, all the underlines are removed, while the necessary one has this underline, and when the mouse is released, the underline remains at the very first link",
+  },
+  "oxygen-desc-three": {
+    ru: "При наведении (отведении) мыши на логотип происходит эффект смены цвета у заголовка и подзаголовка главного экрана лэндинга (также происходит при клике на иконку мышки или при клике на сам заголовок)",
+    en: "When you hover (move) the mouse over the logo, the effect of changing the color of the title and subtitle of the landing main screen occurs (also happens when you click on the mouse icon or when you click on the title itself)",
+  },
+  "oxygen-desc-four": {
+    ru: "При скролле вниз реализовано через JavaScript, чтобы меню всегда отображалось сверху, добавляя к блоку навигации тень и меняя цвет фона",
+    en: "When scrolling down, to always display the menu on top, adding a shadow to the navigation block and changing the background color",
+  },
+  "oxygen-desc-five": {
+    ru: "При наведении на заголовки второго уровня у них появляется плавное подчеркивание. Также реализовано, что если текст будет располагаться в несколько строк, подчеркивание отображалось корректно",
+    en: "When you hover over the headings of the second level, they have a smooth underline. It is also implemented that if the text is located in several lines, the underline was displayed correctly",
+  },
+  "oxygen-desc-six": {
+    ru: "Когда экран устройства достигает определенной ширины, происходит замена меню навигации главного экрана на меню - бургер (для этого используется JavaScript)",
+    en: "When the device screen reaches a certain width, the main screen navigation menu is replaced with a burger menu (JavaScript is used for this)",
+  },
+  "oxygen-desc-seven": {
+    ru: "При клике на меню-бургер высвечивается модальное окно с меню на всю область экрана (кликая на нужный пункт навигации в нем, окно закрывается и происходит плавный переход к контенту), также при клике на крестик, модальное окно закрывается",
+    en: "When you click on the burger menu, a modal window is displayed with a menu for the entire screen area (by clicking on the desired navigation item in it, the window closes and there is a smooth transition to the content), and when you click on the cross, the modal window closes",
+  },
+  "oxygen-desc-eight": {
+    ru: "При сужении окна блок портфолио, состоящий из грид-элементов, превращается в слайдер (slick slider), реализовано с помощью медиа-запросов (переключение слайдов осуществляется через свайп)",
+    en: "When narrowing the window, the portfolio block, consisting of grid elements, turns into a slider (slick slider), implemented using media queries (slides are switched via a swipe)",
+  },
+  "oxygen-desc-nine": {
+    ru: "При клике на 'Play' в блоке видео, происходит проигрывание ролика. При этом добавляются элементы управления и скрывается иконка 'Play'",
+    en: "When you click on 'Play' in the video block, the video will play. This adds controls and hides the 'Play' icon",
+  },
+  "oxygen-desc-ten": {
+    ru: "Ниже блока видео реализован адаптивный слайдер, полностью сделанный на JavaScript(на экранах для смартфонов стрелки навигации пропадают, переключение слайдов происходит через точки, на экранах планшетов и компьютеров переключение слайдов осуществляется через стрелки)",
+    en: "Below the video block, an adaptive slider is implemented, completely made in JavaScript (on screens for smartphones, the navigation arrows disappear, the slides switch through dots, on the screens of tablets and computers, the slides switch through the arrows)",
+  },
+  "oxygen-desc-eleven": {
+    ru: "В блоке Pricing отображается желтым цветом стандартный тариф, при наведении или при клике (на экранах смартфонов) на другие карточки происходит плавный выбор нужной карточки, при этом через JavaScript происходит удаление класса active у всех карточек и добавление этого класса выбранной",
+    en: "In the Pricing block, the standard tariff is displayed in yellow, when you hover or click (on smartphone screens) on other cards, the desired card is smoothly selected, while using JavaScript, the active class is removed from all cards and this class is added to the selected one.",
+  },
+  "time-oxygen": {
+    ru: "Время на работу ~ 20.5 ч",
+    en: "Time to work ~ 20.5 h",
+  },
 }
 
 const titles = {
@@ -587,6 +724,46 @@ const repeatTitles = {
 }
 
 const repeatElems = {
+  "next-functional": {
+    ru: "При работе над проектом был реализован следующий функционал:",
+    en: "During the work on the project, the following functionality was implemented:",
+  },
+  "client-title-learn-project": {
+    ru: "Учебный проект:",
+    en: "Learn project",
+  },
+  "technologies-desc": {
+    ru: "Работая над данным проектом, были использованы следующие инструменты, технологии:",
+    en: "Working on this project, the following tools, technologies were used:",
+  },
+  "more-info-can-be-found": {
+    ru: "Наиболее подробная информация об этом проекте находится",
+    en: "More information about this project can be found",
+  },
+  "this-link": {
+    ru: "этой ссылке",
+    en: "this link",
+  },
+  here: {
+    ru: "здесь",
+    en: "here",
+  },
+  landings: {
+    ru: "Лэндинги",
+    en: "Landings",
+  },
+  "sites-visits": {
+    ru: "Сайты-визитки",
+    en: "Sites - visit cards",
+  },
+  promo: {
+    ru: "Промосайты",
+    en: "Promo-sites",
+  },
+  "elements-of-javascript": {
+    ru: "Проекты с элементами интерфейса на JavaScript",
+    en: "Projects with elements of an interface on JavaScript",
+  },
   "cat-landings": {
     ru: "Категория: Лэндинги",
     en: "Category: Lendings",
@@ -610,6 +787,18 @@ const repeatElems = {
   "scss-tool": {
     ru: "Препроцессор SCSS",
     en: "Preprocessor SCSS",
+  },
+  "sprites-title": {
+    ru: "Использование SVG-спрайтов",
+    en: "Using SVG Sprites",
+  },
+  "svg-sprite-tool": {
+    ru: "Используется SVG-спрайт, чтобы обеспечить лучшую скорость загрузки сайта, отправляя меньше запросов на сервер",
+    en: "Uses SVG sprite to provide better site loading speed by sending fewer requests to the server",
+  },
+  "jquery-slider": {
+    ru: "JQuery (слайдер slick.js)",
+    en: "JQuery (slider slick.js)",
   },
   "gulp-tool": {
     ru: "Менеджер проектов gulp",
@@ -643,6 +832,54 @@ const repeatElems = {
     ru: "Адаптирование сайта под все экраны устройств",
     en: "Adapting the site to all device screens",
   },
+  "design-improve": {
+    ru: "Дизайн сайта был полностью переделан. После этого сайт стал живым и ярким",
+    en: "The website design has been completely redesigned. After that, the site became alive and bright",
+  },
+  "content-created": {
+    ru: "Весь контент, включая текст для сайта был придуман самостоятельно",
+    en: "All content, including the text for the site, was invented independently",
+  },
+  "plugins-desc": {
+    ru: "Работая с gulp были использованы следующие плагины:",
+    en: "The following plugins have been used while working with gulp:",
+  },
+  "svg-sprite-description": {
+    ru: "gulp-svg-sprite - плагин для работы с svg-спрайтами",
+    en: "gulp-svg-sprite - plugin for working with svg sprites",
+  },
+  "gulp-plumber": {
+    ru: "gulp-plumber - плагин для обработки ошибок",
+    en: "gulp-plumber - error handling plugin",
+  },
+  "gulp-sourcemaps": {
+    ru: "gulp-sourcemaps - плагин для навигации в коде в режиме разработки",
+    en: "gulp-sourcemaps - plugin for code navigation in development mode",
+  },
+  "gulp-imagemin": {
+    ru: "gulp-imagemin - плагин для минификации изображений",
+    en: "gulp-imagemin - image minification plugin",
+  },
+  "gulp-babel": {
+    ru: "gulp-babel- плагин для перевода JavaScript-скриптов в код, который станет поддерживаться устаревшими браузерами, тем самым повышая кроссбраузерность",
+    en: "gulp-babel - plugin for translating JavaScript scripts into code that will be supported by legacy browsers, thereby increasing cross-browser compatibility",
+  },
+  "gulp-strips-comments": {
+    ru: "gulp-strips-comments - плагин для удаления лишних комментариев, использовался в задаче при подключении сторонних библиотек и в отдельной задаче, подключающей JQuery",
+    en: "gulp-strips-comments - plugin for removing unnecessary comments, used in the task when connecting third-party libraries and in a separate task connecting JQuery",
+  },
+  "gulp-uglify": {
+    ru: "gulp-uglify - плагин, помогающий минифицировать JavaScript-код",
+    en: "gulp-uglify - plugin to help minify JavaScript code",
+  },
+  "gulp-less": {
+    ru: "gulp-less - плагин для компиляции LESS в CSS",
+    en: "gulp-less - plugin for compiling LESS to CSS",
+  },
+  "gulp-webpack": {
+    ru: "webpack, webpack-stream - npm-пакеты для работы с webpack в gulp, были включены в проект для использования модулей в JavaScript",
+    en: "webpack, webpack-stream - npm packages for working with webpack in gulp, have been included in the project for using modules in JavaScript",
+  },
   "link-to-the-project": {
     ru: "Ccылка на проект",
     en: "Link to the project",
@@ -650,6 +887,10 @@ const repeatElems = {
   "link-to-the-maket-figma": {
     ru: "Ссылка на макет Figma",
     en: "Link to the Figma layout",
+  },
+  "link-to-the-git": {
+    ru: "Ссылка на репозиторий GitHub",
+    en: "Link to the repositoriy GitHub",
   },
   "back-button": {
     ru: "Назад",

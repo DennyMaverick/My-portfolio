@@ -24,8 +24,15 @@
         color: $modal-list-marker-color-dark;
       }
     }
+    &--more-info {
+      color: $important-info;
+      text-shadow: $grey-light 6px -2px 13px;
+      font-weight: 700;
+    }
   }
   &__link {
+    margin-left: 1em;
+    text-decoration: none;
     &:hover {
       text-decoration: underline;
     }
