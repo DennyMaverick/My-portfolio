@@ -31,7 +31,13 @@
     }
   }
   &__link {
-    margin-left: 1em;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__this-link {
+    margin-left: 1rem;
     text-decoration: none;
     &:hover {
       text-decoration: underline;

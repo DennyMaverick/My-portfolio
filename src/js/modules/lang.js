@@ -478,11 +478,7 @@ const langs = {
   },
   "archee-subtitle": {
     ru: "Проект с марафона по верстке:",
-    en: "Project from the layout marathon",
-  },
-  "archee-type": {
-    ru: "Лэндинги",
-    en: "Landings",
+    en: "Project from the layout marathon:",
   },
   "archee-desc-one": {
     ru: "Проект был создан в рамках марафона по верстке от CodeQuest. Марафон длился 5 недель.",
@@ -508,10 +504,6 @@ const langs = {
     ru: "Для удобства используются миксины в scss. Это отдельные мини-функции, позволяющие сокращать код и работать быстрее.",
     en: "Mixins in scss are used for convenience. These are separate mini-functions that allow you to shorten the code and work faster.",
   },
-  "archee-desc-seven": {
-    ru: "Работая над данным проектом, были использованы следующие инструменты, технологии и плагины:",
-    en: "Working on this project, the following tools, technologies and plugins were used:",
-  },
   "archee-time": {
     ru: "Время на работу ~ 20 ч",
     en: "Time to work ~ 20 hours",
@@ -525,10 +517,6 @@ const langs = {
   "web-templates-title": {
     ru: "Портфолио Web-templates",
     en: "Portfolio Web-templates",
-  },
-  "type-web-templates": {
-    ru: "Лэндинги",
-    en: "Landings",
   },
   "client-title-web-templates": {
     ru: "Личный сайт:",
@@ -592,10 +580,6 @@ const langs = {
     ru: "Проекты с элементами интерфейса на javaScript",
     en: "Projects with interface elements in javaScript",
   },
-  "client-currency-converter": {
-    ru: "Web-школа WebCademy",
-    en: "Web-school WebCademy",
-  },
   "converter-desc-one": {
     ru: "Возможность видеть текущий курс доллара, евро и фунта стерлинга",
     en: "Ability to see the exchange rate of the dollar, euro and pound sterling",
@@ -647,10 +631,6 @@ const langs = {
     ru: "При наведении на заголовки второго уровня у них появляется плавное подчеркивание. Также реализовано, что если текст будет располагаться в несколько строк, подчеркивание отображалось корректно",
     en: "When you hover over the headings of the second level, they have a smooth underline. It is also implemented that if the text is located in several lines, the underline was displayed correctly",
   },
-  "oxygen-desc-six": {
-    ru: "Когда экран устройства достигает определенной ширины, происходит замена меню навигации главного экрана на меню - бургер (для этого используется JavaScript)",
-    en: "When the device screen reaches a certain width, the main screen navigation menu is replaced with a burger menu (JavaScript is used for this)",
-  },
   "oxygen-desc-seven": {
     ru: "При клике на меню-бургер высвечивается модальное окно с меню на всю область экрана (кликая на нужный пункт навигации в нем, окно закрывается и происходит плавный переход к контенту), также при клике на крестик, модальное окно закрывается",
     en: "When you click on the burger menu, a modal window is displayed with a menu for the entire screen area (by clicking on the desired navigation item in it, the window closes and there is a smooth transition to the content), and when you click on the cross, the modal window closes",
@@ -674,6 +654,19 @@ const langs = {
   "time-oxygen": {
     ru: "Время на работу ~ 20.5 ч",
     en: "Time to work ~ 20.5 h",
+  },
+  // Olivia
+  "olivia-desc-one": {
+    ru: "При скролле вниз навигационное меню отбрасывает тень (сделано через javascript) и остается всегда в видимости пользователя",
+    en: "When scrolling down, the navigation menu casts a shadow (done via javascript) and remains always visible to the user",
+  },
+  "olivia-desc-two": {
+    ru: "В секции с видео при нажатии на 'Play' кнопка 'Play' превращается в кнопку 'Pause', видео воспроизводится, а при наведении курсора у видео появляется затемняющая подложка, при отведении она пропадает",
+    en: "In the video section, when you click on the 'Play' button, the 'Play' button turns into the 'Pause' button, the video is played, and when you hover over the video, a dimming background appears, when it is removed, it disappears",
+  },
+  "time-olivia-to-work": {
+    ru: "Время на работу ~ 8.5 ч",
+    en: "Time to work ~ 8.5 h",
   },
 }
 
@@ -730,11 +723,15 @@ const repeatElems = {
   },
   "client-title-learn-project": {
     ru: "Учебный проект:",
-    en: "Learn project",
+    en: "Learn project:",
   },
   "technologies-desc": {
     ru: "Работая над данным проектом, были использованы следующие инструменты, технологии:",
     en: "Working on this project, the following tools, technologies were used:",
+  },
+  "client-WebCademy": {
+    ru: "Web-школа WebCademy",
+    en: "Web-school WebCademy",
   },
   "more-info-can-be-found": {
     ru: "Наиболее подробная информация об этом проекте находится",
@@ -784,6 +781,10 @@ const repeatElems = {
     ru: "Более подробно",
     en: "More details",
   },
+  "scroll-smooth-function": {
+    ru: "Реализована плавная прокрутка через javascript",
+    en: "The smooth scrolling is implemented  via javascript",
+  },
   "scss-tool": {
     ru: "Препроцессор SCSS",
     en: "Preprocessor SCSS",
@@ -829,8 +830,12 @@ const repeatElems = {
     en: "Visual Studio Code plugins: Emmet, Live Server, Path AutoComplete, AutoClose Tag, etc.",
   },
   "adaptive-tool": {
-    ru: "Адаптирование сайта под все экраны устройств",
+    ru: "Адаптирование сайта под смартфоны, планшеты и ноутбуки",
     en: "Adapting the site to all device screens",
+  },
+  "burger-function": {
+    ru: "Когда экран устройства достигает определенной ширины, происходит замена меню навигации главного экрана на меню - бургер (для этого используется JavaScript)",
+    en: "When the device screen reaches a certain width, the main screen navigation menu is replaced with a burger menu (JavaScript is used for this)",
   },
   "design-improve": {
     ru: "Дизайн сайта был полностью переделан. После этого сайт стал живым и ярким",
