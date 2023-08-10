@@ -118,10 +118,6 @@ const langs = {
     ru: "Процветание",
     en: "Thrivetalk",
   },
-  "title-work-venom": {
-    ru: "Промосайт фильма Веном - 2",
-    en: "Promo-site of the film Venom - 2",
-  },
   "title-work-calc": {
     ru: "Калькулятор стоимости ремонта на JavaScript",
     en: "Calculator of the repairing cost on JavaScript",
@@ -697,6 +693,11 @@ const langs = {
     ru: "Время на работу ~ 23 ч",
     en: "Time to work ~ 23 h",
   },
+  // Venom 2
+  "venom-time-to-work": {
+    ru: "Время на работу ~ 25 ч",
+    en: "Time to work ~ 25 h",
+  },
 }
 
 const titles = {
@@ -761,6 +762,10 @@ const repeatElems = {
   "client-WebCademy": {
     ru: "Web-школа WebCademy",
     en: "Web-school WebCademy",
+  },
+  "client-GloAcademy": {
+    ru: "Web-школа Glo Academy",
+    en: "Web-school Glo Academy",
   },
   "more-info-can-be-found": {
     ru: "Наиболее подробная информация об этом проекте находится",
@@ -866,6 +871,10 @@ const repeatElems = {
     ru: "Плагины Visual Studio Code: Emmet, Live Server, Path AutoComplete, AutoClose Tag и др.",
     en: "Visual Studio Code plugins: Emmet, Live Server, Path AutoComplete, AutoClose Tag, etc.",
   },
+  "fancy-box": {
+    ru: "Подключение всплывающего окна для отображения видео, используя jQuery-библиотеку FancyBox",
+    en: "Connecting a popup window to display a video using the FancyBox jQuery library",
+  },
   "adaptive-tool": {
     ru: "Адаптирование сайта под смартфоны, планшеты и ноутбуки",
     en: "Adapting the site to all device screens",
@@ -945,6 +954,10 @@ const repeatElems = {
   "next-button": {
     ru: "Вперед",
     en: "Next",
+  },
+  "title-work-venom": {
+    ru: "Промосайт фильма Веном - 2",
+    en: "Promo-site of the film Venom - 2",
   },
 }
 

@@ -463,6 +463,12 @@ const themes = {
       dark: "lang-tool--dark",
     },
   },
+  ".modal-list__item--more-info": {
+    theme: {
+      light: "modal-list__item--more-info-light",
+      dark: "modal-list__item--more-info-dark",
+    },
+  },
 }
 
 function themeSwitch(theme) {

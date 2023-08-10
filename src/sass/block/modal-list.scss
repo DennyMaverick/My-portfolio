@@ -25,9 +25,13 @@
       }
     }
     &--more-info {
-      color: $important-info;
-      text-shadow: $grey-light 6px -2px 13px;
       font-weight: 700;
+      &-dark {
+        color: $white;
+      }
+      &-light {
+        color: $important-info;
+      }
     }
   }
   &__link {
