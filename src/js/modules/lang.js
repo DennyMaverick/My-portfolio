@@ -668,6 +668,35 @@ const langs = {
     ru: "Время на работу ~ 8.5 ч",
     en: "Time to work ~ 8.5 h",
   },
+  // Thrivetalk
+  "client-thrivetalk-title": {
+    ru: "Сайт Thrivetalk",
+    en: "The site Thrivetalk",
+  },
+  "thrivetalk-desc-one": {
+    ru: "При сужении окна браузера появляется бургер-иконка, при клике на которую появляется мобильное меню навигации и overlay, запрещается scroll",
+    en: "When narrowing the browser window, a burger icon appears, when clicked, a mobile navigation menu and overlay appear, scroll is prohibited",
+  },
+  "thrivetalk-desc-two": {
+    ru: "При появлении мобильного меню навигации добавляется возможность закрыть это меню, кликнув на крестик или кликнув вне мобильного меню (при этом кликая на само меню, окно не закрывается)",
+    en: "When the mobile navigation menu appears, the ability to close this menu by clicking on the cross or clicking outside the mobile menu is added (while clicking on the menu itself, the window does not close)",
+  },
+  "thrivetalk-desc-three": {
+    ru: "При открытии мобильного окна навигации, меняя размер окна в большую сторону, мобильное меню закрывается и появляется стандартное меню (поэтому при переключении ориентации экрана из портретной в ландшафтную, например, у планшета, меню примет более удобный вид)",
+    en: "When a mobile navigation window is opening, changing the size of the window to a large side, the mobile menu closes and the standard menu appears (therefore, when switching the screen orientation from portrait to landscape, for example, on a tablet, the menu will take on a more convenient look)",
+  },
+  "thrivetalk-desc-four": {
+    ru: "Сайт защищен от переполнения контентом, при увеличении контента в блоках, все отображается корректно",
+    en: "The site is protected from content overflow, when content is increasing in blocks, everything is displayed correctly",
+  },
+  "thrivetalk-sublime-text-plugins": {
+    ru: "Плагины Sublime Text 3: Emmet, LiveReload, AutoFileName и другие",
+    en: "Sublime Text 3 plugins: Emmet, LiveReload, AutoFileName and more",
+  },
+  "thrivetalk-time-to-work": {
+    ru: "Время на работу ~ 23 ч",
+    en: "Time to work ~ 23 h",
+  },
 }
 
 const titles = {
@@ -789,6 +818,10 @@ const repeatElems = {
     ru: "Препроцессор SCSS",
     en: "Preprocessor SCSS",
   },
+  "less-tool": {
+    ru: "Препроцессор LESS",
+    en: "Preprocessor LESS",
+  },
   "sprites-title": {
     ru: "Использование SVG-спрайтов",
     en: "Using SVG Sprites",
@@ -825,6 +858,10 @@ const repeatElems = {
     ru: "Редактор кода Visual Studio Code",
     en: "Visual Studio Code Editor",
   },
+  "code-editor-tool-second": {
+    ru: "Редактор кода Sumlime Text 3",
+    en: "Sumlime Text 3 Code Editor",
+  },
   "plugins-tool": {
     ru: "Плагины Visual Studio Code: Emmet, Live Server, Path AutoComplete, AutoClose Tag и др.",
     en: "Visual Studio Code plugins: Emmet, Live Server, Path AutoComplete, AutoClose Tag, etc.",
@@ -832,6 +869,10 @@ const repeatElems = {
   "adaptive-tool": {
     ru: "Адаптирование сайта под смартфоны, планшеты и ноутбуки",
     en: "Adapting the site to all device screens",
+  },
+  "desktop-first-method": {
+    ru: "При адаптировании сайта под другие устройства использовался метод Desktop First (сначала был сделан сайт под ПК, а затем под планшеты и мобильные устройства)",
+    en: "When the site was adapting for other devices, the Desktop First method was used (first the site was made for a PC, and then for tablets and mobile devices)",
   },
   "burger-function": {
     ru: "Когда экран устройства достигает определенной ширины, происходит замена меню навигации главного экрана на меню - бургер (для этого используется JavaScript)",
