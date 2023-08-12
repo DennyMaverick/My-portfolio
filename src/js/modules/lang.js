@@ -698,6 +698,44 @@ const langs = {
     ru: "Время на работу ~ 25 ч",
     en: "Time to work ~ 25 h",
   },
+  // Калькулятор стоимости ремонта
+  "calculator-title": {
+    ru: "Калькулятор стоимости ремонта на JavaScript",
+    en: "Calculator of rapairing cost in Javascript",
+  },
+  "calc-desc-one": {
+    ru: "Возможность выбирать площадь квартиры, требуемой для ремонта, с помощью ползунка или стрелочек(около значения площади, щелкнув в текстовое поле), зная исходное значение цены за 1 квадратный метр - 6000 рублей. После этого произойдет автоматический расчет стоимости ремонта, исходя из следующих параметров:",
+    en: "Possibility to choose the area of ​​the apartment required for repair using the slider or arrows (near the area value by clicking in the text field), knowing the initial price value for 1 square meter - 6000 rubles. After that, the repair cost will be automatically calculated based on the following parameters:",
+  },
+  "calc-desc-two": {
+    ru: "Тип ремонта (косметический, капитальный или под ключ), выбрав один из пунктов, произойдет расчет ремонта соответственно: без увеличения цены, + 30% к стоимости ремонта и + 50% к стоимости ремонта",
+    en: "Type of repair (cosmetic, major or turnkey), by selecting one of the items, the repair will be calculated accordingly: without price increase, + 30% to the repair cost and + 50% to the repair cost",
+  },
+  "calc-desc-three": {
+    ru: "Тип дома (новострой или вторичка), выбрав один из пунктов, произойдет расчет ремонта соответственно: без изменения цены, + 10% к стоимости ремонта",
+    en: "Type of house (new building or resale), by selecting one of the items, the repair will be calculated accordingly: without changing the price, + 10% to the repair cost",
+  },
+  "calc-desc-four": {
+    ru: "Дополнительные опции (натяжные потолки, покраска стен, теплый пол), выбрав один из пунктов, произойдет расчет ремонта следующим образом: + 900 рублей за каждый квадратный метр при выборе опции 'Натяжные потолки', + 10% к стоимости при выборе опции 'Покраска стен' и + 10% к стоимости ремонта при выборе опции 'Теплый пол'",
+    en: "Additional options (stretch ceilings, wall painting, warm floors), by selecting one of the items, the repair will be calculated as follows: + 900 rubles per square meter if you select the 'Stretch ceilings' option, + 10% to the cost if you select the 'Painting walls' option ' and + 10% to the cost of repairs when choosing the option 'Heated floor'",
+  },
+  "calc-desc-five": {
+    ru: "Количество комнат (С, 1, 2, 3, 4 или 5, где С - это более экономичный вариант ремонта комнат), выбрав один из пунктов, произойдет следующий расчет ремонта: C (-20% от стоимости ремонта), от 1 до 2 комнат (без изменения цены), от 3 до 5 (+ 5% к стоимости ремонта)",
+    en: "Number of rooms (C, 1, 2, 3, 4 or 5, where C is a more economical option for refurbishing rooms), selecting one of the items, the following repair calculation will occur: C (-20% of the repair cost), from 1 to 2 rooms (without price change), from 3 to 5 (+ 5% to the repair cost)",
+  },
+  "calc-time-to-work": {
+    ru: "Время на работу ~ 7 ч",
+    en: "Time to work ~ 7 h",
+  },
+  // ссылка о персональных данных
+  "personal-data-text": {
+    ru: "Нажимая кнопку 'Отправить', вы даете согласие на обработку персональных данных в соответствии с ФЗ о персональных данных",
+    en: "By clicking the 'Send' button, you consent to the processing of personal data in accordance with the Federal Law on Personal Data",
+  },
+  "person-data-error-popup-text": {
+    ru: "Пожалуйста подтвердите согласие на обработку персональных данных",
+    en: "Please confirm your consent to the processing of personal data",
+  },
 }
 
 const titles = {
@@ -743,6 +781,13 @@ const repeatTitles = {
   up: {
     ru: "Наверх",
     en: "Up",
+  },
+}
+
+const afterElements = {
+  open: {
+    ru: "Открыть",
+    en: " Open",
   },
 }
 
@@ -1040,6 +1085,7 @@ function changeLang() {
       elem.title = titles[key][hash]
     }
   }
+
   // перевод всплывающих текстовых подсказок при наводе на ссылки / повторяющиеся элементы
   for (let key in repeatTitles) {
     // получение элементов в html, которые нужно перевести

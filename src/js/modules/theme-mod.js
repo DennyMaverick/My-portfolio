@@ -469,6 +469,24 @@ const themes = {
       dark: "modal-list__item--more-info-dark",
     },
   },
+  ".person-data__link": {
+    theme: {
+      light: "person-data__link--light",
+      dark: "person-data__link--dark",
+    },
+  },
+  ".person-data__custom-checkbox": {
+    theme: {
+      light: "person-data__custom-checkbox--light",
+      dark: "person-data__custom-checkbox--dark",
+    },
+  },
+  ".person-data__error-popup--active": {
+    theme: {
+      light: "person-data__error-popup--active-light",
+      dark: "person-data__error-popup--active-dark",
+    },
+  },
 }
 
 function themeSwitch(theme) {
@@ -512,3 +530,12 @@ if (activeTheme === null) {
 } else {
   themeSwitch(activeTheme)
 }
+
+
+
+
+
+
+
+
+

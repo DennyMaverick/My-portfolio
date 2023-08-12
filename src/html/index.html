@@ -709,8 +709,18 @@
                 <label for="input-text" class="form__label lang-hire-me-your-message"> Ваше сообшение </label>
                 <textarea class="form__textarea lang-placeholder-message" name="Сообщение" id="input-text" placeholder="Напишите здесь Ваше сообщение" required></textarea>
               </div>
+              <div class="form__personal-data person-data">
+                <label class="person-data__box">
+                  <input class="person-data__input person-data__real-checkbox" type="checkbox" name="checkbox" required>
+                  <span class="person-data__custom-checkbox"></span>
+                  <div class="person-data__error-popup lang-person-data-error-popup-text" id="error-popup">
+                    Пожалуйста подтвердите согласие на обработку персональных данных
+                  </div>
+                  <a class="person-data__link lang-personal-data-text" href="https://drive.google.com/file/d/0BzpiIBsGLoCOZTMxZWU3M2QtNTc2ZS00OWRmLTk0ZGEtYmNkODE1ZGMwNjhj/view?resourcekey=0-IGML3h2PFesxJpqK5gkp5Q" target="_blank">Нажав на кнопку 'Отправить', вы даете согласие на обработку персональных данных в соответствии с ФЗ о персональных данных</a>
+                </label>
+              </div>
               <div class="text-right">
-                <button class="btn lang-hire-me-btn" type="submit">Отправить</button>
+                <button id="submit-btn" class="btn lang-hire-me-btn" type="submit">Отправить</button>
               </div>
             </form>
           </div>
@@ -1107,39 +1117,40 @@
           </div>
           <div class="modal-work__content">
             <div class="modal-work__header">
-              <h3 class="modal-work__title">Калькулятор стоимости ремонта на JavaScript</h3>
+              <h3 class="modal-work__title lang-calculator-title">Калькулятор стоимости ремонта на JavaScript</h3>
               <div class="modal-work__info">
-                Проекты с элементами интерфейса на javaScript
+                <span class="lang-elements-of-javascript">Проекты с элементами интерфейса на javaScript</span>
                 <span class="modal-work__info-divider">|</span>
                 2021
               </div>
             </div>
             <!-- modal-work__header -->
             <div class="modal-work__client">
-              <div class="modal-work__client-title">Учебный проект:</div>
-              <div class="modal-work__client-company">Web-школа WebCademy</div>
+              <div class="modal-work__client-title lang-client-title-learn-project">Учебный проект:</div>
+              <div class="modal-work__client-company lang-client-WebCademy">Web-школа WebCademy</div>
             </div>
             <div class="modal-work__text">
-              <p class="modal-work__description">При работе над проектом был реализован следующий функционал:</p>
+              <p class="modal-work__description lang-next-functional">При работе над проектом был реализован следующий функционал:</p>
               <div class="modal-work__show-info show-more">
                 <input type="checkbox" id="show-more_6" class="show-more__input" />
                 <label class="show-more__trigger" for="show-more_6">
-                  <span class="show-more__desc">Более подробно</span>
+                  <span class="show-more__desc lang-more-button">Более подробно</span>
                   <svg class="show-more__arrow">
                     <use xlink:href="./img/sprite/symbol/sprite.svg#modal--show-modal-right" />
                   </svg>
                 </label>
                 <div class="show-more__content">
-                  <p class="modal-work__description">Возможность выбирать площадь квартиры, требуемой для ремонта, с помощью ползунка или стрелочек(около значения площади, щелкнув в текстовое поле), зная исходное значение цены за 1 квадратный метр - 6000 рублей. После этого произойдет автоматический расчет стоимости ремонта, исходя из следующих параметров:</p>
+                  <p class="modal-work__description lang-calc-desc-one">Возможность выбирать площадь квартиры, требуемой для ремонта, с помощью ползунка или стрелочек(около значения площади, щелкнув в текстовое поле), зная исходное значение цены за 1 квадратный метр - 6000 рублей. После этого произойдет автоматический расчет стоимости ремонта, исходя из следующих параметров:</p>
                   <ul class="modal-work__list modal-list">
-                    <li class="modal-list__item">Тип ремонта (косметический, капитальный или под ключ), выбрав один из пунктов, произойдет расчет ремонта соответственно: без увеличения цены, + 30% к стоимости ремонта и + 50% к стоимости ремонта</li>
-                    <li class="modal-list__item">Тип дома (новострой или вторичка), выбрав один из пунктов, произойдет расчет ремонта соответственно: без изменения цены, + 10% к стоимости ремонта</li>
-                    <li class="modal-list__item">Количество комнат (С, 1, 2, 3, 4 или 5, где С - это более экономичный вариант ремонта комнат), выбрав один из пунктов, произойдет следующий расчет ремонта: C (-20% от стоимости ремонта), от 1 до 2 комнат (без изменения цены), от 3 до 5 (+ 5% к стоимости ремонта)</li>
-                    <li class="modal-list__item">Дополнительные опции (натяжные потолки, покраска стен, теплый пол), выбрав один из пунктов, произойдет расчет ремонта следующим образом: + 900 рублей за каждый квадратный метр при выборе опции "Натяжные потолки", + 10% к стоимости при выборе опции "Покраска стен" и + 10% к стоимости ремонта при выборе опции "Теплый пол"</li>
+                    <li class="modal-list__item lang-calc-desc-two">Тип ремонта (косметический, капитальный или под ключ), выбрав один из пунктов, произойдет расчет ремонта соответственно: без увеличения цены, + 30% к стоимости ремонта и + 50% к стоимости ремонта</li>
+                    <li class="modal-list__item lang-calc-desc-three">Тип дома (новострой или вторичка), выбрав один из пунктов, произойдет расчет ремонта соответственно: без изменения цены, + 10% к стоимости ремонта</li>
+                    <li class="modal-list__item lang-calc-desc-four">Дополнительные опции (натяжные потолки, покраска стен, теплый пол), выбрав один из пунктов, произойдет расчет ремонта следующим образом: + 900 рублей за каждый квадратный метр при выборе опции "Натяжные потолки", + 10% к стоимости при выборе опции "Покраска стен" и + 10% к стоимости ремонта при выборе опции "Теплый пол"</li>
+                    <li class="modal-list__item lang-calc-desc-five">Количество комнат (С, 1, 2, 3, 4 или 5, где С - это более экономичный вариант ремонта комнат), выбрав один из пунктов, произойдет следующий расчет ремонта: C (-20% от стоимости ремонта), от 1 до 2 комнат (без изменения цены), от 3 до 5 (+ 5% к стоимости ремонта)</li>
+
                   </ul>
-                  <p class="modal-work__description">Работая над данным проектом, были использованы следующие инструменты, технологии:</p>
+                  <p class="modal-work__description lang-technologies-desc">Работая над данным проектом, были использованы следующие инструменты, технологии:</p>
                   <ul class="modal-work__list modal-list">
-                    <li class="modal-list__item">Редактор кода: Visual Studio Code</li>
+                    <li class="modal-list__item lang-code-editor-tool">Редактор кода: Visual Studio Code</li>
                     <li class="modal-list__item">JavaScript</li>
                     <li class="modal-list__item">Css / HTML</li>
                   </ul>
@@ -1147,20 +1158,20 @@
               </div>
               <ul class="modal-work__list modal-list">
                 <li class="modal-list__item">
-                  <a class="modal-list__link" href="https://dennymaverick.github.io/Calculator/index.html" target="_blank"> Ccылка на проект </a>
+                  <a class="modal-list__link lang-link-to-the-project" href="https://dennymaverick.github.io/Calculator-repair/" target="_blank"> Ccылка на проект </a>
                 </li>
                 <li class="modal-list__item">
-                  <a class="modal-list__link" href="https://github.com/DennyMaverick/Calculator" target="_blank"> Ссылка на репозиторий GitHub </a>
+                  <a class="modal-list__link lang-link-to-the-git" href="https://github.com/DennyMaverick/Calculator-repair" target="_blank"> Ссылка на репозиторий GitHub </a>
                 </li>
-                <li class="modal-list__item">Время на работу ~ 4.5 ч</li>
+                <li class="modal-list__item lang-calc-time-to-work">Время на работу ~ 7 ч</li>
               </ul>
             </div>
             <!--modal-work__text -->
             <div class="modal-work__footer">
-              <button class="modal-work__btn slickPrev modal-work__btn--text" type="button">Назад</button>
-              <button class="modal-work__btn modal-work__btn--text slickNext" type="button">Вперед</button>
+              <button class="modal-work__btn lang-back-button slickPrev modal-work__btn--text" type="button">Назад</button>
+              <button class="modal-work__btn lang-next-button modal-work__btn--text slickNext" type="button">Вперед</button>
             </div>
-            <a href="#" class="modal-work__arrow-up up" title="Наверх">
+            <a href="#" class="modal-work__arrow-up up lang-up" title="Наверх">
               <svg class="modal-work__arrow-up-pic">
                 <use xlink:href="./img/sprite/symbol/sprite.svg#arrows--arrow-up" />
               </svg>
