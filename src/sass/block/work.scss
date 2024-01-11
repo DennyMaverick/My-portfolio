@@ -65,7 +65,7 @@
     }
     &::after {
       position: absolute;
-      content: "Open";
+      content: "";
       background-color: rgba(255, 255, 255, 0);
       top: 0;
       right: 0;
@@ -96,6 +96,16 @@
         color: rgba(255, 255, 255, 0);
         content: "";
       }
+    }
+  }
+  &--overlay-ru-text {
+    &::after {
+      content: 'Открыть';
+    }
+  }
+  &--overlay-en-text {
+    &::after {
+      content: 'Open';
     }
   }
   &--bg-dream-on-wheels::before {

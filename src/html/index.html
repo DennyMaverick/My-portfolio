@@ -7,8 +7,8 @@
     <meta name="google" value="notranslate" />
     <title class="lang-title">Денис, web-разработчик</title>
     <link rel="icon" href="./img/favicon/favicon.svg" />
-    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
-    <link rel="manifest" href="manifest.json" />
+    <!-- <link rel="apple-touch-icon" href="./apple-touch-icon.png" /> -->
+    <!-- <link rel="manifest" href="manifest.json" /> -->
     <link rel="stylesheet" href="./css/libs/libs.min.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
     <script src="./js/libs/jquery/jquery.min.js" defer></script>
@@ -78,7 +78,7 @@
         <div class="intro__content">
           <h2 class="intro__subtitle lang-hello" data-aos="zoom-in" data-aos-offset="0">Привет, Я</h2>
           <h1 class="intro__title lang-my-name" data-aos-delay="2000" data-aos="zoom-in" data-aos-offset="0">Денис</h1>
-          <div class="intro__position lang-web-developer" data-aos="fade-right" data-aos-delay="1500" data-aos-offset="0">Web - разработчик</div>
+          <div class="intro__position lang-web-developer" data-aos="fade-right" data-aos-delay="1500" data-aos-offset="0">Frontend - разработчик</div>
           <div class="intro__social social">
             <a class="social__link lang-telegram-intro" title="Мой телеграм" href="https://t.me/Denny_maverick" target="_blank">
               <svg class="social__image social--telegram">
@@ -121,7 +121,7 @@
           <div class="portfolio__col portfolio__show" data-cat="landing">
             <div class="portfolio__work portfolio__work--best portfolio__work--archee work">
               <!-- Далее нужно для каждой работы создавать отдельное модальное окно -->
-              <div class="work__box-img work--overlay work--bg-archee" data-modal="#modal_archee" data-work>
+              <div class="work__box-img work--overlay work--overlay-en-text work--bg-archee" data-modal="#modal_archee" data-work>
                 <img class="work__image lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/archee/main.png" alt="Project photo" />
               </div>
               <div class="work__content">
@@ -325,7 +325,7 @@
     <footer class="footer" id="contacts">
       <div class="footer__inner container">
         <div class="footer__credits">
-          <p class="footer__copyright">&copy; 2021 - 2022 weblandingsforyou.ru</p>
+          <p class="footer__copyright">&copy; 2024 weblandingsforyou.ru</p>
           <div class="footer__social">
             <a class="footer__social-link lang-telegram-footer" href="https://t.me/Denny_maverick" target="_blank" title="Мой телеграм">
               <svg class="footer__social-image social--telegram">
@@ -404,15 +404,20 @@
                 <p class="timeline__text lang-copywriter-desc">Хобби написания сочинений и прозы плавно перешло в работу на бирже копирайтинга Etxt. В процессе работы укрепились мои некоторые стороны писательского мастерства. Этот опыт позволил обрести уверенность в написании текстов, чем я до сих пор увлекаюсь.</p>
               </div>
               <div class="timeline__item">
-                <time class="timeline__date lang-date-nowdays" datetime="2021-11-21 16:15"> 2020 - настоящее время </time>
+                <time class="timeline__date" datetime="2021-11-21 16:15"> 2020 - 2023 </time>
                 <h5 class="timeline__subtitle lang-portfolio-creation-title">Создание проектов для портфолио, самообразование</h5>
-                <p class="timeline__position lang-web-developer-title">Web-разработчик</p>
+                <p class="timeline__position lang-web-developer-position-title">Начало в Web-разработке</p>
                 <p class="timeline__text lang-developer-desc-first">Со времени окончания университета прошло не так много времени, и я решил осваивать Web-разработку. Сначала, конечно, не догадываясь, что эта профессия настолько многогранна.</p>
                 <p class="timeline__text lang-developer-desc-second">Мне попался на глаза 3-х недельный марафон от Web-школы HTML-Academy по верстке сайтов, где я принял участие и дошел до конца. Я сверстал сайт, и понял, что мне это интересно. Дальше я стал углублять свои знания, изучая новые инструменты и технологии, необходимые для разработки сайтов. Здесь я понял, что абсолютно всех инструментов Web-разработчика можно не знать. Достаточно использовать фокусированно лишь то, что применимо к конкретной задаче.</p>
                 <p class="timeline__text lang-developer-desc-third">Я стал посещать интенсивы и другие марафоны, чтобы укрепить навыки. Я продолжаю развиваться, параллельно пополняя свое портфолио новыми проектами.</p>
                 <p class="timeline__text lang-developer-desc-fourth">На данный момент я уверенно могу создавать сайты, адаптируя их под все экраны устройств, а также используя современные подходы в Web-разработке.</p>
-                <p class="timeline__text lang-developer-desc-fifth">Web-разработка стала для меня нечто большим.</p>
-                <p class="timeline__text lang-developer-desc-sixth">И если Вам нужен сайт, нажмите на кнопку ниже, и я отвечу в скором времени.</p>
+              </div>
+              <div class="timeline__item">
+                <time class="timeline__date lang-freelance-time-title" datetime="2023-12-06 19:15"> 2023 - настоящее время </time>
+                <h5 class="timeline__subtitle lang-freelance-title">Доработка сайта-портфолио / Фриланс</h5>
+                <p class="timeline__position lang-freelancer-title">Web-разработчик / Фрилансер</p>
+                <p class="timeline__text lang-freelancer-desc">Мой сайт-портфолио полностью готов, и сейчас, со всем своим арсеналом знаний, я беру заказы на таких фриланс-биржах как KWORK и FL.RU, развиваясь как Веб-разработчик и создавая интересные проекты. </p>
+                <p class="timeline__text lang-developer-desc-sixth">Если Вам нужен сайт, нажмите на кнопку ниже для связи со мной или воспользуйтесь социальными сетями. И мы обсудим все детали.</p>
               </div>
               <a id="arrow-top-two" href="#top" class="timeline__arrow-up hide" title="Наверх">
                 <svg class="timeline__arrow-up-pic">
@@ -664,7 +669,7 @@
                 8921_____37
               </li> -->
               <li class="contact__info-item">
-                <a class="contact__info-link" href="mailto:den_maverick177@mail.ru">
+                <a class="contact__info-link" href="mailto:den_maverick177@mail.ru" target="_blank">
                   <svg class="contact__info-icon" width="15" height="15">
                     <use xlink:href="./img/sprite/symbol/sprite.svg#modal--mail" />
                   </svg>
@@ -672,7 +677,7 @@
                 </a>
               </li>
               <li class="contact__info-item">
-                <a class="contact__info-link" href="https://www.vk.com/maverick177">
+                <a class="contact__info-link" href="https://www.vk.com/maverick177" target="_blank">
                   <svg class="contact__info-icon" width="15" height="15">
                     <use xlink:href="./img/sprite/symbol/sprite.svg#socials--vk" />
                   </svg>
@@ -680,7 +685,7 @@
                 </a>
               </li>
               <li class="contact__info-item">
-                <a class="contact__info-link" href="https://t.me/Denny_maverick">
+                <a class="contact__info-link" href="https://t.me/Denny_maverick" target="_blank">
                   <svg class="contact__info-icon" width="15" height="15">
                     <use xlink:href="./img/sprite/symbol/sprite.svg#socials--telegram" />
                   </svg>
@@ -711,12 +716,13 @@
               </div>
               <div class="form__personal-data person-data">
                 <label class="person-data__box">
-                  <input class="person-data__input person-data__real-checkbox" type="checkbox" name="checkbox" required>
+                  <input class="person-data__input person-data__real-checkbox" type="checkbox" name="checkbox" required />
                   <span class="person-data__custom-checkbox"></span>
-                  <div class="person-data__error-popup lang-person-data-error-popup-text" id="error-popup">
-                    Пожалуйста подтвердите согласие на обработку персональных данных
+                  <div class="person-data__error-popup lang-person-data-error-popup-text" id="error-popup">Пожалуйста подтвердите согласие на обработку персональных данных</div>
+                  <div class="person-data__data">
+                    <span class="lang-personal-data-text person-data__text">Нажав на кнопку 'Отправить', вы даете согласие на обработку персональных данных в соответствии с</span>
+                    <a class="person-data__link lang-personal-data-text-federal-low" href="https://www.consultant.ru/document/cons_doc_LAW_61801/" target="_blank">ФЗ о персональных данных</a>
                   </div>
-                  <a class="person-data__link lang-personal-data-text" href="https://drive.google.com/file/d/0BzpiIBsGLoCOZTMxZWU3M2QtNTc2ZS00OWRmLTk0ZGEtYmNkODE1ZGMwNjhj/view?resourcekey=0-IGML3h2PFesxJpqK5gkp5Q" target="_blank">Нажав на кнопку 'Отправить', вы даете согласие на обработку персональных данных в соответствии с ФЗ о персональных данных</a>
                 </label>
               </div>
               <div class="text-right">
@@ -1146,7 +1152,6 @@
                     <li class="modal-list__item lang-calc-desc-three">Тип дома (новострой или вторичка), выбрав один из пунктов, произойдет расчет ремонта соответственно: без изменения цены, + 10% к стоимости ремонта</li>
                     <li class="modal-list__item lang-calc-desc-four">Дополнительные опции (натяжные потолки, покраска стен, теплый пол), выбрав один из пунктов, произойдет расчет ремонта следующим образом: + 900 рублей за каждый квадратный метр при выборе опции "Натяжные потолки", + 10% к стоимости при выборе опции "Покраска стен" и + 10% к стоимости ремонта при выборе опции "Теплый пол"</li>
                     <li class="modal-list__item lang-calc-desc-five">Количество комнат (С, 1, 2, 3, 4 или 5, где С - это более экономичный вариант ремонта комнат), выбрав один из пунктов, произойдет следующий расчет ремонта: C (-20% от стоимости ремонта), от 1 до 2 комнат (без изменения цены), от 3 до 5 (+ 5% к стоимости ремонта)</li>
-
                   </ul>
                   <p class="modal-work__description lang-technologies-desc">Работая над данным проектом, были использованы следующие инструменты, технологии:</p>
                   <ul class="modal-work__list modal-list">
@@ -1237,8 +1242,8 @@
             </div>
             <!-- modal-work__header -->
             <div class="modal-work__client">
-              <div class="modal-work__client-title lang-client-title-learn-project">Учебный проект:</div>
-              <div class="modal-work__client-company lang-client-WebCademy">Web-школа WebCademy</div>
+              <div class="modal-work__client-title lang-client-title-pet-project">Pet - проект</div>
+              <div class="modal-work__client-company">Denny Maverick</div>
             </div>
             <div class="modal-work__text">
               <p class="modal-work__description lang-next-functional">При работе над проектом был реализован следующий функционал:</p>
@@ -1256,7 +1261,9 @@
                     <li class="modal-list__item lang-converter-desc-two">Если после обновления курса валют одна из валют снизилась в цене, курс отображается зеленым, иначе - красным</li>
                     <li class="modal-list__item lang-converter-desc-three">Возможность узнавать курс рубля в долларах, евро и фунтах стерлинга (достаточно ввести значение рубля в соответствующее текстовое поле и выбрать, в какую валюту нужно конвертировать) относительно текущего курса валют</li>
                     <li class="modal-list__item lang-converter-desc-four">В проект добавлен переключатель тем используя светлую, темную и лунную цветовые схемы</li>
-                    <li class="modal-list__item lang-converter-desc-five">Также добавлен переключатель языков на русский и английский</li>
+                    <li class="modal-list__item lang-converter-desc-five">Добавлен переключатель языков на русский и английский</li>
+                    <li class="modal-list__item lang-converter-desc-six">Добавлена функция увеличения - уменьшения значений в текстовом поле ввода при прокручивании колесика мыши</li>
+                    <li class="modal-list__item lang-converter-desc-seven">Данный проект является pet-проектом, и есть вероятность что сейчас, запустив его, Вы увидите его с уже обновленными функциями, новыми темами или языками</li>
                     <li class="modal-list__item modal-list__item--more-info"><span class="lang-more-info-can-be-found">Наиболее подробная информация об этом проекте находится</span> <a class="modal-list__link lang-here" href="https://github.com/DennyMaverick/Convertation_project" target="_blank">здесь</a></li>
                   </ul>
                   <p class="modal-work__description lang-technologies-desc">Работая над данным проектом, были использованы следующие инструменты, технологии:</p>
@@ -1484,7 +1491,7 @@
           <div class="modal-work__content">
             <div class="modal-work__header">
               <h3 class="modal-work__title">Olivia</h3>
-              <div class="modal-work__info ">
+              <div class="modal-work__info">
                 <span class="lang-landings">Лэндинги</span>
                 <span class="modal-work__info-divider">|</span>
                 2021
@@ -1828,6 +1835,9 @@
               </div>
               <div class="slider__item slider__slide">
                 <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/dream-on-wheels/slide-6.png"></div>
+              </div>
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/dream-on-wheels/slide-7.png"></div>
               </div>
             </div>
           </div>

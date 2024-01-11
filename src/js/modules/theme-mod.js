@@ -487,6 +487,12 @@ const themes = {
       dark: "person-data__error-popup--active-dark",
     },
   },
+  ".person-data__text": {
+    theme: {
+      light: "person-data__text--light",
+      dark: "person-data__text--dark",
+    },
+  },
 }
 
 function themeSwitch(theme) {
@@ -530,12 +536,3 @@ if (activeTheme === null) {
 } else {
   themeSwitch(activeTheme)
 }
-
-
-
-
-
-
-
-
-

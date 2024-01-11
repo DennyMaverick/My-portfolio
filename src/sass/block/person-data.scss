@@ -8,6 +8,14 @@
       color: $theme-modal-dark;
     }
   }
+  &__text {
+    &--light {
+      color: $theme-modal-light;
+    }
+    &--dark {
+      color: $theme-modal-dark;
+    }
+  }
   &__custom-checkbox {
     display: flex;
     flex-shrink: 0;

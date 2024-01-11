@@ -3,8 +3,8 @@
 const langs = {
   // === title ===
   title: {
-    ru: "Денис, веб-разработчик",
-    en: "Denis, web-developer",
+    ru: "Денис, Frontend-разработчик",
+    en: "Denis, Frontend-developer",
   },
   // ===== nav mobile =====
   "main-mobile": {
@@ -67,8 +67,8 @@ const langs = {
     en: "Denis",
   },
   "web-developer": {
-    ru: "Веб-разработчик",
-    en: "Web-developer",
+    ru: "Frontend-разработчик",
+    en: "Frontend-developer",
   },
   "write-intro": {
     ru: "Написать мне",
@@ -245,9 +245,25 @@ const langs = {
     ru: "Создание проектов для портфолио, самообразование",
     en: "Creating projects for a portfolio, self-education",
   },
-  "web-developer-title": {
-    ru: "Web-разработчик",
-    en: "Web-developer",
+  "freelance-time-title": {
+    ru: "2023 - настоящее время",
+    en: "2023 - nowadays",
+  },
+  "web-developer-position-title": {
+    ru: "Начало в Web-разработке",
+    en: "Start in Web-developing",
+  },
+  "freelance-title": {
+    ru: "Доработка сайта-портфолио / Фриланс",
+    en: "Finalization of the portfolio - website / Freelancing",
+  },
+  "freelancer-title": {
+    ru: "Frontend-разработчик / Фрилансер",
+    en: "Frontend-developer / Freelancer",
+  },
+  "freelancer-desc": {
+    ru: "Мой сайт-портфолио полностью готов, и сейчас, со всем своим арсеналом знаний, я беру заказы на таких фриланс-биржах как KWORK и FL.RU, развиваясь как Веб-разработчик и создавая интересные проекты.",
+    en: "My portfolio - website is completely ready, and now, with all my arsenal of knowledge, I take orders on such freelance exchanges as KWORK and FL.RU, developing as a Web - developer and creating interesting projects.",
   },
   "developer-desc-first": {
     ru: "Со времени окончания университета прошло не так много времени, и я решил осваивать Web-разработку. Сначала, конечно, не догадываясь, что эта профессия настолько многогранна.",
@@ -265,13 +281,9 @@ const langs = {
     ru: "На данный момент я уверенно могу создавать сайты, адаптируя их под все экраны устройств, а также используя современные подходы в Web-разработке.",
     en: "At the moment, I can confidently create websites by adapting them to all device screens, as well as using modern approaches in Web development.",
   },
-  "developer-desc-fifth": {
-    ru: "Web-разработка стала для меня нечто большим.",
-    en: "Web development has become something big for me.",
-  },
   "developer-desc-sixth": {
-    ru: "И если Вам нужен сайт, нажмите на кнопку ниже, и я отвечу в скором времени.",
-    en: "And if you need a website, click on the button below and I will respond soon.",
+    ru: "Если Вам нужен сайт, нажмите на кнопку ниже для связи со мной или воспользуйтесь социальными сетями. И мы обсудим все детали.",
+    en: "If you need a website, click on the button below to contact me or use social networks. And we will discuss all the details.",
   },
   "education-title": {
     ru: "Образование",
@@ -593,12 +605,20 @@ const langs = {
     en: "A theme switcher has been added to the project using light, dark and moon color schemes",
   },
   "converter-desc-five": {
-    ru: "Также добавлен переключатель языков на русский и английский",
-    en: "Also the language switcher has been added to the project for Russian and English",
+    ru: "Добавлен переключатель языков на русский и английский",
+    en: "The language switcher has been added to the project for Russian and English",
+  },
+  "converter-desc-six": {
+    ru: "Добавлена функция увеличения - уменьшения значений в текстовом поле ввода при прокручивании колесика мыши",
+    en: "Added function to increase - decrease values ​​in the text input field when scrolling the mouse wheel",
+  },
+  "converter-desc-seven": {
+    ru: "Данный проект является pet-проектом, и есть вероятность что сейчас, запустив его, Вы увидите его с уже обновленными функциями, новыми темами или языками",
+    en: "This project is a pet project, and there is a chance that now, launching it, you will see it with already updated functions, new themes or languages",
   },
   "time-converter": {
-    ru: "Время на работу ~ 18 ч",
-    en: "Time to work ~ 18 ч",
+    ru: "Время на работу ~ 50 ч",
+    en: "Time to work ~ 50 ч",
   },
 
   // Oxygen
@@ -729,12 +749,16 @@ const langs = {
   },
   // ссылка о персональных данных
   "personal-data-text": {
-    ru: "Нажимая кнопку 'Отправить', вы даете согласие на обработку персональных данных в соответствии с ФЗ о персональных данных",
-    en: "By clicking the 'Send' button, you consent to the processing of personal data in accordance with the Federal Law on Personal Data",
+    ru: "Нажимая кнопку 'Отправить', вы даете согласие на обработку персональных данных в соответствии с",
+    en: "By clicking the 'Send' button, you consent to the processing of personal data in accordance with",
+  },
+  "personal-data-text-federal-low": {
+    ru: "ФЗ о персональных данных",
+    en: "the Federal Law on Personal Data",
   },
   "person-data-error-popup-text": {
-    ru: "Пожалуйста подтвердите согласие на обработку персональных данных",
-    en: "Please confirm your consent to the processing of personal data",
+    ru: "Пожалуйста, подтвердите согласие на обработку персональных данных",
+    en: "Please, confirm your consent to the processing of personal data",
   },
 }
 
@@ -799,6 +823,10 @@ const repeatElems = {
   "client-title-learn-project": {
     ru: "Учебный проект:",
     en: "Learn project:",
+  },
+  "client-title-pet-project": {
+    ru: "Pet - проект:",
+    en: "Pet - project:",
   },
   "technologies-desc": {
     ru: "Работая над данным проектом, были использованы следующие инструменты, технологии:",
@@ -893,7 +921,7 @@ const repeatElems = {
     en: "Git & GitHub",
   },
   "pixel-perfect-tool": {
-    ru: "Плагин Chrome Pixel Perfec",
+    ru: "Плагин Chrome Pixel Perfect",
     en: "Chrome Pixel Perfect Plugin",
   },
   "swiper-tool": {
