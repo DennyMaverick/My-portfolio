@@ -132,20 +132,20 @@ const langs = {
     en: "Who Am I",
   },
   "about-begin": {
-    ru: "Добрый час, меня зовут Денис, и я занимаюсь WEB-разработкой. Создание сайтов — то, что нравится и приносит мне удовольствие.",
-    en: "Good hour, my name is Denis, and I do web-developing. I like to create sites. It gives me pleasure.",
+    ru: "Добрый день, меня зовут Денис. Я занимаюсь веб-разработкой.",
+    en: "Good hour, my name is Denis. I do Web Developing.",
   },
   "about-part-two": {
     ru: "Как известно — всё постигается благодаря опыту. И чем больше имеешь инструментов для достижения целей, тем легче и быстрее эти цели выполняются.",
     en: "As you know, everything is comprehended through experience. And the more tools you have to achieve goals, the easier and faster these goals are fulfilled.",
   },
   "about-part-three": {
-    ru: "И чтобы построить сайт, нужно уметь пользоваться теми инструментами (не обязательно всеми доступными), которые необходимы для конкретной задачи.",
-    en: "And to build a website, you need to be able to use those tools (not necessarily all available) that are necessary for a specific task.",
+    ru: "Чтобы построить сайт, нужно уметь пользоваться теми инструментами (не обязательно всеми доступными), которые необходимы для конкретной задачи.",
+    en: "To build a website, you need to be able to use those tools (not necessarily all available) that are necessary for a specific task.",
   },
   "about-part-four": {
-    ru: "На данный момент я с уверенностью хочу сказать, что web-разработка — это составляющая моей жизни. И все инструменты, которыми я владею сейчас, позволяют без больших сложностей разрабатывать лэндинги — одностраничные сайты.",
-    en: "At the moment, I want to say with confidence that web development is a component of my life. And all the tools that I own now allow me to develop landing pages — single-page sites without much difficulty.",
+    ru: "На данный момент я с уверенностью хочу сказать, что все инструменты, которыми я владею сейчас, позволяют без больших сложностей разрабатывать лэндинги — одностраничные сайты.",
+    en: "At the moment, I want to say with confidence that all the tools that I own now allow me to develop landing pages — single-page sites without much difficulty.",
   },
   "about-part-five": {
     ru: "Если Вам нужен сайт, нажмите на кнопку ниже и оставьте мне сообщение удобным для Вас способом или воспользуйтесь",
@@ -207,7 +207,7 @@ const langs = {
   },
   "experience-title": {
     ru: "Опыт",
-    en: "Experience",
+    en: "Work Experience",
   },
   "svyaznoy-mobile-name": {
     ru: "Салон связи ООО 'Сеть Связной'",
@@ -218,24 +218,72 @@ const langs = {
     en: "Menager",
   },
   "menager-desc-first": {
-    ru: "Найти нужный подход к каждому, подобрать тот или иной товар — здесь требуется опыт коммуникации. И работа в салоне связи дала мне этот опыт.",
-    en: "To find the right approach to everyone, to pick up a particular product — communication experience is required here. And working in a communication salon gave me this experience.",
+    ru: "Работая менеджером по продажам, я имел следующие задачи и обязанности:",
+    en: "When I had been working as a menager I had next tasks and responsibilities:",
+  },
+  "menager-first-item": {
+    ru: "Выстраиваиние отношений с клиентами",
+    en: "building relationships with clients",
+  },
+  "menager-second-item": {
+    ru: "Продажа смартфонов, компьютерной техники и допонительных продуктов",
+    en: "Sale of smartphones, computer equipment and additional products",
+  },
+  "menager-third-item": {
+    ru: "Работа с кассой",
+    en: "Working with the cash register",
+  },
+  "menager-fourth-item": {
+    ru: "Оформление финансовых продуктов: кредитные карты, рассрочки",
+    en: "Registration of financial products: credit cards, installments",
+  },
+  "menager-fifth-item": {
+    ru: "Подключение новых абонентов к операторам связи: МТС, Теле2, Мегафон, Билайн, Йота",
+    en: "Connecting new subscribers to telecom operators: MTS, Tele2, Megafon, Beeline, Yota",
+  },
+  "menager-sixth-item": {
+    ru: "Подготовка денежных средств к инкассации",
+    en: "Preparation of funds for collection",
   },
   "menager-desc-second": {
-    ru: "Выстраивание отношений между людьми в той или иной сфере может принести свои результаты, именно поэтому так важно приносить людям пользу. Когда-нибудь они помогут и тебе.",
-    en: "Building relationships between people in one area or another can bring results, that's why it is so important to benefit people. Someday they will help you too.",
+    ru: "Работая в сфере продаж я развил навык коммуникабельности.",
+    en: "Working in sales, I have developed communication skills.",
   },
   "stock-market": {
-    ru: "Биржа копирайтинга",
-    en: "Stock-market of copywriting Etxt",
+    ru: "Биржа копирайтинга ETXT",
+    en: "Stock-market of copywriting ETXT",
   },
   "copywriter-title": {
     ru: "Копирайтер",
     en: "Copyrighter",
   },
   "copywriter-desc": {
-    ru: "Хобби написания сочинений и прозы плавно перешло в работу на бирже копирайтинга Etxt. В процессе работы укрепились мои некоторые стороны писательского мастерства. Этот опыт позволил обрести уверенность в написании текстов, чем я до сих пор увлекаюсь.",
-    en: "The hobby of writing essays and prose smoothly turned into work on the Etxt copywriting exchange. In the process of work, some aspects of my writing skills have strengthened. This experience allowed me to gain confidence in writing texts, which I am still fond of.",
+    ru: "Работая копирайтером, я выполнял следующие задачи:",
+    en: "Working as a copywriter, I performed the following tasks:",
+  },
+  "copywriter-first-item": {
+    ru: "Написание текстов на заказ, на тему новых информационных технологий",
+    en: "Writing custom texts on the topic of new information technologies",
+  },
+  "copywriter-second-item": {
+    ru: "Проверка текста на уникальность",
+    en: "Checking the text for uniqueness",
+  },
+  "copywriter-third-item": {
+    ru: "Поиск источников информации",
+    en: "Search for information sources",
+  },
+  "copywriter-fourth-item": {
+    ru: "Создание структуры текста, опираясь на другие источники",
+    en: "Creating a text structure based on other sources",
+  },
+  "copywriter-fifth-item": {
+    ru: "Поиск клиентов для продажи текстов",
+    en: "Search for customers to sell texts",
+  },
+  "copywriter-six-item": {
+    ru: "Ссылка на отзывы",
+    en: "Link to reviews",
   },
   "date-nowdays": {
     ru: "2020 - настоящее время",
@@ -261,29 +309,29 @@ const langs = {
     ru: "Frontend-разработчик / Фрилансер",
     en: "Frontend-developer / Freelancer",
   },
-  "freelancer-desc": {
-    ru: "Мой сайт-портфолио полностью готов, и сейчас, со всем своим арсеналом знаний, я беру заказы на таких фриланс-биржах как KWORK и FL.RU, развиваясь как Веб-разработчик и создавая интересные проекты.",
-    en: "My portfolio - website is completely ready, and now, with all my arsenal of knowledge, I take orders on such freelance exchanges as KWORK and FL.RU, developing as a Web - developer and creating interesting projects.",
+  "freelancer-desc-first": {
+    ru: "Мой сайт-портфолио полностью готов. Сейчас я открыт к заказам по веб-разработке, развиваюсь как Frontend разработчик и создаю интересные проекты.",
+    en: "My portfolio site is completely ready. Now I am open to web development orders, developing as a Frontend developer and creating interesting projects.",
   },
   "developer-desc-first": {
-    ru: "Со времени окончания университета прошло не так много времени, и я решил осваивать Web-разработку. Сначала, конечно, не догадываясь, что эта профессия настолько многогранна.",
+    ru: "Со времени окончания университета прошло не так много времени, и я решил осваивать Web-разработку. Сначала, конечно, не догадываясь, что эта сфера так многогранна.",
     en: "Not much time has passed since graduating from university, and I decided to master Web development. At first, of course, without realizing that this profession is so multifaceted.",
   },
   "developer-desc-second": {
-    ru: "Мне попался на глаза 3-х недельный марафон от Web-школы HTML-Academy по верстке сайтов, где я принял участие и дошел до конца. Я сверстал сайт, и понял, что мне это интересно. Дальше я стал углублять свои знания, изучая новые инструменты и технологии, необходимые для разработки сайтов. Здесь я понял, что абсолютно всех инструментов Web-разработчика можно не знать. Достаточно использовать фокусированно лишь то, что применимо к конкретной задаче.",
-    en: "I caught sight of a 3-week marathon from the HTML-Academy Web School on site layout, where I took part and reached the end. I made up the site, and realized that I was interested in it. Then I began to deepen my knowledge by studying new tools and technologies necessary for website development. Here I realized that absolutely all the tools of a Web developer can not be known. It is enough to focus only on what is applicable to a specific task.",
+    ru: "Сначала я прошел 3-х недельный марафон от Web-школы HTML-Academy по верстке сайтов, где я принял участие, дойдя до конца. Я сверстал сайт, и понял, что мне это интересно. Дальше я стал углублять свои знания, изучая новые инструменты и технологии, необходимые для разработки сайтов.",
+    en: "First, I went through a 3-week marathon from the HTML Academy Web School on site layout, where I took part, reaching the end. I made up the site, and realized that I was interested in it. Then I began to deepen my knowledge by learning new tools and technologies necessary for website development.",
   },
   "developer-desc-third": {
-    ru: "Я стал посещать интенсивы и другие марафоны, чтобы укрепить навыки. Я продолжаю развиваться, параллельно пополняя свое портфолио новыми проектами.",
-    en: "I started attending intensive courses and other marathons to strengthen my skills. I continue to develop, simultaneously replenishing my portfolio with new projects.",
+    ru: "Я стал посещать интенсивы и другие марафоны, чтобы укрепить навыки, продолжая развиваться в сфере веб-разработки, параллельно пополняя свое портфолио новыми проектами.",
+    en: "I started attending intensive courses and other marathons to improve my skills, continuing to develop in the field of web development, while simultaneously replenishing my portfolio with new projects.",
   },
   "developer-desc-fourth": {
-    ru: "На данный момент я уверенно могу создавать сайты, адаптируя их под все экраны устройств, а также используя современные подходы в Web-разработке.",
-    en: "At the moment, I can confidently create websites by adapting them to all device screens, as well as using modern approaches in Web development.",
+    ru: "На данный момент я уверенно могу создавать сайты, адаптируя их под экраны мобильных устройств и планшеты, используя современные подходы в веб-разработке.",
+    en: "At the moment, I can confidently create websites, adapting them to the screens of mobile devices and tablets, using modern approaches in web development.",
   },
   "developer-desc-sixth": {
-    ru: "Если Вам нужен сайт, нажмите на кнопку ниже для связи со мной или воспользуйтесь социальными сетями. И мы обсудим все детали.",
-    en: "If you need a website, click on the button below to contact me or use social networks. And we will discuss all the details.",
+    ru: "Если Вам нужен сайт, нажмите на кнопку ниже для связи со мной.",
+    en: "If you need a website, click on the button below to contact me.",
   },
   "education-title": {
     ru: "Образование",
@@ -298,12 +346,32 @@ const langs = {
     en: "Secondary Kizema's School, Russia",
   },
   "school-desc-first": {
-    ru: "Множество ошибок, немало успешных решений. Школа дает почувствовать и победы, и поражения. Познать свои силы, стать лучше. И за период обучения в школе я приобрел навык сочинять тексты, что в дальнейшем помогло мне в копирайтинге, а также я лучше стал выражать свои мысли.",
-    en: "A lot of mistakes, a lot of successful solutions. The school makes you feel both victories and defeats. To know your strength, to become better. And during the period of studying at school, I acquired the skill of composing texts, which later helped me in copywriting, and I also began to express my thoughts better.",
+    ru: "За время обучения в школе я приобрел следующие навыки:",
+    en: "During my time at school, I acquired the following skills:",
   },
   "school-desc-second": {
-    ru: "Чтобы создавать сайты, нужна концентрация внимания на деталях, усидчивость. Выполнение домашних работ, фокусировка на заданиях во время учебного процесса — помогли этот навык создать.",
-    en: "To create websites, you need to focus on details, perseverance. Doing homework, focusing on tasks during the learning process — helped to create this skill.",
+    ru: "Чтобы создавать сайты, нужна концентрация внимания на деталях, усидчивость. Школа и университет помогли эти навыки приобрести.",
+    en: "To create websites, you need to focus on details and perseverance. School and university helped to acquire these skills.",
+  },
+  "school-first-item": {
+    ru: "Повышение концентрации и усидчивость",
+    en: "Increased concentration and perseverance",
+  },
+  "school-second-item": {
+    ru: "Умение красиво излагать свои мысли",
+    en: "The ability to express your thoughts beautifully",
+  },
+  "school-third-item": {
+    ru: "Умение принимать поражения",
+    en: "The ability to accept defeat",
+  },
+  "school-fourth-item": {
+    ru: "Умение выступать перед публикой",
+    en: "The ability to perform in front of an audience",
+  },
+  "school-fifth-item": {
+    ru: "Умение управлять своим временем",
+    en: "The ability to manage your time",
   },
   "student-title": {
     ru: "Студент",
@@ -311,15 +379,15 @@ const langs = {
   },
   "student-position": {
     ru: "Факультет математики и информатики, Россия, САФУ им. М. В. Ломоносова",
-    en: "Faculty of Mathematics and Computer Science, Russia, M. V. Lomonosov NARFU",
+    en: "Russian Technological University in Information Technology, Northern (Arctic) Federal University (NArFU)",
   },
   "student-desc-first": {
-    ru: "Университет дал мне понять, что только от твоих усилий зависят твои цели. Разработка Web-сайтов в будущем на момент обучения в университете не была еще моей целью, однако я делал попытки изучения WEB, но безрезультатно.",
-    en: "The university has made it clear to me that your goals depend only on your efforts. The development of Web sites in the future at the time of studying at the university was not yet my goal, however, I made attempts to study the WEB, but to no avail.",
+    ru: "Университет дал мне понять, что успех прямо пропорционален усилиям. Разработка web-сайтов в будущем на момент обучения в университете не была еще моей целью, однако я делал попытки изучения веб-технологий.",
+    en: "The university has made it clear to me that success depend only on your efforts. The development of web-sites in the future was not my goal at the time of studying at the university, however, I made attempts to study the web-technologies.",
   },
   "student-desc-second": {
-    ru: "Лишь к концу обучения я совместно с наставником, моим преподавателем создал небольшое web-приложение, позволяющее делать расчеты в системах массового обслуживания. Наставник объяснил принцип работы, я разобрался, и осуществил задачу.",
-    en: "Only by the end of the training, I, together with my mentor, my teacher, created a small web application that allows you to make calculations in queuing systems. The mentor explained the principle of work, I figured it out, and carried out the task.",
+    ru: "К концу обучения я совместно с наставником, моим преподавателем, создал web-приложение, позволяющее делать расчеты в системах массового обслуживания.",
+    en: "By the end of my studies, I, together with my mentor, my teacher, created a web application that allows you to make calculations in queuing systems.",
   },
   "skills-title": {
     ru: "Навыки",
@@ -379,7 +447,7 @@ const langs = {
     en: "Website Creation Workshop",
   },
   "sertificate-first-desc": {
-    ru: "Недельный практикум по созданию сайтов от Анны Блок помог лучше разобраться в основах верстки.",
+    ru: "Практикум по созданию сайтов от Анны Блок помог лучше разобраться в основах верстки.",
     en: "A week-long workshop on website creation from Anna Blok helped to better understand the basics of layout.",
   },
   "sertificate-second-title": {
@@ -387,12 +455,12 @@ const langs = {
     en: "HTML/CSS basics - website layout from scratch",
   },
   "sertificate-second-desc": {
-    ru: "Данный курс был пройден за 1 месяц, где я узнал о новых подходах в WEB-разработке, а также разобрался в основах HTML и CSS.",
-    en: "This course was completed in 1 month, where I learned about new approaches in WEB development, and also understood the basics of HTML and CSS.",
+    ru: "После прохождения данного курса я узнал о новых подходах в web-разработке, а также разобрался в основах HTML и CSS.",
+    en: "After completing this course, I learned about new approaches in web development, as well as the basics of HTML and CSS.",
   },
   "sertificate-js-desc": {
-    ru: "Данный курс я прошел за 4 дня, узнав основы Javascript и jQuery.",
-    en: "I completed this course in 4 days, learning the basics of Javascript and jQuery.",
+    ru: "Пройдя данный курс я узнал основы Javascript и jQuery.",
+    en: "After completing this course, I learned the basics of Javascript and jQuery.",
   },
   "my-accomplishment-title": {
     ru: "Мои достижения",
@@ -422,21 +490,25 @@ const langs = {
     ru: "Защита дипломной работы на 5, и в целом то, что я прошел путь до конца, также отношу к моим достижениям.",
     en: "The defense of the thesis for 5, and in general, the fact that I went all the way to the end is also attributed to my achievements.",
   },
+  "diary-title-date": {
+    ru: "2021 - настоящее время",
+    en: "2021 - nowadays",
+  },
   "diary-title": {
     ru: "Ведение ежедневника",
     en: "Keeping a diary",
   },
   "diary-desc": {
-    ru: "В октябре 2021 года я прошел интенсив по самодисциплине, благодаря чему стал вести ежедневник. Каждый день, вплоть до этого дня я веду записи в своем ежедневнике, записывая цели на день каждое утро.",
-    en: "In October 2021, I took an intensive self-discipline course, thanks to which I began to keep a diary. Every day, up to this day, I keep notes in my diary, writing down the goals for the day every morning.",
+    ru: "В октябре 2021 года я прошел один интенсив, благодаря которому стал вести ежедневник.",
+    en: "In October 2021, I took one intensive course, thanks to which I began to keep a diary.",
   },
   "blind-typing-title": {
     ru: "Навык слепой печати на клавиатуре",
     en: "The skill of blind typing on the keyboard",
   },
   "blind-typing-desc": {
-    ru: "К своим достижениям также могу отнести навык слепой печати на клавиатуре. В двух раскладках: русская и английская. Скорость печатания ~ 160 символов в минуту.",
-    en: "I can also attribute the skill of blind typing on the keyboard to my achievements. In two layouts: Russian and English. The printing speed is ~ 160 characters per minute.",
+    ru: "Данный навык помогает существенно быстрее делать сайты. Я обучился ему приблизительно за 2 месяца регулярной работы на онлайн-тренажере. Скорость печатания ~ 160 символов в минуту в двух раскладках: английской и русской.",
+    en: "This skill helps to make websites much faster. I learned it in about 2 months of regular work on the online simulator. The printing speed is ~ 160 characters per minute in two layouts: English and Russian.",
   },
   "write-resume": {
     ru: "Написать мне",
