@@ -33,6 +33,28 @@
   }
   &__col {
     width: 50%;
+    .social {
+    &--github {
+      &-light {
+        fill: $black;
+      }
+    }
+    &--github {
+      &-dark {
+        fill: $white;
+      }
+    }
+    &--telegram {
+      &-light {
+        fill: $black;
+      }
+    }
+    &--telegram {
+      &-dark {
+        fill: $white;
+      }
+    }
+  }
     &--left {
       text-align: right;
       padding-right: 3.2rem;
@@ -186,5 +208,8 @@
   }
   &--message-to-contact-me {
     font-weight: 700;
+  }
+  &__photo {
+    margin-bottom: 30px;
   }
 }

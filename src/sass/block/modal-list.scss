@@ -1,6 +1,20 @@
 .modal-list {
   list-style: disc;
   padding-left: 30px;
+  &__social-image {
+    width: 16px;
+    height: 16px;
+  }
+  &__social-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
   &__item {
     margin-bottom: 1rem;
     transition: color .3s ease-in;
@@ -46,5 +60,9 @@
     &:hover {
       text-decoration: underline;
     }
+  }
+  &__info-link {
+    display: flex;
+    gap: 10px;
   }
 }

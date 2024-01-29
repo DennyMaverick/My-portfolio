@@ -104,6 +104,19 @@ const themes = {
     },
   },
 
+  ".timeline__col .social--github": {
+    theme: {
+      light: "social--github-light",
+      dark: "social--github-dark",
+    },
+  },
+  ".timeline__col .social--telegram": {
+    theme: {
+      light: "social--telegram-light",
+      dark: "social--telegram-dark",
+    },
+  },
+
   //* === Works ===
 
   ".works": {

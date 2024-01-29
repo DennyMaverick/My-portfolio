@@ -16,11 +16,13 @@
   &__inner {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
     max-width: 1090px;
     align-items: center;
     @include bp-desk(tablet) {
       flex-direction: column;
+      justify-content: center;
     }
   }
   &__image-box,
@@ -93,10 +95,8 @@
     margin-bottom: 1rem;
   }
   &__image-box {
-    padding-bottom: 33.4%;
     width: 100%;
     position: relative;
-    margin-top: 109px;
     &--light {
       background: url("../img/preload/white-theme-loader.gif") center no-repeat;
     }
@@ -104,23 +104,22 @@
       background: url("../../img/preload/dark-theme-loader.gif") center no-repeat;
     }
     @include bp-desk(tablet) {
-      padding-bottom: 66.6%;
       max-width: 100%;
-      margin-top: 0;
+      width: 77%;
       margin-bottom: 2.5em;
     }
     @include bp-desk(mobile) {
       max-width: 100%;
+      width: 100%;
       align-self: center;
       margin-bottom: 1rem;
     }
   }
   &__image {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
     border-radius: 20px;
+    @include bp-desk(tablet) {
+      width: 100%;
+    }
   }
   &__btn + &__btn {
     margin-left: 1rem;

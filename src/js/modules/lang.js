@@ -484,7 +484,7 @@ const langs = {
   },
   "graduation-from-university": {
     ru: "САФУ, факультет математики и информатики, Россия",
-    en: "SAFU, Faculty of Mathematics and Computer Science, Russia",
+    en: "Russian Technological University in Information Technology, Northern (Arctic) Federal University (NArFU)",
   },
   "graduation-from-university-desc": {
     ru: "Защита дипломной работы на 5, и в целом то, что я прошел путь до конца, также отношу к моим достижениям.",
@@ -831,6 +831,18 @@ const langs = {
   "person-data-error-popup-text": {
     ru: "Пожалуйста, подтвердите согласие на обработку персональных данных",
     en: "Please, confirm your consent to the processing of personal data",
+  },
+  "contact-details-title": {
+    ru: "Контактная информация",
+    en: "Contact Details",
+  },
+  "item-fullname": {
+    ru: "Мамлев Денис Игоревич",
+    en: "Denis Mamlev",
+  },
+  "item-git-link": {
+    ru: "Ссылка на GitHub профиль",
+    en: "Link to GitHub profile",
   },
 }
 
@@ -1215,3 +1227,6 @@ function changeLang() {
 }
 // запуск функции changeLang()
 changeLang()
+
+
+
