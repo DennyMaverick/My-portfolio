@@ -8,6 +8,7 @@ import "./modules/jQuery/jquery-main"
 // import './modules/content-show-hide';
 // ==== Скрыть показать контент   ====
 
+import "./modules/dynamicAge"
 import "./modules/content-show-modal"
 import "./modules/scroll-behavior"
 import "./modules/pdf-download"

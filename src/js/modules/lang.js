@@ -432,7 +432,7 @@ const langs = {
   },
   "skill-sliders-title": {
     ru: "Подключение слайдеров и работа с ними на практике (slick, swiper)",
-    en: "Connecting sliders and working with them in practice (slick, swiper)",
+    en: "Connecting sliders and working with it in practice (slick, swiper)",
   },
   "skill-git-title": {
     ru: "Знания Git и GitHub",
@@ -471,8 +471,8 @@ const langs = {
     en: "Graduation from school",
   },
   "town-title": {
-    ru: "Кизема, Россия",
-    en: "Kizema, Russia",
+    ru: "Киземская средняя школа, Россия",
+    en: "Kizema Secondary School, Russia",
   },
   "graduation-from-school-desc": {
     ru: "Школу я закончил на 4 и 5, что считаю одним из моих достижений.",
@@ -844,6 +844,18 @@ const langs = {
     ru: "Ссылка на GitHub профиль",
     en: "Link to GitHub profile",
   },
+  "date-birth-day-text": {
+    ru: "Дата рождения:",
+    en: "Date of birth:",
+  },
+  "personal-statement-title": {
+    ru: "О себе",
+    en: "Personal Statement",
+  },
+  "personal-statement-text": {
+    ru: "Frontend-разработчик, нацеленный на результат. Довожу поставленные задачи до конца, заинтересован в разработке веб-приложений и сайтов. За последние несколько лет я обучился разработке лэндингов и являюсь профессионалом в этом. У меня есть все необходимые инструменты для разработки, и я мотивирован улучшать качество своей работы.",
+    en: "A self-motivated and ambitious Frontend Developer. I bring assigned tasks to completion, I am interested in web programming, such as developing apps and building websites. Over the past few years, I have learned how to develop landing pages and I am a professional in it. I have all the necessary development tools and I am motivated to improve the quality of my work.",
+  },
 }
 
 const titles = {
@@ -1157,7 +1169,7 @@ function changeLang() {
   // получение hash из строки браузера - #ru или #en
   let hash = window.location.hash
   // начало hash массива строки начинается со второго символа - ru или en
-  hash = hash.substr(1)
+  hash = hash.substring(1)
 
   const langToolRuEl = document.querySelector('[data-lang="ru"]')
   const langToolEnEl = document.querySelector('[data-lang="en"]')

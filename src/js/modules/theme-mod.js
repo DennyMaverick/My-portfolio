@@ -116,6 +116,12 @@ const themes = {
       dark: "social--telegram-dark",
     },
   },
+  ".timeline__col .social--vk": {
+    theme: {
+      light: "social--vk-light",
+      dark: "social--vk-dark",
+    },
+  },
 
   //* === Works ===
 

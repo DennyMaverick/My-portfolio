@@ -54,6 +54,16 @@
         fill: $white;
       }
     }
+    &--vk {
+      &-light {
+        fill: $black;
+      }
+    }
+    &--vk {
+      &-dark {
+        fill: $white;
+      }
+    }
   }
     &--left {
       text-align: right;
