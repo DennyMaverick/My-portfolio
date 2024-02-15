@@ -10,12 +10,12 @@ module.exports = {
     collapseWhitespace: isProd,
   },
 
-  pug: {
-    data: {
-      social: require("../data/social.json"),
-    },
-    pretty: isDev,
-  },
+  // pug: {
+  //   data: {
+  //     social: require("../data/social.json"),
+  //   },
+  //   pretty: isDev,
+  // },
 
   webpack: {
     mode: isProd ? "production" : "development",

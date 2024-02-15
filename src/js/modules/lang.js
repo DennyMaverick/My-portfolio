@@ -95,8 +95,8 @@ const langs = {
     en: "Archee",
   },
   "title-work-web-templates": {
-    ru: "Портфолио Веб&nbsp;-&nbsp;шаблонов",
-    en: "Web-templates portfolio",
+    ru: "Портфолио Pet&nbsp;-&nbsp;проекты",
+    en: "Portfolio Pet-projects",
   },
   "title-work-dream-on-wheels": {
     ru: "Мечта на колесах",
@@ -132,20 +132,20 @@ const langs = {
     en: "Who Am I",
   },
   "about-begin": {
-    ru: "Добрый день, меня зовут Денис. Я занимаюсь веб-разработкой.",
-    en: "Good hour, my name is Denis. I do Web Developing.",
+    ru: "Добрый день, меня зовут Денис. Уже около 5 лет я создаю сайты.",
+    en: "Good hour, my name is Denis. I have been making web-sites about 5 years.",
   },
   "about-part-two": {
-    ru: "Как известно — всё постигается благодаря опыту. И чем больше имеешь инструментов для достижения целей, тем легче и быстрее эти цели выполняются.",
-    en: "As you know, everything is comprehended through experience. And the more tools you have to achieve goals, the easier and faster these goals are fulfilled.",
+    ru: "В чем моё основное отличие от других веб-разработчиков? Во-первых, это подход к работе. Сайты, созданные мной, проходят проверку на валидность, кроссбраузерность, а также являются оптимизированными, адаптивными и семантически верными. Это значит, что ваш сайт будет работать во всех современных браузерах, при любом разрешении экрана стабильно и быстро.",
+    en: "What is my main difference from other web-developers? Firstly, I use modern aproach in my work. I make web-sites that are valid, cross-browsed, optimized and semantic right. It means that your web-site will work stable and fast in all modern browsers using any screen resolution.",
   },
   "about-part-three": {
-    ru: "Чтобы построить сайт, нужно уметь пользоваться теми инструментами (не обязательно всеми доступными), которые необходимы для конкретной задачи.",
-    en: "To build a website, you need to be able to use those tools (not necessarily all available) that are necessary for a specific task.",
+    ru: "Во-вторых, я работаю с прозрачной системой оплаты. Вы платите мне за работу, проделанную мной в часах. Вначале нашего знакомства, я оцениваю макет, и говорю, сколько часов мне потребуется на разработку сайта, подробно описывая вам, за что вы платите. Оплата за работу фиксированная, 4$ за час разработки. Таким образом, вы полностью видите, почему стоимость сайта является именно такой, какой я ее озвучиваю, чтобы убедиться в том, что эти цифры я взял не из воздуха :)",
+    en: "Secondly, I work with a transparent payment system. You pay me for work that I do in hours. At the beginning of our meeting, I evaluate the layout and tell you how many hours it will take me to develop the web-site, describing in detail to you what you are paying for. The payment for the work is fixed, $4 per hour of work. Thus, you can fully see why the cost of the site is exactly what I am voicing it to make sure that I did not pull these numbers out of thin air :)",
   },
   "about-part-four": {
-    ru: "На данный момент я с уверенностью хочу сказать, что все инструменты, которыми я владею сейчас, позволяют без больших сложностей разрабатывать лэндинги — одностраничные сайты.",
-    en: "At the moment, I want to say with confidence that all the tools that I own now allow me to develop landing pages — single-page sites without much difficulty.",
+    ru: "В-третьих, я могу помочь вам выбрать подходящий хостинг для расположения вашего сайта в сети Интернет, если у вас возникнут трудности с этим. ",
+    en: "Thirdly, I can help you choose the appropriate hosting for placing your website on the Internet if you have any difficulties with this.",
   },
   "about-part-five": {
     ru: "Если Вам нужен сайт, нажмите на кнопку ниже и оставьте мне сообщение удобным для Вас способом или воспользуйтесь",
@@ -543,14 +543,6 @@ const langs = {
     ru: "Ваше сообшение",
     en: "Your message",
   },
-  "hire-me-vk": {
-    ru: "ВКонтакте",
-    en: "VKontakte",
-  },
-  "hire-me-telegram": {
-    ru: "Телеграм",
-    en: "Telegram",
-  },
   // Modal window Archee
   "archee-title": {
     ru: "Проект Арчи",
@@ -595,12 +587,16 @@ const langs = {
 
   // Modal window Web-templates
   "web-templates-title": {
-    ru: "Портфолио Web-templates",
-    en: "Portfolio Web-templates",
+    ru: "Портфолио Pet-проекты",
+    en: "Portfolio Pet-projects",
   },
   "client-title-web-templates": {
     ru: "Личный сайт:",
     en: "Personal site:",
+  },
+  "web-templates-common-desc": {
+    ru: "Данный проект является сайтом - портфолио, которое содержит мои pet - проекты. Что такое pet-проекты? Это сайты или веб-приложения, которые были разработаны в учебных целях для закрепления материала по веб-разработке.",
+    en: "This project is the portfolio-site that consists of my pet-projects. What is the pet-projects? These are the web-sites or web-applications that was developed as the learn projects for improve knowlange in web-developing.",
   },
   "web-templates-desc-two": {
     ru: "Функция переключения темы (две цветовых схемы: светлая и темная)",
@@ -611,8 +607,12 @@ const langs = {
     en: "Smooth color change when switching slides in a project Theme's Switcher",
   },
   "web-templates-desc-four": {
-    ru: "При наведении на иконку луны (солнца) появляется всплывающее окно-подсказка с выбором темы",
-    en: "When you hover over the moon (sun) icon, a pop-up window appears with a choice of theme",
+    ru: "Добавлена функция переключения языков (более подробно о том как это было реализовано можно посмотреть перейдя по",
+    en: "It was added the function to switch the language (more detailed information can be finded by clicking to",
+  },
+  "web-templates-link": {
+    ru: "ссылке",
+    en: "the link",
   },
   "web-templates-desc-five": {
     ru: "Дизайн карточек проектов был самостоятельно реализован в программе Photoshop",
@@ -912,6 +912,14 @@ const afterElements = {
 }
 
 const repeatElems = {
+  "hire-me-vk": {
+    ru: "ВКонтакте",
+    en: "VKontakte",
+  },
+  "hire-me-telegram": {
+    ru: "Телеграм",
+    en: "Telegram",
+  },
   "next-functional": {
     ru: "При работе над проектом был реализован следующий функционал:",
     en: "During the work on the project, the following functionality was implemented:",

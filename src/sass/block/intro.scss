@@ -85,9 +85,6 @@
     margin-bottom: 42px;
   }
 
-  &__photo {
-    opacity: 0.7;
-  }
   &__image-container {
     align-self: flex-end;
     @include bp-desk(tablet) {

@@ -114,6 +114,16 @@
       align-self: center;
       margin-bottom: 1rem;
     }
+    &--overlay {
+      position: relative;
+      z-index:2;
+      &-light {
+        background-color: $white;
+      }
+      &-dark {
+        background-color: $black;
+      }
+    }
   }
   &__image {
     border-radius: 20px;
@@ -148,8 +158,8 @@
     }
     @include bp-desk(mobile) {
       &:hover {
-      color: $orange;
-    }
+        color: $orange;
+      }
     }
     &--popup {
       display: flex;

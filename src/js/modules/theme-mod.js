@@ -197,6 +197,12 @@ const themes = {
       dark: "about__image-box--dark",
     },
   },
+  ".about__image-box--overlay": {
+    theme: {
+      light: "about__image-box--overlay-light",
+      dark: "about__image-box--overlay-dark",
+    },
+  },
   ".about .social--github": {
     theme: {
       light: "social--github-light",
