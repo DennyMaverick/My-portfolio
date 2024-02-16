@@ -518,6 +518,12 @@ const themes = {
       dark: "person-data__text--dark",
     },
   },
+  ".timeline__link": {
+    theme: {
+      light: "timeline__link--light",
+      dark: "timeline__link--dark",
+    },
+  },
 }
 
 function themeSwitch(theme) {

@@ -9,6 +9,8 @@ const plumber = require('gulp-plumber');
 const notify = require('gulp-notify');
 const babel = require("gulp-babel");
 const webpack = require('webpack-stream');
+const uglify = require("gulp-uglify")
+const strips = require("gulp-strip-comments")
 
 // Обработка JavaScript
 const js = () => {
@@ -22,6 +24,8 @@ const js = () => {
       })
     )
     .pipe(babel())
+    .pipe(strips())
+    .pipe(uglify())
     .pipe(webpack(app.webpack))
     .pipe(dest(path.js.dest, {sourcemaps: app.isDev}))
 }

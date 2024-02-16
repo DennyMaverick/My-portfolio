@@ -25,12 +25,12 @@
     &--light {
       color: $grey-light-second;
       // opacity 35 %
-      border-right: 1px solid transparentize($grey, 0.65);
+      border-right: 1px solid $grey-light-second;
     }
     &--dark {
       color: $black;
       // opacity 35 %
-      border-right: 1px solid transparentize($black, 0.65);
+      border-right: 1px solid $black;
     }
     @include bp-desk(mobile) {
       border-right: none;

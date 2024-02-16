@@ -1,5 +1,8 @@
 let age
-let hash = window.location.hash.substring(1)
+// получение hash из строки браузера - #ru или #en
+  let hash = window.location.hash
+  // начало hash массива строки начинается со второго символа - ru или en
+  hash = hash.substring(1)
 
 const ageContainer = document.querySelector(".age")
 const yearsContainer = document.querySelector(".years")

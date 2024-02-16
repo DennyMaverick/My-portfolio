@@ -4,7 +4,7 @@ const langs = {
   // === title ===
   title: {
     ru: "Денис, Frontend-разработчик",
-    en: "Denis, Frontend-developer",
+    en: "Denis, Frontend Developer",
   },
   // ===== nav mobile =====
   "main-mobile": {
@@ -68,7 +68,7 @@ const langs = {
   },
   "web-developer": {
     ru: "Frontend-разработчик",
-    en: "Frontend-developer",
+    en: "Frontend Developer",
   },
   "write-intro": {
     ru: "Написать мне",
@@ -159,10 +159,6 @@ const langs = {
     ru: "Спасибо за внимание.",
     en: "Thanks for your attention.",
   },
-  "about-farewell": {
-    ru: "С любовью к web-разработке, Денис.",
-    en: "With love to web-developing, Denis.",
-  },
   "about-write-btn": {
     ru: "Написать мне",
     en: "Write to me",
@@ -210,8 +206,8 @@ const langs = {
     en: "Work Experience",
   },
   "svyaznoy-mobile-name": {
-    ru: "Салон связи ООО 'Сеть Связной'",
-    en: "Store of communication OOO 'Network Svyaznoy'",
+    ru: "Салон связи ООО &#171;Сеть Связной&#187;",
+    en: "Mobile phone store OOO &#171;Network Svyaznoy&#187;",
   },
   menager: {
     ru: "Менеджер по продажам",
@@ -223,7 +219,7 @@ const langs = {
   },
   "menager-first-item": {
     ru: "Выстраиваиние отношений с клиентами",
-    en: "building relationships with clients",
+    en: "Building relationships with clients",
   },
   "menager-second-item": {
     ru: "Продажа смартфонов, компьютерной техники и допонительных продуктов",
@@ -298,8 +294,8 @@ const langs = {
     en: "2023 - nowadays",
   },
   "web-developer-position-title": {
-    ru: "Начало в Web-разработке",
-    en: "Start in Web-developing",
+    ru: "Начинающий Frontend-разработчик",
+    en: "Junior Frontend Developer",
   },
   "freelance-title": {
     ru: "Доработка сайта-портфолио / Фриланс",
@@ -307,11 +303,11 @@ const langs = {
   },
   "freelancer-title": {
     ru: "Frontend-разработчик / Фрилансер",
-    en: "Frontend-developer / Freelancer",
+    en: "Frontend Developer / Freelancer",
   },
   "freelancer-desc-first": {
-    ru: "Мой сайт-портфолио полностью готов. Сейчас я открыт к заказам по веб-разработке, развиваюсь как Frontend разработчик и создаю интересные проекты.",
-    en: "My portfolio site is completely ready. Now I am open to web development orders, developing as a Frontend developer and creating interesting projects.",
+    ru: "Мой сайт-портфолио полностью готов. Сейчас я открыт к заказам по веб-разработке, развиваюсь как Frontend-разработчик и создаю интересные проекты.",
+    en: "My portfolio site is completely ready. Now I am open to web development orders, developing as a Frontend Developer and creating interesting projects.",
   },
   "developer-desc-first": {
     ru: "Со времени окончания университета прошло не так много времени, и я решил осваивать Web-разработку. Сначала, конечно, не догадываясь, что эта сфера так многогранна.",
@@ -383,7 +379,7 @@ const langs = {
   },
   "student-desc-first": {
     ru: "Университет дал мне понять, что успех прямо пропорционален усилиям. Разработка web-сайтов в будущем на момент обучения в университете не была еще моей целью, однако я делал попытки изучения веб-технологий.",
-    en: "The university has made it clear to me that success depend only on your efforts. The development of web-sites in the future was not my goal at the time of studying at the university, however, I made attempts to study the web-technologies.",
+    en: "The university has made it clear to me that success depend only on your efforts. The development of web-sites in the future was not my goal at the time of studying at the university, however, I made attempts to study web-technologies.",
   },
   "student-desc-second": {
     ru: "К концу обучения я совместно с наставником, моим преподавателем, создал web-приложение, позволяющее делать расчеты в системах массового обслуживания.",
@@ -577,8 +573,8 @@ const langs = {
     en: "Mixins in scss are used for convenience. These are separate mini-functions that allow you to shorten the code and work faster.",
   },
   "archee-time": {
-    ru: "Время на работу ~ 20 ч",
-    en: "Time to work ~ 20 hours",
+    ru: "Время на работу ~ 50 ч",
+    en: "Time to work ~ 50 hours",
   },
   "link-to-the-git-archee": {
     ru: "Ссылка на репозиторий GitHub / более подробное описание проекта",
@@ -623,8 +619,8 @@ const langs = {
     en: "You can find the most detailed information about the project in the Readme.md file by clicking on",
   },
   "time-web-templates": {
-    ru: "Время на работу ~ 20 ч",
-    en: "Time to work ~ 20 h",
+    ru: "Время на работу ~ 40 ч",
+    en: "Time to work ~ 40 h",
   },
 
   // Modal window Dream On Wheels
@@ -639,7 +635,7 @@ const langs = {
   },
 
   "dream-on-wheels-desc-one": {
-    ru: "Проект 'Мечта на колесах' или 'Dream On Wheels' был создан в учебных целях, чтобы закрепить навыки работы с gulp и препроцессором LESS.",
+    ru: "Проект 'Мечта на колесах' или &#171;Dream On Wheels&#187; был создан в учебных целях, чтобы закрепить навыки работы с gulp и препроцессором LESS.",
     en: "The 'Dream On Wheels' project was created for educational purposes to reinforce the skills of working with gulp and the LESS preprocessor.",
   },
   "dream-on-wheels-desc-two": {
@@ -647,8 +643,8 @@ const langs = {
     en: "The project was first created using a more simplified structure, work with the preprocessor was carried out through a third-party program - the WinLess compiler. Next, the project was completely redone using gulp. Working on this project, the following tools and technologies were used:",
   },
   "time-dream-on-wheels": {
-    ru: "Время на работу ~ 26 ч",
-    en: "Time to work ~ 26 h",
+    ru: "Время на работу ~ 45 ч",
+    en: "Time to work ~ 45 h",
   },
 
   // Currency Converter
@@ -690,7 +686,7 @@ const langs = {
   },
   "time-converter": {
     ru: "Время на работу ~ 50 ч",
-    en: "Time to work ~ 50 ч",
+    en: "Time to work ~ 50 h",
   },
 
   // Oxygen
@@ -698,6 +694,10 @@ const langs = {
   "client-oxygen": {
     ru: "Web-школа От 0 до 1",
     en: "Web-school from 0 to 1",
+  },
+  "oxygen-time": {
+    ru: "Время на работу ~ 29 ч",
+    en: "Time to work ~ 29 h",
   },
   "oxygen-desc-one": {
     ru: "Работа над проектом имела цель попрактиковаться в методологии BEM-naming. Каркас страницы был создан под руководством наставника. Весь Css и JavaScript был написан мной самостоятельно.",
@@ -753,8 +753,8 @@ const langs = {
     en: "In the video section, when you click on the 'Play' button, the 'Play' button turns into the 'Pause' button, the video is played, and when you hover over the video, a dimming background appears, when it is removed, it disappears",
   },
   "time-olivia-to-work": {
-    ru: "Время на работу ~ 8.5 ч",
-    en: "Time to work ~ 8.5 h",
+    ru: "Время на работу ~ 20 ч",
+    en: "Time to work ~ 20 h",
   },
   // Thrivetalk
   "client-thrivetalk-title": {
@@ -816,8 +816,8 @@ const langs = {
     en: "Number of rooms (C, 1, 2, 3, 4 or 5, where C is a more economical option for refurbishing rooms), selecting one of the items, the following repair calculation will occur: C (-20% of the repair cost), from 1 to 2 rooms (without price change), from 3 to 5 (+ 5% to the repair cost)",
   },
   "calc-time-to-work": {
-    ru: "Время на работу ~ 7 ч",
-    en: "Time to work ~ 7 h",
+    ru: "Время на работу ~ 20 ч",
+    en: "Time to work ~ 20 h",
   },
   // ссылка о персональных данных
   "personal-data-text": {
@@ -855,6 +855,78 @@ const langs = {
   "personal-statement-text": {
     ru: "Frontend-разработчик, нацеленный на результат. Довожу поставленные задачи до конца, заинтересован в разработке веб-приложений и сайтов. За последние несколько лет я обучился разработке лэндингов и являюсь профессионалом в этом. У меня есть все необходимые инструменты для разработки, и я мотивирован улучшать качество своей работы.",
     en: "A self-motivated and ambitious Frontend Developer. I bring assigned tasks to completion, I am interested in web programming, such as developing apps and building websites. Over the past few years, I have learned how to develop landing pages and I am a professional in it. I have all the necessary development tools and I am motivated to improve the quality of my work.",
+  },
+  "hobbie-title-vk-group": {
+    ru: "Ведение мотивационного сообщества вконтакте &#171;Ключ к мечте&#187;",
+    en: "Maintaining a motivational community on VKontakte &#171;The Key to a Dream&#187;",
+  },
+  "vk-blogger-title": {
+    ru: "Блогер",
+    en: "Blogger",
+  },
+  "hobbie-description-vk-group": {
+    ru: "Я являюсь автором сообщества &#171;Ключ к мечте&#187;. Публикую мотивационные посты. Это моё хобби.",
+    en: "I am the author of the &#171;Key to the Dream&#187; community. I publish motivational posts. This is my hobby.",
+  },
+  "link-to-the-community": {
+    ru: "Ссылка на сообщество",
+    en: "The link to the community",
+  },
+  "hobbie-title-verse": {
+    ru: "Написание стихов",
+    en: "Writing poetry",
+  },
+  "poet-title": {
+    ru: "Поэт",
+    en: "Poet",
+  },
+  "hobbie-description-verse": {
+    ru: "Пишу стихи, являюсь автором цикла стихотворений &#171;Из сна восставши&#187;.",
+    en: "I write poetry, I am the author of the cycle of poems &#171;Rising from Sleep&#187;.",
+  },
+  "link-to-the-verse": {
+    ru: "Ссылка на стихотворения",
+    en: "Link to the poems",
+  },
+  "hobbie-title": {
+    ru: "Мои хобби",
+    en: "My hobbies",
+  },
+  "tutor-title": {
+    ru: "Репетиторство по английскому языку",
+    en: "English tutoring",
+  },
+  "tutor-position": {
+    ru: "Репетитор",
+    en: "Tutor",
+  },
+  "tutor-desc-one": {
+    ru: "Во время учебы в университете я занимался репетиторством среди учащихся 2 - 7 классов.",
+    en: "While studying at the university, I tutored students in grades 2 to 7.",
+  },
+  "tutor-desc-two": {
+    ru: "Работая репетитором, я имел следующие задачи:",
+    en: "Working as a tutor, I had the following tasks:",
+  },
+  "tutor-first-item": {
+    ru: "Помощь в учебном процессе",
+    en: "Help in the educational process",
+  },
+  "tutor-second-item": {
+    ru: "Прорешивание домашнего задания",
+    en: "Solving homework",
+  },
+  "tutor-third-item": {
+    ru: "Помощь в ведении тетради для закрепления материала",
+    en: "Help in maintaining a notebook to consolidate the material",
+  },
+  "poker-subtitle": {
+    ru: "Онлайн-покер",
+    en: "Online-poker",
+  },
+  "poker-title": {
+    ru: "Игрок в покер",
+    en: "Poker player",
   },
 }
 
@@ -1133,8 +1205,12 @@ const repeatElems = {
     en: "Next",
   },
   "title-work-venom": {
-    ru: "Промосайт фильма Веном - 2",
-    en: "Promo-site of the film Venom - 2",
+    ru: "Промосайт фильма &#171;Веном - 2&#187;",
+    en: "Promo-site of the film &#171;Venom - 2&#187;",
+  },
+  nowadays: {
+    ru: "настоящее время",
+    en: "nowadays",
   },
 }
 
@@ -1160,7 +1236,7 @@ const langListItems = document.querySelectorAll(".lang-tool__item")
 const allLangs = ["ru", "en"]
 
 langListItems.forEach(function (item) {
-  item.addEventListener("click", function (event) {
+  item.addEventListener("click", function () {
     // получение hash из строки браузера - #ru или #en
 
     // получение значения атрибута data-lang (ru или en)
@@ -1178,7 +1254,6 @@ function changeLang() {
   let hash = window.location.hash
   // начало hash массива строки начинается со второго символа - ru или en
   hash = hash.substring(1)
-
   const langToolRuEl = document.querySelector('[data-lang="ru"]')
   const langToolEnEl = document.querySelector('[data-lang="en"]')
   // получение hash из строки браузера - #ru или #en
@@ -1186,12 +1261,12 @@ function changeLang() {
   if (hash == "ru") {
     langToolRuEl.classList.add("lang-tool--active")
     langToolEnEl.classList.remove("lang-tool--active")
-  } else if ((hash = "en")) {
+  } else if (hash == "en") {
     langToolEnEl.classList.add("lang-tool--active")
     langToolRuEl.classList.remove("lang-tool--active")
   }
-
   // проверка - если массив из всех доступных языков не содержит hash
+
   if (!allLangs.includes(hash)) {
     // принудительно записывать в строку браузера путь с языком
     location.href = window.location.pathname + "#ru"
@@ -1247,6 +1322,3 @@ function changeLang() {
 }
 // запуск функции changeLang()
 changeLang()
-
-
-

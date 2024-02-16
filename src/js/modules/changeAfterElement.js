@@ -2,7 +2,10 @@
 
 const workOverlayElements = document.querySelectorAll(".work--overlay")
 
-let hash = window.location.hash.substring(1)
+// получение hash из строки браузера - #ru или #en
+  let hash = window.location.hash
+  // начало hash массива строки начинается со второго символа - ru или en
+  hash = hash.substring(1)
 
 const addText = function (lang) {
   workOverlayElements.forEach((elem) => {

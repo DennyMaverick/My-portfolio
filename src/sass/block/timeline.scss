@@ -222,4 +222,17 @@
   &__photo {
     margin-bottom: 30px;
   }
+  &__link {
+    text-decoration: underline;
+
+    &--light {
+      color: $select-color-light;
+    }
+    &--dark {
+      color: $select-color-dark;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }

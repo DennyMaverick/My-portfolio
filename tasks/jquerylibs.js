@@ -8,6 +8,7 @@ const app = require("../config/app.js")
 const plumber = require("gulp-plumber")
 const notify = require("gulp-notify")
 // const babel = require("gulp-babel");
+const strips = require("gulp-strip-comments")
 const gulpConcat = require("gulp-concat")
 const uglify = require("gulp-uglify")
 
@@ -25,6 +26,8 @@ const jquerylibs = () => {
       )
       // .pipe(babel())
       // .pipe(uglify())
+      .pipe(strips())
+      .pipe(uglify())
       .pipe(gulpConcat("jquerylibs.min.js"))
       .pipe(dest(path.jquerylibs.dest))
   )

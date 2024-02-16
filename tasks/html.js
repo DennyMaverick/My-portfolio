@@ -9,6 +9,7 @@ const plumber = require("gulp-plumber")
 const notify = require("gulp-notify")
 const fileInclude = require("gulp-file-include")
 const htmlmin = require("gulp-htmlmin")
+const strips = require("gulp-strip-comments")
 // const size = require("gulp-size");
 const webpHtml = require("gulp-webp-html")
 
@@ -33,6 +34,7 @@ const html = () => {
       // .pipe(webpHtml())
       // .pipe(size({ title: "До сжатия" }))
       .pipe(htmlmin(app.htmlmin))
+      .pipe(strips())
       // .pipe(size({ title: "После сжатия" }))
       .pipe(dest(path.html.dest))
   )

@@ -11,7 +11,7 @@ $(function () {
   });
 
   $('.up').click(function () {
-    $('.modal').animate({ scrollTop: 0 }, 600);
+    $(".modal").animate({scrollTop: 0}, 600)
     return false;
   });
 
