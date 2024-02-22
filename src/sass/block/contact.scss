@@ -1,15 +1,15 @@
 .contact {
   &__left {
-    padding: 2rem;
+    padding: 30px;
     max-width: 607px;
     width: 100%;
     @include bp-desk(mobile) {
-      padding: 1rem;
+      padding: 15px;
     }
   }
 
   &__info {
-    margin: 2rem 0 3rem;
+    margin: 30px 0 45px;
     padding: 0;
     list-style: none;
     font-size: 0.94rem;
@@ -39,14 +39,14 @@
   }
 
   &__info-item {
-    margin-bottom: 0.75rem;
+    margin-bottom: 11.25px;
     &:last-child {
       margin-bottom: 0;
     }
   }
   &__info-icon {
     margin-bottom: -2px;
-    margin-right: 0.75rem;
+    margin-right: 11.25px;
     transition: fill .3s ease-in;
     &--light {
       fill: black;

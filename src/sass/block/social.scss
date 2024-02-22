@@ -14,7 +14,7 @@
   }
 
   &--vk {
-    fill: rgb(65,107,166);
+    fill: rgb(65, 107, 166);
   }
 
   &--vk-sizes {
@@ -22,7 +22,7 @@
     height: 37px;
   }
   &--telegram {
-    fill: rgb(85,177,226);
+    fill: rgb(85, 177, 226);
   }
 
   &__link {
@@ -39,9 +39,9 @@
     }
   }
   &__btn + &__btn {
-    margin-left: 1rem;
+    margin-left: 15px;
     @include bp-desk(mobile-md) {
-      margin-top: 1rem;
+      margin-top: 15px;
       margin-left: 0;
     }
   }

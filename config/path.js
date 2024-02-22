@@ -75,7 +75,7 @@ module.exports = {
   },
 
   img: {
-    src: ["./src/img/**/*.{png,jpg,jpeg,gif,svg}", "!./src/img/sprite/**/*.svg"],
+    src: ["./src/img/**/*.{png,jpg,jpeg,gif,svg}", "!./src/img/sprite/**/*.svg", "./src/img/favicon/site.webmanifest"],
     watch: ["./src/img/**/*.{png,jpg,jpeg,gif,svg}", "!./src/img/sprite/**/*.svg"],
     dest: pathDest + "/img/",
   },

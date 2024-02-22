@@ -2,7 +2,7 @@
   &__col {
     display: flex;
     flex-basis: 33.33333%;
-    padding: 1rem;
+    padding: 15px;
     @include bp-desk(notebook) {
       flex-basis: 40%;
     }

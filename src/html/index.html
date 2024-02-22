@@ -4,11 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Разработка сайтов. Создание сайтов на заказ. Сайт-портфолио. Frontend Development. Заказать сайт."
+    />
     <meta name="google" value="notranslate" />
     <title class="lang-title">Денис, web-разработчик</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/site.webmanifest">
+    <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bb1d5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
     <link rel="icon" href="./img/favicon/favicon.svg" />
-    <!-- <link rel="apple-touch-icon" href="./apple-touch-icon.png" /> -->
-    <!-- <link rel="manifest" href="manifest.json" /> -->
+
     <link rel="stylesheet" href="./css/libs/libs.min.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
     <script src="./js/libs/jquery/jquery.min.js" defer></script>
@@ -46,6 +55,19 @@
             <span class="lang-tool__item lang-tool__lang-name" data-lang="ru">ru</span>
             <span class="lang-tool__separate">|</span>
             <span class="lang-tool__item lang-tool__lang-name" data-lang="en">en</span>
+          </div>
+          <div class="header__font-change font-change">
+              <svg class="font-change__icon">
+                <use xlink:href="./img/sprite/symbol/sprite.svg#font--font" />
+              </svg>
+              <div class="font-change__popup">
+                <p class="font-change__text lang-change-font">
+                  Изменить шрифт
+                </p>
+              </div>
+              <div class="font-change__progress-bar">
+                <input class="font-change__progress-input" min="15" max="18" value="15" name="range" step="1" type="range">
+              </div>
           </div>
           <nav class="header__nav nav" id="nav">
             <a class="nav__link lang-main" href="#home">Главная</a>
@@ -286,7 +308,7 @@
             <div class="about__text">
               <p class="about__text-part lang-about-begin">Добрый день, меня зовут Денис. Уже около 5 лет я создаю сайты.</p>
               <p class="about__text-part lang-about-part-two">В чем моё основное отличие от других веб-разработчиков? Во-первых, это подход к работе. Сайты, созданные мной, проходят проверку на валидность, кроссбраузерность, а также являются оптимизированными, адаптивными и семантически верными. Это значит, что ваш сайт будет работать во всех современных браузерах, при любом разрешении экрана стабильно и быстро.</p>
-              <p class="about__text-part lang-about-part-three">Во-вторых, я работаю с прозрачной системой оплаты. Вы платите мне за работу, проделанную мной в часах. Вначале нашего знакомства, я оцениваю макет, и говорю, сколько часов мне потребуется на разработку сайта, подробно описывая вам, за что вы платите. Оплата за работу фиксированная, 4$ за час разработки. Таким образом, вы полностью видите, почему стоимость сайта является именно такой, какой я ее озвучиваю, чтобы убедиться в том, что эти цифры я взял не из воздуха :)</p>
+              <p class="about__text-part lang-about-part-three">Во-вторых, я работаю с прозрачной системой оплаты. Вы платите мне за работу, проделанную мной в часах. Вначале нашего знакомства, я оцениваю макет, и говорю, сколько часов мне потребуется на разработку сайта, подробно описывая Вам, за что Вы платите. Оплата за работу фиксированная, 4$ за час разработки. Таким образом, Вы полностью видите, почему стоимость сайта является именно такой, какой я ее озвучиваю, чтобы убедиться в том, что эти цифры я взял не из воздуха :)</p>
               <p class="about__text-part lang-about-part-four">На данный момент я с уверенностью хочу сказать, что все инструменты, которыми я владею сейчас, позволяют без больших сложностей разрабатывать лэндинги — одностраничные сайты.</p>
               <span class="about__text-part lang-about-part-five"> Если Вам нужен сайт, нажмите на кнопку ниже и оставьте мне сообщение удобным для Вас способом или воспользуйтесь</span>
               <span id="aboutLinkSocial" class="about__link">
@@ -374,6 +396,19 @@
               <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon" />
             </svg>
           </button>
+          <div class="theme__font-change font-change">
+              <svg class="font-change__icon">
+                <use xlink:href="./img/sprite/symbol/sprite.svg#font--font" />
+              </svg>
+              <div class="theme__font-change-popup font-change__popup">
+                <p class="font-change__text lang-change-font">
+                  Изменить шрифт
+                </p>
+              </div>
+              <div class="font-change__progress-bar">
+                <input class="font-change__progress-input" min="15" max="18" value="15" name="range" step="1" type="range">
+              </div>
+          </div>
           <button class="theme__close-btn" type="button" data-close-btn>
             <svg class="theme__close">
               <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
@@ -743,6 +778,19 @@
               <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon" />
             </svg>
           </button>
+          <div class="theme__font-change font-change">
+              <svg class="font-change__icon">
+                <use xlink:href="./img/sprite/symbol/sprite.svg#font--font" />
+              </svg>
+              <div class="theme__font-change-popup font-change__popup">
+                <p class="font-change__text lang-change-font">
+                  Изменить шрифт
+                </p>
+              </div>
+              <div class="font-change__progress-bar">
+                <input class="font-change__progress-input" min="15" max="18" value="15" name="range" step="1" type="range">
+              </div>
+          </div>
           <button class="theme__close-btn" type="button" data-close-btn>
             <svg class="theme__close">
               <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
@@ -811,7 +859,7 @@
                   <span class="person-data__custom-checkbox"></span>
                   <div class="person-data__error-popup lang-person-data-error-popup-text" id="error-popup">Пожалуйста подтвердите согласие на обработку персональных данных</div>
                   <div class="person-data__data">
-                    <span class="lang-personal-data-text person-data__text">Нажав на кнопку 'Отправить', вы даете согласие на обработку персональных данных в соответствии с</span>
+                    <span class="lang-personal-data-text person-data__text">Нажав на кнопку 'Отправить', Вы даете согласие на обработку персональных данных в соответствии с</span>
                     <a class="person-data__link lang-personal-data-text-federal-low" href="https://www.consultant.ru/document/cons_doc_LAW_61801/" target="_blank">ФЗ о персональных данных</a>
                   </div>
                 </label>
@@ -883,6 +931,19 @@
               <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon" />
             </svg>
           </button>
+          <div class="theme__font-change font-change">
+              <svg class="font-change__icon">
+                <use xlink:href="./img/sprite/symbol/sprite.svg#font--font" />
+              </svg>
+              <div class="theme__font-change-popup font-change__popup">
+                <p class="font-change__text lang-change-font">
+                  Изменить шрифт
+                </p>
+              </div>
+              <div class="font-change__progress-bar">
+                <input class="font-change__progress-input" min="15" max="18" value="15" name="range" step="1" type="range">
+              </div>
+          </div>
           <button class="theme__close-btn" type="button" data-close>
             <svg class="theme__close">
               <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
@@ -999,6 +1060,19 @@
               <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon" />
             </svg>
           </button>
+          <div class="theme__font-change font-change">
+              <svg class="font-change__icon">
+                <use xlink:href="./img/sprite/symbol/sprite.svg#font--font" />
+              </svg>
+              <div class="theme__font-change-popup font-change__popup">
+                <p class="font-change__text lang-change-font">
+                  Изменить шрифт
+                </p>
+              </div>
+              <div class="font-change__progress-bar">
+                <input class="font-change__progress-input" min="15" max="18" value="15" name="range" step="1" type="range">
+              </div>
+          </div>
           <button class="theme__close-btn" type="button" data-close>
             <svg class="theme__close">
               <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
@@ -1099,6 +1173,19 @@
               <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon" />
             </svg>
           </button>
+          <div class="theme__font-change font-change">
+              <svg class="font-change__icon">
+                <use xlink:href="./img/sprite/symbol/sprite.svg#font--font" />
+              </svg>
+              <div class="theme__font-change-popup font-change__popup">
+                <p class="font-change__text lang-change-font">
+                  Изменить шрифт
+                </p>
+              </div>
+              <div class="font-change__progress-bar">
+                <input class="font-change__progress-input" min="15" max="18" value="15" name="range" step="1" type="range">
+              </div>
+          </div>
           <button class="theme__close-btn" type="button" data-close>
             <svg class="theme__close">
               <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
@@ -1200,6 +1287,19 @@
               <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon" />
             </svg>
           </button>
+          <div class="theme__font-change font-change">
+              <svg class="font-change__icon">
+                <use xlink:href="./img/sprite/symbol/sprite.svg#font--font" />
+              </svg>
+              <div class="theme__font-change-popup font-change__popup">
+                <p class="font-change__text lang-change-font">
+                  Изменить шрифт
+                </p>
+              </div>
+              <div class="font-change__progress-bar">
+                <input class="font-change__progress-input" min="15" max="18" value="15" name="range" step="1" type="range">
+              </div>
+          </div>
           <button class="theme__close-btn" type="button" data-close>
             <svg class="theme__close">
               <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
@@ -1314,6 +1414,19 @@
               <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon" />
             </svg>
           </button>
+          <div class="theme__font-change font-change">
+              <svg class="font-change__icon">
+                <use xlink:href="./img/sprite/symbol/sprite.svg#font--font" />
+              </svg>
+              <div class="theme__font-change-popup font-change__popup">
+                <p class="font-change__text lang-change-font">
+                  Изменить шрифт
+                </p>
+              </div>
+              <div class="font-change__progress-bar">
+                <input class="font-change__progress-input" min="15" max="18" value="15" name="range" step="1" type="range">
+              </div>
+          </div>
           <button class="theme__close-btn" type="button" data-close>
             <svg class="theme__close">
               <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
@@ -1457,6 +1570,19 @@
               <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon" />
             </svg>
           </button>
+          <div class="theme__font-change font-change">
+              <svg class="font-change__icon">
+                <use xlink:href="./img/sprite/symbol/sprite.svg#font--font" />
+              </svg>
+              <div class="theme__font-change-popup font-change__popup">
+                <p class="font-change__text lang-change-font">
+                  Изменить шрифт
+                </p>
+              </div>
+              <div class="font-change__progress-bar">
+                <input class="font-change__progress-input" min="15" max="18" value="15" name="range" step="1" type="range">
+              </div>
+          </div>
           <button class="theme__close-btn" type="button" data-close>
             <svg class="theme__close">
               <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
@@ -1572,6 +1698,19 @@
               <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon" />
             </svg>
           </button>
+          <div class="theme__font-change font-change">
+              <svg class="font-change__icon">
+                <use xlink:href="./img/sprite/symbol/sprite.svg#font--font" />
+              </svg>
+              <div class="theme__font-change-popup font-change__popup">
+                <p class="font-change__text lang-change-font">
+                  Изменить шрифт
+                </p>
+              </div>
+              <div class="font-change__progress-bar">
+                <input class="font-change__progress-input" min="15" max="18" value="15" name="range" step="1" type="range">
+              </div>
+          </div>
           <button class="theme__close-btn" type="button" data-close>
             <svg class="theme__close">
               <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
@@ -1698,6 +1837,19 @@
               <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon" />
             </svg>
           </button>
+          <div class="theme__font-change font-change">
+              <svg class="font-change__icon">
+                <use xlink:href="./img/sprite/symbol/sprite.svg#font--font" />
+              </svg>
+              <div class="theme__font-change-popup font-change__popup">
+                <p class="font-change__text lang-change-font">
+                  Изменить шрифт
+                </p>
+              </div>
+              <div class="font-change__progress-bar">
+                <input class="font-change__progress-input" min="15" max="18" value="15" name="range" step="1" type="range">
+              </div>
+          </div>
           <button class="theme__close-btn" type="button" data-close>
             <svg class="theme__close">
               <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
@@ -1805,6 +1957,19 @@
               <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon" />
             </svg>
           </button>
+          <div class="theme__font-change font-change">
+              <svg class="font-change__icon">
+                <use xlink:href="./img/sprite/symbol/sprite.svg#font--font" />
+              </svg>
+              <div class="theme__font-change-popup font-change__popup">
+                <p class="font-change__text lang-change-font">
+                  Изменить шрифт
+                </p>
+              </div>
+              <div class="font-change__progress-bar">
+                <input class="font-change__progress-input" min="15" max="18" value="15" name="range" step="1" type="range">
+              </div>
+          </div>
           <button class="theme__close-btn" type="button" data-close>
             <svg class="theme__close">
               <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />

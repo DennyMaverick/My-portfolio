@@ -524,6 +524,30 @@ const themes = {
       dark: "timeline__link--dark",
     },
   },
+  ".header__font-change": {
+    theme: {
+      light: "header__font-change--light",
+      dark: "header__font-change--dark",
+    },
+  },
+  ".font-change__icon": {
+    theme: {
+      light: "font-change__icon--light",
+      dark: "font-change__icon--dark",
+    },
+  },
+  ".font-change__text": {
+    theme: {
+      light: "font-change__text--light",
+      dark: "font-change__text--dark",
+    },
+  },
+  ".font-change__popup": {
+    theme: {
+      light: "font-change__popup--light",
+      dark: "font-change__popup--dark",
+    },
+  },
 }
 
 function themeSwitch(theme) {
@@ -562,8 +586,28 @@ switchers.forEach((switcher) => {
 
 const activeTheme = localStorage.getItem("theme")
 
-if (activeTheme === null) {
-  themeSwitch("dark")
+if (activeTheme === "") {
+  themeSwitch("light")
 } else {
   themeSwitch(activeTheme)
 }
+
+// Checking when the system preferences are active
+
+if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches && activeTheme === "") {
+  themeSwitch("dark")
+}
+
+// Changing theme when the System preferences change
+
+window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (event) => {
+  const newColorScheme = event.matches ? "dark" : "light"
+
+  if (newColorScheme === "dark") {
+    themeSwitch("dark")
+    localStorage.setItem("theme", "dark")
+  } else {
+    themeSwitch("light")
+    localStorage.setItem("theme", "light")
+  }
+})

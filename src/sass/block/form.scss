@@ -1,10 +1,10 @@
 .form {
   &__group {
-    margin-bottom: 1.8rem;
+    margin-bottom: 27px;
   }
   &__label {
     display: inline-block;
-    margin-bottom: 0.6rem;
+    margin-bottom: 9px;
     font-size: 0.8rem;
     color: $black;
     font-weight: 700;
@@ -13,10 +13,10 @@
   &__textarea {
     display: block;
     width: 100%;
-    padding: 1.3rem 1.8rem;
+    padding: 19.5px 27px;
     // opacity 30%
     border: 1px solid transparentize($grey-in-form, 0.7);
-    border-radius: 1.8rem;
+    border-radius: 27px;
 
     font-family: inherit;
     font-size: 0.8rem;
@@ -37,10 +37,10 @@
     height: 200px;
     resize: none;
     font-size: 1rem;
-    margin-bottom: 5rem;
+    margin-bottom: 75px;
   }
   &__personal-data {
-    margin-bottom: 2rem;
+    margin-bottom: 30px;
     font-size: 0.8rem;
   }
 }

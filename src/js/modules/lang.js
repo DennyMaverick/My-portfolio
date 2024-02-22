@@ -140,11 +140,11 @@ const langs = {
     en: "What is my main difference from other web-developers? Firstly, I use modern aproach in my work. I make web-sites that are valid, cross-browsed, optimized and semantic right. It means that your web-site will work stable and fast in all modern browsers using any screen resolution.",
   },
   "about-part-three": {
-    ru: "Во-вторых, я работаю с прозрачной системой оплаты. Вы платите мне за работу, проделанную мной в часах. Вначале нашего знакомства, я оцениваю макет, и говорю, сколько часов мне потребуется на разработку сайта, подробно описывая вам, за что вы платите. Оплата за работу фиксированная, 4$ за час разработки. Таким образом, вы полностью видите, почему стоимость сайта является именно такой, какой я ее озвучиваю, чтобы убедиться в том, что эти цифры я взял не из воздуха :)",
+    ru: "Во-вторых, я работаю с прозрачной системой оплаты. Вы платите мне за работу, проделанную мной в часах. Вначале нашего знакомства, я оцениваю макет, и говорю, сколько часов мне потребуется на разработку сайта, подробно описывая Вам, за что Вы платите. Оплата за работу фиксированная, 4$ за час разработки. Таким образом, Вы полностью видите, почему стоимость сайта является именно такой, какой я ее озвучиваю, чтобы убедиться в том, что эти цифры я взял не из воздуха :)",
     en: "Secondly, I work with a transparent payment system. You pay me for work that I do in hours. At the beginning of our meeting, I evaluate the layout and tell you how many hours it will take me to develop the web-site, describing in detail to you what you are paying for. The payment for the work is fixed, $4 per hour of work. Thus, you can fully see why the cost of the site is exactly what I am voicing it to make sure that I did not pull these numbers out of thin air :)",
   },
   "about-part-four": {
-    ru: "В-третьих, я могу помочь вам выбрать подходящий хостинг для расположения вашего сайта в сети Интернет, если у вас возникнут трудности с этим. ",
+    ru: "В-третьих, я могу помочь Вам выбрать подходящий хостинг для расположения вашего сайта в сети Интернет, если у Вас возникнут трудности с этим. ",
     en: "Thirdly, I can help you choose the appropriate hosting for placing your website on the Internet if you have any difficulties with this.",
   },
   "about-part-five": {
@@ -520,7 +520,7 @@ const langs = {
     en: "Good hour!",
   },
   "griding-desc": {
-    ru: "Вы можете написать мне на почту или отправить сообщение через форму ниже, и я отвечу в ближайшее время. Также вы можете связаться со мной через социальные сети.",
+    ru: "Вы можете написать мне на почту или отправить сообщение через форму ниже, и я отвечу в ближайшее время. Также Вы можете связаться со мной через социальные сети.",
     en: "You can email me or send a message using the form below, and I will respond as soon as possible. Also you can keep in touch with me in social networks.",
   },
   "modal-hire-me-name": {
@@ -615,7 +615,7 @@ const langs = {
     en: "The design of project cards was independently implemented in Photoshop",
   },
   "more-info": {
-    ru: "Наиболее подробную информацию о проекте вы сможете найти в файле Readme.md перейдя по",
+    ru: "Наиболее подробную информацию о проекте Вы сможете найти в файле Readme.md перейдя по",
     en: "You can find the most detailed information about the project in the Readme.md file by clicking on",
   },
   "time-web-templates": {
@@ -821,7 +821,7 @@ const langs = {
   },
   // ссылка о персональных данных
   "personal-data-text": {
-    ru: "Нажимая кнопку 'Отправить', вы даете согласие на обработку персональных данных в соответствии с",
+    ru: "Нажимая кнопку 'Отправить', Вы даете согласие на обработку персональных данных в соответствии с",
     en: "By clicking the 'Send' button, you consent to the processing of personal data in accordance with",
   },
   "personal-data-text-federal-low": {
@@ -984,6 +984,10 @@ const afterElements = {
 }
 
 const repeatElems = {
+  "change-font": {
+    ru: "Изменить шрифт",
+    en: "Change font",
+  },
   "hire-me-vk": {
     ru: "ВКонтакте",
     en: "VKontakte",

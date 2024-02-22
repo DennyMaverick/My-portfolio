@@ -25,7 +25,7 @@
     height: 12px;
     width: 12px;
     border-radius: 2px;
-    margin-right: 2rem;
+    margin-right: 30px;
     cursor: pointer;
     &--light {
       position: relative;
@@ -94,8 +94,8 @@
     max-width: 244px;
     min-height: 62px;
     position: absolute;
-    left: 0.4rem;
-    top: -5rem;
+    left: 6px;
+    top: -75px;
     transition: all 0.2s ease-in;
     &--active {
       visibility: visible;
@@ -106,8 +106,8 @@
       max-width: 244px;
       min-height: 62px;
       position: absolute;
-      left: 0.4rem;
-      top: -5rem;
+      left: 6px;
+      top: -75px;
       transition: all 0.2s ease-in;
       &:before {
         content: "";

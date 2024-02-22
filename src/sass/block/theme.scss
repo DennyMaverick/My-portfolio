@@ -58,8 +58,8 @@
     }
   }
   &__icon {
-    width: 1rem;
-    height: 1rem;
+    width: 15px;
+    height: 15px;
     cursor: pointer;
   }
 
@@ -83,5 +83,11 @@
   &__btn {
     padding: 5px;
     margin: -5px;
+  }
+  &__font-change {
+    margin-left: 20px;
+  }
+  &__font-change-popup {
+    top: -10px;
   }
 }

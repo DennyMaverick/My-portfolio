@@ -1,6 +1,6 @@
 .header {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 15px;
+  padding-bottom: 15px;
   position: fixed;
   left: 0;
   width: 100%;
@@ -20,12 +20,12 @@
     padding-top: 25px;
   }
   @include bp-desk(tablet) {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 22.5px;
+    padding-bottom: 22.5px;
   }
   @include bp-desk(mobile) {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
   &__mobile-modal {
     overflow: auto;
@@ -72,17 +72,20 @@
     flex-wrap: wrap;
     height: 100%;
     align-items: center;
-    @include media-down(1041px) {
+    @include bp-desk(notebook) {
       display: none;
     }
   }
 
-
   &__lang {
-    margin-right: auto;
+    // margin-right: auto;
     margin-left: 30px;
     @include bp-desk(mobile) {
       margin-left: 0;
     }
+  }
+  &__font-change {
+    margin-left: 20px;
+    margin-right: auto;
   }
 }

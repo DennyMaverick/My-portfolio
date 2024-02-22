@@ -16,7 +16,7 @@
     }
   }
   &__item {
-    margin-bottom: 1rem;
+    margin-bottom: 15px;
     transition: color .3s ease-in;
     &--dark {
       color: $modal-list-link-dark;
@@ -55,7 +55,7 @@
     }
   }
   &__this-link {
-    margin-left: 1rem;
+    margin-left: 15px;
     text-decoration: none;
     &:hover {
       text-decoration: underline;

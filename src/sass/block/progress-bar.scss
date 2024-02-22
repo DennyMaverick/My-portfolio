@@ -3,22 +3,22 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 1.5rem;
+    padding: 22.5px;
 
-    border-radius: 0.5rem;
-    margin-bottom: 1rem;
+    border-radius: 7.5px;
+    margin-bottom: 15px;
     transition: border .3s ease-in;
     &--light {
-      border: 0.05rem solid $grey-light-second;
+      border: 0.75px solid $grey-light-second;
     }
     &--dark {
-      border: 0.05rem solid $white;
+      border: 0.75px solid $white;
     }
   }
   &__title {
     font-size: 0.94rem;
     font-weight: 300;
-    max-width: 8.34rem;
+    max-width: 125.1px;
     hyphens: manual;
     transition: color .3s ease-in;
     &--light {
@@ -32,7 +32,7 @@
     }
   }
   &__right {
-    padding-left: 1.2rem;
+    padding-left: 18px;
     width: 60%;
   }
   &__left {
@@ -44,7 +44,7 @@
       padding: 0;
     }
     &__left + &__right {
-      margin-top: 1.5rem;
+      margin-top: 22.5px;
     }
   }
   &__bar {

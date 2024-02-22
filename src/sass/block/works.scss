@@ -1,7 +1,7 @@
 .works {
   margin-top: -5px;
-  padding: 6.8rem 0;
-  padding-bottom: 1.8rem;
+  padding: 102px 0;
+  padding-bottom: 27px;
   transition: background-color 0.3s ease-in;
   &--light {
     background-color: $white;
@@ -10,23 +10,23 @@
     background-color: $black;
   }
   @include bp-desk(tablet) {
-    padding-top: 5.8rem;
+    padding-top: 87px;
   }
   @include bp-desk(mobile) {
-    padding-bottom: 2rem;
+    padding-bottom: 30px;
   }
   @include bp-desk(mobile-md) {
-    padding-top: 4.3rem;
+    padding-top: 64.5px;
   }
   &__nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1.4rem;
+    margin-bottom: 21px;
     @include bp-desk(tablet) {
       flex-direction: column;
       align-items: flex-start;
-      margin-left: 5rem;
+      margin-left: 75px;
     }
     @include bp-desk(mobile) {
       margin-left: 0;
@@ -35,7 +35,7 @@
 
   &__nav-link {
     position: relative;
-    margin: 0 1.2rem;
+    margin: 0 18px;
     font-size: 0.8rem;
     padding: 7px 0;
 
@@ -78,8 +78,8 @@
   &__portfolio {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -1rem;
-    margin-bottom: 2.8rem;
+    margin: 0 -15px;
+    margin-bottom: 42px;
     @include bp-desk(notebook) {
       justify-content: center;
     }

@@ -1,5 +1,5 @@
 .footer {
-  padding: 2rem 0;
+  padding: 30px 0;
   transition: background-color 0.3s ease-in;
   &--light {
     background-color: $black;
@@ -16,8 +16,8 @@
     }
   }
   &__copyright {
-    margin-right: 1rem;
-    padding-right: 1rem;
+    margin-right: 15px;
+    padding-right: 15px;
     font-size: 0.94rem;
     display: flex;
     align-items: center;
@@ -36,23 +36,23 @@
       border-right: none;
       margin-right: 0;
       padding-right: 0;
-      margin-bottom: 1rem;
+      margin-bottom: 15px;
     }
     @include media-down(680px) {
-      margin-bottom: 1rem;
+      margin-bottom: 15px;
     }
     @include bp-desk(mobile-md) {
       line-height: 2;
     }
   }
   &__credits {
-    margin-bottom: 2rem;
+    margin-bottom: 30px;
     display: flex;
     align-items: center;
     @include bp-desk(mobile) {
       flex-direction: column;
       align-items: flex-start;
-      margin-bottom: 1.4rem;
+      margin-bottom: 21px;
     }
   }
   &__social {
@@ -72,7 +72,7 @@
   //   animation: change-color 3s ease-in;
   // }
   &__social-link {
-    margin-right: 1.2rem;
+    margin-right: 18px;
   }
   &__nav {
     width: 100%;
@@ -93,7 +93,7 @@
     display: flex;
     align-items: center;
     @include media-down(789px) {
-      margin-bottom: 2rem;
+      margin-bottom: 30px;
     }
     @include media-down(500px) {
       flex-direction: column;
@@ -127,10 +127,10 @@
     }
   }
   &__nav-link + &__nav-link {
-    margin-left: 0.7rem;
+    margin-left: 10.5px;
     @include media-down(500px) {
       margin-left: 0;
-      margin-top: 1rem;
+      margin-top: 15px;
     }
   }
   &__nav-btn {
@@ -138,7 +138,7 @@
     line-height: 1.1;
     border-radius: 20px;
     border: 1px solid $grey-light;
-    padding: 0.5rem 1.4rem;
+    padding: 7.5px 21px;
     text-decoration: none;
     transition: background-color 0.4s ease-in, color 0.4s ease-in, border-color .4s ease-in;
     &--dark {
@@ -156,19 +156,19 @@
       }
     }
     @include media-down(390px) {
-      padding: 1rem 1.4rem;
+      padding: 15px 21px;
     }
   }
   &__nav-btn + &__nav-btn {
     @include media-down(500px) {
-      margin-left: 1.5rem;
+      margin-left: 22.5px;
     }
     @include media-down(390px) {
       margin-left: 0;
     }
   }
   &__nav-btns {
-    margin-left: 1.5rem;
+    margin-left: 22.5px;
     @include media-down(789px) {
       margin-left: 0;
     }
@@ -182,7 +182,7 @@
     transform: translateY(0);
     transition: transform 0.4s ease-in, fill 0.4s ease-in;
     &:hover {
-      transform: translateY(-0.3rem);
+      transform: translateY(-4.5px);
     }
   }
   .social {
