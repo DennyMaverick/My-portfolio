@@ -27,8 +27,21 @@
     font-size: 2.6rem;
     margin-bottom: 20px;
     text-transform: uppercase;
+    @include bp-desk(tablet) {
+      font-size: 1.3rem;
+    }
+    @include media-down(400px) {
+      font-size: .9rem;
+    }
   }
   &__description {
+    font-size: 1.2rem;
+    @include bp-desk(tablet) {
+      font-size: .8rem;
+    }
+    @include media-down(400px) {
+      font-size: .7rem;
+    }
     &--light {
       color: $black;
     }
@@ -37,12 +50,14 @@
     }
   }
   p {
-    font-size: 1.2rem;
     text-transform: uppercase;
   }
   &__back-link {
     transition: color 0.2s ease-in;
     font-size: 1rem;
+    @include bp-desk(tablet) {
+      font-size: .7rem;
+    }
     &--light {
       color: $black;
     }
