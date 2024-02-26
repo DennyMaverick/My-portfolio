@@ -1249,6 +1249,7 @@ langListItems.forEach(function (item) {
     // добавление в строку браузера #ru или #en
     location.href = window.location.pathname + "#" + lang
 
+    localStorage.setItem("lang", lang)
     // перезагрузка страницы
     location.reload()
   })
@@ -1265,15 +1266,19 @@ function changeLang() {
   if (hash == "ru") {
     langToolRuEl.classList.add("lang-tool--active")
     langToolEnEl.classList.remove("lang-tool--active")
+    localStorage.setItem("lang", "ru")
   } else if (hash == "en") {
     langToolEnEl.classList.add("lang-tool--active")
     langToolRuEl.classList.remove("lang-tool--active")
+    localStorage.setItem("lang", "en")
   }
   // проверка - если массив из всех доступных языков не содержит hash
 
   if (!allLangs.includes(hash)) {
     // принудительно записывать в строку браузера путь с языком
     location.href = window.location.pathname + "#ru"
+
+    localStorage.setItem("lang", "ru")
     // перезагрузка страницы
     location.reload()
   }
