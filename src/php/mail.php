@@ -13,15 +13,16 @@ $form_subject = trim($_POST["form_subject"]);
 
 // Serialize form fields - that filled-in by User
 foreach ( $_POST as $key => $value ) {
-	if ( $value != "" && $key != "project_name" && $key != "admin_email" && $key != "form_subject" && $key != "email_from" ) {
-		$message .= "
-		" . ( ($c = !$c) ? '<tr>':'<tr style="background-color: #f8f8f8;">' ) . "
-		<td style='padding: 10px; border: #e9e9e9 1px solid;'><b>$key</b></td>
-		<td style='padding: 10px; border: #e9e9e9 1px solid;'>$value</td>
-	</tr>
-	";
-	}
+  if ( $value != "" && $key != "project_name" && $key != "admin_email" && $key != "form_subject" && $key != "email_from" ) {
+    $message .= "
+    " . ( ($c = !$c) ? '<tr>':'<tr style="background-color: #f8f8f8;">' ) . "
+    <td style='padding: 10px; border: #e9e9e9 1px solid;'><b>$key</b></td>
+    <td style='padding: 10px; border: #e9e9e9 1px solid;'>$value</td>
+  </tr>
+  ";
+  }
 }
+
 
 // Create message text for sending on email
 $message = "<table style='width: 100%;'>$message</table>";
@@ -30,8 +31,8 @@ $message = "<table style='width: 100%;'>$message</table>";
 function send_user_data_in_txt_file ($message){
 
     //HERE SAVE TEXT INFO
-	$f = fopen('form_fill.html', 'a+');
-	fwrite($f, date('Y-m-d H:i:s'). "\n");
+  $f = fopen('form_fill.html', 'a+');
+  fwrite($f, date('Y-m-d H:i:s'). "\n");
     fwrite($f, $message );
     fwrite($f, "\n" . "\n" . "\n" . "\n");
 
@@ -39,7 +40,7 @@ function send_user_data_in_txt_file ($message){
 
 // Adjusting text encoding
 function adopt($text) {
-	return '=?UTF-8?B?'.base64_encode($text).'?=';
+  return '=?UTF-8?B?'.base64_encode($text).'?=';
 }
 
 // Preparing header
