@@ -23,7 +23,6 @@ foreach ( $_POST as $key => $value ) {
   }
 }
 
-
 // Create message text for sending on email
 $message = "<table style='width: 100%;'>$message</table>";
 
@@ -56,3 +55,5 @@ mail($admin_email, adopt($form_subject), $message, $headers );
 send_user_data_in_txt_file ($message);
 
 header('location: ../thankyou.html');
+
+?>
