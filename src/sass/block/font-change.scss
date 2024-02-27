@@ -4,6 +4,11 @@
     cursor: pointer;
     width: 17px;
     height: 27px;
+    opacity: 1;
+    transition: opacity .3s ease-in;
+    &:hover {
+      opacity: .7;
+    }
     &--light {
       fill: $black;
     }
