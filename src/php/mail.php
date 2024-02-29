@@ -30,7 +30,7 @@ $message = "<table style='width: 100%;'>$message</table>";
 function send_user_data_in_txt_file ($message){
 
     //HERE SAVE TEXT INFO
-  $f = fopen('form_fill.html', 'a+');
+  $f = fopen('./php/form_fill.html', 'a+');
   fwrite($f, date('Y-m-d H:i:s'). "\n");
     fwrite($f, $message );
     fwrite($f, "\n" . "\n" . "\n" . "\n");
