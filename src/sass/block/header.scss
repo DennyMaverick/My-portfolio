@@ -6,15 +6,13 @@
   width: 100%;
   background: $white;
   z-index: 1300;
-  transition: background-color .3s ease-in;
+  transition: background-color 0.3s ease-in;
   padding-right: calc(20px - (100vw - 100%));
   &--light {
     background: $white;
-    box-shadow: 0 0 5px $black;
   }
   &--dark {
     background: $black;
-    box-shadow: 0 0 5px $white;
   }
   @include media-down(1041px) {
     padding-top: 25px;
@@ -41,7 +39,7 @@
     top: 0;
     bottom: 0;
     right: 0;
-    transition: background-color .3s ease-in, transform 1s ease-in, opacity 1s ease-in;
+    transition: background-color 0.3s ease-in, transform 1s ease-in, opacity 1s ease-in;
     &--light {
       background-color: $white;
     }
@@ -87,5 +85,11 @@
   &__font-change {
     margin-left: 20px;
     margin-right: auto;
+  }
+  &--box-shadow-dark {
+    box-shadow: 0 0 5px $white;
+  }
+  &--box-shadow-light {
+    box-shadow: 0 0 5px $black;
   }
 }
