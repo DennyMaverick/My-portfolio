@@ -132,24 +132,52 @@ const langs = {
     en: "Who Am I",
   },
   "about-begin": {
-    ru: "Добрый день, меня зовут Денис. Уже около 5 лет я создаю сайты.",
-    en: "Good hour, my name is Denis. I have been making web-sites about 5 years.",
+    ru: "Добрый день, меня зовут Денис. Я разрабатываю лэндинги, одностраничные сайты. Мне также интересна разработка SPA (Single Page Applications), в данный момент я изучаю React.",
+    en: "Good hour, my name is Denis. I develop landings, single page sites. Also I am interested in developing SPA (Single Page Applications), I do learn React to do this.",
   },
   "about-part-two": {
-    ru: "В чем моё основное отличие от других веб-разработчиков? Во-первых, это подход к работе. Сайты, созданные мной, проходят проверку на валидность, кроссбраузерность, а также являются оптимизированными, адаптивными и семантически верными. Это значит, что ваш сайт будет работать во всех современных браузерах, при любом разрешении экрана стабильно и быстро.",
-    en: "What is my main difference from other web-developers? Firstly, I use modern aproach in my work. I make web-sites that are valid, cross-browsed, optimized and semantic right. It means that your web-site will work stable and fast in all modern browsers using any screen resolution.",
+    ru: "Мне интересно, чтобы сайт, созданный мной или группой разработчиков, был внешне привлекательным, имел красивый дизайн, а также создавал впечатление. Поэтому я, как Frontend - разработчик, нацелен на то, чтобы внешняя составляющая сайта была на высшем уровне. Для этого у меня есть следующие инструменты:",
+    en: "I like to do such sites as attractive sites with beautiful design. That's why I, as a Fronted Developer, want the sites would be on a high level. I have next tools for this:",
   },
   "about-part-three": {
-    ru: "Во-вторых, я работаю с прозрачной системой оплаты. Вы платите мне за работу, проделанную мной в часах. Вначале нашего знакомства, я оцениваю макет, и говорю, сколько часов мне потребуется на разработку сайта, подробно описывая Вам, за что Вы платите. Оплата за работу фиксированная, 4$ за час разработки. Таким образом, Вы полностью видите, почему стоимость сайта является именно такой, какой я ее озвучиваю, чтобы убедиться в том, что эти цифры я взял не из воздуха :)",
-    en: "Secondly, I work with a transparent payment system. You pay me for work that I do in hours. At the beginning of our meeting, I evaluate the layout and tell you how many hours it will take me to develop the web-site, describing in detail to you what you are paying for. The payment for the work is fixed, $4 per hour of work. Thus, you can fully see why the cost of the site is exactly what I am voicing it to make sure that I did not pull these numbers out of thin air :)",
-  },
-  "about-part-four": {
-    ru: "В-третьих, я могу помочь Вам выбрать подходящий хостинг для расположения вашего сайта в сети Интернет, если у Вас возникнут трудности с этим. ",
-    en: "Thirdly, I can help you choose the appropriate hosting for placing your website on the Internet if you have any difficulties with this.",
+    ru: "В данный момент я нахожусь в поиске компании, в которой я смогу расти как Frontend разработчик. Для меня важно следующее:",
+    en: "At this moment I find the company where I will grow as a Frontend Developer. Next is important for me:",
   },
   "about-part-five": {
-    ru: "Если Вам нужен сайт, нажмите на кнопку ниже и оставьте мне сообщение удобным для Вас способом или воспользуйтесь",
-    en: "If you need a website, click on the button below and leave me a message in a convenient way for you or use",
+    ru: "Для связи со мной нажмите на кнопку ниже и оставьте мне сообщение удобным для Вас способом или воспользуйтесь",
+    en: "To keep in touch with me click on the button below and leave me a message in a convenient way for you or use",
+  },
+  "tool-visual-studio-code": {
+    ru: "Visual Studio Code, редактор кода с приятным интерфейсом, позволяющий быстро создавать сайты",
+    en: "Visual Studio Code, the editor of code with pleasant interface alowing to create sites quickly",
+  },
+  "tool-gulp": {
+    ru: "Менеджер проектов Gulp",
+    en: "Meneger of projects Gulp",
+  },
+  "tool-bem": {
+    ru: "Методология BEM - naming",
+    en: "Methodology BEM - naming",
+  },
+  "tool-svg-sprites": {
+    ru: "SVG - спрайты",
+    en: "SVG - sprites",
+  },
+  "graphic-working": {
+    ru: "Гибкий график работы",
+    en: "Flexible work schedule",
+  },
+  atmosphere: {
+    ru: "Дружеская атмосфера внутри компании",
+    en: "Friendly atmosphere within the company",
+  },
+  grow: {
+    ru: "Возможности для роста и повышения квалификации",
+    en: "Opportunities for growth and professional development",
+  },
+  learning: {
+    ru: "Обучение внутри компании",
+    en: "In-house training",
   },
   "about-social": {
     ru: "социальными сетями.",

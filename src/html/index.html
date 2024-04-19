@@ -306,11 +306,46 @@
             <h3 class="about__title lang-title-about">Обо мне</h3>
             <h2 class="about__bigtitle lang-subtitle-about">Кто я</h2>
             <div class="about__text">
-              <p class="about__text-part lang-about-begin">Добрый день, меня зовут Денис. Уже около 5 лет я создаю сайты.</p>
-              <p class="about__text-part lang-about-part-two">В чем моё основное отличие от других веб-разработчиков? Во-первых, это подход к работе. Сайты, созданные мной, проходят проверку на валидность, кроссбраузерность, а также являются оптимизированными, адаптивными и семантически верными. Это значит, что ваш сайт будет работать во всех современных браузерах, при любом разрешении экрана стабильно и быстро.</p>
-              <p class="about__text-part lang-about-part-three">Во-вторых, я работаю с прозрачной системой оплаты. Вы платите мне за работу, проделанную мной в часах. Вначале нашего знакомства, я оцениваю макет, и говорю, сколько часов мне потребуется на разработку сайта, подробно описывая Вам, за что Вы платите. Оплата за работу фиксированная, 4$ за час разработки. Таким образом, Вы полностью видите, почему стоимость сайта является именно такой, какой я ее озвучиваю, чтобы убедиться в том, что эти цифры я взял не из воздуха :)</p>
-              <p class="about__text-part lang-about-part-four">На данный момент я с уверенностью хочу сказать, что все инструменты, которыми я владею сейчас, позволяют без больших сложностей разрабатывать лэндинги — одностраничные сайты.</p>
-              <span class="about__text-part lang-about-part-five"> Если Вам нужен сайт, нажмите на кнопку ниже и оставьте мне сообщение удобным для Вас способом или воспользуйтесь</span>
+              <p class="about__text-part lang-about-begin">Добрый день, меня зовут Денис. Я разрабатываю лэндинги, одностраничные сайты. Мне также интересна разработка SPA (Single Page Applications), в данный момент я изучаю React. </p>
+              <p class="about__text-part lang-about-part-two">
+                Мне интересно, чтобы сайт, созданный мной или группой разработчиков, был внешне привлекательным, имел красивый дизайн, а также создавал впечатление. Поэтому я, как Frontend - разработчик, нацелен на то, чтобы внешняя составляющая сайта была на высшем уровне. Для этого у меня есть следующие инструменты:
+              </p>
+              <ul class="modal-list">
+                <li class="modal-list__item lang-tool-visual-studio-code">Visual Studio Code, редактор кода с приятным интерфейсом, позволяющий быстро создавать сайты </li>
+                <li class="modal-list__item">
+                  HTML / SCSS / JavaScript
+                </li>
+                <li class="modal-list__item lang-tool-gulp">
+                  Менеджер проектов Gulp
+                </li>
+                <li class="modal-list__item">
+                  Photoshop / Figma / Adobe Illustrator
+                </li>
+                <li class="modal-list__item lang-tool-bem">
+                  Методология BEM - naming
+                </li>
+                <li class="modal-list__item lang-tool-svg-sprites">
+                  SVG - спрайты
+                </li>
+              </ul>
+              <p class="about__text-part lang-about-part-three">
+                В данный момент я нахожусь в поиске компании, в которой я смогу расти как Frontend разработчик. Для меня важно следующее:
+              </p>
+                <ul class="modal-list">
+                  <li class="modal-list__item lang-graphic-working">
+                    Гибкий график работы
+                  </li>
+                  <li class="modal-list__item lang-atmosphere">
+                    Дружеская атмосфера внутри компании
+                  </li>
+                  <li class="modal-list__item lang-grow">
+                    Возможности для роста и повышения квалификации
+                  </li>
+                  <li class="modal-list__item lang-learning">
+                    Обучение внутри компании
+                  </li>
+                </ul>
+              <span class="about__text-part lang-about-part-five"> Для связи со мной нажмите на кнопку ниже и оставьте мне сообщение удобным для Вас способом или воспользуйтесь</span>
               <span id="aboutLinkSocial" class="about__link">
                 <span class="lang-about-social">социальными сетями.</span>
                 <span class="about__link--popup vhidden" id="social-popup">
@@ -836,22 +871,22 @@
               <!-- Hidden Required Fields -->
               <input type="hidden" name="project_name" value="Связаться со мной" />
               <!-- Куда отправлять -->
-              <input type="hidden" name="admin_email" value="den_maverick177@mail.ru, Denis-mamlev@rambler.ru" />
+              <input type="hidden" name="admin_email" value="Denis-mamlev@rambler.ru" />
               <!-- От кого отправка (указывается email под домен сайта) -->
-              <input type="hidden" name="email_from" value="info@weblandingsforyou.ru" />
+              <input type="hidden" name="email_from" value="den_maverick177@mail.ru" />
               <input type="hidden" name="form_subject" value="Письмо с сайта-портфолио" />
               <!-- END Hidden Required Fields -->
               <div class="form__group">
                 <label for="input-name" class="form__label lang-modal-hire-me-name">Ваше имя</label>
-                <input name="Name" type="text" class="form__input lang-placeholder-name" placeholder="Напишите Ваше имя" id="input-name" required />
+                <input name="name" type="text" class="form__input lang-placeholder-name" placeholder="Напишите Ваше имя" id="input-name" required />
               </div>
               <div class="form__group">
                 <label for="input-email" class="form__label lang-modal-hire-me-e-mail"> Адрес Вашей электронной почты </label>
-                <input name="E-mail" type="email" class="form__input lang-placeholder-e-mail" placeholder="Напишите Ваш e-mail" id="input-email" required />
+                <input name="email" type="email" class="form__input lang-placeholder-e-mail" placeholder="Напишите Ваш e-mail" id="input-email" required />
               </div>
               <div class="form__group">
                 <label for="input-text" class="form__label lang-hire-me-your-message"> Ваше сообшение </label>
-                <textarea class="form__textarea lang-placeholder-message" name="Message" id="input-text" placeholder="Напишите здесь Ваше сообщение" required></textarea>
+                <textarea class="form__textarea lang-placeholder-message" name="message" id="input-text" placeholder="Напишите здесь Ваше сообщение" required></textarea>
               </div>
               <div class="form__personal-data person-data">
                 <label class="person-data__box">
