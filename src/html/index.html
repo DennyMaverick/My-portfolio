@@ -101,6 +101,7 @@
           <h2 class="intro__subtitle lang-hello" data-aos="zoom-in" data-aos-offset="0">Привет, Я</h2>
           <h1 class="intro__title lang-my-name" data-aos-delay="2000" data-aos="zoom-in" data-aos-offset="0">Денис</h1>
           <div class="intro__position lang-web-developer" data-aos="fade-right" data-aos-delay="1500" data-aos-offset="0">Frontend - разработчик</div>
+          <div class="intro__position lang-web-designer" data-aos="fade-right" data-aos-delay="1000" data-aos-offset="0">UX / UI Дизайнер</div>
           <div class="intro__social social">
             <a class="social__link lang-telegram-intro" title="Мой телеграм" href="https://t.me/Denny_maverick" target="_blank">
               <svg class="social__image social--telegram">
@@ -137,6 +138,7 @@
           <a href="#" class="works__nav-link lang-sites-visits" data-filter="site-visit"> Сайты-визитки </a>
           <a href="#" class="works__nav-link lang-promo" data-filter="promo">Промосайты</a>
           <a href="#" class="works__nav-link lang-elements-of-javascript" data-filter="interface"> Проекты с элементами интерфейса на JavaScript </a>
+          <a href="#" class="works__nav-link lang-design" data-filter="design"> Дизайн </a>
         </nav>
         <div class="works__portfolio portfolio" id="portfolio">
           <!-- Добавление проекта в категорию "Лэндинги" -->
@@ -285,6 +287,36 @@
             </div>
           </div>
           <!-- .portfolio__col -->
+          <div class="portfolio__col portfolio__show" data-cat="design">
+            <div class="portfolio__work work">
+              <!-- Добавление проекта в категорию "Проекты с элементами интерфейса на javaScript" -->
+              <div class="work__box-img work--overlay work--bg-calc" data-modal="#visit-cards" data-work>
+                <img class="work__image lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/design-visit-cards/visit-cards-main.png" alt="Project photo" />
+              </div>
+              <div class="work__content">
+                <p class="work__cat lang-cat-design">Категория: Дизайн</p>
+                <h3 class="work__title">
+                  <span class="work__title--left lang-title-work-design-visit-cards"> Дизайн визитных карточек </span>
+                  <time class="work__date" datetime="2024-04-02 17:03"> 2024 </time>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <!-- .portfolio__col -->
+          <div class="portfolio__col portfolio__show" data-cat="design">
+            <div class="portfolio__work work">
+              <div class="work__box-img work--overlay work--bg-calc" data-modal="#ducati-main-page" data-work>
+                <img class="work__image lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="./img/projects/ducati-main-page/Ducati-dark.png" alt="Project photo" />
+              </div>
+              <div class="work__content">
+                <p class="work__cat lang-cat-design">Категория: Дизайн</p>
+                <h3 class="work__title">
+                  <span class="work__title--left lang-title-work-ducati-main-page"> Ducati: главная страница </span>
+                  <time class="work__date" datetime="2024-04-02 17:03"> 2024 </time>
+                </h3>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- .works__portfolio -->
         <!-- <div class="text-center">
@@ -2117,5 +2149,216 @@
       <!-- modal__dialog-->
     </div>
     <!-- modal -->
+    <div class="modal" id="visit-cards">
+      <div class="modal__dialog">
+        <div class="theme theme--modal theme--sticky">
+          <button class="switcher theme__btn theme__light" data-theme="light">
+            <svg class="theme__icon">
+              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--light-icon" />
+            </svg>
+          </button>
+          <button class="switcher theme__btn theme__dark" data-theme="dark">
+            <svg class="theme__icon">
+              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon" />
+            </svg>
+          </button>
+          <div class="theme__font-change font-change">
+              <svg class="font-change__icon">
+                <use xlink:href="./img/sprite/symbol/sprite.svg#font--font" />
+              </svg>
+              <div class="theme__font-change-popup font-change__popup">
+                <p class="font-change__text lang-change-font">
+                  Изменить шрифт
+                </p>
+              </div>
+              <div class="font-change__progress-bar">
+                <input class="font-change__progress-input" min="15" max="18" value="15" name="range" step="1" type="range">
+              </div>
+          </div>
+          <button class="theme__close-btn" type="button" data-close>
+            <svg class="theme__close">
+              <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
+            </svg>
+          </button>
+        </div>
+        <div class="modal__modal-work modal-work">
+          <div class="modal-work__preview">
+            <div class="modal-work__slider slider" data-slider="slick">
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img loaded" data-src="./img/projects/design-visit-cards/1-slide.png"></div>
+              </div>
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/design-visit-cards/2-slide.png"></div>
+              </div>
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/design-visit-cards/3-slide.png"></div>
+              </div>
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/design-visit-cards/4-slide.png"></div>
+              </div>
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/design-visit-cards/5-slide.png"></div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-work__content">
+            <div class="modal-work__header">
+              <h3 class="modal-work__title lang-visit-cards-title">Дизайн визитных карточек</h3>
+              <div class="modal-work__info">
+                <span class="lang-design">Дизайн</span>
+                <span class="modal-work__info-divider">|</span>
+                2024
+              </div>
+            </div>
+            <!-- modal-work__header -->
+            <div class="modal-work__client">
+              <div class="modal-work__client-title lang-visit-cards-subtitle">Визитные карточки для компании</div>
+              <div class="modal-work__client-company">Denny Maverick</div>
+            </div>
+            <div class="modal-work__text">
+              <p class="modal-work__description lang-visit-cards-desc-one">Каждой компании нужен бренд или логотип, с помощью которого эта компания будет узнаваема в обществе. Визитные карточки - это инструмент, который помогает делать рекламу для своей компании. Данные визитные карточки были созданы в программе Adobe Photoshop, дизайн был придуман в учебных целях.</p>
+              <div class="modal-work__show-info show-more">
+                <input type="checkbox" id="show-more_20" class="show-more__input" />
+                <label class="show-more__trigger" for="show-more_20">
+                  <span class="show-more__desc lang-more-button">Более подробно</span>
+                  <svg class="show-more__arrow">
+                    <use xlink:href="./img/sprite/symbol/sprite.svg#modal--show-modal-right" />
+                  </svg>
+                </label>
+                <div class="show-more__content">
+                  <p class="modal-work__description lang-visit-cards-desc-two">Визитные карточки, которые были созданы в учебных целях, состоят из двух сторон: лицевая сторона содержит логотип компании, имя сотрудника, его должность, телефон, адрес офиса. И оборотная сторона визитки содержит логотип компании.</p>
+
+                  <p class="modal-work__description lang-technologies-desc">Работая над данным проектом, были использованы следующие инструменты, технологии и плагины:</p>
+                  <ul class="modal-work__list modal-list">
+                    <li class="modal-list__item">
+                      Adobe Photoshop
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <ul class="modal-work__list modal-list">
+                <li class="modal-list__item lang-visit-cards-time">Время на работу ~ 20 ч</li>
+              </ul>
+            </div>
+            <!--modal-work__text -->
+            <div class="modal-work__footer">
+              <button class="modal-work__btn slickPrev modal-work__btn--text lang-back-button" type="button">Назад</button>
+              <button class="modal-work__btn modal-work__btn--text slickNext lang-next-button" type="button">Вперед</button>
+            </div>
+            <a href="#" class="modal-work__arrow-up up lang-up" title="Наверх">
+              <svg class="modal-work__arrow-up-pic">
+                <use xlink:href="./img/sprite/symbol/sprite.svg#arrows--arrow-up" />
+              </svg>
+            </a>
+          </div>
+          <!--modal-work__content -->
+        </div>
+        <!--modal-work -->
+      </div>
+      <!-- modal__dialog-->
+    </div>
+    <!-- modal -->
+    <div class="modal" id="ducati-main-page">
+      <div class="modal__dialog">
+        <div class="theme theme--modal theme--sticky">
+          <button class="switcher theme__btn theme__light" data-theme="light">
+            <svg class="theme__icon">
+              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--light-icon" />
+            </svg>
+          </button>
+          <button class="switcher theme__btn theme__dark" data-theme="dark">
+            <svg class="theme__icon">
+              <use xlink:href="./img/sprite/symbol/sprite.svg#theme--dark-icon" />
+            </svg>
+          </button>
+          <div class="theme__font-change font-change">
+              <svg class="font-change__icon">
+                <use xlink:href="./img/sprite/symbol/sprite.svg#font--font" />
+              </svg>
+              <div class="theme__font-change-popup font-change__popup">
+                <p class="font-change__text lang-change-font">
+                  Изменить шрифт
+                </p>
+              </div>
+              <div class="font-change__progress-bar">
+                <input class="font-change__progress-input" min="15" max="18" value="15" name="range" step="1" type="range">
+              </div>
+          </div>
+          <button class="theme__close-btn" type="button" data-close>
+            <svg class="theme__close">
+              <use xlink:href="./img/sprite/symbol/sprite.svg#modal--modal-close" />
+            </svg>
+          </button>
+        </div>
+        <div class="modal__modal-work modal-work">
+          <div class="modal-work__preview">
+            <div class="modal-work__slider slider" data-slider="slick">
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/ducati-main-page/1-slide.png"></div>
+              </div>
+              <div class="slider__item slider__slide">
+                <div class="o0 modal-work__photo slider__slick-img" data-src="./img/projects/ducati-main-page/2-slide.png"></div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-work__content">
+            <div class="modal-work__header">
+              <h3 class="modal-work__title lang-ducati-title">Ducati: главная страница</h3>
+              <div class="modal-work__info">
+                <span class="lang-design">Дизайн</span>
+                <span class="modal-work__info-divider">|</span>
+                2024
+              </div>
+            </div>
+            <!-- modal-work__header -->
+            <div class="modal-work__client">
+              <div class="modal-work__client-title lang-ducati-subtitle">Ducati: учебный проект</div>
+              <div class="modal-work__client-company">yudaev.school</div>
+            </div>
+            <div class="modal-work__text">
+              <p class="modal-work__description lang-ducati-desc-one">Главная страница Ducati была создана в учебных целях в рамках марафона школы дизайна Yudaev School.</p>
+              <div class="modal-work__show-info show-more">
+                <input type="checkbox" id="show-more_21" class="show-more__input" />
+                <label class="show-more__trigger" for="show-more_21">
+                  <span class="show-more__desc lang-more-button">Более подробно</span>
+                  <svg class="show-more__arrow">
+                    <use xlink:href="./img/sprite/symbol/sprite.svg#modal--show-modal-right" />
+                  </svg>
+                </label>
+                <div class="show-more__content">
+                  <p class="modal-work__description lang-ducati-desc-two">Данная работа была создана в рамках тренировки, в программе Figma, после прохождения марафона от школы дизайна Yudaev School. Марафон прошел успешно, где я смог закрепить навыки в сфере UX / UI дизайна.</p>
+
+                  <p class="modal-work__description lang-technologies-desc">Работая над данным проектом, были использованы следующие инструменты, технологии и плагины:</p>
+                  <ul class="modal-work__list modal-list">
+                    <li class="modal-list__item">
+                      Figma
+                    </li>
+                    <li class="modal-list__item">
+                      Adobe Illustrator
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <ul class="modal-work__list modal-list">
+                <li class="modal-list__item lang-ducati-page-time">Время на работу ~ 1 ч</li>
+              </ul>
+            </div>
+            <!--modal-work__text -->
+            <div class="modal-work__footer">
+              <button class="modal-work__btn slickPrev modal-work__btn--text lang-back-button" type="button">Назад</button>
+              <button class="modal-work__btn modal-work__btn--text slickNext lang-next-button" type="button">Вперед</button>
+            </div>
+            <a href="#" class="modal-work__arrow-up up lang-up" title="Наверх">
+              <svg class="modal-work__arrow-up-pic">
+                <use xlink:href="./img/sprite/symbol/sprite.svg#arrows--arrow-up" />
+              </svg>
+            </a>
+          </div>
+          <!--modal-work__content -->
+        </div>
+        <!--modal-work -->
+      </div>
+      <!-- modal__dialog-->
+    </div>
   </body>
 </html>

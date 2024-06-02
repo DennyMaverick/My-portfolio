@@ -67,8 +67,28 @@ const langs = {
     en: "Denis",
   },
   "web-developer": {
-    ru: "Frontend-разработчик",
-    en: "Frontend Developer",
+    ru: "Frontend-разработчик,",
+    en: "Frontend Developer,",
+  },
+  "web-designer": {
+    ru: "UX / UI Дизайнер",
+    en: "UX / UI Designer",
+  },
+  "visit-cards-subtitle": {
+    ru: "Визитные карточки для компании",
+    en: "Visit cards for a company",
+  },
+  "visit-cards-desc-one": {
+    ru: "Каждой компании нужен бренд или логотип, с помощью которого эта компания будет узнаваема в обществе. Визитные карточки - это инструмент, который помогает делать рекламу для своей компании. Визитные карточки были созданы в программе Adobe Photoshop, дизайн был придуман в учебных целях.",
+    en: "Each company needs a brand or logo, helping to be known in sociality. Business cards are a tool that helps you advertise your company. These visit cards were created in Adobe Photoshop programm, the design was made as for a learn project.",
+  },
+  "visit-cards-desc-two": {
+    ru: "Визитные карточки состоят из двух сторон: лицевая сторона содержит логотип компании, имя сотрудника, его должность, телефон, адрес офиса. И оборотная сторона визитки содержит логотип компании.",
+    en: "Business cards consist of two sides: the front side contains the company logo, the name of the employee, his position, telephone number, and office address. And the back of the business card contains the company logo.",
+  },
+  "visit-cards-time": {
+    ru: "Время на работу: ~ 20 часов",
+    en: "Time for work: ~ 20 h",
   },
   "write-intro": {
     ru: "Написать мне",
@@ -94,6 +114,10 @@ const langs = {
     ru: "Арчи",
     en: "Archee",
   },
+  "title-work-ducati-main-page": {
+    ru: "Ducati: главная страница",
+    en: "Ducati: main page",
+  },
   "title-work-web-templates": {
     ru: "Портфолио Pet&nbsp;-&nbsp;проекты",
     en: "Portfolio Pet-projects",
@@ -101,6 +125,10 @@ const langs = {
   "title-work-dream-on-wheels": {
     ru: "Мечта на колесах",
     en: "Dream On Wheels",
+  },
+  "title-work-design-visit-cards": {
+    ru: "Дизайн визитных карточек",
+    en: "Design of visit cards",
   },
   "title-work-converter": {
     ru: "Конвертёр валют на JavaScript",
@@ -576,6 +604,30 @@ const langs = {
     ru: "Проект с марафона по верстке:",
     en: "Project from the layout marathon:",
   },
+  "visit-cards-title": {
+    ru: "Дизайн визитных карточек",
+    en: "Design of visit cards",
+  },
+  "ducati-title": {
+    ru: "Ducati: главная страница",
+    en: "Ducati: main page",
+  },
+  "ducati-subtitle": {
+    ru: "Ducati: учебный проект",
+    en: "Ducati: learn project",
+  },
+  "ducati-desc-one": {
+    ru: "Главная страница Ducati была создана в учебных целях в рамках марафона школы дизайна Yudaev School.",
+    en: "The Ducati home page was created for educational purposes as part of the Yudaev School design school marathon.",
+  },
+  "ducati-desc-two": {
+    ru: "Данная работа была создана в рамках тренировки, в программе Figma, после прохождения марафона от школы дизайна Yudaev School. Марафон прошел успешно, где я смог закрепить навыки в сфере UX / UI дизайна.",
+    en: "This work was created as part of a training session in the Figma program, after completing a marathon from the Yudaev School of Design. The marathon was successful, where I was able to strengthen my skills in the field of UX / UI design.",
+  },
+  "ducati-page-time": {
+    ru: "Время на работу: ~ 1 час",
+    en: "Time for work: ~ 1 h",
+  },
   "archee-desc-one": {
     ru: "Проект был создан в рамках марафона по верстке от CodeQuest. Марафон длился 5 недель.",
     en: "The project was created as part of the CodeQuest layout marathon. The marathon lasted 5 weeks.",
@@ -1012,6 +1064,10 @@ const afterElements = {
 }
 
 const repeatElems = {
+  design: {
+    ru: "Дизайн",
+    en: "Design",
+  },
   "change-font": {
     ru: "Изменить шрифт",
     en: "Change font",
@@ -1087,6 +1143,10 @@ const repeatElems = {
   "cat-javascript-interface": {
     ru: "Категория: Проекты с элементами интерфейса на javaScript",
     en: "Category: Projects with elements of an interface on JavaScript",
+  },
+  "cat-design": {
+    ru: "Категория: Дизайн",
+    en: "Category: Design",
   },
   "cat-promo": {
     ru: "Категория: Промосайты",
