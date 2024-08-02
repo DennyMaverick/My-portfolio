@@ -25,7 +25,7 @@ const langs = {
   },
   "write-mobile": {
     ru: "Написать мне",
-    en: "Write to me",
+    en: "Contact me",
   },
   "resume-mobile": {
     ru: "Резюме",
@@ -50,7 +50,7 @@ const langs = {
   },
   write: {
     ru: "Написать мне",
-    en: "Write to me",
+    en: "Contact me",
   },
   resume: {
     ru: "Резюме",
@@ -92,7 +92,7 @@ const langs = {
   },
   "write-intro": {
     ru: "Написать мне",
-    en: "Write to me",
+    en: "Contact me",
   },
   "resume-intro": {
     ru: "Резюме",
@@ -217,7 +217,7 @@ const langs = {
   },
   "about-write-btn": {
     ru: "Написать мне",
-    en: "Write to me",
+    en: "Contact me",
   },
   "about-resume-btn": {
     ru: "Резюме",
@@ -246,7 +246,7 @@ const langs = {
   },
   "footer-write": {
     ru: "Написать мне",
-    en: "Write to me",
+    en: "Contact me",
   },
   // Resume
   "vhidden-modal-title": {
@@ -564,7 +564,7 @@ const langs = {
   },
   "write-resume": {
     ru: "Написать мне",
-    en: "Write to me",
+    en: "Contact me",
   },
   "print-resume": {
     ru: "Распечатать резюме",
