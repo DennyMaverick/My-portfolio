@@ -35,18 +35,16 @@
 
   &__nav-link {
     position: relative;
-    margin: 0 18px;
     font-size: 0.8rem;
     padding: 7px 0;
 
     @include bp-desk(mobile) {
       font-size: 1rem;
-      margin-left: 0;
     }
     &:after {
       content: "";
       width: 0;
-      height: 1px;
+      height: .5px;
       // background-color 70%
       background-color: transparentize($black, 0.3);
       position: absolute;
@@ -72,6 +70,13 @@
       &:after {
         width: 100%;
       }
+    }
+  }
+
+  &__nav-item {
+    margin: 0 18px;
+    @include bp-desk(mobile) {
+      margin-left: 0;
     }
   }
 
