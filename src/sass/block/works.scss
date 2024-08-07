@@ -75,6 +75,11 @@
 
   &__nav-item {
     margin: 0 18px;
+    @include bp-desk(tablet) {
+      & + & {
+        margin-top: 15px;
+      }
+    }
     @include bp-desk(mobile) {
       margin-left: 0;
     }
