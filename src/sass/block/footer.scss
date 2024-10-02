@@ -138,7 +138,8 @@
     text-align: center;
     line-height: 1.1;
     border-radius: 20px;
-    font-family: inherit;
+    font-family: $font-family-base;
+    font-size: 0.94rem;
     border: 1px solid $grey-light;
     padding: 7.5px 21px;
     text-decoration: none;
