@@ -835,7 +835,7 @@
         <div class="modal__contact contact">
           <div class="contact__left">
             <h3 class="modal__title modal__title--form lang-modal-griding-title mb-0">Здравствуйте</h3>
-            <h4 class="modal__subtitle lang-griding-desc">Вы можете написать мне на почту или отправить сообщение через форму ниже, и я отвечу в ближайшее время.</h4>
+            <h4 class="modal__subtitle lang-griding-desc">Вы можете написать мне на почту или в социальных сетях, и я отвечу в ближайшее время:</h4>
             <ul class="contact__info">
               <!-- Phone -->
               <!-- <li class="contact__info-item">
@@ -867,42 +867,6 @@
                 </a>
               </li>
             </ul>
-            <form class="modal__form form" action="./php/mail.php" method="POST">
-              <!-- Hidden Required Fields -->
-              <input type="hidden" name="project_name" value="Связаться со мной" />
-              <!-- Куда отправлять -->
-              <input type="hidden" name="admin_email" value="Denis-mamlev@rambler.ru" />
-              <!-- От кого отправка (указывается email под домен сайта) -->
-              <input type="hidden" name="email_from" value="den_maverick177@mail.ru" />
-              <input type="hidden" name="form_subject" value="Письмо с сайта-портфолио" />
-              <!-- END Hidden Required Fields -->
-              <div class="form__group">
-                <label for="input-name" class="form__label lang-modal-hire-me-name">Ваше имя</label>
-                <input name="name" type="text" class="form__input lang-placeholder-name" placeholder="Напишите Ваше имя" id="input-name" required />
-              </div>
-              <div class="form__group">
-                <label for="input-email" class="form__label lang-modal-hire-me-e-mail"> Адрес Вашей электронной почты </label>
-                <input name="email" type="email" class="form__input lang-placeholder-e-mail" placeholder="Напишите Ваш e-mail" id="input-email" required />
-              </div>
-              <div class="form__group">
-                <label for="input-text" class="form__label lang-hire-me-your-message"> Ваше сообшение </label>
-                <textarea class="form__textarea lang-placeholder-message" name="message" id="input-text" placeholder="Напишите здесь Ваше сообщение" required></textarea>
-              </div>
-              <div class="form__personal-data person-data">
-                <label class="person-data__box">
-                  <input class="person-data__input person-data__real-checkbox" type="checkbox"  required />
-                  <span class="person-data__custom-checkbox"></span>
-                  <div class="person-data__error-popup lang-person-data-error-popup-text" id="error-popup">Пожалуйста подтвердите согласие на обработку персональных данных</div>
-                  <div class="person-data__data">
-                    <span class="lang-personal-data-text person-data__text">Нажав на кнопку 'Отправить', Вы даете согласие на обработку персональных данных в соответствии с</span>
-                    <a class="person-data__link lang-personal-data-text-federal-low" href="https://www.consultant.ru/document/cons_doc_LAW_61801/" target="_blank">ФЗ о персональных данных</a>
-                  </div>
-                </label>
-              </div>
-              <div class="text-right">
-                <button id="submit-btn" class="btn lang-hire-me-btn" type="submit">Отправить</button>
-              </div>
-            </form>
           </div>
         </div>
         <!--contact-->

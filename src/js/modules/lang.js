@@ -576,8 +576,8 @@ const langs = {
     en: "Good hour!",
   },
   "griding-desc": {
-    ru: "Вы можете написать мне на почту или отправить сообщение через форму ниже, и я отвечу в ближайшее время. Также Вы можете связаться со мной через социальные сети.",
-    en: "You can email me or send a message using the form below, and I will respond as soon as possible. Also you can keep in touch with me in social networks.",
+    ru: "Вы можете написать мне на почту или в социальных сетях, и я отвечу в ближайшее время:",
+    en: "You can email me or send a message using the social networks, and I will respond as soon as possible:",
   },
   "modal-hire-me-name": {
     ru: "Ваше имя",
