@@ -1,0 +1,45 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title class="title">Спасибо за Ваше сообщение</title><link rel="stylesheet" href="./css/main.min.css"><link rel="icon" href="./img/favicon/favicon.svg"></head><body><div class="thankyou-wrapper"><div class="thankyou"><h1 class="thankyou__title">Форма успешно отправлена!</h1><p class="thankyou__description">Ваша форма успешно отправлена.</p><p><a class="thankyou__back-link" href="index.html">Вернуться назад</a></p></div></div><script>const themes = {
+        ".thankyou-wrapper": {
+          theme: {
+            light: "thankyou-wrapper--light",
+            dark: "thankyou-wrapper--dark",
+          },
+        },
+        ".thankyou__description": {
+          theme: {
+            light: "thankyou__description--light",
+            dark: "thankyou__description--dark",
+          },
+        },
+        ".thankyou__back-link": {
+          theme: {
+            light: "thankyou__back-link--light",
+            dark: "thankyou__back-link--dark",
+          },
+        },
+      }
+
+      function themeSwitch(theme) {
+        for (key in themes) {
+          const elems = document.querySelectorAll(key)
+          elems.forEach((elem) => {
+            if ((elem && themes[key].theme.light) || themes[key].theme.dark) {
+              elem.classList.remove(`${themes[key].theme.dark}`, `${themes[key].theme.light}`)
+
+              if (theme === "light") {
+                elem.classList.add(`${themes[key].theme.light}`)
+              } else {
+                elem.classList.add(`${themes[key].theme.dark}`)
+              }
+            }
+          })
+        }
+      }
+
+      const activeTheme = localStorage.getItem("theme")
+
+      if (activeTheme === null) {
+        themeSwitch("dark")
+      } else {
+        themeSwitch(activeTheme)
+      }</script></body></html>
