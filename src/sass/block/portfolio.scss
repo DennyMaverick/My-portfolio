@@ -1,15 +1,18 @@
+@use '../_config/variables';
+@use '../_mixins/media';
+
 .portfolio {
   &__col {
     display: flex;
     flex-basis: 33.33333%;
     padding: 15px;
-    @include bp-desk(notebook) {
+    @include media.bp-desk(notebook) {
       flex-basis: 40%;
     }
-    @include bp-desk(tablet) {
+    @include media.bp-desk(tablet) {
       flex-basis: 77%;
     }
-    @include bp-desk(mobile) {
+    @include media.bp-desk(mobile) {
       flex-basis: 100%;
     }
   }
@@ -30,7 +33,7 @@
       text-align: center;
       line-height: 25px;
 
-      color: $white;
+      color: variables.$white;
       z-index: 6;
     }
     &--archee::before {

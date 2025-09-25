@@ -1,10 +1,13 @@
+@use "../_config/variables";
+@use "../_mixins/media";
+
 .intro {
   transition: background-color 0.3s ease-in;
   &--light {
-    background-color: $white;
+    background-color: variables.$white;
   }
   &--dark {
-    background-color: $black;
+    background-color: variables.$black;
   }
   &__inner {
     position: relative;
@@ -17,15 +20,15 @@
     border-radius: 10px;
     transition: border-bottom 0.3s ease-in;
     &--light {
-      border-bottom: 1px solid transparentize($grey, 0.7);
+      border-bottom: 1px solid rgba(106, 105, 105, 0.3);
     }
     &--dark {
-      border-bottom: 1px solid $white;
+      border-bottom: 1px solid variables.$white;
     }
-    @include bp-desk(tablet) {
+    @include media.bp-desk(tablet) {
       flex-direction: column;
     }
-    @include bp-desk(mobile) {
+    @include media.bp-desk(mobile) {
       padding-top: 120px;
     }
   }
@@ -36,12 +39,12 @@
     font-weight: 700;
     transition: color 0.3s ease-in;
     &--light {
-      color: $black;
+      color: variables.$black;
     }
     &--dark {
-      color: $white;
+      color: variables.$white;
     }
-    @include bp-desk(mobile-sm) {
+    @include media.bp-desk(mobile-sm) {
       font-size: 2rem;
     }
   }
@@ -51,12 +54,12 @@
     font-weight: 300;
     transition: color 0.3s ease-in;
     &--light {
-      color: $black;
+      color: variables.$black;
     }
     &--dark {
-      color: $white;
+      color: variables.$white;
     }
-    @include bp-desk(mobile-sm) {
+    @include media.bp-desk(mobile-sm) {
       font-size: 1.7rem;
     }
   }
@@ -67,18 +70,18 @@
     opacity: 0.7;
     transition: color 0.3s ease-in;
     & + & {
-      margin-top: .1rem;
+      margin-top: 0.1rem;
     }
     &--light {
-      color: $black;
+      color: variables.$black;
     }
     &--dark {
-      color: $white;
+      color: variables.$white;
     }
   }
 
   &__content {
-    @include bp-desk(tablet) {
+    @include media.bp-desk(tablet) {
       margin-bottom: 45px;
     }
   }
@@ -90,7 +93,7 @@
 
   &__image-container {
     align-self: flex-end;
-    @include bp-desk(tablet) {
+    @include media.bp-desk(tablet) {
       max-width: 370px;
       align-self: flex-end;
     }
@@ -98,12 +101,12 @@
   .social {
     &--github {
       &-light {
-        fill: $black;
+        fill: variables.$black;
       }
     }
     &--github {
       &-dark {
-        fill: $white;
+        fill: variables.$white;
       }
     }
   }

@@ -1,7 +1,9 @@
+@use '../_config/variables.scss';
+
 // Ограничение макета
 @mixin wrapper {
-  max-width: $wrapper-max;
-  min-width: $wrapper-min;
+  max-width: variables.$wrapper-max;
+  min-width: variables.$wrapper-min;
   min-height: 100%;
   margin: 0 auto;
   overflow-x: hidden;
@@ -10,8 +12,8 @@
 
 // Контейнер
 @mixin container {
-  max-width: $container-max-widths;
-  padding-left: $container-padding;
-  padding-right: $container-padding;
+  max-width: variables.$container-max-widths;
+  padding-left: variables.$container-padding;
+  padding-right: variables.$container-padding;
   margin: 0 auto;
 }

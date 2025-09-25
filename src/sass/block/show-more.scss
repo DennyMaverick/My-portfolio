@@ -1,8 +1,12 @@
+@use '../_config/variables';
+@use '../_mixins/media';
+@use '../_mixins/font-face';
+
 .show-more {
   &__trigger {
     font-weight: 700;
     letter-spacing: 1px;
-    @include font(1rem, 1.6rem);
+    @include font-face.font(1rem, 1.6rem);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -12,14 +16,14 @@
     cursor: pointer;
     transition: color .3s ease-in, background-color .3s ease-in, box-shadow .3s ease-in;
     &--light {
-      color: $show-more-color-light;
-      background-color: $show-more-bg-light;
-      box-shadow: -1px -1px 5px $show-more-bg-light;
+      color: variables.$show-more-color-light;
+      background-color: variables.$show-more-bg-light;
+      box-shadow: -1px -1px 5px variables.$show-more-bg-light;
     }
     &--dark {
-      color: $show-more-color-dark;
-      background-color: $show-more-bg-dark;
-      box-shadow: -1px -1px 5px $show-more-bg-dark;
+      color: variables.$show-more-color-dark;
+      background-color: variables.$show-more-bg-dark;
+      box-shadow: -1px -1px 5px variables.$show-more-bg-dark;
     }
   }
   &__arrow {
@@ -27,10 +31,10 @@
     height: 13px;
     transition: transform 0.3s ease-in, fill 0.3s ease-in;
     &--dark {
-      fill: $show-more-color-dark;
+      fill: variables.$show-more-color-dark;
     }
     &--light {
-      fill: $show-more-color-light;
+      fill: variables.$show-more-color-light;
     }
   }
   &__content {

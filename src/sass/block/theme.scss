@@ -1,3 +1,6 @@
+@use '../_config/variables';
+@use '../_mixins/media';
+
 .theme {
   padding: 7px;
   &--br {
@@ -12,14 +15,14 @@
     padding: 12px 17px;
     transition: background .3s ease-in, box-shadow .3s ease-in;
     &-light {
-      background: $theme-modal-light;
-      box-shadow: 1px 1px 10px $theme-modal-light;
+      background: variables.$theme-modal-light;
+      box-shadow: 1px 1px 10px variables.$theme-modal-light;
     }
     &-dark {
-      background: $theme-modal-dark;
-      box-shadow: 2px 2px 13px $theme-modal-dark;
+      background: variables.$theme-modal-dark;
+      box-shadow: 2px 2px 13px variables.$theme-modal-dark;
     }
-    @include bp-desk(tablet) {
+    @include media.bp-desk(tablet) {
       padding: 10px 17px;
     }
     .theme__light {
@@ -34,7 +37,7 @@
     margin-left: auto;
     width: 27px;
     height: 32px;
-    @include bp-desk(mobile) {
+    @include media.bp-desk(mobile) {
       width: 21px;
       height: 26px;
     }
@@ -46,15 +49,15 @@
     &:hover {
       transform: translateY(-3px);
     }
-    @include bp-desk(mobile) {
+    @include media.bp-desk(mobile) {
       width: 21px;
       height: 26px;
     }
     &--light {
-      fill: $black;
+      fill: variables.$black;
     }
     &--dark {
-      fill: $white;
+      fill: variables.$white;
     }
   }
   &__icon {
@@ -65,11 +68,11 @@
   }
 
   &__light {
-    fill: $white;
+    fill: variables.$white;
   }
 
   &__dark {
-    fill: $black;
+    fill: variables.$black;
   }
 
   &--sticky {
@@ -77,7 +80,7 @@
     top: -41px;
     left: 0;
     z-index: 7;
-    @include bp-desk(tablet-landscape) {
+    @include media.bp-desk(tablet-landscape) {
       top: 0;
     }
   }

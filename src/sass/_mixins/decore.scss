@@ -1,8 +1,10 @@
+@use '../_config/variables';
+
 @mixin decore-line {
   content: '';
   width: 0;
   height: 2px;
-  background-color: $black;
+  background-color: variables.$black;
   position: absolute;
   bottom: -2px;
   left: 0;
@@ -11,6 +13,6 @@
 }
 
 @mixin decore-line-footer {
-  background-color: $grey-light-second;
+  background-color: variables.$grey-light-second;
   height: 1px;
 }

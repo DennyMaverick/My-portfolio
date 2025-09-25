@@ -1,10 +1,13 @@
+@use '../_config/variables';
+@use '../_mixins/media';
+
 .sertificate-modal {
   &__btn {
-    @include bp-desk(mobile) {
+    @include media.bp-desk(mobile) {
       top: 4.5px;
       right: 7.5px;
     }
-    @include bp-desk(mobile-md) {
+    @include media.bp-desk(mobile-md) {
       top: 1.5px;
       right: 1.5px;
     }

@@ -1,37 +1,20 @@
-@import '../_mixins/font-face';
+@use '../_mixins/font-face';
 
 // Подключение шрифтов
-@include font-face('Montserrat', '../font/Montserrat-Bold', 700);
+@include font-face.font-face('Montserrat', '../font/Montserrat-Bold', 700);
 
-@include font-face('Montserrat', '../font/Montserrat-Regular', 400);
+@include font-face.font-face('Montserrat', '../font/Montserrat-Regular', 400);
 
-@include font-face('Montserrat', '../font/Montserrat-Light', 300);
+@include font-face.font-face('Montserrat', '../font/Montserrat-Light', 300);
 
-@include font-face('Ample', '../font/AmpleSoftPro-Bold', 700);
+@include font-face.font-face('Ample', '../font/AmpleSoftPro-Bold', 700);
 
-@include font-face('Ample', '../font/AmpleSoftPro-Medium', 500);
+@include font-face.font-face('Ample', '../font/AmpleSoftPro-Medium', 500);
 
-@include font-face('Ample', '../font/AmpleSoftPro-Regular', 400);
+@include font-face.font-face('Ample', '../font/AmpleSoftPro-Regular', 400);
 
-@include font-face('Ample', '../font/AmpleSoftPro-Light', 300);
+@include font-face.font-face('Ample', '../font/AmpleSoftPro-Light', 300);
 
-@include font-face('Ample', '../font/AmpleSoftPro-Thin', 200);
+@include font-face.font-face('Ample', '../font/AmpleSoftPro-Thin', 200);
 
-// Миксины для шрифтов
-@mixin font-montserrat-bold {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
 
-@mixin font-montserrat-regular {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-@mixin font-montserrat-light {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}

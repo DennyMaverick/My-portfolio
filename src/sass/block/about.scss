@@ -1,15 +1,18 @@
+@use '../_config/variables';
+@use '../_mixins/media';
+
 .about {
   margin-top: -5px;
   padding: 0 0 75px;
   padding-top: 75px;
   transition: background-color 0.3s ease-in;
   &--light {
-    background-color: $white;
+    background-color: variables.$white;
   }
   &--dark {
-    background-color: $black;
+    background-color: variables.$black;
   }
-  @include bp-desk(notebook) {
+  @include media.bp-desk(notebook) {
     padding: 0;
     padding-bottom: 45px;
   }
@@ -20,7 +23,7 @@
     flex-wrap: wrap;
     max-width: 1090px;
     align-items: center;
-    @include bp-desk(tablet) {
+    @include media.bp-desk(tablet) {
       flex-direction: column;
       justify-content: center;
     }
@@ -32,12 +35,12 @@
   &__content {
     padding-left: 48px;
     margin-top: 30px;
-    @include bp-desk(tablet) {
+    @include media.bp-desk(tablet) {
       padding-left: 0;
       align-self: center;
       max-width: 80%;
     }
-    @include bp-desk(mobile) {
+    @include media.bp-desk(mobile) {
       max-width: 100%;
     }
   }
@@ -48,12 +51,12 @@
     text-transform: uppercase;
     transition: color 0.3s ease-in;
     &--light {
-      color: $black;
+      color: variables.$black;
     }
     &--dark {
-      color: $white;
+      color: variables.$white;
     }
-    @include bp-desk(tablet) {
+    @include media.bp-desk(tablet) {
       font-size: 2rem;
     }
   }
@@ -66,14 +69,15 @@
     font-weight: 700;
     text-transform: uppercase;
     transition: color 0.3s ease-in;
+    opacity: 35%;
     &--light {
       // opacity 35%
-      color: transparentize($black, 0.65);
+      color: variables.$black;
     }
     &--dark {
-      color: transparentize($white, 0.65);
+      color: variables.$white;
     }
-    @include bp-desk(tablet) {
+    @include media.bp-desk(tablet) {
       font-size: 4rem;
       line-height: 70.65px;
     }
@@ -85,10 +89,10 @@
     font-weight: 300;
     transition: color 0.3s ease-in;
     &--light {
-      color: $grey;
+      color: variables.$grey;
     }
     &--dark {
-      color: $white;
+      color: variables.$white;
     }
   }
   &__text-part + &__text-part {
@@ -106,12 +110,12 @@
     &--dark {
       background: url("../../img/preload/dark-theme-loader.gif") center no-repeat;
     }
-    @include bp-desk(tablet) {
+    @include media.bp-desk(tablet) {
       max-width: 100%;
       width: 77%;
       margin-bottom: 37.5px;
     }
-    @include bp-desk(mobile) {
+    @include media.bp-desk(mobile) {
       max-width: 100%;
       width: 100%;
       align-self: center;
@@ -121,16 +125,16 @@
       position: relative;
       z-index:2;
       &-light {
-        background-color: $white;
+        background-color: variables.$white;
       }
       &-dark {
-        background-color: $black;
+        background-color: variables.$black;
       }
     }
   }
   &__image {
     border-radius: 20px;
-    @include bp-desk(tablet) {
+    @include media.bp-desk(tablet) {
       width: 100%;
     }
   }
@@ -138,7 +142,7 @@
     margin-left: 15px;
   }
   &__btn {
-    @include bp-desk(mobile-md) {
+    @include media.bp-desk(mobile-md) {
       & + & {
         margin-left: 0;
       }
@@ -146,21 +150,21 @@
     }
   }
   &__btn + &__btn {
-    @include bp-desk(mobile-md) {
+    @include media.bp-desk(mobile-md) {
       margin-top: 15px;
     }
   }
   &__link {
     cursor: pointer;
-    color: $orange;
+    color: variables.$orange;
     transition: color 0.2s ease-in;
     position: relative;
     &:hover {
-      color: $grey;
+      color: variables.$grey;
     }
-    @include bp-desk(mobile) {
+    @include media.bp-desk(mobile) {
       &:hover {
-        color: $orange;
+        color: variables.$orange;
       }
     }
     &--popup {
@@ -180,32 +184,32 @@
         bottom: -9px;
         width: 0;
         height: 0;
-        border: 5px solid $white;
+        border: 5px solid variables.$white;
         border-left-color: transparent;
         border-right-color: transparent;
         border-bottom-color: transparent;
       }
       &-light {
-        background-color: $black;
+        background-color: variables.$black;
         &::before {
-          border-top-color: $black;
+          border-top-color: variables.$black;
         }
       }
       &-dark {
-        background-color: $white;
+        background-color: variables.$white;
         &::before {
-          border-top-color: $white;
+          border-top-color: variables.$white;
         }
       }
       .social {
         &--github {
           &-light {
-            fill: $white;
+            fill: variables.$white;
           }
         }
         &--github {
           &-dark {
-            fill: $black;
+            fill: variables.$black;
           }
         }
       }

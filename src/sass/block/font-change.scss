@@ -1,3 +1,6 @@
+@use '../_config/variables';
+@use '../_mixins/media';
+
 .font-change {
   position: relative;
   opacity: 1;
@@ -10,16 +13,16 @@
     width: 17px;
     height: 27px;
     &--light {
-      fill: $black;
+      fill: variables.$black;
     }
     &--dark {
-      fill: $white;
+      fill: variables.$white;
     }
   }
   &__text {
     font-size: 9px;
     text-transform: uppercase;
-    color: $white;
+    color: variables.$white;
   }
   &__popup {
     width: 115px;
@@ -28,23 +31,23 @@
     right: -125px;
     top: -15px;
     border-radius: 10px 10px 10px 0;
-    background-color: $black;
+    background-color: variables.$black;
     transform: scale(0);
     opacity: 0;
     padding: 7px;
     transition: 0.3s ease-in transform, 0.3s ease-in opacity;
     &--light {
-      border: 1px solid $black;
+      border: 1px solid variables.$black;
     }
     &--dark {
-      border: 1px solid $white;
+      border: 1px solid variables.$white;
     }
 
     &--active {
       transform: scale(1);
       opacity: 1;
     }
-    @include bp-desk(mobile) {
+    @include media.bp-desk(mobile) {
       display: none;
     }
   }
@@ -66,16 +69,16 @@
     cursor: pointer;
     appearance: none;
     border-radius: 10px;
-    background-color: $white;
+    background-color: variables.$white;
     &::-webkit-slider-runnable-track {
       border-radius: 10px;
       height: 7px;
-      border: 1px solid $white;
-      background-color: $black;
+      border: 1px solid variables.$white;
+      background-color: variables.$black;
     }
     &::-webkit-slider-thumb {
-      background: $white;
-      border: 1px solid $black;
+      background: variables.$white;
+      border: 1px solid variables.$black;
       border-radius: 10px;
       width: 12px;
       height: 12px;
@@ -85,12 +88,12 @@
     &::-moz-range-track {
       border-radius: 10px;
       height: 5px;
-      border: 1px solid $white;
-      background-color: $black;
+      border: 1px solid variables.$white;
+      background-color: variables.$black;
     }
     &::-moz-range-thumb {
-      background-color: $black;
-      border: 1px solid $white;
+      background-color: variables.$black;
+      border: 1px solid variables.$white;
       border-radius: 10px;
     }
   }

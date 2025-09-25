@@ -1,26 +1,29 @@
+@use '../_mixins/decore';
+@use '../_config/variables';
+
 .mobile-nav {
   &__link {
     position: relative;
     font-size: 0.93rem;
-    color: $black;
+    color: variables.$black;
     text-transform: uppercase;
     font-weight: 700;
     text-decoration: none;
     transition: color .3s ease-in;
     &::after {
-      @include decore-line;
+      @include decore.decore-line;
     }
 
     &--light {
-      color: $black;
+      color: variables.$black;
       &::after {
-        background-color: $black;
+        background-color: variables.$black;
       }
     }
     &--dark {
-      color: $white;
+      color: variables.$white;
       &::after {
-        background-color: $white;
+        background-color: variables.$white;
       }
     }
     &:hover:not(.mobile-nav__link--btn) {

@@ -1,3 +1,6 @@
+@use '../_config/variables';
+@use '../_mixins/media';
+
 .modal {
   padding: 37.5px;
   display: none;
@@ -17,11 +20,11 @@
   }
   &.sertificate-modal {
     padding: 37.5px;
-    @include bp-desk(mobile) {
+    @include media.bp-desk(mobile) {
       padding: 15px;
     }
   }
-  @include bp-desk(tablet-landscape) {
+  @include media.bp-desk(tablet-landscape) {
     padding: 0;
   }
   &.show {
@@ -35,14 +38,14 @@
     transform: rotateX(90deg);
     transition: transform 0.2s linear, background-color 0.2s linear;
     &--dark {
-      background-color: $black;
+      background-color: variables.$black;
     }
     &--light {
-      background-color: $white;
+      background-color: variables.$white;
     }
     &--sm {
       max-width: 900px;
-      @include bp-desk(tablet-landscape) {
+      @include media.bp-desk(tablet-landscape) {
         max-width: 100%;
       }
     }
@@ -63,22 +66,22 @@
     width: 34px;
     height: 34px;
     transition: transform 0.2s linear;
-    @include bp-desk(tablet) {
+    @include media.bp-desk(tablet) {
       width: 27px;
       height: 32px;
     }
-    @include bp-desk(mobile) {
+    @include media.bp-desk(mobile) {
       width: 21px;
       height: 26px;
     }
     &:hover {
       transform: translateY(-3px);
     }
-    @include bp-desk(tablet) {
+    @include media.bp-desk(tablet) {
       width: 27px;
       height: 32px;
     }
-    @include bp-desk(mobile) {
+    @include media.bp-desk(mobile) {
       width: 21px;
       height: 26px;
     }
@@ -95,24 +98,24 @@
     font-weight: 700;
     transition: color .3s ease-in;
     &--light {
-      color: $black;
+      color: variables.$black;
     }
     &--dark {
-      color: $white;
+      color: variables.$white;
     }
     &--form,
     &--resume {
       max-width: 40%;
       text-transform: none;
-      @include bp-desk(mobile) {
+      @include media.bp-desk(mobile) {
         font-size: 2.4rem;
         margin-top: 30px;
       }
-      @include media-down(599px) {
+      @include media.media-down(599px) {
         font-size: 2rem;
         max-width: 80%;
       }
-      @include bp-desk(mobile-md) {
+      @include media.bp-desk(mobile-md) {
         margin-top: 15px;
         font-size: 1.7rem;
       }
@@ -123,12 +126,12 @@
     &--resume {
       max-width: 100%;
     }
-    @include bp-desk(mobile) {
+    @include media.bp-desk(mobile) {
       &--resume {
         text-transform: uppercase;
       }
     }
-    @include bp-desk(mobile-md) {
+    @include media.bp-desk(mobile-md) {
       &--resume {
         max-width: 40%;
       }
@@ -140,18 +143,18 @@
     font-weight: 400;
     transition: color .3s ease-in;
     &--dark {
-      color: $white;
+      color: variables.$white;
     }
     &--light {
-      color: $black;
+      color: variables.$black;
     }
   }
   &__timeline {
     margin: 63px auto;
-    @include bp-desk(mobile) {
+    @include media.bp-desk(mobile) {
       margin-top: 108px;
     }
-    @include bp-desk(mobile-sm) {
+    @include media.bp-desk(mobile-sm) {
       margin-top: 63px;
     }
   }

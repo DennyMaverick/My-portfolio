@@ -1,9 +1,11 @@
+@use '../_mixins/media';
+
 .slider {
   &__item {
     display: flex;
     justify-content: center;
     align-items: center;
-    @include bp-desk(mobile) {
+    @include media.bp-desk(mobile) {
       height: 40vh;
     }
     &::after {
@@ -40,7 +42,7 @@
     &.o0 {
       transform: scale(0.5);
     }
-    @include bp-desk(mobile) {
+    @include media.bp-desk(mobile) {
       min-height: 300px;
     max-height: 350px;
     }

@@ -1,3 +1,5 @@
+@use '../_config/variables';
+
 .lang-tool {
   display: flex;
   justify-content: center;
@@ -8,15 +10,15 @@
   border-radius: 10px;
   font-weight: 600;
   &--active {
-    color: $grey;
+    color: variables.$grey;
   }
   &--light {
-    background-color: $black;
-    color: $white;
+    background-color: variables.$black;
+    color: variables.$white;
   }
   &--dark {
-    background-color: $white;
-    color: $black;
+    background-color: variables.$white;
+    color: variables.$black;
   }
   &__separate {
     margin-left: 5px;

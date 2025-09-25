@@ -9,16 +9,52 @@
 // Slick-theme
 
 // Настройки
-@import "_config/variables";
-@import "_config/fonts";
+@use "_config/variables";
+@use "_config/fonts";
 
 // Миксины
-@import "_mixins/reset";
-@import "_mixins/media";
-@import "_mixins/container";
-@import "_mixins/flex";
-@import "_mixins/decore";
-@import "_mixins/px-to-rem";
+@use "_mixins/reset";
+@use "_mixins/media";
+@use "_mixins/container";
+@use "_mixins/flex";
+@use "_mixins/decore";
+@use "_mixins/px-to-rem";
+
+// Подключение блоков
+@use "block/header";
+@use 'block/mobile-modal';
+@use 'block/mobile-nav.scss';
+@use 'block/lang-tool';
+@use 'block/font-change';
+@use 'block/nav';
+@use 'block/theme';
+@use 'block/burger-btn';
+@use 'block/btn';
+@use 'block/intro';
+@use 'block/social';
+@use 'block/works';
+@use 'block/work';
+@use 'block/portfolio';
+@use 'block/about';
+@use 'block/modal-list';
+@use 'block/modal';
+@use 'block/timeline';
+@use 'block/progress-bar';
+@use 'block/contact';
+@use 'block/sertificate-modal';
+@use 'block/modal-work';
+@use 'block/slider';
+@use 'block/slick';
+@use 'block/preloader-page';
+@use 'block/footer';
+@use 'block/footer-copyright';
+@use 'block/close-modal-mobile';
+@use 'block/show-more';
+
+
+
+// Helpers
+@use "helpers/helpers";
 
 // Основные стили
 
@@ -50,14 +86,14 @@ html {
 
 html,
 body {
-  @include reset-model;
+  @include reset.reset-model;
   min-height: 100vh;
-  font-size: $font-size-base;
-  font-family: $font-family-base;
+  font-size: variables.$font-size-base;
+  font-family: variables.$font-family-base;
   text-rendering: optimizeSpeed;
   // scroll-behavior: smooth !important;
   font-size: 1rem;
-  color: $black;
+  color: variables.$black;
   // background-color: orange;
 }
 
@@ -67,21 +103,21 @@ body {
 }
 
 *::selection {
-  background-color: $select-color-dark;
-  color: $black;
+  background-color: variables.$select-color-dark;
+  color: variables.$black;
 }
 
 // Сброс списка, ссылок и кнопки
 ul {
-  @include reset-list();
+  @include reset.reset-list();
 }
 
 a {
-  @include reset-link();
+  @include reset.reset-link();
 }
 
 button {
-  @include reset-button();
+  @include reset.reset-button();
 }
 
 // Визуальное скрытие элементов
@@ -106,16 +142,12 @@ img {
 
 // Ограничение для макета
 .wrapper {
-  @include wrapper;
+  @include container.wrapper;
 }
 
 // Контентная область
 .container {
-  @include container;
+  @include container.container;
 }
 
-// Подключение блоков
-@import "block/*.scss";
 
-// Helpers
-@import "helpers/helpers";

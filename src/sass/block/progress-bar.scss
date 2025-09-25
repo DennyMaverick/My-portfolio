@@ -1,3 +1,7 @@
+@use '../_config/variables';
+@use '../_mixins/media';
+
+
 .progress-bar {
   &__item {
     display: flex;
@@ -9,10 +13,10 @@
     margin-bottom: 15px;
     transition: border .3s ease-in;
     &--light {
-      border: 0.75px solid $grey-light-second;
+      border: 0.75px solid variables.$grey-light-second;
     }
     &--dark {
-      border: 0.75px solid $white;
+      border: 0.75px solid variables.$white;
     }
   }
   &__title {
@@ -22,12 +26,12 @@
     hyphens: manual;
     transition: color .3s ease-in;
     &--light {
-      color: $black;
+      color: variables.$black;
     }
     &--dark {
-      color: $white;
+      color: variables.$white;
     }
-    @include media-down(420px) {
+    @include media.media-down(420px) {
       hyphens: none;
     }
   }
@@ -38,7 +42,7 @@
   &__left {
     width: 40%;
   }
-  @include media-down(420px) {
+  @include media.media-down(420px) {
     &__left, &__right {
       width: 100%;
       padding: 0;
@@ -52,12 +56,12 @@
     height: 6px;
     transition: background-color .3s ease-in;
     &--light {
-      background-color: $grey-ligth-third;
+      background-color: variables.$grey-ligth-third;
     }
     &--dark {
-      background-color: $grey;
+      background-color: variables.$grey;
     }
-    @include media-down(420px) {
+    @include media.media-down(420px) {
       width: 100%;
     }
   }
@@ -65,10 +69,10 @@
     height: 100%;
     transition: width 0.2s linear, background-color 0.3s linear;
     &--light {
-      background-color: $grey;
+      background-color: variables.$grey;
     }
     &--dark {
-      background-color: $white;
+      background-color: variables.$white;
     }
   }
 }

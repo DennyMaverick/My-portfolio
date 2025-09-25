@@ -1,27 +1,30 @@
+@use '../_config/variables';
+@use '../_mixins/media';
+
 .header {
   padding-top: 15px;
   padding-bottom: 15px;
   position: fixed;
   left: 0;
   width: 100%;
-  background: $white;
+  background: variables.$white;
   z-index: 1300;
   transition: background-color 0.3s ease-in;
   padding-right: calc(20px - (100vw - 100%));
   &--light {
-    background: $white;
+    background: variables.$white;
   }
   &--dark {
-    background: $black;
+    background: variables.$black;
   }
-  @include media-down(1041px) {
+  @include media.media-down(1041px) {
     padding-top: 25px;
   }
-  @include bp-desk(tablet) {
+  @include media.bp-desk(tablet) {
     padding-top: 22.5px;
     padding-bottom: 22.5px;
   }
-  @include bp-desk(mobile) {
+  @include media.bp-desk(mobile) {
     padding-top: 15px;
     padding-bottom: 15px;
   }
@@ -41,10 +44,10 @@
     right: 0;
     transition: background-color 0.3s ease-in, transform 1s ease-in, opacity 1s ease-in;
     &--light {
-      background-color: $white;
+      background-color: variables.$white;
     }
     &--dark {
-      background-color: $black;
+      background-color: variables.$black;
     }
     &-active {
       opacity: 1;
@@ -70,7 +73,7 @@
     flex-wrap: wrap;
     height: 100%;
     align-items: center;
-    @include bp-desk(notebook) {
+    @include media.bp-desk(notebook) {
       display: none;
     }
   }
@@ -78,7 +81,7 @@
   &__lang {
     // margin-right: auto;
     margin-left: 30px;
-    @include bp-desk(mobile) {
+    @include media.bp-desk(mobile) {
       margin-left: 0;
     }
   }
@@ -87,9 +90,9 @@
     margin-right: auto;
   }
   &--box-shadow-dark {
-    box-shadow: 0 0 5px $white;
+    box-shadow: 0 0 5px variables.$white;
   }
   &--box-shadow-light {
-    box-shadow: 0 0 5px $black;
+    box-shadow: 0 0 5px variables.$black;
   }
 }

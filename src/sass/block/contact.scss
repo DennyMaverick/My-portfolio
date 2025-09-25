@@ -1,9 +1,12 @@
+@use '../_config/variables';
+@use '../_mixins/media';
+
 .contact {
   &__left {
     padding: 30px;
     max-width: 607px;
     width: 100%;
-    @include bp-desk(mobile) {
+    @include media.bp-desk(mobile) {
       padding: 15px;
     }
   }
@@ -13,14 +16,14 @@
     padding: 0;
     list-style: none;
     font-size: 0.94rem;
-    color: $black;
+    color: variables.$black;
     font-weight: 300;
     transition: color .3s ease-in;
     &--light {
-      color: black;
+      color: variables.$black;
     }
     &--dark {
-      color: $white;
+      color: variables.$white;
     }
   }
 
@@ -28,13 +31,13 @@
     transition: color 0.3s ease-in;
     transition: color .3s ease-in;
     &--light {
-      color: $black;
+      color: variables.$black;
     }
     &--dark {
-      color: $white;
+      color: variables.$white;
     }
     &:hover {
-      color: $color-wave;
+      color: variables.$color-wave;
     }
   }
 
@@ -49,10 +52,10 @@
     margin-right: 11.25px;
     transition: fill .3s ease-in;
     &--light {
-      fill: black;
+      fill: variables.$black;
     }
     &--dark {
-      fill: $white;
+      fill: variables.$white;
     }
   }
 }

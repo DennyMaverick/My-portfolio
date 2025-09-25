@@ -1,3 +1,6 @@
+@use '../_mixins/media';
+@use '../_config/variables';
+
 .burger-btn {
   align-items: center;
   position: relative;
@@ -10,7 +13,7 @@
   border: none;
   background: none;
   outline: none;
-  @include bp-desk(notebook) {
+  @include media.bp-desk(notebook) {
     display: flex;
   }
   &__line {
@@ -38,21 +41,21 @@
     }
 
     &--light {
-      background-color: $black;
+      background-color: variables.$black;
       &::before {
-        background-color: $black;
+        background-color: variables.$black;
       }
       &::after {
-        background-color: $black;
+        background-color: variables.$black;
       }
     }
     &--dark {
-      background-color: $white;
+      background-color: variables.$white;
       &::before {
-        background-color: $white;
+        background-color: variables.$white;
       }
       &::after {
-        background-color: $white;
+        background-color: variables.$white;
       }
     }
   }

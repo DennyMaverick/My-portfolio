@@ -1,13 +1,17 @@
+@use '../_config/variables';
+@use '../_mixins/media';
+@use '../_mixins/font-face';
+
 .modal-work {
   &__preview {
     position: relative;
     width: 65%;
     padding: 12px;
     overflow: hidden;
-    @include bp-desk(tablet) {
+    @include media.bp-desk(tablet) {
       width: 50%;
     }
-    @include bp-desk(mobile) {
+    @include media.bp-desk(mobile) {
       width: 100%;
       order: 2;
     }
@@ -17,11 +21,11 @@
     position: relative;
     width: 35%;
     padding: 51px 24px 15px 25.95px;
-    @include bp-desk(tablet) {
+    @include media.bp-desk(tablet) {
       width: 50%;
     }
 
-    @include bp-desk(mobile) {
+    @include media.bp-desk(mobile) {
       padding: 51px 10.5px 15px;
       width: 100%;
       order: 1;
@@ -35,12 +39,12 @@
     text-transform: uppercase;
     transition: color 0.3s ease-in;
     &--light {
-      color: $black;
+      color: variables.$black;
     }
     &--dark {
-      color: $white;
+      color: variables.$white;
     }
-    @include bp-desk(mobile) {
+    @include media.bp-desk(mobile) {
       font-size: 1.32rem;
     }
   }
@@ -50,12 +54,12 @@
     text-transform: uppercase;
     transition: color 0.3s ease-in;
     &--light {
-      color: $grey;
+      color: variables.$grey;
     }
     &--dark {
-      color: $white;
+      color: variables.$white;
     }
-    @include bp-desk(mobile) {
+    @include media.bp-desk(mobile) {
       font-size: 0.9rem;
     }
   }
@@ -72,10 +76,10 @@
     font-weight: 700;
     transition: color 0.3s ease-in;
     &--light {
-      color: $black;
+      color: variables.$black;
     }
     &--dark {
-      color: $white;
+      color: variables.$white;
     }
   }
   &__client-company {
@@ -85,10 +89,10 @@
     font-weight: 600;
     transition: color 0.3s ease-in;
     &--light {
-      color: $grey;
+      color: variables.$grey;
     }
     &--dark {
-      color: $white;
+      color: variables.$white;
     }
   }
   &__list + * {
@@ -99,17 +103,17 @@
   }
   &__text {
     margin-bottom: 120px;
-    @include font(1rem, 1.6rem);
+    @include font-face.font(1rem, 1.6rem);
 
     font-weight: 300;
     transition: color 0.3s ease-in;
     &--light {
-      color: $grey;
+      color: variables.$grey;
     }
     &--dark {
-      color: $white;
+      color: variables.$white;
     }
-    @include bp-desk(mobile) {
+    @include media.bp-desk(mobile) {
       margin-bottom: 75px;
     }
   }
@@ -123,7 +127,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @include bp-desk(mobile) {
+    @include media.bp-desk(mobile) {
       display: none;
     }
   }
@@ -136,7 +140,7 @@
     position: fixed;
     right: 30px;
     bottom: 112px;
-    @include bp-desk(mobile) {
+    @include media.bp-desk(mobile) {
       bottom: 320px;
     }
     &:focus {
@@ -149,17 +153,17 @@
     height: 20px;
     margin-left: auto;
     &--light {
-      fill: $arrow-up-color-light;
+      fill: variables.$arrow-up-color-light;
       transition: fill 0.3s ease-in;
       &:hover {
-        fill: $arrow-up-color-light-hover;
+        fill: variables.$arrow-up-color-light-hover;
       }
     }
     &--dark {
-      fill: $arrow-up-color;
+      fill: variables.$arrow-up-color;
       transition: fill 0.3s ease-in;
       &:hover {
-        fill: $arrow-up-color-hover;
+        fill: variables.$arrow-up-color-hover;
       }
     }
   }
@@ -178,23 +182,23 @@
 
     transition: background-color 0.3s ease-in, color 0.3s ease-in, box-shadow 0.3s ease-in;
     &--light {
-      background-color: $color-btn-light;
-      color: $btn-color;
-      box-shadow: 0 0 10px $color-btn-light;
+      background-color: variables.$color-btn-light;
+      color: variables.$btn-color;
+      box-shadow: 0 0 10px variables.$color-btn-light;
       &:hover {
-        background-color: $hover-btn-light;
-        color: $black;
-        box-shadow: 0px 0px 10px $black;
+        background-color: variables.$hover-btn-light;
+        color: variables.$black;
+        box-shadow: 0px 0px 10px variables.$black;
       }
     }
     &--dark {
-      background-color: $color-btn-dark;
-      color: $btn-color;
-      box-shadow: 0px 0px 10px $color-btn-dark;
+      background-color: variables.$color-btn-dark;
+      color: variables.$btn-color;
+      box-shadow: 0px 0px 10px variables.$color-btn-dark;
       &:hover {
-        background-color: $hover-btn-dark;
-        color: $black;
-        box-shadow: 0px 0px 10px $hover-btn-dark;
+        background-color: variables.$hover-btn-dark;
+        color: variables.$black;
+        box-shadow: 0px 0px 10px variables.$hover-btn-dark;
       }
     }
     &--prev {
@@ -204,7 +208,7 @@
       margin-left: 3px;
     }
     &--text {
-      @include bp-desk(mobile) {
+      @include media.bp-desk(mobile) {
         font-size: 0;
       }
     }
@@ -214,10 +218,10 @@
     margin-bottom: 18px;
     transition: color 0.3s ease-in;
     &--dark {
-      color: $desc-show-color-dark;
+      color: variables.$desc-show-color-dark;
     }
     &--light {
-      color: $desc-show-color;
+      color: variables.$desc-show-color;
     }
   }
   &__show-info {

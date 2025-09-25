@@ -1,3 +1,6 @@
+@use '../_mixins/decore';
+@use '../_config/variables';
+
 .nav {
   &__link {
     position: relative;
@@ -7,18 +10,18 @@
     font-weight: 700;
     transition: color .3s ease-in;
     &:after {
-      @include decore-line;
+      @include decore.decore-line;
     }
     &--light {
-      color: $black;
+      color: variables.$black;
       &::after {
-        background-color: $black;
+        background-color: variables.$black;
       }
     }
     &--dark {
-      color: $white;
+      color: variables.$white;
       &::after {
-        background-color: $white;
+        background-color: variables.$white;
       }
     }
     &:not(.nav__link--btn) {

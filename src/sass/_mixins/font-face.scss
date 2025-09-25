@@ -1,3 +1,5 @@
+@use "sass:math";
+
 // Подключение шрифтов всех расширений
 @mixin font-face($font-family, $file-path, $weight: normal, $style: normal) {
   @font-face {
@@ -20,3 +22,22 @@
 }
 
 // Подключение миксина @include font(14px, 21px);
+
+// Миксины для шрифтов
+@mixin font-montserrat-bold {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin font-montserrat-regular {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin font-montserrat-light {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}

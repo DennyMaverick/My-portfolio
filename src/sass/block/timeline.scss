@@ -1,9 +1,13 @@
+@use '../_config/variables';
+@use '../_mixins/media';
+@use '../_mixins/font-face';
+
 .timeline {
   display: flex;
   width: 100%;
   max-width: 768px;
   position: relative;
-  @include bp-desk(mobile) {
+  @include media.bp-desk(mobile) {
     flex-direction: column;
     align-items: center;
   }
@@ -17,18 +21,18 @@
     left: 50%;
     z-index: 1;
     transition: background-color 0.3s ease-in;
-    @include bp-desk(mobile) {
+    @include media.bp-desk(mobile) {
       display: none;
     }
   }
   &--light {
     &::before {
-      background-color: $black;
+      background-color: variables.$black;
     }
   }
   &--dark {
     &::before {
-      background-color: $white;
+      background-color: variables.$white;
     }
   }
   &__col {
@@ -36,32 +40,32 @@
     .social {
     &--github {
       &-light {
-        fill: $black;
+        fill: variables.$black;
       }
     }
     &--github {
       &-dark {
-        fill: $white;
+        fill: variables.$white;
       }
     }
     &--telegram {
       &-light {
-        fill: $black;
+        fill: variables.$black;
       }
     }
     &--telegram {
       &-dark {
-        fill: $white;
+        fill: variables.$white;
       }
     }
     &--vk {
       &-light {
-        fill: $black;
+        fill: variables.$black;
       }
     }
     &--vk {
       &-dark {
-        fill: $white;
+        fill: variables.$white;
       }
     }
   }
@@ -69,10 +73,10 @@
       text-align: right;
       padding-right: 48px;
       position: relative;
-      @include bp-desk(mobile) {
+      @include media.bp-desk(mobile) {
         margin-bottom: 37.5px;
       }
-      @include bp-desk(mobile) {
+      @include media.bp-desk(mobile) {
         order: 1;
       }
     }
@@ -80,7 +84,7 @@
       position: relative;
       padding-left: 48px;
     }
-    @include bp-desk(mobile) {
+    @include media.bp-desk(mobile) {
       width: 100%;
       max-width: 368px;
       &--left,
@@ -101,7 +105,7 @@
       -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
       outline: none;
     }
-    @include bp-desk(mobile) {
+    @include media.bp-desk(mobile) {
       bottom: -30px;
       left: 0;
     }
@@ -110,17 +114,17 @@
     width: 20px;
     height: 20px;
     &--light {
-      fill: $arrow-up-color-light;
+      fill: variables.$arrow-up-color-light;
       transition: fill 0.3s ease-in;
       &:hover {
-        fill: $arrow-up-color-light-hover;
+        fill: variables.$arrow-up-color-light-hover;
       }
     }
     &--dark {
-      fill: $arrow-up-color;
+      fill: variables.$arrow-up-color;
       transition: fill 0.3s ease-in;
       &:hover {
-        fill: $arrow-up-color-hover;
+        fill: variables.$arrow-up-color-hover;
       }
     }
   }
@@ -132,15 +136,15 @@
     margin-bottom: 39px;
     transition: color 0.3s ease-in;
     &--light {
-      color: $black;
+      color: variables.$black;
     }
     &--dark {
-      color: $white;
+      color: variables.$white;
     }
   }
   &__item {
     margin-bottom: 45px;
-    @include bp-desk(mobile) {
+    @include media.bp-desk(mobile) {
       margin-bottom: 39px;
     }
     &:last-child {
@@ -154,10 +158,10 @@
     font-size: 0.94rem;
     transition: color 0.3s ease-in;
     &--light {
-      color: $black;
+      color: variables.$black;
     }
     &--dark {
-      color: $white;
+      color: variables.$white;
     }
   }
   &__subtitle {
@@ -166,10 +170,10 @@
     font-weight: 700;
     transition: color 0.3s ease-in;
     &--light {
-      color: $black;
+      color: variables.$black;
     }
     &--dark {
-      color: $white;
+      color: variables.$white;
     }
   }
   &__position {
@@ -177,24 +181,24 @@
     font-style: italic;
     transition: color 0.3s ease-in;
     &--light {
-      color: $black;
+      color: variables.$black;
     }
     &--dark {
-      color: $white;
+      color: variables.$white;
     }
   }
   &__text {
     margin-top: 15px;
     margin-bottom: 15px;
-    @include font(1rem, 1.6rem);
+    @include font-face.font(1rem, 1.6rem);
 
     font-weight: 300;
     transition: color 0.3s ease-in;
     &--light {
-      color: $grey;
+      color: variables.$grey;
     }
     &--dark {
-      color: $white;
+      color: variables.$white;
     }
   }
   &__image {
@@ -226,10 +230,10 @@
     text-decoration: underline;
 
     &--light {
-      color: $select-color-light;
+      color: variables.$select-color-light;
     }
     &--dark {
-      color: $select-color-dark;
+      color: variables.$select-color-dark;
     }
     &:hover {
       text-decoration: none;
