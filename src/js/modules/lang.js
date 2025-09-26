@@ -1079,6 +1079,10 @@ const langs = {
 }
 
 const titles = {
+  "to-top-up": {
+    ru: "Наверх",
+    en: "Up",
+  },
   "telegram-intro": {
     ru: "Мой телеграм",
     en: "My telegram",

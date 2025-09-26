@@ -1,0 +1,8 @@
+@use "../_config/variables";
+
+/* Подсветка активного пункта меню */
+.header__inner nav ul li a.active {
+  font-weight: 700;
+  color: variables.$modal-list-marker-color-dark;
+  border-bottom: 2px solid variables.$modal-list-marker-color-dark;
+}

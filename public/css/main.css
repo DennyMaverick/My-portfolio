@@ -3242,6 +3242,127 @@
   transform: rotate(90deg);
 }
 
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background: #111;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 20px #0ff, 0 0 40px #0ff, 0 0 60px #0ff;
+  box-shadow: 0 0 20px #0ff, 0 0 40px #0ff, 0 0 60px #0ff;
+  -webkit-transition: -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+  -o-transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+#backToTop:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-box-shadow: 0 0 30px #ff00ff, 0 0 60px #00ffff, 0 0 90px #ff00ff;
+  box-shadow: 0 0 30px #ff00ff, 0 0 60px #00ffff, 0 0 90px #ff00ff;
+}
+
+#backToTop .arrow {
+  stroke: #0ff;
+  -webkit-animation: arrowBounce 1s infinite alternate, arrowColor 4s infinite alternate;
+  animation: arrowBounce 1s infinite alternate, arrowColor 4s infinite alternate;
+}
+
+@-webkit-keyframes arrowBounce {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes arrowBounce {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+}
+
+@-webkit-keyframes arrowColor {
+  0% {
+    stroke: #0ff;
+  }
+
+  25% {
+    stroke: #ff00ff;
+  }
+
+  50% {
+    stroke: #00ff99;
+  }
+
+  75% {
+    stroke: #ff0080;
+  }
+
+  100% {
+    stroke: #0ff;
+  }
+}
+
+@keyframes arrowColor {
+  0% {
+    stroke: #0ff;
+  }
+
+  25% {
+    stroke: #ff00ff;
+  }
+
+  50% {
+    stroke: #00ff99;
+  }
+
+  75% {
+    stroke: #ff0080;
+  }
+
+  100% {
+    stroke: #0ff;
+  }
+}
+
+/* Подсветка активного пункта меню */
+
+.header__inner nav ul li a.active {
+  font-weight: 700;
+  color: #edb040;
+  border-bottom: 2px solid #edb040;
+}
+
 .is-active {
   opacity: 1;
   -webkit-transform: translateX(0);

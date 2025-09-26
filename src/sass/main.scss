@@ -50,6 +50,8 @@
 @use 'block/footer-copyright';
 @use 'block/close-modal-mobile';
 @use 'block/show-more';
+@use 'block/toTop';
+@use 'block/lightActiveNavElem';
 
 
 
@@ -101,6 +103,7 @@ body {
   overflow-x: hidden;
   width: 100vw;
 }
+
 
 *::selection {
   background-color: variables.$select-color-dark;
