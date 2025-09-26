@@ -10,22 +10,6 @@ module.exports = {
     watch: pathSrc + "/html/**/*.html",
     dest: pathDest,
   },
-  theme: {
-    src: pathSrc + "/sass/theme/*.{sass,scss}",
-    watch: pathSrc + "/sass/theme/*.{sass,scss}",
-    dest: pathDest + "/css/theme/",
-  },
-  pug: {
-    src: pathSrc + "/pug/*.pug",
-    watch: pathSrc + "/pug/**/*.pug",
-    dest: pathDest,
-  },
-
-  css: {
-    src: pathSrc + "/css/*.css",
-    watch: pathSrc + "/css/**/*.css",
-    dest: pathDest + "/css/",
-  },
 
   scss: {
     src: pathSrc + "/sass/*.{sass,scss}",
@@ -68,14 +52,8 @@ module.exports = {
     dest: pathDest + "/img/sprite/",
   },
 
-  php: {
-    src: pathSrc + "/php/**/*.*",
-    watch: pathSrc + "/php/**/*.*",
-    dest: pathDest + "/php/",
-  },
-
   img: {
-    src: ["./src/img/**/*.{png,jpg,jpeg,gif,svg}", "!./src/img/sprite/**/*.svg", "./src/img/favicon/site.webmanifest"],
+    src: ["./src/img/**/*.{png,jpg,jpeg,gif,svg}", "!./src/img/sprite/**/*.svg"],
     watch: ["./src/img/**/*.{png,jpg,jpeg,gif,svg}", "!./src/img/sprite/**/*.svg"],
     dest: pathDest + "/img/",
   },

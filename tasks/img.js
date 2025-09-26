@@ -9,14 +9,14 @@ const plumber = require('gulp-plumber');
 const notify = require('gulp-notify');
 const newer = require('gulp-newer');
 const imagemin = require("gulp-imagemin");
-const webp = require("gulp-webp");
+// const webp = require("gulp-webp");
 const gulpIf = require("gulp-if");
 
 
 // Обработка изображений
 const img = () => {
   return (
-    src(path.img.src)
+    src(path.img.src, {encoding: false})
       .pipe(
         plumber({
           errorHandler: notify.onError((error) => ({
@@ -28,7 +28,7 @@ const img = () => {
       // .pipe(newer(path.img.dest))
       // .pipe(webp())
       // .pipe(dest(path.img.dest))
-      .pipe(src(path.img.src))
+      .pipe(src(path.img.src, {encoding: false}))
       .pipe(newer(path.img.dest))
       .pipe(gulpIf(app.isProd, imagemin(app.imagemin)))
       .pipe(dest(path.img.dest))

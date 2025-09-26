@@ -22,6 +22,7 @@
   &__item {
     margin-bottom: 15px;
     transition: color .3s ease-in;
+    line-height: 1.6;
     &--dark {
       color: variables.$modal-list-link-dark;
     }

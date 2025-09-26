@@ -7,6 +7,9 @@
   width: 100%;
   max-width: 768px;
   position: relative;
+  &__modal-list .modal-list__social-link {
+    display: inline-block;
+  }
   @include media.bp-desk(mobile) {
     flex-direction: column;
     align-items: center;
@@ -206,7 +209,7 @@
     padding-bottom: 75%;
     width: 100%;
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
     &--light {
       background: url("../img/preload/white-theme-loader.gif") center no-repeat;
     }

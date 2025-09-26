@@ -1,0 +1,29 @@
+@use '../_config/variables';
+@use '../_mixins/media';
+
+.app-modal {
+  &__btn {
+    @include media.bp-desk(mobile) {
+      top: 4.5px;
+      right: 7.5px;
+    }
+    @include media.bp-desk(mobile-md) {
+      top: 1.5px;
+      right: 1.5px;
+    }
+  }
+  &__image {
+    position: relative;
+    background-color: bisque;
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 7;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+}
