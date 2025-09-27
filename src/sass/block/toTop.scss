@@ -20,7 +20,7 @@
 
 #backToTop:hover {
   transform: scale(1.2);
-  box-shadow: 0 0 30px #ff00ff, 0 0 60px #00ffff, 0 0 90px #ff00ff;
+  box-shadow: 0 0 30px #edb040, 0 0 60px #00ffff, 0 0 90px #edb040;
 }
 
 #backToTop .arrow {
@@ -29,14 +29,28 @@
 }
 
 @keyframes arrowBounce {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-6px); }
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-6px);
+  }
 }
 
 @keyframes arrowColor {
-  0% { stroke: #0ff; }
-  25% { stroke: #ff00ff; }
-  50% { stroke: #00ff99; }
-  75% { stroke: #ff0080; }
-  100% { stroke: #0ff; }
+  0% {
+    stroke: #ccc;
+  }
+  25% {
+    stroke: steelblue;
+  }
+  50% {
+    stroke: #edb040;
+  }
+  75% {
+    stroke: steelblue;
+  }
+  100% {
+    stroke: #ccc;
+  }
 }

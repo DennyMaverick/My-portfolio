@@ -1009,72 +1009,100 @@ const langs = {
     en: "Poker player",
   },
   "converter-app-title": {
-    ru: "Разработка приложения 'Конвертер валют'",
-    en: "Application developing 'Currency converter'",
+    ru: "Разработка приложения «Конвертер валют»",
+    en: "Application developing «Currency converter»",
   },
   "converter-app-desc": {
-    ru: "После интенсива от онлайн-школы Web-cademy доработал приложение 'Конвертер валют', где полностью поменял дизайн, и функционал:",
-    en: "I finished the application 'Currency converter' where I've changed the design and functionality of the application after the course from Web-cademy school:",
+    ru: "После интенсива от онлайн-школы Web-cademy доработал приложение «Конвертер валют», полностью переработав дизайн и расширив функционал: ",
+    en: "After an intensive course from the online school, Web-cademy finalized the Currency Converter application, completely redesigning the design and expanding the functionality:",
   },
   "converter-app-first-item": {
-    ru: "Создание функции смены темы приложения: доступно 3 цветовые схемы, светлая, темная и эксклюзивная лунная",
-    en: "Making the function of changing the theme: 3 color schemes are available, light, dark and exlusive moon ",
+    ru: "Смена темы приложения – три цветовые схемы: светлая, тёмная и эксклюзивная «лунная»",
+    en: "Changing the theme of the app – three color schemes: light, dark and exclusive «moon» ",
   },
   "converter-app-second-item": {
-    ru: "Создание функции смены языка: русский или английский",
-    en: "Making the function of change the language: Russian or English",
+    ru: "Смена языка интерфейса – русский и английский",
+    en: "Changing the interface language – Russian and English",
   },
   "converter-app-third-item": {
-    ru: "Двусторонняя конвертация валют, с динамически меняющимися иконками и текстом",
+    ru: "Двусторонняя конвертация валют – динамическое обновление иконок и текста",
     en: "Two-way currency conversion, with dynamically changing icons and text",
   },
   "converter-app-fourth-item": {
-    ru: "Ежедневное отображение обновленного курса валют",
-    en: "Daily display of updated exchange rates",
+    ru: "Ежедневное обновление курсов валют – актуальная информация для пользователя",
+    en: "Daily exchange rate updates – up-to-date information for the user",
   },
   "converter-app-fifth-item": {
-    ru: "Возможность вводить сумму для конвертации с помощью колесика мыши",
-    en: "Ability to enter the amount to convert using the mouse wheel",
-  },
-  "converter-app-sixth-item": {
-    ru: "Возможность вводить сумму для конвертации с помощью колесика мыши",
-    en: "Ability to enter the amount to convert using the mouse wheel",
+    ru: "Удобный ввод суммы – возможность менять значение с помощью колесика мыши",
+    en: "Convenient amount input – the ability to change the value using the mouse wheel",
   },
   "password-generator-app-title": {
-    ru: "Разработка приложения 'Генератор паролей'",
+    ru: "Разработка приложения «Генератор паролей»",
     en: "Developing a Password Generator App",
   },
   "password-generator-app-desc": {
-    ru: "Разработал с нуля приложение 'Генератор паролей', с помощью которого можно создать пароль со сверхзащитой: до 15 символов + специальные знаки. Доступен следующий функционал:",
+    ru: "Разработал с нуля приложение «Генератор паролей», с помощью которого можно создать пароль со сверхзащитой: до 15 символов + специальные знаки. Функционал приложения:",
     en: "I developed a 'Password Generator' app from scratch, allowing you to create ultra-secure passwords with up to 15 characters and special characters. The following features are available:",
   },
   "password-generator-app-first-item": {
-    ru: "Можно выбрать из 3-х вариантов длину пароля: 8, 12 или 15 символов",
+    ru: "Выбор длины пароля: 8, 12 или 15 символов",
     en: "You can choose from 3 password length options: 8, 12 or 15 characters",
   },
   "password-generator-app-second-item": {
-    ru: "Для усиления пароля можно добавить опцию 'специальные символы'",
-    en: "To strengthen your password, you can add the 'special characters' option",
+    ru: "Опция добавления специальных символов для усиления пароля",
+    en: "Option to add special characters to strengthen the password",
   },
   "password-generator-app-third-item": {
-    ru: "После, нажав на кнопку 'Сгенерировать', будет доступен набор 7 различных паролей, плавно выезжающих в левой части экрана (доступно только на ПК и на устройствах с шириной экрана не менее 993 px)",
-    en: "After clicking the 'Generate' button, a set of 7 different passwords will be available, smoothly sliding out from the left side of the screen (available only on PCs and on devices with a screen width of at least 993 px)",
+    ru: "Генерация набора из 7 различных паролей с анимацией появления (для ПК и экранов шириной ≥993px)",
+    en: "Generating a set of 7 different passwords with animated appearance (for PCs and screens ≥993px wide)",
   },
   "password-generator-app-fourth-item": {
-    ru: "После, нажав на кнопку 'Сгенерировать', будет доступен набор 7 различных паролей, плавно выезжающих в левой части экрана (доступно только на ПК и на устройствах с шириной экрана не менее 993 px)",
-    en: "After clicking the 'Generate' button, a set of 7 different passwords will be available, smoothly sliding out from the left side of the screen (available only on PCs and on devices with a screen width of at least 993 px)",
-  },
-  "password-generator-app-fourth-item": {
-    ru: "Также доступна функция копирования пароля в буфер обмена для быстрой и легкой вставки, доступна соответствующая иконка справа от сгенерированного пароля",
-    en: "There is also a function to copy the password to the clipboard for quick and easy pasting; a corresponding icon is available to the right of the generated password.",
+    ru: "Копирование пароля в буфер обмена через удобную иконку",
+    en: "Copying the password to the clipboard via a convenient icon",
   },
   "password-generator-app-fifth-item": {
-    ru: "Также, если пароль не понравится, можно сколько угодно раз генерировать новый набор из 7 паролей, нажимая на кнопку 'Сгенерировать'",
-    en: "Also, if you don't like the password, you can generate a new set of 7 passwords as many times as you like by clicking the 'Generate' button",
+    ru: "Многоразовая генерация нового набора паролей по нажатию кнопки «Сгенерировать»",
+    en: "Reusable generation of a new set of passwords by clicking the 'Generate' button",
   },
-  "password-generator-app-sixth-item": {
-    ru: "Доступна функция сброса, после чего можно заново выбрать количество символов и опцию 'специальные символы' в новом пароле",
-    en: "A reset function is available, after which you can re-select the number of characters and the 'special characters' option in the new password",
+  "password-generator-app-six-item": {
+    ru: "Функция сброса параметров для выбора новых настроек длины и специальных символов",
+    en: "Parameter reset function for selecting new length and special character settings",
+  },
+  "password-generator-app-seventh-item": {
+    ru: "Интерфейс продуман для удобного и интуитивного использования, визуальные элементы отображаются плавно и эстетично",
+    en: "The interface is designed for convenient and intuitive use, visual elements are displayed smoothly and aesthetically",
+  },
+  "langswitcher-app-title": {
+    ru: "Разработка проекта «Переключение языков - подробный гайд»",
+    en: "Development of the project «Language Switching - A Detailed Guide»",
+  },
+  "langswitcher-app-desc": {
+    ru: "Представляю проект по реализации системы переключения языков (русский/английский) для небольших сайтов и лендингов без сторонних библиотек. Проект акцентирует внимание на простоте, гибкости и чистоте решения. Я самостоятельно спроектировал и реализовал весь визуальный интерфейс. Система легко интегрируется в существующие сайты и демонстрирует эффективный подход к созданию многоязычного интерфейса, облегчая поддержку и масштабирование. Ключевые преимущества проекта:",
+    en: "I present a project to implement a language switching system (Russian/English) for small websites and landing pages without third-party libraries. The project focuses on simplicity, flexibility and purity of the solution. I designed and implemented the entire visual interface myself. The system is easily integrated into existing websites and demonstrates an effective approach to creating a multilingual interface, facilitating support and scaling. Key advantages of the project:",
+  },
+  "langswitcher-app-first-item": {
+    ru: "Лёгкая интеграция – можно быстро подключить к любому сайту без изменения существующей структуры",
+    en: "Easy integration – you can quickly connect to any site without changing the existing structure",
+  },
+  "langswitcher-app-second-item": {
+    ru: "Поддержка нескольких языков – легко добавлять новые языки и переводить элементы страницы",
+    en: "Multi–language support - easily add new languages and translate page elements",
+  },
+  "langswitcher-app-third-item": {
+    ru: "Гибкость – корректно работает с повторяющимися элементами, placeholder’ами и атрибутами title",
+    en: "Flexibility – works correctly with duplicate elements, placeholders, and title attributes",
+  },
+  "langswitcher-app-fourth-item": {
+    ru: "Чистый код – решение на чистом JavaScript, без внешних зависимостей",
+    en: "Clean code – a solution based on pure JavaScript, without external dependencies",
+  },
+  "langswitcher-app-fifth-item": {
+    ru: "Улучшение пользовательского опыта – позволяет пользователю быстро переключаться между языками, что повышает доступность контента",
+    en: "Improved user experience – allows the user to quickly switch between languages, which increases the accessibility of content",
+  },
+  "langswitcher-app-sixth-item": {
+    ru: "Масштабируемость – подходит как для небольших лендингов, так и для страниц с большим количеством элементов",
+    en: "Scalability – suitable for both small landing pages and pages with a large number of elements",
   },
 }
 

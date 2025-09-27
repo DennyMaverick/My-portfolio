@@ -3277,8 +3277,8 @@
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
-  -webkit-box-shadow: 0 0 30px #ff00ff, 0 0 60px #00ffff, 0 0 90px #ff00ff;
-  box-shadow: 0 0 30px #ff00ff, 0 0 60px #00ffff, 0 0 90px #ff00ff;
+  -webkit-box-shadow: 0 0 30px #edb040, 0 0 60px #00ffff, 0 0 90px #edb040;
+  box-shadow: 0 0 30px #edb040, 0 0 60px #00ffff, 0 0 90px #edb040;
 }
 
 #backToTop .arrow {
@@ -3313,45 +3313,45 @@
 
 @-webkit-keyframes arrowColor {
   0% {
-    stroke: #0ff;
+    stroke: #ccc;
   }
 
   25% {
-    stroke: #ff00ff;
+    stroke: steelblue;
   }
 
   50% {
-    stroke: #00ff99;
+    stroke: #edb040;
   }
 
   75% {
-    stroke: #ff0080;
+    stroke: steelblue;
   }
 
   100% {
-    stroke: #0ff;
+    stroke: #ccc;
   }
 }
 
 @keyframes arrowColor {
   0% {
-    stroke: #0ff;
+    stroke: #ccc;
   }
 
   25% {
-    stroke: #ff00ff;
+    stroke: steelblue;
   }
 
   50% {
-    stroke: #00ff99;
+    stroke: #edb040;
   }
 
   75% {
-    stroke: #ff0080;
+    stroke: steelblue;
   }
 
   100% {
-    stroke: #0ff;
+    stroke: #ccc;
   }
 }
 
