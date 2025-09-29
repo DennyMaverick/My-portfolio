@@ -4010,6 +4010,16 @@ img {
     align-items: flex-start;
     margin-bottom: 21px;
   }
+
+  #backToTop {
+    width: 30px;
+    height: 30px;
+  }
+
+  #backToTop svg {
+    width: 25px;
+    height: 25px;
+  }
 }
 
 @media (max-width: 680px) {
