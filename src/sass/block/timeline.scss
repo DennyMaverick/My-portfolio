@@ -203,6 +203,9 @@
     &--dark {
       color: variables.$white;
     }
+    &--technologies {
+      text-transform: uppercase;
+    }
   }
   &__image {
     position: relative;

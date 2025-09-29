@@ -548,6 +548,12 @@ const themes = {
       dark: "font-change__popup--dark",
     },
   },
+  ".tech-box__text-description": {
+    theme: {
+      light: "tech-box__text-description--light",
+      dark: "tech-box__text-description--dark",
+    },
+  },
 }
 
 function themeSwitch(theme) {

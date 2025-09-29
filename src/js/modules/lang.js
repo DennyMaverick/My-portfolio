@@ -1416,6 +1416,10 @@ const repeatElems = {
     ru: "на проект",
     en: "to the project",
   },
+  "technologies-text": {
+    ru: "Технологии:",
+    en: "Technologies:",
+  },
 }
 
 // ====== Секция Search / placeholders
