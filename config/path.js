@@ -31,7 +31,7 @@ module.exports = {
 
   // JavaScript библиотеки
   libs: {
-    src: ["./node_modules/aos/dist/aos.js", "./node_modules/slick-carousel/slick/slick.js", "./src/js/modules/libs/lazyload.min.js"],
+    src: ["./node_modules/aos/dist/aos.js", "./node_modules/slick-carousel/slick/slick.js", "./src/js/modules/libs/lazyload.min.js", "./node_modules/typed.js/dist/typed.umd.js"],
     dest: pathDest + "/js/libs/vendors/",
   },
 

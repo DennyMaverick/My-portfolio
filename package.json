@@ -60,6 +60,7 @@
     "page-scroll-to-id": "^1.6.8",
     "sass": "^1.89.2",
     "slick-carousel": "^1.8.1",
+    "typed.js": "^2.1.0",
     "webpack": "^5.101.0",
     "webpack-stream": "^7.0.0"
   },

@@ -933,8 +933,8 @@ const langs = {
     en: "Personal Statement",
   },
   "personal-statement-text": {
-    ru: "Frontend-разработчик, нацеленный на результат. Довожу поставленные задачи до конца, заинтересован в разработке веб-приложений и сайтов. За последние несколько лет я обучился разработке лэндингов и являюсь профессионалом в этом. У меня есть все необходимые инструменты для разработки, и я мотивирован улучшать качество своей работы.",
-    en: "A self-motivated and ambitious Frontend Developer. I bring assigned tasks to completion, I am interested in web programming, such as developing apps and building websites. Over the past few years, I have learned how to develop landing pages and I am a professional in it. I have all the necessary development tools and I am motivated to improve the quality of my work.",
+    ru: "Я — Frontend-разработчик, для которого приоритетом является результат и качество. Создаю веб-приложения и сайты, которые сочетают в себе современный дизайн, удобство для пользователя и техническую надежность. За последние годы накопил опыт в разработке лэндингов и уверен в своих профессиональных навыках в этом направлении. Работаю с актуальными инструментами и технологиями, постоянно развиваюсь и стремлюсь приносить пользу проектам через эффективные цифровые решения.",
+    en: "I am a Frontend developer who prioritizes results and quality. I create web applications and websites that combine modern design, user convenience, and technical reliability. Over the past few years, I have gained experience in developing landing pages and feel confident in my professional skills in this area. I work with up-to-date tools and technologies, continuously improve my expertise, and strive to bring value to projects through effective digital solutions.",
   },
   "hobbie-title-vk-group": {
     ru: "Ведение мотивационного сообщества вконтакте &#171;Ключ к мечте&#187;",
