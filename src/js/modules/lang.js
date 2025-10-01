@@ -160,20 +160,20 @@ const langs = {
     en: "Who Am I",
   },
   "about-begin": {
-    ru: "Добрый день, меня зовут Денис. Я разрабатываю лэндинги, одностраничные сайты. Мне также интересна разработка SPA (Single Page Applications), в данный момент я изучаю React.",
-    en: "Good hour, my name is Denis. I develop landings, single page sites. Also I am interested in developing SPA (Single Page Applications), I do learn React to do this.",
+    ru: "Я — Frontend-разработчик, который любит превращать идеи в удобные и стильные сайты. Специализируюсь на разработке лендингов и одностраничных приложений, сейчас изучаю <span class='font-weight-bold'>React</span> и развиваю навыки в создании <span class='font-weight-bold'>SPA</span>.",
+    en: "I'm a Frontend Developer who loves turning ideas into user-friendly and stylish websites. I specialize in landing page and single-page app development, and I'm currently learning <span class='font-weight-bold'>React</span> and developing my <span class='font-weight-bold'>SPA</span> skills.",
   },
   "about-part-two": {
-    ru: "Мне интересно, чтобы сайт, созданный мной или группой разработчиков, был внешне привлекательным, имел красивый дизайн, а также создавал впечатление. Поэтому я, как Frontend - разработчик, нацелен на то, чтобы внешняя составляющая сайта была на высшем уровне. Для этого у меня есть следующие инструменты:",
-    en: "I like to do such sites as attractive sites with beautiful design. That's why I, as a Fronted Developer, want the sites would be on a high level. I have next tools for this:",
+    ru: "Использую <span class='font-weight-bold'>HTML</span>, <span class='font-weight-bold'>SCSS</span>, <span class='font-weight-bold'>JavaScript</span> и методологию <span class='font-weight-bold'>БЭМ</span>, чтобы создавать чистый и поддерживаемый код. В работе применяю <span class='font-weight-bold'>Gulp</span> для автоматизации, а также <span class='font-weight-bold'>Figma</span>, <span class='font-weight-bold'>Addobe Illustrator</span> и <span class='font-weight-bold'>Photoshop</span> для отработки дизайна. В работе для меня важно, чтобы сайт был не только технически надежным, но и производил впечатление. Поэтому уделяю внимание деталям: от аккуратной верстки и семантики до продуманной анимации и удобной навигации.",
+    en: "I use <span class='font-weight-bold'>HTML</span>, <span class='font-weight-bold'>SCSS</span>, <span class='font-weight-bold'>JavaScript</span>, and the <span class='font-weight-bold'>BEM</span> methodology to create clean and maintainable code. I use <span class='font-weight-bold'>Gulp</span> for automation, as well as <span class='font-weight-bold'>Figma</span>, <span class='font-weight-bold'>Addobe Illustrator</span> and <span class='font-weight-bold'>Photoshop</span> for design refinement. In my work, it's important for a website to be not only technically reliable but also impressive. That's why I pay attention to detail: from neat layout and semantics to well-thought-out animation and user-friendly navigation.",
   },
   "about-part-three": {
-    ru: "В данный момент я нахожусь в поиске компании, в которой я смогу расти как Frontend разработчик. Для меня важно следующее:",
-    en: "At this moment I find the company where I will grow as a Frontend Developer. Next is important for me:",
+    ru: "Для меня важно работать в команде, где ценят качество и рост. Взамен я готов вкладываться в проекты, развивать интерфейсы и помогать создавать продукты, которыми будут гордиться пользователи.",
+    en: "It's important to me to work in a team that values ​​quality and growth. In return, I'm willing to contribute to projects, develop interfaces, and help create products that users will be proud of.",
   },
   "about-part-five": {
-    ru: "Для связи со мной нажмите на кнопку ниже и оставьте мне сообщение удобным для Вас способом или воспользуйтесь",
-    en: "To keep in touch with me click on the button below and leave me a message in a convenient way for you or use",
+    ru: "Буду рад новым предложениям и сотрудничеству. Связаться со мной можно через форму ниже или",
+    en: "I'd be happy to hear new ideas and collaborate. You can contact me using the form below or",
   },
   "tool-visual-studio-code": {
     ru: "Visual Studio Code, редактор кода с приятным интерфейсом, позволяющий быстро создавать сайты",
@@ -208,7 +208,7 @@ const langs = {
     en: "In-house training",
   },
   "about-social": {
-    ru: "социальными сетями.",
+    ru: "соцсети.",
     en: "social networks.",
   },
   "thanks-for-attention": {
