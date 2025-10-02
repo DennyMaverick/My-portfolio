@@ -572,12 +572,12 @@ const langs = {
   },
   // Modal window HIRE ME
   "modal-griding-title": {
-    ru: "Здравствуйте!",
-    en: "Good hour!",
+    ru: "Добро пожаловать!",
+    en: "Welcome!",
   },
   "griding-desc": {
-    ru: "Вы можете написать мне на почту или в социальных сетях, и я отвечу в ближайшее время:",
-    en: "You can email me or send a message using the social networks, and I will respond as soon as possible:",
+    ru: "Буду рад вашему сообщению!✨ Пишите в соцсетях или на почту — отвечу как можно скорее:",
+    en: "I'd love to hear from you! ✨ Write to me on social media or by email—I'll respond as soon as possible:",
   },
   "modal-hire-me-name": {
     ru: "Ваше имя",
