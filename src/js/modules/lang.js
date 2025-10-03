@@ -354,16 +354,16 @@ const langs = {
     en: "Junior Frontend Developer",
   },
   "freelance-title": {
-    ru: "Доработка сайта-портфолио / Фриланс",
-    en: "Finalization of the portfolio - website / Freelancing",
+    ru: "Фриланс",
+    en: "Freelancing",
   },
   "freelancer-title": {
     ru: "Frontend-разработчик / Фрилансер",
     en: "Frontend Developer / Freelancer",
   },
   "freelancer-desc-first": {
-    ru: "Мой сайт-портфолио полностью готов. Сейчас я открыт к заказам по веб-разработке, развиваюсь как Frontend-разработчик и создаю интересные проекты.",
-    en: "My portfolio site is completely ready. Now I am open to web development orders, developing as a Frontend Developer and creating interesting projects.",
+    ru: "Разрабатываю и дорабатываю сайты и веб-приложения: от лендингов до SPA. Умею создавать адаптивные интерфейсы, настраивать интерактивные элементы и оптимизировать производительность. Работаю с современными технологиями (HTML, CSS, JavaScript, React). Открыт к новым проектам и всегда рад воплощать идеи в современные веб-решения.",
+    en: "I develop and refine websites and web applications, from loan systems to SPAs. I offer customized interfaces, customize interactive elements, and improve performance. I work with modern technologies (HTML, CSS, JavaScript, React). I'm open to new projects and always happy to transform ideas into modern web solutions.",
   },
   "developer-desc-first": {
     ru: "Со времени окончания университета прошло не так много времени, и я решил осваивать Web-разработку. Сначала, конечно, не догадываясь, что эта сфера так многогранна.",
