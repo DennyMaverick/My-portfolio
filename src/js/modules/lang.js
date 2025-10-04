@@ -342,16 +342,16 @@ const langs = {
     en: "2020 - nowadays",
   },
   "portfolio-creation-title": {
-    ru: "Создание проектов для портфолио, самообразование",
-    en: "Creating projects for a portfolio, self-education",
+    ru: "Самообразование, проектная практика",
+    en: "Self-education, project-based practice",
   },
   "freelance-time-title": {
     ru: "2023 - настоящее время",
     en: "2023 - nowadays",
   },
   "web-developer-position-title": {
-    ru: "Начинающий Frontend-разработчик",
-    en: "Junior Frontend Developer",
+    ru: "Frontend-разработчик",
+    en: "Frontend Developer",
   },
   "freelance-title": {
     ru: "Фриланс",
@@ -366,24 +366,37 @@ const langs = {
     en: "I develop and refine websites and web applications, from loan systems to SPAs. I offer customized interfaces, customize interactive elements, and improve performance. I work with modern technologies (HTML, CSS, JavaScript, React). I'm open to new projects and always happy to transform ideas into modern web solutions.",
   },
   "developer-desc-first": {
-    ru: "Со времени окончания университета прошло не так много времени, и я решил осваивать Web-разработку. Сначала, конечно, не догадываясь, что эта сфера так многогранна.",
-    en: "Not much time has passed since graduating from university, and I decided to master Web development. At first, of course, without realizing that this profession is so multifaceted.",
+    ru: "После университета я начал активно осваивать веб-разработку. Первым шагом стал 3-недельный марафон по вёрстке сайтов от HTML Academy, где я сверстал свой первый проект и понял, что хочу двигаться в этой сфере.",
+    en: "After university, I began actively learning web development. My first step was a three-week website coding marathon from HTML Academy, where I designed my first project and realized I wanted to pursue a career in this field.",
   },
   "developer-desc-second": {
-    ru: "Сначала я прошел 3-х недельный марафон от Web-школы HTML-Academy по верстке сайтов, где я принял участие, дойдя до конца. Я сверстал сайт, и понял, что мне это интересно. Дальше я стал углублять свои знания, изучая новые инструменты и технологии, необходимые для разработки сайтов.",
-    en: "First, I went through a 3-week marathon from the HTML Academy Web School on site layout, where I took part, reaching the end. I made up the site, and realized that I was interested in it. Then I began to deepen my knowledge by learning new tools and technologies necessary for website development.",
+    ru: "Чтобы развиваться дальше, я проходил интенсивы и марафоны, изучал современные технологии и практиковался в создании проектов для портфолио.",
+    en: "To develop further, I took intensive courses and marathons, studied modern technologies, and practiced creating projects for my portfolio.",
   },
   "developer-desc-third": {
-    ru: "Я стал посещать интенсивы и другие марафоны, чтобы укрепить навыки, продолжая развиваться в сфере веб-разработки, параллельно пополняя свое портфолио новыми проектами.",
-    en: "I started attending intensive courses and other marathons to improve my skills, continuing to develop in the field of web development, while simultaneously replenishing my portfolio with new projects.",
+    ru: "За это время я:",
+    en: "During this time I:",
   },
   "developer-desc-fourth": {
-    ru: "На данный момент я уверенно могу создавать сайты, адаптируя их под экраны мобильных устройств и планшеты, используя современные подходы в веб-разработке.",
-    en: "At the moment, I can confidently create websites, adapting them to the screens of mobile devices and tablets, using modern approaches in web development.",
+    ru: "Сегодня я уверенно создаю современные сайты и продолжаю расширять свои навыки в веб-разработке.",
+    en: "Today, I confidently create modern websites and continue to expand my web development skills.",
   },
   "developer-desc-sixth": {
     ru: "Если Вам нужен сайт, нажмите на кнопку ниже для связи со мной.",
     en: "If you need a website, click on the button below to contact me.",
+  },
+
+  "modal-list-developer-study-first-item": {
+    ru: "Cверстал и адаптировал сайты под разные устройства",
+    en: "Layout and adaptation of websites for different devices",
+  },
+  "modal-list-developer-study-second-item": {
+    ru: "Освоил современные инструменты фронтенд-разработки",
+    en: "Mastered modern front-end development tools",
+  },
+  "modal-list-developer-study-third-item": {
+    ru: "Применял новые подходы на практике, пополняя портфолио реальными проектами",
+    en: "I applied new approaches in practice, expanding my portfolio with real projects",
   },
   "education-title": {
     ru: "Образование",
