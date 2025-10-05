@@ -310,28 +310,28 @@ const langs = {
     en: "Copyrighter",
   },
   "copywriter-desc": {
-    ru: "Работая копирайтером, я выполнял следующие задачи:",
-    en: "Working as a copywriter, I performed the following tasks:",
+    ru: "Во время работы на бирже занимался созданием контента и взаимодействием с клиентами. Основные задачи:",
+    en: "While working at the exchange, I was involved in content creation and client interaction. Main responsibilities:",
   },
   "copywriter-first-item": {
-    ru: "Написание текстов на заказ, на тему новых информационных технологий",
+    ru: "Написание текстов на темы, связанные с информационными технологиями",
     en: "Writing custom texts on the topic of new information technologies",
   },
   "copywriter-second-item": {
-    ru: "Проверка текста на уникальность",
-    en: "Checking the text for uniqueness",
+    ru: "Проверка материалов на уникальность и грамотность",
+    en: "Checking materials for uniqueness and literacy",
   },
   "copywriter-third-item": {
-    ru: "Поиск источников информации",
-    en: "Search for information sources",
+    ru: "Анализ и поиск достоверных источников информации",
+    en: "Analysis and search for reliable sources of information",
   },
   "copywriter-fourth-item": {
-    ru: "Создание структуры текста, опираясь на другие источники",
-    en: "Creating a text structure based on other sources",
+    ru: "Формирование структуры статей на основе нескольких источников",
+    en: "Forming the structure of articles based on several sources",
   },
   "copywriter-fifth-item": {
-    ru: "Поиск клиентов для продажи текстов",
-    en: "Search for customers to sell texts",
+    ru: "Самостоятельный поиск заказчиков и продажа готовых текстов",
+    en: "Independent search for clients and sale of finished texts",
   },
   "copywriter-six-item": {
     ru: "Ссылка на отзывы",
