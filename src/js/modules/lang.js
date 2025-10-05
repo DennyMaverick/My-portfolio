@@ -310,28 +310,28 @@ const langs = {
     en: "Copyrighter",
   },
   "copywriter-desc": {
-    ru: "Во время работы на бирже занимался созданием контента и взаимодействием с клиентами. Основные задачи:",
-    en: "While working at the exchange, I was involved in content creation and client interaction. Main responsibilities:",
+    ru: "Опыт, сформировавший аналитическое мышление и системный подход к работе с информацией. Основные задачи:",
+    en: "Experience that has shaped analytical thinking and a systematic approach to working with information. Key tasks:",
   },
   "copywriter-first-item": {
-    ru: "Написание текстов на темы, связанные с информационными технологиями",
-    en: "Writing custom texts on the topic of new information technologies",
+    ru: "Создание текстов на темы IT и технологий с упором на точность и структуру",
+    en: "Writing texts on IT and technology topics with an emphasis on accuracy and structure",
   },
   "copywriter-second-item": {
-    ru: "Проверка материалов на уникальность и грамотность",
-    en: "Checking materials for uniqueness and literacy",
+    ru: "Исследование и проверка достоверных источников данных",
+    en: "Research and verification of reliable data sources",
   },
   "copywriter-third-item": {
-    ru: "Анализ и поиск достоверных источников информации",
-    en: "Analysis and search for reliable sources of information",
+    ru: "Проектирование логики и структуры материалов по аналогии с технической документацией",
+    en: "Design of logic and structure of materials by analogy with technical documentation",
   },
   "copywriter-fourth-item": {
-    ru: "Формирование структуры статей на основе нескольких источников",
-    en: "Forming the structure of articles based on several sources",
+    ru: "Контроль качества и уникальности контента",
+    en: "Content quality and uniqueness control",
   },
   "copywriter-fifth-item": {
-    ru: "Самостоятельный поиск заказчиков и продажа готовых текстов",
-    en: "Independent search for clients and sale of finished texts",
+    ru: "Самостоятельная организация задач и взаимодействие с клиентами",
+    en: "Independent task management and interaction with clients",
   },
   "copywriter-six-item": {
     ru: "Ссылка на отзывы",
