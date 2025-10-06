@@ -270,36 +270,36 @@ const langs = {
     en: "Menager",
   },
   "menager-desc-first": {
-    ru: "Работая менеджером по продажам, я имел следующие задачи и обязанности:",
-    en: "When I had been working as a menager I had next tasks and responsibilities:",
+    ru: "Во время работы я приобрёл ценный опыт взаимодействия с людьми и решения нестандартных задач. Мои основные обязанности включали:",
+    en: "During my work, I gained valuable experience interacting with people and solving non-standard problems. My main responsibilities included:",
   },
   "menager-first-item": {
-    ru: "Выстраиваиние отношений с клиентами",
-    en: "Building relationships with clients",
+    ru: "Консультирование клиентов и подбор оптимальных решений под их потребности",
+    en: "Consulting clients and selecting optimal solutions for their needs",
   },
   "menager-second-item": {
-    ru: "Продажа смартфонов, компьютерной техники и допонительных продуктов",
-    en: "Sale of smartphones, computer equipment and additional products",
+    ru: "Продажу смартфонов, техники и сопутствующих услуг",
+    en: "Sales of smartphones, equipment and related services",
   },
   "menager-third-item": {
-    ru: "Работа с кассой",
-    en: "Working with the cash register",
+    ru: "Работа с кассой и оформление финансовых продуктов (кредитные карты, рассрочки)",
+    en: "Working with the cash register and processing financial products (credit cards, installment plans)",
   },
   "menager-fourth-item": {
-    ru: "Оформление финансовых продуктов: кредитные карты, рассрочки",
-    en: "Registration of financial products: credit cards, installments",
+    ru: "Подключение новых абонентов к операторам связи (МТС, Теле2, Мегафон, Билайн, Yota)",
+    en: "Connecting new subscribers to telecom operators (MTS, Tele2, Megafon, Beeline, Yota)",
   },
   "menager-fifth-item": {
-    ru: "Подключение новых абонентов к операторам связи: МТС, Теле2, Мегафон, Билайн, Йота",
-    en: "Connecting new subscribers to telecom operators: MTS, Tele2, Megafon, Beeline, Yota",
-  },
-  "menager-sixth-item": {
-    ru: "Подготовка денежных средств к инкассации",
-    en: "Preparation of funds for collection",
+    ru: "Ведение отчётности и подготовку средств к инкассации",
+    en: "Maintaining records and preparing funds for collection",
   },
   "menager-desc-second": {
-    ru: "Работая в сфере продаж я развил навык коммуникабельности.",
-    en: "Working in sales, I have developed communication skills.",
+    ru: "Ключевые навыки:",
+    en: "Key skills:",
+  },
+  "menager-desc-third": {
+    ru: "Коммуникабельность, умение работать с клиентами и понимать их потребности, внимательность к деталям, ответственность и способность быстро обучаться новым процессам — качества, которые я сейчас применяю в IT-сфере.",
+    en: "Communication skills, the ability to work with clients and understand their needs, attention to detail, responsibility, and the ability to quickly learn new processes are qualities that I now apply in the IT field.",
   },
   "stock-market": {
     ru: "Биржа копирайтинга ETXT",
