@@ -447,12 +447,8 @@ const langs = {
     en: "Russian Technological University in Information Technology, Northern (Arctic) Federal University (NArFU)",
   },
   "student-desc-first": {
-    ru: "Университет дал мне понять, что успех прямо пропорционален усилиям. Разработка web-сайтов в будущем на момент обучения в университете не была еще моей целью, однако я делал попытки изучения веб-технологий.",
-    en: "The university has made it clear to me that success depend only on your efforts. The development of web-sites in the future was not my goal at the time of studying at the university, however, I made attempts to study web-technologies.",
-  },
-  "student-desc-second": {
-    ru: "К концу обучения я совместно с наставником, моим преподавателем, создал web-приложение, позволяющее делать расчеты в системах массового обслуживания.",
-    en: "By the end of my studies, I, together with my mentor, my teacher, created a web application that allows you to make calculations in queuing systems.",
+    ru: "Во время учебы я получил прочную базу в математике и информатике, развил аналитическое мышление и навыки решения сложных задач. Уже тогда я начал проявлять интерес к веб-технологиям и экспериментировать с ними, что стало первым шагом к будущей карьере Frontend-разработчика.",
+    en: "During my studies, I gained a solid foundation in mathematics and computer science, developed my analytical thinking and skills for solving complex problems. Even then, I began to develop an interest in web technologies and experiment with them, which became the first step toward a future career as a Frontend Developer.",
   },
   "skills-title": {
     ru: "Навыки",
@@ -1116,6 +1112,22 @@ const langs = {
   "langswitcher-app-sixth-item": {
     ru: "Масштабируемость – подходит как для небольших лендингов, так и для страниц с большим количеством элементов",
     en: "Scalability – suitable for both small landing pages and pages with a large number of elements",
+  },
+  "student-first-item": {
+    ru: "Освоил фундаментальные знания в математике и информатике, развив аналитическое мышление и умение решать комплексные задачи",
+    en: "Mastered fundamental knowledge in mathematics and computer science, developing analytical thinking and the ability to solve complex problems",
+  },
+  "student-second-item": {
+    ru: "Параллельно начал изучать веб-технологии: HTML, CSS, базовый JavaScript, что стало первым шагом к будущей карьере web-разработчика",
+    en: "At the same time, I began studying web technologies: HTML, CSS, basic JavaScript, which became the first step towards a future career as a web developer",
+  },
+  "student-third-item": {
+    ru: "Разработал вместе с наставником web-приложение для расчетов в системах массового обслуживания, применив теоретические знания на практике и освоив навыки работы с данными и интерфейсами",
+    en: "Together with a mentor, I developed a web application for calculations in mass service systems, applying theoretical knowledge in practice and mastering the skills of working with data and interfaces",
+  },
+  "student-fourth-item": {
+    ru: "Полученный опыт показал важность упорства и практических экспериментов в обучении — навыки, которые активно применяю в текущих проектах портфолио",
+    en: "The experience has shown the importance of persistence and hands-on experimentation in learning—skills I actively apply in my current portfolio projects",
   },
 }
 
