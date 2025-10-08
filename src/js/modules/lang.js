@@ -982,32 +982,36 @@ const langs = {
     en: "My hobbies",
   },
   "tutor-title": {
-    ru: "Репетиторство по английскому языку",
-    en: "English tutoring",
+    ru: "Репетитор английского языка",
+    en: "English tutor",
   },
   "tutor-position": {
     ru: "Репетитор",
     en: "Tutor",
   },
   "tutor-desc-one": {
-    ru: "Во время учебы в университете я занимался репетиторством среди учащихся 2 - 7 классов.",
-    en: "While studying at the university, I tutored students in grades 2 to 7.",
+    ru: "Во время обучения в университете я занимался частным преподаванием английского языка для школьников 2–7 классов.",
+    en: "While studying at university, I taught English privately to students in grades 2–7.",
   },
   "tutor-desc-two": {
-    ru: "Работая репетитором, я имел следующие задачи:",
-    en: "Working as a tutor, I had the following tasks:",
+    ru: "Основные задачи:",
+    en: "Main tasks:",
   },
   "tutor-first-item": {
-    ru: "Помощь в учебном процессе",
-    en: "Help in the educational process",
+    ru: "Объяснение учебного материала в доступной форме",
+    en: "Explaining the educational material in an accessible form",
   },
   "tutor-second-item": {
-    ru: "Прорешивание домашнего задания",
-    en: "Solving homework",
+    ru: "Помощь в выполнении домашних заданий",
+    en: "Help with homework",
   },
   "tutor-third-item": {
-    ru: "Помощь в ведении тетради для закрепления материала",
-    en: "Help in maintaining a notebook to consolidate the material",
+    ru: "Разработка дополнительных упражнений для закрепления знаний",
+    en: "Developing additional exercises to consolidate knowledge",
+  },
+  "tutor-fourth-item": {
+    ru: "Поддержка интереса к изучению языка и повышение успеваемости",
+    en: "Maintaining interest in language learning and improving academic performance",
   },
   "poker-subtitle": {
     ru: "Онлайн-покер",
