@@ -1017,9 +1017,9 @@ const langs = {
     ru: "Онлайн-покер",
     en: "Online-poker",
   },
-  "poker-title": {
-    ru: "Игрок в покер",
-    en: "Poker player",
+  "poker-desc": {
+    ru: "В свободное время развиваю аналитические способности и стратегическое мышление через онлайн-покер. Этот опыт помогает сохранять концентрацию и принимать обоснованные решения — качества, важные в веб-разработке.",
+    en: "In my free time, I develop my analytical skills and strategic thinking through online poker. This experience helps me maintain focus and make informed decisions—qualities essential in web development.",
   },
   "converter-app-title": {
     ru: "Разработка приложения «Конвертер валют»",
