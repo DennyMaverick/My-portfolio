@@ -946,16 +946,16 @@ const langs = {
     en: "I am a Frontend developer who prioritizes results and quality. I create web applications and websites that combine modern design, user convenience, and technical reliability. Over the past few years, I have gained experience in developing landing pages and feel confident in my professional skills in this area. I work with up-to-date tools and technologies, continuously improve my expertise, and strive to bring value to projects through effective digital solutions.",
   },
   "hobbie-title-vk-group": {
-    ru: "Ведение мотивационного сообщества вконтакте &#171;Ключ к мечте&#187;",
-    en: "Maintaining a motivational community on VKontakte &#171;The Key to a Dream&#187;",
+    ru: "Блогер, автор сообщества «Ключ к мечте» (VK)",
+    en: "Blogger, author of the community «Key to the Dream» (VK)",
   },
   "vk-blogger-title": {
     ru: "Блогер",
     en: "Blogger",
   },
   "hobbie-description-vk-group": {
-    ru: "Я являюсь автором сообщества &#171;Ключ к мечте&#187;. Публикую мотивационные посты. Это моё хобби.",
-    en: "I am the author of the &#171;Key to the Dream&#187; community. I publish motivational posts. This is my hobby.",
+    ru: "Веду мотивационное сообщество, где делюсь мыслями о вдохновении, целях и вере в себя. Проект вырос из личного желания поддерживать людей, помогать им не терять надежду и двигаться вперёд.",
+    en: "I run a motivational community where I share thoughts on inspiration, goals, and self-belief. The project grew out of a personal desire to support people, help them maintain hope, and move forward.",
   },
   "link-to-the-community": {
     ru: "Ссылка на сообщество",
