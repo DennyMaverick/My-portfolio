@@ -403,40 +403,40 @@ const langs = {
     en: "Education",
   },
   "pupil-title": {
-    ru: "Ученик",
-    en: "Pupil",
-  },
-  "school-title": {
     ru: "Средняя Киземская Школа, Россия",
     en: "Secondary Kizema's School, Russia",
   },
+  "school-title": {
+    ru: "Ученик",
+    en: "Pupil",
+  },
   "school-desc-first": {
-    ru: "За время обучения в школе я приобрел следующие навыки:",
-    en: "During my time at school, I acquired the following skills:",
+    ru: "За годы обучения сформировал навыки, которые стали основой моей работы в IT:",
+    en: "Over the years of study, I developed skills that became the foundation of my work in IT:",
   },
   "school-desc-second": {
-    ru: "Чтобы создавать сайты, нужна концентрация внимания на деталях, усидчивость. Школа и университет помогли эти навыки приобрести.",
-    en: "To create websites, you need to focus on details and perseverance. School and university helped to acquire these skills.",
+    ru: "Эти качества помогают мне создавать аккуратные, продуманные и устойчивые веб-решения.",
+    en: "These qualities help me create neat, thoughtful, and sustainable web solutions.",
   },
   "school-first-item": {
-    ru: "Повышение концентрации и усидчивость",
-    en: "Increased concentration and perseverance",
+    ru: "Концентрация и внимание к деталям",
+    en: "Concentration and attention to detail",
   },
   "school-second-item": {
-    ru: "Умение красиво излагать свои мысли",
-    en: "The ability to express your thoughts beautifully",
+    ru: "Умение ясно излагать мысли",
+    en: "Ability to express thoughts clearly",
   },
   "school-third-item": {
-    ru: "Умение принимать поражения",
-    en: "The ability to accept defeat",
+    ru: "Навык публичных выступлений",
+    en: "Public speaking skills",
   },
   "school-fourth-item": {
-    ru: "Умение выступать перед публикой",
-    en: "The ability to perform in front of an audience",
+    ru: "Готовность учиться на ошибках",
+    en: "Willingness to learn from mistakes",
   },
   "school-fifth-item": {
-    ru: "Умение управлять своим временем",
-    en: "The ability to manage your time",
+    ru: "Самоорганизация и управление временем",
+    en: "Self-organization and time management",
   },
   "student-title": {
     ru: "Студент",
