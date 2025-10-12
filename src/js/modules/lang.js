@@ -382,8 +382,8 @@ const langs = {
     en: "Today, I confidently create modern websites and continue to expand my web development skills.",
   },
   "developer-desc-sixth": {
-    ru: "Если Вам нужен сайт, нажмите на кнопку ниже для связи со мной.",
-    en: "If you need a website, click on the button below to contact me.",
+    ru: "Если вы хотите обсудить создание сайта или сотрудничество — буду рад связи.",
+    en: "If you would like to discuss website creation or collaboration, I would be happy to contact you.",
   },
 
   "modal-list-developer-study-first-item": {
@@ -970,8 +970,8 @@ const langs = {
     en: "Poet",
   },
   "hobbie-description-verse": {
-    ru: "Пишу стихи, являюсь автором цикла стихотворений &#171;Из сна восставши&#187;.",
-    en: "I write poetry, I am the author of the cycle of poems &#171;Rising from Sleep&#187;.",
+    ru: "Создаю оригинальные поэтические тексты, отражающие внутренние переживания, философию жизни и красоту момента.",
+    en: "I create original poetic texts that reflect inner experiences, philosophy of life, and the beauty of the moment.",
   },
   "link-to-the-verse": {
     ru: "Ссылка на стихотворения",
