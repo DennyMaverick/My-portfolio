@@ -508,8 +508,8 @@ const langs = {
     en: "Website Creation Workshop",
   },
   "sertificate-first-desc": {
-    ru: "Практикум по созданию сайтов от Анны Блок помог лучше разобраться в основах верстки.",
-    en: "A week-long workshop on website creation from Anna Blok helped to better understand the basics of layout.",
+    ru: "Практикум от Анны Блок помог мне лучше разобраться в основах HTML и CSS, научил структурировать код и делать аккуратную, понятную вёрстку.",
+    en: "Anna Blok's workshop helped me better understand the basics of HTML and CSS, taught me how to structure code, and create neat, understandable layouts.",
   },
   "sertificate-second-title": {
     ru: "Основы HTML / CSS - верстка сайтов с нуля",
