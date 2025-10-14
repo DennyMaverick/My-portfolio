@@ -520,8 +520,8 @@ const langs = {
     en: "After completing this course, I learned about new approaches in web development, as well as the basics of HTML and CSS.",
   },
   "sertificate-js-desc": {
-    ru: "Пройдя данный курс я узнал основы Javascript и jQuery.",
-    en: "After completing this course, I learned the basics of Javascript and jQuery.",
+    ru: "Курс помог глубже разобраться в основах JavaScript и jQuery — понять принципы работы скриптов, динамического обновления контента и взаимодействия с элементами страницы. Теперь могу создавать более живые и интерактивные веб-страницы.",
+    en: "The course helped me gain a deeper understanding of the fundamentals of JavaScript and jQuery, including understanding how scripts work, dynamic content updates, and interactions with page elements. Now I can create more vibrant and interactive web pages.",
   },
   "my-accomplishment-title": {
     ru: "Мои достижения",
