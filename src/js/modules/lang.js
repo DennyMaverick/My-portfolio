@@ -516,8 +516,8 @@ const langs = {
     en: "HTML/CSS basics - website layout from scratch",
   },
   "sertificate-second-desc": {
-    ru: "После прохождения данного курса я узнал о новых подходах в web-разработке, а также разобрался в основах HTML и CSS.",
-    en: "After completing this course, I learned about new approaches in web development, as well as the basics of HTML and CSS.",
+    ru: "Курс помог освоить основы HTML и CSS, а также понять современные подходы к веб-разработке и созданию адаптивных макетов.",
+    en: "The course helped me master the basics of HTML and CSS, as well as understand modern approaches to web development and creating responsive layouts.",
   },
   "sertificate-js-desc": {
     ru: "Курс помог глубже разобраться в основах JavaScript и jQuery — понять принципы работы скриптов, динамического обновления контента и взаимодействия с элементами страницы. Теперь могу создавать более живые и интерактивные веб-страницы.",
