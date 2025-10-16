@@ -568,8 +568,8 @@ const langs = {
     en: "The skill of blind typing on the keyboard",
   },
   "blind-typing-desc": {
-    ru: "Данный навык помогает существенно быстрее делать сайты. Я обучился ему приблизительно за 2 месяца регулярной работы на онлайн-тренажере. Скорость печатания ~ 160 символов в минуту в двух раскладках: английской и русской.",
-    en: "This skill helps to make websites much faster. I learned it in about 2 months of regular work on the online simulator. The printing speed is ~ 160 characters per minute in two layouts: English and Russian.",
+    ru: "За два месяца регулярных тренировок на онлайн-тренажёрах я освоил слепую печать. Скорость — около 160 символов в минуту в русской и английской раскладках. Этот навык помогает быстрее и эффективнее работать над сайтами и проектами.",
+    en: "After two months of regular training on online simulators, I mastered touch typing. My speed is about 160 characters per minute in both Russian and English layouts. This skill helps me work on websites and projects faster and more efficiently.",
   },
   "write-resume": {
     ru: "Написать мне",
