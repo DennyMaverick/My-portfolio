@@ -560,8 +560,8 @@ const langs = {
     en: "Keeping a diary",
   },
   "diary-desc": {
-    ru: "В октябре 2021 года я прошел один интенсив, благодаря которому стал вести ежедневник.",
-    en: "In October 2021, I took one intensive course, thanks to which I began to keep a diary.",
+    ru: "С октября 2021 года регулярно веду ежедневник — привычка, которая помогает мне планировать день, анализировать результаты и двигаться к целям осознанно.",
+    en: "Since October 2021, I've been keeping a diary regularly — a habit that helps me plan my day, analyze my results, and move toward my goals consciously.",
   },
   "blind-typing-title": {
     ru: "Навык слепой печати на клавиатуре",
