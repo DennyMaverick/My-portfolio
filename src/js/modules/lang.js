@@ -1133,6 +1133,14 @@ const langs = {
     ru: "Полученный опыт показал важность упорства и практических экспериментов в обучении — навыки, которые активно применяю в текущих проектах портфолио",
     en: "The experience has shown the importance of persistence and hands-on experimentation in learning—skills I actively apply in my current portfolio projects",
   },
+  "graduation-from-university-desc": {
+    ru: "Учёба в университете помогла мне укрепить логическое мышление и любовь к технологиям. Диплом защитил на «отлично».",
+    en: "Studying at university helped me strengthen my logical thinking and love of technology. I defended my thesis with honors.",
+  },
+  "graduation-from-school-desc": {
+    ru: "Закончил школу на «хорошо» и «отлично», сделав первые шаги к будущей профессии.",
+    en: "I graduated from school with good and excellent grades, taking the first steps towards my future profession.",
+  },
 }
 
 const titles = {
