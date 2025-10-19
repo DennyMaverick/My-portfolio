@@ -2144,7 +2144,7 @@
 }
 
 .timeline__image--dark {
-  background: url("../../img/preload/dark-theme-loader.gif") center no-repeat;
+  background: url("../img/preload/dark-theme-loader.gif") center no-repeat;
 }
 
 .timeline__img {
