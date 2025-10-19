@@ -2161,7 +2161,38 @@
 }
 
 .timeline__photo {
+  overflow: hidden;
+  -webkit-transition: -webkit-box-shadow 0.4s ease, -webkit-transform 0.3s ease;
+  transition: -webkit-box-shadow 0.4s ease, -webkit-transform 0.3s ease;
+  -o-transition: box-shadow 0.4s ease, transform 0.3s ease;
+  transition: box-shadow 0.4s ease, transform 0.3s ease;
+  transition: box-shadow 0.4s ease, transform 0.3s ease, -webkit-box-shadow 0.4s ease, -webkit-transform 0.3s ease;
   margin-bottom: 30px;
+  border-radius: 20px 20px 20px 20px;
+  -webkit-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  transform: scale(1.03);
+}
+
+.timeline__photo--dark:hover {
+  -webkit-box-shadow: 0 0 25px 5px rgba(255, 165, 0, 0.8), 0 0 45px 10px rgba(255, 100, 0, 0.5);
+  box-shadow: 0 0 25px 5px rgba(255, 165, 0, 0.8), 0 0 45px 10px rgba(255, 100, 0, 0.5);
+}
+
+.timeline__photo--light:hover {
+  -webkit-box-shadow: 0 0 25px 8px rgba(70, 130, 180, 0.8), 0 0 50px 15px rgba(70, 130, 180, 0.5);
+  box-shadow: 0 0 25px 8px rgba(70, 130, 180, 0.8), 0 0 50px 15px rgba(70, 130, 180, 0.5);
+}
+
+.timeline__photo:hover img {
+  -webkit-transition: -webkit-transform 0.4s ease-in;
+  transition: -webkit-transform 0.4s ease-in;
+  -o-transition: transform 0.4s ease-in;
+  transition: transform 0.4s ease-in;
+  transition: transform 0.4s ease-in, -webkit-transform 0.4s ease-in;
+  -webkit-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  transform: rotate(5deg);
 }
 
 .timeline__link {
