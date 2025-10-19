@@ -554,6 +554,12 @@ const themes = {
       dark: "tech-box__text-description--dark",
     },
   },
+  ".timeline__photo": {
+    theme: {
+      light: "timeline__photo--light",
+      dark: "timeline__photo--dark",
+    },
+  },
 }
 
 function themeSwitch(theme) {

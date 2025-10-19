@@ -1,6 +1,6 @@
-@use '../_config/variables';
-@use '../_mixins/media';
-@use '../_mixins/font-face';
+@use "../_config/variables";
+@use "../_mixins/media";
+@use "../_mixins/font-face";
 
 .timeline {
   display: flex;
@@ -41,37 +41,37 @@
   &__col {
     width: 50%;
     .social {
-    &--github {
-      &-light {
-        fill: variables.$black;
+      &--github {
+        &-light {
+          fill: variables.$black;
+        }
+      }
+      &--github {
+        &-dark {
+          fill: variables.$white;
+        }
+      }
+      &--telegram {
+        &-light {
+          fill: variables.$black;
+        }
+      }
+      &--telegram {
+        &-dark {
+          fill: variables.$white;
+        }
+      }
+      &--vk {
+        &-light {
+          fill: variables.$black;
+        }
+      }
+      &--vk {
+        &-dark {
+          fill: variables.$white;
+        }
       }
     }
-    &--github {
-      &-dark {
-        fill: variables.$white;
-      }
-    }
-    &--telegram {
-      &-light {
-        fill: variables.$black;
-      }
-    }
-    &--telegram {
-      &-dark {
-        fill: variables.$white;
-      }
-    }
-    &--vk {
-      &-light {
-        fill: variables.$black;
-      }
-    }
-    &--vk {
-      &-dark {
-        fill: variables.$white;
-      }
-    }
-  }
     &--left {
       text-align: right;
       padding-right: 48px;
@@ -217,7 +217,7 @@
       background: url("../img/preload/white-theme-loader.gif") center no-repeat;
     }
     &--dark {
-      background: url('../../img/preload/dark-theme-loader.gif') center no-repeat;
+      background: url("../../img/preload/dark-theme-loader.gif") center no-repeat;
     }
   }
   &__img {
@@ -230,8 +230,23 @@
     font-weight: 700;
   }
   &__photo {
+    overflow: hidden;
+    transition: box-shadow 0.4s ease, transform 0.3s ease;
     margin-bottom: 30px;
+    border-radius: 20px 20px 20px 20px;
+    transform: scale(1.03);
+    &--dark:hover {
+      box-shadow: 0 0 25px 5px rgba(255, 165, 0, 0.8), 0 0 45px 10px rgba(255, 100, 0, 0.5);
+    }
+    &--light:hover {
+      box-shadow: 0 0 25px 8px rgba(70, 130, 180, 0.8), 0 0 50px 15px rgba(70, 130, 180, 0.5);
+    }
+    &:hover img {
+      transition: transform 0.4s ease-in;
+      transform: rotate(5deg);
+    }
   }
+
   &__link {
     text-decoration: underline;
 
