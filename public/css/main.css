@@ -1091,7 +1091,7 @@
 }
 
 .work__box-img--dark {
-  background: url("../../img/preload/dark-theme-loader.gif") no-repeat center;
+  background: url("../img/preload/dark-theme-loader.gif") no-repeat center;
 }
 
 .work__box-img:hover {
