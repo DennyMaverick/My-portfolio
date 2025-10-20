@@ -638,28 +638,20 @@ const langs = {
     en: "Time for work: ~ 1 h",
   },
   "archee-desc-one": {
-    ru: "Проект был создан в рамках марафона по верстке от CodeQuest. Марафон длился 5 недель.",
-    en: "The project was created as part of the CodeQuest layout marathon. The marathon lasted 5 weeks.",
+    ru: "<b>Archee</b> — учебный проект, созданный в рамках 5-недельного марафона по вёрстке от CodeQuest. Главная цель участия — практика и отработка современных подходов в web-разработке, а также развитие навыков работы с <b>Gulp</b>, <b>SCSS</b> и методологией <b>БЭМ (BEM-naming)</b>.",
+    en: "Archee is an educational project created as part of a 5-week web coding marathon from CodeQuest. The main goal of participation is to practice and refine modern web development approaches, as well as develop skills in Gulp, SCSS, and the BEM naming methodology.",
   },
   "archee-desc-two": {
-    ru: "Целью марафона была практика, использование новых подходов в web-разработке, а также улучшить навыки в gulp, scss и методологии BEM-naming.",
-    en: "The goal of the marathon was to practice, use new approaches in web development, as well as improve skills in gulp, scss and BEM-naming methodology.",
+    ru: "Во время марафона проходили онлайн-встречи, где участники вместе с наставником разбирали блоки кода, обсуждали решения и вносили улучшения. После каждого этапа в проект добавлялись правки, позволяющие сделать вёрстку чище и удобнее для дальнейшей поддержки. Так я получил ценный практический опыт и лучше освоил современные инструменты, применяемые при создании адаптивных сайтов.",
+    en: "During the marathon, online meetings were held, where participants, together with a mentor, analyzed code blocks, discussed solutions and made improvements. After each stage, edits were added to the project to make the layout cleaner and more convenient for further support. This gave me valuable practical experience and a better understanding of modern tools used to create responsive websites.",
   },
   "archee-desc-three": {
-    ru: "На марафоне проводились онлайн-встречи, где мы обсуждали блоки кода, что нужно было сверстать. К следующей живой трансляции наставник объяснял непонятные моменты, после этого вносились некоторые правки в проект, чтобы его улучшить, сохраняя при этом свои варианты наработок.",
-    en: "Online meetings were held at the marathon, where we discussed the blocks of code that needed to be made up. By the next live broadcast, the mentor explained incomprehensible moments, after that some edits were made to the project in order to improve it, while maintaining their own versions of developments.",
+    ru: "В проекте реализован компонентный подход — SCSS-код разбит на отдельные файлы-блоки, что упрощает навигацию, модификацию и поддержку. Также применяются миксины, которые помогают писать код короче и эффективнее.",
+    en: "The project implements a component approach — the SCSS code is divided into separate block files, which simplifies navigation, modification and support. Mixins are also used to help you write shorter and more efficient code.",
   },
   "archee-desc-four": {
-    ru: "Таким образом марафон был успешно пройден, где я получил новый опыт работы, используя современные подходы при разработке сайтов.",
-    en: "Thus, the marathon was successfully completed, where I gained new work experience using modern approaches in website development.",
-  },
-  "archee-desc-five": {
-    ru: "В проекте используется компонентный подход: scss разбит на отдельные блоки, что позволяет лучше ориентироваться в коде, модифицировать его и поддерживать в дальнейшем.",
-    en: "The project uses a component approach: scss is divided into separate blocks, which allows you to better navigate the code, modify it and maintain it in the future.",
-  },
-  "archee-desc-six": {
-    ru: "Для удобства используются миксины в scss. Это отдельные мини-функции, позволяющие сокращать код и работать быстрее.",
-    en: "Mixins in scss are used for convenience. These are separate mini-functions that allow you to shorten the code and work faster.",
+    ru: "Дополнительно в проекте реализованы переключение языков интерфейса (RU / EN) и смена темы оформления (светлая / тёмная). Эти функции были добавлены для улучшения пользовательского опыта и демонстрации навыков работы с JavaScript при управлении состоянием интерфейса.",
+    en: "Additionally, the project implements switching interface languages (RU / EN) and changing the theme (light / dark). These features were added to enhance the user experience and demonstrate JavaScript skills in managing interface state.",
   },
   "archee-time": {
     ru: "Время на работу ~ 50 ч",
@@ -1354,8 +1346,8 @@ const repeatElems = {
     en: "Connecting a popup window to display a video using the FancyBox jQuery library",
   },
   "adaptive-tool": {
-    ru: "Адаптирование сайта под смартфоны, планшеты и ноутбуки",
-    en: "Adapting the site to all device screens",
+    ru: "Адаптивная вёрстка под смартфоны, планшеты и ноутбуки",
+    en: "Adaptive layout for smartphones, tablets, and laptops",
   },
   "desktop-first-method": {
     ru: "При адаптировании сайта под другие устройства использовался метод Desktop First (сначала был сделан сайт под ПК, а затем под планшеты и мобильные устройства)",
