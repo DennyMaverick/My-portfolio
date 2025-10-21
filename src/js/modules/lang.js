@@ -672,24 +672,24 @@ const langs = {
     en: "Personal site:",
   },
   "web-templates-common-desc": {
-    ru: "Данный проект является сайтом - портфолио, которое содержит мои pet - проекты. Что такое pet-проекты? Это сайты или веб-приложения, которые были разработаны в учебных целях для закрепления материала по веб-разработке.",
-    en: "This project is the portfolio-site that consists of my pet-projects. What is the pet-projects? These are the web-sites or web-applications that was developed as the learn projects for improve knowlange in web-developing.",
+    ru: "Этот проект — мой личный сайт-портфолио, где собраны все мои pet-проекты. Pet-проекты — это учебные сайты и веб-приложения, которые я создаю, чтобы прокачивать навыки веб-разработки и экспериментировать с идеями.",
+    en: "This project is my personal portfolio website, where all my pet projects are collected. Pet projects are educational websites and web applications that I create to hone my web development skills and experiment with new ideas.",
   },
   "web-templates-desc-two": {
-    ru: "Функция переключения темы (две цветовых схемы: светлая и темная)",
-    en: "Theme switching function(two color schemes: light and dark)",
+    ru: "Переключение темы (светлая и тёмная)",
+    en: "Switching themes (light and dark)",
   },
   "web-templates-desc-three": {
     ru: "Плавная смена цвета при переключении слайдов в проекте Theme's Switcher",
     en: "Smooth color change when switching slides in a project Theme's Switcher",
   },
   "web-templates-desc-four": {
-    ru: "Добавлена функция переключения языков (более подробно о том как это было реализовано можно посмотреть перейдя по",
-    en: "It was added the function to switch the language (more detailed information can be finded by clicking to",
+    ru: "Переключение языков (подробнее о реализации — по",
+    en: "Language switching (more details on the implementation can be found at",
   },
   "web-templates-link": {
-    ru: "ссылке",
-    en: "the link",
+    ru: "ссылке)",
+    en: "the link)",
   },
   "web-templates-desc-five": {
     ru: "Дизайн карточек проектов был самостоятельно реализован в программе Photoshop",
@@ -1210,8 +1210,8 @@ const repeatElems = {
     en: "Telegram",
   },
   "next-functional": {
-    ru: "При работе над проектом был реализован следующий функционал:",
-    en: "During the work on the project, the following functionality was implemented:",
+    ru: "<b>Что реализовано:</b>",
+    en: "<b>What has been implemented:</b>",
   },
   "client-title-learn-project": {
     ru: "Учебный проект:",
@@ -1222,8 +1222,8 @@ const repeatElems = {
     en: "Pet - project:",
   },
   "technologies-desc": {
-    ru: "Работая над данным проектом, были использованы следующие инструменты, технологии:",
-    en: "Working on this project, the following tools, technologies were used:",
+    ru: "<b>Использованные технологии:</b>",
+    en: "<b>Technologies used:</b>",
   },
   "client-WebCademy": {
     ru: "Web-школа WebCademy",
@@ -1346,8 +1346,8 @@ const repeatElems = {
     en: "Connecting a popup window to display a video using the FancyBox jQuery library",
   },
   "adaptive-tool": {
-    ru: "Адаптивная вёрстка под смартфоны, планшеты и ноутбуки",
-    en: "Adaptive layout for smartphones, tablets, and laptops",
+    ru: "Адаптивность: сайт корректно отображается на смартфонах, планшетах и ноутбуках",
+    en: "Responsiveness: the site displays correctly on smartphones, tablets, and laptops",
   },
   "desktop-first-method": {
     ru: "При адаптировании сайта под другие устройства использовался метод Desktop First (сначала был сделан сайт под ПК, а затем под планшеты и мобильные устройства)",
