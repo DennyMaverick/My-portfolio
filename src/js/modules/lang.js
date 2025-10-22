@@ -684,7 +684,7 @@ const langs = {
     en: "Smooth color change when switching slides in a project Theme's Switcher",
   },
   "web-templates-desc-four": {
-    ru: "Переключение языков (подробнее о реализации — по",
+    ru: "Переключение языков (подробнее о реализации — по ",
     en: "Language switching (more details on the implementation can be found at",
   },
   "web-templates-link": {
@@ -716,12 +716,16 @@ const langs = {
   },
 
   "dream-on-wheels-desc-one": {
-    ru: "Проект 'Мечта на колесах' или &#171;Dream On Wheels&#187; был создан в учебных целях, чтобы закрепить навыки работы с gulp и препроцессором LESS.",
-    en: "The 'Dream On Wheels' project was created for educational purposes to reinforce the skills of working with gulp and the LESS preprocessor.",
+    ru: "Проект был создан в учебных целях для закрепления навыков работы с Gulp и препроцессором LESS.",
+    en: "The project was created for educational purposes to reinforce skills in working with Gulp and the LESS preprocessor.",
   },
   "dream-on-wheels-desc-two": {
-    ru: "Проект был сначала создан, используя более упрощенную структуру, работа с препроцессором осуществлялась через стороннюю программу - компилятор WinLess. Далее проект был полностью переделан, используя gulp. Работая над данным проектом, были использованы следующие инструменты, технологии:",
-    en: "The project was first created using a more simplified structure, work with the preprocessor was carried out through a third-party program - the WinLess compiler. Next, the project was completely redone using gulp. Working on this project, the following tools and technologies were used:",
+    ru: "Проект был сначала создан, используя более упрощенную структуру, работа с препроцессором осуществлялась через стороннюю программу - компилятор WinLess. Далее проект был полностью переделан, используя gulp.",
+    en: "The project was first created using a more simplified structure, work with the preprocessor was carried out through a third-party program - the WinLess compiler. Next, the project was completely redone using gulp.",
+  },
+  "dream-on-wheels-desc-three": {
+    ru: "Работа над проектом помогла отточить навыки фронтенд-разработки, автоматизации и оптимизации кода. Результатом стал современный, адаптивный и легкий сайт, отражающий мой стиль и внимание к деталям.",
+    en: "Работа над проектом помогла отточить навыки фронтенд-разработки, автоматизации и оптимизации кода. Результатом стал современный, адаптивный и легкий сайт, отражающий мой стиль и внимание к деталям.",
   },
   "time-dream-on-wheels": {
     ru: "Время на работу ~ 45 ч",
@@ -1358,11 +1362,11 @@ const repeatElems = {
     en: "When the device screen reaches a certain width, the main screen navigation menu is replaced with a burger menu (JavaScript is used for this)",
   },
   "design-improve": {
-    ru: "Дизайн сайта был полностью переделан. После этого сайт стал живым и ярким",
-    en: "The website design has been completely redesigned. After that, the site became alive and bright",
+    ru: "Обновлённый дизайн: сайт стал ярким, динамичным и визуально живым",
+    en: "Updated design: the site has become bright, dynamic and visually vibrant",
   },
   "content-created": {
-    ru: "Весь контент, включая текст для сайта был придуман самостоятельно",
+    ru: "Весь контент (включая тексты) создан самостоятельно",
     en: "All content, including the text for the site, was invented independently",
   },
   "plugins-desc": {
