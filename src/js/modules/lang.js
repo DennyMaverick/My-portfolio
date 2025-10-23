@@ -741,33 +741,33 @@ const langs = {
     ru: "Проекты с элементами интерфейса на javaScript",
     en: "Projects with interface elements in javaScript",
   },
+  "converter-desc": {
+    ru: "Проект разработан в учебных целях для совершенствования навыков работы с JavaScript и элементами интерфейса. Конвертер позволяет получать актуальные курсы валют — доллара, евро и фунта стерлинга — и наглядно отображает их динамику: если курс снижается, значение подсвечивается зелёным цветом, если растёт — красным.",
+    en: "The project was developed for educational purposes to improve skills in working with JavaScript and interface elements. The converter provides up-to-date exchange rates for the dollar, euro, and pound sterling and clearly displays their dynamics: if the rate is declining, the value is highlighted in green; if it is rising, it is highlighted in red.",
+  },
   "converter-desc-one": {
-    ru: "Возможность видеть текущий курс доллара, евро и фунта стерлинга",
-    en: "Ability to see the exchange rate of the dollar, euro and pound sterling",
+    ru: "Отображение текущих курсов валют в реальном времени",
+    en: "Display current exchange rates in real time",
   },
   "converter-desc-two": {
-    ru: "Если после обновления курса валют одна из валют снизилась в цене, курс отображается зеленым, иначе - красным",
-    en: "If, after updating the exchange rate, one of the currencies has decreased in price, the rate is displayed in green, otherwise - in red",
+    ru: "Возможность конвертации рублей в доллары, евро и фунты стерлинга по актуальному курсу",
+    en: "Possibility of converting rubles into dollars, euros and pounds sterling at the current exchange rate",
   },
   "converter-desc-three": {
-    ru: "Возможность узнавать курс рубля в долларах, евро и фунтах стерлинга (достаточно ввести значение рубля в соответствующее текстовое поле и выбрать, в какую валюту нужно конвертировать) относительно текущего курса валют",
-    en: "The ability to find out the ruble exchange rate in dollars, euros and pounds sterling (just enter the ruble value in the corresponding text field and choose which currency to convert into) relative to the current exchange rate",
+    ru: "Переключатель тем с тремя цветовыми схемами: светлой, тёмной и «лунной»",
+    en: "Theme switcher with three color schemes: light, dark, and «moon»",
   },
   "converter-desc-four": {
-    ru: "В проект добавлен переключатель тем используя светлую, темную и лунную цветовые схемы",
-    en: "A theme switcher has been added to the project using light, dark and moon color schemes",
+    ru: "Переключатель языков (русский / английский)",
+    en: "Language switch (Russian/English)",
   },
   "converter-desc-five": {
-    ru: "Добавлен переключатель языков на русский и английский",
-    en: "The language switcher has been added to the project for Russian and English",
+    ru: "Увеличение и уменьшение введённого значения с помощью колеса мыши",
+    en: "Increase and decrease the entered value using the mouse wheel",
   },
   "converter-desc-six": {
-    ru: "Добавлена функция увеличения - уменьшения значений в текстовом поле ввода при прокручивании колесика мыши",
-    en: "Added function to increase - decrease values ​​in the text input field when scrolling the mouse wheel",
-  },
-  "converter-desc-seven": {
-    ru: "Данный проект является pet-проектом, и есть вероятность что сейчас, запустив его, Вы увидите его с уже обновленными функциями, новыми темами или языками",
-    en: "This project is a pet project, and there is a chance that now, launching it, you will see it with already updated functions, new themes or languages",
+    ru: "Проект постоянно развивается — при запуске Вы можете увидеть обновлённые функции, новые темы или языки.",
+    en: "The project is constantly evolving—at launch, you may see updated features, new themes, or languages.",
   },
   "time-converter": {
     ru: "Время на работу ~ 50 ч",
@@ -1214,7 +1214,7 @@ const repeatElems = {
     en: "Telegram",
   },
   "next-functional": {
-    ru: "<b>Что реализовано:</b>",
+    ru: "<b>Функционал проекта:</b>",
     en: "<b>What has been implemented:</b>",
   },
   "client-title-learn-project": {
