@@ -785,44 +785,44 @@ const langs = {
     en: "Time to work ~ 29 h",
   },
   "oxygen-desc-one": {
-    ru: "Работа над проектом имела цель попрактиковаться в методологии BEM-naming. Каркас страницы был создан под руководством наставника. Весь Css и JavaScript был написан мной самостоятельно.",
-    en: "The work on the project was aimed at practicing the BEM-naming methodology. The page skeleton was created under the guidance of a mentor. All Css and JavaScript was written by myself",
+    ru: "Проект был создан в учебных целях для практики методологии БЭМ и углубления навыков работы с CSS и JavaScript. Каркас страницы был подготовлен под руководством наставника, а всё оформление и функционал реализованы мной самостоятельно.",
+    en: "The project was created for educational purposes, to practice the BEM methodology and deepen my CSS and JavaScript skills. The page framework was created under the guidance of a mentor, and all design and functionality were implemented independently.",
   },
   "oxygen-desc-two": {
-    ru: "При наводе на элемент навигации, появляется плавное подчеркивание. Через JavaScript реализовано так, чтобы при наведении на любую из ссылок меню, все подчеркивания убирались, а у нужной это подчеркивание оставалось, а при отводе мыши, подчеркивание оставалось у самой первой ссылки",
-    en: "When hovering over a navigation element, a smooth underline appears. Through JavaScript, it is implemented so that when you hover over any of the menu links, all the underlines are removed, while the necessary one has this underline, and when the mouse is released, the underline remains at the very first link",
+    ru: "При наведении на элементы навигации появляется плавное подчеркивание. Через JavaScript реализовано поведение, при котором активным остается только нужный пункт меню",
+    en: "When hovering over navigation elements, a smooth underline appears. JavaScript is used to ensure that only the desired menu item remains active",
   },
   "oxygen-desc-three": {
-    ru: "При наведении (отведении) мыши на логотип происходит эффект смены цвета у заголовка и подзаголовка главного экрана лэндинга (также происходит при клике на иконку мышки или при клике на сам заголовок)",
-    en: "When you hover (move) the mouse over the logo, the effect of changing the color of the title and subtitle of the landing main screen occurs (also happens when you click on the mouse icon or when you click on the title itself)",
+    ru: "Логотип интерактивен: при наведении или клике меняется цвет заголовков главного экрана",
+    en: "The logo is interactive: when hovered over or clicked, the color of the main screen headings changes",
   },
   "oxygen-desc-four": {
-    ru: "При скролле вниз реализовано через JavaScript, чтобы меню всегда отображалось сверху, добавляя к блоку навигации тень и меняя цвет фона",
-    en: "When scrolling down, to always display the menu on top, adding a shadow to the navigation block and changing the background color",
+    ru: "При прокрутке страницы навигационное меню фиксируется сверху, меняет цвет фона и получает мягкую тень для лучшей читаемости",
+    en: "As you scroll down the page, the navigation menu is fixed at the top, changes background color, and gets a soft shadow for better readability",
   },
   "oxygen-desc-five": {
-    ru: "При наведении на заголовки второго уровня у них появляется плавное подчеркивание. Также реализовано, что если текст будет располагаться в несколько строк, подчеркивание отображалось корректно",
-    en: "When you hover over the headings of the second level, they have a smooth underline. It is also implemented that if the text is located in several lines, the underline was displayed correctly",
+    ru: "Заголовки второго уровня анимированы с плавным подчеркиванием, которое корректно отображается даже при переносах текста",
+    en: "Second-level headings are animated with a smooth underline that displays correctly even when text wraps",
   },
   "oxygen-desc-seven": {
-    ru: "При клике на меню-бургер высвечивается модальное окно с меню на всю область экрана (кликая на нужный пункт навигации в нем, окно закрывается и происходит плавный переход к контенту), также при клике на крестик, модальное окно закрывается",
-    en: "When you click on the burger menu, a modal window is displayed with a menu for the entire screen area (by clicking on the desired navigation item in it, the window closes and there is a smooth transition to the content), and when you click on the cross, the modal window closes",
+    ru: "Меню-бургер открывает полноэкранное навигационное окно с плавной анимацией. При выборе пункта меню или клике на крестик окно аккуратно закрывается, а страница мягко прокручивается к нужному разделу",
+    en: "The hamburger menu opens a full-screen navigation window with a smooth animation. When you select a menu item or click the cross, the window closes gently, and the page scrolls smoothly to the desired section",
   },
   "oxygen-desc-eight": {
-    ru: "При сужении окна блок портфолио, состоящий из грид-элементов, превращается в слайдер (slick slider), реализовано с помощью медиа-запросов (переключение слайдов осуществляется через свайп)",
-    en: "When narrowing the window, the portfolio block, consisting of grid elements, turns into a slider (slick slider), implemented using media queries (slides are switched via a swipe)",
+    ru: "Блок портфолио перестраивается из сетки в слайдер (slick slider) с возможностью переключения свайпом",
+    en: "The portfolio block is being converted from a grid to a slick slider with the ability to switch between them with a swipe",
   },
   "oxygen-desc-nine": {
-    ru: "При клике на 'Play' в блоке видео, происходит проигрывание ролика. При этом добавляются элементы управления и скрывается иконка 'Play'",
-    en: "When you click on 'Play' in the video block, the video will play. This adds controls and hides the 'Play' icon",
+    ru: "В блоке видео реализовано воспроизведение ролика с добавлением элементов управления",
+    en: "The video block now features video playback with added controls",
   },
   "oxygen-desc-ten": {
-    ru: "Ниже блока видео реализован адаптивный слайдер, полностью сделанный на JavaScript(на экранах для смартфонов стрелки навигации пропадают, переключение слайдов происходит через точки, на экранах планшетов и компьютеров переключение слайдов осуществляется через стрелки)",
-    en: "Below the video block, an adaptive slider is implemented, completely made in JavaScript (on screens for smartphones, the navigation arrows disappear, the slides switch through dots, on the screens of tablets and computers, the slides switch through the arrows)",
+    ru: "Дополнительный адаптивный слайдер создан вручную на JavaScript: на мобильных устройствах переключение происходит по точкам, а на планшетах и компьютерах — по стрелкам",
+    en: "An additional responsive slider is hand-crafted using JavaScript: on mobile devices, switching occurs via dots, and on tablets and computers, via arrows",
   },
   "oxygen-desc-eleven": {
-    ru: "В блоке Pricing отображается желтым цветом стандартный тариф, при наведении или при клике (на экранах смартфонов) на другие карточки происходит плавный выбор нужной карточки, при этом через JavaScript происходит удаление класса active у всех карточек и добавление этого класса выбранной",
-    en: "In the Pricing block, the standard tariff is displayed in yellow, when you hover or click (on smartphone screens) on other cards, the desired card is smoothly selected, while using JavaScript, the active class is removed from all cards and this class is added to the selected one.",
+    ru: "В разделе Pricing реализовано интерактивное выделение активного тарифа с плавным переключением карточек",
+    en: "The Pricing section now features interactive selection of the active tariff with seamless card switching",
   },
   "time-oxygen": {
     ru: "Время на работу ~ 20.5 ч",
@@ -1350,7 +1350,7 @@ const repeatElems = {
     en: "Connecting a popup window to display a video using the FancyBox jQuery library",
   },
   "adaptive-tool": {
-    ru: "Адаптивность: сайт корректно отображается на смартфонах, планшетах и ноутбуках",
+    ru: "Реализована адаптивная верстка — сайт корректно отображается на всех устройствах: смартфонах, планшетах и ноутбуках",
     en: "Responsiveness: the site displays correctly on smartphones, tablets, and laptops",
   },
   "desktop-first-method": {
@@ -1358,8 +1358,8 @@ const repeatElems = {
     en: "When the site was adapting for other devices, the Desktop First method was used (first the site was made for a PC, and then for tablets and mobile devices)",
   },
   "burger-function": {
-    ru: "Когда экран устройства достигает определенной ширины, происходит замена меню навигации главного экрана на меню - бургер (для этого используется JavaScript)",
-    en: "When the device screen reaches a certain width, the main screen navigation menu is replaced with a burger menu (JavaScript is used for this)",
+    ru: "При уменьшении ширины экрана главное меню превращается в бургер-меню с модальным окном, которое плавно открывается и закрывается при взаимодействии",
+    en: "As the screen width decreases, the main menu turns into a burger menu with a modal window that smoothly opens and closes upon interaction",
   },
   "design-improve": {
     ru: "Обновлённый дизайн: сайт стал ярким, динамичным и визуально живым",
