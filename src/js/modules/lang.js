@@ -829,13 +829,17 @@ const langs = {
     en: "Time to work ~ 20.5 h",
   },
   // Olivia
+  "olivia-desc": {
+    ru: "Olivia — стильный адаптивный лэндинг, созданный для практики работы с современными веб-технологиями и интерактивными элементами интерфейса. Проект сочетает лаконичный дизайн и плавную анимацию, делая взаимодействие с сайтом лёгким и приятным.",
+    en: "Olivia is a stylish, responsive landing page designed for practicing modern web technologies and interactive interface elements. The project combines a minimalist design with smooth animation, making interaction with the site easy and enjoyable.",
+  },
   "olivia-desc-one": {
-    ru: "При скролле вниз навигационное меню отбрасывает тень (сделано через javascript) и остается всегда в видимости пользователя",
-    en: "When scrolling down, the navigation menu casts a shadow (done via javascript) and remains always visible to the user",
+    ru: "При прокрутке страницы вниз меню остаётся закреплённым в верхней части экрана и получает лёгкую тень, добавляя глубину и удобство навигации",
+    en: "As you scroll down the page, the menu remains pinned to the top of the screen and receives a subtle shadow, adding depth and ease of navigation",
   },
   "olivia-desc-two": {
-    ru: "В секции с видео при нажатии на 'Play' кнопка 'Play' превращается в кнопку 'Pause', видео воспроизводится, а при наведении курсора у видео появляется затемняющая подложка, при отведении она пропадает",
-    en: "In the video section, when you click on the 'Play' button, the 'Play' button turns into the 'Pause' button, the video is played, and when you hover over the video, a dimming background appears, when it is removed, it disappears",
+    ru: "В секции с видео при нажатии на «Play» ролик запускается, кнопка меняется на «Pause», а при наведении курсора появляется лёгкое затемнение",
+    en: "In the video section, when you click «Play» the video starts, the button changes to «Pause» and when you hover over it with the cursor, a slight darkening appears",
   },
   "time-olivia-to-work": {
     ru: "Время на работу ~ 20 ч",
@@ -1290,8 +1294,8 @@ const repeatElems = {
     en: "More details",
   },
   "scroll-smooth-function": {
-    ru: "Реализована плавная прокрутка через javascript",
-    en: "The smooth scrolling is implemented  via javascript",
+    ru: "Реализована плавная прокрутка, создающая ощущение целостности и динамики при навигации по странице",
+    en: "Smooth scrolling has been implemented, creating a sense of integrity and dynamism when navigating the page",
   },
   "scss-tool": {
     ru: "Препроцессор SCSS",
@@ -1350,8 +1354,8 @@ const repeatElems = {
     en: "Connecting a popup window to display a video using the FancyBox jQuery library",
   },
   "adaptive-tool": {
-    ru: "Реализована адаптивная верстка — сайт корректно отображается на всех устройствах: смартфонах, планшетах и ноутбуках",
-    en: "Responsiveness: the site displays correctly on smartphones, tablets, and laptops",
+    ru: "Сайт полностью адаптирован под разные устройства — от смартфонов до ноутбуков, обеспечивая стабильную работу и комфортное взаимодействие с контентом",
+    en: "The site is fully adapted for various devices, from smartphones to laptops, ensuring stable operation and comfortable interaction with content",
   },
   "desktop-first-method": {
     ru: "При адаптировании сайта под другие устройства использовался метод Desktop First (сначала был сделан сайт под ПК, а затем под планшеты и мобильные устройства)",
