@@ -850,21 +850,25 @@ const langs = {
     ru: "Сайт Thrivetalk",
     en: "The site Thrivetalk",
   },
+  "thrivetalk-desc": {
+    ru: "Thrivetalk — адаптивный лендинг, созданный в учебных целях для отработки верстки по методологии Desktop First и реализации интерактивных элементов навигации.",
+    en: "Thrivetalk is a responsive landing page created for educational purposes to practice Desktop First layout and implement interactive navigation elements.",
+  },
   "thrivetalk-desc-one": {
-    ru: "При сужении окна браузера появляется бургер-иконка, при клике на которую появляется мобильное меню навигации и overlay, запрещается scroll",
-    en: "When narrowing the browser window, a burger icon appears, when clicked, a mobile navigation menu and overlay appear, scroll is prohibited",
+    ru: "При уменьшении ширины окна браузера появляется бургер-иконка, открывающая мобильное меню с затемняющим overlay, блокирующим прокрутку страницы",
+    en: "When the browser window width is reduced, a burger icon appears, opening a mobile menu with a darkening overlay that blocks page scrolling",
   },
   "thrivetalk-desc-two": {
-    ru: "При появлении мобильного меню навигации добавляется возможность закрыть это меню, кликнув на крестик или кликнув вне мобильного меню (при этом кликая на само меню, окно не закрывается)",
-    en: "When the mobile navigation menu appears, the ability to close this menu by clicking on the cross or clicking outside the mobile menu is added (while clicking on the menu itself, the window does not close)",
+    ru: "Мобильное меню можно закрыть, нажав на крестик или кликнув вне области меню (при этом клики внутри меню не закрывают его)",
+    en: "The mobile menu can be closed by clicking the cross or by clicking outside the menu area (clicking inside the menu does not close it)",
   },
   "thrivetalk-desc-three": {
-    ru: "При открытии мобильного окна навигации, меняя размер окна в большую сторону, мобильное меню закрывается и появляется стандартное меню (поэтому при переключении ориентации экрана из портретной в ландшафтную, например, у планшета, меню примет более удобный вид)",
-    en: "When a mobile navigation window is opening, changing the size of the window to a large side, the mobile menu closes and the standard menu appears (therefore, when switching the screen orientation from portrait to landscape, for example, on a tablet, the menu will take on a more convenient look)",
+    ru: "При изменении размеров окна в большую сторону мобильное меню автоматически закрывается, уступая место стандартной навигации — это обеспечивает корректное отображение при смене ориентации экрана",
+    en: "When the window is resized to a larger size, the mobile menu automatically closes, giving way to the standard navigation - this ensures correct display when changing the screen orientation",
   },
   "thrivetalk-desc-four": {
-    ru: "Сайт защищен от переполнения контентом, при увеличении контента в блоках, все отображается корректно",
-    en: "The site is protected from content overflow, when content is increasing in blocks, everything is displayed correctly",
+    ru: "Сайт защищен от переполнения контентом: при добавлении или изменении текста и изображений верстка сохраняет целостность и адаптивность",
+    en: "The site is protected from content overflow: when adding or changing text and images, the layout remains intact and adaptable",
   },
   "thrivetalk-sublime-text-plugins": {
     ru: "Плагины Sublime Text 3: Emmet, LiveReload, AutoFileName и другие",
@@ -1358,8 +1362,8 @@ const repeatElems = {
     en: "The site is fully adapted for various devices, from smartphones to laptops, ensuring stable operation and comfortable interaction with content",
   },
   "desktop-first-method": {
-    ru: "При адаптировании сайта под другие устройства использовался метод Desktop First (сначала был сделан сайт под ПК, а затем под планшеты и мобильные устройства)",
-    en: "When the site was adapting for other devices, the Desktop First method was used (first the site was made for a PC, and then for tablets and mobile devices)",
+    ru: "Адаптивная верстка выполнена с подходом Desktop First, что позволило обеспечить стабильную работу и комфортное взаимодействие с контентом на любых экранах",
+    en: "The adaptive layout was implemented using the Desktop First approach, which ensured stable operation and comfortable interaction with content on any screen",
   },
   "burger-function": {
     ru: "При уменьшении ширины экрана главное меню превращается в бургер-меню с модальным окном, которое плавно открывается и закрывается при взаимодействии",
