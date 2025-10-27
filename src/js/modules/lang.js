@@ -887,6 +887,10 @@ const langs = {
     ru: "Проект показывает навыки создания промостраниц с интерактивными элементами и современным адаптивным интерфейсом.",
     en: "The project demonstrates skills in creating promotional pages with interactive elements and a modern, responsive interface.",
   },
+  "venom-desc-three": {
+    ru: "<b>Результат — динамичный лендинг с кинематографичной атмосферой.</b>",
+    en: "<b>The result is a dynamic landing page with a cinematic atmosphere.</b>",
+  },
   "venom-time-to-work": {
     ru: "Время на работу ~ 25 ч",
     en: "Time to work ~ 25 h",
