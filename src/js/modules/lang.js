@@ -879,6 +879,14 @@ const langs = {
     en: "Time to work ~ 23 h",
   },
   // Venom 2
+  "venom-desc": {
+    ru: "Проект представляет собой промостраницу, созданную для демонстрации фильма «Веном 2». Главная цель — передать атмосферу фильма через визуальное оформление и плавные интерактивные элементы.",
+    en: "The project is a promotional page created to showcase the film «Venom 2». The main goal is to convey the film's atmosphere through visual design and fluid interactive elements.",
+  },
+  "venom-desc-two": {
+    ru: "Проект показывает навыки создания промостраниц с интерактивными элементами и современным адаптивным интерфейсом.",
+    en: "The project demonstrates skills in creating promotional pages with interactive elements and a modern, responsive interface.",
+  },
   "venom-time-to-work": {
     ru: "Время на работу ~ 25 ч",
     en: "Time to work ~ 25 h",
@@ -1354,7 +1362,7 @@ const repeatElems = {
     en: "Visual Studio Code plugins: Emmet, Live Server, Path AutoComplete, AutoClose Tag, etc.",
   },
   "fancy-box": {
-    ru: "Подключение всплывающего окна для отображения видео, используя jQuery-библиотеку FancyBox",
+    ru: "Подключение всплывающего окна с видеоплеером через библиотеку jQuery Fancybox",
     en: "Connecting a popup window to display a video using the FancyBox jQuery library",
   },
   "adaptive-tool": {
