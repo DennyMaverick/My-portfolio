@@ -900,25 +900,37 @@ const langs = {
     ru: "Калькулятор стоимости ремонта на JavaScript",
     en: "Calculator of rapairing cost in Javascript",
   },
+  "calc-desc": {
+    ru: "Интерактивный калькулятор позволяет пользователю рассчитать примерную стоимость ремонта квартиры в зависимости от выбранных параметров. Проект реализован на чистом JavaScript с упором на динамическое обновление данных и удобство взаимодействия с интерфейсом.",
+    en: "This interactive calculator allows users to estimate the cost of apartment renovations based on selected parameters. The project is implemented in pure JavaScript, with an emphasis on dynamic data updates and user-friendly interface.",
+  },
   "calc-desc-one": {
-    ru: "Возможность выбирать площадь квартиры, требуемой для ремонта, с помощью ползунка или стрелочек(около значения площади, щелкнув в текстовое поле), зная исходное значение цены за 1 квадратный метр - 6000 рублей. После этого произойдет автоматический расчет стоимости ремонта, исходя из следующих параметров:",
-    en: "Possibility to choose the area of ​​the apartment required for repair using the slider or arrows (near the area value by clicking in the text field), knowing the initial price value for 1 square meter - 6000 rubles. After that, the repair cost will be automatically calculated based on the following parameters:",
+    ru: "Выбор площади квартиры с помощью ползунка, стрелок или ручного ввода. Базовая стоимость — 6000 рублей за 1 м²",
+    en: "Select your apartment's area using the slider, arrows, or manual input. The base price is 6,000 rubles per square meter",
   },
   "calc-desc-two": {
-    ru: "Тип ремонта (косметический, капитальный или под ключ), выбрав один из пунктов, произойдет расчет ремонта соответственно: без увеличения цены, + 30% к стоимости ремонта и + 50% к стоимости ремонта",
-    en: "Type of repair (cosmetic, major or turnkey), by selecting one of the items, the repair will be calculated accordingly: without price increase, + 30% to the repair cost and + 50% to the repair cost",
+    ru: "Автоматический пересчёт стоимости в реальном времени при изменении любого параметра",
+    en: "Automatic recalculation of cost in real time when any parameter changes",
   },
   "calc-desc-three": {
-    ru: "Тип дома (новострой или вторичка), выбрав один из пунктов, произойдет расчет ремонта соответственно: без изменения цены, + 10% к стоимости ремонта",
-    en: "Type of house (new building or resale), by selecting one of the items, the repair will be calculated accordingly: without changing the price, + 10% to the repair cost",
+    ru: "Учёт типа ремонта: косметический — без надбавки, капитальный — +30% к стоимости, под ключ — +50% к стоимости",
+    en: "Accounting for the type of repair: cosmetic - no surcharge, major - +30% to the cost, turnkey - +50% to the cost",
   },
   "calc-desc-four": {
-    ru: "Дополнительные опции (натяжные потолки, покраска стен, теплый пол), выбрав один из пунктов, произойдет расчет ремонта следующим образом: + 900 рублей за каждый квадратный метр при выборе опции 'Натяжные потолки', + 10% к стоимости при выборе опции 'Покраска стен' и + 10% к стоимости ремонта при выборе опции 'Теплый пол'",
-    en: "Additional options (stretch ceilings, wall painting, warm floors), by selecting one of the items, the repair will be calculated as follows: + 900 rubles per square meter if you select the 'Stretch ceilings' option, + 10% to the cost if you select the 'Painting walls' option ' and + 10% to the cost of repairs when choosing the option 'Heated floor'",
+    ru: "Учёт типа дома: новострой — без изменений, вторичка — +10% к стоимости",
+    en: "Taking into account the type of house: new building - no changes, secondary market - +10% to the cost",
   },
   "calc-desc-five": {
-    ru: "Количество комнат (С, 1, 2, 3, 4 или 5, где С - это более экономичный вариант ремонта комнат), выбрав один из пунктов, произойдет следующий расчет ремонта: C (-20% от стоимости ремонта), от 1 до 2 комнат (без изменения цены), от 3 до 5 (+ 5% к стоимости ремонта)",
-    en: "Number of rooms (C, 1, 2, 3, 4 or 5, where C is a more economical option for refurbishing rooms), selecting one of the items, the following repair calculation will occur: C (-20% of the repair cost), from 1 to 2 rooms (without price change), from 3 to 5 (+ 5% to the repair cost)",
+    ru: "Возможность добавить дополнительные опции: натяжные потолки — +900 ₽ за каждый м², покраска стен — +10% к стоимости, тёплый пол — +10% к стоимости",
+    en: "Possibility to add additional options: stretch ceilings - +900 ₽ per m², wall painting - +10% to the cost, heated floors - +10% to the cost",
+  },
+  "calc-desc-six": {
+    ru: "Выбор количества комнат: эконом-вариант (С) — -20% к стоимости, 1–2 комнаты — без изменений, 3–5 комнат — +5% к стоимости",
+    en: "Select the number of rooms: economy option (C) -20% to the cost, 1–2 rooms - no change, 3–5 rooms - +5% to the cost",
+  },
+  "calc-desc-seven": {
+    ru: "Основная логика калькулятора написана на JavaScript без использования сторонних библиотек. Особое внимание уделено плавности обновления значений и интерактивности — пользователь сразу видит, как изменяются результаты при выборе разных параметров. Проект демонстрирует работу с DOM, обработку событий, динамические расчёты и основы построения удобного интерфейса.",
+    en: "The main logic of the calculator is written in JavaScript without using third-party libraries. Special attention is paid to the smoothness of updating values and interactivity — the user immediately sees how the results change when selecting different parameters. The project demonstrates working with DOM, event handling, dynamic calculations, and the basics of building a user-friendly interface.",
   },
   "calc-time-to-work": {
     ru: "Время на работу ~ 20 ч",
