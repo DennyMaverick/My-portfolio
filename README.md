@@ -1,4 +1,4 @@
-# 🌐 Denny Maverick — Портфолио
+# ![favicon](https://dennymaverick.github.io/My-portfolio/favicon.ico) Denny Maverick — Портфолио
 
 ---
 
