@@ -79,12 +79,16 @@ const langs = {
     en: "Visit cards for a company",
   },
   "visit-cards-desc-one": {
-    ru: "Каждой компании нужен бренд или логотип, с помощью которого эта компания будет узнаваема в обществе. Визитные карточки - это инструмент, который помогает делать рекламу для своей компании. Визитные карточки были созданы в программе Adobe Photoshop, дизайн был придуман в учебных целях.",
-    en: "Each company needs a brand or logo, helping to be known in sociality. Business cards are a tool that helps you advertise your company. These visit cards were created in Adobe Photoshop programm, the design was made as for a learn project.",
+    ru: "Каждая компания стремится быть узнаваемой и запоминающейся. Визитные карточки — это первое впечатление, которое остаётся в руках партнёров и клиентов. Я разработал современный, минималистичный дизайн визиток, отражающий стиль и характер бренда. Проект был создан в Adobe Photoshop в учебных целях, но с упором на реалистичный коммерческий подход и внимание к деталям.",
+    en: "Every company strives to be recognizable and memorable. Business cards are the first impression left on partners and clients. I developed a modern, minimalist business card design that reflects the brand's style and character. The project was created in Adobe Photoshop for educational purposes, but with an emphasis on a realistic commercial approach and attention to detail.",
   },
   "visit-cards-desc-two": {
-    ru: "Визитные карточки состоят из двух сторон: лицевая сторона содержит логотип компании, имя сотрудника, его должность, телефон, адрес офиса. И оборотная сторона визитки содержит логотип компании.",
-    en: "Business cards consist of two sides: the front side contains the company logo, the name of the employee, his position, telephone number, and office address. And the back of the business card contains the company logo.",
+    ru: "Визитка имеет две стороны: лицевая сторона — логотип компании, имя сотрудника, должность, контакты и адрес офиса; оборотная сторона — акцент на логотип и фирменные цвета бренда, создающие запоминающееся визуальное впечатление.",
+    en: "The business card has two sides: the front side features the company logo, employee name, job title, contact information, and office address; the back side emphasizes the logo and brand colors, creating a memorable visual impression.",
+  },
+  "visit-cards-desc-three": {
+    ru: "Этот проект помог мне отточить навыки композиции, типографики и работы с фирменным стилем, а также вдохновил на создание целой серии корпоративных дизайнов.",
+    en: "This project helped me hone my composition, typography, and branding skills, and inspired me to create a whole series of corporate designs.",
   },
   "visit-cards-time": {
     ru: "Время на работу: ~ 20 часов",
