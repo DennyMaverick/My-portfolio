@@ -630,12 +630,16 @@ const langs = {
     en: "Ducati: learn project",
   },
   "ducati-desc-one": {
-    ru: "Главная страница Ducati была создана в учебных целях в рамках марафона школы дизайна Yudaev School.",
-    en: "The Ducati home page was created for educational purposes as part of the Yudaev School design school marathon.",
+    ru: "Главная страница для легендарного бренда Ducati была разработана в рамках учебного марафона от Yudaev School. Проект стал отличной возможностью отточить навыки UX/UI-дизайна и передать атмосферу скорости, энергии и премиальности, которые олицетворяют дух Ducati.",
+    en: "The homepage for the legendary Ducati brand was developed as part of a training marathon from Yudaev School. The project was an excellent opportunity to hone UX/UI design skills and convey the atmosphere of speed, energy, and premium quality that embody the Ducati spirit.",
   },
   "ducati-desc-two": {
-    ru: "Данная работа была создана в рамках тренировки, в программе Figma, после прохождения марафона от школы дизайна Yudaev School. Марафон прошел успешно, где я смог закрепить навыки в сфере UX / UI дизайна.",
-    en: "This work was created as part of a training session in the Figma program, after completing a marathon from the Yudaev School of Design. The marathon was successful, where I was able to strengthen my skills in the field of UX / UI design.",
+    ru: "В процессе я сосредоточился на создании выразительного и динамичного интерфейса, сочетающего эстетику скорости с удобством взаимодействия. Проект выполнен в Figma, а графические элементы и иллюстрации — в Adobe Illustrator.",
+    en: "During the process, I focused on creating an expressive and dynamic interface that combines the aesthetics of speed with ease of interaction. The project was completed in Figma, and the graphic elements and illustrations were created in Adobe Illustrator.",
+  },
+  "ducati-desc-three": {
+    ru: "Этот опыт помог мне укрепить понимание того, как визуал и функциональность объединяются, чтобы создавать целостный и запоминающийся пользовательский опыт.",
+    en: "This experience helped me strengthen my understanding of how visuals and functionality come together to create a cohesive and memorable user experience.",
   },
   "ducati-page-time": {
     ru: "Время на работу: ~ 1 час",
