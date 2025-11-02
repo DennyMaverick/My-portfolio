@@ -1,0 +1,39 @@
+@use '../_config/variables.scss';
+
+.technologies-board {
+  padding: 10px;
+  transition: box-shadow .3s ease-in;
+  &--light:hover {
+    box-shadow: 0 0 15px variables.$technologies-color-light;
+  }
+  &--dark:hover {
+    box-shadow: 0 0 15px variables.$technologies-color-dark;
+  }
+  &--dark {
+    box-shadow: 0 0 10px variables.$technologies-color-dark;
+    background: variables.$technologies-color-dark;
+  }
+  &--light {
+    box-shadow: 0 0 10px variables.$technologies-color-light;
+    background: variables.$technologies-color-light;
+  }
+  border-radius: 0 0 5px 5px;
+  &__list {
+    margin-left: 20px;
+    display: flex;
+    justify-content: left;
+  }
+  &__item + &__item {
+    margin-left: 15px;
+  }
+  &__icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transform: translateY(0);
+    transition: transform .3s ease-in;
+    &:hover {
+      transform: translateY(-3px);
+    }
+  }
+}

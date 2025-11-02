@@ -560,6 +560,12 @@ const themes = {
       dark: "timeline__photo--dark",
     },
   },
+  ".technologies-board": {
+    theme: {
+      light: "technologies-board--light",
+      dark: "technologies-board--dark",
+    },
+  },
 }
 
 function themeSwitch(theme) {
