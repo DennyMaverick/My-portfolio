@@ -3,6 +3,7 @@
 .technologies-board {
   padding: 10px;
   transition: box-shadow .3s ease-in;
+  border-radius: 0 0 5px 5px;
   &--light:hover {
     box-shadow: 0 0 15px variables.$technologies-color-light;
   }
@@ -17,7 +18,6 @@
     box-shadow: 0 0 10px variables.$technologies-color-light;
     background: variables.$technologies-color-light;
   }
-  border-radius: 0 0 5px 5px;
   &__list {
     margin-left: 20px;
     display: flex;
