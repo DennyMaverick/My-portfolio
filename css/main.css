@@ -4125,6 +4125,10 @@ img {
     width: 25px;
     height: 25px;
   }
+
+  .technologies-board__list {
+    margin-left: 0px;
+  }
 }
 
 @media (max-width: 680px) {
