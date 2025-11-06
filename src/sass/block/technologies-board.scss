@@ -1,4 +1,5 @@
 @use '../_config/variables.scss';
+@use '../_mixins/media.scss';
 
 .technologies-board {
   padding: 10px;
@@ -23,6 +24,9 @@
     display: flex;
     justify-content: left;
     align-items: center;
+    @include media.bp-desk(mobile) {
+      margin-left: 0px;
+    }
   }
   &__item + &__item {
     margin-left: 15px;
