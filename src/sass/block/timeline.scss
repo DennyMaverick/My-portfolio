@@ -195,7 +195,7 @@
     margin-bottom: 15px;
     @include font-face.font(1rem, 1.6rem);
 
-    font-weight: 300;
+    font-weight: 400;
     transition: color 0.3s ease-in;
     &--light {
       color: variables.$grey;
