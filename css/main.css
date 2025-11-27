@@ -1550,6 +1550,7 @@
   -o-transition: color 0.2s ease-in;
   transition: color 0.2s ease-in;
   position: relative;
+  font-weight: 400;
 }
 
 .about__link:hover {
@@ -1674,6 +1675,7 @@
   -o-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
   line-height: 1.6;
+  font-weight: 400;
 }
 
 .modal-list__item--dark {
@@ -2622,6 +2624,7 @@
   -webkit-transition: color 0.3s ease-in;
   -o-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
+  font-weight: 400;
 }
 
 .modal-work__description--dark {
