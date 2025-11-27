@@ -217,6 +217,7 @@
     margin-top: 18px;
     margin-bottom: 18px;
     transition: color 0.3s ease-in;
+    font-weight: 400;
     &--dark {
       color: variables.$desc-show-color-dark;
     }
