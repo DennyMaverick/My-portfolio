@@ -746,8 +746,8 @@ const langs = {
     en: "Currency converter in JavaScript",
   },
   "currency-converter-type": {
-    ru: "Проекты с элементами интерфейса на javaScript",
-    en: "Projects with interface elements in javaScript",
+    ru: "Мини-приложения",
+    en: "Mini Apps",
   },
   "converter-desc": {
     ru: "Проект разработан в учебных целях для совершенствования навыков работы с JavaScript и элементами интерфейса. Конвертер позволяет получать актуальные курсы валют — доллара, евро и фунта стерлинга — и наглядно отображает их динамику: если курс снижается, значение подсвечивается зелёным цветом, если растёт — красным.",
@@ -1239,7 +1239,7 @@ const afterElements = {
 const repeatElems = {
   design: {
     ru: "Дизайн",
-    en: "Design",
+    en: "UI/UX & Design",
   },
   "change-font": {
     ru: "Изменить шрифт",
@@ -1302,8 +1302,8 @@ const repeatElems = {
     en: "Promo-sites",
   },
   "elements-of-javascript": {
-    ru: "Проекты с элементами интерфейса на JavaScript",
-    en: "Projects with elements of an interface on JavaScript",
+    ru: "Мини-приложения",
+    en: "Mini Apps",
   },
   "cat-landings": {
     ru: "Категория: Лэндинги",
@@ -1314,8 +1314,8 @@ const repeatElems = {
     en: "Category: Sites - visit cards",
   },
   "cat-javascript-interface": {
-    ru: "Категория: Проекты с элементами интерфейса на javaScript",
-    en: "Category: Projects with elements of an interface on JavaScript",
+    ru: "Категория: Мини-приложения",
+    en: "Category: Mini Apps",
   },
   "cat-design": {
     ru: "Категория: Дизайн",
