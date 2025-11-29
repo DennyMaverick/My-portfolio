@@ -1293,6 +1293,16 @@
   text-shadow: 0 0 10px rgb(6, 117, 242);
 }
 
+.work--bg-generator-of-passwords::before {
+  background: -webkit-gradient(linear, left bottom, right top, from(#00be7a), to(#b75b72));
+  background: -o-linear-gradient(left bottom, #00be7a, #b75b72);
+  background: linear-gradient(to right top, #00be7a, #b75b72);
+}
+
+.work--bg-generator-of-passwords::after {
+  text-shadow: 0 0 10px rgb(183, 91, 114);
+}
+
 .work__content {
   height: 100%;
   display: -webkit-box;
