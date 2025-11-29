@@ -853,6 +853,31 @@ const langs = {
     ru: "Время на работу ~ 20 ч",
     en: "Time to work ~ 20 h",
   },
+  // Password Generator
+  "password-generator-desc": {
+    ru: "Генератор-паролей — простой и удобный веб-инструмент для быстрой генерации надёжных паролей. Пользователь выбирает длину (8, 12 или 15 символов) и наличие специальных символов, нажимает «Сгенерировать» — и получает надёжный автоматически сгенерированный пароль, готовый для копирования. Вся логика работает прямо в браузере: пароли не передаются на сервер, это делает их генерацию приватной и безопасной. Этот инструмент — отличное решение для тех, кто хочет защитить свои аккаунты: так проще отказаться от слабых паролей вроде «123456» и использовать уникальный пароль для каждого сайта или сервиса.",
+    en: "Password Generator is a simple and convenient web tool for quickly generating secure passwords. The user selects the length (8, 12, or 15 characters) and the presence of special characters, clicks «Generate» — and receives a random, hard-to-guess string ready for copying. All logic works directly in the browser: passwords are not transmitted to the server, making their generation private and secure. This tool is an excellent solution for those who want to protect their accounts: it makes it easier to avoid weak passwords like «123456» and use a unique password for each site or service.",
+  },
+  "password-generator-desc-one": {
+    ru: "Выбор длины пароля — пользователь может выбрать 8, 12 или 15 символов",
+    en: "Password length selection - the user can choose 8, 12 or 15 characters",
+  },
+  "password-generator-desc-two": {
+    ru: "Включение специальных символов — опция добавления символов ! @ # $ % для более надёжного пароля",
+    en: "Inclusion of special characters - an option to add characters ! @ # $ % for a more secure password",
+  },
+  "password-generator-desc-three": {
+    ru: "Генерация случайного пароля — формирование уникальной комбинации символов одним кликом",
+    en: "Random password generation - creating a unique combination of characters with one click",
+  },
+  "password-generator-desc-four": {
+    ru: "Удобное копирование — готовый пароль отображается сразу и легко копируется для использования",
+    en: "Convenient copying - the generated password is displayed immediately and can be easily copied for use",
+  },
+  "password-generator-time-to-work": {
+    ru: "Время на работу ~ 42 ч",
+    en: "Time to work ~ 42 h",
+  },
   // Thrivetalk
   "client-thrivetalk-title": {
     ru: "Сайт Thrivetalk",
@@ -1239,7 +1264,7 @@ const afterElements = {
 const repeatElems = {
   design: {
     ru: "Дизайн",
-    en: "UI/UX & Design",
+    en: "UI / UX & Design",
   },
   "change-font": {
     ru: "Изменить шрифт",
@@ -1319,7 +1344,7 @@ const repeatElems = {
   },
   "cat-design": {
     ru: "Категория: Дизайн",
-    en: "Category: Design",
+    en: "Category: UI / UX & Design",
   },
   "cat-promo": {
     ru: "Категория: Промосайты",
@@ -1472,6 +1497,10 @@ const repeatElems = {
   "title-work-venom": {
     ru: "Промосайт фильма &#171;Веном - 2&#187;",
     en: "Promo-site of the film &#171;Venom - 2&#187;",
+  },
+  "title-work-passwords": {
+    ru: "Генератор паролей",
+    en: "Password Generator",
   },
   nowadays: {
     ru: "настоящее время",

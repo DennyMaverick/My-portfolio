@@ -188,6 +188,12 @@
   &--bg-calc:hover::after {
     text-shadow: 0 0 10px rgba(6, 117, 242, 1);
   }
+  &--bg-generator-of-passwords::before {
+    background: linear-gradient(to right top, #00be7a, #b75b72);
+  }
+  &--bg-generator-of-passwords::after {
+    text-shadow: 0 0 10px rgba(183, 91, 114, 1);
+  }
   &__content {
     height: 100%;
     display: flex;
