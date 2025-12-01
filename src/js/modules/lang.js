@@ -874,6 +874,10 @@ const langs = {
     ru: "Удобное копирование — готовый пароль отображается сразу и легко копируется для использования",
     en: "Convenient copying - the generated password is displayed immediately and can be easily copied for use",
   },
+  "password-generator-desc-five": {
+    ru: "Добавлена функция переключения языков между русской и английской версиями интерфейса, обеспечивающая удобство использования приложения для разных пользователей. Перевод выполнен через динамическую подстановку текста, что позволяет легко расширять функциональность и поддерживать дополнительные языки",
+    en: "A language switching feature has been added between Russian and English versions of the interface, providing convenience for different users. The translation is done through dynamic text substitution, allowing for easy expansion of functionality and support for additional languages",
+  },
   "password-generator-time-to-work": {
     ru: "Время на работу ~ 42 ч",
     en: "Time to work ~ 42 h",
@@ -1145,6 +1149,10 @@ const langs = {
   "password-generator-app-seventh-item": {
     ru: "Интерфейс продуман для удобного и интуитивного использования, визуальные элементы отображаются плавно и эстетично",
     en: "The interface is designed for convenient and intuitive use, visual elements are displayed smoothly and aesthetically",
+  },
+  "password-generator-app-eighth-item": {
+    ru: "Добавлено переключение языка между русской и английской версиями интерфейса для удобства пользователей",
+    en: "Added language switching between Russian and English versions of the interface for user convenience",
   },
   "langswitcher-app-title": {
     ru: "Разработка проекта «Переключение языков - подробный гайд»",
