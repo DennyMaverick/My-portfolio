@@ -191,7 +191,7 @@
   &--bg-generator-of-passwords::before {
     background: linear-gradient(to right top, #00be7a, #b75b72);
   }
-  &--bg-generator-of-passwords::after {
+  &--bg-generator-of-passwords:hover::after {
     text-shadow: 0 0 10px rgba(183, 91, 114, 1);
   }
   &__content {

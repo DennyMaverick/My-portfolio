@@ -1299,7 +1299,7 @@
   background: linear-gradient(to right top, #00be7a, #b75b72);
 }
 
-.work--bg-generator-of-passwords::after {
+.work--bg-generator-of-passwords:hover::after {
   text-shadow: 0 0 10px rgb(183, 91, 114);
 }
 
