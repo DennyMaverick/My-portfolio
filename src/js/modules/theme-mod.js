@@ -566,6 +566,12 @@ const themes = {
       dark: "technologies-board--dark",
     },
   },
+  ".popup-theme": {
+    theme: {
+      light: "popup-theme--light",
+      dark: "popup-theme--dark",
+    },
+  },
 }
 
 function themeSwitch(theme) {

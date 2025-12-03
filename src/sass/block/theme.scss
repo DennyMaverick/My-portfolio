@@ -2,6 +2,7 @@
 @use '../_mixins/media';
 
 .theme {
+  position: relative;
   padding: 7px;
   &--br {
     border-radius: 5px;

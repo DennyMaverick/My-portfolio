@@ -1,0 +1,36 @@
+@use '../_config/variables.scss';
+@use '../_mixins/media.scss';
+
+.popup-theme {
+  &--light {
+    background-color:variables.$black;
+    color: variables.$white;
+  }
+  &--dark {
+    background-color: variables.$white;
+    color: variables.$black;
+  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  width: 130px;
+  position: absolute;
+  border-radius: 5px 5px 0 5px;
+
+  left: -130px;
+  top: -20px;
+  &__hidden {
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+  &--active {
+    opacity: 1;
+    height: auto;
+    width: auto;
+  }
+  @include media.bp-desk(notebook) {
+      display: none;
+    }
+}
