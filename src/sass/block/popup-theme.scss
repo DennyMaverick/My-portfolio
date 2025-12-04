@@ -1,15 +1,7 @@
-@use '../_config/variables.scss';
-@use '../_mixins/media.scss';
+@use "../_config/variables.scss";
+@use "../_mixins/media.scss";
 
 .popup-theme {
-  &--light {
-    background-color:variables.$black;
-    color: variables.$white;
-  }
-  &--dark {
-    background-color: variables.$white;
-    color: variables.$black;
-  }
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,6 +12,15 @@
 
   left: -130px;
   top: -20px;
+  &--light {
+    background-color: variables.$black;
+    color: variables.$white;
+  }
+  &--dark {
+    background-color: variables.$white;
+    color: variables.$black;
+  }
+
   &__hidden {
     opacity: 0;
     height: 0;
@@ -31,6 +32,6 @@
     width: auto;
   }
   @include media.bp-desk(notebook) {
-      display: none;
-    }
+    display: none;
+  }
 }
