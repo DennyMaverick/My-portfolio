@@ -12,6 +12,10 @@
 
   left: -130px;
   top: -20px;
+  &__text {
+    font-size: 12px;
+    font-weight: 700;
+  }
   &--light {
     background-color: variables.$black;
     color: variables.$white;

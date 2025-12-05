@@ -1210,6 +1210,10 @@ const langs = {
     ru: "Закончил школу на «хорошо» и «отлично», сделав первые шаги к будущей профессии.",
     en: "I graduated from school with good and excellent grades, taking the first steps towards my future profession.",
   },
+  "theme-popup": {
+    ru: "Сменить тему",
+    en: "Change theme",
+  },
 }
 
 const titles = {
