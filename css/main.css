@@ -3570,6 +3570,11 @@
   top: -20px;
 }
 
+.popup-theme__text {
+  font-size: 12px;
+  font-weight: 700;
+}
+
 .popup-theme--light {
   background: #2B2B2D;
   color: #fff;
