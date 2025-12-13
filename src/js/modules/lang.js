@@ -459,8 +459,8 @@ const langs = {
     en: "Skills",
   },
   "js-knowlanges-title": {
-    ru: "Базовые знания JavaScript",
-    en: "Base of JavaScript",
+    ru: "Уверенные знания JavaScript",
+    en: "Confident knowledge of JavaScript",
   },
   "html-skill-title": {
     ru: "Уверенные знания HTML5 / CSS3",
