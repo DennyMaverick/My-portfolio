@@ -1214,6 +1214,10 @@ const langs = {
     ru: "Сменить тему",
     en: "Change theme",
   },
+  "web-desc": {
+    ru: "Продуманные интерфейсы — от идеи до реализации ✨",
+    en: "Thoughtful interfaces — from idea to implementation ✨",
+  },
 }
 
 const titles = {
