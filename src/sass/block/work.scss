@@ -183,10 +183,10 @@
     text-shadow: 0 0 10px rgba(214, 148, 79, 1);
   }
   &--bg-calc::before {
-    background: linear-gradient(to right top, #0675f2, #f4f8fb);
+    background: linear-gradient(to right top, #d2e733, #f4f8fb);
   }
   &--bg-calc:hover::after {
-    text-shadow: 0 0 10px rgba(6, 117, 242, 1);
+    text-shadow: 0 0 10px rgb(165, 199, 15);
   }
   &--bg-generator-of-passwords::before {
     background: linear-gradient(to right top, #00be7a, #b75b72);
