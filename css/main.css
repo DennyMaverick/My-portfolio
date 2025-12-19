@@ -1378,21 +1378,6 @@
   flex-direction: column;
 }
 
-.portfolio__work--best::before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  content: "THE BEST";
-  width: 120px;
-  border-radius: 0 0 0 10px;
-  height: 28px;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 25px;
-  color: #fff;
-  z-index: 6;
-}
-
 .portfolio__work--archee::before {
   background: #ff6700;
   -webkit-box-shadow: -2px -2px 15px #ff6700;
