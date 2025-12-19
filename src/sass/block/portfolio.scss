@@ -21,21 +21,6 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    &--best::before {
-      position: absolute;
-      top: 0;
-      right: 0;
-      content: "THE BEST";
-      width: 120px;
-      border-radius: 0 0 0 10px;
-      height: 28px;
-      text-transform: uppercase;
-      text-align: center;
-      line-height: 25px;
-
-      color: variables.$white;
-      z-index: 6;
-    }
     &--archee::before {
       background-color: #ff6700;
       box-shadow: -2px -2px 15px #ff6700;
