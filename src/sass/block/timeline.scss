@@ -213,6 +213,7 @@
     width: 100%;
     margin-top: 15px;
     margin-bottom: 35px;
+
     &--light {
       background: url("../img/preload/white-theme-loader.gif") center no-repeat;
     }
@@ -225,6 +226,11 @@
     left: 50%;
     top: 0;
     transform: translateX(-50%);
+    box-shadow: 0 0 0 #2b2b2b;
+    transition: box-shadow 0.3s ease-in;
+    &:hover {
+      box-shadow: 0 0 15px #2b2b2b;
+    }
   }
   &--message-to-contact-me {
     font-weight: 700;
@@ -240,7 +246,6 @@
     cursor: pointer;
     &--dark:hover {
       border: 2px solid variables.$select-color-dark;
-
     }
     &--light:hover {
       border: 2px solid variables.$select-color-light;
