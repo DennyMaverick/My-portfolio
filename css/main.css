@@ -2235,9 +2235,20 @@
   padding: 22.5px;
   border-radius: 7.5px;
   margin-bottom: 15px;
-  -webkit-transition: border 0.3s ease-in;
-  -o-transition: border 0.3s ease-in;
-  transition: border 0.3s ease-in;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: border 0.3s ease-in, -webkit-transform 0.3s ease-in;
+  transition: border 0.3s ease-in, -webkit-transform 0.3s ease-in;
+  -o-transition: border 0.3s ease-in, transform 0.3s ease-in;
+  transition: border 0.3s ease-in, transform 0.3s ease-in;
+  transition: border 0.3s ease-in, transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+}
+
+.progress-bar__item:hover {
+  -webkit-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 .progress-bar__item--light {
