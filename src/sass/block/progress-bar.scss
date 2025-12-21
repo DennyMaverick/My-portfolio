@@ -11,7 +11,11 @@
 
     border-radius: 7.5px;
     margin-bottom: 15px;
-    transition: border .3s ease-in;
+    transform: scale(1);
+    transition: border .3s ease-in, transform .3s ease-in;
+    &:hover {
+      transform: scale(1.02);
+    }
     &--light {
       border: 0.75px solid variables.$grey-light-second;
     }
