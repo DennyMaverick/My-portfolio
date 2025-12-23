@@ -12,14 +12,21 @@
     border-radius: 7.5px;
     margin-bottom: 15px;
     transform: scale(1);
-    transition: border .3s ease-in, transform .3s ease-in;
+    box-shadow: 0 0 0 variables.$black;
+    transition: border .3s ease-in, transform .3s ease-in, box-shadow .3s ease-in;
     &:hover {
       transform: scale(1.02);
     }
     &--light {
+      &:hover {
+        box-shadow: 0 0 15px variables.$select-color-light;
+      }
       border: 0.75px solid variables.$grey-light-second;
     }
     &--dark {
+      &:hover {
+        box-shadow: 0 0 15px variables.$orange;
+      }
       border: 0.75px solid variables.$white;
     }
   }

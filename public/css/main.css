@@ -2238,11 +2238,13 @@
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
-  -webkit-transition: border 0.3s ease-in, -webkit-transform 0.3s ease-in;
-  transition: border 0.3s ease-in, -webkit-transform 0.3s ease-in;
-  -o-transition: border 0.3s ease-in, transform 0.3s ease-in;
-  transition: border 0.3s ease-in, transform 0.3s ease-in;
-  transition: border 0.3s ease-in, transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+  -webkit-box-shadow: 0 0 0 #2B2B2D;
+  box-shadow: 0 0 0 #2B2B2D;
+  -webkit-transition: border 0.3s ease-in, -webkit-transform 0.3s ease-in, -webkit-box-shadow 0.3s ease-in;
+  transition: border 0.3s ease-in, -webkit-transform 0.3s ease-in, -webkit-box-shadow 0.3s ease-in;
+  -o-transition: border 0.3s ease-in, transform 0.3s ease-in, box-shadow 0.3s ease-in;
+  transition: border 0.3s ease-in, transform 0.3s ease-in, box-shadow 0.3s ease-in;
+  transition: border 0.3s ease-in, transform 0.3s ease-in, box-shadow 0.3s ease-in, -webkit-transform 0.3s ease-in, -webkit-box-shadow 0.3s ease-in;
 }
 
 .progress-bar__item:hover {
@@ -2255,8 +2257,18 @@
   border: 0.75px solid #bbbbcc;
 }
 
+.progress-bar__item--light:hover {
+  -webkit-box-shadow: 0 0 15px steelblue;
+  box-shadow: 0 0 15px steelblue;
+}
+
 .progress-bar__item--dark {
   border: 0.75px solid #fff;
+}
+
+.progress-bar__item--dark:hover {
+  -webkit-box-shadow: 0 0 15px orange;
+  box-shadow: 0 0 15px orange;
 }
 
 .progress-bar__title {
