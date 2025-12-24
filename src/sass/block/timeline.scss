@@ -238,20 +238,19 @@
   &__photo {
     overflow: hidden;
     transition: all 0.3s ease; /* плавный переход */
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* легкая тень по умолчанию */
-    border: 2px solid rgba(0, 0, 0, 0.05); /* очень тонкая обводка */
+    box-shadow: 0 0 0 variables.$black; /* легкая тень по умолчанию */
     margin-bottom: 30px;
     border-radius: 12px;
     transform: scale(1.03);
+    transition: transform 0.3s ease-in, box-shadow 0.3s ease-in;
     cursor: pointer;
     &--dark:hover {
-      border: 2px solid variables.$select-color-dark;
+      box-shadow: 0 0 15px variables.$select-color-dark;
     }
     &--light:hover {
-      border: 2px solid variables.$select-color-light;
+      box-shadow: 0 0 15px variables.$select-color-light;
     }
     &:hover {
-      filter: brightness(0.95);
 
       transform: scale(1.05);
       // box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
