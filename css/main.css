@@ -2191,7 +2191,6 @@
   -o-transition: transform 0.3s ease-in, box-shadow 0.3s ease-in;
   transition: transform 0.3s ease-in, box-shadow 0.3s ease-in;
   transition: transform 0.3s ease-in, box-shadow 0.3s ease-in, -webkit-transform 0.3s ease-in, -webkit-box-shadow 0.3s ease-in;
-  cursor: pointer;
 }
 
 .timeline__photo--dark:hover {
