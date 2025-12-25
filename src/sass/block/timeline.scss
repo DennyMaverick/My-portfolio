@@ -243,7 +243,6 @@
     border-radius: 12px;
     transform: scale(1.03);
     transition: transform 0.3s ease-in, box-shadow 0.3s ease-in;
-    cursor: pointer;
     &--dark:hover {
       box-shadow: 0 0 15px variables.$select-color-dark;
     }
