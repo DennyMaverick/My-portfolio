@@ -572,6 +572,12 @@ const themes = {
       dark: "popup-theme--dark",
     },
   },
+  ".timeline__img": {
+    theme: {
+      light: "timeline__img--light",
+      dark: "timeline__img--dark",
+    },
+  },
 }
 
 function themeSwitch(theme) {
