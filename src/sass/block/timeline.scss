@@ -230,12 +230,12 @@
     transition: box-shadow 0.3s ease-in;
     &--light {
       &:hover {
-        box-shadow: 0 0 15px #2b2b2b;
+        box-shadow: 0 0 15px variables.$select-color-light;
       }
     }
     &--dark {
       &:hover {
-        box-shadow: 0 0 15px #fff;
+        box-shadow: 0 0 15px variables.$select-color-dark;
       }
     }
   }

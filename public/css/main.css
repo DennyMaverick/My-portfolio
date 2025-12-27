@@ -2164,13 +2164,13 @@
 }
 
 .timeline__img--light:hover {
-  -webkit-box-shadow: 0 0 15px #2b2b2b;
-  box-shadow: 0 0 15px #2b2b2b;
+  -webkit-box-shadow: 0 0 15px steelblue;
+  box-shadow: 0 0 15px steelblue;
 }
 
 .timeline__img--dark:hover {
-  -webkit-box-shadow: 0 0 15px #fff;
-  box-shadow: 0 0 15px #fff;
+  -webkit-box-shadow: 0 0 15px #edb040;
+  box-shadow: 0 0 15px #edb040;
 }
 
 .timeline--message-to-contact-me {
