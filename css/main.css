@@ -1839,11 +1839,11 @@
 }
 
 .modal__title--light {
-  color: #2B2B2D;
+  color: steelblue;
 }
 
 .modal__title--dark {
-  color: #fff;
+  color: #edb040;
 }
 
 .modal__title--form,
@@ -2042,11 +2042,11 @@
 }
 
 .timeline__title--light {
-  color: #2B2B2D;
+  color: steelblue;
 }
 
 .timeline__title--dark {
-  color: #fff;
+  color: #edb040;
 }
 
 .timeline__item {
@@ -2085,11 +2085,11 @@
 }
 
 .timeline__subtitle--light {
-  color: #2B2B2D;
+  color: steelblue;
 }
 
 .timeline__subtitle--dark {
-  color: #fff;
+  color: #edb040;
 }
 
 .timeline__position {
