@@ -220,10 +220,10 @@
     font-weight: 700;
     margin-bottom: 25px;
     &--light {
-      color: variables.$black;
+      color: variables.$select-color-light;
     }
     &--dark {
-      color: variables.$white;
+      color: variables.$select-color-dark;
     }
     &--left {
       max-width: 265px;
