@@ -578,6 +578,12 @@ const themes = {
       dark: "timeline__img--dark",
     },
   },
+  ".header__inner": {
+    theme: {
+      light: "header__inner--light",
+      dark: "header__inner--dark",
+    },
+  },
 }
 
 function themeSwitch(theme) {
