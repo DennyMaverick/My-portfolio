@@ -3434,6 +3434,14 @@
 
 .header__inner nav ul li a.active {
   font-weight: 700;
+}
+
+.header__inner--light nav ul li a.active {
+  color: steelblue;
+  border-bottom: 2px solid steelblue;
+}
+
+.header__inner--dark nav ul li a.active {
   color: #edb040;
   border-bottom: 2px solid #edb040;
 }
