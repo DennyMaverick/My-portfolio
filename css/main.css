@@ -2446,11 +2446,11 @@
 }
 
 .modal-work__title--light {
-  color: #2B2B2D;
+  color: steelblue;
 }
 
 .modal-work__title--dark {
-  color: #fff;
+  color: #edb040;
 }
 
 .modal-work__info {
