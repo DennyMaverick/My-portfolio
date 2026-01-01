@@ -1,6 +1,6 @@
-@use '../_config/variables';
-@use '../_mixins/media';
-@use '../_mixins/font-face';
+@use "../_config/variables";
+@use "../_mixins/media";
+@use "../_mixins/font-face";
 
 .modal-work {
   &__preview {
@@ -39,10 +39,10 @@
     text-transform: uppercase;
     transition: color 0.3s ease-in;
     &--light {
-      color: variables.$black;
+      color: variables.$select-color-light;
     }
     &--dark {
-      color: variables.$white;
+      color: variables.$select-color-dark;
     }
     @include media.bp-desk(mobile) {
       font-size: 1.32rem;
