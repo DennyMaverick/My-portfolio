@@ -2487,11 +2487,11 @@
 }
 
 .modal-work__client-title--light {
-  color: #2B2B2D;
+  color: steelblue;
 }
 
 .modal-work__client-title--dark {
-  color: #fff;
+  color: #edb040;
 }
 
 .modal-work__client-company {

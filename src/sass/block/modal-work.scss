@@ -76,10 +76,10 @@
     font-weight: 700;
     transition: color 0.3s ease-in;
     &--light {
-      color: variables.$black;
+      color: variables.$select-color-light;
     }
     &--dark {
-      color: variables.$white;
+      color: variables.$select-color-dark;
     }
   }
   &__client-company {
