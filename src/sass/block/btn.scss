@@ -21,25 +21,27 @@
   border-radius: 28.62px;
   padding: 15.9px 27.03px;
   text-align: center;
-  transition: background-color 0.2s linear, border-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear;
+  transition: background-color 0.2s linear, border-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear, box-shadow 0.2s linear;
   &--dark {
     color: variables.$white;
     border: 2px solid variables.$white;
+    box-shadow: 0 0 10px variables.$select-color-dark;
     &:hover {
       background-color: variables.$white;
       color: variables.$black;
-      box-shadow: 2px 2px 10px rgba(43,43,43,0.24);
+      box-shadow: 0 0 15px variables.$select-color-dark;
       border-color: variables.$white;
     }
   }
   &--light {
     color: variables.$black;
     border: 2px solid variables.$grey;
+    box-shadow: 0 0 10px variables.$select-color-light;
     &:hover {
       background-color: variables.$black;
       color: variables.$white;
       // transparentize .76 - opacity 24%
-      box-shadow: 2px 2px 10px rgba(43,43,43,0.24);
+      box-shadow: 0 0 15px variables.$select-color-light;
       border-color: variables.$black;
     }
   }
