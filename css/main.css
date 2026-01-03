@@ -712,36 +712,40 @@
   border-radius: 28.62px;
   padding: 15.9px 27.03px;
   text-align: center;
-  -webkit-transition: background-color 0.2s linear, border-color 0.2s linear, color 0.2s linear, -webkit-box-shadow 0.2s linear;
-  transition: background-color 0.2s linear, border-color 0.2s linear, color 0.2s linear, -webkit-box-shadow 0.2s linear;
-  -o-transition: background-color 0.2s linear, border-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear;
-  transition: background-color 0.2s linear, border-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear;
-  transition: background-color 0.2s linear, border-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear, -webkit-box-shadow 0.2s linear;
+  -webkit-transition: background-color 0.2s linear, border-color 0.2s linear, color 0.2s linear, -webkit-box-shadow 0.2s linear, -webkit-box-shadow 0.2s linear;
+  transition: background-color 0.2s linear, border-color 0.2s linear, color 0.2s linear, -webkit-box-shadow 0.2s linear, -webkit-box-shadow 0.2s linear;
+  -o-transition: background-color 0.2s linear, border-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear, box-shadow 0.2s linear;
+  transition: background-color 0.2s linear, border-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear, box-shadow 0.2s linear;
+  transition: background-color 0.2s linear, border-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear, box-shadow 0.2s linear, -webkit-box-shadow 0.2s linear, -webkit-box-shadow 0.2s linear;
 }
 
 .btn--dark {
   color: #fff;
   border: 2px solid #fff;
+  -webkit-box-shadow: 0 0 10px #edb040;
+  box-shadow: 0 0 10px #edb040;
 }
 
 .btn--dark:hover {
   background: #fff;
   color: #2B2B2D;
-  -webkit-box-shadow: 2px 2px 10px rgba(43, 43, 43, 0.24);
-  box-shadow: 2px 2px 10px rgba(43, 43, 43, 0.24);
+  -webkit-box-shadow: 0 0 15px #edb040;
+  box-shadow: 0 0 15px #edb040;
   border-color: #fff;
 }
 
 .btn--light {
   color: #2B2B2D;
   border: 2px solid #6a6969;
+  -webkit-box-shadow: 0 0 10px steelblue;
+  box-shadow: 0 0 10px steelblue;
 }
 
 .btn--light:hover {
   background: #2B2B2D;
   color: #fff;
-  -webkit-box-shadow: 2px 2px 10px rgba(43, 43, 43, 0.24);
-  box-shadow: 2px 2px 10px rgba(43, 43, 43, 0.24);
+  -webkit-box-shadow: 0 0 15px steelblue;
+  box-shadow: 0 0 15px steelblue;
   border-color: #2B2B2D;
 }
 
