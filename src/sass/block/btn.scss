@@ -27,10 +27,10 @@
     border: 2px solid variables.$white;
     box-shadow: 0 0 10px variables.$select-color-dark;
     &:hover {
-      background-color: variables.$white;
+      background-color: variables.$select-color-dark;
       color: variables.$black;
       box-shadow: 0 0 15px variables.$select-color-dark;
-      border-color: variables.$white;
+      border-color: variables.$select-color-dark;
     }
   }
   &--light {
@@ -38,11 +38,11 @@
     border: 2px solid variables.$grey;
     box-shadow: 0 0 10px variables.$select-color-light;
     &:hover {
-      background-color: variables.$black;
+      background-color: variables.$select-color-light;
       color: variables.$white;
       // transparentize .76 - opacity 24%
       box-shadow: 0 0 15px variables.$select-color-light;
-      border-color: variables.$black;
+      border-color: variables.$select-color-light;
     }
   }
   &:focus {
