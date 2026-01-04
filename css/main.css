@@ -727,11 +727,11 @@
 }
 
 .btn--dark:hover {
-  background: #fff;
+  background: #edb040;
   color: #2B2B2D;
   -webkit-box-shadow: 0 0 15px #edb040;
   box-shadow: 0 0 15px #edb040;
-  border-color: #fff;
+  border-color: #edb040;
 }
 
 .btn--light {
@@ -742,11 +742,11 @@
 }
 
 .btn--light:hover {
-  background: #2B2B2D;
+  background: steelblue;
   color: #fff;
   -webkit-box-shadow: 0 0 15px steelblue;
   box-shadow: 0 0 15px steelblue;
-  border-color: #2B2B2D;
+  border-color: steelblue;
 }
 
 .btn:focus {
