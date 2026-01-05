@@ -584,6 +584,12 @@ const themes = {
       dark: "header__inner--dark",
     },
   },
+  body: {
+    theme: {
+      light: "body--light",
+      dark: "body--dark",
+    },
+  },
 }
 
 function themeSwitch(theme) {

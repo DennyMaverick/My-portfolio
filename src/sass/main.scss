@@ -22,43 +22,41 @@
 
 // Подключение блоков
 @use "block/header";
-@use 'block/mobile-modal';
-@use 'block/mobile-nav.scss';
-@use 'block/lang-tool';
-@use 'block/font-change';
-@use 'block/nav';
-@use 'block/theme';
-@use 'block/burger-btn';
-@use 'block/btn';
-@use 'block/intro';
-@use 'block/social';
-@use 'block/works';
-@use 'block/work';
-@use 'block/portfolio';
-@use 'block/about';
-@use 'block/modal-list';
-@use 'block/modal';
-@use 'block/timeline';
-@use 'block/progress-bar';
-@use 'block/contact';
-@use 'block/sertificate-modal';
-@use 'block/modal-work';
-@use 'block/slider';
-@use 'block/slick';
-@use 'block/preloader-page';
-@use 'block/footer';
-@use 'block/footer-copyright';
-@use 'block/close-modal-mobile';
-@use 'block/show-more';
-@use 'block/toTop';
-@use 'block/lightActiveNavElem';
-@use 'block/tech-box';
-@use 'block/tech-box-list';
-@use 'block/technologies-resume';
-@use 'block/technologies-board';
-@use 'block/popup-theme';
-
-
+@use "block/mobile-modal";
+@use "block/mobile-nav.scss";
+@use "block/lang-tool";
+@use "block/font-change";
+@use "block/nav";
+@use "block/theme";
+@use "block/burger-btn";
+@use "block/btn";
+@use "block/intro";
+@use "block/social";
+@use "block/works";
+@use "block/work";
+@use "block/portfolio";
+@use "block/about";
+@use "block/modal-list";
+@use "block/modal";
+@use "block/timeline";
+@use "block/progress-bar";
+@use "block/contact";
+@use "block/sertificate-modal";
+@use "block/modal-work";
+@use "block/slider";
+@use "block/slick";
+@use "block/preloader-page";
+@use "block/footer";
+@use "block/footer-copyright";
+@use "block/close-modal-mobile";
+@use "block/show-more";
+@use "block/toTop";
+@use "block/lightActiveNavElem";
+@use "block/tech-box";
+@use "block/tech-box-list";
+@use "block/technologies-resume";
+@use "block/technologies-board";
+@use "block/popup-theme";
 
 // Helpers
 @use "helpers/helpers";
@@ -109,10 +107,16 @@ body {
   width: 100vw;
 }
 
+.body {
+  &--light::selection {
+    background-color: variables.$select-color-light;
+    color: variables.$white;
+  }
 
-*::selection {
-  background-color: variables.$select-color-dark;
-  color: variables.$black;
+  &--dark::selection {
+    background-color: variables.$select-color-dark;
+    color: variables.$black;
+  }
 }
 
 // Сброс списка, ссылок и кнопки
@@ -130,7 +134,7 @@ button {
 
 // Визуальное скрытие элементов
 .vhidden {
-  transition: all .3s ease-in;
+  transition: all 0.3s ease-in;
   position: absolute;
   width: 1px;
   height: 1px;
@@ -157,5 +161,3 @@ img {
 .container {
   @include container.container;
 }
-
-
