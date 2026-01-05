@@ -3730,12 +3730,22 @@ body {
   width: 100vw;
 }
 
-*::-moz-selection {
+.body--light::-moz-selection {
+  background: steelblue;
+  color: #fff;
+}
+
+.body--light::selection {
+  background: steelblue;
+  color: #fff;
+}
+
+.body--dark::-moz-selection {
   background: #edb040;
   color: #2B2B2D;
 }
 
-*::selection {
+.body--dark::selection {
   background: #edb040;
   color: #2B2B2D;
 }
