@@ -712,11 +712,11 @@
   border-radius: 28.62px;
   padding: 15.9px 27.03px;
   text-align: center;
-  -webkit-transition: background-color 0.2s linear, border-color 0.2s linear, color 0.2s linear, -webkit-box-shadow 0.2s linear, -webkit-box-shadow 0.2s linear;
-  transition: background-color 0.2s linear, border-color 0.2s linear, color 0.2s linear, -webkit-box-shadow 0.2s linear, -webkit-box-shadow 0.2s linear;
-  -o-transition: background-color 0.2s linear, border-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear, box-shadow 0.2s linear;
-  transition: background-color 0.2s linear, border-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear, box-shadow 0.2s linear;
-  transition: background-color 0.2s linear, border-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear, box-shadow 0.2s linear, -webkit-box-shadow 0.2s linear, -webkit-box-shadow 0.2s linear;
+  -webkit-transition: background-color 0.2s linear, border-color 0.2s linear, color 0.2s linear, -webkit-box-shadow 0.2s linear;
+  transition: background-color 0.2s linear, border-color 0.2s linear, color 0.2s linear, -webkit-box-shadow 0.2s linear;
+  -o-transition: background-color 0.2s linear, border-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear;
+  transition: background-color 0.2s linear, border-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear;
+  transition: background-color 0.2s linear, border-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear, -webkit-box-shadow 0.2s linear;
 }
 
 .btn--dark {
@@ -3124,21 +3124,37 @@
   border: 1px solid #8d8d8e;
   padding: 7.5px 21px;
   text-decoration: none;
-  -webkit-transition: background-color 0.4s ease-in, color 0.4s ease-in, border-color 0.4s ease-in;
-  -o-transition: background-color 0.4s ease-in, color 0.4s ease-in, border-color 0.4s ease-in;
-  transition: background-color 0.4s ease-in, color 0.4s ease-in, border-color 0.4s ease-in;
+  -webkit-transition: background-color 0.4s ease-in, color 0.4s ease-in, border-color 0.4s ease-in, -webkit-box-shadow 0.2s linear;
+  transition: background-color 0.4s ease-in, color 0.4s ease-in, border-color 0.4s ease-in, -webkit-box-shadow 0.2s linear;
+  -o-transition: background-color 0.4s ease-in, color 0.4s ease-in, border-color 0.4s ease-in, box-shadow 0.2s linear;
+  transition: background-color 0.4s ease-in, color 0.4s ease-in, border-color 0.4s ease-in, box-shadow 0.2s linear;
+  transition: background-color 0.4s ease-in, color 0.4s ease-in, border-color 0.4s ease-in, box-shadow 0.2s linear, -webkit-box-shadow 0.2s linear;
+}
+
+.footer__nav-btn--dark {
+  -webkit-box-shadow: 0 0 10px #edb040;
+  box-shadow: 0 0 10px #edb040;
 }
 
 .footer__nav-btn--dark:hover {
   background: #2B2B2D;
   color: #fff;
   border-color: #2B2B2D;
+  -webkit-box-shadow: 0 0 15px steelblue;
+  box-shadow: 0 0 15px steelblue;
+}
+
+.footer__nav-btn--light {
+  -webkit-box-shadow: 0 0 10px steelblue;
+  box-shadow: 0 0 10px steelblue;
 }
 
 .footer__nav-btn--light:hover {
   background: #bbbbcc;
   color: #2B2B2D;
   border-color: #bbbbcc;
+  -webkit-box-shadow: 0 0 15px #edb040;
+  box-shadow: 0 0 15px #edb040;
 }
 
 .footer__nav-btn + .footer__nav-btn {
