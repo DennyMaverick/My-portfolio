@@ -21,7 +21,7 @@
   border-radius: 28.62px;
   padding: 15.9px 27.03px;
   text-align: center;
-  transition: background-color 0.2s linear, border-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear, box-shadow 0.2s linear;
+  transition: background-color 0.2s linear, border-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear;
   &--dark {
     color: variables.$white;
     border: 2px solid variables.$white;
