@@ -32,15 +32,15 @@
   }
   &__title {
     font-size: 0.94rem;
-    font-weight: 300;
+    font-weight: 500;
     max-width: 125.1px;
     hyphens: manual;
     transition: color .3s ease-in;
     &--light {
-      color: variables.$black;
+      color: variables.$select-color-light;
     }
     &--dark {
-      color: variables.$white;
+      color: variables.$select-color-dark;
     }
     @include media.media-down(420px) {
       hyphens: none;

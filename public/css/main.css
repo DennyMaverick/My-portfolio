@@ -2284,7 +2284,7 @@
 
 .progress-bar__title {
   font-size: 0.94rem;
-  font-weight: 300;
+  font-weight: 500;
   max-width: 125.1px;
   -ms-hyphens: manual;
   hyphens: manual;
@@ -2294,11 +2294,11 @@
 }
 
 .progress-bar__title--light {
-  color: #2B2B2D;
+  color: steelblue;
 }
 
 .progress-bar__title--dark {
-  color: #fff;
+  color: #edb040;
 }
 
 .progress-bar__right {
