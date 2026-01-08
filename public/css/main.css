@@ -2192,30 +2192,6 @@
   /* легкая тень по умолчанию */
   margin-bottom: 30px;
   border-radius: 12px;
-  -webkit-transform: scale(1.03);
-  -ms-transform: scale(1.03);
-  transform: scale(1.03);
-  -webkit-transition: -webkit-transform 0.3s ease-in, -webkit-box-shadow 0.3s ease-in;
-  transition: -webkit-transform 0.3s ease-in, -webkit-box-shadow 0.3s ease-in;
-  -o-transition: transform 0.3s ease-in, box-shadow 0.3s ease-in;
-  transition: transform 0.3s ease-in, box-shadow 0.3s ease-in;
-  transition: transform 0.3s ease-in, box-shadow 0.3s ease-in, -webkit-transform 0.3s ease-in, -webkit-box-shadow 0.3s ease-in;
-}
-
-.timeline__photo--dark:hover {
-  -webkit-box-shadow: 0 0 15px #edb040;
-  box-shadow: 0 0 15px #edb040;
-}
-
-.timeline__photo--light:hover {
-  -webkit-box-shadow: 0 0 15px steelblue;
-  box-shadow: 0 0 15px steelblue;
-}
-
-.timeline__photo:hover {
-  -webkit-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  transform: scale(1.05);
 }
 
 .timeline__link {

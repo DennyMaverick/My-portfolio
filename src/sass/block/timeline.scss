@@ -248,19 +248,6 @@
     box-shadow: 0 0 0 variables.$black; /* легкая тень по умолчанию */
     margin-bottom: 30px;
     border-radius: 12px;
-    transform: scale(1.03);
-    transition: transform 0.3s ease-in, box-shadow 0.3s ease-in;
-    &--dark:hover {
-      box-shadow: 0 0 15px variables.$select-color-dark;
-    }
-    &--light:hover {
-      box-shadow: 0 0 15px variables.$select-color-light;
-    }
-    &:hover {
-      transform: scale(1.05);
-      // box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-      // border: 2px solid rgba(0, 0, 0, 0.1);
-    }
   }
 
   &__link {
