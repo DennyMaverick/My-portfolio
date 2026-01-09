@@ -98,10 +98,10 @@
     font-weight: 700;
     transition: color .3s ease-in;
     &--light {
-      color: variables.$select-color-light;
+      color: variables.$black;
     }
     &--dark {
-      color: variables.$select-color-dark;
+      color: variables.$white;
     }
     &--form,
     &--resume {
