@@ -1843,11 +1843,11 @@
 }
 
 .modal__title--light {
-  color: steelblue;
+  color: #2B2B2D;
 }
 
 .modal__title--dark {
-  color: #edb040;
+  color: #fff;
 }
 
 .modal__title--form,
