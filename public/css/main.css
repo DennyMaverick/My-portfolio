@@ -722,8 +722,8 @@
 .btn--dark {
   color: #fff;
   border: 2px solid #fff;
-  -webkit-box-shadow: 0 0 10px #edb040;
-  box-shadow: 0 0 10px #edb040;
+  -webkit-box-shadow: 0 0 0px #edb040;
+  box-shadow: 0 0 0px #edb040;
 }
 
 .btn--dark:hover {
@@ -737,8 +737,8 @@
 .btn--light {
   color: #2B2B2D;
   border: 2px solid #6a6969;
-  -webkit-box-shadow: 0 0 10px steelblue;
-  box-shadow: 0 0 10px steelblue;
+  -webkit-box-shadow: 0 0 0px steelblue;
+  box-shadow: 0 0 0px steelblue;
 }
 
 .btn--light:hover {
@@ -3108,8 +3108,8 @@
 }
 
 .footer__nav-btn--dark {
-  -webkit-box-shadow: 0 0 10px #edb040;
-  box-shadow: 0 0 10px #edb040;
+  -webkit-box-shadow: 0 0 0px steelblue;
+  box-shadow: 0 0 0px steelblue;
 }
 
 .footer__nav-btn--dark:hover {
@@ -3121,8 +3121,8 @@
 }
 
 .footer__nav-btn--light {
-  -webkit-box-shadow: 0 0 10px steelblue;
-  box-shadow: 0 0 10px steelblue;
+  -webkit-box-shadow: 0 0 0px #edb040;
+  box-shadow: 0 0 0px #edb040;
 }
 
 .footer__nav-btn--light:hover {

@@ -25,7 +25,7 @@
   &--dark {
     color: variables.$white;
     border: 2px solid variables.$white;
-    box-shadow: 0 0 10px variables.$select-color-dark;
+    box-shadow: 0 0 0px variables.$select-color-dark;
     &:hover {
       background-color: variables.$select-color-dark;
       color: variables.$black;
@@ -36,7 +36,7 @@
   &--light {
     color: variables.$black;
     border: 2px solid variables.$grey;
-    box-shadow: 0 0 10px variables.$select-color-light;
+    box-shadow: 0 0 0px variables.$select-color-light;
     &:hover {
       background-color: variables.$select-color-light;
       color: variables.$white;
