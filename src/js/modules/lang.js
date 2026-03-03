@@ -71,8 +71,8 @@ const langs = {
     en: "Frontend Developer,",
   },
   "web-designer": {
-    ru: "UX / UI Дизайнер",
-    en: "UX / UI Designer",
+    ru: "Графический дизайнер,",
+    en: "Graphic Designer,",
   },
   "visit-cards-subtitle": {
     ru: "Визитные карточки для компании",
