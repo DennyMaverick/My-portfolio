@@ -168,7 +168,7 @@ const langs = {
     en: "I am a Frontend Developer and Graphic Designer. I create modern, user-friendly, and thoughtfully designed websites, transforming ideas into clear and effective digital solutions. I specialize in developing modern landing pages and provide turnkey business card design — from concept and design to the final printed product.",
   },
   "about-part-two": {
-    ru: "Использую <span class='font-weight-bold'>HTML</span>, <span class='font-weight-bold'>SCSS</span>, <span class='font-weight-bold'>JavaScript</span> и методологию <span class='font-weight-bold'> БЭМ</span>, чтобы создавать чистый и поддерживаемый код. В работе применяю <span class='font-weight-bold'> Gulp</span> для автоматизации, а также <span class='font-weight-bold'> Figma</span>, <span class='font-weight-bold'>Addobe Illustrator</span> и <span class='font-weight-bold' > Photoshop</span> проработки интерфейсов и визуальной части проекта.",
+    ru: "Использую <span class='font-weight-bold'>HTML</span>, <span class='font-weight-bold'>SCSS</span>, <span class='font-weight-bold'>JavaScript</span> и методологию <span class='font-weight-bold'> БЭМ</span>, чтобы создавать чистый и поддерживаемый код. В работе применяю <span class='font-weight-bold'> Gulp</span> для автоматизации, а также <span class='font-weight-bold'> Figma</span>, <span class='font-weight-bold'>Addobe Illustrator</span> и <span class='font-weight-bold' > Photoshop</span> для проработки интерфейсов и визуальной части проекта.",
     en: "I use <span class='font-weight-bold'>HTML</span>, <span class='font-weight-bold'>SCSS</span>, <span class='font-weight-bold'>JavaScript</span>, and the <span class='font-weight-bold'>BEM</span> methodology to build clean, well-structured, and maintainable code. I use <span class='font-weight-bold'>Gulp</span> for automation, as well as <span class='font-weight-bold'>Figma</span>, <span class='font-weight-bold'>Addobe Illustrator</span> and <span class='font-weight-bold'>Photoshop</span> to design and refine user interfaces and visual components.",
   },
   "about-part-three": {
@@ -180,8 +180,8 @@ const langs = {
     en: "For me, it's important that a project is not only technically reliable but also produces a strong visual impression. Therefore, I carefully work on details — from semantics and neat layout to well-thought-out animation, convenient navigation, and a cohesive visual style.",
   },
   "about-part-five": {
-    ru: "Готов обсудить ваш проект. Связаться со мной можно через форму ниже или в",
-    en: "I'm ready to discuss your project. You can contact me using the form below or in",
+    ru: "Готов обсудить ваш проект. Связаться со мной можно через форму ниже или в ",
+    en: "I'm ready to discuss your project. You can contact me using the form below or in ",
   },
   "tool-visual-studio-code": {
     ru: "Visual Studio Code, редактор кода с приятным интерфейсом, позволяющий быстро создавать сайты",
