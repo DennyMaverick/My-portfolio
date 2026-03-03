@@ -164,20 +164,24 @@ const langs = {
     en: "Who Am I",
   },
   "about-begin": {
-    ru: "Я — Frontend-разработчик, который любит превращать идеи в удобные и стильные сайты. Специализируюсь на разработке лендингов и одностраничных приложений, сейчас изучаю <span class='font-weight-bold'>React</span> и развиваю навыки в создании <span class='font-weight-bold'>SPA</span>.",
-    en: "I'm a Frontend Developer who loves turning ideas into user-friendly and stylish websites. I specialize in landing page and single-page app development, and I'm currently learning <span class='font-weight-bold'>React</span> and developing my <span class='font-weight-bold'>SPA</span> skills.",
+    ru: "Я — Frontend-разработчик и графический дизайнер. Создаю удобные, стильные и продуманные сайты, превращая идеи в понятные и эффективные цифровые решения. Специализируюсь на разработке современных лендингов, а также создаю визитные карточки под ключ — от разработки дизайна до готового печатного продукта.",
+    en: "I am a Frontend Developer and Graphic Designer. I create modern, user-friendly, and thoughtfully designed websites, transforming ideas into clear and effective digital solutions. I specialize in developing modern landing pages and provide turnkey business card design — from concept and design to the final printed product.",
   },
   "about-part-two": {
-    ru: "Использую <span class='font-weight-bold'>HTML</span>, <span class='font-weight-bold'>SCSS</span>, <span class='font-weight-bold'>JavaScript</span> и методологию <span class='font-weight-bold'>БЭМ</span>, чтобы создавать чистый и поддерживаемый код. В работе применяю <span class='font-weight-bold'>Gulp</span> для автоматизации, а также <span class='font-weight-bold'>Figma</span>, <span class='font-weight-bold'>Addobe Illustrator</span> и <span class='font-weight-bold'>Photoshop</span> для отработки дизайна. В работе для меня важно, чтобы сайт был не только технически надежным, но и производил впечатление. Поэтому уделяю внимание деталям: от аккуратной верстки и семантики до продуманной анимации и удобной навигации.",
-    en: "I use <span class='font-weight-bold'>HTML</span>, <span class='font-weight-bold'>SCSS</span>, <span class='font-weight-bold'>JavaScript</span>, and the <span class='font-weight-bold'>BEM</span> methodology to create clean and maintainable code. I use <span class='font-weight-bold'>Gulp</span> for automation, as well as <span class='font-weight-bold'>Figma</span>, <span class='font-weight-bold'>Addobe Illustrator</span> and <span class='font-weight-bold'>Photoshop</span> for design refinement. In my work, it's important for a website to be not only technically reliable but also impressive. That's why I pay attention to detail: from neat layout and semantics to well-thought-out animation and user-friendly navigation.",
+    ru: "Использую <span class='font-weight-bold'>HTML</span>, <span class='font-weight-bold'>SCSS</span>, <span class='font-weight-bold'>JavaScript</span> и методологию <span class='font-weight-bold'> БЭМ</span>, чтобы создавать чистый и поддерживаемый код. В работе применяю <span class='font-weight-bold'> Gulp</span> для автоматизации, а также <span class='font-weight-bold'> Figma</span>, <span class='font-weight-bold'>Addobe Illustrator</span> и <span class='font-weight-bold' > Photoshop</span> проработки интерфейсов и визуальной части проекта.",
+    en: "I use <span class='font-weight-bold'>HTML</span>, <span class='font-weight-bold'>SCSS</span>, <span class='font-weight-bold'>JavaScript</span>, and the <span class='font-weight-bold'>BEM</span> methodology to build clean, well-structured, and maintainable code. I use <span class='font-weight-bold'>Gulp</span> for automation, as well as <span class='font-weight-bold'>Figma</span>, <span class='font-weight-bold'>Addobe Illustrator</span> and <span class='font-weight-bold'>Photoshop</span> to design and refine user interfaces and visual components.",
   },
   "about-part-three": {
-    ru: "Для меня важно работать в команде, где ценят качество и рост. Взамен я готов вкладываться в проекты, развивать интерфейсы и помогать создавать продукты, которыми будут гордиться пользователи.",
-    en: "It's important to me to work in a team that values ​​quality and growth. In return, I'm willing to contribute to projects, develop interfaces, and help create products that users will be proud of.",
+    ru: "Как графический дизайнер, уделяю особое внимание композиции, типографике и визуальной иерархии. Разрабатываю дизайн не просто как «картинку», а как инструмент коммуникации, который помогает клиентам выглядеть профессионально и вызывать доверие.",
+    en: "As a Graphic Designer, I pay special attention to composition, typography, and visual hierarchy. I develop design not just as a 'picture', but as a communication tool that helps clients look professional and build trust.",
+  },
+  "about-part-four": {
+    ru: "Для меня важно, чтобы проект был не только технически надёжным, но и производил сильное визуальное впечатление. Поэтому я внимательно прорабатываю детали — от семантики и аккуратной верстки до продуманной анимации, удобной навигации и целостного визуального стиля.",
+    en: "For me, it's important that a project is not only technically reliable but also produces a strong visual impression. Therefore, I carefully work on details — from semantics and neat layout to well-thought-out animation, convenient navigation, and a cohesive visual style.",
   },
   "about-part-five": {
-    ru: "Буду рад новым предложениям и сотрудничеству. Связаться со мной можно через форму ниже или",
-    en: "I'd be happy to hear new ideas and collaborate. You can contact me using the form below or",
+    ru: "Готов обсудить ваш проект. Связаться со мной можно через форму ниже или в",
+    en: "I'm ready to discuss your project. You can contact me using the form below or in",
   },
   "tool-visual-studio-code": {
     ru: "Visual Studio Code, редактор кода с приятным интерфейсом, позволяющий быстро создавать сайты",
@@ -212,7 +216,7 @@ const langs = {
     en: "In-house training",
   },
   "about-social": {
-    ru: "соцсети.",
+    ru: "соцсетях.",
     en: "social networks.",
   },
   "thanks-for-attention": {
@@ -349,6 +353,10 @@ const langs = {
     ru: "Самообразование, проектная практика",
     en: "Self-education, project-based practice",
   },
+  "design-time-title": {
+    ru: "2025 - настоящее время",
+    en: "2025 - nowadays",
+  },
   "freelance-time-title": {
     ru: "2023 - настоящее время",
     en: "2023 - nowadays",
@@ -356,6 +364,18 @@ const langs = {
   "web-developer-position-title": {
     ru: "Frontend-разработчик",
     en: "Frontend Developer",
+  },
+  "design-title": {
+    ru: "Разработка визитных карточек под ключ",
+    en: "Turnkey business card design",
+  },
+  "designer-title": {
+    ru: "Графический дизайнер",
+    en: "Graphic Designer",
+  },
+  "design-desc-first": {
+    ru: "Разрабатываю и визуально прорабатываю дизайн визитных карточек, создавая полностью готовые к использованию физические экземпляры и контролируя их качество, чтобы они выглядели профессионально и стильно. Создаю уникальные и продуманные решения, отражающие индивидуальность бренда и пожелания клиента. Каждый дизайн разрабатываю с учётом эстетики, функциональности и запоминаемости, чтобы карточка выделялась и производила впечатление.",
+    en: "I develop and visually refine business card designs, creating fully ready-to-use physical copies and controlling their quality to ensure they look professional and stylish. I create unique and thoughtful solutions that reflect the individuality of the brand and the client's wishes. Each design is developed with aesthetics, functionality, and memorability in mind, so that the card stands out and makes an impression.",
   },
   "freelance-title": {
     ru: "Фриланс",
@@ -366,8 +386,8 @@ const langs = {
     en: "Frontend Developer / Freelancer",
   },
   "freelancer-desc-first": {
-    ru: "Разрабатываю и дорабатываю сайты и веб-приложения: от лендингов до SPA. Умею создавать адаптивные интерфейсы, настраивать интерактивные элементы и оптимизировать производительность. Работаю с современными технологиями (HTML, CSS, JavaScript, React). Открыт к новым проектам и всегда рад воплощать идеи в современные веб-решения.",
-    en: "I develop and refine websites and web applications, from loan systems to SPAs. I offer customized interfaces, customize interactive elements, and improve performance. I work with modern technologies (HTML, CSS, JavaScript, React). I'm open to new projects and always happy to transform ideas into modern web solutions.",
+    ru: "Разрабатываю и дорабатываю сайты — современные лендинги. Создаю адаптивные интерфейсы, настраиваю интерактивные элементы и оптимизирую производительность для быстрой и стабильной работы. Работаю с современными технологиями: HTML, SCSS и JavaScript. Открыт к новым проектам и готов воплощать идеи в качественные и продуманные веб-решения.",
+    en: "I develop and refine websites — modern landing pages. I create responsive interfaces, configure interactive elements and optimize performance for fast and stable operation. I work with modern technologies: HTML, SCSS and JavaScript. Open to new projects and ready to bring ideas to life in quality and well-thought-out web solutions.",
   },
   "developer-desc-first": {
     ru: "После университета я начал активно осваивать веб-разработку. Первым шагом стал 3-недельный марафон по вёрстке сайтов от HTML Academy, где я сверстал свой первый проект и понял, что хочу двигаться в этой сфере.",
