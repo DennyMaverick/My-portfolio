@@ -173,7 +173,7 @@ const langs = {
   },
   "about-part-three": {
     ru: "Как графический дизайнер, уделяю особое внимание композиции, типографике и визуальной иерархии. Разрабатываю дизайн не просто как «картинку», а как инструмент коммуникации, который помогает клиентам выглядеть профессионально и вызывать доверие.",
-    en: "As a Graphic Designer, I pay special attention to composition, typography, and visual hierarchy. I develop design not just as a 'picture', but as a communication tool that helps clients look professional and build trust.",
+    en: "As a Graphic Designer, I pay special attention to composition, typography, and visual hierarchy. I develop design not just as a «picture», but as a communication tool that helps clients look professional and build trust.",
   },
   "about-part-four": {
     ru: "Для меня важно, чтобы проект был не только технически надёжным, но и производил сильное визуальное впечатление. Поэтому я внимательно прорабатываю детали — от семантики и аккуратной верстки до продуманной анимации, удобной навигации и целостного визуального стиля.",
@@ -1162,7 +1162,7 @@ const langs = {
     ru: "Многоразовая генерация нового набора паролей по нажатию кнопки «Сгенерировать»",
     en: "Reusable generation of a new set of passwords by clicking the 'Generate' button",
   },
-  "password-generator-app-six-item": {
+  "password-generator-app-sixth-item": {
     ru: "Функция сброса параметров для выбора новых настроек длины и специальных символов",
     en: "Parameter reset function for selecting new length and special character settings",
   },
