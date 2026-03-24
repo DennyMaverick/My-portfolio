@@ -1026,9 +1026,17 @@ const langs = {
     ru: "О себе",
     en: "Personal Statement",
   },
-  "personal-statement-text": {
-    ru: "Я — Frontend-разработчик, для которого приоритетом является результат и качество. Создаю веб-приложения и сайты, которые сочетают в себе современный дизайн, удобство для пользователя и техническую надежность. За последние годы накопил опыт в разработке лэндингов и уверен в своих профессиональных навыках в этом направлении. Работаю с актуальными инструментами и технологиями, постоянно развиваюсь и стремлюсь приносить пользу проектам через эффективные цифровые решения.",
-    en: "I am a Frontend developer who prioritizes results and quality. I create web applications and websites that combine modern design, user convenience, and technical reliability. Over the past few years, I have gained experience in developing landing pages and feel confident in my professional skills in this area. I work with up-to-date tools and technologies, continuously improve my expertise, and strive to bring value to projects through effective digital solutions.",
+  "personal-statement-text-one": {
+    ru: "Я — Frontend-разработчик и графический дизайнер, специализирующийся на создании продуманных цифровых решений с акцентом на качество, эстетику и результат. Проектирую и разрабатываю веб-интерфейсы, где каждая деталь работает на пользовательский опыт и бизнес-задачи. Мои проекты сочетают современную визуальную подачу, удобство взаимодействия и техническую стабильность. ",
+    en: "I am a Frontend Developer and Graphic Designer focused on delivering thoughtful digital solutions with a strong emphasis on quality, aesthetics, and results. I design and develop web interfaces where every detail serves both user experience and business goals. My work combines modern visual design, intuitive usability, and technical reliability.",
+  },
+  "personal-statement-text-two": {
+    ru: "Имею уверенный опыт в создании лендингов и комплексных интерфейсов. В работе использую актуальные технологии и подходы, постоянно совершенствую навыки и выстраиваю процессы так, чтобы каждый проект приносил измеримую ценность. ",
+    en: "I have solid experience in building landing pages and comprehensive interfaces. I use up-to-date technologies and approaches, continuously refine my skills, and structure my workflow to ensure that every project delivers measurable value.",
+  },
+  "personal-statement-text-three": {
+    ru: "Дополнительно занимаюсь графическим дизайном и адаптирую цифровые концепции для печатных носителей. Разрабатываю визитные карточки под ключ — от идеи и дизайна до полностью готового печатного продукта. Клиент получает не просто макет, а завершённое решение, готовое к использованию.",
+    en: "In addition, I work with graphic design, translating digital concepts into print. I create business cards on a turnkey basis — from concept and design to a fully finished printed product. The client receives not just a layout, but a complete, ready-to-use solution.",
   },
   "hobbie-title-vk-group": {
     ru: "Блогер, автор сообщества «Ключ к мечте» (VK)",
