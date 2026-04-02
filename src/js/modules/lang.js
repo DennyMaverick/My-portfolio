@@ -1244,7 +1244,7 @@ const langs = {
   },
   "web-desc": {
     ru: "Создаю продуманные интерфейсы — от идеи до реализации ✨",
-    en: "I create thoughtful interfaces—from concept to implementation ✨",
+    en: "I create thoughtful interfaces — from concept to implementation ✨",
   },
 }
 
