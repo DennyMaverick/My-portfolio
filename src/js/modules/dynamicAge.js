@@ -1,8 +1,8 @@
 let age
 // получение hash из строки браузера - #ru или #en
-  let hash = window.location.hash
-  // начало hash массива строки начинается со второго символа - ru или en
-  hash = hash.substring(1)
+let hash = window.location.hash
+// начало hash массива строки начинается со второго символа - ru или en
+hash = hash.substring(1)
 
 const ageContainer = document.querySelector(".age")
 const yearsContainer = document.querySelector(".years")
@@ -28,7 +28,7 @@ if ((hash === "ru" && ageSecondLetter === 0) || ageSecondLetter === 5 || ageSeco
   yearsContainer.textContent = arrEndsOfWord[0]
 } else if (hash === "ru" && ageSecondLetter === 1) {
   yearsContainer.textContent = arrEndsOfWord[1]
-} else if ((hash === "ru" && ageSecondLetter === 2) || ageSecondLetter === 3 || ageSecondLetter === 4) {
+} else if ((hash === "ru" && ageSecondLetter === 2) || (hash === "ru" && ageSecondLetter === 3) || (hash === "ru" && ageSecondLetter === 4)) {
   yearsContainer.textContent = arrEndsOfWord[2]
 } else if (hash === "en") {
   yearsContainer.textContent = ""
