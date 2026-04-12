@@ -94,6 +94,10 @@ const langs = {
     ru: "Время на работу: ~ 20 часов",
     en: "Time for work: ~ 20 h",
   },
+  "price-lists-time": {
+    ru: "Время на работу: ~ 10 часов",
+    en: "Time for work: ~ 10 h",
+  },
   "write-intro": {
     ru: "Написать мне",
     en: "Contact me",
@@ -665,9 +669,45 @@ const langs = {
     ru: "Время на работу: ~ 1 час",
     en: "Time for work: ~ 1 h",
   },
+  "price-lists-subtitle": {
+    ru: "Для парикмахер-стилистов Елены и Веры",
+    en: "For hairstylists Elena and Vera",
+  },
+  "technologies-price-lists-desc": {
+    ru: "Работая над данным проектом, были использованы следующие инструменты и технологии:",
+    en: "The following tools and technologies were used in this project:",
+  },
+  "price-lists-desc-one": {
+    ru: "В рамках данного проекта был разработан дизайн и выполнена печать прайс-листов для двух парикмахерских салонов — «Елена» и «Вера». Основной задачей стало создание эстетически привлекательного и удобного для восприятия макета, отражающего стиль и индивидуальность каждого салона.",
+    en: "In this project, the design and printing of price lists were developed for two hairdressing salons — «Elena» and «Vera». The main task was to create an aesthetically pleasing and easy-to-read layout that reflects the style and individuality of each salon.",
+  },
+  "price-lists-desc-two": {
+    ru: "Я разработал современный и аккуратный дизайн с продуманной типографикой и логичной структурой, что обеспечивает лёгкость навигации по перечню услуг. Особое внимание было уделено выбору материалов: прайс-листы были напечатаны на мелованной глянцевой бумаге, что придало им презентабельный внешний вид, повысило износостойкость и подчеркнуло яркость цветов.",
+    en: "I developed a modern and neat design with thoughtful typography and a logical structure, ensuring ease of navigation through the list of services. Special attention was paid to the choice of materials: the price lists were printed on coated glossy paper, which gave them a presentable appearance, increased durability, and emphasized the brightness of the colors. ",
+  },
+  "price-lists-desc-three": {
+    ru: "Этот проект позволил мне применить навыки графического дизайна и печати, а также создать эффективные маркетинговые материалы для салонов красоты.",
+    en: "This project allowed me to apply graphic design and printing skills, as well as create effective marketing materials for beauty salons.",
+  },
+  "price-lists-result": {
+    ru: "<b>Результат:</b> клиенты салонов получили стильные и практичные прайс-листы, способствующие улучшению имиджа и удобству ознакомления с услугами.",
+    en: "<b>Result:</b> salon clients received stylish and practical price lists that contribute to improving the image and convenience of familiarizing with the services.",
+  },
+  "tech-printer": {
+    ru: "Принтер Epson L3256",
+    en: "Printer Epson L3256",
+  },
+  "price-lists-title": {
+    ru: "Прайс-листы для парикмахерских салонов: Елена и Вера",
+    en: "Price lists for hairdressing salons: Elena and Vera",
+  },
+  "title-work-price-lists": {
+    ru: "Прайс - листы для парикмахерских салонов: Елена и Вера",
+    en: "Price lists for hairdressing salons: Elena and Vera",
+  },
   "archee-desc-one": {
     ru: "<b>Archee</b> — учебный проект, созданный в рамках 5-недельного марафона по вёрстке от CodeQuest. Главная цель участия — практика и отработка современных подходов в web-разработке, а также развитие навыков работы с <b>Gulp</b>, <b>SCSS</b> и методологией <b>БЭМ (BEM-naming)</b>.",
-    en: "Archee is an educational project created as part of a 5-week web coding marathon from CodeQuest. The main goal of participation is to practice and refine modern web development approaches, as well as develop skills in Gulp, SCSS, and the BEM naming methodology.",
+    en: "<b>Archee</b> is an educational project created as part of a 5-week web coding marathon from CodeQuest. The main goal of participation is to practice and refine modern web development approaches, as well as develop skills in <b>Gulp</b>, <b>SCSS</b>, and the <b>BEM naming</b> methodology.",
   },
   "archee-desc-two": {
     ru: "Во время марафона проходили онлайн-встречи, где участники вместе с наставником разбирали блоки кода, обсуждали решения и вносили улучшения. После каждого этапа в проект добавлялись правки, позволяющие сделать вёрстку чище и удобнее для дальнейшей поддержки. Так я получил ценный практический опыт и лучше освоил современные инструменты, применяемые при создании адаптивных сайтов.",

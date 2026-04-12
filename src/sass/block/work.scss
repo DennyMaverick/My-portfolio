@@ -194,6 +194,9 @@
   &--bg-generator-of-passwords:hover::after {
     text-shadow: 0 0 10px rgba(183, 91, 114, 1);
   }
+  &--bg-price-lists::before {
+    background: linear-gradient(to right top, #7b5485, #d18de2);
+  }
   &__content {
     height: 100%;
     display: flex;
