@@ -197,6 +197,9 @@
   &--bg-price-lists::before {
     background: linear-gradient(to right top, #7b5485, #d18de2);
   }
+  &--bg-schedule::before {
+    background: linear-gradient(to right top, #c6d935, #423c43);
+  }
   &__content {
     height: 100%;
     display: flex;

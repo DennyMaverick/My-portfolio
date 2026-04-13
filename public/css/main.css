@@ -1314,6 +1314,12 @@
   background: linear-gradient(to right top, #7b5485, #d18de2);
 }
 
+.work--bg-schedule::before {
+  background: -webkit-gradient(linear, left bottom, right top, from(#c6d935), to(#423c43));
+  background: -o-linear-gradient(left bottom, #c6d935, #423c43);
+  background: linear-gradient(to right top, #c6d935, #423c43);
+}
+
 .work__content {
   height: 100%;
   display: -webkit-box;

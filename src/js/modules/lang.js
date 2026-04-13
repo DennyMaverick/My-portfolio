@@ -693,10 +693,6 @@ const langs = {
     ru: "<b>Результат:</b> клиенты салонов получили стильные и практичные прайс-листы, способствующие улучшению имиджа и удобству ознакомления с услугами.",
     en: "<b>Result:</b> salon clients received stylish and practical price lists that contribute to improving the image and convenience of familiarizing with the services.",
   },
-  "tech-printer": {
-    ru: "Принтер Epson L3256",
-    en: "Printer Epson L3256",
-  },
   "price-lists-title": {
     ru: "Прайс-листы для парикмахерских салонов: Елена и Вера",
     en: "Price lists for hairdressing salons: Elena and Vera",
@@ -704,6 +700,42 @@ const langs = {
   "title-work-price-lists": {
     ru: "Прайс - листы для парикмахерских салонов: Елена и Вера",
     en: "Price lists for hairdressing salons: Elena and Vera",
+  },
+  "schedule-title": {
+    ru: "Расписание уроков для учеников 1-11 классов",
+    en: "Class schedule for students in grades 1-11",
+  },
+  "title-work-schedule": {
+    ru: "Расписание уроков для учеников 1-11 классов",
+    en: "Class schedule for students in grades 1-11",
+  },
+  "schedule-desc-one": {
+    ru: "В рамках данного проекта было разработано и изготовлено расписание уроков для учащихся 1-11 классов. Основной задачей стало создание не только функционального, но и эстетически привлекательного печатного продукта.",
+    en: "This project involved developing and producing a lesson schedule for students in grades 1-11. The primary objective was to create a printed product that was not only functional but also aesthetically pleasing.",
+  },
+  "schedule-desc-two": {
+    ru: "Я разработал уникальный дизайн с использованием художественного арт-рисунка в качестве фонового изображения, который придаёт расписанию индивидуальность и делает его визуально приятным для ежедневного использования. Особое внимание было уделено структуре: таблица расписания продумана таким образом, чтобы обеспечить удобство заполнения и отличную читаемость для учеников разных возрастных групп.",
+    en: "I developed a unique design using an artistic drawing as a background image, which gives the schedule a unique character and makes it visually appealing for daily use. Particular attention was paid to the structure: the schedule table is designed to be easy to fill out and highly readable for students of all ages.",
+  },
+  "schedule-desc-three": {
+    ru: "Для повышения износостойкости и продления срока службы изделие выполнено с ламинированием. Ламинация обеспечивает дополнительную защиту от влаги, механических повреждений и загрязнений, позволяя сохранить аккуратный внешний вид даже при активном ежедневном использовании.",
+    en: "To enhance wear resistance and extend the product's lifespan, the product is laminated. Lamination provides additional protection against moisture, mechanical damage, and dirt, maintaining a neat appearance even with intensive daily use.",
+  },
+  "schedule-result": {
+    ru: "В результате был создан качественный печатный продукт, сочетающий в себе практичность, современный дизайн и долговечность, подходящий как для школьников, так и для образовательных учереждений.",
+    en: "The result is a high-quality printed product that combines practicality, modern design, and durability, suitable for both schoolchildren and educational institutions.",
+  },
+  "technologies-schedule-desc": {
+    ru: "Работая над данным проектом, были использованы следующие инструменты и технологии:",
+    en: "The following tools and technologies were used in working on this project:",
+  },
+  "schedule-time": {
+    ru: "Время на работу ~ 7 ч",
+    en: "Time to work ~ 7 hours",
+  },
+  "tech-lamitator": {
+    ru: "Ламинатор A3 Brauberg",
+    en: "Laminator A3 Brauberg",
   },
   "archee-desc-one": {
     ru: "<b>Archee</b> — учебный проект, созданный в рамках 5-недельного марафона по вёрстке от CodeQuest. Главная цель участия — практика и отработка современных подходов в web-разработке, а также развитие навыков работы с <b>Gulp</b>, <b>SCSS</b> и методологией <b>БЭМ (BEM-naming)</b>.",
@@ -1346,6 +1378,10 @@ const afterElements = {
 }
 
 const repeatElems = {
+  "tech-printer": {
+    ru: "Принтер Epson L3256",
+    en: "Printer Epson L3256",
+  },
   design: {
     ru: "Дизайн",
     en: "UI / UX & Design",
