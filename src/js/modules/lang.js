@@ -690,8 +690,8 @@ const langs = {
     en: "This project allowed me to apply graphic design and printing skills, as well as create effective marketing materials for beauty salons.",
   },
   "price-lists-result": {
-    ru: "<b>Результат:</b> клиенты салонов получили стильные и практичные прайс-листы, способствующие улучшению имиджа и удобству ознакомления с услугами.",
-    en: "<b>Result:</b> salon clients received stylish and practical price lists that contribute to improving the image and convenience of familiarizing with the services.",
+    ru: "<b>Результат:</b> стилисты парикмахерских салонов получили стильные и практичные прайс-листы, способствующие улучшению имиджа и удобству ознакомления с услугами.",
+    en: "<b>Result:</b> hair salon stylists received stylish and practical price lists that contribute to improving the image and convenience of familiarizing with the services.",
   },
   "price-lists-title": {
     ru: "Прайс-листы для парикмахерских салонов: Елена и Вера",
