@@ -73,9 +73,6 @@
 ## ✍️ Контакты
 
 - 📧 Email: Denis-mamlev@rambler.ru  
-- 🐙 GitHub: [https://github.com/DennyMaverick](https://github.com/DennyMaverick)  
-- 💬 Telegram: [https://t.me/Denny_maverick](https://t.me/Denny_maverick)  
-- 💻 ВКонтакте: [https://vk.com/maverick177](https://vk.com/maverick177)
 
 ---
 
