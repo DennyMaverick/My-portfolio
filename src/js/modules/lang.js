@@ -609,12 +609,12 @@ const langs = {
   },
   // Modal window HIRE ME
   "modal-griding-title": {
-    ru: "Добро пожаловать!",
-    en: "Welcome!",
+    ru: "Связаться со мной:",
+    en: "Contact me:",
   },
   "griding-desc": {
-    ru: "Буду рад вашему сообщению!✨ Пишите в соцсетях или на почту — отвечу как можно скорее:",
-    en: "I'd love to hear from you! ✨ Write to me on social media or by email—I'll respond as soon as possible:",
+    ru: "Буду рад вашему сообщению!✨ Пишите на почту — отвечу как можно скорее:",
+    en: "I'd love to hear from you! ✨ Write to me by email — I'll respond as soon as possible:",
   },
   "modal-hire-me-name": {
     ru: "Ваше имя",
@@ -1079,7 +1079,7 @@ const langs = {
     en: "Please, confirm your consent to the processing of personal data",
   },
   "contact-details-title": {
-    ru: "Контактная информация",
+    ru: "Связь со мной",
     en: "Contact Details",
   },
   "item-fullname": {
