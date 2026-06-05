@@ -854,8 +854,8 @@ const langs = {
     en: "Possibility of converting rubles into dollars, euros and pounds sterling at the current exchange rate",
   },
   "converter-desc-three": {
-    ru: "Переключатель тем с тремя цветовыми схемами: светлой, тёмной и «лунной»",
-    en: "Theme switcher with three color schemes: light, dark, and «moon»",
+    ru: "Переключатель тем с 2 цветовыми схемами: светлой и тёмной",
+    en: "Theme switcher with two color schemes: light and dark",
   },
   "converter-desc-four": {
     ru: "Переключатель языков (русский / английский)",
@@ -1195,8 +1195,8 @@ const langs = {
     en: "After an intensive course from the online school, Web-cademy finalized the Currency Converter application, completely redesigning the design and expanding the functionality:",
   },
   "converter-app-first-item": {
-    ru: "Смена темы приложения – три цветовые схемы: светлая, тёмная и эксклюзивная «лунная»",
-    en: "Changing the theme of the app – three color schemes: light, dark and exclusive «moon» ",
+    ru: "Смена темы приложения – 2 цветовые схемы: светлая и тёмная",
+    en: "Changing the theme of the app – two color schemes: light and dark",
   },
   "converter-app-second-item": {
     ru: "Смена языка интерфейса – русский и английский",
