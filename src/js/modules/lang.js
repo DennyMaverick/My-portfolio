@@ -63,8 +63,8 @@ const langs = {
     en: "Hello, I'm",
   },
   "my-name": {
-    ru: "Денис",
-    en: "Denis",
+    ru: "Denny Maverick",
+    en: "Denny Maverick",
   },
   "web-developer": {
     ru: "Frontend-разработчик,",
@@ -168,7 +168,7 @@ const langs = {
     en: "Who Am I",
   },
   "about-begin": {
-    ru: "Я — Frontend-разработчик и графический дизайнер. Создаю удобные, стильные и продуманные сайты, превращая идеи в понятные и эффективные цифровые решения. Специализируюсь на разработке современных лендингов, а также создаю визитные карточки под ключ — от разработки дизайна до готового печатного продукта.",
+    ru: "Я — Frontend-разработчик и графический дизайнер. Создаю удобные и стильные сайты, превращая идеи в понятные и эффективные цифровые решения. Специализируюсь на разработке современных лендингов, а также создаю визитные карточки под ключ — от разработки дизайна до готового печатного продукта.",
     en: "I am a Frontend Developer and Graphic Designer. I create modern, user-friendly, and thoughtfully designed websites, transforming ideas into clear and effective digital solutions. I specialize in developing modern landing pages and provide turnkey business card design — from concept and design to the final printed product.",
   },
   "about-part-two": {
@@ -378,7 +378,7 @@ const langs = {
     en: "Graphic Designer",
   },
   "design-desc-first": {
-    ru: "Разрабатываю и визуально прорабатываю дизайн визитных карточек, создавая полностью готовые к использованию физические экземпляры и контролируя их качество, чтобы они выглядели профессионально и стильно. Создаю уникальные и продуманные решения, отражающие индивидуальность бренда и пожелания клиента. Каждый дизайн разрабатываю с учётом эстетики, функциональности и запоминаемости, чтобы карточка выделялась и производила впечатление.",
+    ru: "Разрабатываю и визуально прорабатываю дизайн визитных карточек, создавая полностью готовые к использованию физические экземпляры и контролируя их качество, чтобы они выглядели профессионально и стильно. Создаю уникальные решения, отражающие индивидуальность бренда и пожелания клиента. Каждый дизайн разрабатываю с учётом эстетики, функциональности и запоминаемости, чтобы карточка выделялась и производила впечатление.",
     en: "I develop and visually refine business card designs, creating fully ready-to-use physical copies and controlling their quality to ensure they look professional and stylish. I create unique and thoughtful solutions that reflect the individuality of the brand and the client's wishes. Each design is developed with aesthetics, functionality, and memorability in mind, so that the card stands out and makes an impression.",
   },
   "freelance-title": {
@@ -390,7 +390,7 @@ const langs = {
     en: "Frontend Developer / Freelancer",
   },
   "freelancer-desc-first": {
-    ru: "Разрабатываю и дорабатываю сайты — современные лендинги. Создаю адаптивные интерфейсы, настраиваю интерактивные элементы и оптимизирую производительность для быстрой и стабильной работы. Работаю с современными технологиями: HTML, SCSS и JavaScript. Открыт к новым проектам и готов воплощать идеи в качественные и продуманные веб-решения.",
+    ru: "Разрабатываю и дорабатываю сайты — современные лендинги. Создаю адаптивные интерфейсы, настраиваю интерактивные элементы и оптимизирую производительность для быстрой и стабильной работы. Работаю с современными технологиями: HTML, SCSS и JavaScript. Открыт к новым проектам и готов воплощать идеи в качественные веб-решения.",
     en: "I develop and refine websites — modern landing pages. I create responsive interfaces, configure interactive elements and optimize performance for fast and stable operation. I work with modern technologies: HTML, SCSS and JavaScript. Open to new projects and ready to bring ideas to life in quality and well-thought-out web solutions.",
   },
   "developer-desc-first": {
@@ -443,7 +443,7 @@ const langs = {
     en: "Over the years of study, I developed skills that became the foundation of my work in IT:",
   },
   "school-desc-second": {
-    ru: "Эти качества помогают мне создавать аккуратные, продуманные и устойчивые веб-решения.",
+    ru: "Эти качества помогают мне создавать аккуратные и устойчивые веб-решения.",
     en: "These qualities help me create neat, thoughtful, and sustainable web solutions.",
   },
   "school-first-item": {
@@ -1099,7 +1099,7 @@ const langs = {
     en: "Personal Statement",
   },
   "personal-statement-text-one": {
-    ru: "Я — Frontend-разработчик и графический дизайнер, специализирующийся на создании продуманных цифровых решений с акцентом на качество, эстетику и результат. Проектирую и разрабатываю веб-интерфейсы, где каждая деталь работает на пользовательский опыт и бизнес-задачи. Мои проекты сочетают современную визуальную подачу, удобство взаимодействия и техническую стабильность. ",
+    ru: "Я — Frontend-разработчик и графический дизайнер, специализирующийся на создании цифровых решений с акцентом на качество, эстетику и результат. Проектирую и разрабатываю веб-интерфейсы, где каждая деталь работает на пользовательский опыт и бизнес-задачи. Мои проекты сочетают современную визуальную подачу, удобство взаимодействия и техническую стабильность. ",
     en: "I am a Frontend Developer and Graphic Designer focused on delivering thoughtful digital solutions with a strong emphasis on quality, aesthetics, and results. I design and develop web interfaces where every detail serves both user experience and business goals. My work combines modern visual design, intuitive usability, and technical reliability.",
   },
   "personal-statement-text-two": {
@@ -1315,12 +1315,28 @@ const langs = {
     en: "Change theme",
   },
   "web-desc": {
-    ru: "Создаю продуманные интерфейсы — от идеи до реализации ✨",
-    en: "I create thoughtful interfaces — from concept to implementation ✨",
+    ru: "Создаю интерфейсы — от идеи до реализации.",
+    en: "I create interfaces — from concept to implementation.",
+  },
+  "reviews-title": {
+    ru: "Отзывы",
+    en: "Reviews",
+  },
+  "vk-title-reviews": {
+    ru: "ВКонтакте",
+    en: "VKontakte",
+  },
+  "visit-cards-title-reviews": {
+    ru: "Визитные карточки",
+    en: "Visit cards",
   },
 }
 
 const titles = {
+  "picture-title": {
+    ru: "Открыть",
+    en: "Open",
+  },
   "to-top-up": {
     ru: "Наверх",
     en: "Up",
@@ -1330,32 +1346,32 @@ const titles = {
     en: "My telegram",
   },
   "vk-intro": {
-    ru: "Моя страница вконтакте",
-    en: "My page vk",
+    ru: "Страница ВКонтакте",
+    en: "Page VKontakte",
   },
   "github-intro": {
-    ru: "Мой GitHub",
-    en: "My GitHub",
+    ru: "GitHub Page",
+    en: "Страница GitHub",
   },
   "telegram-footer": {
     ru: "Мой телеграм",
     en: "My telegram",
   },
   "vk-footer": {
-    ru: "Моя страница вконтакте",
-    en: "My page vk",
+    ru: "Страница ВКонтакте",
+    en: "Page VKontakte",
   },
   "github-footer": {
-    ru: "Мой GitHub",
-    en: "My GitHub",
+    ru: "Страница GitHub",
+    en: "GitHub Page",
   },
   "telegram-popup": {
     ru: "Мой телеграм",
     en: "My telegram",
   },
   "vk-popup": {
-    ru: "Моя страница вконтакте",
-    en: "My page vk",
+    ru: "Моя страница ВКонтакте",
+    en: "Page VKontakte",
   },
   "github-popup": {
     ru: "Мой GitHub",

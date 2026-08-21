@@ -1,0 +1,149 @@
+@use "../_config/variables";
+@use "../_mixins/media";
+
+.reviews {
+  &__info {
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px variables.$black;
+  }
+  &__top {
+    display: flex;
+    margin-bottom: 20px;
+    @include media.bp-desk(mobile) {
+      flex-direction: column;
+    }
+  }
+  &__bottom {
+    display: flex;
+    align-items: top;
+    @include media.bp-desk(tablet) {
+      flex-direction: column;
+    }
+  }
+  &__title {
+    font-size: 2.1rem;
+    margin-right: 15px;
+    color: variables.$black;
+    transition: color .5s ease-in;
+    &--light:hover {
+      color: variables.$select-color-light;
+    }
+    &--dark:hover {
+      color: variables.$select-color-dark;
+    }
+    @include media.bp-desk(mobile) {
+      font-size: 1.7rem;
+      margin-bottom: 10px;
+    }
+  }
+  &__description {
+    font-size: 2.1rem;
+    @include media.bp-desk(mobile) {
+      font-size: 1.7rem;
+    }
+  }
+  &__devider-vk {
+    font-size: 2.1rem;
+    @include media.bp-desk(mobile) {
+      display: none;
+      font-size: 1.7rem;
+    }
+  }
+  &__inner {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  &__vk-logo-picture {
+    margin-left: 15px;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+  }
+  &__vk-logo-picture {
+    fill: #0476ff;
+  }
+  &__image {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    padding: 5px;
+    border-radius: 100%;
+    transition: box-shadow .5s ease-in;
+    &--light:hover {
+      box-shadow: 0 0 15px variables.$select-color-light;
+    }
+    &--dark:hover {
+      box-shadow: 0 0 15px variables.$select-color-dark;
+    }
+    &--light {
+      &::before {
+        border-color: variables.$select-color-light;
+      }
+    }
+    &--dark {
+      &::before {
+        border-color: variables.$select-color-dark;
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      inset: -2px;
+      border-width: 3px;
+      border-style: dashed;
+      border-radius: 100%;
+      animation: rotate-circle 40s linear infinite alternate-reverse;
+    }
+    @include media.bp-desk(tablet) {
+      margin-bottom: 30px;
+    }
+  }
+  &__picture {
+    border-radius: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: transform .5s ease-in;
+    &:hover {
+      transform: scale(0.9);
+    }
+  }
+  &__title-vk {
+    font-size: 1.7rem;
+    margin-right: 10px;
+  }
+  &__devider {
+    font-size: 1.7rem;
+    margin-right: 10px;
+  }
+  &__subtitle {
+    font-size: 1.7rem;
+  }
+  &__text-description {
+    display: flex;
+    @include media.bp-desk(mobile) {
+      flex-direction: column;
+    }
+  }
+  &__devider {
+    @include media.bp-desk(mobile) {
+      display: none;
+    }
+  }
+  &__logo-wrapper {
+    display: flex;
+  }
+}
+
+@keyframes rotate-circle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

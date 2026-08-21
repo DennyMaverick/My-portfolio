@@ -590,6 +590,30 @@ const themes = {
       dark: "body--dark",
     },
   },
+  ".reviews__image": {
+    theme: {
+      light: "reviews__image--light",
+      dark: "reviews__image--dark",
+    },
+  },
+  ".footer__author": {
+    theme: {
+      light: "footer__author--light",
+      dark: "footer__author--dark",
+    },
+  },
+  ".footer__github-description": {
+    theme: {
+      light: "footer__github-description--light",
+      dark: "footer__github-description--dark",
+    },
+  },
+  ".reviews__title": {
+    theme: {
+      light: "reviews__title--light",
+      dark: "reviews__title--dark",
+    },
+  },
 }
 
 function themeSwitch(theme) {

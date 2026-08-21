@@ -1,6 +1,6 @@
-@use '../_config/variables';
-@use '../_mixins/media';
-@use '../_mixins/decore';
+@use "../_config/variables";
+@use "../_mixins/media";
+@use "../_mixins/decore";
 
 .footer {
   padding: 30px 0;
@@ -14,7 +14,7 @@
   &__inner {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: start;
     @include media.bp-desk(tablet) {
       justify-content: flex-start;
     }
@@ -25,7 +25,9 @@
     font-size: 0.94rem;
     display: flex;
     align-items: center;
-    transition: color 0.3s ease-in, border-right 0.3s ease-in;
+    transition:
+      color 0.3s ease-in,
+      border-right 0.3s ease-in;
     &--light {
       color: variables.$grey-light-second;
       // opacity 35 %
@@ -54,9 +56,9 @@
     display: flex;
     align-items: center;
     @include media.bp-desk(mobile) {
-      flex-direction: column;
-      align-items: flex-start;
       margin-bottom: 21px;
+      flex-direction: column;
+      align-items: start;
     }
   }
   &__social {
@@ -76,14 +78,14 @@
   //   animation: change-color 3s ease-in;
   // }
   &__social-link {
-    margin-right: 18px;
+    margin-right: 10px;
   }
   &__nav {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     font-size: 0.94rem;
     @include media.media-down(789px) {
       flex-direction: column;
@@ -147,7 +149,11 @@
     border: 1px solid variables.$grey-light;
     padding: 7.5px 21px;
     text-decoration: none;
-    transition: background-color 0.4s ease-in, color 0.4s ease-in, border-color .4s ease-in, box-shadow 0.2s linear,;
+    transition:
+      background-color 0.4s ease-in,
+      color 0.4s ease-in,
+      border-color 0.4s ease-in,
+      box-shadow 0.2s linear;
     &--dark {
       box-shadow: 0 0 0px variables.$select-color-light;
       &:hover {
@@ -193,7 +199,9 @@
   }
   &__social-image {
     transform: translateY(0);
-    transition: transform 0.4s ease-in, fill 0.4s ease-in;
+    transition:
+      transform 0.4s ease-in,
+      fill 0.4s ease-in;
     &:hover {
       transform: translateY(-4.5px);
     }
@@ -210,8 +218,32 @@
       }
     }
   }
+  &__author {
+    margin-right: 10px;
+    padding-right: 10px;
+    &--light {
+      color: #bbc;
+      border-right: 1px solid #bbc;
+    }
+    &--dark {
+      color: #2b2b2d;
+      border-right: 1px solid #2b2b2d;
+    }
+    @include media.bp-desk(mobile) {
+      margin-bottom: 15px;
+      border-right: none;
+    }
+  }
+  &__github-description {
+    margin-right: 10px;
+    &--dark {
+      color: #2b2b2b;
+    }
+    &--light {
+      color: #bbc;
+    }
+  }
 }
-
 
 @keyframes move-up {
   0% {
