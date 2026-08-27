@@ -139,8 +139,8 @@ const langs = {
     en: "Design of visit cards",
   },
   "title-work-converter": {
-    ru: "Конвертёр валют на JavaScript",
-    en: "Converter currency on Javascript",
+    ru: "Currency Converter – Конвертер валют онлайн",
+    en: "Currency Converter Online",
   },
   "title-work-gen": {
     ru: "Ген спорта",
@@ -540,8 +540,8 @@ const langs = {
     en: "Anna Blok's workshop helped me better understand the basics of HTML and CSS, taught me how to structure code, and create neat, understandable layouts.",
   },
   "sertificate-second-title": {
-    ru: "Основы HTML / CSS - верстка сайтов с нуля",
-    en: "HTML/CSS basics - website layout from scratch",
+    ru: "Основы HTML / CSS - верстка сайтов",
+    en: "HTML/CSS basics - website layout",
   },
   "sertificate-second-desc": {
     ru: "Курс помог освоить основы HTML и CSS, а также понять современные подходы к веб-разработке и созданию адаптивных макетов.",
@@ -834,40 +834,56 @@ const langs = {
 
   // Currency Converter
   "currency-converter-title": {
-    ru: "Конвертёр валют на JavaScript",
-    en: "Currency converter in JavaScript",
+    ru: "Currency Converter – Конвертер валют онлайн",
+    en: "Currency Converter Online",
   },
   "currency-converter-type": {
     ru: "Мини-приложения",
     en: "Mini Apps",
   },
   "converter-desc": {
-    ru: "Проект разработан в учебных целях для совершенствования навыков работы с JavaScript и элементами интерфейса. Конвертер позволяет получать актуальные курсы валют — доллара, евро и фунта стерлинга — и наглядно отображает их динамику: если курс снижается, значение подсвечивается зелёным цветом, если растёт — красным.",
-    en: "The project was developed for educational purposes to improve skills in working with JavaScript and interface elements. The converter provides up-to-date exchange rates for the dollar, euro, and pound sterling and clearly displays their dynamics: if the rate is declining, the value is highlighted in green; if it is rising, it is highlighted in red.",
+    ru: "Простой и быстрый конвертер валют с актуальными курсами Центрального банка России. Поддерживает основные мировые валюты и позволяет мгновенно выполнять расчёты без лишних действий.",
+    en: "A simple and fast currency converter featuring up-to-date exchange rates from the Central Bank of Russia. It supports major global currencies and allows for instant calculations without unnecessary steps.",
+  },
+  "convert-title-benefits": {
+    ru: "⚡ Возможности:",
+    en: "⚡ ⚡ Features:",
   },
   "converter-desc-one": {
-    ru: "Отображение текущих курсов валют в реальном времени",
-    en: "Display current exchange rates in real time",
+    ru: "Конвертация основных валют в реальном времени: доллар, евро, фунт, турецкая лира и рубль",
+    en: "Real-time conversion of major currencies: dollar, euro, pound, Turkish lira, and ruble",
   },
   "converter-desc-two": {
-    ru: "Возможность конвертации рублей в доллары, евро и фунты стерлинга по актуальному курсу",
-    en: "Possibility of converting rubles into dollars, euros and pounds sterling at the current exchange rate",
+    ru: "Актуальные курсы Центрального банка",
+    en: "Current Central Bank exchange rates",
   },
   "converter-desc-three": {
-    ru: "Переключатель тем с 2 цветовыми схемами: светлой и тёмной",
-    en: "Theme switcher with two color schemes: light and dark",
+    ru: "Быстрый и удобный интерфейс",
+    en: "Fast and user-friendly interface",
   },
   "converter-desc-four": {
-    ru: "Переключатель языков (русский / английский)",
-    en: "Language switch (Russian/English)",
+    ru: "Лёгкое и минималистичное приложение",
+    en: "A lightweight and minimalist app",
   },
   "converter-desc-five": {
-    ru: "Увеличение и уменьшение введённого значения с помощью колеса мыши",
-    en: "Increase and decrease the entered value using the mouse wheel",
+    ru: "Оптимизировано для смартфонов и планшетов",
+    en: "Optimized for smartphones and tablets",
   },
   "converter-desc-six": {
-    ru: "Проект постоянно развивается — при запуске Вы можете увидеть обновлённые функции, новые темы или языки.",
-    en: "The project is constantly evolving—at launch, you may see updated features, new themes, or languages.",
+    ru: "🌍 Подходит для путешествий, покупок за границей, финансовых расчётов, быстрого сравнения валют",
+    en: "🌍 Suitable for travel, shopping abroad, financial transactions, and quick currency comparison",
+  },
+  "converter-desc-seven": {
+    ru: "Приложение автоматически обновляет курсы и позволяет мгновенно конвертировать валюты без сложных настроек",
+    en: "The app automatically updates exchange rates and allows you to instantly convert currencies without complex settings",
+  },
+  "converter-desc-eight": {
+    ru: "Приложение автоматически обновляет курсы и позволяет мгновенно конвертировать валюты без сложных настроек",
+    en: "The app automatically updates exchange rates and allows you to instantly convert currencies without complex settings",
+  },
+  "convert-desc-nine": {
+    ru: "Currency Converter поможет быстро узнать актуальный курс валют во время путешествий, покупок за границей и международных расчётов",
+    en: "Currency Converter helps you quickly check current exchange rates when traveling, shopping abroad, or making international payments",
   },
   "time-converter": {
     ru: "Время на работу ~ 50 ч",
@@ -947,32 +963,44 @@ const langs = {
   },
   // Password Generator
   "password-generator-desc": {
-    ru: "Генератор-паролей — простой и удобный веб-инструмент для быстрой генерации надёжных паролей. Пользователь выбирает длину (8, 12 или 15 символов) и наличие специальных символов, нажимает «Сгенерировать» — и получает надёжный автоматически сгенерированный пароль, готовый для копирования. Вся логика работает прямо в браузере: пароли не передаются на сервер, это делает их генерацию приватной и безопасной. Этот инструмент — отличное решение для тех, кто хочет защитить свои аккаунты: так проще отказаться от слабых паролей вроде «123456» и использовать уникальный пароль для каждого сайта или сервиса.",
-    en: "Password Generator is a simple and convenient web tool for quickly generating secure passwords. The user selects the length (8, 12, or 15 characters) and the presence of special characters, clicks «Generate» — and receives a random, hard-to-guess string ready for copying. All logic works directly in the browser: passwords are not transmitted to the server, making their generation private and secure. This tool is an excellent solution for those who want to protect their accounts: it makes it easier to avoid weak passwords like «123456» and use a unique password for each site or service.",
+    ru: "Создавайте надёжные и уникальные пароли за несколько секунд. Простой и удобный генератор паролей работает полностью офлайн, не требует подключения к интернету и помогает защитить ваши аккаунты от использования простых и легко угадываемых комбинаций.",
+    en: "Create secure and unique passwords in seconds. This simple, user-friendly password generator works entirely offline—requiring no internet connection—and helps protect your accounts by preventing the use of simple, easily guessable combinations.",
+  },
+  "passwords-app-benefits": {
+    ru: "⚡ Возможности:",
+    en: "⚡ Features:",
   },
   "password-generator-desc-one": {
-    ru: "Выбор длины пароля — пользователь может выбрать 8, 12 или 15 символов",
-    en: "Password length selection - the user can choose 8, 12 or 15 characters",
+    ru: " Генерация надёжных и уникальных паролей",
+    en: "Generating secure and unique passwords",
   },
   "password-generator-desc-two": {
-    ru: "Включение специальных символов — опция добавления символов ! @ # $ % для более надёжного пароля",
-    en: "Inclusion of special characters - an option to add characters ! @ # $ % for a more secure password",
+    ru: "Настройка длины пароля",
+    en: "Configuring password length",
   },
   "password-generator-desc-three": {
-    ru: "Генерация случайного пароля — формирование уникальной комбинации символов одним кликом",
-    en: "Random password generation - creating a unique combination of characters with one click",
+    ru: "Использование букв, цифр и специальных символов",
+    en: "Use of letters, numbers, and special characters",
   },
   "password-generator-desc-four": {
-    ru: "Удобное копирование — готовый пароль отображается сразу и легко копируется для использования",
-    en: "Convenient copying - the generated password is displayed immediately and can be easily copied for use",
+    ru: "Быстрое создание нового пароля одним нажатием",
+    en: "Quickly create a new password with a single tap",
   },
   "password-generator-desc-five": {
-    ru: "Добавлена функция переключения языков между русской и английской версиями интерфейса, обеспечивающая удобство использования приложения для разных пользователей. Перевод выполнен через динамическую подстановку текста, что позволяет легко расширять функциональность и поддерживать дополнительные языки",
-    en: "A language switching feature has been added between Russian and English versions of the interface, providing convenience for different users. The translation is done through dynamic text substitution, allowing for easy expansion of functionality and support for additional languages",
+    ru: "Полностью офлайн — интернет не требуется",
+    en: "Completely offline — no internet required",
   },
-  "password-generator-time-to-work": {
-    ru: "Время на работу ~ 42 ч",
-    en: "Time to work ~ 42 h",
+  "password-generator-desc-six": {
+    ru: "Простой и минималистичный интерфейс",
+    en: "Simple and minimalist interface",
+  },
+  "password-generator-desc-seven": {
+    ru: "Оптимизировано для смартфонов и планшетов",
+    en: "Optimized for smartphones and tablets",
+  },
+  "password-generator-desc-eight": {
+    ru: "Доступны 2 языка интерфейса: русский и английский",
+    en: "Two interface languages ​​are available: Russian and English",
   },
   // Thrivetalk
   "client-thrivetalk-title": {
@@ -1187,8 +1215,8 @@ const langs = {
     en: "In my free time, I develop my analytical skills and strategic thinking through online poker. This experience helps me maintain focus and make informed decisions—qualities essential in web development.",
   },
   "converter-app-title": {
-    ru: "Разработка приложения «Конвертер валют»",
-    en: "Application developing «Currency converter»",
+    ru: "Разработка приложения «Currency Converter – Конвертер валют онлайн»",
+    en: "Application developing «Currency Converter Online»",
   },
   "converter-app-desc": {
     ru: "После интенсива от онлайн-школы Web-cademy доработал приложение «Конвертер валют», полностью переработав дизайн и расширив функционал: ",
@@ -1215,12 +1243,12 @@ const langs = {
     en: "Convenient amount input – the ability to change the value using the mouse wheel",
   },
   "password-generator-app-title": {
-    ru: "Разработка приложения «Генератор паролей»",
-    en: "Developing a Password Generator App",
+    ru: "Разработка приложения «Password Generator – Генератор паролей»",
+    en: "Application developing «Password Generator»",
   },
   "password-generator-app-desc": {
-    ru: "Разработал с нуля приложение «Генератор паролей», с помощью которого можно создать пароль со сверхзащитой: до 15 символов + специальные знаки. Функционал приложения:",
-    en: "I developed a 'Password Generator' app from scratch, allowing you to create ultra-secure passwords with up to 15 characters and special characters. The following features are available:",
+    ru: "Разработал приложение «Генератор паролей», с помощью которого можно создать пароль со сверхзащитой: до 15 символов + специальные знаки. Функционал приложения:",
+    en: "I developed a 'Password Generator' app, allowing you to create ultra-secure passwords with up to 15 characters and special characters. The following features are available:",
   },
   "password-generator-app-first-item": {
     ru: "Выбор длины пароля: 8, 12 или 15 символов",
@@ -1247,8 +1275,8 @@ const langs = {
     en: "Parameter reset function for selecting new length and special character settings",
   },
   "password-generator-app-seventh-item": {
-    ru: "Интерфейс продуман для удобного и интуитивного использования, визуальные элементы отображаются плавно и эстетично",
-    en: "The interface is designed for convenient and intuitive use, visual elements are displayed smoothly and aesthetically",
+    ru: "Интерфейс интуитивно понятен и удобен для пользователя, плавное визуальное отображение элементов",
+    en: "The interface is intuitive and user-friendly, with smooth visual rendering of elements",
   },
   "password-generator-app-eighth-item": {
     ru: "Добавлено переключение языка между русской и английской версиями интерфейса для удобства пользователей",
@@ -1350,8 +1378,8 @@ const titles = {
     en: "Page VKontakte",
   },
   "github-intro": {
-    ru: "GitHub Page",
-    en: "Страница GitHub",
+    ru: "Страница GitHub",
+    en: "GitHub Page",
   },
   "telegram-footer": {
     ru: "Мой телеграм",
@@ -1394,6 +1422,10 @@ const afterElements = {
 }
 
 const repeatElems = {
+  "description-app-text": {
+    ru: "Приложение доступно в",
+    en: "The app is available on",
+  },
   "tech-printer": {
     ru: "Принтер Epson L3256",
     en: "Printer Epson L3256",
@@ -1635,7 +1667,7 @@ const repeatElems = {
     en: "Promo-site of the film &#171;Venom - 2&#187;",
   },
   "title-work-passwords": {
-    ru: "Генератор паролей",
+    ru: "Password Generator – Генератор паролей",
     en: "Password Generator",
   },
   nowadays: {
@@ -1651,8 +1683,8 @@ const repeatElems = {
     en: "with detailed description of the project",
   },
   "app-project-link-text": {
-    ru: "на проект",
-    en: "to the project",
+    ru: "на браузерную версию",
+    en: "to the browser version",
   },
   "technologies-text": {
     ru: "Технологии:",

@@ -614,6 +614,12 @@ const themes = {
       dark: "reviews__title--dark",
     },
   },
+  ".modal-list__rustore-text": {
+    theme: {
+      light: "modal-list__rustore-text--light",
+      dark: "modal-list__rustore-text--dark",
+    },
+  },
 }
 
 function themeSwitch(theme) {
