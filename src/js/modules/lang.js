@@ -834,8 +834,8 @@ const langs = {
 
   // Currency Converter
   "currency-converter-title": {
-    ru: "Currency Converter – Конвертер валют онлайн",
-    en: "Currency Converter Online",
+    ru: "Currency Converter – Конвертер валют онлайн <span class='modal-work__version-currency-converter'>v1.3</span>",
+    en: "Currency Converter Online <span class='modal-work__version-currency-converter'>v1.3</span>",
   },
   "currency-converter-type": {
     ru: "Мини-приложения",
@@ -1667,8 +1667,8 @@ const repeatElems = {
     en: "Promo-site of the film &#171;Venom - 2&#187;",
   },
   "title-work-passwords": {
-    ru: "Password Generator – Генератор паролей",
-    en: "Password Generator",
+    ru: "Password Generator – Генератор паролей <span class='modal-work__version-password-generator'> v1.1</span>",
+    en: "Password Generator <span class='modal-work__version-password-generator'> v1.1</span>",
   },
   nowadays: {
     ru: "настоящее время",
