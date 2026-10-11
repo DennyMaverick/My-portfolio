@@ -620,6 +620,12 @@ const themes = {
       dark: "modal-list__rustore-text--dark",
     },
   },
+  ".modal-list__rustore-link": {
+    theme: {
+      light: "modal-list__rustore-link--light",
+      dark: "modal-list__rustore-link--dark",
+    },
+  },
 }
 
 function themeSwitch(theme) {

@@ -139,8 +139,8 @@ const langs = {
     en: "Design of visit cards",
   },
   "title-work-converter": {
-    ru: "Currency Converter – Конвертер валют онлайн",
-    en: "Currency Converter Online",
+    ru: "Currency Converter – Конвертер валют онлайн <span class='modal-work__version-currency-converter'>v1.4</span>",
+    en: "Currency Converter Online <span class='modal-work__version-currency-converter'>v1.4</span>",
   },
   "title-work-gen": {
     ru: "Ген спорта",
@@ -552,8 +552,8 @@ const langs = {
     en: "The course helped me gain a deeper understanding of the fundamentals of JavaScript and jQuery, including understanding how scripts work, dynamic content updates, and interactions with page elements. Now I can create more vibrant and interactive web pages.",
   },
   "my-accomplishment-title": {
-    ru: "Мои достижения",
-    en: "My accomplishment",
+    ru: "Мои приложения",
+    en: "My applications",
   },
   "graduation-from-school-title": {
     ru: "Окончание школы",
@@ -834,8 +834,8 @@ const langs = {
 
   // Currency Converter
   "currency-converter-title": {
-    ru: "Currency Converter – Конвертер валют онлайн <span class='modal-work__version-currency-converter'>v1.3</span>",
-    en: "Currency Converter Online <span class='modal-work__version-currency-converter'>v1.3</span>",
+    ru: "Currency Converter – Конвертер валют онлайн <span class='modal-work__version-currency-converter'>v1.4</span>",
+    en: "Currency Converter Online <span class='modal-work__version-currency-converter'>v1.4</span>",
   },
   "currency-converter-type": {
     ru: "Мини-приложения",
@@ -1423,8 +1423,8 @@ const afterElements = {
 
 const repeatElems = {
   "description-app-text": {
-    ru: "Приложение доступно в",
-    en: "The app is available on",
+    ru: "📱 Приложение для Android доступно в",
+    en: "📱 The App is available for Android on",
   },
   "tech-printer": {
     ru: "Принтер Epson L3256",
@@ -1667,8 +1667,8 @@ const repeatElems = {
     en: "Promo-site of the film &#171;Venom - 2&#187;",
   },
   "title-work-passwords": {
-    ru: "Password Generator – Генератор паролей <span class='modal-work__version-password-generator'> v1.1</span>",
-    en: "Password Generator <span class='modal-work__version-password-generator'> v1.1</span>",
+    ru: "Password Generator – Генератор паролей <span class='modal-work__version-password-generator'> v1.2</span>",
+    en: "Password Generator <span class='modal-work__version-password-generator'> v1.2</span>",
   },
   nowadays: {
     ru: "настоящее время",
@@ -1683,8 +1683,8 @@ const repeatElems = {
     en: "with detailed description of the project",
   },
   "app-project-link-text": {
-    ru: "на браузерную версию",
-    en: "to the browser version",
+    ru: "на браузерную версию для Mac OS, Windows, ios",
+    en: "to the browser version for Mac OS, Windows, ios",
   },
   "technologies-text": {
     ru: "Технологии:",

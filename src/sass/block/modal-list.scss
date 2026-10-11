@@ -98,4 +98,36 @@
     display: block;
     margin-bottom: 20px;
   }
+  &__rustore-link {
+    display: inline-block;
+
+    padding: 5px 20px;
+
+    &--light {
+      box-shadow: 0 0 0px variables.$select-color-light;
+      animation: lighting-pulse-light alternate infinite 2s ease-in;
+    }
+    &--dark {
+      box-shadow: 0 0 0px variables.$select-color-dark;
+      animation: lighting-pulse-dark alternate infinite 2s ease-in;
+    }
+  }
+}
+
+@keyframes lighting-pulse-light {
+  from {
+    box-shadow: 0 0 0px variables.$select-color-light;
+  }
+  to {
+    box-shadow: 0 0 15px variables.$select-color-light;
+  }
+}
+
+@keyframes lighting-pulse-dark {
+  from {
+    box-shadow: 0 0 0px variables.$select-color-dark;
+  }
+  to {
+    box-shadow: 0 0 15px variables.$select-color-dark;
+  }
 }
