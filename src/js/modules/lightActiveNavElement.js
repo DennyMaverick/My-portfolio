@@ -1,10 +1,29 @@
 // Плавный скролл по якорям
+// document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+//   anchor.addEventListener("click", function (e) {
+//     e.preventDefault()
+//     document.querySelector(this.getAttribute("href")).scrollIntoView({
+//       behavior: "smooth",
+//     })
+//   })
+// })
+
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
-    e.preventDefault()
-    document.querySelector(this.getAttribute("href")).scrollIntoView({
-      behavior: "smooth",
-    })
+    const targetId = this.getAttribute("href")
+
+    // Пропускаем пустые якоря
+    if (!targetId || targetId === "#") return
+
+    const targetElement = document.querySelector(targetId)
+
+    // Проверяем, существует ли целевой элемент
+    if (targetElement) {
+      e.preventDefault()
+      targetElement.scrollIntoView({
+        behavior: "smooth",
+      })
+    }
   })
 })
 
