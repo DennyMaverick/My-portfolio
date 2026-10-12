@@ -2658,6 +2658,8 @@
   position: fixed;
   right: 30px;
   bottom: 112px;
+  z-index: 1500;
+  cursor: pointer;
 }
 
 .modal-work__arrow-up:focus {
