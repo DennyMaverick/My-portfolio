@@ -825,7 +825,7 @@ const langs = {
   },
   "dream-on-wheels-desc-three": {
     ru: "Работа над проектом помогла отточить навыки фронтенд-разработки, автоматизации и оптимизации кода. Результатом стал современный, адаптивный и легкий сайт, отражающий мой стиль и внимание к деталям.",
-    en: "Работа над проектом помогла отточить навыки фронтенд-разработки, автоматизации и оптимизации кода. Результатом стал современный, адаптивный и легкий сайт, отражающий мой стиль и внимание к деталям.",
+    en: "Working on the project helped hone my skills in frontend development, automation, and code optimization. The result is a modern, responsive, and lightweight website that reflects my style and attention to detail.",
   },
   "time-dream-on-wheels": {
     ru: "Время на работу ~ 45 ч",
@@ -1248,7 +1248,7 @@ const langs = {
   },
   "password-generator-app-desc": {
     ru: "Разработал приложение «Генератор паролей», с помощью которого можно создать пароль со сверхзащитой: до 15 символов + специальные знаки. Функционал приложения:",
-    en: "I developed a 'Password Generator' app, allowing you to create ultra-secure passwords with up to 15 characters and special characters. The following features are available:",
+    en: "I developed a «Password Generator» app, allowing you to create ultra-secure passwords with up to 15 characters and special characters. The following features are available:",
   },
   "password-generator-app-first-item": {
     ru: "Выбор длины пароля: 8, 12 или 15 символов",
