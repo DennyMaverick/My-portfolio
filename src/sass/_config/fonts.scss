@@ -1,11 +1,11 @@
 @use '../_mixins/font-face';
 
 // Подключение шрифтов
-@include font-face.font-face('Montserrat', '../../font/Montserrat-Bold', 700);
+@include font-face.font-face('Montserrat', '../font/Montserrat-Bold', 700);
 
-@include font-face.font-face('Montserrat', '../../font/Montserrat-Regular', 400);
+@include font-face.font-face('Montserrat', '../font/Montserrat-Regular', 400);
 
-@include font-face.font-face('Montserrat', '../../font/Montserrat-Light', 300);
+@include font-face.font-face('Montserrat', '../font/Montserrat-Light', 300);
 
 
 
