@@ -2653,7 +2653,7 @@
 }
 
 .modal-work__btn {
-  font: 600 0.94rem "Montserrat";
+  font: 600 0.94rem "Montserrat", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
