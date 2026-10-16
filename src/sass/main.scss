@@ -84,10 +84,16 @@ h6 {
   margin: 0;
 }
 
+button {
+  font-family: "Montserrat", sans-serif;
+}
+
 html {
   font-size: 15px;
   scroll-behavior: smooth !important;
-  transition: color 1s ease-in, background-color 1s ease-in;
+  transition:
+    color 1s ease-in,
+    background-color 1s ease-in;
 }
 
 html,

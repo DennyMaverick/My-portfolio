@@ -3,7 +3,7 @@
 // Подключение шрифтов всех расширений
 @mixin font-face($font-family, $file-path, $weight: normal, $style: normal) {
   @font-face {
-    font-family: $font-family;
+    font-family: $font-family, sans-serif;
     font-weight: $weight;
     font-style: $style;
 

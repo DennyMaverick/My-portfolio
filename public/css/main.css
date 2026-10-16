@@ -3,21 +3,21 @@
 /*dark-dtn*/
 
 @font-face {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-style: normal;
   src: local("Montserrat"), url("../font/Montserrat-Bold.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-style: normal;
   src: local("Montserrat"), url("../font/Montserrat-Regular.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-style: normal;
   src: local("Montserrat"), url("../font/Montserrat-Light.woff2") format("woff2");
@@ -657,7 +657,7 @@
 }
 
 .btn {
-  font: 1.06rem/1.1 "Montserrat";
+  font: 1.06rem/1.1 "Montserrat", sans-serif;
   background: transparent;
   min-width: 170px;
   outline: none;
@@ -3985,6 +3985,10 @@ h4,
 h5,
 h6 {
   margin: 0;
+}
+
+button {
+  font-family: "Montserrat", sans-serif;
 }
 
 html {

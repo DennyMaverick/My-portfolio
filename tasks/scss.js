@@ -27,7 +27,7 @@ const scss = () => {
             title: "SCSS",
             message: error.message,
           })),
-        })
+        }),
       )
       // .pipe(sassGlob())
       .pipe(sass())
