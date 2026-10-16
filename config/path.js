@@ -65,8 +65,8 @@ module.exports = {
   },
 
   favicon: {
-    src: pathSrc + "/img/favicon/favicon.svg",
-    watch: pathSrc + "/img/favicon/favicon.svg",
+    src: pathSrc + "/img/favicon/*",
+    watch: pathSrc + "/img/favicon/*",
     dest: pathDest + "/img/favicon/",
   },
 }

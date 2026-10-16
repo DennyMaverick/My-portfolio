@@ -3,8 +3,8 @@
 const langs = {
   // === title ===
   title: {
-    ru: "Денис, Frontend-разработчик",
-    en: "Denis, Frontend Developer",
+    ru: "Denny Maverick, Frontend-разработчик",
+    en: "Denny Maverick, Frontend Developer",
   },
   // ===== nav mobile =====
   "main-mobile": {

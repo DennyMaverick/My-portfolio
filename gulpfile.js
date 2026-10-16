@@ -15,7 +15,7 @@ const font = require("./tasks/font.js");
 const jslibs = require("./tasks/jslibs.js");
 const jquerylib = require("./tasks/jquerylib.js");
 const libsCssScss = require("./tasks/libscssscss.js");
-// const favicon = require("./tasks/favicon.js");
+const favicon = require("./tasks/favicon.js")
 const svgsprite = require("./tasks/svgsprite.js")
 const jquerylibs = require("./tasks/jquerylibs.js")
 
@@ -40,9 +40,10 @@ const watcher = () => {
   watch(path.jquery.watch, jquerylib).on("all", browserSync.reload)
   watch(path.scss_and_css_libs.watch, libsCssScss).on("all", browserSync.reload)
   watch(path.svgsprite.watch, svgsprite).on("all", browserSync.reload)
+  watch(path.favicon.watch, favicon).on("all", browserSync.reload)
 }
 
-const build = series(clear, parallel(html, scss, js, font, jquerylib, jquerylibs, jslibs, libsCssScss, img, svgsprite))
+const build = series(clear, parallel(html, scss, js, font, jquerylib, jquerylibs, jslibs, libsCssScss, img, svgsprite, favicon))
 
 const dev = series(build, parallel(server, watcher))
 
@@ -55,7 +56,7 @@ exports.font = font
 exports.jquerylib = jquerylib
 exports.jslibs = jslibs
 exports.libsCssScss = libsCssScss
-// exports.favicon = favicon
+exports.favicon = favicon
 exports.svgsprite = svgsprite
 exports.jquerylibs = jquerylibs
 

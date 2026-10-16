@@ -6,64 +6,21 @@
   font-family: "Montserrat";
   font-weight: 700;
   font-style: normal;
-  src: url("../font/Montserrat-Bold.eot");
-  src: local("Montserrat"), url("../font/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("../font/Montserrat-Bold.woff2") format("woff2"), url("../font/Montserrat-Bold.woff") format("woff"), url("../font/Montserrat-Bold.ttf") format("truetype");
+  src: local("Montserrat"), url("../../font/Montserrat-Bold.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Montserrat";
   font-weight: 400;
   font-style: normal;
-  src: url("../font/Montserrat-Regular.eot");
-  src: local("Montserrat"), url("../font/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../font/Montserrat-Regular.woff2") format("woff2"), url("../font/Montserrat-Regular.woff") format("woff"), url("../font/Montserrat-Regular.ttf") format("truetype");
+  src: local("Montserrat"), url("../../font/Montserrat-Regular.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Montserrat";
   font-weight: 300;
   font-style: normal;
-  src: url("../font/Montserrat-Light.eot");
-  src: local("Montserrat"), url("../font/Montserrat-Light.eot?#iefix") format("embedded-opentype"), url("../font/Montserrat-Light.woff2") format("woff2"), url("../font/Montserrat-Light.woff") format("woff"), url("../font/Montserrat-Light.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Ample";
-  font-weight: 700;
-  font-style: normal;
-  src: url("../font/AmpleSoftPro-Bold.eot");
-  src: local("Ample"), url("../font/AmpleSoftPro-Bold.eot?#iefix") format("embedded-opentype"), url("../font/AmpleSoftPro-Bold.woff2") format("woff2"), url("../font/AmpleSoftPro-Bold.woff") format("woff"), url("../font/AmpleSoftPro-Bold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Ample";
-  font-weight: 500;
-  font-style: normal;
-  src: url("../font/AmpleSoftPro-Medium.eot");
-  src: local("Ample"), url("../font/AmpleSoftPro-Medium.eot?#iefix") format("embedded-opentype"), url("../font/AmpleSoftPro-Medium.woff2") format("woff2"), url("../font/AmpleSoftPro-Medium.woff") format("woff"), url("../font/AmpleSoftPro-Medium.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Ample";
-  font-weight: 400;
-  font-style: normal;
-  src: url("../font/AmpleSoftPro-Regular.eot");
-  src: local("Ample"), url("../font/AmpleSoftPro-Regular.eot?#iefix") format("embedded-opentype"), url("../font/AmpleSoftPro-Regular.woff2") format("woff2"), url("../font/AmpleSoftPro-Regular.woff") format("woff"), url("../font/AmpleSoftPro-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Ample";
-  font-weight: 300;
-  font-style: normal;
-  src: url("../font/AmpleSoftPro-Light.eot");
-  src: local("Ample"), url("../font/AmpleSoftPro-Light.eot?#iefix") format("embedded-opentype"), url("../font/AmpleSoftPro-Light.woff2") format("woff2"), url("../font/AmpleSoftPro-Light.woff") format("woff"), url("../font/AmpleSoftPro-Light.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Ample";
-  font-weight: 200;
-  font-style: normal;
-  src: url("../font/AmpleSoftPro-Thin.eot");
-  src: local("Ample"), url("../font/AmpleSoftPro-Thin.eot?#iefix") format("embedded-opentype"), url("../font/AmpleSoftPro-Thin.woff2") format("woff2"), url("../font/AmpleSoftPro-Thin.woff") format("woff"), url("../font/AmpleSoftPro-Thin.ttf") format("truetype");
+  src: local("Montserrat"), url("../../font/Montserrat-Light.woff2") format("woff2");
 }
 
 .header {
