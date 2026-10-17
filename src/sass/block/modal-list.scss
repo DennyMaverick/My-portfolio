@@ -89,7 +89,7 @@
     font-size: 35px;
   }
   &__rustore-text--light {
-    color: #2b2b2b;
+    color: #fff;
   }
   &__rustore-text--dark {
     color: #fff;
@@ -99,35 +99,86 @@
     margin-bottom: 20px;
   }
   &__rustore-link {
-    display: inline-block;
+    // padding: 5px 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 
-    padding: 5px 20px;
+    padding: 8px 12px;
+    border: 1px solid rgb(125 205 255 / 65%);
+    border-radius: 12px;
+
+    color: #fff;
+    text-decoration: none;
+
+    animation: rustore-glow 3s ease-in-out infinite;
+    transition:
+      border-color 0.3s ease,
+      background-color 0.3s ease,
+      box-shadow 0.4s ease-in;
 
     &--light {
-      box-shadow: 0 0 0px variables.$select-color-light;
-      animation: lighting-pulse-light alternate infinite 2s ease-in;
+      background-color: rgba(125, 205, 255, 0.5);
+      border-color: rgb(125 205 255 / 75%);
+
+      // animation: rustore-glow-light 3.5s ease-in infinite;
+
+      transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.4s ease-in;
+
+      animation: rustore-glow-light 3.5s ease-in-out infinite;
+      &:hover {
+        border-color: rgb(145 215 255 / 100%);
+
+        box-shadow:
+          0 0 5px rgb(85 175 255 / 90%),
+          0 0 12px rgb(85 175 255 / 70%),
+          0 0 22px rgb(85 175 255 / 45%),
+          0 0 34px rgb(85 175 255 / 20%);
+      }
     }
     &--dark {
-      box-shadow: 0 0 0px variables.$select-color-dark;
-      animation: lighting-pulse-dark alternate infinite 2s ease-in;
+      background-color: transparent;
+      // box-shadow: 0 0 0px variables.$select-color-dark;
+      animation: rustore-glow-dark 3.5s ease-in-out infinite;
+      &:hover {
+        border-color: #b5e5ff;
+        box-shadow:
+          0 0 8px rgb(110 190 255 / 85%),
+          0 0 18px rgb(110 190 255 / 60%),
+          0 0 32px rgb(110 190 255 / 35%);
+      }
     }
   }
 }
 
-@keyframes lighting-pulse-light {
-  from {
-    box-shadow: 0 0 0px variables.$select-color-light;
-  }
-  to {
-    box-shadow: 0 0 15px variables.$select-color-light;
+@media (prefers-reduced-motion: reduce) {
+  .modal-list__rustore-link {
+    animation: none;
+    box-shadow: 0 0 8px rgb(110 190 255 / 35%);
   }
 }
 
-@keyframes lighting-pulse-dark {
-  from {
-    box-shadow: 0 0 0px variables.$select-color-dark;
+@keyframes rustore-glow-light {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 3px rgb(110 190 255 / 35%)) drop-shadow(0 0 7px rgb(80 165 255 / 20%));
   }
-  to {
-    box-shadow: 0 0 15px variables.$select-color-dark;
+
+  50% {
+    filter: drop-shadow(0 0 5px rgb(130 205 255 / 85%)) drop-shadow(0 0 14px rgb(80 165 255 / 65%)) drop-shadow(0 0 26px rgb(65 140 255 / 35%));
+  }
+}
+
+@keyframes rustore-glow-dark {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 3px rgb(110 190 255 / 35%)) drop-shadow(0 0 7px rgb(80 165 255 / 20%));
+  }
+
+  50% {
+    filter: drop-shadow(0 0 5px rgb(130 205 255 / 85%)) drop-shadow(0 0 14px rgb(80 165 255 / 65%)) drop-shadow(0 0 26px rgb(65 140 255 / 35%));
   }
 }
