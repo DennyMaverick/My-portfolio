@@ -1731,7 +1731,7 @@
 }
 
 .modal-list__rustore-text--light {
-  color: #2b2b2b;
+  color: #fff;
 }
 
 .modal-list__rustore-text--dark {
@@ -1744,69 +1744,104 @@
 }
 
 .modal-list__rustore-link {
-  display: inline-block;
-  padding: 5px 20px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 8px 12px;
+  border: 1px solid rgba(125, 205, 255, 0.65);
+  border-radius: 12px;
+  color: #fff;
+  text-decoration: none;
+  -webkit-animation: rustore-glow 3s ease-in-out infinite;
+  animation: rustore-glow 3s ease-in-out infinite;
+  -webkit-transition: border-color 0.3s ease, background-color 0.3s ease, -webkit-box-shadow 0.4s ease-in;
+  transition: border-color 0.3s ease, background-color 0.3s ease, -webkit-box-shadow 0.4s ease-in;
+  -o-transition: border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.4s ease-in;
+  transition: border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.4s ease-in;
+  transition: border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.4s ease-in, -webkit-box-shadow 0.4s ease-in;
 }
 
 .modal-list__rustore-link--light {
-  -webkit-box-shadow: 0 0 0px steelblue;
-  box-shadow: 0 0 0px steelblue;
-  -webkit-animation: lighting-pulse-light alternate infinite 2s ease-in;
-  animation: lighting-pulse-light alternate infinite 2s ease-in;
+  background: rgba(125, 205, 255, 0.5);
+  border-color: rgba(125, 205, 255, 0.75);
+  -webkit-transition: background-color 0.3s ease, border-color 0.3s ease, -webkit-box-shadow 0.4s ease-in;
+  transition: background-color 0.3s ease, border-color 0.3s ease, -webkit-box-shadow 0.4s ease-in;
+  -o-transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.4s ease-in;
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.4s ease-in;
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.4s ease-in, -webkit-box-shadow 0.4s ease-in;
+  -webkit-animation: rustore-glow-light 3.5s ease-in-out infinite;
+  animation: rustore-glow-light 3.5s ease-in-out infinite;
+}
+
+.modal-list__rustore-link--light:hover {
+  border-color: rgb(145, 215, 255);
+  -webkit-box-shadow: 0 0 5px rgba(85, 175, 255, 0.9), 0 0 12px rgba(85, 175, 255, 0.7), 0 0 22px rgba(85, 175, 255, 0.45), 0 0 34px rgba(85, 175, 255, 0.2);
+  box-shadow: 0 0 5px rgba(85, 175, 255, 0.9), 0 0 12px rgba(85, 175, 255, 0.7), 0 0 22px rgba(85, 175, 255, 0.45), 0 0 34px rgba(85, 175, 255, 0.2);
 }
 
 .modal-list__rustore-link--dark {
-  -webkit-box-shadow: 0 0 0px #edb040;
-  box-shadow: 0 0 0px #edb040;
-  -webkit-animation: lighting-pulse-dark alternate infinite 2s ease-in;
-  animation: lighting-pulse-dark alternate infinite 2s ease-in;
+  background: transparent;
+  -webkit-animation: rustore-glow-dark 3.5s ease-in-out infinite;
+  animation: rustore-glow-dark 3.5s ease-in-out infinite;
 }
 
-@-webkit-keyframes lighting-pulse-light {
-  from {
-    -webkit-box-shadow: 0 0 0px steelblue;
-    box-shadow: 0 0 0px steelblue;
-  }
-
-  to {
-    -webkit-box-shadow: 0 0 15px steelblue;
-    box-shadow: 0 0 15px steelblue;
-  }
+.modal-list__rustore-link--dark:hover {
+  border-color: #b5e5ff;
+  -webkit-box-shadow: 0 0 8px rgba(110, 190, 255, 0.85), 0 0 18px rgba(110, 190, 255, 0.6), 0 0 32px rgba(110, 190, 255, 0.35);
+  box-shadow: 0 0 8px rgba(110, 190, 255, 0.85), 0 0 18px rgba(110, 190, 255, 0.6), 0 0 32px rgba(110, 190, 255, 0.35);
 }
 
-@keyframes lighting-pulse-light {
-  from {
-    -webkit-box-shadow: 0 0 0px steelblue;
-    box-shadow: 0 0 0px steelblue;
+@-webkit-keyframes rustore-glow-light {
+  0%, 100% {
+    -webkit-filter: drop-shadow(0 0 3px rgba(110, 190, 255, 0.35)) drop-shadow(0 0 7px rgba(80, 165, 255, 0.2));
+    filter: drop-shadow(0 0 3px rgba(110, 190, 255, 0.35)) drop-shadow(0 0 7px rgba(80, 165, 255, 0.2));
   }
 
-  to {
-    -webkit-box-shadow: 0 0 15px steelblue;
-    box-shadow: 0 0 15px steelblue;
+  50% {
+    -webkit-filter: drop-shadow(0 0 5px rgba(130, 205, 255, 0.85)) drop-shadow(0 0 14px rgba(80, 165, 255, 0.65)) drop-shadow(0 0 26px rgba(65, 140, 255, 0.35));
+    filter: drop-shadow(0 0 5px rgba(130, 205, 255, 0.85)) drop-shadow(0 0 14px rgba(80, 165, 255, 0.65)) drop-shadow(0 0 26px rgba(65, 140, 255, 0.35));
   }
 }
 
-@-webkit-keyframes lighting-pulse-dark {
-  from {
-    -webkit-box-shadow: 0 0 0px #edb040;
-    box-shadow: 0 0 0px #edb040;
+@keyframes rustore-glow-light {
+  0%, 100% {
+    -webkit-filter: drop-shadow(0 0 3px rgba(110, 190, 255, 0.35)) drop-shadow(0 0 7px rgba(80, 165, 255, 0.2));
+    filter: drop-shadow(0 0 3px rgba(110, 190, 255, 0.35)) drop-shadow(0 0 7px rgba(80, 165, 255, 0.2));
   }
 
-  to {
-    -webkit-box-shadow: 0 0 15px #edb040;
-    box-shadow: 0 0 15px #edb040;
+  50% {
+    -webkit-filter: drop-shadow(0 0 5px rgba(130, 205, 255, 0.85)) drop-shadow(0 0 14px rgba(80, 165, 255, 0.65)) drop-shadow(0 0 26px rgba(65, 140, 255, 0.35));
+    filter: drop-shadow(0 0 5px rgba(130, 205, 255, 0.85)) drop-shadow(0 0 14px rgba(80, 165, 255, 0.65)) drop-shadow(0 0 26px rgba(65, 140, 255, 0.35));
   }
 }
 
-@keyframes lighting-pulse-dark {
-  from {
-    -webkit-box-shadow: 0 0 0px #edb040;
-    box-shadow: 0 0 0px #edb040;
+@-webkit-keyframes rustore-glow-dark {
+  0%, 100% {
+    -webkit-filter: drop-shadow(0 0 3px rgba(110, 190, 255, 0.35)) drop-shadow(0 0 7px rgba(80, 165, 255, 0.2));
+    filter: drop-shadow(0 0 3px rgba(110, 190, 255, 0.35)) drop-shadow(0 0 7px rgba(80, 165, 255, 0.2));
   }
 
-  to {
-    -webkit-box-shadow: 0 0 15px #edb040;
-    box-shadow: 0 0 15px #edb040;
+  50% {
+    -webkit-filter: drop-shadow(0 0 5px rgba(130, 205, 255, 0.85)) drop-shadow(0 0 14px rgba(80, 165, 255, 0.65)) drop-shadow(0 0 26px rgba(65, 140, 255, 0.35));
+    filter: drop-shadow(0 0 5px rgba(130, 205, 255, 0.85)) drop-shadow(0 0 14px rgba(80, 165, 255, 0.65)) drop-shadow(0 0 26px rgba(65, 140, 255, 0.35));
+  }
+}
+
+@keyframes rustore-glow-dark {
+  0%, 100% {
+    -webkit-filter: drop-shadow(0 0 3px rgba(110, 190, 255, 0.35)) drop-shadow(0 0 7px rgba(80, 165, 255, 0.2));
+    filter: drop-shadow(0 0 3px rgba(110, 190, 255, 0.35)) drop-shadow(0 0 7px rgba(80, 165, 255, 0.2));
+  }
+
+  50% {
+    -webkit-filter: drop-shadow(0 0 5px rgba(130, 205, 255, 0.85)) drop-shadow(0 0 14px rgba(80, 165, 255, 0.65)) drop-shadow(0 0 26px rgba(65, 140, 255, 0.35));
+    filter: drop-shadow(0 0 5px rgba(130, 205, 255, 0.85)) drop-shadow(0 0 14px rgba(80, 165, 255, 0.65)) drop-shadow(0 0 26px rgba(65, 140, 255, 0.35));
   }
 }
 
@@ -4726,5 +4761,14 @@ img {
     -ms-flex-direction: column;
     flex-direction: column;
     width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .modal-list__rustore-link {
+    -webkit-animation: none;
+    animation: none;
+    -webkit-box-shadow: 0 0 8px rgba(110, 190, 255, 0.35);
+    box-shadow: 0 0 8px rgba(110, 190, 255, 0.35);
   }
 }
