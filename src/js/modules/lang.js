@@ -877,10 +877,6 @@ const langs = {
     ru: "Приложение автоматически обновляет курсы и позволяет мгновенно конвертировать валюты без сложных настроек",
     en: "The app automatically updates exchange rates and allows you to instantly convert currencies without complex settings",
   },
-  "converter-desc-eight": {
-    ru: "Приложение автоматически обновляет курсы и позволяет мгновенно конвертировать валюты без сложных настроек",
-    en: "The app automatically updates exchange rates and allows you to instantly convert currencies without complex settings",
-  },
   "convert-desc-nine": {
     ru: "Currency Converter поможет быстро узнать актуальный курс валют во время путешествий, покупок за границей и международных расчётов",
     en: "Currency Converter helps you quickly check current exchange rates when traveling, shopping abroad, or making international payments",
