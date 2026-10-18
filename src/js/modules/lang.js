@@ -90,14 +90,6 @@ const langs = {
     ru: "Этот проект помог мне отточить навыки композиции, типографики и работы с фирменным стилем, а также вдохновил на создание целой серии корпоративных дизайнов.",
     en: "This project helped me hone my composition, typography, and branding skills, and inspired me to create a whole series of corporate designs.",
   },
-  "visit-cards-time": {
-    ru: "Время на работу: ~ 20 часов",
-    en: "Time for work: ~ 20 h",
-  },
-  "price-lists-time": {
-    ru: "Время на работу: ~ 10 часов",
-    en: "Time for work: ~ 10 h",
-  },
   "write-intro": {
     ru: "Написать мне",
     en: "Contact me",
@@ -149,10 +141,6 @@ const langs = {
   "title-work-olivio": {
     ru: "Оливио",
     en: "Olivio",
-  },
-  "title-work-thrivetalk": {
-    ru: "Процветание",
-    en: "Thrivetalk",
   },
   "title-work-calc": {
     ru: "Калькулятор стоимости ремонта на JavaScript",
@@ -665,10 +653,6 @@ const langs = {
     ru: "Этот опыт помог мне укрепить понимание того, как визуал и функциональность объединяются, чтобы создавать целостный и запоминающийся пользовательский опыт.",
     en: "This experience helped me strengthen my understanding of how visuals and functionality come together to create a cohesive and memorable user experience.",
   },
-  "ducati-page-time": {
-    ru: "Время на работу: ~ 1 час",
-    en: "Time for work: ~ 1 h",
-  },
   "price-lists-subtitle": {
     ru: "Для парикмахер-стилистов Елены и Веры",
     en: "For hairstylists Elena and Vera",
@@ -729,10 +713,6 @@ const langs = {
     ru: "Работая над данным проектом, были использованы следующие инструменты и технологии:",
     en: "The following tools and technologies were used in working on this project:",
   },
-  "schedule-time": {
-    ru: "Время на работу ~ 7 ч",
-    en: "Time to work ~ 7 hours",
-  },
   "tech-lamitator": {
     ru: "Ламинатор A3 Brauberg",
     en: "Laminator A3 Brauberg",
@@ -752,10 +732,6 @@ const langs = {
   "archee-desc-four": {
     ru: "Дополнительно в проекте реализованы переключение языков интерфейса (RU / EN) и смена темы оформления (светлая / тёмная). Эти функции были добавлены для улучшения пользовательского опыта и демонстрации навыков работы с JavaScript при управлении состоянием интерфейса.",
     en: "Additionally, the project implements switching interface languages (RU / EN) and changing the theme (light / dark). These features were added to enhance the user experience and demonstrate JavaScript skills in managing interface state.",
-  },
-  "archee-time": {
-    ru: "Время на работу ~ 50 ч",
-    en: "Time to work ~ 50 hours",
   },
   "link-to-the-git-archee": {
     ru: "Ссылка на репозиторий GitHub / более подробное описание проекта",
@@ -799,10 +775,6 @@ const langs = {
     ru: "Наиболее подробную информацию о проекте Вы сможете найти в файле Readme.md перейдя по",
     en: "You can find the most detailed information about the project in the Readme.md file by clicking on",
   },
-  "time-web-templates": {
-    ru: "Время на работу ~ 40 ч",
-    en: "Time to work ~ 40 h",
-  },
 
   // Modal window Dream On Wheels
 
@@ -826,10 +798,6 @@ const langs = {
   "dream-on-wheels-desc-three": {
     ru: "Работа над проектом помогла отточить навыки фронтенд-разработки, автоматизации и оптимизации кода. Результатом стал современный, адаптивный и легкий сайт, отражающий мой стиль и внимание к деталям.",
     en: "Working on the project helped hone my skills in frontend development, automation, and code optimization. The result is a modern, responsive, and lightweight website that reflects my style and attention to detail.",
-  },
-  "time-dream-on-wheels": {
-    ru: "Время на работу ~ 45 ч",
-    en: "Time to work ~ 45 h",
   },
 
   // Currency Converter
@@ -881,20 +849,12 @@ const langs = {
     ru: "Currency Converter поможет быстро узнать актуальный курс валют во время путешествий, покупок за границей и международных расчётов",
     en: "Currency Converter helps you quickly check current exchange rates when traveling, shopping abroad, or making international payments",
   },
-  "time-converter": {
-    ru: "Время на работу ~ 50 ч",
-    en: "Time to work ~ 50 h",
-  },
 
   // Oxygen
 
   "client-oxygen": {
     ru: "Web-школа От 0 до 1",
     en: "Web-school from 0 to 1",
-  },
-  "oxygen-time": {
-    ru: "Время на работу ~ 29 ч",
-    en: "Time to work ~ 29 h",
   },
   "oxygen-desc-one": {
     ru: "Проект был создан в учебных целях для практики методологии БЭМ и углубления навыков работы с CSS и JavaScript. Каркас страницы был подготовлен под руководством наставника, а всё оформление и функционал реализованы мной самостоятельно.",
@@ -936,10 +896,6 @@ const langs = {
     ru: "В разделе Pricing реализовано интерактивное выделение активного тарифа с плавным переключением карточек",
     en: "The Pricing section now features interactive selection of the active tariff with seamless card switching",
   },
-  "time-oxygen": {
-    ru: "Время на работу ~ 20.5 ч",
-    en: "Time to work ~ 20.5 h",
-  },
   // Olivia
   "olivia-desc": {
     ru: "Olivia — стильный адаптивный лэндинг, созданный для практики работы с современными веб-технологиями и интерактивными элементами интерфейса. Проект сочетает лаконичный дизайн и плавную анимацию, делая взаимодействие с сайтом лёгким и приятным.",
@@ -952,10 +908,6 @@ const langs = {
   "olivia-desc-two": {
     ru: "В секции с видео при нажатии на «Play» ролик запускается, кнопка меняется на «Pause», а при наведении курсора появляется лёгкое затемнение",
     en: "In the video section, when you click «Play» the video starts, the button changes to «Pause» and when you hover over it with the cursor, a slight darkening appears",
-  },
-  "time-olivia-to-work": {
-    ru: "Время на работу ~ 20 ч",
-    en: "Time to work ~ 20 h",
   },
   // Password Generator
   "password-generator-desc": {
@@ -1027,10 +979,6 @@ const langs = {
     ru: "Плагины Sublime Text 3: Emmet, LiveReload, AutoFileName и другие",
     en: "Sublime Text 3 plugins: Emmet, LiveReload, AutoFileName and more",
   },
-  "thrivetalk-time-to-work": {
-    ru: "Время на работу ~ 23 ч",
-    en: "Time to work ~ 23 h",
-  },
   // Venom 2
   "venom-desc": {
     ru: "Проект представляет собой промостраницу, созданную для демонстрации фильма «Веном 2». Главная цель — передать атмосферу фильма через визуальное оформление и плавные интерактивные элементы.",
@@ -1043,10 +991,6 @@ const langs = {
   "venom-desc-three": {
     ru: "<b>Результат — динамичный лендинг с кинематографичной атмосферой.</b>",
     en: "<b>The result is a dynamic landing page with a cinematic atmosphere.</b>",
-  },
-  "venom-time-to-work": {
-    ru: "Время на работу ~ 25 ч",
-    en: "Time to work ~ 25 h",
   },
   // Калькулятор стоимости ремонта
   "calculator-title": {
@@ -1084,10 +1028,6 @@ const langs = {
   "calc-desc-seven": {
     ru: "Основная логика калькулятора написана на JavaScript без использования сторонних библиотек. Особое внимание уделено плавности обновления значений и интерактивности — пользователь сразу видит, как изменяются результаты при выборе разных параметров. Проект демонстрирует работу с DOM, обработку событий, динамические расчёты и основы построения удобного интерфейса.",
     en: "The main logic of the calculator is written in JavaScript without using third-party libraries. Special attention is paid to the smoothness of updating values and interactivity — the user immediately sees how the results change when selecting different parameters. The project demonstrates working with DOM, event handling, dynamic calculations, and the basics of building a user-friendly interface.",
-  },
-  "calc-time-to-work": {
-    ru: "Время на работу ~ 20 ч",
-    en: "Time to work ~ 20 h",
   },
   // ссылка о персональных данных
   "personal-data-text": {
