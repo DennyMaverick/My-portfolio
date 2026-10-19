@@ -515,6 +515,7 @@
 .theme__icon {
   width: 15px;
   height: 15px;
+  pointer-events: none;
   cursor: pointer;
   -webkit-transition: -webkit-transform 0.3s ease-in;
   transition: -webkit-transform 0.3s ease-in;
@@ -539,8 +540,8 @@
 }
 
 .theme__btn {
-  padding: 5px;
-  margin: -5px;
+  padding: 10px;
+  margin: -10px;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
