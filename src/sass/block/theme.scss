@@ -1,5 +1,5 @@
-@use '../_config/variables';
-@use '../_mixins/media';
+@use "../_config/variables";
+@use "../_mixins/media";
 
 .theme {
   position: relative;
@@ -14,7 +14,9 @@
     display: flex;
     align-items: center;
     padding: 12px 17px;
-    transition: background .3s ease-in, box-shadow .3s ease-in;
+    transition:
+      background 0.3s ease-in,
+      box-shadow 0.3s ease-in;
     &-light {
       background: variables.$theme-modal-light;
       box-shadow: 1px 1px 10px variables.$theme-modal-light;
@@ -46,7 +48,9 @@
   &__close {
     width: 27px;
     height: 32px;
-    transition: transform 0.2s linear, fill 0.3s linear;
+    transition:
+      transform 0.2s linear,
+      fill 0.3s linear;
     &:hover {
       transform: translateY(-3px);
     }
@@ -64,8 +68,9 @@
   &__icon {
     width: 15px;
     height: 15px;
+    pointer-events: none;
     cursor: pointer;
-    transition: transform .3s ease-in;
+    transition: transform 0.3s ease-in;
   }
 
   &__light {
@@ -86,8 +91,8 @@
     }
   }
   &__btn {
-    padding: 5px;
-    margin: -5px;
+    padding: 10px;
+    margin: -10px;
     transform: scale(1);
     &:hover .theme__icon {
       transform: scale(1.2);
