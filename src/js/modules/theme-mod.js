@@ -626,6 +626,12 @@ const themes = {
       dark: "modal-list__rustore-link--dark",
     },
   },
+  ".footer__back-to-top-icon": {
+    theme: {
+      light: "footer__back-to-top-icon--light",
+      dark: "footer__back-to-top-icon--dark",
+    },
+  },
 }
 
 function themeSwitch(theme) {
