@@ -3311,6 +3311,62 @@
   color: #bbc;
 }
 
+.footer__back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.footer__back-to-top-icon {
+  width: 70px;
+  height: 70px;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: -webkit-filter 0.4s ease-in, -webkit-transform 0.4s ease-in;
+  transition: -webkit-filter 0.4s ease-in, -webkit-transform 0.4s ease-in;
+  -o-transition: filter 0.4s ease-in, transform 0.4s ease-in;
+  transition: filter 0.4s ease-in, transform 0.4s ease-in;
+  transition: filter 0.4s ease-in, transform 0.4s ease-in, -webkit-filter 0.4s ease-in, -webkit-transform 0.4s ease-in;
+}
+
+.footer__back-to-top-icon:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.footer__back-to-top-icon--light {
+  fill: steelblue;
+}
+
+.footer__back-to-top-icon--light:hover {
+  -webkit-filter: drop-shadow(0 0 3px rgba(110, 190, 255, 0.35)) drop-shadow(0 0 7px rgb(80, 165, 255));
+  filter: drop-shadow(0 0 3px rgba(110, 190, 255, 0.35)) drop-shadow(0 0 7px rgb(80, 165, 255));
+}
+
+.footer__back-to-top-icon--dark {
+  fill: #edb040;
+}
+
+.footer__back-to-top-icon--dark:hover {
+  -webkit-filter: drop-shadow(0 0 3px rgba(110, 190, 255, 0.35)) drop-shadow(0 0 7px rgb(80, 165, 255));
+  filter: drop-shadow(0 0 3px rgba(110, 190, 255, 0.35)) drop-shadow(0 0 7px rgb(80, 165, 255));
+}
+
 @-webkit-keyframes move-up {
   0% {
     -webkit-transform: translateY(0px);
@@ -3459,116 +3515,6 @@
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
-}
-
-#backToTop {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 999;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  border: none;
-  outline: none;
-  background: #111;
-  cursor: pointer;
-  -webkit-box-shadow: 0 0 20px #0ff, 0 0 40px #0ff, 0 0 60px #0ff;
-  box-shadow: 0 0 20px #0ff, 0 0 40px #0ff, 0 0 60px #0ff;
-  -webkit-transition: -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
-  transition: -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
-  -o-transition: transform 0.3s ease, box-shadow 0.3s ease;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-#backToTop:hover {
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
-  -webkit-box-shadow: 0 0 30px #edb040, 0 0 60px #00ffff, 0 0 90px #edb040;
-  box-shadow: 0 0 30px #edb040, 0 0 60px #00ffff, 0 0 90px #edb040;
-}
-
-#backToTop .arrow {
-  stroke: #0ff;
-  -webkit-animation: arrowBounce 1s infinite alternate, arrowColor 4s infinite alternate;
-  animation: arrowBounce 1s infinite alternate, arrowColor 4s infinite alternate;
-}
-
-@-webkit-keyframes arrowBounce {
-  0% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-
-  100% {
-    -webkit-transform: translateY(-6px);
-    transform: translateY(-6px);
-  }
-}
-
-@keyframes arrowBounce {
-  0% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-
-  100% {
-    -webkit-transform: translateY(-6px);
-    transform: translateY(-6px);
-  }
-}
-
-@-webkit-keyframes arrowColor {
-  0% {
-    stroke: #ccc;
-  }
-
-  25% {
-    stroke: steelblue;
-  }
-
-  50% {
-    stroke: #edb040;
-  }
-
-  75% {
-    stroke: steelblue;
-  }
-
-  100% {
-    stroke: #ccc;
-  }
-}
-
-@keyframes arrowColor {
-  0% {
-    stroke: #ccc;
-  }
-
-  25% {
-    stroke: steelblue;
-  }
-
-  50% {
-    stroke: #edb040;
-  }
-
-  75% {
-    stroke: steelblue;
-  }
-
-  100% {
-    stroke: #ccc;
-  }
 }
 
 /* Подсветка активного пункта меню */
@@ -4565,14 +4511,14 @@ img {
     border-right: none;
   }
 
-  #backToTop {
+  .footer__back-to-top {
     width: 30px;
     height: 30px;
   }
 
-  #backToTop svg {
-    width: 25px;
-    height: 25px;
+  .footer__back-to-top-icon {
+    width: 35px;
+    height: 35px;
   }
 
   .technologies-board__list {
