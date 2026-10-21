@@ -13,19 +13,38 @@ const hideFontProgress = function () {
   })
 }
 
+// fontChangeIcons.forEach((item) => {
+//   item.addEventListener("mouseenter", function (event) {
+//     const showFontChangePopup = function () {
+//       const currentFontChangeBar = event.target.closest(".font-change")
+//       const currentFontChangePopup = currentFontChangeBar.querySelector(".font-change__popup")
+
+//       currentFontChangePopup.classList.add("font-change__popup--active")
+
+//       setTimeout(() => {
+//         currentFontChangePopup.classList.remove("font-change__popup--active")
+//       }, 6000)
+//     }
+//     showFontChangePopup()
+//   })
+// })
+
 fontChangeIcons.forEach((item) => {
-  item.addEventListener("mouseenter", function (event) {
-    const showFontChangePopup = function () {
-      const currentFontChangeBar = event.target.closest(".font-change")
-      const currentFontChangePopup = currentFontChangeBar.querySelector(".font-change__popup")
+  let popupTimeout
 
-      currentFontChangePopup.classList.add("font-change__popup--active")
+  const currentFontChangeBar = item.closest(".font-change")
+  const currentFontChangePopup = currentFontChangeBar.querySelector(".font-change__popup")
 
-      setTimeout(() => {
-        currentFontChangePopup.classList.remove("font-change__popup--active")
-      }, 6000)
-    }
-    showFontChangePopup()
+  item.addEventListener("mouseenter", function () {
+    clearTimeout(popupTimeout)
+
+    currentFontChangePopup.classList.add("font-change__popup--active")
+  })
+
+  item.addEventListener("mouseleave", function () {
+    popupTimeout = setTimeout(() => {
+      currentFontChangePopup.classList.remove("font-change__popup--active")
+    }, 6000)
   })
 })
 

@@ -244,6 +244,7 @@
     }
   }
   &__back-to-top {
+    display: none;
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -267,7 +268,9 @@
     width: 70px;
     height: 70px;
     transform: scale(1);
-    transition: filter 0.4s ease-in, transform .4s ease-in;
+    transition:
+      filter 0.4s ease-in,
+      transform 0.4s ease-in;
     &:hover {
       transform: scale(1.2);
     }
@@ -276,7 +279,7 @@
       fill: variables.$select-color-light;
 
       &:hover {
-        filter: drop-shadow(0 0 3px rgb(110 190 255 / 35%)) drop-shadow(0 0 7px rgb(80 165 255));
+        filter: drop-shadow(0 0 3px #ffffff) drop-shadow(0 0 6px #ffffff) drop-shadow(0 1px 2px #68758233);
       }
     }
     &--dark {
