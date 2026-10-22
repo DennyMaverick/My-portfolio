@@ -658,7 +658,7 @@
 }
 
 .btn {
-  font: 1.06rem/1.1 "Montserrat", sans-serif;
+  font: 600 1.06rem/1.1 "Montserrat", sans-serif;
   background: transparent;
   min-width: 170px;
   outline: none;
@@ -680,30 +680,30 @@
 .btn--dark {
   color: #fff;
   border: 2px solid #fff;
-  -webkit-box-shadow: 0 0 0px #edb040;
-  box-shadow: 0 0 0px #edb040;
+  -webkit-box-shadow: 0 0 0 0 transparent;
+  box-shadow: 0 0 0 0 transparent;
 }
 
 .btn--dark:hover {
-  background: #edb040;
-  color: #2B2B2D;
-  -webkit-box-shadow: 0 0 15px #edb040;
-  box-shadow: 0 0 15px #edb040;
+  background: #29231f;
+  color: #fff;
+  -webkit-box-shadow: 0 0 5px #edb040, 0 0 12px rgba(237, 176, 64, 0.45);
+  box-shadow: 0 0 5px #edb040, 0 0 12px rgba(237, 176, 64, 0.45);
   border-color: #edb040;
 }
 
 .btn--light {
   color: #2B2B2D;
   border: 2px solid #6a6969;
-  -webkit-box-shadow: 0 0 0px steelblue;
-  box-shadow: 0 0 0px steelblue;
+  -webkit-box-shadow: 0 0 0 0 transparent;
+  box-shadow: 0 0 0 0 transparent;
 }
 
 .btn--light:hover {
-  background: steelblue;
-  color: #fff;
-  -webkit-box-shadow: 0 0 15px steelblue;
-  box-shadow: 0 0 15px steelblue;
+  background: #edf0f3;
+  color: #2B2B2D;
+  -webkit-box-shadow: 0 0 4px steelblue, 0 0 10px rgba(70, 130, 180, 0.55);
+  box-shadow: 0 0 4px steelblue, 0 0 10px rgba(70, 130, 180, 0.55);
   border-color: steelblue;
 }
 
