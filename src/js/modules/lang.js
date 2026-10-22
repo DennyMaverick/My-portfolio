@@ -994,8 +994,8 @@ const langs = {
   },
   // Калькулятор стоимости ремонта
   "calculator-title": {
-    ru: "Калькулятор стоимости ремонта на JavaScript",
-    en: "Calculator of rapairing cost in Javascript",
+    ru: "Калькулятор стоимости ремонта",
+    en: "Calculator of rapairing cost",
   },
   "calc-desc": {
     ru: "Интерактивный калькулятор позволяет пользователю рассчитать примерную стоимость ремонта квартиры в зависимости от выбранных параметров. Проект реализован на чистом JavaScript с упором на динамическое обновление данных и удобство взаимодействия с интерфейсом.",
@@ -1431,8 +1431,8 @@ const repeatElems = {
     en: "Promo-sites",
   },
   "elements-of-javascript": {
-    ru: "Мини-приложения",
-    en: "Mini Apps",
+    ru: "Приложения",
+    en: "Applications",
   },
   "cat-landings": {
     ru: "Категория: Лэндинги",
@@ -1443,8 +1443,8 @@ const repeatElems = {
     en: "Category: Sites - visit cards",
   },
   "cat-javascript-interface": {
-    ru: "Категория: Мини-приложения",
-    en: "Category: Mini Apps",
+    ru: "Категория: Приложения",
+    en: "Category: Applications",
   },
   "cat-design": {
     ru: "Категория: Дизайн",
