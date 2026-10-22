@@ -1,13 +1,13 @@
-@use '../_config/variables';
-@use '../_mixins/media';
-@use 'sass:color';
+@use "../_config/variables";
+@use "../_mixins/media";
+@use "sass:color";
 
 .btn {
   min-width: 170px;
   outline: none;
   display: inline-block;
   vertical-align: top;
-
+  font-weight: 600;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
 
@@ -21,27 +21,38 @@
   border-radius: 28.62px;
   padding: 15.9px 27.03px;
   text-align: center;
-  transition: background-color 0.2s linear, border-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear;
+  transition:
+    background-color 0.2s linear,
+    border-color 0.2s linear,
+    color 0.2s linear,
+    box-shadow 0.2s linear;
   &--dark {
     color: variables.$white;
     border: 2px solid variables.$white;
-    box-shadow: 0 0 0px variables.$select-color-dark;
+    box-shadow: 0 0 0 0 transparent;
     &:hover {
-      background-color: variables.$select-color-dark;
-      color: variables.$black;
-      box-shadow: 0 0 15px variables.$select-color-dark;
+      background-color: #29231f;
+      color: variables.$white;
+      // background-color: variables.$select-color-dark;
+      // color: variables.$black;
+      box-shadow:
+        0 0 5px variables.$select-color-dark,
+        0 0 12px color.scale(variables.$select-color-dark, $alpha: -55%);
       border-color: variables.$select-color-dark;
     }
   }
   &--light {
     color: variables.$black;
     border: 2px solid variables.$grey;
-    box-shadow: 0 0 0px variables.$select-color-light;
+    box-shadow: 0 0 0 0 transparent;
     &:hover {
-      background-color: variables.$select-color-light;
-      color: variables.$white;
+      // background-color: variables.$select-color-light;
+      background-color: #edf0f3;
+      color: variables.$black;
       // transparentize .76 - opacity 24%
-      box-shadow: 0 0 15px variables.$select-color-light;
+      box-shadow:
+        0 0 4px variables.$select-color-light,
+        0 0 10px color.scale(variables.$select-color-light, $alpha: -45%);
       border-color: variables.$select-color-light;
     }
   }
