@@ -632,6 +632,12 @@ const themes = {
       dark: "footer__back-to-top-icon--dark",
     },
   },
+  ".theme__dark": {
+    theme: {
+      light: "theme__dark--light",
+      dark: "theme__dark--dark",
+    },
+  },
 }
 
 function themeSwitch(theme) {

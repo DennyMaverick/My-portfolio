@@ -13,7 +13,7 @@
     width: 17px;
     height: 27px;
     &--light {
-      fill: variables.$black;
+      fill: variables.$white;
     }
     &--dark {
       fill: variables.$white;
@@ -37,7 +37,7 @@
     padding: 7px;
     transition: 0.3s ease-in transform, 0.3s ease-in opacity;
     &--light {
-      border: 1px solid variables.$black;
+      border: 1px solid variables.$white;
     }
     &--dark {
       border: 1px solid variables.$white;

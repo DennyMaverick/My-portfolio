@@ -19,11 +19,11 @@
       box-shadow 0.3s ease-in;
     &-light {
       background: variables.$theme-modal-light;
-      box-shadow: 1px 1px 10px variables.$theme-modal-light;
+      box-shadow: 1px 1px 10px variables.$white;
     }
     &-dark {
       background: variables.$theme-modal-dark;
-      box-shadow: 2px 2px 13px variables.$theme-modal-dark;
+      box-shadow: 2px 2px 13px variables.$white;
     }
     @include media.bp-desk(tablet) {
       padding: 10px 17px;
@@ -59,7 +59,7 @@
       height: 26px;
     }
     &--light {
-      fill: variables.$black;
+      fill: variables.$white;
     }
     &--dark {
       fill: variables.$white;
@@ -103,5 +103,13 @@
   }
   &__font-change-popup {
     top: -10px;
+  }
+  &__dark {
+    &--light {
+      fill: #fff;
+    }
+    &--dark {
+      fill: #fff;
+    }
   }
 }

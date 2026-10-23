@@ -7,8 +7,8 @@
   }
   &--light {
     nav ul li a.active {
-      color: variables.$select-color-light;
-      border-bottom: 2px solid variables.$select-color-light;
+      color: variables.$white;
+      border-bottom: 2px solid variables.$white;
     }
   }
   &--dark {

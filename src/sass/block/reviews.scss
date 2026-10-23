@@ -26,12 +26,15 @@
     margin-right: 15px;
     color: variables.$black;
     transition: color .5s ease-in;
-    &--light:hover {
-      color: variables.$select-color-light;
+    &:hover {
+      opacity: .8;
     }
-    &--dark:hover {
-      color: variables.$select-color-dark;
-    }
+    // &--light:hover {
+    //   color: variables.$select-color-light;
+    // }
+    // &--dark:hover {
+    //   color: variables.$select-color-dark;
+    // }
     @include media.bp-desk(mobile) {
       font-size: 1.7rem;
       margin-bottom: 10px;
@@ -77,16 +80,17 @@
       box-shadow: 0 0 15px variables.$select-color-light;
     }
     &--dark:hover {
-      box-shadow: 0 0 15px variables.$select-color-dark;
+      box-shadow: 0 0 15px variables.$select-color-light;
     }
     &--light {
       &::before {
-        border-color: variables.$select-color-light;
+        border-color: variables.$theme-modal-dark;
       }
     }
     &--dark {
       &::before {
-        border-color: variables.$select-color-dark;
+        border-color: variables.$theme-modal-light;
+;
       }
     }
     &::before {

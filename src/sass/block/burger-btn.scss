@@ -41,12 +41,12 @@
     }
 
     &--light {
-      background-color: variables.$black;
+      background-color: variables.$white;
       &::before {
-        background-color: variables.$black;
+        background-color: variables.$white;
       }
       &::after {
-        background-color: variables.$black;
+        background-color: variables.$white;
       }
     }
     &--dark {

@@ -12,10 +12,10 @@
   transition: background-color 0.3s ease-in;
   padding-right: calc(20px - (100vw - 100%));
   &--light {
-    background: variables.$white;
+    background: variables.$theme-modal-light;
   }
   &--dark {
-    background: variables.$black;
+    background: variables.$theme-modal-dark;
   }
   @include media.media-down(1041px) {
     padding-top: 25px;
@@ -44,7 +44,7 @@
     right: 0;
     transition: background-color 0.3s ease-in, transform 1s ease-in, opacity 1s ease-in;
     &--light {
-      background-color: variables.$white;
+      background-color: lightcoral;
     }
     &--dark {
       background-color: variables.$black;

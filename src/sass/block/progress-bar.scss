@@ -1,6 +1,5 @@
-@use '../_config/variables';
-@use '../_mixins/media';
-
+@use "../_config/variables";
+@use "../_mixins/media";
 
 .progress-bar {
   &__item {
@@ -13,7 +12,10 @@
     margin-bottom: 15px;
     transform: scale(1);
     box-shadow: 0 0 0 variables.$black;
-    transition: border .3s ease-in, transform .3s ease-in, box-shadow .3s ease-in;
+    transition:
+      border 0.3s ease-in,
+      transform 0.3s ease-in,
+      box-shadow 0.3s ease-in;
     &:hover {
       transform: scale(1.02);
     }
@@ -25,7 +27,7 @@
     }
     &--dark {
       &:hover {
-        box-shadow: 0 0 15px variables.$orange;
+        box-shadow: 0 0 15px variables.$theme-modal-dark;
       }
       border: 0.75px solid variables.$white;
     }
@@ -35,7 +37,7 @@
     font-weight: 500;
     max-width: 125.1px;
     hyphens: manual;
-    transition: color .3s ease-in;
+    transition: color 0.3s ease-in;
     &--light {
       color: variables.$select-color-light;
     }
@@ -54,7 +56,8 @@
     width: 40%;
   }
   @include media.media-down(420px) {
-    &__left, &__right {
+    &__left,
+    &__right {
       width: 100%;
       padding: 0;
     }
@@ -65,7 +68,7 @@
   &__bar {
     width: 139px;
     height: 6px;
-    transition: background-color .3s ease-in;
+    transition: background-color 0.3s ease-in;
     &--light {
       background-color: variables.$grey-ligth-third;
     }
@@ -78,7 +81,9 @@
   }
   &__progress {
     height: 100%;
-    transition: width 0.2s linear, background-color 0.3s linear;
+    transition:
+      width 0.2s linear,
+      background-color 0.3s linear;
     &--light {
       background-color: variables.$grey;
     }

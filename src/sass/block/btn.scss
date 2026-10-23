@@ -37,7 +37,7 @@
       // color: variables.$black;
       box-shadow:
         0 0 5px variables.$select-color-dark,
-        0 0 12px color.scale(variables.$select-color-dark, $alpha: -55%);
+        0 0 12px variables.$select-color-dark;
       border-color: variables.$select-color-dark;
     }
   }
@@ -48,12 +48,12 @@
     &:hover {
       // background-color: variables.$select-color-light;
       background-color: #edf0f3;
-      color: variables.$black;
+      color: variables.$black !important;
       // transparentize .76 - opacity 24%
       box-shadow:
         0 0 4px variables.$select-color-light,
-        0 0 10px color.scale(variables.$select-color-light, $alpha: -45%);
-      border-color: variables.$select-color-light;
+        0 0 10px variables.$select-color-light;
+      border-color: variables.$select-color-dark;
     }
   }
   &:focus {

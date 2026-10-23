@@ -58,38 +58,39 @@ $technologies-color-dark: #28d37a;
 
 // === light ===
 
-$select-color-light: steelblue;
+$select-color-light: #001c4e;
 
 // === dark ===
-$select-color-dark: #edb040;
+// $select-color-dark: #4e1100;
+$select-color-dark: #fff;
 
 // ====== modal__list ======
 
 // ======= light ========
-$modal-list-marker-color: steelblue;
-$modal-list-link: steelblue;
+$modal-list-marker-color: #001c4e;
+$modal-list-link: #001c4e;
 
 // ======= dark ========
-$modal-list-marker-color-dark: #edb040;
-$modal-list-link-dark: #edb040;
+$modal-list-marker-color-dark: #fff;
+$modal-list-link-dark: #fff;
 
 // === description-show / description-hide ===
 
 // === light ===
 
-$desc-show-color: steelblue;
+$desc-show-color: #001c4e;
 
 // === dark ===
-$desc-show-color-dark: #edb040;
+$desc-show-color-dark: #fff;
 
 // ==== arrow-up hover timeline, modal-work =====
 
 // Light
 // arrow-up static
-$arrow-up-color-light: steelblue;
+$arrow-up-color-light: #001c4e;
 // Dark
 // arrow-up static
-$arrow-up-color: #edb040;
+$arrow-up-color: #fff;
 
 // Dark
 // arrow-up hover
@@ -101,8 +102,8 @@ $arrow-up-color-light-hover: #4697B2;
 // modal-work__btn  Colors
 // static
 $btn-color: floralwhite;
-$color-btn-dark: #edb040;
-$color-btn-light: steelblue;
+$color-btn-dark: #4e1100;
+$color-btn-light: #001c4e;
 // hover
 $btn-color-hover: floralwhite; /*dark-dtn*/
 
@@ -110,8 +111,8 @@ $hover-btn-dark: bisque;
 $hover-btn-light: aliceblue;
 
 // ==== theme modal === resume & hire-me
-$theme-modal-light: steelblue;
-$theme-modal-dark: #edb040;
+$theme-modal-light: #001c4e;
+$theme-modal-dark: #4e1100;
 
 // SHOW MORE
 // color === Dark ===
