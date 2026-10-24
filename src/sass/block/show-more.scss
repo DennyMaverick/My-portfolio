@@ -17,7 +17,7 @@
     transition: color .3s ease-in, background-color .3s ease-in, box-shadow .3s ease-in;
     &--light {
       color: variables.$show-more-color-light;
-      background-color: variables.$show-more-bg-light;
+      background-color: variables.$select-color-light;
       box-shadow: -1px -1px 5px variables.$show-more-bg-light;
     }
     &--dark {
