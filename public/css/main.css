@@ -218,6 +218,7 @@
 }
 
 .lang-tool {
+  background: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -232,20 +233,11 @@
   padding: 7px 12px;
   border-radius: 10px;
   font-weight: 600;
+  color: #2B2B2D;
 }
 
 .lang-tool--active {
   color: #6a6969;
-}
-
-.lang-tool--light {
-  background: #2B2B2D;
-  color: #fff;
-}
-
-.lang-tool--dark {
-  background: #fff;
-  color: #2B2B2D;
 }
 
 .lang-tool__separate {

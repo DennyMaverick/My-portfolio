@@ -1,4 +1,4 @@
-@use '../_config/variables';
+@use "../_config/variables";
 
 .lang-tool {
   display: flex;
@@ -9,16 +9,10 @@
   padding: 7px 12px;
   border-radius: 10px;
   font-weight: 600;
+  background-color: variables.$white;
+  color: variables.$black;
   &--active {
     color: variables.$grey;
-  }
-  &--light {
-    background-color: variables.$black;
-    color: variables.$white;
-  }
-  &--dark {
-    background-color: variables.$white;
-    color: variables.$black;
   }
   &__separate {
     margin-left: 5px;
