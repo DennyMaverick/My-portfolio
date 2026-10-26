@@ -141,8 +141,8 @@
 }
 
 .header--box-shadow-light {
-  -webkit-box-shadow: 0 0 5px #2B2B2D;
-  box-shadow: 0 0 5px #2B2B2D;
+  -webkit-box-shadow: 0 0 5px #fff;
+  box-shadow: 0 0 5px #fff;
 }
 
 .mobile-modal__nav {
