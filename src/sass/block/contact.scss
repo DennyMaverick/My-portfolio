@@ -52,10 +52,10 @@
     margin-right: 11.25px;
     transition: fill .3s ease-in;
     &--light {
-      fill: variables.$black;
+      color: variables.$black;
     }
     &--dark {
-      fill: variables.$white;
+      color: variables.$white;
     }
   }
 }

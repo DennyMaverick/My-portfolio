@@ -12,19 +12,20 @@
   }
 
   &--github {
-    fill: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
   }
 
   &--vk {
-    fill: #0673f9;
+    color: #0673f9;
+  }
+
+  &--linkedin {
+    color: #0077B5;
   }
 
   &--vk-sizes {
     width: 37px;
     height: 37px;
-  }
-  &--telegram {
-    fill: rgb(85, 177, 226);
   }
 
   &__link {

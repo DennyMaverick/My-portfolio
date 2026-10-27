@@ -1317,6 +1317,14 @@ const titles = {
     ru: "Страница GitHub",
     en: "GitHub Page",
   },
+  "linkedin-intro": {
+    ru: "Страница LinkedIn",
+    en: "Page LinkedIn",
+  },
+  "linkedin-footer": {
+    ru: "Страница LinkedIn",
+    en: "Page LinkedIn",
+  },
   "telegram-footer": {
     ru: "Мой телеграм",
     en: "My telegram",

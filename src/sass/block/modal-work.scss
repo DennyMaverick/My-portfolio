@@ -155,17 +155,17 @@
     height: 20px;
     margin-left: auto;
     &--light {
-      fill: variables.$arrow-up-color-light;
+      color: variables.$arrow-up-color-light;
       transition: fill 0.3s ease-in;
       &:hover {
-        fill: variables.$arrow-up-color-light-hover;
+        color: variables.$arrow-up-color-light-hover;
       }
     }
     &--dark {
-      fill: variables.$arrow-up-color;
+      color: variables.$arrow-up-color;
       transition: fill 0.3s ease-in;
       &:hover {
-        fill: variables.$arrow-up-color-hover;
+        color: variables.$arrow-up-color-hover;
       }
     }
   }

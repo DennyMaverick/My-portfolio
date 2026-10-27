@@ -13,10 +13,10 @@
     width: 17px;
     height: 27px;
     &--light {
-      fill: variables.$white;
+      color: variables.$white;
     }
     &--dark {
-      fill: variables.$white;
+      color: variables.$white;
     }
   }
   &__text {

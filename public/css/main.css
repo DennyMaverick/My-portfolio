@@ -269,11 +269,11 @@
 }
 
 .font-change__icon--light {
-  fill: #fff;
+  color: #fff;
 }
 
 .font-change__icon--dark {
-  fill: #fff;
+  color: #fff;
 }
 
 .font-change__text {
@@ -497,11 +497,11 @@
 }
 
 .theme__close--light {
-  fill: #fff;
+  color: #fff;
 }
 
 .theme__close--dark {
-  fill: #fff;
+  color: #fff;
 }
 
 .theme__icon {
@@ -517,11 +517,11 @@
 }
 
 .theme__light {
-  fill: #fff;
+  color: #fff;
 }
 
 .theme__dark {
-  fill: #2B2B2D;
+  color: #2B2B2D;
 }
 
 .theme--sticky {
@@ -554,11 +554,11 @@
 }
 
 .theme__dark--light {
-  fill: #fff;
+  color: #fff;
 }
 
 .theme__dark--dark {
-  fill: #fff;
+  color: #fff;
 }
 
 .burger-btn {
@@ -837,11 +837,11 @@
 }
 
 .intro .social--github-light {
-  fill: #2B2B2D;
+  color: #2B2B2D;
 }
 
 .intro .social--github-dark {
-  fill: #fff;
+  color: #fff;
 }
 
 .social {
@@ -863,20 +863,20 @@
 }
 
 .social--github {
-  fill: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
 }
 
 .social--vk {
-  fill: #0673f9;
+  color: #0673f9;
+}
+
+.social--linkedin {
+  color: #0077B5;
 }
 
 .social--vk-sizes {
   width: 37px;
   height: 37px;
-}
-
-.social--telegram {
-  fill: rgb(85, 177, 226);
 }
 
 .social__link {
@@ -2067,27 +2067,19 @@
 }
 
 .timeline__col .social--github-light {
-  fill: #2B2B2D;
+  color: #2B2B2D;
 }
 
 .timeline__col .social--github-dark {
-  fill: #fff;
-}
-
-.timeline__col .social--telegram-light {
-  fill: #2B2B2D;
-}
-
-.timeline__col .social--telegram-dark {
-  fill: #fff;
+  color: #fff;
 }
 
 .timeline__col .social--vk-light {
-  fill: #2B2B2D;
+  color: #2B2B2D;
 }
 
 .timeline__col .social--vk-dark {
-  fill: #fff;
+  color: #fff;
 }
 
 .timeline__col--left {
@@ -2120,25 +2112,25 @@
 }
 
 .timeline__arrow-up-pic--light {
-  fill: #001c4e;
+  color: #001c4e;
   -webkit-transition: fill 0.3s ease-in;
   -o-transition: fill 0.3s ease-in;
   transition: fill 0.3s ease-in;
 }
 
 .timeline__arrow-up-pic--light:hover {
-  fill: #4697B2;
+  color: #4697B2;
 }
 
 .timeline__arrow-up-pic--dark {
-  fill: #fff;
-  -webkit-transition: fill 0.3s ease-in;
-  -o-transition: fill 0.3s ease-in;
-  transition: fill 0.3s ease-in;
+  color: #fff;
+  -webkit-transition: color 0.3s ease-in;
+  -o-transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in;
 }
 
 .timeline__arrow-up-pic--dark:hover {
-  fill: burlywood;
+  color: burlywood;
 }
 
 .timeline__title {
@@ -2485,11 +2477,11 @@
 }
 
 .contact__info-icon--light {
-  fill: #2B2B2D;
+  color: #2B2B2D;
 }
 
 .contact__info-icon--dark {
-  fill: #fff;
+  color: #fff;
 }
 
 .sertificate-modal__image {
@@ -2667,25 +2659,25 @@
 }
 
 .modal-work__arrow-up-pic--light {
-  fill: #001c4e;
+  color: #001c4e;
   -webkit-transition: fill 0.3s ease-in;
   -o-transition: fill 0.3s ease-in;
   transition: fill 0.3s ease-in;
 }
 
 .modal-work__arrow-up-pic--light:hover {
-  fill: #4697B2;
+  color: #4697B2;
 }
 
 .modal-work__arrow-up-pic--dark {
-  fill: #fff;
+  color: #fff;
   -webkit-transition: fill 0.3s ease-in;
   -o-transition: fill 0.3s ease-in;
   transition: fill 0.3s ease-in;
 }
 
 .modal-work__arrow-up-pic--dark:hover {
-  fill: burlywood;
+  color: burlywood;
 }
 
 .modal-work__btn {
@@ -3277,11 +3269,11 @@
 }
 
 .footer .social--github-light {
-  fill: #fff;
+  color: #fff;
 }
 
 .footer .social--github-dark {
-  fill: #2B2B2D;
+  color: #2B2B2D;
 }
 
 .footer__author {
@@ -3351,7 +3343,7 @@
 }
 
 .footer__back-to-top-icon--light {
-  fill: #46acb4;
+  color: #46acb4;
 }
 
 .footer__back-to-top-icon--light:hover {
@@ -3360,7 +3352,7 @@
 }
 
 .footer__back-to-top-icon--dark {
-  fill: #46acb4;
+  color: #46acb4;
 }
 
 .footer__back-to-top-icon--dark:hover {
@@ -3540,23 +3532,23 @@
 }
 
 .tech-box__picture--html {
-  fill: #e44d25;
+  color: #e44d25;
 }
 
 .tech-box__picture--scss {
-  fill: #cc6799;
+  color: #cc6799;
 }
 
 .tech-box__picture--js {
-  fill: #f7df1c;
+  color: #f7df1c;
 }
 
 .tech-box__picture--gulp {
-  fill: #ea4a49;
+  color: #ea4a49;
 }
 
 .tech-box__picture--css {
-  fill: #1472b6;
+  color: #1472b6;
 }
 
 .tech-box__text-description {
@@ -3676,6 +3668,7 @@
 }
 
 .popup-theme {
+  background: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3691,21 +3684,12 @@
   border-radius: 5px 5px 0 5px;
   left: -130px;
   top: -20px;
+  color: #2B2B2D;
 }
 
 .popup-theme__text {
   font-size: 12px;
   font-weight: 700;
-}
-
-.popup-theme--light {
-  background: #2B2B2D;
-  color: #fff;
-}
-
-.popup-theme--dark {
-  background: #fff;
-  color: #2B2B2D;
 }
 
 .popup-theme__hidden {

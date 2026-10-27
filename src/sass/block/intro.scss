@@ -101,12 +101,12 @@
   .social {
     &--github {
       &-light {
-        fill: variables.$black;
+        color: variables.$black;
       }
     }
     &--github {
       &-dark {
-        fill: variables.$white;
+        color: variables.$white;
       }
     }
   }

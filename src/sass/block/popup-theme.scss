@@ -12,17 +12,11 @@
 
   left: -130px;
   top: -20px;
+  background-color: variables.$white;
+    color: variables.$black;
   &__text {
     font-size: 12px;
     font-weight: 700;
-  }
-  &--light {
-    background-color: variables.$black;
-    color: variables.$white;
-  }
-  &--dark {
-    background-color: variables.$white;
-    color: variables.$black;
   }
 
   &__hidden {

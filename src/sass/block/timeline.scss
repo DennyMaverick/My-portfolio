@@ -43,32 +43,23 @@
     .social {
       &--github {
         &-light {
-          fill: variables.$black;
+          color: variables.$black;
         }
       }
       &--github {
         &-dark {
-          fill: variables.$white;
+          color: variables.$white;
         }
       }
-      &--telegram {
-        &-light {
-          fill: variables.$black;
-        }
-      }
-      &--telegram {
-        &-dark {
-          fill: variables.$white;
-        }
-      }
+
       &--vk {
         &-light {
-          fill: variables.$black;
+          color: variables.$black;
         }
       }
       &--vk {
         &-dark {
-          fill: variables.$white;
+          color: variables.$white;
         }
       }
     }
@@ -117,17 +108,17 @@
     width: 20px;
     height: 20px;
     &--light {
-      fill: variables.$arrow-up-color-light;
+      color: variables.$arrow-up-color-light;
       transition: fill 0.3s ease-in;
       &:hover {
-        fill: variables.$arrow-up-color-light-hover;
+        color: variables.$arrow-up-color-light-hover;
       }
     }
     &--dark {
-      fill: variables.$arrow-up-color;
-      transition: fill 0.3s ease-in;
+      color: variables.$arrow-up-color;
+      transition: color 0.3s ease-in;
       &:hover {
-        fill: variables.$arrow-up-color-hover;
+        color: variables.$arrow-up-color-hover;
       }
     }
   }
