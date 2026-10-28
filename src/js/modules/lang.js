@@ -131,8 +131,8 @@ const langs = {
     en: "Design of visit cards",
   },
   "title-work-converter": {
-    ru: "Currency Converter – Конвертер валют онлайн <span class='modal-work__version-currency-converter'>v1.4</span>",
-    en: "Currency Converter Online <span class='modal-work__version-currency-converter'>v1.4</span>",
+    ru: "Currency Converter – Конвертер валют онлайн <span class='modal-work__version-currency-converter'>v1.4.1</span>",
+    en: "Currency Converter Online <span class='modal-work__version-currency-converter'>v1.4.1</span>",
   },
   "title-work-gen": {
     ru: "Ген спорта",
@@ -802,8 +802,8 @@ const langs = {
 
   // Currency Converter
   "currency-converter-title": {
-    ru: "Currency Converter – Конвертер валют онлайн <span class='modal-work__version-currency-converter'>v1.4</span>",
-    en: "Currency Converter Online <span class='modal-work__version-currency-converter'>v1.4</span>",
+    ru: "Currency Converter – Конвертер валют онлайн <span class='modal-work__version-currency-converter'>v1.4.1</span>",
+    en: "Currency Converter Online <span class='modal-work__version-currency-converter'>v1.4.1</span>",
   },
   "currency-converter-type": {
     ru: "Мини-приложения",
@@ -1611,8 +1611,8 @@ const repeatElems = {
     en: "Promo-site of the film &#171;Venom - 2&#187;",
   },
   "title-work-passwords": {
-    ru: "Password Generator – Генератор паролей <span class='modal-work__version-password-generator'> v1.2</span>",
-    en: "Password Generator <span class='modal-work__version-password-generator'> v1.2</span>",
+    ru: "Password Generator – Генератор паролей <span class='modal-work__version-password-generator'> v1.2.1</span>",
+    en: "Password Generator <span class='modal-work__version-password-generator'> v1.2.1</span>",
   },
   nowadays: {
     ru: "настоящее время",
