@@ -120,8 +120,8 @@ body {
   }
 
   &--dark::selection {
-    background-color: variables.$select-color-dark;
-    color: variables.$black;
+    background-color: variables.$theme-modal-dark;
+    color: variables.$white;
   }
 }
 
