@@ -32,8 +32,6 @@ $(function () {
       let modalId = $this.data("modal")
       let currentSlider = $(modalId).find('[data-slider="slick"]')
 
-      // currentSlider.slick("setPosition")
-
       currentSlider.slick({
         //ID слайдер
         infinite: true, //бесконечная прокрутка

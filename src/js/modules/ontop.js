@@ -26,7 +26,7 @@ $(function () {
     const $modal = $(this)
     const $up = $modal.find(".up")
 
-    if ($modal.scrollTop() > 100) {
+    if ($modal.scrollTop() > 300) {
       $up.fadeIn()
     } else {
       $up.fadeOut()
