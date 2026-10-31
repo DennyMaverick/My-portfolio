@@ -114,14 +114,6 @@ const langs = {
     ru: "Арчи",
     en: "Archee",
   },
-  "title-work-ducati-main-page": {
-    ru: "Ducati: главная страница",
-    en: "Ducati: main page",
-  },
-  "title-work-web-templates": {
-    ru: "Портфолио Pet&nbsp;-&nbsp;проекты",
-    en: "Portfolio Pet-projects",
-  },
   "title-work-dream-on-wheels": {
     ru: "Мечта на колесах",
     en: "Dream On Wheels",
@@ -633,26 +625,6 @@ const langs = {
     ru: "Дизайн визитных карточек",
     en: "Design of visit cards",
   },
-  "ducati-title": {
-    ru: "Ducati: главная страница",
-    en: "Ducati: main page",
-  },
-  "ducati-subtitle": {
-    ru: "Ducati: учебный проект",
-    en: "Ducati: learn project",
-  },
-  "ducati-desc-one": {
-    ru: "Главная страница для легендарного бренда Ducati была разработана в рамках учебного марафона от Yudaev School. Проект стал отличной возможностью отточить навыки UX/UI-дизайна и передать атмосферу скорости, энергии и премиальности, которые олицетворяют дух Ducati.",
-    en: "The homepage for the legendary Ducati brand was developed as part of a training marathon from Yudaev School. The project was an excellent opportunity to hone UX/UI design skills and convey the atmosphere of speed, energy, and premium quality that embody the Ducati spirit.",
-  },
-  "ducati-desc-two": {
-    ru: "В процессе я сосредоточился на создании выразительного и динамичного интерфейса, сочетающего эстетику скорости с удобством взаимодействия. Проект выполнен в Figma, а графические элементы и иллюстрации — в Adobe Illustrator.",
-    en: "During the process, I focused on creating an expressive and dynamic interface that combines the aesthetics of speed with ease of interaction. The project was completed in Figma, and the graphic elements and illustrations were created in Adobe Illustrator.",
-  },
-  "ducati-desc-three": {
-    ru: "Этот опыт помог мне укрепить понимание того, как визуал и функциональность объединяются, чтобы создавать целостный и запоминающийся пользовательский опыт.",
-    en: "This experience helped me strengthen my understanding of how visuals and functionality come together to create a cohesive and memorable user experience.",
-  },
   "price-lists-subtitle": {
     ru: "Для парикмахер-стилистов Елены и Веры",
     en: "For hairstylists Elena and Vera",
@@ -736,40 +708,6 @@ const langs = {
   "link-to-the-git-archee": {
     ru: "Ссылка на репозиторий GitHub / более подробное описание проекта",
     en: "Link to the GitHub repository / more detailed description of the project",
-  },
-
-  // Modal window Web-templates
-  "web-templates-title": {
-    ru: "Портфолио Pet-проекты",
-    en: "Portfolio Pet-projects",
-  },
-  "client-title-web-templates": {
-    ru: "Личный сайт:",
-    en: "Personal site:",
-  },
-  "web-templates-common-desc": {
-    ru: "Этот проект — мой личный сайт-портфолио, где собраны все мои pet-проекты. Pet-проекты — это учебные сайты и веб-приложения, которые я создаю, чтобы прокачивать навыки веб-разработки и экспериментировать с идеями.",
-    en: "This project is my personal portfolio website, where all my pet projects are collected. Pet projects are educational websites and web applications that I create to hone my web development skills and experiment with new ideas.",
-  },
-  "web-templates-desc-two": {
-    ru: "Переключение темы (светлая и тёмная)",
-    en: "Switching themes (light and dark)",
-  },
-  "web-templates-desc-three": {
-    ru: "Плавная смена цвета при переключении слайдов в проекте Theme's Switcher",
-    en: "Smooth color change when switching slides in a project Theme's Switcher",
-  },
-  "web-templates-desc-four": {
-    ru: "Переключение языков (подробнее о реализации — по ",
-    en: "Language switching (more details on the implementation can be found at",
-  },
-  "web-templates-link": {
-    ru: "ссылке)",
-    en: "the link)",
-  },
-  "web-templates-desc-five": {
-    ru: "Дизайн карточек проектов был самостоятельно реализован в программе Photoshop",
-    en: "The design of project cards was independently implemented in Photoshop",
   },
   "more-info": {
     ru: "Наиболее подробную информацию о проекте Вы сможете найти в файле Readme.md перейдя по",
@@ -978,19 +916,6 @@ const langs = {
   "thrivetalk-sublime-text-plugins": {
     ru: "Плагины Sublime Text 3: Emmet, LiveReload, AutoFileName и другие",
     en: "Sublime Text 3 plugins: Emmet, LiveReload, AutoFileName and more",
-  },
-  // Venom 2
-  "venom-desc": {
-    ru: "Проект представляет собой промостраницу, созданную для демонстрации фильма «Веном 2». Главная цель — передать атмосферу фильма через визуальное оформление и плавные интерактивные элементы.",
-    en: "The project is a promotional page created to showcase the film «Venom 2». The main goal is to convey the film's atmosphere through visual design and fluid interactive elements.",
-  },
-  "venom-desc-two": {
-    ru: "Проект показывает навыки создания промостраниц с интерактивными элементами и современным адаптивным интерфейсом.",
-    en: "The project demonstrates skills in creating promotional pages with interactive elements and a modern, responsive interface.",
-  },
-  "venom-desc-three": {
-    ru: "<b>Результат — динамичный лендинг с кинематографичной атмосферой.</b>",
-    en: "<b>The result is a dynamic landing page with a cinematic atmosphere.</b>",
   },
   // Калькулятор стоимости ремонта
   "calculator-title": {
@@ -1605,10 +1530,6 @@ const repeatElems = {
   "next-button": {
     ru: "Вперед",
     en: "Next",
-  },
-  "title-work-venom": {
-    ru: "Промосайт фильма &#171;Веном - 2&#187;",
-    en: "Promo-site of the film &#171;Venom - 2&#187;",
   },
   "title-work-passwords": {
     ru: "Password Generator – Генератор паролей <span class='modal-work__version-password-generator'> v1.2.1</span>",
