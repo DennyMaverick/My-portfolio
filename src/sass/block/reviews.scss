@@ -142,6 +142,16 @@
     display: flex;
     align-items: center;
   }
+  &__design-dev-title-link {
+    transition: color .5s ease-in;
+    color: variables.$black;
+    &--light:hover {
+      color: variables.$design-dev-title-color-light;
+    }
+    &--dark:hover {
+      color: variables.$design-dev-title-color-dark;
+    }
+  }
 }
 
 @keyframes rotate-circle {

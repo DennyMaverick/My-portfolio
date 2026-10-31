@@ -1291,8 +1291,8 @@ const langs = {
     en: "VKontakte",
   },
   "visit-cards-title-reviews": {
-    ru: "Визитные карточки",
-    en: "Visit cards",
+    ru: "Дизайн • Веб-разработка",
+    en: "Design • Web Development",
   },
 }
 

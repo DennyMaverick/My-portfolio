@@ -3858,6 +3858,21 @@
   align-items: center;
 }
 
+.reviews__design-dev-title-link {
+  -webkit-transition: color 0.5s ease-in;
+  -o-transition: color 0.5s ease-in;
+  transition: color 0.5s ease-in;
+  color: #2B2B2D;
+}
+
+.reviews__design-dev-title-link--light:hover {
+  color: #6ec171;
+}
+
+.reviews__design-dev-title-link--dark:hover {
+  color: #189aa3;
+}
+
 @-webkit-keyframes rotate-circle {
   from {
     -webkit-transform: rotate(0deg);

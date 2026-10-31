@@ -638,6 +638,12 @@ const themes = {
       dark: "theme__dark--dark",
     },
   },
+  ".reviews__design-dev-title-link": {
+    theme: {
+      light: "reviews__design-dev-title-link--light",
+      dark: "reviews__design-dev-title-link--dark",
+    },
+  },
 }
 
 function themeSwitch(theme) {
