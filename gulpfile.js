@@ -18,6 +18,7 @@ const libsCssScss = require("./tasks/libscssscss.js");
 const favicon = require("./tasks/favicon.js")
 const svgsprite = require("./tasks/svgsprite.js")
 const jquerylibs = require("./tasks/jquerylibs.js")
+const cname = require("./tasks/cname.js")
 
 // Статический сервер
 const server = () => {
@@ -41,9 +42,10 @@ const watcher = () => {
   watch(path.scss_and_css_libs.watch, libsCssScss).on("all", browserSync.reload)
   watch(path.svgsprite.watch, svgsprite).on("all", browserSync.reload)
   watch(path.favicon.watch, favicon).on("all", browserSync.reload)
+  watch(path.cname.watch, cname).on("all", browserSync.reload)
 }
 
-const build = series(clear, parallel(html, scss, js, font, jquerylib, jquerylibs, jslibs, libsCssScss, img, svgsprite, favicon))
+const build = series(clear, parallel(html, scss, js, font, jquerylib, jquerylibs, jslibs, libsCssScss, img, svgsprite, favicon, cname))
 
 const dev = series(build, parallel(server, watcher))
 
@@ -53,6 +55,7 @@ exports.scss = scss
 exports.js = js
 exports.img = img
 exports.font = font
+exports.cname = cname
 exports.jquerylib = jquerylib
 exports.jslibs = jslibs
 exports.libsCssScss = libsCssScss

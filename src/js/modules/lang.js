@@ -573,11 +573,11 @@ const langs = {
   },
   "blind-typing-title": {
     ru: "Навык слепой печати на клавиатуре",
-    en: "The skill of blind typing on the keyboard",
+    en: "Touch Typing Skills",
   },
   "blind-typing-desc": {
-    ru: "За два месяца регулярных тренировок на онлайн-тренажёрах я освоил слепую печать. Скорость — около 160 символов в минуту в русской и английской раскладках. Этот навык помогает быстрее и эффективнее работать над сайтами и проектами.",
-    en: "After two months of regular training on online simulators, I mastered touch typing. My speed is about 160 characters per minute in both Russian and English layouts. This skill helps me work on websites and projects faster and more efficiently.",
+    ru: "Владею методом слепой печати на русском и английском языках. Скорость набора — около 160 символов в минуту. Уверенная работа с клавиатурой позволяет быстрее взаимодействовать с кодом, эффективнее решать рабочие задачи и уделять больше внимания качеству реализации проектов.",
+    en: "Proficient in touch typing in both Russian and English, with a typing speed of approximately 160 characters per minute. This skill allows me to work with code more efficiently, complete tasks faster, and focus more on the quality of my projects.",
   },
   "write-resume": {
     ru: "Написать мне",

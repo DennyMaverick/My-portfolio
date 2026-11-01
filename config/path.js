@@ -1,6 +1,5 @@
-const pathSrc = './src';
-const pathDest = './public';
-
+const pathSrc = "./src"
+const pathDest = "./public"
 
 module.exports = {
   root: pathDest,
@@ -68,5 +67,11 @@ module.exports = {
     src: pathSrc + "/img/favicon/*",
     watch: pathSrc + "/img/favicon/*",
     dest: pathDest + "/img/favicon/",
+  },
+
+  cname: {
+    src: pathSrc + "/CNAME",
+    watch: pathSrc + "/CNAME",
+    dest: pathDest,
   },
 }
