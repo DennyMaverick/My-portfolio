@@ -1,19 +1,29 @@
-const { src, dest } = require("gulp");
+const {src, dest} = require("gulp")
+const {Transform} = require("stream")
+const path = require("../config/path.js")
+const plumber = require("gulp-plumber")
+const notify = require("gulp-notify")
+const ttf2woff2 = require("@0x6b/ttf2woff2-wasm")
 
-// Конфигурация
-const path = require("../config/path.js");
-const app = require("../config/app.js");
-
-// Плагины
-const plumber = require('gulp-plumber');
-const notify = require('gulp-notify');
-const newer = require('gulp-newer');
-const fonter = require('gulp-fonter');
-const ttf2woff2 = require("gulp-ttf2woff2");
-
-
-// Обработка шрифтов
 const font = () => {
+  const convertFont = new Transform({
+    objectMode: true,
+
+    transform(file, encoding, callback) {
+      if (file.isBuffer()) {
+        try {
+          file.contents = ttf2woff2(file.contents)
+          file.extname = ".woff2"
+          callback(null, file)
+        } catch (error) {
+          callback(error)
+        }
+      } else {
+        callback(null, file)
+      }
+    },
+  })
+
   return src(path.font.src, {
     encoding: false,
     removeBOM: false,
@@ -26,9 +36,8 @@ const font = () => {
         })),
       }),
     )
-    .pipe(ttf2woff2())
+    .pipe(convertFont)
     .pipe(dest(path.font.dest))
 }
 
 module.exports = font
-
