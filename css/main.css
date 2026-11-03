@@ -32,7 +32,6 @@
   background: #fff;
   z-index: 1300;
   -webkit-transition: background-color 0.3s ease-in;
-  -o-transition: background-color 0.3s ease-in;
   transition: background-color 0.3s ease-in;
   padding-right: calc(20px - (100vw - 100%));
 }
@@ -69,7 +68,6 @@
   right: 0;
   -webkit-transition: background-color 0.3s ease-in, opacity 1s ease-in, -webkit-transform 1s ease-in;
   transition: background-color 0.3s ease-in, opacity 1s ease-in, -webkit-transform 1s ease-in;
-  -o-transition: background-color 0.3s ease-in, transform 1s ease-in, opacity 1s ease-in;
   transition: background-color 0.3s ease-in, transform 1s ease-in, opacity 1s ease-in;
   transition: background-color 0.3s ease-in, transform 1s ease-in, opacity 1s ease-in, -webkit-transform 1s ease-in;
 }
@@ -171,7 +169,6 @@
   font-weight: 700;
   text-decoration: none;
   -webkit-transition: color 0.3s ease-in;
-  -o-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
 }
 
@@ -185,7 +182,6 @@
   left: 0;
   z-index: 1;
   -webkit-transition: width 0.2s linear;
-  -o-transition: width 0.2s linear;
   transition: width 0.2s linear;
 }
 
@@ -254,7 +250,6 @@
   position: relative;
   opacity: 1;
   -webkit-transition: opacity 0.3s ease-in;
-  -o-transition: opacity 0.3s ease-in;
   transition: opacity 0.3s ease-in;
 }
 
@@ -296,7 +291,6 @@
   opacity: 0;
   padding: 7px;
   -webkit-transition: 0.3s ease-in transform, 0.3s ease-in opacity;
-  -o-transition: 0.3s ease-in transform, 0.3s ease-in opacity;
   transition: 0.3s ease-in transform, 0.3s ease-in opacity;
 }
 
@@ -380,7 +374,6 @@
   text-transform: uppercase;
   font-weight: 700;
   -webkit-transition: color 0.3s ease-in;
-  -o-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
 }
 
@@ -394,7 +387,6 @@
   left: 0;
   z-index: 1;
   -webkit-transition: width 0.2s linear;
-  -o-transition: width 0.2s linear;
   transition: width 0.2s linear;
 }
 
@@ -449,7 +441,6 @@
   padding: 12px 17px;
   -webkit-transition: background 0.3s ease-in, -webkit-box-shadow 0.3s ease-in;
   transition: background 0.3s ease-in, -webkit-box-shadow 0.3s ease-in;
-  -o-transition: background 0.3s ease-in, box-shadow 0.3s ease-in;
   transition: background 0.3s ease-in, box-shadow 0.3s ease-in;
   transition: background 0.3s ease-in, box-shadow 0.3s ease-in, -webkit-box-shadow 0.3s ease-in;
 }
@@ -485,7 +476,6 @@
   height: 32px;
   -webkit-transition: fill 0.3s linear, -webkit-transform 0.2s linear;
   transition: fill 0.3s linear, -webkit-transform 0.2s linear;
-  -o-transition: transform 0.2s linear, fill 0.3s linear;
   transition: transform 0.2s linear, fill 0.3s linear;
   transition: transform 0.2s linear, fill 0.3s linear, -webkit-transform 0.2s linear;
 }
@@ -511,7 +501,6 @@
   cursor: pointer;
   -webkit-transition: -webkit-transform 0.3s ease-in;
   transition: -webkit-transform 0.3s ease-in;
-  -o-transition: transform 0.3s ease-in;
   transition: transform 0.3s ease-in;
   transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
 }
@@ -582,7 +571,6 @@
   width: 100%;
   position: relative;
   -webkit-transition: height 0.3s ease-in, background-color 0.3s ease-in;
-  -o-transition: height 0.3s ease-in, background-color 0.3s ease-in;
   transition: height 0.3s ease-in, background-color 0.3s ease-in;
 }
 
@@ -595,7 +583,6 @@
   width: 100%;
   -webkit-transition: top 0.3s ease-in, background-color 0.3s ease-in, -webkit-transform 0.3s ease-in;
   transition: top 0.3s ease-in, background-color 0.3s ease-in, -webkit-transform 0.3s ease-in;
-  -o-transition: top 0.3s ease-in, transform 0.3s ease-in, background-color 0.3s ease-in;
   transition: top 0.3s ease-in, transform 0.3s ease-in, background-color 0.3s ease-in;
   transition: top 0.3s ease-in, transform 0.3s ease-in, background-color 0.3s ease-in, -webkit-transform 0.3s ease-in;
 }
@@ -609,7 +596,6 @@
   width: 100%;
   -webkit-transition: bottom 0.3s ease-in, background-color 0.3s ease-in, -webkit-transform 0.3s ease-in;
   transition: bottom 0.3s ease-in, background-color 0.3s ease-in, -webkit-transform 0.3s ease-in;
-  -o-transition: bottom 0.3s ease-in, transform 0.3s ease-in, background-color 0.3s ease-in;
   transition: bottom 0.3s ease-in, transform 0.3s ease-in, background-color 0.3s ease-in;
   transition: bottom 0.3s ease-in, transform 0.3s ease-in, background-color 0.3s ease-in, -webkit-transform 0.3s ease-in;
 }
@@ -672,7 +658,6 @@
   text-align: center;
   -webkit-transition: background-color 0.2s linear, border-color 0.2s linear, color 0.2s linear, -webkit-box-shadow 0.2s linear;
   transition: background-color 0.2s linear, border-color 0.2s linear, color 0.2s linear, -webkit-box-shadow 0.2s linear;
-  -o-transition: background-color 0.2s linear, border-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear;
   transition: background-color 0.2s linear, border-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear;
   transition: background-color 0.2s linear, border-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear, -webkit-box-shadow 0.2s linear;
 }
@@ -734,7 +719,6 @@
 
 .intro {
   -webkit-transition: background-color 0.3s ease-in;
-  -o-transition: background-color 0.3s ease-in;
   transition: background-color 0.3s ease-in;
 }
 
@@ -758,7 +742,6 @@
   justify-content: space-between;
   border-radius: 10px;
   -webkit-transition: border-bottom 0.3s ease-in;
-  -o-transition: border-bottom 0.3s ease-in;
   transition: border-bottom 0.3s ease-in;
 }
 
@@ -775,7 +758,6 @@
   font-size: 3rem;
   font-weight: 700;
   -webkit-transition: color 0.3s ease-in;
-  -o-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
 }
 
@@ -791,7 +773,6 @@
   font-size: 2.13rem;
   font-weight: 300;
   -webkit-transition: color 0.3s ease-in;
-  -o-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
 }
 
@@ -808,7 +789,6 @@
   font-size: 1.2rem;
   opacity: 0.7;
   -webkit-transition: color 0.3s ease-in;
-  -o-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
 }
 
@@ -883,7 +863,6 @@
   margin-right: 15px;
   -webkit-transition: -webkit-transform 0.2s linear;
   transition: -webkit-transform 0.2s linear;
-  -o-transition: transform 0.2s linear;
   transition: transform 0.2s linear;
   transition: transform 0.2s linear, -webkit-transform 0.2s linear;
 }
@@ -903,7 +882,6 @@
   padding: 102px 0;
   padding-bottom: 27px;
   -webkit-transition: background-color 0.3s ease-in;
-  -o-transition: background-color 0.3s ease-in;
   transition: background-color 0.3s ease-in;
 }
 
@@ -944,7 +922,6 @@
   left: 0;
   z-index: 1;
   -webkit-transition: width 0.2s linear;
-  -o-transition: width 0.2s linear;
   transition: width 0.2s linear;
 }
 
@@ -989,7 +966,6 @@
   overflow: hidden;
   -webkit-transition: -webkit-box-shadow 0.2s linear;
   transition: -webkit-box-shadow 0.2s linear;
-  -o-transition: box-shadow 0.2s linear;
   transition: box-shadow 0.2s linear;
   transition: box-shadow 0.2s linear, -webkit-box-shadow 0.2s linear;
 }
@@ -999,7 +975,6 @@
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
   -webkit-transition: -webkit-box-shadow 0.2s ease-in;
   transition: -webkit-box-shadow 0.2s ease-in;
-  -o-transition: box-shadow 0.2s ease-in;
   transition: box-shadow 0.2s ease-in;
   transition: box-shadow 0.2s ease-in, -webkit-box-shadow 0.2s ease-in;
 }
@@ -1014,7 +989,6 @@
   box-shadow: 0 0 4px rgba(255, 255, 255, 0.25);
   -webkit-transition: -webkit-box-shadow 0.2s ease-in;
   transition: -webkit-box-shadow 0.2s ease-in;
-  -o-transition: box-shadow 0.2s ease-in;
   transition: box-shadow 0.2s ease-in;
   transition: box-shadow 0.2s ease-in, -webkit-box-shadow 0.2s ease-in;
 }
@@ -1072,14 +1046,12 @@
   width: 0;
   content: "";
   background: -webkit-gradient(linear, left bottom, right top, from(lightgreen), to(blue));
-  background: -o-linear-gradient(left bottom, lightgreen, blue);
   background: linear-gradient(to right top, lightgreen, blue);
   -webkit-transform: rotate(-180deg);
   -ms-transform: rotate(-180deg);
   transform: rotate(-180deg);
   -webkit-transition: width 0.4s ease-in, -webkit-transform 0.7s ease-in;
   transition: width 0.4s ease-in, -webkit-transform 0.7s ease-in;
-  -o-transition: width 0.4s ease-in, transform 0.7s ease-in;
   transition: width 0.4s ease-in, transform 0.7s ease-in;
   transition: width 0.4s ease-in, transform 0.7s ease-in, -webkit-transform 0.7s ease-in;
 }
@@ -1105,7 +1077,6 @@
   -ms-flex-align: center;
   align-items: center;
   -webkit-transition: color 1s ease-in;
-  -o-transition: color 1s ease-in;
   transition: color 1s ease-in;
 }
 
@@ -1130,25 +1101,21 @@
 
 .work--bg-dream-on-wheels::before {
   background: -webkit-gradient(linear, left bottom, right top, from(#ba2b08), to(#4d4d36));
-  background: -o-linear-gradient(left bottom, #ba2b08, #4d4d36);
   background: linear-gradient(to right top, #ba2b08, #4d4d36);
 }
 
 .work--bg-web-templates::before {
   background: -webkit-gradient(linear, left bottom, right top, from(#c0b4aa), to(#171715));
-  background: -o-linear-gradient(left bottom, #c0b4aa, #171715);
   background: linear-gradient(to right top, #c0b4aa, #171715);
 }
 
 .work--bg-ducati::before {
   background: -webkit-gradient(linear, left bottom, right top, from(#faf8f6), to(#af0602));
-  background: -o-linear-gradient(left bottom, #faf8f6, #af0602);
   background: linear-gradient(to right top, #faf8f6, #af0602);
 }
 
 .work--bg-archee::before {
   background: -webkit-gradient(linear, left bottom, right top, from(#ff8c1d), to(#c0ff00));
-  background: -o-linear-gradient(left bottom, #ff8c1d, #c0ff00);
   background: linear-gradient(to right top, #ff8c1d, #c0ff00);
 }
 
@@ -1158,7 +1125,6 @@
 
 .work--bg-oxygen::before {
   background: -webkit-gradient(linear, left bottom, right top, from(#15a015), to(rgba(185, 185, 209, 0)));
-  background: -o-linear-gradient(left bottom, #15a015, rgba(185, 185, 209, 0));
   background: linear-gradient(to right top, #15a015, rgba(185, 185, 209, 0));
 }
 
@@ -1168,7 +1134,6 @@
 
 .work--bg-olivia::before {
   background: -webkit-gradient(linear, left bottom, right top, from(#2db26a), to(rgba(207, 207, 225, 0.0392156863)));
-  background: -o-linear-gradient(left bottom, #2db26a, rgba(207, 207, 225, 0.0392156863));
   background: linear-gradient(to right top, #2db26a, rgba(207, 207, 225, 0.0392156863));
 }
 
@@ -1178,7 +1143,6 @@
 
 .work--bg-thrivetalk::before {
   background: -webkit-gradient(linear, left bottom, right top, from(#63d0e2), to(#9e9e9e));
-  background: -o-linear-gradient(left bottom, #63d0e2, #9e9e9e);
   background: linear-gradient(to right top, #63d0e2, #9e9e9e);
 }
 
@@ -1188,7 +1152,6 @@
 
 .work--bg-sea::before {
   background: -webkit-gradient(linear, left bottom, right top, from(#0d11e2), to(#fff));
-  background: -o-linear-gradient(left bottom, #0d11e2, #fff);
   background: linear-gradient(to right top, #0d11e2, #fff);
 }
 
@@ -1198,7 +1161,6 @@
 
 .work--bg-food::before {
   background: -webkit-gradient(linear, left bottom, right top, from(#f37220), to(#ffeb3b));
-  background: -o-linear-gradient(left bottom, #f37220, #ffeb3b);
   background: linear-gradient(to right top, #f37220, #ffeb3b);
 }
 
@@ -1208,7 +1170,6 @@
 
 .work--bg-rolls::before {
   background: -webkit-gradient(linear, left bottom, right top, from(#9bdc10), to(#cddc39));
-  background: -o-linear-gradient(left bottom, #9bdc10, #cddc39);
   background: linear-gradient(to right top, #9bdc10, #cddc39);
 }
 
@@ -1218,7 +1179,6 @@
 
 .work--bg-visit::before {
   background: -webkit-gradient(linear, left bottom, right top, from(#445161), to(#009688));
-  background: -o-linear-gradient(left bottom, #445161, #009688);
   background: linear-gradient(to right top, #445161, #009688);
 }
 
@@ -1228,7 +1188,6 @@
 
 .work--bg-venom::before {
   background: -webkit-gradient(linear, left bottom, right top, from(#f7829d), to(#9c27b0));
-  background: -o-linear-gradient(left bottom, #f7829d, #9c27b0);
   background: linear-gradient(to right top, #f7829d, #9c27b0);
 }
 
@@ -1238,7 +1197,6 @@
 
 .work--bg-safari::before {
   background: -webkit-gradient(linear, left bottom, right top, from(#d6944f), to(#ffc107));
-  background: -o-linear-gradient(left bottom, #d6944f, #ffc107);
   background: linear-gradient(to right top, #d6944f, #ffc107);
 }
 
@@ -1248,7 +1206,6 @@
 
 .work--bg-calc::before {
   background: -webkit-gradient(linear, left bottom, right top, from(#d2e733), to(#f4f8fb));
-  background: -o-linear-gradient(left bottom, #d2e733, #f4f8fb);
   background: linear-gradient(to right top, #d2e733, #f4f8fb);
 }
 
@@ -1258,7 +1215,6 @@
 
 .work--bg-generator-of-passwords::before {
   background: -webkit-gradient(linear, left bottom, right top, from(#00be7a), to(#b75b72));
-  background: -o-linear-gradient(left bottom, #00be7a, #b75b72);
   background: linear-gradient(to right top, #00be7a, #b75b72);
 }
 
@@ -1268,13 +1224,11 @@
 
 .work--bg-price-lists::before {
   background: -webkit-gradient(linear, left bottom, right top, from(#7b5485), to(#d18de2));
-  background: -o-linear-gradient(left bottom, #7b5485, #d18de2);
   background: linear-gradient(to right top, #7b5485, #d18de2);
 }
 
 .work--bg-schedule::before {
   background: -webkit-gradient(linear, left bottom, right top, from(#c6d935), to(#423c43));
-  background: -o-linear-gradient(left bottom, #c6d935, #423c43);
   background: linear-gradient(to right top, #c6d935, #423c43);
 }
 
@@ -1375,7 +1329,6 @@
   padding: 0 0 75px;
   padding-top: 75px;
   -webkit-transition: background-color 0.3s ease-in;
-  -o-transition: background-color 0.3s ease-in;
   transition: background-color 0.3s ease-in;
 }
 
@@ -1418,7 +1371,6 @@
   font-weight: 700;
   text-transform: uppercase;
   -webkit-transition: color 0.3s ease-in;
-  -o-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
 }
 
@@ -1439,7 +1391,6 @@
   font-weight: 700;
   text-transform: uppercase;
   -webkit-transition: color 0.3s ease-in;
-  -o-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
   opacity: 35%;
 }
@@ -1458,7 +1409,6 @@
   line-height: 27px;
   font-weight: 300;
   -webkit-transition: color 0.3s ease-in;
-  -o-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
 }
 
@@ -1517,7 +1467,6 @@
   cursor: pointer;
   color: orange;
   -webkit-transition: color 0.2s ease-in;
-  -o-transition: color 0.2s ease-in;
   transition: color 0.2s ease-in;
   position: relative;
   font-weight: 400;
@@ -1590,7 +1539,6 @@
   transform: translateY(0);
   -webkit-transition: fill 0.4s ease-in, -webkit-transform 0.4s ease-in;
   transition: fill 0.4s ease-in, -webkit-transform 0.4s ease-in;
-  -o-transition: transform 0.4s ease-in, fill 0.4s ease-in;
   transition: transform 0.4s ease-in, fill 0.4s ease-in;
   transition: transform 0.4s ease-in, fill 0.4s ease-in, -webkit-transform 0.4s ease-in;
 }
@@ -1651,7 +1599,6 @@
 .modal-list__item {
   margin-bottom: 15px;
   -webkit-transition: color 0.3s ease-in;
-  -o-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
   line-height: 1.6;
   font-weight: 400;
@@ -1668,7 +1615,6 @@
 .modal-list__item::marker {
   font-size: 1rem;
   -webkit-transition: color 0.3s ease-in;
-  -o-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
 }
 
@@ -1763,7 +1709,6 @@
   animation: rustore-glow 3s ease-in-out infinite;
   -webkit-transition: border-color 0.3s ease, background-color 0.3s ease, -webkit-box-shadow 0.4s ease-in;
   transition: border-color 0.3s ease, background-color 0.3s ease, -webkit-box-shadow 0.4s ease-in;
-  -o-transition: border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.4s ease-in;
   transition: border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.4s ease-in;
   transition: border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.4s ease-in, -webkit-box-shadow 0.4s ease-in;
 }
@@ -1773,7 +1718,6 @@
   border-color: rgba(125, 205, 255, 0.75);
   -webkit-transition: background-color 0.3s ease, border-color 0.3s ease, -webkit-box-shadow 0.4s ease-in;
   transition: background-color 0.3s ease, border-color 0.3s ease, -webkit-box-shadow 0.4s ease-in;
-  -o-transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.4s ease-in;
   transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.4s ease-in;
   transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.4s ease-in, -webkit-box-shadow 0.4s ease-in;
   -webkit-animation: rustore-glow-light 3.5s ease-in-out infinite;
@@ -1857,7 +1801,6 @@
   left: 0;
   z-index: 1400;
   -webkit-transition: background-color 0.3s ease-in;
-  -o-transition: background-color 0.3s ease-in;
   transition: background-color 0.3s ease-in;
 }
 
@@ -1888,7 +1831,6 @@
   transform: rotateX(90deg);
   -webkit-transition: background-color 0.2s linear, -webkit-transform 0.2s linear;
   transition: background-color 0.2s linear, -webkit-transform 0.2s linear;
-  -o-transition: transform 0.2s linear, background-color 0.2s linear;
   transition: transform 0.2s linear, background-color 0.2s linear;
   transition: transform 0.2s linear, background-color 0.2s linear, -webkit-transform 0.2s linear;
 }
@@ -1923,7 +1865,6 @@
   height: 34px;
   -webkit-transition: -webkit-transform 0.2s linear;
   transition: -webkit-transform 0.2s linear;
-  -o-transition: transform 0.2s linear;
   transition: transform 0.2s linear;
   transition: transform 0.2s linear, -webkit-transform 0.2s linear;
 }
@@ -1944,7 +1885,6 @@
   text-transform: uppercase;
   font-weight: 700;
   -webkit-transition: color 0.3s ease-in;
-  -o-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
 }
 
@@ -1975,7 +1915,6 @@
   font-size: 1.06rem;
   font-weight: 400;
   -webkit-transition: color 0.3s ease-in;
-  -o-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
 }
 
@@ -2050,7 +1989,6 @@
   left: 50%;
   z-index: 1;
   -webkit-transition: background-color 0.3s ease-in;
-  -o-transition: background-color 0.3s ease-in;
   transition: background-color 0.3s ease-in;
 }
 
@@ -2114,7 +2052,6 @@
 .timeline__arrow-up-pic--light {
   color: #001c4e;
   -webkit-transition: fill 0.3s ease-in;
-  -o-transition: fill 0.3s ease-in;
   transition: fill 0.3s ease-in;
 }
 
@@ -2125,7 +2062,6 @@
 .timeline__arrow-up-pic--dark {
   color: #fff;
   -webkit-transition: color 0.3s ease-in;
-  -o-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
 }
 
@@ -2139,7 +2075,6 @@
   font-weight: 700;
   margin-bottom: 39px;
   -webkit-transition: color 0.3s ease-in;
-  -o-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
 }
 
@@ -2165,7 +2100,6 @@
   text-decoration: underline;
   font-size: 0.94rem;
   -webkit-transition: color 0.3s ease-in;
-  -o-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
 }
 
@@ -2182,7 +2116,6 @@
   font-size: 1.06rem;
   font-weight: 700;
   -webkit-transition: color 0.3s ease-in;
-  -o-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
 }
 
@@ -2198,7 +2131,6 @@
   font-size: 0.94rem;
   font-style: italic;
   -webkit-transition: color 0.3s ease-in;
-  -o-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
 }
 
@@ -2217,7 +2149,6 @@
   line-height: 1.6;
   font-weight: 400;
   -webkit-transition: color 0.3s ease-in;
-  -o-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
 }
 
@@ -2260,7 +2191,6 @@
   box-shadow: 0 0 0 #2b2b2b;
   -webkit-transition: -webkit-box-shadow 0.3s ease-in;
   transition: -webkit-box-shadow 0.3s ease-in;
-  -o-transition: box-shadow 0.3s ease-in;
   transition: box-shadow 0.3s ease-in;
   transition: box-shadow 0.3s ease-in, -webkit-box-shadow 0.3s ease-in;
 }
@@ -2282,7 +2212,6 @@
 .timeline__photo {
   overflow: hidden;
   -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   /* плавный переход */
   -webkit-box-shadow: 0 0 0 #2B2B2D;
@@ -2327,7 +2256,6 @@
   box-shadow: 0 0 0 #2B2B2D;
   -webkit-transition: border 0.3s ease-in, -webkit-transform 0.3s ease-in, -webkit-box-shadow 0.3s ease-in;
   transition: border 0.3s ease-in, -webkit-transform 0.3s ease-in, -webkit-box-shadow 0.3s ease-in;
-  -o-transition: border 0.3s ease-in, transform 0.3s ease-in, box-shadow 0.3s ease-in;
   transition: border 0.3s ease-in, transform 0.3s ease-in, box-shadow 0.3s ease-in;
   transition: border 0.3s ease-in, transform 0.3s ease-in, box-shadow 0.3s ease-in, -webkit-transform 0.3s ease-in, -webkit-box-shadow 0.3s ease-in;
 }
@@ -2363,7 +2291,6 @@
   -ms-hyphens: manual;
   hyphens: manual;
   -webkit-transition: color 0.3s ease-in;
-  -o-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
 }
 
@@ -2388,7 +2315,6 @@
   width: 139px;
   height: 6px;
   -webkit-transition: background-color 0.3s ease-in;
-  -o-transition: background-color 0.3s ease-in;
   transition: background-color 0.3s ease-in;
 }
 
@@ -2403,7 +2329,6 @@
 .progress-bar__progress {
   height: 100%;
   -webkit-transition: width 0.2s linear, background-color 0.3s linear;
-  -o-transition: width 0.2s linear, background-color 0.3s linear;
   transition: width 0.2s linear, background-color 0.3s linear;
 }
 
@@ -2429,7 +2354,6 @@
   color: #2B2B2D;
   font-weight: 300;
   -webkit-transition: color 0.3s ease-in;
-  -o-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
 }
 
@@ -2443,7 +2367,6 @@
 
 .contact__info-link {
   -webkit-transition: color 0.3s ease-in;
-  -o-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
 }
@@ -2472,7 +2395,6 @@
   margin-bottom: -2px;
   margin-right: 11.25px;
   -webkit-transition: fill 0.3s ease-in;
-  -o-transition: fill 0.3s ease-in;
   transition: fill 0.3s ease-in;
 }
 
@@ -2519,7 +2441,6 @@
   font-weight: 700;
   text-transform: uppercase;
   -webkit-transition: color 0.3s ease-in;
-  -o-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
 }
 
@@ -2535,7 +2456,6 @@
   font-size: 1.2rem;
   text-transform: uppercase;
   -webkit-transition: color 0.3s ease-in;
-  -o-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
 }
 
@@ -2560,7 +2480,6 @@
   font-size: 1.06rem;
   font-weight: 700;
   -webkit-transition: color 0.3s ease-in;
-  -o-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
 }
 
@@ -2577,7 +2496,6 @@
   font-style: italic;
   font-weight: 600;
   -webkit-transition: color 0.3s ease-in;
-  -o-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
 }
 
@@ -2603,7 +2521,6 @@
   line-height: 1.6;
   font-weight: 300;
   -webkit-transition: color 0.3s ease-in;
-  -o-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
 }
 
@@ -2661,7 +2578,6 @@
 .modal-work__arrow-up-pic--light {
   color: #001c4e;
   -webkit-transition: fill 0.3s ease-in;
-  -o-transition: fill 0.3s ease-in;
   transition: fill 0.3s ease-in;
 }
 
@@ -2672,7 +2588,6 @@
 .modal-work__arrow-up-pic--dark {
   color: #fff;
   -webkit-transition: fill 0.3s ease-in;
-  -o-transition: fill 0.3s ease-in;
   transition: fill 0.3s ease-in;
 }
 
@@ -2695,7 +2610,6 @@
   padding: 7px 9px;
   -webkit-transition: background-color 0.3s ease-in, color 0.3s ease-in, -webkit-box-shadow 0.3s ease-in;
   transition: background-color 0.3s ease-in, color 0.3s ease-in, -webkit-box-shadow 0.3s ease-in;
-  -o-transition: background-color 0.3s ease-in, color 0.3s ease-in, box-shadow 0.3s ease-in;
   transition: background-color 0.3s ease-in, color 0.3s ease-in, box-shadow 0.3s ease-in;
   transition: background-color 0.3s ease-in, color 0.3s ease-in, box-shadow 0.3s ease-in, -webkit-box-shadow 0.3s ease-in;
 }
@@ -2740,7 +2654,6 @@
   margin-top: 18px;
   margin-bottom: 18px;
   -webkit-transition: color 0.3s ease-in;
-  -o-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
   font-weight: 400;
 }
@@ -2834,7 +2747,6 @@
   bottom: 0;
   -webkit-transition: opacity 1s linear, -webkit-transform 0.5s linear;
   transition: opacity 1s linear, -webkit-transform 0.5s linear;
-  -o-transition: opacity 1s linear, transform 0.5s linear;
   transition: opacity 1s linear, transform 0.5s linear;
   transition: opacity 1s linear, transform 0.5s linear, -webkit-transform 0.5s linear;
 }
@@ -3046,7 +2958,6 @@
 .footer {
   padding: 30px 0;
   -webkit-transition: background-color 0.3s ease-in;
-  -o-transition: background-color 0.3s ease-in;
   transition: background-color 0.3s ease-in;
 }
 
@@ -3080,7 +2991,6 @@
   -ms-flex-align: center;
   align-items: center;
   -webkit-transition: color 0.3s ease-in, border-right 0.3s ease-in;
-  -o-transition: color 0.3s ease-in, border-right 0.3s ease-in;
   transition: color 0.3s ease-in, border-right 0.3s ease-in;
 }
 
@@ -3156,11 +3066,8 @@
 
 .footer__nav-link {
   position: relative;
-  -webkit-transition: -webkit-text-decoration 0.4s ease-in;
-  transition: -webkit-text-decoration 0.4s ease-in;
-  -o-transition: text-decoration 0.4s ease-in;
+  -webkit-transition: text-decoration 0.4s ease-in;
   transition: text-decoration 0.4s ease-in;
-  transition: text-decoration 0.4s ease-in, -webkit-text-decoration 0.4s ease-in;
 }
 
 .footer__nav-link::after {
@@ -3173,7 +3080,6 @@
   left: 0;
   z-index: 1;
   -webkit-transition: width 0.2s linear;
-  -o-transition: width 0.2s linear;
   transition: width 0.2s linear;
 }
 
@@ -3212,7 +3118,6 @@
   text-decoration: none;
   -webkit-transition: background-color 0.4s ease-in, color 0.4s ease-in, border-color 0.4s ease-in, -webkit-box-shadow 0.2s linear;
   transition: background-color 0.4s ease-in, color 0.4s ease-in, border-color 0.4s ease-in, -webkit-box-shadow 0.2s linear;
-  -o-transition: background-color 0.4s ease-in, color 0.4s ease-in, border-color 0.4s ease-in, box-shadow 0.2s linear;
   transition: background-color 0.4s ease-in, color 0.4s ease-in, border-color 0.4s ease-in, box-shadow 0.2s linear;
   transition: background-color 0.4s ease-in, color 0.4s ease-in, border-color 0.4s ease-in, box-shadow 0.2s linear, -webkit-box-shadow 0.2s linear;
 }
@@ -3257,7 +3162,6 @@
   transform: translateY(0);
   -webkit-transition: fill 0.4s ease-in, -webkit-transform 0.4s ease-in;
   transition: fill 0.4s ease-in, -webkit-transform 0.4s ease-in;
-  -o-transition: transform 0.4s ease-in, fill 0.4s ease-in;
   transition: transform 0.4s ease-in, fill 0.4s ease-in;
   transition: transform 0.4s ease-in, fill 0.4s ease-in, -webkit-transform 0.4s ease-in;
 }
@@ -3331,7 +3235,6 @@
   transform: scale(1);
   -webkit-transition: -webkit-filter 0.4s ease-in, -webkit-transform 0.4s ease-in;
   transition: -webkit-filter 0.4s ease-in, -webkit-transform 0.4s ease-in;
-  -o-transition: filter 0.4s ease-in, transform 0.4s ease-in;
   transition: filter 0.4s ease-in, transform 0.4s ease-in;
   transition: filter 0.4s ease-in, transform 0.4s ease-in, -webkit-filter 0.4s ease-in, -webkit-transform 0.4s ease-in;
 }
@@ -3449,7 +3352,6 @@
   cursor: pointer;
   -webkit-transition: color 0.3s ease-in, background-color 0.3s ease-in, -webkit-box-shadow 0.3s ease-in;
   transition: color 0.3s ease-in, background-color 0.3s ease-in, -webkit-box-shadow 0.3s ease-in;
-  -o-transition: color 0.3s ease-in, background-color 0.3s ease-in, box-shadow 0.3s ease-in;
   transition: color 0.3s ease-in, background-color 0.3s ease-in, box-shadow 0.3s ease-in;
   transition: color 0.3s ease-in, background-color 0.3s ease-in, box-shadow 0.3s ease-in, -webkit-box-shadow 0.3s ease-in;
 }
@@ -3473,7 +3375,6 @@
   height: 13px;
   -webkit-transition: fill 0.3s ease-in, -webkit-transform 0.3s ease-in;
   transition: fill 0.3s ease-in, -webkit-transform 0.3s ease-in;
-  -o-transition: transform 0.3s ease-in, fill 0.3s ease-in;
   transition: transform 0.3s ease-in, fill 0.3s ease-in;
   transition: transform 0.3s ease-in, fill 0.3s ease-in, -webkit-transform 0.3s ease-in;
 }
@@ -3602,7 +3503,6 @@
   padding: 10px;
   -webkit-transition: -webkit-box-shadow 0.3s ease-in;
   transition: -webkit-box-shadow 0.3s ease-in;
-  -o-transition: box-shadow 0.3s ease-in;
   transition: box-shadow 0.3s ease-in;
   transition: box-shadow 0.3s ease-in, -webkit-box-shadow 0.3s ease-in;
   border-radius: 0 0 5px 5px;
@@ -3656,7 +3556,6 @@
   transform: translateY(0);
   -webkit-transition: -webkit-transform 0.3s ease-in;
   transition: -webkit-transform 0.3s ease-in;
-  -o-transition: transform 0.3s ease-in;
   transition: transform 0.3s ease-in;
   transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
 }
@@ -3732,7 +3631,6 @@
   margin-right: 15px;
   color: #2B2B2D;
   -webkit-transition: color 0.5s ease-in;
-  -o-transition: color 0.5s ease-in;
   transition: color 0.5s ease-in;
 }
 
@@ -3775,7 +3673,6 @@
   border-radius: 100%;
   -webkit-transition: -webkit-box-shadow 0.5s ease-in;
   transition: -webkit-box-shadow 0.5s ease-in;
-  -o-transition: box-shadow 0.5s ease-in;
   transition: box-shadow 0.5s ease-in;
   transition: box-shadow 0.5s ease-in, -webkit-box-shadow 0.5s ease-in;
 }
@@ -3818,7 +3715,6 @@
   transform: scale(1);
   -webkit-transition: -webkit-transform 0.5s ease-in;
   transition: -webkit-transform 0.5s ease-in;
-  -o-transition: transform 0.5s ease-in;
   transition: transform 0.5s ease-in;
   transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
 }
@@ -3860,7 +3756,6 @@
 
 .reviews__design-dev-title-link {
   -webkit-transition: color 0.5s ease-in;
-  -o-transition: color 0.5s ease-in;
   transition: color 0.5s ease-in;
   color: #2B2B2D;
 }
@@ -3931,7 +3826,6 @@
 .o0 {
   opacity: 0;
   -webkit-transition: opacity 1s linear;
-  -o-transition: opacity 1s linear;
   transition: opacity 1s linear;
 }
 
@@ -3976,7 +3870,6 @@ html {
   font-size: 15px;
   scroll-behavior: smooth !important;
   -webkit-transition: color 1s ease-in, background-color 1s ease-in;
-  -o-transition: color 1s ease-in, background-color 1s ease-in;
   transition: color 1s ease-in, background-color 1s ease-in;
 }
 
@@ -4041,7 +3934,6 @@ button {
 
 .vhidden {
   -webkit-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
   position: absolute;
   width: 1px;
