@@ -7,7 +7,8 @@ const app = require("../config/app.js");
 // Плагины
 const plumber = require('gulp-plumber');
 const notify = require('gulp-notify');
-const autoprefixer = require("gulp-autoprefixer");
+const postcss = require("gulp-postcss")
+const autoprefixer = require("autoprefixer")
 const csso = require("gulp-csso");
 const rename = require("gulp-rename");
 const size = require("gulp-size");
@@ -32,7 +33,7 @@ const scss = () => {
       // .pipe(sassGlob())
       .pipe(sass())
       // .pipe(webpCss())
-      .pipe(autoprefixer())
+      .pipe(postcss([autoprefixer()]))
       .pipe(shorthand())
       .pipe(groupMedia())
       .pipe(size({title: "main.css"}))
