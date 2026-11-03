@@ -1574,6 +1574,8 @@ const placeholders = {
   },
 }
 
+
+
 const langListItems = document.querySelectorAll(".lang-tool__item")
 // Массив всех доступных языков
 const allLangs = ["ru", "en"]
@@ -1585,41 +1587,51 @@ langListItems.forEach(function (item) {
     // получение значения атрибута data-lang (ru или en)
     let lang = this.dataset.lang
 
+    // Сохраняем выбранный язык
+    localStorage.setItem("lang", lang)
+
     // добавление в строку браузера #ru или #en
     location.href = window.location.pathname + "#" + lang
 
-    localStorage.setItem("lang", lang)
     // перезагрузка страницы
     location.reload()
   })
 })
+
 function changeLang() {
-  // получение hash из строки браузера - #ru или #en
-  let hash = window.location.hash
-  // начало hash массива строки начинается со второго символа - ru или en
-  hash = hash.substring(1)
+  // Получаем язык из URL
+  let hash = window.location.hash.substring(1)
+
+  // Получаем язык из localStorage
+  const savedLang = localStorage.getItem("lang")
+
+  // Если сохранённого языка нет — устанавливаем английский.
+  if (allLangs.includes(hash)) {
+    // Используем язык из URL
+  } else if (allLangs.includes(savedLang)) {
+    hash = savedLang
+  } else {
+    hash = "en"
+  }
+
+  // Сохраняем актуальный язык
+  localStorage.setItem("lang", hash)
+
+  // Синхронизируем URL
+  if (window.location.hash !== "#" + hash) {
+    history.replaceState(null, "", window.location.pathname + "#" + hash)
+  }
+
   const langToolRuEl = document.querySelector('[data-lang="ru"]')
   const langToolEnEl = document.querySelector('[data-lang="en"]')
   // получение hash из строки браузера - #ru или #en
 
-  if (hash == "ru") {
+  if (hash === "ru") {
     langToolRuEl.classList.add("lang-tool--active")
     langToolEnEl.classList.remove("lang-tool--active")
-    localStorage.setItem("lang", "ru")
-  } else if (hash == "en") {
+  } else {
     langToolEnEl.classList.add("lang-tool--active")
     langToolRuEl.classList.remove("lang-tool--active")
-    localStorage.setItem("lang", "en")
-  }
-  // проверка - если массив из всех доступных языков не содержит hash
-
-  if (!allLangs.includes(hash)) {
-    // принудительно записывать в строку браузера путь с языком
-    location.href = window.location.pathname + "#ru"
-
-    localStorage.setItem("lang", "ru")
-    // перезагрузка страницы
-    location.reload()
   }
 
   // перебор массива langs
