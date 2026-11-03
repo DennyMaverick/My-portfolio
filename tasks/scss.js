@@ -12,7 +12,7 @@ const autoprefixer = require("autoprefixer")
 const csso = require("gulp-csso");
 const rename = require("gulp-rename");
 const size = require("gulp-size");
-const shorthand = require("gulp-shorthand");
+const mergeLonghand = require("postcss-merge-longhand")
 const groupMedia = require("gulp-group-css-media-queries");
 const sass = require("gulp-sass")(require('sass'));
 // const sassGlob = require('gulp-sass-glob');
@@ -34,7 +34,7 @@ const scss = () => {
       .pipe(sass())
       // .pipe(webpCss())
       .pipe(postcss([autoprefixer()]))
-      .pipe(shorthand())
+      .pipe(postcss([mergeLonghand()]))
       .pipe(groupMedia())
       .pipe(size({title: "main.css"}))
       .pipe(dest(path.scss.dest, {sourcemaps: app.isDev}))
