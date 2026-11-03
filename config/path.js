@@ -52,8 +52,8 @@ module.exports = {
   },
 
   img: {
-    src: ["./src/img/**/*.{png,jpg,jpeg,gif,svg}", "!./src/img/sprite/**/*.svg"],
-    watch: ["./src/img/**/*.{png,jpg,jpeg,gif,svg}", "!./src/img/sprite/**/*.svg"],
+    src: ["./src/img/**/*.{png,jpg,jpeg,gif,svg,webp,avif}", "!./src/img/sprite/**/*.svg"],
+    watch: ["./src/img/**/*.{png,jpg,jpeg,gif,svg,webp,avif}", "!./src/img/sprite/**/*.svg"],
     dest: pathDest + "/img/",
   },
 

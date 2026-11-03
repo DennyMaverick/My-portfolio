@@ -32,14 +32,11 @@
     "gulp-babel": "^8.0.0",
     "gulp-cheerio": "^1.0.0",
     "gulp-concat": "^2.6.1",
-    "gulp-cssimport": "^7.0.0",
     "gulp-csso": "^4.0.1",
-    "gulp-favicons": "^4.0.1",
     "gulp-filter": "^9.0.1",
     "gulp-group-css-media-queries": "^1.2.2",
     "gulp-htmlmin": "^5.0.1",
     "gulp-if": "^3.0.0",
-    "gulp-imagemin": "^7.1.0",
     "gulp-newer": "^1.4.0",
     "gulp-notify": "^5.0.0",
     "gulp-plumber": "^1.2.1",
@@ -54,18 +51,16 @@
     "gulp-svg-sprite": "^2.0.3",
     "gulp-svgmin": "^4.1.0",
     "gulp-uglify": "^3.0.2",
-    "gulp-webp-css": "^1.1.0",
     "jquery": "^3.7.1",
     "node-sass-tilde-importer": "^1.0.2",
     "page-scroll-to-id": "^1.6.8",
     "sass": "^1.89.2",
+    "sharp": "^0.35.5",
     "slick-carousel": "^1.8.1",
+    "svgo": "^4.1.0",
     "through2": "^5.0.12",
     "typed.js": "^2.1.0",
     "webpack": "^5.101.0",
     "webpack-stream": "^7.0.0"
-  },
-  "dependencies": {
-    "sharp": "^0.30.3"
   }
 }
