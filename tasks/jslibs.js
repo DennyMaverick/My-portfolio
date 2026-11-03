@@ -6,7 +6,6 @@ const app = require("../config/app.js")
 
 // Плагины
 const plumber = require("gulp-plumber")
-const notify = require("gulp-notify")
 // const babel = require("gulp-babel");
 const gulpConcat = require("gulp-concat")
 const uglify = require("gulp-uglify")
@@ -18,11 +17,10 @@ const jslibs = () => {
     src(path.libs.src)
       .pipe(
         plumber({
-          errorHandler: notify.onError((error) => ({
-            title: "JavaScript",
-            message: error.message,
-          })),
-        })
+          errorHandler: (error) => {
+            console.error(`[JavaScript] ${error.message}`)
+          },
+        }),
       )
       // .pipe(babel())
       .pipe(strips())

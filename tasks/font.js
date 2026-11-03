@@ -2,7 +2,6 @@ const {src, dest} = require("gulp")
 const {Transform} = require("stream")
 const path = require("../config/path.js")
 const plumber = require("gulp-plumber")
-const notify = require("gulp-notify")
 const ttf2woff2 = require("@0x6b/ttf2woff2-wasm")
 
 const font = () => {
@@ -30,10 +29,9 @@ const font = () => {
   })
     .pipe(
       plumber({
-        errorHandler: notify.onError((error) => ({
-          title: "Font",
-          message: error.message,
-        })),
+        errorHandler: (error) => {
+          console.error(`[Font] ${error.message}`)
+        },
       }),
     )
     .pipe(convertFont)

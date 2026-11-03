@@ -7,9 +7,6 @@ const app = require("../config/app.js")
 
 // Плагины
 const plumber = require("gulp-plumber")
-const notify = require("gulp-notify")
-const newer = require("gulp-newer")
-const gulpIf = require("gulp-if")
 
 // Библиотеки обработки изображений
 const sharp = require("sharp")
@@ -152,18 +149,19 @@ const optimizeImages = () => {
 
 // Обработка изображений
 const img = () => {
-  return src(path.img.src, {encoding: false})
-    .pipe(
-      plumber({
-        errorHandler: notify.onError((error) => ({
-          title: "Image",
-          message: error.message,
-        })),
-      }),
-    )
-    .pipe(newer(path.img.dest))
-    .pipe(gulpIf(app.isProd, optimizeImages()))
-    .pipe(dest(path.img.dest))
+  let stream = src(path.img.src, {encoding: false}).pipe(
+    plumber({
+      errorHandler: (error) => {
+        console.error(`[Image] ${error.message}`)
+      },
+    }),
+  )
+
+  if (app.isProd) {
+    stream = stream.pipe(optimizeImages())
+  }
+
+  return stream.pipe(dest(path.img.dest))
 }
 
 module.exports = img
