@@ -1229,12 +1229,6 @@
   width: 100%;
   position: relative;
 }
-.about__image-box--light {
-  background: url("../img/preload/white-theme-loader.gif") center no-repeat;
-}
-.about__image-box--dark {
-  background: url("../../img/preload/dark-theme-loader.gif") center no-repeat;
-}
 .about__image-box--overlay {
   position: relative;
   z-index: 2;
