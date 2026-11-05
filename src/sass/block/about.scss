@@ -105,12 +105,7 @@
   &__image-box {
     width: 100%;
     position: relative;
-    &--light {
-      background: url("../img/preload/white-theme-loader.gif") center no-repeat;
-    }
-    &--dark {
-      background: url("../../img/preload/dark-theme-loader.gif") center no-repeat;
-    }
+
     @include media.bp-desk(tablet) {
       max-width: 100%;
       width: 77%;
