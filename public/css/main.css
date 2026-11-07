@@ -1679,6 +1679,9 @@
 .timeline__modal-list .modal-list__social-link {
   display: inline-block;
 }
+.timeline__modal-list--contacts {
+  list-style: none;
+}
 .timeline::before {
   content: "";
   display: block;
@@ -1706,11 +1709,8 @@
 .timeline__col .social--github-dark {
   color: #fff;
 }
-.timeline__col .social--vk-light {
-  color: #2B2B2D;
-}
-.timeline__col .social--vk-dark {
-  color: #fff;
+.timeline__col .social--vk {
+  color: #0673f9;
 }
 .timeline__col--left {
   text-align: right;

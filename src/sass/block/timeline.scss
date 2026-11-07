@@ -10,6 +10,9 @@
   &__modal-list .modal-list__social-link {
     display: inline-block;
   }
+  &__modal-list--contacts {
+    list-style: none;
+  }
   @include media.bp-desk(mobile) {
     flex-direction: column;
     align-items: center;
@@ -53,14 +56,7 @@
       }
 
       &--vk {
-        &-light {
-          color: variables.$black;
-        }
-      }
-      &--vk {
-        &-dark {
-          color: variables.$white;
-        }
+        color: #0673f9;
       }
     }
     &--left {

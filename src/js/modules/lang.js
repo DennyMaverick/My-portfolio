@@ -976,8 +976,8 @@ const langs = {
     en: "Denis Mamlev",
   },
   "item-git-link": {
-    ru: "Ссылка на GitHub профиль",
-    en: "Link to GitHub profile",
+    ru: "Ссылка на профиль ВКонтакте",
+    en: "Link to VKontakte profile",
   },
   "date-birth-day-text": {
     ru: "Дата рождения:",
