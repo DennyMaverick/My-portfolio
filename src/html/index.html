@@ -25,8 +25,57 @@
     <script src="./js/main.js" defer></script>
   </head>
   <body class="no-scroll">
-    <div class="preloader-page" id="preloader"></div>
-    <script>
+
+<div class="preloader" id="preloader">
+  <div class="preloader__content">
+
+    <!-- Digital monogram -->
+    <div class="preloader__logo">
+      <svg
+        class="preloader__monogram"
+        viewBox="0 0 120 100"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-label="DM"
+        role="img"
+      >
+        <!-- M -->
+        <path
+          class="preloader__letter preloader__letter--m"
+          d="M 14 78 V 22 L 45 53 L 76 22 V 78"
+        />
+
+        <!-- D -->
+        <path
+          class="preloader__letter preloader__letter--d"
+          d="M 76 22 H 87 C 119 22 119 78 87 78 H 76"
+        />
+      </svg>
+    </div>
+
+    <!-- Light impulse -->
+    <div class="preloader__light">
+      <span class="preloader__light-beam"></span>
+    </div>
+
+    <!-- Brand name -->
+    <div class="preloader__brand">
+      DENNY MAVERICK
+    </div>
+
+    <!-- Loading -->
+    <div class="preloader__loading">
+      <span>Loading</span>
+      <span class="preloader__dots">
+        <i></i>
+        <i></i>
+        <i></i>
+      </span>
+    </div>
+
+  </div>
+</div>
+
+    <!-- <script>
       const preloader = document.getElementById("preloader")
       const bodyEl = document.querySelector("body")
 
@@ -36,7 +85,7 @@
           bodyEl.classList.remove("no-scroll")
         }
       }
-    </script>
+    </script> -->
     <header class="header">
       <div class="container">
         <div class="header__mobile-modal mobile-modal">

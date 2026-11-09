@@ -1,4 +1,4 @@
-// import "./modules/preloader-page"
+
 
 // jQuery and it's libraries
 import "./modules/jQuery/jquery-main"
@@ -32,3 +32,4 @@ import "./modules/lightActiveNavElement"
 import "./modules/typing"
 import "./modules/switchOnPopupTheme"
 import "./modules/winter-snow-falling"
+import "./modules/preloader-page"
