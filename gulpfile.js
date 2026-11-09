@@ -19,6 +19,7 @@ const favicon = require("./tasks/favicon.js")
 const svgsprite = require("./tasks/svgsprite.js")
 const jquerylibs = require("./tasks/jquerylibs.js")
 const cname = require("./tasks/cname.js")
+const cacheBust = require("./tasks/cacheBust.js")
 
 // Статический сервер
 const server = () => {
@@ -45,7 +46,7 @@ const watcher = () => {
   watch(path.cname.watch, cname).on("all", browserSync.reload)
 }
 
-const build = series(clear, parallel(html, scss, js, font, jquerylib, jquerylibs, jslibs, libsCssScss, img, svgsprite, favicon, cname))
+const build = series(clear, parallel(html, scss, js, font, jquerylib, jquerylibs, jslibs, libsCssScss, img, svgsprite, favicon, cname), cacheBust)
 
 const dev = series(build, parallel(server, watcher))
 
