@@ -22,15 +22,32 @@ const cname = require("./tasks/cname.js")
 const cacheBust = require("./tasks/cacheBust.js")
 
 // Статический сервер
+// const server = () => {
+//   browserSync.init({
+//     server: {
+//       baseDir: path.root,
+//     },
+//     browser: "Google Chrome",
+//     notify: false,
+//   })
+// }
+
+
 const server = () => {
   browserSync.init({
     server: {
       baseDir: path.root,
     },
-    browser: "Google Chrome",
+    host: "0.0.0.0",
+    port: 3000,
+    listen: "0.0.0.0",
+    open: "local",
+    online: true,
     notify: false,
+    ui: false,
   })
 }
+
 
 // Отслеживание изменений
 const watcher = () => {
@@ -48,7 +65,8 @@ const watcher = () => {
 
 const build = series(clear, parallel(html, scss, js, font, jquerylib, jquerylibs, jslibs, libsCssScss, img, svgsprite, favicon, cname), cacheBust)
 
-const dev = series(build, parallel(server, watcher))
+const dev = series(clear, parallel(html, scss, js, font, jquerylib, jquerylibs, jslibs, libsCssScss, img, svgsprite, favicon, cname), parallel(server, watcher))
+
 
 // Публичные задачи
 exports.html = html

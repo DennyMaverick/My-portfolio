@@ -8,6 +8,26 @@
     <meta name="keywords" content="портфолио, веб-разработка, frontend, html, css, javascript" />
     <meta name="author" content="Denny Maverick" />
     <meta name="google" value="notranslate" />
+
+    <style>
+      #preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        width: auto;
+        height: 100vh;
+        height: 100dvh;
+
+        z-index: 9999;
+        display: grid;
+        place-items: center;
+        background: #080d12;
+      }
+    </style>
+
     <title class="lang-title">Denny Maverick, web-разработчик</title>
 
     <link rel="icon" type="image/png" href="./img/favicon/favicon-96x96.png" sizes="96x96" />
@@ -25,55 +45,38 @@
     <script src="./js/main.js" defer></script>
   </head>
   <body class="no-scroll">
+    <div class="preloader" id="preloader">
+      <div class="preloader__content">
+        <!-- Digital monogram -->
+        <div class="preloader__logo">
+          <svg class="preloader__monogram" viewBox="0 0 120 100" xmlns="http://www.w3.org/2000/svg" aria-label="DM" role="img">
+            <!-- M -->
+            <path class="preloader__letter preloader__letter--m" d="M 14 78 V 22 L 45 53 L 76 22 V 78" />
 
-<div class="preloader" id="preloader">
-  <div class="preloader__content">
+            <!-- D -->
+            <path class="preloader__letter preloader__letter--d" d="M 76 22 H 87 C 119 22 119 78 87 78 H 76" />
+          </svg>
+        </div>
 
-    <!-- Digital monogram -->
-    <div class="preloader__logo">
-      <svg
-        class="preloader__monogram"
-        viewBox="0 0 120 100"
-        xmlns="http://www.w3.org/2000/svg"
-        aria-label="DM"
-        role="img"
-      >
-        <!-- M -->
-        <path
-          class="preloader__letter preloader__letter--m"
-          d="M 14 78 V 22 L 45 53 L 76 22 V 78"
-        />
+        <!-- Light impulse -->
+        <div class="preloader__light">
+          <span class="preloader__light-beam"></span>
+        </div>
 
-        <!-- D -->
-        <path
-          class="preloader__letter preloader__letter--d"
-          d="M 76 22 H 87 C 119 22 119 78 87 78 H 76"
-        />
-      </svg>
+        <!-- Brand name -->
+        <div class="preloader__brand">DENNY MAVERICK</div>
+
+        <!-- Loading -->
+        <div class="preloader__loading">
+          <span>Loading</span>
+          <span class="preloader__dots">
+            <i></i>
+            <i></i>
+            <i></i>
+          </span>
+        </div>
+      </div>
     </div>
-
-    <!-- Light impulse -->
-    <div class="preloader__light">
-      <span class="preloader__light-beam"></span>
-    </div>
-
-    <!-- Brand name -->
-    <div class="preloader__brand">
-      DENNY MAVERICK
-    </div>
-
-    <!-- Loading -->
-    <div class="preloader__loading">
-      <span>Loading</span>
-      <span class="preloader__dots">
-        <i></i>
-        <i></i>
-        <i></i>
-      </span>
-    </div>
-
-  </div>
-</div>
 
     <!-- <script>
       const preloader = document.getElementById("preloader")

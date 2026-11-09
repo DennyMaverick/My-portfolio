@@ -69,8 +69,6 @@ const cacheBust = async () => {
     // Генерируем хеш
     const hash = getHash(content)
 
-console.log(`[DEBUG] ${asset.file}: ${content.length} bytes`)
-
     // Формируем новое имя
     const extension = extname(asset.file)
     const name = basename(asset.file, extension)
