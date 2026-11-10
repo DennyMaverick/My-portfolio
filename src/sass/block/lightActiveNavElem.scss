@@ -8,13 +8,13 @@
   &--light {
     nav ul li a.active {
       color: variables.$white;
-      border-bottom: 2px solid variables.$white;
+      border-bottom: 2px solid #46abb3;
     }
   }
   &--dark {
     nav ul li a.active {
       color: variables.$select-color-dark;
-      border-bottom: 2px solid variables.$select-color-dark;
+      border-bottom: 2px solid #28d379;
     }
   }
 }

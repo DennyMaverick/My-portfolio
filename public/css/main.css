@@ -3108,11 +3108,11 @@
 }
 .header__inner--light nav ul li a.active {
   color: #fff;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #46abb3;
 }
 .header__inner--dark nav ul li a.active {
   color: #fff;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #28d379;
 }
 
 .tech-box__picture {
