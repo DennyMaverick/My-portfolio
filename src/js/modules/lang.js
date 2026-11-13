@@ -971,10 +971,6 @@ const langs = {
     ru: "Связь со мной",
     en: "Contact Details",
   },
-  "item-fullname": {
-    ru: "Мамлев Денис Игоревич",
-    en: "Denis Mamlev",
-  },
   "item-git-link": {
     ru: "Ссылка на профиль ВКонтакте",
     en: "Link to VKontakte profile",

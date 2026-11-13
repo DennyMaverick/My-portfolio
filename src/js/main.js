@@ -15,7 +15,7 @@ import "./modules/burger-menu"
 import "./modules/addShadowToHeaderByScrolling"
 import "./modules/ontop"
 import "./modules/hidden-scroll-modal-hire"
-import "./modules/aos"
+// import "./modules/aos"
 import "./modules/hide-show-arrow-up-resume-modal"
 import "./modules/preloader-second-way"
 

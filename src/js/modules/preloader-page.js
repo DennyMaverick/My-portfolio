@@ -24,6 +24,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
       setTimeout(() => {
         preloader.remove()
+
+        // Initialize AOS after preloader
+        if (typeof AOS !== "undefined") {
+          AOS.init({
+            disable: function () {
+              var maxWidth = 768
+              return window.innerWidth < maxWidth
+            },
+          })
+        }
       }, 650)
     }, remaining)
   }
@@ -38,4 +48,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
   setTimeout(hidePreloader, maxDuration)
 })
-
