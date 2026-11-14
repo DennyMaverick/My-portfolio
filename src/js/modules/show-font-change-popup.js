@@ -110,8 +110,24 @@ modalWindows.forEach((item) => {
   })
 })
 
+modalWindows.forEach((item) => {
+  const modalDialog = item.querySelector(".modal__dialog")
+
+  modalDialog.addEventListener("click", function (event) {
+    if (!event.target.closest(".font-change")) {
+      hideFontProgress()
+    }
+  })
+})
+
 themeCloseBtns.forEach((item) => {
   item.addEventListener("click", function () {
     hideFontProgress()
   })
+})
+
+document.addEventListener("click", function (event) {
+  if (!event.target.closest(".font-change")) {
+    hideFontProgress()
+  }
 })
