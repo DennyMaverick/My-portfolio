@@ -98,8 +98,12 @@ html {
 
 html,
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   @include reset.reset-model;
   min-height: 100vh;
+  height: 100vh;
   font-size: variables.$font-size-base;
   font-family: variables.$font-family-base;
   text-rendering: optimizeSpeed;
