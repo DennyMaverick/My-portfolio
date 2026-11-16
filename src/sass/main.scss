@@ -100,10 +100,8 @@ html,
 body {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   @include reset.reset-model;
   min-height: 100vh;
-  height: 100vh;
   font-size: variables.$font-size-base;
   font-family: variables.$font-family-base;
   text-rendering: optimizeSpeed;
@@ -113,9 +111,13 @@ body {
   // background-color: orange;
 }
 
+main {
+  flex: 1;
+}
+
 body {
   overflow-x: hidden;
-  width: 100vw;
+  width: 100%;
 }
 
 .body {
@@ -171,4 +173,11 @@ img {
 // Контентная область
 .container {
   @include container.container;
+}
+
+@media (max-width: 767px) {
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
 }

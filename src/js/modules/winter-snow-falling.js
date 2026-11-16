@@ -65,14 +65,35 @@ const WinterSnowfall = (() => {
   }
 
   // Initialize canvas
+  // function resizeCanvas() {
+  //   const pixelRatio = Math.min(window.devicePixelRatio || 1, 2)
+
+  //   width = window.innerWidth
+  //   height = window.innerHeight
+
+  //   canvas.width = width * pixelRatio
+  //   canvas.height = height * pixelRatio
+
+  //   ctx.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0)
+
+  //   const count = getParticleCount()
+
+  //   particles = Array.from({length: count}, () => createParticle(true))
+  // }
+
   function resizeCanvas() {
     const pixelRatio = Math.min(window.devicePixelRatio || 1, 2)
 
-    width = window.innerWidth
-    height = window.innerHeight
+    width = document.documentElement.clientWidth
+    height = document.documentElement.clientHeight
 
-    canvas.width = width * pixelRatio
-    canvas.height = height * pixelRatio
+    // CSS dimensions
+    canvas.style.width = `${width}px`
+    canvas.style.height = `${height}px`
+
+    // Internal canvas resolution
+    canvas.width = Math.round(width * pixelRatio)
+    canvas.height = Math.round(height * pixelRatio)
 
     ctx.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0)
 

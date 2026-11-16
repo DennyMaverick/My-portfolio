@@ -1,16 +1,18 @@
-@use '../_config/variables';
-@use '../_mixins/media';
+@use "../_config/variables";
+@use "../_mixins/media";
 
 .header {
   padding-top: 15px;
   padding-bottom: 15px;
   position: fixed;
   left: 0;
+  right: auto;
   width: 100%;
   background: variables.$white;
   z-index: 1300;
   transition: background-color 0.3s ease-in;
-  padding-right: calc(20px - (100vw - 100%));
+  // padding-right: calc(20px - (100vw - 100%));
+  // padding-right: 20px;
   &--light {
     background: variables.$theme-modal-light;
   }
@@ -42,7 +44,10 @@
     top: 0;
     bottom: 0;
     right: 0;
-    transition: background-color 0.3s ease-in, transform 1s ease-in, opacity 1s ease-in;
+    transition:
+      background-color 0.3s ease-in,
+      transform 1s ease-in,
+      opacity 1s ease-in;
     &--light {
       background-color: lightcoral;
     }
