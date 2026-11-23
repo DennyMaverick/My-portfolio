@@ -34,7 +34,7 @@
   background: #001c4e;
 }
 .header--dark {
-  background: #4e1100;
+  background: #164254;
 }
 .header__mobile-modal {
   overflow: auto;
@@ -410,7 +410,7 @@
           box-shadow: 1px 1px 10px #fff;
 }
 .theme--modal-dark {
-  background: #4e1100;
+  background: #164254;
   -webkit-box-shadow: 2px 2px 13px #fff;
           box-shadow: 2px 2px 13px #fff;
 }
@@ -2226,10 +2226,10 @@
           box-shadow: 0px 0px 10px #2B2B2D;
 }
 .modal-work__btn--dark {
-  background-color: #4e1100;
+  background-color: #164254;
   color: floralwhite;
-  -webkit-box-shadow: 0px 0px 10px #4e1100;
-          box-shadow: 0px 0px 10px #4e1100;
+  -webkit-box-shadow: 0px 0px 10px #164254;
+          box-shadow: 0px 0px 10px #164254;
 }
 .modal-work__btn--dark:hover {
   background-color: bisque;
